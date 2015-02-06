@@ -14,7 +14,7 @@
     <header class="panel">
         <p class="white">
             <i class="fa fa-exclamation-triangle"></i>
-            <span>Открыт секрет массовых неудач в личной жизни, карьере и бизнесе test</span>
+            <span>Открыт секрет массовых неудач в личной жизни, карьере и бизнесе</span>
             <i class="fa fa-exclamation-triangle"></i>
         </p>
     </header>
@@ -26,8 +26,8 @@
             </h1> 
             <form action="index.php" method="POST">
                 <div class="start">
-                    <div class="arrow1"></div>
-                    Заполните форму ниже и откройте, как быстро<br />наладить свою жизнь:
+                    
+                    <span>Заполните форму ниже и откройте, как быстро</span> <span>наладить свою жизнь:<div class="arrow1"></div></span>
                 </div>
                 <div class="field name">
                     <input type="text" name="name" placeholder="Ваше имя..."/> 
@@ -44,7 +44,9 @@
                 <div class="confirm-text white">
                     <div class="arrow2"></div>
                     <p>
+                        <span>
                         <span class="italic">Да, я хочу узнать об этом</span><br /><span class="upper">ПРЯМО СЕЙЧАС!</span>
+                        </span>
                     </p>
                 </div>
             </form>
@@ -116,7 +118,7 @@
                 <p class="bold">Вашей вины здесь нет.</p>
             </div>
             <p>
-                Причина большинства проблем — психологические травмы, спрятанные в Вашем подсознании. Более того, многие из них возникли еще <span class="upeprcase sea">до Вашего рождения.</span>
+                Причина большинства проблем — психологические травмы, спрятанные в Вашем подсознании. Более того, многие из них возникли еще <span class="upper sea">до Вашего рождения.</span>
             </p>
         </div>
     </section>

@@ -8,7 +8,7 @@ input[type="text"]{
 	padding: 12px 12px;
 	position: relative;
 	background: @white;
-	font-size:1.0rem;
+	font-size:1.8rem;
 	width: 100%;
 	border:solid 1px #18bd91;
 	color:@sea;
@@ -22,7 +22,7 @@ input[type="submit"]{
 	padding:10px 40px;
 	text-transform: uppercase;
 	border:none;
-	font-size:2.0rem;
+	font-size:3.6rem;
 	font-family:"Proxima Bold", sans-serif;
 	font-weight:bold;
 	margin:10px auto;
@@ -38,7 +38,7 @@ input[type="submit"]{
 	overflow: hidden;
 	width: 80%;
 	height: auto;
-	max-width:1240px;
+	max-width:1180px;
 	min-width:960px;
 	margin:auto;
 }
@@ -50,7 +50,7 @@ header.panel{
 		font-family:"Proxima Bold", sans-serif;
 		text-transform: uppercase;
 		i{
-			margin:auto 10px;
+			margin:auto 25px;
 		}
 	}
 }
@@ -64,9 +64,13 @@ section.header{
 			font-family:"Proxima", sans-serif;
 			text-align: center;
 			text-transform: uppercase;
-			font-size:2.3rem;
+			font-size:4.0rem;
 			font-weight:800;
 			margin-top: 40px;
+			span{
+				background: @red;
+				padding:0 10px;
+			}
 		}
 		form{
 			.border_box;
@@ -77,17 +81,21 @@ section.header{
 			div.start{
 				position: relative;
 				color:@sea;
-				font-family:"PT Serif", serif;
+				font-family:"Proxima BoldIt", serif;
 				font-weight:bold;
 				font-style:italic;
+				font-size:2.4rem;
+				span{
+					position: relative;
+				}
 				.arrow1{
 					position: absolute;
 					width: 43px;
 					height: 52px;
 					background: url('../images/arrow1.png') no-repeat;
-					left:50%;
-					margin-left: -21px;
-					bottom:-48px;
+					  left: 105%;
+					  /* margin-left: -21px; */
+					  top: 15px;
 				}
 			}
 			.field{
@@ -95,7 +103,7 @@ section.header{
 					margin-top: 55px;
 				}
 				label{
-					font-size:0.9rem;
+					font-size:1.4rem;
 					margin-top: -10px;
 					margin-bottom: 20px;
 				}
@@ -106,6 +114,7 @@ section.header{
 					}
 					label{
 						margin-top: -5px;
+						text-align: center;
 					}
 				}
 			}
@@ -121,8 +130,26 @@ section.header{
 					top:-100px;
 				}
 				p{
-					font-size:2rem;
+					display: block;
+					float: left;
+					left: 50%;
+					font-size:2.4rem;
 					text-align: center;
+					
+					
+					position: relative;
+					z-index: 1;
+					& > span{
+						position: relative;
+						display: block;
+						float: right;
+						right: 50%;
+						background: url('../images/green-bg.jpg');
+						padding-right: 5px;
+						padding-left: 5px;
+						span{
+						}
+					}
 					.italic{
 						font-family:"PT Serif", serif;
 					}
@@ -143,6 +170,7 @@ section.section2{
 		text-transform: uppercase;
 		font-family:"Proxima Bold", sans-serif;
 		text-align: center;
+		font-size:6.0rem;
 	}
 	table.problems{
 		position: relative;
@@ -159,16 +187,20 @@ section.section3{
 	position: relative;
 	height: 700px;
 	background: url('../images/section3-bg.jpg') no-repeat center center;
+	.wrapper{
+		width: 1180px !important;
+	}
 	h1{
 		text-align: center;
 		font-family:"Proxima Bold", sans-serif;
 		font-weight:800;
 		text-transform: uppercase;
-		font-size:3.8rem;
+		font-size:4.8rem;
 		margin-top: 150px;
 		.pt{
 			text-transform: none;
 			font-family:"PT Serif", serif;
+			font-weight:400;
 		}
 	}
 }
@@ -180,7 +212,8 @@ section.section4{
 		text-align: center;
 		font-family:"Proxima Bold", sans-serif;
 		text-transform: uppercase;
-		font-weight:800;
+		font-size:6.0rem;
+		font-weight:900;
 	}
 	.resume{
 		position: relative;
@@ -192,23 +225,29 @@ section.section4{
 			width: 97px;
 			height: 103px;
 			background: url('../images/arrow3.png') center center no-repeat;
-			left: -65px;
+			left: -93px;
 			top: -65px;
 		}
 		p{
-			font-size:2.0rem;
+			font-size:3.6rem;
+
 		}
 	}
 	.resume + p{
-		text-align: center;
+		font-size:3.0rem;
+		text-align: left;
+		span.sea{
+			font-weight:900;
+		}
 	}
 }
 section.section5{
 	padding-top: 120px;
-	padding-bottom: 200px;
 	background: url('../images/section5-bg.jpg') no-repeat top center;
+	background-size: cover;
 	.wrapper{
 		position: relative;
+		font-size:3.0rem;
 		.left{
 			position: relative;
 			width: 60%;
@@ -220,18 +259,26 @@ section.section5{
 }
 section.section6{
 	position: relative;
-	background: url('../images/section6-bg.jpg') left center no-repeat;
+	background: url('../images/section6-bg.jpg') left top no-repeat #f3f3f3;
+	background-size:contain;
 	.wrapper{
+
+		h1{
+			font-size:7.2rem;
+			margin-bottom:20px;
+		}
 		.right{
 			.border_box;
+			padding-top:1px;
 			padding-left: 40px;
 			position: relative;
 			float: right;
 			padding-bottom: 30px;
+			font-size:3.0rem;
 			width: 55%;
-			background: @white;
+			background: #f3f3f3;
 			p{
-				margin:35px 0;
+				margin:25px 0;
 			}
 		}
 	}
@@ -250,9 +297,12 @@ section.section7{
 			text-transform: uppercase;
 			text-align: center;
 			font-family: "Proxima Bold", sans-serif;
+			font-size:6.0rem;
+			margin-bottom:10px;
 		}
 		p{
-			margin:35px 0;
+			margin:15px 0;
+			font-size:3.0rem;
 		}
 	}
 }
@@ -271,6 +321,7 @@ section.section8{
 		.left{
 			.border_box;
 			padding:40px;
+			padding-left: 0;
 			position: relative;
 			float: left;
 			background: url('../images/green-bg.jpg');
@@ -279,7 +330,8 @@ section.section8{
 			h1{
 				font-family: "Proxima Bold", sans-serif;
 				font-weight:bold;
-				font-size:4rem;
+				font-size:7rem;
+				margin:20px 0;
 			}
 			ul{
 				.ul-clean;
@@ -309,11 +361,12 @@ section.section8{
 }
 section.section9{
 	background: url('../images/section9-bg.jpg') bottom center no-repeat;
-	padding-top: 90px;
+	padding-top: 70px;
 	padding-bottom: 240px;
 	.wrapper{
 		h1{
 			text-align: center;
+			font-size:6.0rem;
 		}
 		table{
 			margin-top: 50px;
@@ -329,7 +382,7 @@ section.section9{
 						width:25px;
 						height: 24px;
 						padding-top: 1px;
-						font-size:0.9rem;
+						font-size:1.4rem;
 						line-height:25px;
 						font-weight:bold;
 					}
@@ -346,12 +399,14 @@ section.section10{
 		background: url('../images/green-bg.jpg');
 		.wrapper{
 			padding: 10px 0;
+			width: 1100px !important;
 			h1{
 				text-align: center;
 				font-family: "Proxima Bold", sans-serif;
 				font-weight:bold;
 				margin-bottom: 0;
 				padding-bottom: 0;
+				font-size:6.0rem;
 			}
 		}
 	}
@@ -367,6 +422,7 @@ section.section10{
 				color:@sea;
 				text-align: center;
 				font-weight:bold;
+				font-size:4.0rem;
 				.red{
 					font-family:"Proxima Bold", sans-serif;
 					font-weight:bold;
@@ -399,7 +455,7 @@ section.section10{
 						margin-top: 55px;
 					}
 					label{
-						font-size:0.9rem;
+						font-size:1.4rem;
 						margin-top: -10px;
 						margin-bottom: 20px;
 					}
@@ -411,6 +467,7 @@ section.section10{
 						}
 						label{
 							margin-top: -5px;
+							text-align: center;
 						}
 					}
 				}
@@ -454,6 +511,6 @@ footer{
 	padding:10px 0;
 	p{
 		font-weight:bold;
-		font-size:1.4rem;
+		font-size:2.4rem;
 	}
 }
