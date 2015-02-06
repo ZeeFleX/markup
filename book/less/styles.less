@@ -1,0 +1,105 @@
+/*ГЛОБАЛЬНЫЕ ПЕРЕМЕННЫЕ*/
+
+/*ЦВЕТОВАЯ СХЕМА*/
+@white: #fff; //Белый цвет
+@sea: #51727d; //Морской
+@red: #f35347; //Красный
+@green: #35d9ad; //Зеленый
+
+.white{
+  color:@white;
+}
+.sea{
+  color:@sea;
+}
+.red{
+  color:@red;
+}
+.green{
+  color:@green;
+}
+
+
+/*ПОДГРУЖАЕМЫЕ ШРИФТЫ*/
+//font-family: 'PT Serif', serif;
+//font-family: 'Proxima Nova', sans-serif;
+
+@font-face {
+    font-family: 'Proxima Bold';
+    src: url('../fonts/proximanova-bold-webfont.eot');
+    src: url('../fonts/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-bold-webfont.woff2') format('woff2'),
+         url('../fonts/proximanova-bold-webfont.woff') format('woff'),
+         url('../fonts/proximanova-bold-webfont.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Proxima BoldIt';
+    src: url('../fonts/proximanova-boldit-webfont.eot');
+    src: url('../fonts/proximanova-boldit-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-boldit-webfont.woff2') format('woff2'),
+         url('../fonts/proximanova-boldit-webfont.woff') format('woff'),
+         url('../fonts/proximanova-boldit-webfont.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+
+}
+@font-face {
+    font-family: 'Proxima RegIt';
+    src: url('../fonts/proximanova-regit-webfont.eot');
+    src: url('../fonts/proximanova-regit-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-regit-webfont.woff2') format('woff2'),
+         url('../fonts/proximanova-regit-webfont.woff') format('woff'),
+         url('../fonts/proximanova-regit-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+
+}
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../fonts/proximanova-reg-webfont.eot');
+    src: url('../fonts/proximanova-reg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-reg-webfont.woff2') format('woff2'),
+         url('../fonts/proximanova-reg-webfont.woff') format('woff'),
+         url('../fonts/proximanova-reg-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*РАЗМЕРЫ ШРИФТОВ*/
+
+/*ЗАГОЛОВКИ*/
+h1{font-family:"Proxima Nova", serif; color:#000; font-size:3.4rem; font-weight:400; line-height: 135%;}
+h2{font-family:"Proxima Nova", serif; color:#000; font-size:2.4rem; font-weight:400; line-height: 135%;}
+h3{font-family:"Proxima Nova", serif; color:#000; font-size:2.0rem; font-weight:400; line-height: 135%;}
+
+
+
+body,html{
+	margin:0;
+	padding:0;
+}
+html{
+  font-size:95% !important;
+
+}
+body{
+  line-height: 135%;
+  font-family:"Proxima Nova", sans-serif;
+  font-size: 1.6rem;
+  color:@sea;
+}
+p{
+	margin-top:10px;
+	margin-bottom:10px;
+	line-height:135%;
+}
+
+/*ИМПОРТ*/
+@import url('common.less');
+@import url('structure.less');
+
+

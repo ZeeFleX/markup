@@ -1,0 +1,459 @@
+label{
+	display: block;
+}
+input[type="text"]{
+	.border_radius(4px);
+	.border_box;
+	display: block;
+	padding: 12px 12px;
+	position: relative;
+	background: @white;
+	font-size:1.0rem;
+	width: 100%;
+	border:solid 1px #18bd91;
+	color:@sea;
+	margin:10px auto;
+}
+input[type="submit"]{
+	.border_radius(4px);
+	display: block;
+	box-shadow:0 4px 0 0 #cc3a2f;
+	background: @red;
+	padding:10px 40px;
+	text-transform: uppercase;
+	border:none;
+	font-size:2.0rem;
+	font-family:"Proxima Bold", sans-serif;
+	font-weight:bold;
+	margin:10px auto;
+	cursor: pointer;
+}
+.pt{
+	font-family:"PT Serif", serif;
+	font-style: italic;
+}
+
+.wrapper{
+	.border_box;
+	overflow: hidden;
+	width: 80%;
+	height: auto;
+	max-width:1240px;
+	min-width:960px;
+	margin:auto;
+}
+header.panel{
+	background: @red;
+	text-align: center;
+	padding: 2px 0;
+	p{
+		font-family:"Proxima Bold", sans-serif;
+		text-transform: uppercase;
+		i{
+			margin:auto 10px;
+		}
+	}
+}
+section.header{
+	position: relative;
+	width: 100%;
+	height: 805px;
+	background: url('../images/header-bg.jpg') center center;
+	.wrapper{
+		h1{
+			font-family:"Proxima", sans-serif;
+			text-align: center;
+			text-transform: uppercase;
+			font-size:2.3rem;
+			font-weight:800;
+			margin-top: 40px;
+		}
+		form{
+			.border_box;
+			position: relative;
+			float: right;
+			width: 50%;
+			margin: 20px;
+			div.start{
+				position: relative;
+				color:@sea;
+				font-family:"PT Serif", serif;
+				font-weight:bold;
+				font-style:italic;
+				.arrow1{
+					position: absolute;
+					width: 43px;
+					height: 52px;
+					background: url('../images/arrow1.png') no-repeat;
+					left:50%;
+					margin-left: -21px;
+					bottom:-48px;
+				}
+			}
+			.field{
+				&.name{
+					margin-top: 55px;
+				}
+				label{
+					font-size:0.9rem;
+					margin-top: -10px;
+					margin-bottom: 20px;
+				}
+				&.submit{
+					input{
+						width: 100%;
+						text-align: center;
+					}
+					label{
+						margin-top: -5px;
+					}
+				}
+			}
+			.confirm-text{
+				position: relative;
+				margin-top: 50px;
+				.arrow2{
+					position: absolute;
+					width: 172px;
+					height: 125px;
+					background:url('../images/arrow2.png') no-repeat;
+					left:-60px;
+					top:-100px;
+				}
+				p{
+					font-size:2rem;
+					text-align: center;
+					.italic{
+						font-family:"PT Serif", serif;
+					}
+					.upper{
+						font-weight:bold;
+						font-family: "Proxima Bold", sans-serif;
+					}
+				}
+			}
+		}
+	}
+}
+section.section2{
+	background:url('../images/section2-bg.jpg') bottom center no-repeat;
+	padding-bottom: 40px;
+	h1{
+		margin-top:90px;
+		text-transform: uppercase;
+		font-family:"Proxima Bold", sans-serif;
+		text-align: center;
+	}
+	table.problems{
+		position: relative;
+		margin-top: 80px;
+		tr{
+			td{
+				vertical-align: top;
+				padding:4px 15px 20px 4px;
+			}
+		}
+	}
+}
+section.section3{
+	position: relative;
+	height: 700px;
+	background: url('../images/section3-bg.jpg') no-repeat center center;
+	h1{
+		text-align: center;
+		font-family:"Proxima Bold", sans-serif;
+		font-weight:800;
+		text-transform: uppercase;
+		font-size:3.8rem;
+		margin-top: 150px;
+		.pt{
+			text-transform: none;
+			font-family:"PT Serif", serif;
+		}
+	}
+}
+section.section4{
+	background: url('../images/section4-bg.jpg') center top no-repeat;
+	padding-top: 700px;
+	padding-bottom:100px;
+	h1{
+		text-align: center;
+		font-family:"Proxima Bold", sans-serif;
+		text-transform: uppercase;
+		font-weight:800;
+	}
+	.resume{
+		position: relative;
+		text-align: center;
+		width: 400px;
+		margin:60px auto 30px auto;
+		.arrow3{
+			position: absolute;
+			width: 97px;
+			height: 103px;
+			background: url('../images/arrow3.png') center center no-repeat;
+			left: -65px;
+			top: -65px;
+		}
+		p{
+			font-size:2.0rem;
+		}
+	}
+	.resume + p{
+		text-align: center;
+	}
+}
+section.section5{
+	padding-top: 120px;
+	padding-bottom: 200px;
+	background: url('../images/section5-bg.jpg') no-repeat top center;
+	.wrapper{
+		position: relative;
+		.left{
+			position: relative;
+			width: 60%;
+			p{
+				margin:35px 0;
+			}
+		}
+	}
+}
+section.section6{
+	position: relative;
+	background: url('../images/section6-bg.jpg') left center no-repeat;
+	.wrapper{
+		.right{
+			.border_box;
+			padding-left: 40px;
+			position: relative;
+			float: right;
+			padding-bottom: 30px;
+			width: 55%;
+			background: @white;
+			p{
+				margin:35px 0;
+			}
+		}
+	}
+}
+section.section7{
+	padding-bottom: 70px;
+	.wrapper{
+		.question{
+			position: relative;
+			width: 251px;
+			height: 296px;
+			background: url('../images/icons/question.png') center center no-repeat;
+			margin:100px auto;
+		}
+		h1{
+			text-transform: uppercase;
+			text-align: center;
+			font-family: "Proxima Bold", sans-serif;
+		}
+		p{
+			margin:35px 0;
+		}
+	}
+}
+section.section8{
+	position: relative;
+	height: 660px;
+	.bg-container{
+		position: absolute;
+		width: 50%;
+		height: 100%;
+		background: url('../images/green-bg.jpg');
+	}
+	.wrapper{
+		overflow: hidden;
+		height: 100%;
+		.left{
+			.border_box;
+			padding:40px;
+			position: relative;
+			float: left;
+			background: url('../images/green-bg.jpg');
+			width: 55%;
+			height: 100%;
+			h1{
+				font-family: "Proxima Bold", sans-serif;
+				font-weight:bold;
+				font-size:4rem;
+			}
+			ul{
+				.ul-clean;
+				li{
+					margin:20px 0;
+					padding-left:60px;
+					background:url('../images/icons/check.png') left 6px no-repeat;
+				}
+			}
+		}
+		.right{
+			position: relative;
+			float: right;
+			width: 45%;
+			height: 100%;
+			.photo-container{
+				.border_radius_4(0,10px,10px,0);
+				overflow: hidden;
+				height: 100%;
+				img{
+					display: block;
+					height: 100%;
+				}
+			}
+		}
+	}
+}
+section.section9{
+	background: url('../images/section9-bg.jpg') bottom center no-repeat;
+	padding-top: 90px;
+	padding-bottom: 240px;
+	.wrapper{
+		h1{
+			text-align: center;
+		}
+		table{
+			margin-top: 50px;
+			tr{
+				td{
+					vertical-align: top;
+					padding:4px 15px 30px 4px;
+					.number{
+						.border_radius(100%);
+						text-align: center;
+						border:solid 5px @green;
+						color:@green;
+						width:25px;
+						height: 24px;
+						padding-top: 1px;
+						font-size:0.9rem;
+						line-height:25px;
+						font-weight:bold;
+					}
+				}
+			}
+		}
+	}
+}
+section.section10{
+	background: #f3f3f3;
+	margin-top: -5px;
+	.head{
+		position: relative;
+		background: url('../images/green-bg.jpg');
+		.wrapper{
+			padding: 10px 0;
+			h1{
+				text-align: center;
+				font-family: "Proxima Bold", sans-serif;
+				font-weight:bold;
+				margin-bottom: 0;
+				padding-bottom: 0;
+			}
+		}
+	}
+	.separator{
+		height: 147px;
+		background: url('../images/arrow-bg.jpg') bottom center no-repeat;
+	}
+	.body{
+		height: 760px;
+		background: url('../images/section10-bg.jpg') bottom center no-repeat;
+		.wrapper{
+			h2{
+				color:@sea;
+				text-align: center;
+				font-weight:bold;
+				.red{
+					font-family:"Proxima Bold", sans-serif;
+					font-weight:bold;
+				}
+			}
+			form{
+				.border_box;
+				position: relative;
+				float: right;
+				width: 50%;
+				margin: 90px 20px;
+				div.start{
+					position: relative;
+					color:@sea;
+					font-family:"PT Serif", serif;
+					font-weight:bold;
+					font-style:italic;
+					.arrow1{
+						position: absolute;
+						width: 43px;
+						height: 52px;
+						background: url('../images/arrow1.png') no-repeat;
+						left:50%;
+						margin-left: -21px;
+						bottom:-48px;
+					}
+				}
+				.field{
+					&.name{
+						margin-top: 55px;
+					}
+					label{
+						font-size:0.9rem;
+						margin-top: -10px;
+						margin-bottom: 20px;
+					}
+					&.submit{
+						input{
+							width: 100%;
+							text-align: center;
+							color:@white;
+						}
+						label{
+							margin-top: -5px;
+						}
+					}
+				}
+				.confirm-text{
+					position: relative;
+					margin-top: 50px;
+					.arrow2{
+						position: absolute;
+						width: 172px;
+						height: 125px;
+						background:url('../images/arrow2.png') no-repeat;
+						left:-60px;
+						top:-100px;
+					}
+					p{
+						font-size:2rem;
+						text-align: center;
+						.italic{
+							font-family:"PT Serif", serif;
+						}
+						.upper{
+							font-weight:bold;
+							font-family: "Proxima Bold", sans-serif;
+						}
+					}
+				}
+			}
+		}
+	}
+	.ps{
+		position: relative;
+		text-align: center;
+		padding-top: 20px;
+		font-family:"Proxima Bold", sans-serif;
+		font-weight:bold;
+		padding-bottom: 20px;
+	}
+}
+footer{
+	background: @sea;
+	padding:10px 0;
+	p{
+		font-weight:bold;
+		font-size:1.4rem;
+	}
+}
