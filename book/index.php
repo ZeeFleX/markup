@@ -14,7 +14,7 @@
     <header class="panel">
         <p class="white">
             <i class="fa fa-exclamation-triangle"></i>
-            <span>Открыт секрет массовых неудач в личной жизни, карьере и бизнесе</span>
+            <span>Открыт секрет массовых неудач в личной жизни, карьере и бизнесе test</span>
             <i class="fa fa-exclamation-triangle"></i>
         </p>
     </header>
