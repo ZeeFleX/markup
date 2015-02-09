@@ -24,6 +24,9 @@
                 ЕСТЬ ВЕЩИ, ИГНОРИРОВАТЬ КОТОРЫЕ<br />
                 <span>ОПАСНО</span> ДЛЯ ЗДОРОВЬЯ
             </h1> 
+            <div class="player">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Gyag_XQxVts" frameborder="0" allowfullscreen></iframe>
+            </div>
             <form action="index.php" method="POST">
                 <div class="start">
                     
