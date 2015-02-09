@@ -3,7 +3,7 @@
 <html>
     <head>
 		<meta charset="utf-8" />
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet/less" type="text/css" href="less/styles.less">
         <!-- <link rel="stylesheet" type="text/css" href="css/styles.css"> -->
