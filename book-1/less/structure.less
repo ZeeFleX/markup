@@ -1,0 +1,540 @@
+label{
+	display: block;
+}
+input[type="text"]{
+	.border_radius(4px);
+	.border_box;
+	display: block;
+	padding: 12px 12px;
+	position: relative;
+	background: @white;
+	font-size:1.8rem;
+	width: 100%;
+	border:solid 1px #fff;
+	color:@sea;
+	margin:10px auto;
+	margin-bottom: 30px;
+}
+input[type="submit"]{
+	.border_radius(4px);
+	display: block;
+	box-shadow:0 4px 0 0 @blue - #222;
+	background: @blue;
+	padding:10px 40px;
+	text-transform: uppercase;
+	border:none;
+	font-size:3.6rem;
+	font-family:"Proxima Bold", sans-serif;
+	font-weight:bold;
+	margin:10px auto;
+	cursor: pointer;
+}
+.pt{
+	font-family:"PT Serif", serif;
+	font-style: italic;
+}
+
+.wrapper{
+	.border_box;
+	overflow: hidden;
+	width: 80%;
+	height: auto;
+	max-width:1180px;
+	min-width:960px;
+	margin:auto;
+}
+header.panel{
+	background: @blue;
+	text-align: center;
+	padding: 2px 0;
+	p{
+		font-family:"Proxima Bold", sans-serif;
+		text-transform: uppercase;
+		i{
+			margin:auto 25px;
+		}
+	}
+}
+section.header{
+	position: relative;
+	width: 100%;
+	height: 805px;
+	background: url('../images/header-bg.jpg') center center;
+	.wrapper{
+		h1{
+			font-family:"Proxima", sans-serif;
+			text-align: center;
+			text-transform: uppercase;
+			font-size:4.0rem;
+			font-weight:800;
+			margin-top: 40px;
+			span{
+				background: @red;
+				padding:0 10px;
+			}
+		}
+		form{
+			.border_box;
+			position: relative;
+			float: right;
+			width: 50%;
+			margin: 20px;
+			div.start{
+				position: relative;
+				color:@white;
+				font-family:"Proxima BoldIt", serif;
+				font-weight:bold;
+				font-style:italic;
+				font-size:2.4rem;
+				span{
+					position: relative;
+				}
+				.arrow1{
+					position: absolute;
+					width: 43px;
+					height: 52px;
+					background: url('../images/arrow1.png') no-repeat;
+					  left: 105%;
+					  /* margin-left: -21px; */
+					  top: 15px;
+				}
+			}
+			.field{
+				&.name{
+					margin-top: 55px;
+				}
+				label{
+					font-size:1.4rem;
+					margin-top: -10px;
+				}
+				&.submit{
+					input{
+						width: 100%;
+						text-align: center;
+					}
+					label{
+						margin-top: -5px;
+						text-align: center;
+						color:#949fa0;
+						line-height: 150%;
+						margin-top: 12px;
+					}
+				}
+			}
+			.confirm-text{
+				position: relative;
+				margin-top: 30px;
+				.arrow2{
+					position: absolute;
+					width: 33%;
+					height: 125px;
+					background:url('../images/arrow2.png') no-repeat;
+					left:-60px;
+					top:-100px;
+				}
+				p{
+					display: block;
+					float: left;
+					left: 50%;
+					font-size:2.4rem;
+					text-align: center;
+					
+					
+					position: relative;
+					z-index: 1;
+					& > span{
+						position: relative;
+						display: block;
+						float: right;
+						right: 50%;
+						background: url('../images/label-bg.jpg');
+						padding-right: 5px;
+						padding-left: 5px;
+						span{
+						}
+					}
+					.italic{
+						font-family:"PT Serif", serif;
+					}
+					.upper{
+						font-weight:bold;
+						font-family: "Proxima Bold", sans-serif;
+					}
+				}
+			}
+		}
+	}
+}
+section.section2{
+	background:url('../images/section2-bg.jpg') bottom center no-repeat;
+	padding-bottom: 40px;
+	h1{
+		margin-top:90px;
+		text-transform: uppercase;
+		font-family:"Proxima Bold", sans-serif;
+		text-align: center;
+		font-size:6.0rem;
+		color:@blue_dark;
+	}
+	table.problems{
+		position: relative;
+		margin-top: 80px;
+		tr{
+			td{
+				vertical-align: top;
+				padding:4px 15px 20px 4px;
+			}
+		}
+	}
+}
+section.section3{
+	position: relative;
+	height: 700px;
+	background: url('../images/section3-bg.jpg') no-repeat center center;
+	.wrapper{
+		width: 1180px !important;
+	}
+	h1{
+		text-align: center;
+		font-family:"Proxima", sans-serif;
+		font-weight:800;
+		text-transform: uppercase;
+		font-size:4.8rem;
+		margin-top: 150px;
+		.pt{
+			text-transform: none;
+			font-family:"PT Serif", serif;
+			font-weight:400;
+		}
+	}
+}
+section.section4{
+	background: url('../images/section4-bg.jpg') center top no-repeat;
+	padding-top: 700px;
+	padding-bottom:100px;
+	h1{
+		text-align: center;
+		font-family:"Proxima Bold", sans-serif;
+		text-transform: uppercase;
+		font-size:6.0rem;
+		font-weight:900;
+		color:@blue_dark;
+		span.red{
+			font-family: "Proxima", sans-serif;
+		}
+	}
+	.resume{
+		position: relative;
+		text-align: center;
+		width: 400px;
+		margin:60px auto 30px auto;
+		.arrow3{
+			position: absolute;
+			width: 97px;
+			height: 103px;
+			background: url('../images/arrow3.png') center center no-repeat;
+			left: -93px;
+			top: -65px;
+		}
+		p{
+			font-size:3.6rem;
+			color:@green;
+		}
+	}
+	.resume + p{
+		font-size:3.0rem;
+		text-align: left;
+		span.sea{
+			
+			font-weight:700;
+		}
+	}
+}
+section.section5{
+	padding-top: 120px;
+	background: url('../images/section5-bg.jpg') no-repeat top center;
+	background-size: cover;
+	.wrapper{
+		position: relative;
+		font-size:3.0rem;
+		.left{
+			position: relative;
+			width: 60%;
+			p{
+				margin:35px 0;
+			}
+		}
+	}
+}
+section.section6{
+	position: relative;
+	background: url('../images/section6-bg.jpg') left top no-repeat #f3f3f3;
+	background-size:contain;
+	.wrapper{
+
+		h1{
+			font-size:7.2rem;
+			margin-bottom:20px;
+			font-family: "Proxima", sans-serif;
+			font-weight:800;
+			color:@blue_dark;
+		}
+		.right{
+			.border_box;
+			padding-top:1px;
+			padding-left: 40px;
+			position: relative;
+			float: right;
+			padding-bottom: 30px;
+			font-size:3.0rem;
+			width: 55%;
+			background: #f3f3f3;
+			p{
+				margin:25px 0;
+			}
+		}
+	}
+}
+section.section7{
+	padding-bottom: 70px;
+	.wrapper{
+		.question{
+			position: relative;
+			width: 251px;
+			height: 296px;
+			background: url('../images/icons/question.png') center center no-repeat;
+			margin:100px auto;
+		}
+		h1{
+			text-transform: uppercase;
+			text-align: center;
+			font-family: "Proxima Bold", sans-serif;
+			font-size:6.0rem;
+			margin-bottom:10px;
+			color:@blue_dark;
+			span.bold{
+				font-family: "Proxima", sans-serif;
+				font-weight:800;
+			}
+		}
+		p{
+			margin:15px 0;
+			font-size:3.0rem;
+			color:#7f8c8d;
+		}
+	}
+}
+section.section8{
+	position: relative;
+	height: 660px;
+	.bg-container{
+		position: absolute;
+		width: 50%;
+		height: 100%;
+		background: url('../images/blue-bg.png');
+	}
+	.wrapper{
+		overflow: hidden;
+		height: 100%;
+		.left{
+			.border_box;
+			padding:40px;
+			padding-left: 0;
+			position: relative;
+			float: left;
+			background: url('../images/blue-bg.png');
+			width: 55%;
+			height: 100%;
+			h1{
+				font-family: "Proxima", sans-serif;
+				font-weight:bold;
+				font-size:7rem;
+				margin:20px 0;
+				font-weight:800;
+			}
+			ul{
+				.ul-clean;
+				li{
+					margin:20px 0;
+					padding-left:60px;
+					background:url('../images/icons/check.png') left 6px no-repeat;
+				}
+			}
+		}
+		.right{
+			position: relative;
+			float: right;
+			width: 45%;
+			height: 100%;
+			.photo-container{
+				.border_radius_4(0,10px,10px,0);
+				overflow: hidden;
+				height: 100%;
+				img{
+					display: block;
+					height: 100%;
+				}
+			}
+		}
+	}
+}
+section.section9{
+	background: url('../images/section9-bg.jpg') bottom center no-repeat;
+	padding-top: 70px;
+	padding-bottom: 240px;
+	.wrapper{
+		h1{
+			text-align: center;
+			font-size:6.0rem;
+			color:@blue_dark;
+		}
+		table{
+			margin-top: 50px;
+			tr{
+				td{
+					vertical-align: top;
+					padding:4px 15px 30px 4px;
+					.number{
+						.border_radius(100%);
+						text-align: center;
+						border:solid 5px @green;
+						color:@green;
+						width:25px;
+						height: 24px;
+						padding-top: 1px;
+						font-size:1.4rem;
+						line-height:25px;
+						font-weight:bold;
+					}
+				}
+			}
+		}
+	}
+}
+section.section10{
+	background: #f3f3f3;
+	margin-top: -5px;
+	.head{
+		position: relative;
+		background: url('../images/light-blue-bg.png');
+		.wrapper{
+			padding: 10px 0;
+			width: 1100px !important;
+			h1{
+				text-align: center;
+				font-family: "Proxima Bold", sans-serif;
+				font-weight:bold;
+				margin-bottom: 0;
+				padding-bottom: 0;
+				font-size:6.0rem;
+				span{
+					color:@blue_dark;
+				}
+			}
+		}
+	}
+	.separator{
+		height: 139px;
+		background: url('../images/arrow-bg.jpg') bottom center no-repeat;
+	}
+	.body{
+		height: 760px;
+		background: url('../images/section10-bg.jpg') bottom center no-repeat;
+		.wrapper{
+			h2{
+				color:@sea;
+				text-align: center;
+				font-weight:bold;
+				font-size:4.0rem;
+				.red{
+					font-family:"Proxima", sans-serif;
+					font-weight:800;
+				}
+			}
+			form{
+				.border_box;
+				position: relative;
+				float: right;
+				width: 50%;
+				margin: 90px 20px;
+				div.start{
+					position: relative;
+					color:@sea;
+					font-family:"PT Serif", serif;
+					font-weight:bold;
+					font-style:italic;
+					.arrow1{
+						position: absolute;
+						width: 43px;
+						height: 52px;
+						background: url('../images/arrow1.png') no-repeat;
+						left:50%;
+						margin-left: -21px;
+						bottom:-48px;
+					}
+				}
+				.field{
+					&.name{
+						margin-top: 55px;
+					}
+					label{
+						font-size:1.4rem;
+						margin-top: -10px;
+						margin-bottom: 20px;
+					}
+					&.submit{
+						input{
+							width: 100%;
+							text-align: center;
+							color:@white;
+						}
+						label{
+							margin-top: -5px;
+							text-align: center;
+						}
+					}
+				}
+				.confirm-text{
+					position: relative;
+					margin-top: 50px;
+					.arrow2{
+						position: absolute;
+						width: 172px;
+						height: 125px;
+						background:url('../images/arrow2.png') no-repeat;
+						left:-60px;
+						top:-100px;
+					}
+					p{
+						font-size:2rem;
+						text-align: center;
+						.italic{
+							font-family:"PT Serif", serif;
+						}
+						.upper{
+							font-weight:bold;
+							font-family: "Proxima Bold", sans-serif;
+						}
+					}
+				}
+			}
+		}
+	}
+	.ps{
+		position: relative;
+		text-align: center;
+		padding-top: 20px;
+		font-family:"Proxima Bold", sans-serif;
+		font-weight:bold;
+		padding-bottom: 20px;
+		color:@blue_dark;
+	}
+}
+footer{
+	background: #2c3e50;
+	padding:10px 0;
+	p{
+		font-weight:bold;
+		font-size:2.4rem;
+	}
+}
