@@ -1,0 +1,61 @@
+/*ГЛОБАЛЬНЫЕ ПЕРЕМЕННЫЕ*/
+
+/*ЦВЕТОВАЯ СХЕМА*/
+@white: #fff; //Белый цвет
+@sea: #51727d; //Морской
+@red: #f35347; //Красный
+@green: #35d9ad; //Зеленый
+@blue: #3498db; //Синий
+@blue_dark: #2c3e50; //Тёмно-Синий
+
+.white{
+  color:@white;
+}
+.sea{
+  color:@sea;
+}
+.red{
+  color:@red;
+}
+.green{
+  color:@green;
+}
+.blue_dark{
+  color:@blue_dark;
+}
+
+
+/*РАЗМЕРЫ ШРИФТОВ*/
+
+/*ЗАГОЛОВКИ*/
+h1{font-family:"Open Sans", serif; color:#000; font-size:3.4rem; font-weight:400; line-height: 135%;}
+h2{font-family:"Open Sans", serif; color:#000; font-size:2.4rem; font-weight:400; line-height: 135%;}
+h3{font-family:"Open Sans", serif; color:#000; font-size:2.0rem; font-weight:400; line-height: 135%;}
+
+
+
+body,html{
+	margin:0;
+	padding:0;
+}
+html{
+  font-size:62.5% !important;
+
+}
+body{
+  line-height: 135%;
+  font-family:"Open Sans", sans-serif;
+  font-size: 2.4rem;
+  color:@sea;
+}
+p{
+	margin-top:10px;
+	margin-bottom:10px;
+	line-height:135%;
+}
+
+/*ИМПОРТ*/
+@import url('common.less');
+@import url('structure.less');
+
+
