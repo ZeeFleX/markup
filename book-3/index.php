@@ -7,22 +7,26 @@
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet/less" type="text/css" href="less/styles.less">
         <!-- <link rel="stylesheet" type="text/css" href="css/styles.css"> -->
+        <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
         <script src="js/less.min.js"></script>
+        <script src="js/main.js"></script>
 </head>
 
 <body>
+      <div class="jc_subblock_0 jc_subblocktexture_0" id="subscr-block-4673">
    	<section class="intro">
    		<div class="wrapper">
    			<div class="right">
    				<div class="corner"></div>
    				<p><span class="marked">Получите бесплатно</span><br />видео-семинар<br />Константина Довлатова</p>
 	   			<h3>Бегство от счастья</h3>
-	   			<form action="index.php">
+               <!-- onsubmit="return jc_chkscrfrm(this, false, false, false, false)" -->
+               <form action="http://dowlatow.justclick.ru/subscribe/process/?rid[0]=seminar" method="POST" target="_blank" id="subscr-form-4673" >
 	   				<div class="field name">
-	   					<input type="text" name="name" placeholder="Ваше имя" />
+                     <input type="text" name="lead_name" placeholder="Введите ваше имя"  onblur='if(this.value=="") this.placeholder="Введите ваше имя"'  onfocus='if(this.placeholder=="Введите ваше имя") this.placeholder=""'/> 
 	   				</div>
 	   				<div class="field email">
-	   					<input type="text" name="email" placeholder="Ваш email" />
+                     <input type="text" name="lead_email" placeholder="Введите ваш e-mail" onblur='if(this.value=="") this.placeholder="Введите ваш e-mail"'  onfocus='if(this.placeholder=="Введите ваш e-mail") this.placeholder=""'/> 
 	   				</div>
 	   				<input type="submit" value="Получить доступ" />
 	   				<p class="endnote">
