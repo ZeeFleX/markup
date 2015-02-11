@@ -13,23 +13,21 @@ input[type="text"]{
 	border:solid 1px #fff;
 	color:@sea;
 	margin:10px auto;
-	margin-bottom: 30px;
 }
 input[type="submit"]{
 	.border_radius(4px);
 	display: block;
-	box-shadow:0 4px 0 0 @blue - #222;
-	background: @blue;
-	padding:10px 40px;
-	text-transform: uppercase;
+	background: #e74c3c;
+	padding:12px 40px;
 	border:none;
-	font-size:3.6rem;
+	font-size:1.7rem;
 	font-family:"Open Sans", sans-serif;
-	font-weight:bold;
-	margin:10px auto;
+	font-weight:600;
 	cursor: pointer;
+	color:#fff;
+	margin:10px 0;
 	&:hover{
-		background: @blue - #111;
+		background: #e74c3c - #111;
 	}
 }
 html, body{
@@ -48,7 +46,7 @@ body{
 	width: 80%;
 	height: auto;
 	max-width:1180px;
-	min-width:960px;
+	min-width:860px;
 	margin:auto;
 }
 section.page{
@@ -56,74 +54,111 @@ section.page{
 	width: 100%;
 	height:100%;
 	background: url('../images/header-bg.jpg') center center;
+	.window-container{
+		position: fixed;
+		top:0;
+		left:0;
+		z-index: 3;
+		width: 100%;
+		height: 100%;
+		background: url('../images/fader.png');
+		display:none;
+		.window{
+			position: relative;
+			margin:auto;
+			width: 860px;
+			height: 600px;
+			top:50%;
+			margin-top:-300px;
+			#player{
+				width: 100%;
+				height: 100%;
+			}
+			.close{
+				position: absolute;
+				right:-50px;
+				top:-40px;
+				width: 27px;
+				height: 27px;
+				cursor: pointer;
+				background: url('../images/icons/close.png');
+			}
+		}
+	}
 	.texture{
 		width: 100%;
 		height: 100%;
 		position: fixed;
+		top:0;
+		left:0;
 		z-index: 1;
 		background: url('../images/texture-strong.png');
 	}
+	video{
+		position: fixed;
+		top:0;
+		left:0;
+		min-width: 100%;
+		min-height: 100%;
+	}
 	.wrapper{
 		position: relative;
-		width: 960px;
+		width: 860px;
 		height: 600px;
 		margin-left:auto;
 		margin-right:auto;
 		top:50%;
 		margin-top:-300px;
+		z-index: 2;
+		h1{
+			font-size:2.5rem;
+			color:#fff;
+			font-weight:700;
+			text-align: center;
+		}
+		h2{
+			font-size:3.6rem;
+			font-weight:600;
+			text-align: center;
+			color:#fff;
+			text-transform: uppercase;
+		}
+		.play.icon{
+			width: 67px;
+			height: 67px;
+			margin:85px auto;
+			background: url('../images/icons/play.png');
+			cursor: pointer;
+		}
+		p.endnote{
+			color:#fff;
+			font-size:3.0rem;
+			text-align: center;
+			font-weight: 300;
+		}
 		form{
 			.border_box;
 			position: relative;
-			float: right;
-			width: 42%;
-			margin: 20px;
-			div.start{
+			width: 100%;
+			input[type="text"]{
 				position: relative;
-				color:@white;
-				font-family:"Open Sans", serif;
-				font-weight:bold;
-				font-size:1.8rem;
-				font-weight: 600;
-				text-align: left;
-				span{
-					position: relative;
-				}
-				i.arrow-container{
-					position: relative;
-					.arrow1{
-						position: absolute;
-						width: 43px;
-						height: 52px;
-						background: url('../images/arrow1.png') no-repeat;
-						  left: 10px;
-						  /* margin-left: -21px; */
-						  top: 15px;
-					}
-				}
+				float: left;
+				display: block;
+				width: 27%;
+				margin-right:3%;
+				color:#000;
 			}
-			.field{
-				&.name{
-				}
-				label{
-					font-size:1.4rem;
-					margin-top: -10px;
-				}
-				&.submit{
-					input{
-						width: 100%;
-						text-align: center;
-						margin-top: 50px;
-						font-size:3.0rem;
-					}
-					label{
-						margin-top: -5px;
-						text-align: center;
-						color:#949fa0;
-						line-height: 150%;
-						margin-top: 12px;
-					}
-				}
+			input[type="submit"]{
+				position: relative;
+				float: left;
+				display: block;
+				width: 40%;
 			}
+		}
+		p.confidencial{
+			text-align: center;
+			color:rgba(139, 158, 176, 0.8);
+			font-size:1.4rem;
 		}
 	}
 }
