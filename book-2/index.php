@@ -8,6 +8,7 @@
         <link rel="stylesheet/less" type="text/css" href="less/styles.less">
         <!-- <link rel="stylesheet" type="text/css" href="css/styles.css"> -->
         <script src="js/less.min.js"></script>
+        <script src="js/main.js"></script>
 </head>
 
 <body>
@@ -18,6 +19,7 @@
             <i class="fa fa-exclamation-triangle"></i>
         </p>
     </header>
+    <div class="jc_subblock_0 jc_subblocktexture_0" id="subscr-block-4673">
     <section class="header">
         <div class="wrapper">
             <h1 class="white">
@@ -25,21 +27,20 @@
                 <span>ОПАСНО</span> ДЛЯ ЗДОРОВЬЯ
             </h1> 
             <div class="player">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Gyag_XQxVts" frameborder="0" allowfullscreen></iframe>
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/p4xqIucDAcQ" frameborder="0" allowfullscreen></iframe>
             </div>
-            <form action="index.php" method="POST">
+            <form action="http://dowlatow.justclick.ru/subscribe/process/?rid[0]=182" method="POST" target="_blank" id="subscr-form-4673" >
                 <div class="start">
-                    
                     <span>Заполните форму ниже и откройте, как быстро</span> <span>наладить свою жизнь:<i class="arrow-container"><div class="arrow1"></div></i></span>
                 </div>
                 <div class="field name">
-                    <input type="text" name="name" placeholder="Ваше имя..."/> 
+                    <input type="text" name="lead_name" placeholder="Введите ваше имя"  onblur='if(this.value=="") this.placeholder="Введите ваше имя"'  onfocus='if(this.placeholder=="Введите ваше имя") this.placeholder=""'/> 
                 </div>
                 <div class="field email">
-                    <input type="text" name="email" placeholder="Ваш действующий email..."/> 
+                    <input type="text" name="lead_email" placeholder="Введите ваш e-mail" onblur='if(this.value=="") this.placeholder="Введите ваш e-mail"'  onfocus='if(this.placeholder=="Введите ваш e-mail") this.placeholder=""'/> 
                 </div>
                 <div class="field submit">
-                    <input class="white" type="submit" value="ПОЛУЧИТЬ КНИГУ" />
+                    <input class="white jc_compile_btn" type="submit" value="ПОЛУЧИТЬ КНИГУ" />
                     <label for="submit">Мы против спама и гарантируем конфиденциальность Ваших личных данных</label>
                 </div>
                 <div class="confirm-text white">
@@ -250,13 +251,13 @@
                     Заполните форму ниже, чтобы получить<br />
                     новую книгу Константина Довлатова <span class="upper red">бесплатно</span>
                 </h2>
-                <form action="index.php" method="POST">
+                <form action="http://dowlatow.justclick.ru/subscribe/process/?rid[0]=seminar" method="POST" target="_blank" id="subscr-form-4673" >
                     <div class="field name">
-                        <input type="text" name="name" placeholder="Ваше имя..."/> 
+                        <input type="text" name="lead_name" placeholder="Введите ваше имя"  onblur='if(this.value=="") this.placeholder="Введите ваше имя"'  onfocus='if(this.placeholder=="Введите ваше имя") this.placeholder=""'/> 
                         <label for="name">Чтобы знать, как к Вам обращаться.</label>
                     </div>
                     <div class="field email">
-                        <input type="text" name="email" placeholder="Ваш действующий email..."/> 
+                        <input type="text" name="lead_email" placeholder="Введите ваш e-mail" onblur='if(this.value=="") this.placeholder="Введите ваш e-mail"'  onfocus='if(this.placeholder=="Введите ваш e-mail") this.placeholder=""'/> 
                         <label for="name">На него вы получите книгу.</label>
                     </div>
                     <div class="field submit">
@@ -281,5 +282,9 @@
             </p>
         </div>
     </footer>
+<div id="clickfrog_counter_container" style="width:0px;height:0px;overflow:hidden;"></div><script type="text/javascript">(function(d, w) {var clickfrog = function() {if(!d.getElementById('clickfrog_js_container')) {var sc = document.createElement('script');sc.type = 'text/javascript';sc.async = true;sc.src = "//stat.clickfrog.ru/c.js?r="+Math.random();sc.id = 'clickfrog_js_container';var c = document.getElementById('clickfrog_counter_container');c.parentNode.insertBefore(sc, c);}};if(w.opera == "[object Opera]"){d.addEventListener("DOMContentLoaded",clickfrog,false);}else {clickfrog();}})(document, window);</script><noscript><div style="width:0px;height:0px;overflow:hidden;"><img src="//stat.clickfrog.ru/no_script.php?img" style="width:0px; height:0px;" alt=""/></div></noscript><script type="text/javascript">var clickfrogru_uidh='03083942f06aac7b92739397121382cc';</script>
+<?php 
+    include_once('clickfrogru_udp_tcp.php');
+?>
 </body>
 </html>

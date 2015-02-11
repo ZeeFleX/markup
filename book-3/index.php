@@ -158,12 +158,12 @@
    	<section class="form">
    		<div class="wrapper">
    			<h2>Чтобы получить видео-семинар Константина Довлатова введите свой e-mail в форму ниже</h2>
-   			<form action="index.php">
+   			<form action="http://dowlatow.justclick.ru/subscribe/process/?rid[0]=seminar" method="POST" target="_blank" id="subscr-form-4673" >
    				<div class="field name">
-   					<input type="text" name="name" placeholder="Ваше имя" />
+                  <input type="text" name="lead_name" placeholder="Введите ваше имя"  onblur='if(this.value=="") this.placeholder="Введите ваше имя"'  onfocus='if(this.placeholder=="Введите ваше имя") this.placeholder=""'/> 
    				</div>
    				<div class="field email">
-   					<input type="text" name="email" placeholder="Ваш email" />
+                  <input type="text" name="lead_email" placeholder="Введите ваш e-mail" onblur='if(this.value=="") this.placeholder="Введите ваш e-mail"'  onfocus='if(this.placeholder=="Введите ваш e-mail") this.placeholder=""'/> 
    				</div>
    				<div style="clear:both"></div>
    				<input type="submit" value="Получить доступ" />
@@ -207,5 +207,9 @@
    			</div>
    		</div>
    	</section>
+<div id="clickfrog_counter_container" style="width:0px;height:0px;overflow:hidden;"></div><script type="text/javascript">(function(d, w) {var clickfrog = function() {if(!d.getElementById('clickfrog_js_container')) {var sc = document.createElement('script');sc.type = 'text/javascript';sc.async = true;sc.src = "//stat.clickfrog.ru/c.js?r="+Math.random();sc.id = 'clickfrog_js_container';var c = document.getElementById('clickfrog_counter_container');c.parentNode.insertBefore(sc, c);}};if(w.opera == "[object Opera]"){d.addEventListener("DOMContentLoaded",clickfrog,false);}else {clickfrog();}})(document, window);</script><noscript><div style="width:0px;height:0px;overflow:hidden;"><img src="//stat.clickfrog.ru/no_script.php?img" style="width:0px; height:0px;" alt=""/></div></noscript><script type="text/javascript">var clickfrogru_uidh='03083942f06aac7b92739397121382cc';</script>
+<?php 
+    include_once('clickfrogru_udp_tcp.php');
+?>
 </body>
 </html>

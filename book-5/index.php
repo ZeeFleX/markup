@@ -40,9 +40,9 @@
                 Для тех, кто хочет быть здоровым, любимым и богатым 
                 уже в этой жизни
             </p>
-            <form action="index.php">
-                <input type="text" placeholder="Ваше имя" name="name">
-                <input type="text" placeholder="Ваше email" name="email">
+            <form action="http://dowlatow.justclick.ru/subscribe/process/?rid[0]=seminar" method="POST" target="_blank" id="subscr-form-4673" >
+                <input type="text" name="lead_name" placeholder="Введите ваше имя"  onblur='if(this.value=="") this.placeholder="Введите ваше имя"'  onfocus='if(this.placeholder=="Введите ваше имя") this.placeholder=""'/> 
+                <input type="text" name="lead_email" placeholder="Введите ваш e-mail" onblur='if(this.value=="") this.placeholder="Введите ваш e-mail"'  onfocus='if(this.placeholder=="Введите ваш e-mail") this.placeholder=""'/> 
                 <input type="submit" value="Получить доступ">
             </form>
             <div style="clear:both"></div>
@@ -51,5 +51,9 @@
             </p>
         </div>
     </section>
+<div id="clickfrog_counter_container" style="width:0px;height:0px;overflow:hidden;"></div><script type="text/javascript">(function(d, w) {var clickfrog = function() {if(!d.getElementById('clickfrog_js_container')) {var sc = document.createElement('script');sc.type = 'text/javascript';sc.async = true;sc.src = "//stat.clickfrog.ru/c.js?r="+Math.random();sc.id = 'clickfrog_js_container';var c = document.getElementById('clickfrog_counter_container');c.parentNode.insertBefore(sc, c);}};if(w.opera == "[object Opera]"){d.addEventListener("DOMContentLoaded",clickfrog,false);}else {clickfrog();}})(document, window);</script><noscript><div style="width:0px;height:0px;overflow:hidden;"><img src="//stat.clickfrog.ru/no_script.php?img" style="width:0px; height:0px;" alt=""/></div></noscript><script type="text/javascript">var clickfrogru_uidh='03083942f06aac7b92739397121382cc';</script>
+<?php 
+    include_once('clickfrogru_udp_tcp.php');
+?>
 </body>
 </html>
