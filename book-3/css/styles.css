@@ -1,0 +1,647 @@
+@import url('http://dowlatow.justclick.ru/media/css/page_ext.css');
+/*ГЛОБАЛЬНЫЕ ПЕРЕМЕННЫЕ*/
+/*ЦВЕТОВАЯ СХЕМА*/
+/*РАЗМЕРЫ ШРИФТОВ*/
+/*ЗАГОЛОВКИ*/
+/* line 17, styles.less */
+h1 {
+  font-family: "Open Sans", serif;
+  color: #000;
+  font-size: 3.4rem;
+  font-weight: 400;
+  line-height: 135%;
+}
+/* line 18, styles.less */
+h2 {
+  font-family: "Open Sans", serif;
+  color: #000;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 135%;
+}
+/* line 19, styles.less */
+h3 {
+  font-family: "Open Sans", serif;
+  color: #000;
+  font-size: 2.0rem;
+  font-weight: 400;
+  line-height: 135%;
+}
+/* line 23, styles.less */
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+/* line 27, styles.less */
+html {
+  font-size: 62.5% !important;
+}
+/* line 31, styles.less */
+body {
+  line-height: 135%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  color: #7f8c8d;
+}
+/* line 37, styles.less */
+p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 135%;
+}
+/*ИМПОРТ*/
+/*КЛАССЫ*/
+/* line 2, common.less */
+.italic {
+  font-style: italic;
+}
+/* line 5, common.less */
+.bold {
+  font-weight: bold;
+}
+/* line 9, common.less */
+input:focus,
+textarea:focus {
+  outline: none;
+}
+/*МИКСИНЫ*/
+/* line 36, common.less */
+.upper {
+  text-transform: uppercase;
+}
+/* line 39, common.less */
+.lower {
+  text-transform: lowercase;
+}
+/* line 42, common.less */
+.underline {
+  text-decoration: underline;
+}
+/* line 1, structure.less */
+input[type="text"] {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  display: block;
+  color: #000000;
+  padding: 12px;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 10px 0;
+  width: 100%;
+}
+/* line 17, structure.less */
+input[type="submit"] {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  display: block;
+  color: #000000;
+  padding: 13px 25px;
+  background: #fff446;
+  border: none;
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin: 10px 0;
+  cursor: pointer;
+  width: 100%;
+}
+/* line 34, structure.less */
+input[type="submit"]:hover {
+  background: #eee335;
+}
+/* line 38, structure.less */
+section > .wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 1200px;
+  margin: auto;
+}
+/* line 48, structure.less */
+section.intro .left {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  background: url('../images/intro-bg.jpg') no-repeat center left;
+  background-size: cover;
+  color: #ffffff;
+  height: 800px;
+  padding: 45px 105px;
+}
+/* line 58, structure.less */
+section.intro .left p {
+  line-height: 150%;
+  color: rgba(255, 255, 255, 0.7);
+}
+/* line 62, structure.less */
+section.intro .left h1 {
+  color: #fefefe;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+/* line 68, structure.less */
+section.intro .left p.endnote {
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+/* line 74, structure.less */
+section.intro .left h2 {
+  font-size: 4.8rem;
+  font-weight: 300;
+  color: #ffffff;
+  margin: 20px 0;
+}
+/* line 80, structure.less */
+section.intro .left ul {
+  padding: 0;
+  list-style: none;
+  margin-top: 40px;
+  color: rgba(255, 255, 255, 0.7);
+}
+/* line 85, structure.less */
+section.intro .left ul li {
+  background: url('../images/icons/question-icon.png') left top no-repeat;
+  padding-left: 60px;
+  letter-spacing: 1px;
+  line-height: 150%;
+  font-size: 1.8rem;
+  padding-left: 80px;
+  margin-bottom: 35px;
+}
+/* line 96, structure.less */
+section.intro .right {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  position: relative;
+  float: right;
+  width: 450px;
+  background: #e74c3c;
+  height: 800px;
+  border-left: solid 4px #ffffff;
+  padding: 80px 100px;
+}
+/* line 106, structure.less */
+section.intro .right .corner {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 28px;
+  height: 28px;
+  background: url('../images/elements/corner.png') no-repeat;
+}
+/* line 114, structure.less */
+section.intro .right p {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+  line-height: 170%;
+}
+/* line 121, structure.less */
+section.intro .right p span.marked {
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  background: #fff446;
+  color: #e74c3c;
+  padding: 2px 7px;
+}
+/* line 131, structure.less */
+section.intro .right h3 {
+  font-size: 2.2rem;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+}
+/* line 137, structure.less */
+section.intro .right form {
+  width: 220px;
+  margin: auto;
+  margin-top: 60px;
+}
+/* line 141, structure.less */
+section.intro .right form input[type="submit"] {
+  color: #e74c3c;
+}
+/* line 144, structure.less */
+section.intro .right form p.endnote {
+  font-size: 1.3rem;
+  color: rgba(236, 211, 211, 0.8);
+  font-weight: normal;
+  text-transform: none;
+  line-height: 135%;
+  margin-top: 30px;
+}
+/* line 153, structure.less */
+section.intro .right .read-more {
+  width: 100%;
+  position: relative;
+  margin-top: 70px;
+}
+/* line 157, structure.less */
+section.intro .right .read-more .mouse {
+  position: relative;
+  width: 46px;
+  height: 73px;
+  margin: auto;
+  background: url('../images/elements/mouse.png');
+}
+/* line 164, structure.less */
+section.intro .right .read-more p {
+  font-size: 1.3rem;
+}
+/* line 171, structure.less */
+section.about .wrapper {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 100px 130px;
+}
+/* line 175, structure.less */
+section.about .wrapper .left {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  position: relative;
+  float: left;
+  width: 55%;
+  padding-right: 50px;
+}
+/* line 182, structure.less */
+section.about .wrapper .left p {
+  font-size: 3.0rem;
+  color: #34495e;
+  font-weight: bold;
+  margin: 0;
+}
+/* line 188, structure.less */
+section.about .wrapper .left h3 {
+  font-weight: 300;
+  margin: 0;
+  font-size: 3.0rem;
+  color: #34495e;
+}
+/* line 194, structure.less */
+section.about .wrapper .left ul {
+  padding: 0;
+  list-style: none;
+  margin-top: 40px;
+}
+/* line 198, structure.less */
+section.about .wrapper .left ul li {
+  padding-left: 45px;
+  font-size: 1.8rem;
+  color: #7f8c8d;
+  line-height: 150%;
+  background: url('../images/icons/circle-icon.png') left 6px no-repeat;
+  margin: 42px 0;
+}
+/* line 208, structure.less */
+section.about .wrapper .right {
+  position: relative;
+  float: right;
+  width: 45%;
+}
+/* line 212, structure.less */
+section.about .wrapper .right .photo-container {
+  border-radius: 400px;
+  -moz-border-radius: 400px;
+  -o-border-radius: 400px;
+  -webkit-border-radius: 400px;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  margin: auto;
+}
+/* line 221, structure.less */
+section.about .wrapper .right .photo-container img {
+  display: block;
+}
+/* line 227, structure.less */
+section.about .wrapper .numbers h2 {
+  font-size: 3.0rem;
+  font-weight: 700;
+  color: #2c3e50;
+}
+/* line 232, structure.less */
+section.about .wrapper .numbers .item {
+  margin-top: 45px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  position: relative;
+  float: left;
+  width: 25%;
+  margin-right: 8%;
+}
+/* line 240, structure.less */
+section.about .wrapper .numbers .item .icon {
+  height: 120px;
+  width: 100%;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+/* line 246, structure.less */
+section.about .wrapper .numbers .item h3 {
+  color: #34495e;
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin: 30px 0 10px 0;
+}
+/* line 252, structure.less */
+section.about .wrapper .numbers .item#item1 .icon {
+  background-image: url('../images/elements/num-1.png');
+}
+/* line 255, structure.less */
+section.about .wrapper .numbers .item#item2 .icon {
+  background-image: url('../images/elements/num-2.png');
+}
+/* line 258, structure.less */
+section.about .wrapper .numbers .item#item3 .icon {
+  background-image: url('../images/elements/num-3.png');
+}
+/* line 261, structure.less */
+section.about .wrapper .numbers .item .content {
+  margin-top: 20px;
+  font-size: 1.6rem;
+  color: #7f8c8d;
+  line-height: 175%;
+}
+/* line 266, structure.less */
+section.about .wrapper .numbers .item .content .bold {
+  color: #34495e;
+}
+/* line 274, structure.less */
+section.result {
+  background: #f4f5f6;
+}
+/* line 276, structure.less */
+section.result .wrapper {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 120px 40px 90px 40px;
+}
+/* line 280, structure.less */
+section.result .wrapper .magic {
+  position: relative;
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  background: url('../images/elements/magic.png');
+}
+/* line 287, structure.less */
+section.result .wrapper h2 {
+  font-size: 3.5rem;
+  color: #2c3e50;
+  font-weight: 600;
+  text-align: center;
+}
+/* line 293, structure.less */
+section.result .wrapper ul {
+  overflow: hidden;
+  margin-top: 20px;
+  list-style: none;
+  width: 100%;
+}
+/* line 298, structure.less */
+section.result .wrapper ul li {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  position: relative;
+  float: left;
+  width: 50%;
+  padding-right: 110px;
+  margin-top: 50px;
+}
+/* line 307, structure.less */
+section.result .wrapper ul li i.fa {
+  position: relative;
+  float: left;
+  color: #2c3e50;
+  font-size: 3.0rem;
+  margin-top: 16px;
+}
+/* line 314, structure.less */
+section.result .wrapper ul li .content {
+  overflow: hidden;
+  padding-left: 25px;
+}
+/* line 317, structure.less */
+section.result .wrapper ul li .content p {
+  line-height: 175%;
+}
+/* line 320, structure.less */
+section.result .wrapper ul li .content p.marked {
+  font-size: 2.2rem;
+  color: #2c3e50;
+  font-weight: bold;
+  line-height: 135%;
+}
+/* line 332, structure.less */
+section.content .left {
+  position: relative;
+  float: left;
+  width: 427px;
+  height: 1400px;
+  background: url('../images/content-bg.jpg');
+}
+/* line 339, structure.less */
+section.content .right {
+  overflow: hidden;
+  padding: 60px 110px;
+}
+/* line 342, structure.less */
+section.content .right h2 {
+  font-size: 3.5rem;
+  color: #2c3e50;
+  font-weight: bold;
+}
+/* line 347, structure.less */
+section.content .right ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 60px;
+}
+/* line 351, structure.less */
+section.content .right ul li {
+  line-height: 175%;
+  padding-left: 50px;
+  background: url('../images/icons/plus-icon.png') left 6px no-repeat;
+  margin: 25px 0;
+  font-size: 2.0rem;
+  color: #7f8c8d;
+}
+/* line 362, structure.less */
+section.form {
+  position: relative;
+  background: #1abc9c;
+}
+/* line 365, structure.less */
+section.form h2 {
+  font-size: 3.5rem;
+  color: #ffffff;
+  font-weight: 300;
+  text-align: center;
+  padding: 0 100px;
+  margin-top: 70px;
+}
+/* line 373, structure.less */
+section.form form {
+  position: relative;
+  width: 40%;
+  overflow: hidden;
+  margin: 50px auto;
+}
+/* line 378, structure.less */
+section.form form .field {
+  width: 48%;
+  float: left;
+  margin-left: 4%;
+}
+/* line 382, structure.less */
+section.form form .field:first-child {
+  margin-left: 0;
+}
+/* line 386, structure.less */
+section.form form input[type="submit"] {
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  font-size: 1.7rem;
+  color: #1abc9c;
+}
+/* line 394, structure.less */
+section.form form p.endnote {
+  text-align: center;
+  color: rgba(201, 244, 236, 0.8);
+  font-size: 1.2rem;
+}
+/* line 401, structure.less */
+section.resume {
+  padding-bottom: 90px;
+}
+/* line 403, structure.less */
+section.resume > div {
+  text-align: center;
+}
+/* line 406, structure.less */
+section.resume i.fa-quote-right {
+  margin-top: 120px;
+  color: #2c3e50;
+  font-size: 3.5rem;
+}
+/* line 411, structure.less */
+section.resume p.quote {
+  margin-top: 50px;
+  text-align: center;
+}
+/* line 414, structure.less */
+section.resume p.quote span {
+  color: #2c3e50;
+  font-size: 3.0rem;
+  font-weight: 300;
+  line-height: 135%;
+}
+/* line 419, structure.less */
+section.resume p.quote span.author {
+  margin-top: 40px;
+  display: block;
+  color: #bdc3c7;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+/* line 429, structure.less */
+section.try {
+  position: relative;
+  background: #1abc9c;
+}
+/* line 432, structure.less */
+section.try .wrapper {
+  padding: 35px 150px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+/* line 436, structure.less */
+section.try .wrapper p {
+  display: block;
+  overflow: hidden;
+  font-size: 2.4rem;
+  font-weight: 300;
+  color: #ffffff;
+  line-height: 185%;
+}
+/* line 444, structure.less */
+section.try .wrapper a.button {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  display: block;
+  color: #000000;
+  padding: 13px 25px;
+  background: #fff446;
+  border: none;
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin: 10px 0;
+  cursor: pointer;
+  float: right;
+  text-decoration: none;
+}
+/* line 462, structure.less */
+section.try .wrapper a.button:hover {
+  background: #eee335;
+}
+/* line 468, structure.less */
+section.footer {
+  position: relative;
+  background: #2c3e50;
+}
+/* line 471, structure.less */
+section.footer .wrapper {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 50px 150px;
+}
+/* line 475, structure.less */
+section.footer .wrapper .left {
+  position: relative;
+  float: left;
+}
+/* line 478, structure.less */
+section.footer .wrapper .left p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #7f8c8d;
+  margin-top: 42px;
+}
+/* line 485, structure.less */
+section.footer .wrapper .right {
+  position: relative;
+  float: right;
+}
+/* line 488, structure.less */
+section.footer .wrapper .right p.white {
+  font-size: 1.6rem;
+  color: #ffffff;
+}
+/* line 492, structure.less */
+section.footer .wrapper .right p.ogrn {
+  font-size: 1.4rem;
+  color: #7f8c8d;
+  margin-top: 20px;
+}
+/*# sourceMappingURL=styles.css.map */

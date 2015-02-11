@@ -1,0 +1,273 @@
+/*ГЛОБАЛЬНЫЕ ПЕРЕМЕННЫЕ*/
+/*ЦВЕТОВАЯ СХЕМА*/
+/* line 11, styles.less */
+.white {
+  color: #ffffff;
+}
+/* line 14, styles.less */
+.sea {
+  color: #51727d;
+}
+/* line 17, styles.less */
+.red {
+  color: #f35347;
+}
+/* line 20, styles.less */
+.green {
+  color: #35d9ad;
+}
+/* line 23, styles.less */
+.blue_dark {
+  color: #2c3e50;
+}
+/*РАЗМЕРЫ ШРИФТОВ*/
+/*ЗАГОЛОВКИ*/
+/* line 31, styles.less */
+h1 {
+  font-family: "Open Sans", serif;
+  color: #000;
+  font-size: 3.4rem;
+  font-weight: 400;
+  line-height: 135%;
+}
+/* line 32, styles.less */
+h2 {
+  font-family: "Open Sans", serif;
+  color: #000;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 135%;
+}
+/* line 33, styles.less */
+h3 {
+  font-family: "Open Sans", serif;
+  color: #000;
+  font-size: 2.0rem;
+  font-weight: 400;
+  line-height: 135%;
+}
+/* line 37, styles.less */
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+/* line 41, styles.less */
+html {
+  font-size: 62.5% !important;
+}
+/* line 45, styles.less */
+body {
+  line-height: 135%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.4rem;
+  color: #51727d;
+}
+/* line 51, styles.less */
+p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 135%;
+}
+/*ИМПОРТ*/
+/*КЛАССЫ*/
+/* line 2, common.less */
+.italic {
+  font-style: italic;
+}
+/* line 5, common.less */
+.bold {
+  font-weight: bold;
+}
+/* line 9, common.less */
+input:focus,
+textarea:focus {
+  outline: none;
+}
+/*МИКСИНЫ*/
+/* line 36, common.less */
+.upper {
+  text-transform: uppercase;
+}
+/* line 39, common.less */
+.lower {
+  text-transform: lowercase;
+}
+/* line 42, common.less */
+.underline {
+  text-decoration: underline;
+}
+/* line 1, structure.less */
+label {
+  display: block;
+}
+/* line 4, structure.less */
+input[type="text"] {
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  display: block;
+  padding: 12px 12px;
+  position: relative;
+  background: #ffffff;
+  font-size: 1.8rem;
+  width: 100%;
+  border: solid 1px #fff;
+  color: #51727d;
+  margin: 10px auto;
+  margin-bottom: 30px;
+}
+/* line 18, structure.less */
+input[type="submit"] {
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  display: block;
+  box-shadow: 0 4px 0 0 #1276b9;
+  background: #3498db;
+  padding: 10px 40px;
+  text-transform: uppercase;
+  border: none;
+  font-size: 3.6rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  margin: 10px auto;
+  cursor: pointer;
+}
+/* line 31, structure.less */
+input[type="submit"]:hover {
+  background: #2387ca;
+}
+/* line 35, structure.less */
+html,
+body {
+  height: 100%;
+}
+/* line 39, structure.less */
+body {
+  background: url('../images/main-bg.jpg') center center no-repeat;
+  background-size: cover;
+}
+/* line 44, structure.less */
+.wrapper {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  overflow: hidden;
+  width: 80%;
+  height: auto;
+  max-width: 1180px;
+  min-width: 960px;
+  margin: auto;
+}
+/* line 53, structure.less */
+section.page {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url('../images/header-bg.jpg') center center;
+}
+/* line 58, structure.less */
+section.page .wrapper {
+  position: relative;
+  width: 960px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  top: 50%;
+  margin-top: -300px;
+}
+/* line 66, structure.less */
+section.page .wrapper .start {
+  font-size: 2.5rem;
+  color: #ffffff;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+/* line 74, structure.less */
+section.page .wrapper h1 {
+  text-align: center;
+  font-size: 3.6rem;
+  font-weight: 600;
+  margin-top: 40px;
+  text-transform: uppercase;
+}
+/* line 82, structure.less */
+section.page .wrapper .player {
+  position: relative;
+  float: left;
+  width: 50%;
+  height: 355px;
+  margin-top: 30px;
+}
+/* line 89, structure.less */
+section.page .wrapper form {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  position: relative;
+  float: right;
+  width: 42%;
+  margin: 20px;
+}
+/* line 95, structure.less */
+section.page .wrapper form div.start {
+  position: relative;
+  color: #ffffff;
+  font-family: "Open Sans", serif;
+  font-weight: bold;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: left;
+}
+/* line 103, structure.less */
+section.page .wrapper form div.start span {
+  position: relative;
+}
+/* line 106, structure.less */
+section.page .wrapper form div.start i.arrow-container {
+  position: relative;
+}
+/* line 108, structure.less */
+section.page .wrapper form div.start i.arrow-container .arrow1 {
+  position: absolute;
+  width: 43px;
+  height: 52px;
+  background: url('../images/arrow1.png') no-repeat;
+  left: 10px;
+  /* margin-left: -21px; */
+  top: 15px;
+}
+/* line 122, structure.less */
+section.page .wrapper form .field label {
+  font-size: 1.4rem;
+  margin-top: -10px;
+}
+/* line 127, structure.less */
+section.page .wrapper form .field.submit input {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 3.0rem;
+}
+/* line 133, structure.less */
+section.page .wrapper form .field.submit label {
+  margin-top: -5px;
+  text-align: center;
+  color: #949fa0;
+  line-height: 150%;
+  margin-top: 12px;
+}
+/*# sourceMappingURL=styles.css.map */

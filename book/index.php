@@ -5,9 +5,7 @@
 		<meta charset="utf-8" />
         <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-        <link rel="stylesheet/less" type="text/css" href="less/styles.less">
-        <!-- <link rel="stylesheet" type="text/css" href="css/styles.css"> -->
-        <script src="js/less.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 
 <body>

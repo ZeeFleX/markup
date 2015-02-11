@@ -1,0 +1,262 @@
+@import url('http://dowlatow.justclick.ru/media/css/page_ext.css');
+/*ГЛОБАЛЬНЫЕ ПЕРЕМЕННЫЕ*/
+/*ЦВЕТОВАЯ СХЕМА*/
+.white {
+  color: #ffffff;
+}
+.sea {
+  color: #51727d;
+}
+.red {
+  color: #f35347;
+}
+.green {
+  color: #35d9ad;
+}
+.blue_dark {
+  color: #2c3e50;
+}
+/*РАЗМЕРЫ ШРИФТОВ*/
+/*ЗАГОЛОВКИ*/
+h1 {
+  font-family: "Open Sans", serif;
+  color: #000;
+  font-size: 3.4rem;
+  font-weight: 400;
+  line-height: 135%;
+}
+h2 {
+  font-family: "Open Sans", serif;
+  color: #000;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 135%;
+}
+h3 {
+  font-family: "Open Sans", serif;
+  color: #000;
+  font-size: 2.0rem;
+  font-weight: 400;
+  line-height: 135%;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5% !important;
+}
+body {
+  line-height: 135%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.4rem;
+  color: #51727d;
+}
+p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 135%;
+}
+/*ИМПОРТ*/
+/*КЛАССЫ*/
+.italic {
+  font-style: italic;
+}
+.bold {
+  font-weight: bold;
+}
+input:focus,
+textarea:focus {
+  outline: none;
+}
+/*МИКСИНЫ*/
+.upper {
+  text-transform: uppercase;
+}
+.lower {
+  text-transform: lowercase;
+}
+.underline {
+  text-decoration: underline;
+}
+label {
+  display: block;
+}
+input[type="text"] {
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  display: block;
+  padding: 12px 12px;
+  position: relative;
+  background: #ffffff;
+  font-size: 1.8rem;
+  width: 100%;
+  border: solid 1px #fff;
+  color: #51727d;
+  margin: 10px auto;
+}
+input[type="submit"] {
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  display: block;
+  background: #e74c3c;
+  padding: 12px 40px;
+  border: none;
+  font-size: 1.7rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  color: #fff;
+  margin: 10px 0;
+}
+input[type="submit"]:hover {
+  background: #d63b2b;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  background: url('../images/main-bg.jpg') center center no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+.wrapper {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  overflow: hidden;
+  width: 80%;
+  height: auto;
+  max-width: 1180px;
+  min-width: 860px;
+  margin: auto;
+}
+section.page {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url('../images/header-bg.jpg') center center;
+}
+section.page .window-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background: url('../images/fader.png');
+  display: none;
+}
+section.page .window-container .window {
+  position: relative;
+  margin: auto;
+  width: 860px;
+  height: 600px;
+  top: 50%;
+  margin-top: -300px;
+}
+section.page .window-container .window #player {
+  width: 100%;
+  height: 100%;
+}
+section.page .window-container .window .close {
+  position: absolute;
+  right: -50px;
+  top: -40px;
+  width: 27px;
+  height: 27px;
+  cursor: pointer;
+  background: url('../images/icons/close.png');
+}
+section.page .texture {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: url('../images/texture-strong.png');
+}
+section.page video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+section.page .wrapper {
+  position: relative;
+  width: 860px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  top: 50%;
+  margin-top: -300px;
+  z-index: 2;
+}
+section.page .wrapper h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+}
+section.page .wrapper h2 {
+  font-size: 3.6rem;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+}
+section.page .wrapper .play.icon {
+  width: 67px;
+  height: 67px;
+  margin: 85px auto;
+  background: url('../images/icons/play.png');
+  cursor: pointer;
+}
+section.page .wrapper p.endnote {
+  color: #fff;
+  font-size: 3.0rem;
+  text-align: center;
+  font-weight: 300;
+}
+section.page .wrapper form {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  position: relative;
+  width: 100%;
+}
+section.page .wrapper form input[type="text"] {
+  position: relative;
+  float: left;
+  display: block;
+  width: 27%;
+  margin-right: 3%;
+  color: #000;
+}
+section.page .wrapper form input[type="submit"] {
+  position: relative;
+  float: left;
+  display: block;
+  width: 40%;
+}
+section.page .wrapper p.confidencial {
+  text-align: center;
+  color: rgba(139, 158, 176, 0.8);
+  font-size: 1.4rem;
+}
