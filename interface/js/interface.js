@@ -79,7 +79,7 @@ var loadInterface = function(){
                 width: '60px',
                 height: '100%',
                 float: 'right',
-                background: 'url(../images/interface/search-icon.png) center center no-repeat #4ad0c5',
+                background: 'url(images/interface/search-icon.png) center center no-repeat #4ad0c5',
                 border: 'none',
                 cursor: 'pointer'
             });
