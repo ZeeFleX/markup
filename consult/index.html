@@ -173,6 +173,7 @@
                                     <span class="author-name">Иван Иванов</span> оставил отзыв о консультанте <span class="user-name">Братановой Марии</span>
                                 </p>
                             </div>
+                            <div class="clr"></div>
                         </div>
                         <div class="toolbar">
                             <div class="review-menu">
@@ -184,7 +185,9 @@
                             </div>
                             <p class="review-date">три дня назад</p>
                             <a href="#" class="readmore">Читать весь отзыв</a>
+                            <div class="clr"></div>
                         </div>
+                        <div class="clr"></div>
                     </div>
                     <div class="review dashed b-radius">
                         <div class="quote-arrow"></div>
@@ -231,7 +234,7 @@
                 <div class="content-block write-review">
                     <form action="index.html" method="POST">
                         <div class="field">
-                            <textarea name="review-content" placeholder="Напишите что-то хорошее о консультанте"></textarea>
+                            <textarea name="review-content" class="allow-clear" placeholder="Напишите что-то хорошее о консультанте"></textarea>
                         </div>
                         <div class="field">
                             <input type="hidden" name="raiting" value="0"/>
@@ -275,11 +278,12 @@
                                 <p class="title">
                                     2004-2009 гг. – ВГМА (Воронежская Государственная Медицинская Академия) им. Н.Н. Бурденко по специальности психология, диплом с отличием;
                                 </p>
+                                <div class="clr"></div>
                             </div>
                         </div>
                     </div>
                     <div class="professional">
-                        <h5>Образование</h5>
+                        <h5>Профессионализм</h5>
                         <div class="professions-list">
                             <div class="item">
                                 <div class="scan">
@@ -288,6 +292,7 @@
                                 <p class="title">
                                     2007 – курсы компании 3M, получен сертификат;
                                 </p>
+                                <div class="clr"></div>
                             </div>
                             <div class="item">
                                 <div class="scan">
@@ -296,6 +301,7 @@
                                 <p class="title">
                                     2010 – участие в конгрессе Alpha Bio Tec по психологическим техникам– Израиль, получен сертификат;
                                 </p>
+                                <div class="clr"></div>
                             </div>
                         </div>
                     </div>
@@ -305,11 +311,13 @@
                     <div class="item">
                         <div class="author">
                             <div class="photo">
-                                <img src="images/photos/01.jpg" />
+                                <img src="images/photos/02.jpg" />
                             </div>
-                            <p class="name">Иван Иванов</p>
-                            <p class="job">Участник</p>
-                            <p class="category">Категория: <span class="value">Разрешение конфликтов</span></p>
+                            <div class="about">
+                                <p class="name">Иван Иванов</p>
+                                <p class="job">Участник</p>
+                                <p class="category">Категория: <span class="value">Разрешение конфликтов</span></p>
+                            </div>
                         </div>
                         <div class="clr"></div>
                         <h5>Вопрос:</h5>
@@ -324,7 +332,7 @@
                     <div class="item">
                         <div class="author">
                             <div class="photo">
-                                <img src="images/photos/01.jpg" />
+                                <img src="images/photos/02.jpg" />
                             </div>
                             <p class="name">Иван Иванов</p>
                             <p class="job">Участник</p>
@@ -340,11 +348,11 @@
                         </div>
                         <a href="#" class="readmore">Посмотреть</a>
                     </div>
-                    <a href="#" class="btn ghost">Посмотреть все ответы консультанта</a>
+                    <a href="#" class="btn ghost" id="load-all-answers">Посмотреть все ответы консультанта</a>
                 </div>
             </div>
             <div class="clr"></div>
-            <div class="ask-question">
+            <div class="ask-question content-block">
                 <div class="ask-text">
                     <h3>Хотите задать публичный вопрос консультанту?</h3>
                 </div>
@@ -363,8 +371,8 @@
                     <p class="lastname">Иванов</p>
                     <p class="firstname">Иван Иванович</p>
                     <div class="rating-block">
-                        <p><span class="current-value">8</span>/10</p>
-                        <p class="title">Рейтинг</p>
+                        <p class="value"><span class="current-value">8</span>/10</p>
+                        <p class="title"><span>Рейтинг</span></p>
                     </div>
                 </div>
                 <div class="same-user">
@@ -374,8 +382,8 @@
                     <p class="lastname">Иванов</p>
                     <p class="firstname">Иван Иванович</p>
                     <div class="rating-block">
-                        <p><span class="current-value">4</span>/10</p>
-                        <p class="title">Рейтинг</p>
+                        <p class="value"><span class="current-value">8</span>/10</p>
+                        <p class="title"><span>Рейтинг</span></p>
                     </div>
                 </div>
                 <div class="same-user">
@@ -385,8 +393,8 @@
                     <p class="lastname">Иванов</p>
                     <p class="firstname">Иван Иванович</p>
                     <div class="rating-block">
-                        <p><span class="current-value">6</span>/10</p>
-                        <p class="title">Рейтинг</p>
+                        <p class="value"><span class="current-value">8</span>/10</p>
+                        <p class="title"><span>Рейтинг</span></p>
                     </div>
                 </div>
                 <div class="same-user">
@@ -396,8 +404,8 @@
                     <p class="lastname">Иванов</p>
                     <p class="firstname">Иван Иванович</p>
                     <div class="rating-block">
-                        <p><span class="current-value">2</span>/10</p>
-                        <p class="title">Рейтинг</p>
+                        <p class="value"><span class="current-value">8</span>/10</p>
+                        <p class="title"><span>Рейтинг</span></p>
                     </div>
                 </div>
                 <div class="same-user">
@@ -407,8 +415,8 @@
                     <p class="lastname">Иванов</p>
                     <p class="firstname">Иван Иванович</p>
                     <div class="rating-block">
-                        <p><span class="current-value">8</span>/10</p>
-                        <p class="title">Рейтинг</p>
+                        <p class="value"><span class="current-value">8</span>/10</p>
+                        <p class="title"><span>Рейтинг</span></p>
                     </div>
                 </div>
                 <div class="same-user">
@@ -418,8 +426,8 @@
                     <p class="lastname">Иванов</p>
                     <p class="firstname">Иван Иванович</p>
                     <div class="rating-block">
-                        <p><span class="current-value">9</span>/10</p>
-                        <p class="title">Рейтинг</p>
+                        <p class="value"><span class="current-value">8</span>/10</p>
+                        <p class="title"><span>Рейтинг</span></p>
                     </div>
                 </div>
             </div>
@@ -448,6 +456,7 @@
                         <a class="item" href="#">Тревоги и фобии</a>
                     </div>
                 </div>
+                <div class="clr"></div>
             </div>
         </section>
         <section class="bottom">
@@ -455,8 +464,14 @@
             <ul class="footer-menu">
                 <li>
                     <a href="#">О сервисе</a>
+                </li>
+                <li>
                     <a href="#">Политика конфиденциальности</a>
+                </li>
+                <li>
                     <a href="#">Условия использования</a>
+                </li>
+                <li>
                     <a href="#">Оферта</a>
                 </li>
             </ul>
