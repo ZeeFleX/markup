@@ -3,6 +3,65 @@ $(document).ready(function () {
 });
 
 var loadInterface = function(){
+    //Поле отображения рейтинга
+    var ratingFields = $('div.rating-field');
+    $.each(ratingFields, function(){
+        var ratingField = $(this);
+        var ratingValue = $(ratingField).attr('data-value');
+        var ratingScale = $(ratingField).attr('data-scale');
+        $(ratingField).after('<div class="raiting-block value"></div>');
+        var ratingBlock = $(ratingField).siblings('.raiting-block');
+        for(i = 0; i < ratingScale; i++){
+            if(i < ratingValue){
+                var isActive = "fa-star active";
+            }else{
+                var isActive = "fa-star-o active";
+            }
+            $(ratingBlock).append('<i class="fa ' + isActive + '"></i>');
+        }
+    });
+    //Воле ввода рейтинга
+    var ratingInputs = $('input[name="rating"]');
+    $.each(ratingInputs, function(){
+        var input = $(this);
+        var inputScale = $(input).attr('data-scale');
+        $(input).after('<div class="raiting-block vote"></div>');
+        var ratingBlock = $(input).siblings('.raiting-block.vote');
+        for(i = 0; i < inputScale; i++){
+            $(ratingBlock).append('<i class="fa fa-star-o"></i>');
+        }
+        $(ratingBlock).on('mouseover', '.fa', function(){
+            var currentIndex = $(this).index();
+            for(i = 0; i < inputScale; i++){
+                if(i <= currentIndex){
+                    $(ratingBlock).children('.fa').eq(i)
+                        .addClass('active');
+                }else{
+                    $(ratingBlock).children('.fa').eq(i)
+                        .removeClass('active');
+                }
+            }
+            console.log(currentIndex);
+        });
+        $(ratingBlock).on('mouseleave', function(){
+            $(this).children('.fa').removeClass('active');
+        });
+        $(ratingBlock).on('click', '.fa', function(){
+            var currentIndex = $(this).index();
+            for(i = 0; i < inputScale; i++){
+                if(i <= currentIndex){
+                    $(ratingBlock).children('.fa').eq(i)
+                        .removeClass('fa-star-o')
+                        .addClass('fa-star');
+                }else{
+                    $(ratingBlock).children('.fa').eq(i)
+                        .removeClass('fa-star')
+                        .addClass('fa-star-o');
+                }
+            }
+            input.val(currentIndex + 1);
+        });
+    });
     //Чекбоксы
     var toggles = $('input[type="checkbox"]');
     $.each(toggles, function () {

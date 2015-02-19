@@ -363,14 +363,37 @@ select.select2 {
   padding: 0 3px;
   text-transform: uppercase;
 }
-/* line 331, interface.less */
+/* line 332, interface.less */
+.raiting-block.value .fa {
+  color: #ffaa3e;
+  font-size: 2.0rem;
+  font-weight: normal;
+  margin-right: 3px;
+}
+/* line 342, interface.less */
+.raiting-block.vote .fa {
+  color: #35504e;
+  font-size: 2.0rem;
+  font-weight: normal;
+  margin-right: 3px;
+  cursor: pointer;
+}
+/* line 348, interface.less */
+.raiting-block.vote .fa.fa-star {
+  color: #ffaa3e;
+}
+/* line 351, interface.less */
+.raiting-block.vote .fa.active {
+  color: #ffaa3e;
+}
+/* line 356, interface.less */
 a.dotts {
   display: block;
   text-decoration: none;
   cursor: pointer;
   padding: 5px 0;
 }
-/* line 336, interface.less */
+/* line 361, interface.less */
 a.dotts .fa-circle {
   color: #8aa4a2;
   font-size: 0.3rem;
@@ -378,7 +401,7 @@ a.dotts .fa-circle {
   float: left;
   margin-right: 2px;
 }
-/* line 345, interface.less */
+/* line 370, interface.less */
 ul.badge-marked li {
   background: url('../images/interface/badge.png') left 2px no-repeat;
   padding-left: 20px;
@@ -680,19 +703,12 @@ body.page-profile .information-section .reviews .content-block .review .quote-ar
   bottom: -25px;
   left: 60px;
 }
-/* line 268, page_profile.less */
-body.page-profile .information-section .reviews .content-block .review .raiting-block .fa {
-  color: #ffaa3e;
-  font-size: 2.0rem;
-  font-weight: normal;
-  margin-right: 3px;
-}
-/* line 277, page_profile.less */
+/* line 270, page_profile.less */
 body.page-profile .information-section .reviews .content-block .review .author {
   overflow: hidden;
   margin-top: 25px;
 }
-/* line 280, page_profile.less */
+/* line 273, page_profile.less */
 body.page-profile .information-section .reviews .content-block .review .author .photo {
   border-radius: 50px;
   -moz-border-radius: 50px;
@@ -703,46 +719,46 @@ body.page-profile .information-section .reviews .content-block .review .author .
   height: 50px;
   float: left;
 }
-/* line 289, page_profile.less */
+/* line 282, page_profile.less */
 body.page-profile .information-section .reviews .content-block .review .author .photo img {
   display: block;
   min-width: 100%;
   min-height: 100%;
 }
-/* line 295, page_profile.less */
+/* line 288, page_profile.less */
 body.page-profile .information-section .reviews .content-block .review .author .text {
   overflow: hidden;
 }
-/* line 297, page_profile.less */
+/* line 290, page_profile.less */
 body.page-profile .information-section .reviews .content-block .review .author .text p {
   margin-left: 10px;
   font-size: 1.2rem;
 }
-/* line 300, page_profile.less */
+/* line 293, page_profile.less */
 body.page-profile .information-section .reviews .content-block .review .author .text p .author-name,
 body.page-profile .information-section .reviews .content-block .review .author .text p .user-name {
   color: #4ad0c5;
   font: 700 1.2rem Roboto;
 }
-/* line 307, page_profile.less */
+/* line 300, page_profile.less */
 body.page-profile .information-section .reviews .content-block .review .toolbar {
   position: absolute;
   right: 0;
   bottom: 0;
 }
-/* line 311, page_profile.less */
+/* line 304, page_profile.less */
 body.page-profile .information-section .reviews .content-block .review .toolbar .review-menu {
   float: left;
   margin-right: 20px;
   margin-top: 11px;
 }
-/* line 316, page_profile.less */
+/* line 309, page_profile.less */
 body.page-profile .information-section .reviews .content-block .review .toolbar .review-date {
   float: left;
   margin-right: 20px;
   font-size: 1.2rem;
 }
-/* line 321, page_profile.less */
+/* line 314, page_profile.less */
 body.page-profile .information-section .reviews .content-block .review .toolbar .readmore {
   border-top-left-radius: 5px;
   -o-border-top-left-radius: 5px;
@@ -757,85 +773,74 @@ body.page-profile .information-section .reviews .content-block .review .toolbar 
   border-top: dashed 1px #b9d4cc;
   padding: 8px 20px;
 }
-/* line 334, page_profile.less */
+/* line 327, page_profile.less */
 body.page-profile .information-section .reviews .content-block .review .toolbar .readmore:hover {
   text-decoration: underline;
 }
-/* line 340, page_profile.less */
+/* line 333, page_profile.less */
 body.page-profile .information-section .reviews .content-block #load-more-reviews {
   width: 200px;
   text-align: center;
   margin: auto;
   display: block;
 }
-/* line 351, page_profile.less */
+/* line 344, page_profile.less */
 body.page-profile .information-section .content-block form {
   overflow: hidden;
 }
-/* line 354, page_profile.less */
+/* line 347, page_profile.less */
 body.page-profile .information-section .content-block form .field textarea {
   height: 98px;
 }
-/* line 357, page_profile.less */
+/* line 350, page_profile.less */
 body.page-profile .information-section .content-block form .field label {
   color: #35504e;
   font: 500 1.4rem Roboto;
   margin-bottom: 0;
 }
-/* line 362, page_profile.less */
-body.page-profile .information-section .content-block form .field .raiting-block.edit {
+/* line 355, page_profile.less */
+body.page-profile .information-section .content-block form .field .raiting-block.vote {
   float: left;
   margin-top: 6px;
 }
-/* line 365, page_profile.less */
-body.page-profile .information-section .content-block form .field .raiting-block.edit .fa {
-  color: #35504e;
-  font-size: 2.0rem;
-  font-weight: normal;
-  margin-right: 3px;
-}
-/* line 370, page_profile.less */
-body.page-profile .information-section .content-block form .field .raiting-block.edit .fa.fa-star {
-  color: #ffaa3e;
-}
-/* line 376, page_profile.less */
+/* line 360, page_profile.less */
 body.page-profile .information-section .content-block form .btn {
   display: block;
   float: right;
 }
-/* line 382, page_profile.less */
+/* line 366, page_profile.less */
 body.page-profile .information-section .information {
   float: right;
   width: 41%;
 }
-/* line 392, page_profile.less */
+/* line 376, page_profile.less */
 body.page-profile .information-section .information .content-block.education-list .item,
 body.page-profile .information-section .information .content-block.proffessions-list .item {
   margin-bottom: 20px;
 }
-/* line 394, page_profile.less */
+/* line 378, page_profile.less */
 body.page-profile .information-section .information .content-block.education-list .item .scan,
 body.page-profile .information-section .information .content-block.proffessions-list .item .scan {
   float: left;
   width: 50px;
   margin-right: 15px;
 }
-/* line 398, page_profile.less */
+/* line 382, page_profile.less */
 body.page-profile .information-section .information .content-block.education-list .item .scan img,
 body.page-profile .information-section .information .content-block.proffessions-list .item .scan img {
   display: block;
   width: 100%;
 }
-/* line 403, page_profile.less */
+/* line 387, page_profile.less */
 body.page-profile .information-section .information .content-block.education-list .item p,
 body.page-profile .information-section .information .content-block.proffessions-list .item p {
   overflow: hidden;
 }
-/* line 409, page_profile.less */
+/* line 393, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .item {
   margin-bottom: 30px;
 }
-/* line 413, page_profile.less */
+/* line 397, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .author .photo {
   float: left;
   overflow: hidden;
@@ -847,48 +852,48 @@ body.page-profile .information-section .information .content-block.answers-list 
   height: 50px;
   margin-right: 15px;
 }
-/* line 423, page_profile.less */
+/* line 407, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .author .photo img {
   display: block;
 }
-/* line 427, page_profile.less */
+/* line 411, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .author .about {
   overflow: hidden;
 }
-/* line 429, page_profile.less */
+/* line 413, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .author .about p {
   margin: 0;
 }
-/* line 431, page_profile.less */
+/* line 415, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .author .about p.name {
   font-size: 1.2rem;
   color: #4ad0c5;
   font-weight: 700;
 }
-/* line 436, page_profile.less */
+/* line 420, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .author .about p.job {
   font-size: 1.2rem;
   font-weight: 700;
 }
-/* line 440, page_profile.less */
+/* line 424, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .author .about p.category {
   font-size: 1.2rem;
   font-weight: 700;
   margin-top: 30px;
 }
-/* line 444, page_profile.less */
+/* line 428, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .author .about p.category .value {
   color: #35504e;
 }
-/* line 451, page_profile.less */
+/* line 435, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .item > h5 {
   padding-bottom: 0;
 }
-/* line 455, page_profile.less */
+/* line 439, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .content p {
   margin: 5px 0 0 0;
 }
-/* line 458, page_profile.less */
+/* line 442, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .content .fader {
   position: absolute;
   width: 100%;
@@ -901,45 +906,45 @@ body.page-profile .information-section .information .content-block.answers-list 
   background: linear-gradient(0deg, #fefefe 0%, #fefefe 16%, rgba(255, 255, 255, 0) 100%);
   z-index: 1;
 }
-/* line 471, page_profile.less */
+/* line 455, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list a.readmore {
   color: #4ad0c5;
   font: 400 1.2rem Roboto;
   text-decoration: none;
 }
-/* line 475, page_profile.less */
+/* line 459, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list a.readmore:hover {
   text-decoration: underline;
 }
-/* line 479, page_profile.less */
+/* line 463, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list a#load-all-answers {
   display: block;
   width: 80%;
   margin: auto;
 }
-/* line 487, page_profile.less */
+/* line 471, page_profile.less */
 body.page-profile .information-section .ask-question {
   margin-top: 20px;
   overflow: hidden;
 }
-/* line 490, page_profile.less */
+/* line 474, page_profile.less */
 body.page-profile .information-section .ask-question .ask-text {
   float: left;
 }
-/* line 492, page_profile.less */
+/* line 476, page_profile.less */
 body.page-profile .information-section .ask-question .ask-text h3 {
   padding: 0;
 }
-/* line 496, page_profile.less */
+/* line 480, page_profile.less */
 body.page-profile .information-section .ask-question a {
   display: block;
   float: right;
 }
-/* line 504, page_profile.less */
+/* line 488, page_profile.less */
 body.page-profile .same-users-section .content-block.same-users-list {
   overflow: hidden;
 }
-/* line 506, page_profile.less */
+/* line 490, page_profile.less */
 body.page-profile .same-users-section .content-block.same-users-list .same-user {
   overflow: hidden;
   float: left;
@@ -947,80 +952,80 @@ body.page-profile .same-users-section .content-block.same-users-list .same-user 
   margin-left: 3%;
   padding-bottom: 20px;
 }
-/* line 511, page_profile.less */
+/* line 495, page_profile.less */
 body.page-profile .same-users-section .content-block.same-users-list .same-user:first-child {
   margin-left: 0;
 }
-/* line 515, page_profile.less */
+/* line 499, page_profile.less */
 body.page-profile .same-users-section .content-block.same-users-list .same-user .photo {
   width: 100%;
   overflow: hidden;
 }
-/* line 518, page_profile.less */
+/* line 502, page_profile.less */
 body.page-profile .same-users-section .content-block.same-users-list .same-user .photo img {
   width: 100%;
 }
-/* line 522, page_profile.less */
+/* line 506, page_profile.less */
 body.page-profile .same-users-section .content-block.same-users-list .same-user p {
   text-align: center;
 }
-/* line 525, page_profile.less */
+/* line 509, page_profile.less */
 body.page-profile .same-users-section .content-block.same-users-list .same-user p.lastname {
   margin: 0;
   margin-top: 5px;
   color: #4ad0c5;
   font: 500 1.4rem Roboto;
 }
-/* line 531, page_profile.less */
+/* line 515, page_profile.less */
 body.page-profile .same-users-section .content-block.same-users-list .same-user p.firstname {
   margin: 0;
   color: #4ad0c5;
   font: 700 1.2rem Roboto;
 }
-/* line 537, page_profile.less */
+/* line 521, page_profile.less */
 body.page-profile .same-users-section .content-block.same-users-list .same-user .rating-block {
   width: 60px;
   margin: 10px auto 0 auto;
 }
-/* line 545, page_profile.less */
+/* line 529, page_profile.less */
 body.page-profile .footer {
   width: 100%;
   margin-top: 20px;
 }
-/* line 548, page_profile.less */
+/* line 532, page_profile.less */
 body.page-profile .footer a {
   text-decoration: none;
   color: #ffffff;
 }
-/* line 552, page_profile.less */
+/* line 536, page_profile.less */
 body.page-profile .footer section.library {
   background: #4ad0c5;
   padding: 10px 0 20px 0;
 }
-/* line 555, page_profile.less */
+/* line 539, page_profile.less */
 body.page-profile .footer section.library .title {
   float: left;
   width: 25%;
 }
-/* line 558, page_profile.less */
+/* line 542, page_profile.less */
 body.page-profile .footer section.library .title h3 {
   color: #ffffff;
 }
-/* line 562, page_profile.less */
+/* line 546, page_profile.less */
 body.page-profile .footer section.library .library-list {
   float: right;
   width: 75%;
   margin-top: 8px;
 }
-/* line 566, page_profile.less */
+/* line 550, page_profile.less */
 body.page-profile .footer section.library .library-list h4 {
   color: #ffffff;
 }
-/* line 569, page_profile.less */
+/* line 553, page_profile.less */
 body.page-profile .footer section.library .library-list .items-container {
   width: 100%;
 }
-/* line 571, page_profile.less */
+/* line 555, page_profile.less */
 body.page-profile .footer section.library .library-list .items-container .item {
   float: left;
   width: 33%;
@@ -1028,17 +1033,17 @@ body.page-profile .footer section.library .library-list .items-container .item {
   font: 400 1.6rem Roboto;
   margin: 5px 0;
 }
-/* line 577, page_profile.less */
+/* line 561, page_profile.less */
 body.page-profile .footer section.library .library-list .items-container .item:hover {
   text-decoration: underline;
 }
-/* line 584, page_profile.less */
+/* line 568, page_profile.less */
 body.page-profile .footer section.bottom {
   background: #41b6ad;
   padding: 15px 0;
   overflow: hidden;
 }
-/* line 588, page_profile.less */
+/* line 572, page_profile.less */
 body.page-profile .footer section.bottom p.copyright {
   display: block;
   float: left;
@@ -1046,22 +1051,143 @@ body.page-profile .footer section.bottom p.copyright {
   font: 500 1.4rem Roboto;
   margin-left: 30px;
 }
-/* line 595, page_profile.less */
+/* line 579, page_profile.less */
 body.page-profile .footer section.bottom ul.footer-menu {
   float: right;
   margin-top: 13px;
 }
-/* line 598, page_profile.less */
+/* line 582, page_profile.less */
 body.page-profile .footer section.bottom ul.footer-menu li {
   float: left;
   margin-right: 30px;
 }
-/* line 601, page_profile.less */
+/* line 585, page_profile.less */
 body.page-profile .footer section.bottom ul.footer-menu li a {
   font: 400 14px Roboto;
 }
-/* line 603, page_profile.less */
+/* line 587, page_profile.less */
 body.page-profile .footer section.bottom ul.footer-menu li a:hover {
   text-decoration: underline;
+}
+/* line 1, cheat-sheet.less */
+.wrapper {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+  max-width: 960px;
+}
+/* line 7, cheat-sheet.less */
+.wrapper > section {
+  margin-bottom: 30px;
+}
+/* line 9, cheat-sheet.less */
+.wrapper > section.colors {
+  overflow: hidden;
+}
+/* line 11, cheat-sheet.less */
+.wrapper > section.colors > div {
+  position: relative;
+  float: left;
+  width: 33%;
+  margin-right: 1%;
+  border: solid 1px #ccc;
+}
+/* line 18, cheat-sheet.less */
+.wrapper > section.colors .color {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 5px;
+  position: relative;
+  float: left;
+  width: 33.333%;
+}
+/* line 25, cheat-sheet.less */
+.wrapper > section.colors .color#sky {
+  background: #4ad0c5;
+  color: #179d92;
+}
+/* line 26, cheat-sheet.less */
+.wrapper > section.colors .color#sea {
+  background: #35504e;
+  color: #688381;
+}
+/* line 27, cheat-sheet.less */
+.wrapper > section.colors .color#blue_light {
+  background: #dbefe5;
+  color: #a8bcb2;
+}
+/* line 28, cheat-sheet.less */
+.wrapper > section.colors .color#sky_dark {
+  background: #41b6ad;
+  color: #0e837a;
+}
+/* line 29, cheat-sheet.less */
+.wrapper > section.colors .color#sea_light {
+  background: #8aa4a2;
+  color: #57716f;
+}
+/* line 30, cheat-sheet.less */
+.wrapper > section.colors .color#white {
+  background: #ffffff;
+  color: #aaaaaa;
+}
+/* line 31, cheat-sheet.less */
+.wrapper > section.colors .color#green_light {
+  background: #33b679;
+  color: #008346;
+}
+/* line 32, cheat-sheet.less */
+.wrapper > section.colors .color#red_light {
+  background: #f85649;
+  color: #c52316;
+}
+/* line 33, cheat-sheet.less */
+.wrapper > section.colors .color#yellow {
+  background: #fac944;
+  color: #c79611;
+}
+/* line 34, cheat-sheet.less */
+.wrapper > section.colors .color#green {
+  background: #0f9b58;
+  color: #006825;
+}
+/* line 35, cheat-sheet.less */
+.wrapper > section.colors .color#red {
+  background: #eb5245;
+  color: #b81f12;
+}
+/* line 36, cheat-sheet.less */
+.wrapper > section.colors .color#yellow_dark {
+  background: #ffaa3e;
+  color: #aa5500;
+}
+/* line 40, cheat-sheet.less */
+.wrapper > section.elements .buttons {
+  overflow: hidden;
+}
+/* line 42, cheat-sheet.less */
+.wrapper > section.elements .buttons .item {
+  position: relative;
+  margin-right: 2%;
+  float: left;
+}
+/* line 48, cheat-sheet.less */
+.wrapper > section.elements .checkboxes {
+  overflow: hidden;
+}
+/* line 50, cheat-sheet.less */
+.wrapper > section.elements .checkboxes .item {
+  position: relative;
+  margin-right: 2%;
+  float: left;
+}
+/* line 58, cheat-sheet.less */
+.wrapper > section.forms .item {
+  width: 50%;
+}
+/* line 62, cheat-sheet.less */
+.wrapper > section select {
+  width: 100%;
 }
 /*# sourceMappingURL=styles.css.map */
