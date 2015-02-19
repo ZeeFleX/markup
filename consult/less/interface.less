@@ -93,10 +93,14 @@ p {
     text-decoration: none;
     background: @sky;
     color:@white;
-    padding:8px 17px 5px 17px;
+    padding:9px 17px 6px 17px;
     margin-bottom:3px;
     border:none;
     cursor:pointer;
+    transition:background-color, color 0.3s ease;
+    -o-transition:background-color, color 0.3s ease;
+    -moz-transition:background-color, color 0.3s ease;
+    -webkit-transition:background-color, color 0.3s ease;
     &.small{
         padding:4px 17px 1px 17px;
     }
@@ -142,6 +146,7 @@ p {
     box-shadow:none;
     border:solid 1px @sea;
     color:@sea;
+    padding:7px 17px 6px 17px;
     &:hover{
         color:@white;
         background: @sea + #222;
@@ -149,6 +154,14 @@ p {
     &:active{
         color:@white;
         background: @sea;
+    }
+    &.red{
+        color:@red; 
+        border-color:@red;
+        &:hover, &:active{
+            color: @white;
+            background: @red;
+        }
     }
 }
 
@@ -263,6 +276,8 @@ select.select2{
             background:url('../images/interface/dropdown-arrow.png') center center no-repeat @sea_light;
             width:60px !important;
             height: 34px !important;
+            top: 0px !important;
+            right: 0px !important;
             b{
                 display: none;
             }
