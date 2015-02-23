@@ -7,12 +7,18 @@
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
         <link href="css/select2.min.css" rel="stylesheet">
         <link href="css/styles.css" rel="stylesheet">
+        <link href="css/jquery.Jcrop.min.css" rel="stylesheet">
+        <link href="css/jquery-ui.min.css" rel="stylesheet">
         <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <!--        <link rel="stylesheet/less" type="text/css" href="less/styles.less">-->
 <!--        <script src="js/less.min.js"></script>-->
         <script src="js/select2.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
         <script src="js/interface.js"></script>
         <script src="js/page_profile.js"></script>
+        <script src="js/jquery.form.min.js"></script>
+        <script src="js/uploader.js"></script>
+        <script src="js/jquery.jcrop.min.js"></script>
 </head>
 <body class="default-template page-profile-settings common">
     <header class="header">
@@ -78,8 +84,8 @@
             <h4>Основные настройки</h4>
             <div class="content-block">
                 <div class="upload-photo">
-                    <form action="#" id="upload_photo" method="POST">
-                        <input type="file" name="filename" class="hidden" />
+                    <form action="server_side/uploader.php" enctype="multipart/form-data" id="uploader-form" method="POST">
+                        <input type="file" name="file" class="hidden" id="uploader" />
                         <h5>Фото профиля</h5>
                         <div class="clr"></div>
                         <div class="photo-container">
@@ -92,9 +98,21 @@
                             <p>Макс.размер файла 5MB. (.jpeg, .png)</p>
                         </div>
                         <div class="clr"></div>
+                        <div id="crop-image-container">
+                            <div id="crop-image-placeholder"></div>
+                            <a href="#" class="btn" id="crop-image-button" style="color:#fff">Готово</a>
+                        </div>
+                        <input type="hidden" id="x1" />
+                        <input type="hidden" id="y1" />
+                        <input type="hidden" id="x2" />
+                        <input type="hidden" id="y2" />
+                        <input type="hidden" id="w" />
+                        <input type="hidden" id="h" />
+                        <input type="hidden" name="action" value="get_preview" />
                     </form>
                     
                     <form action="#" id="profile-settings-form" method="POST">
+                        <input type="hidden" name="avatar" />
                         <div class="field firstname">
                             <label for="firstname">Имя</label>
                             <input type="text" name="firstname" class="allow-clear" />
