@@ -110,7 +110,7 @@
                         <div class="clr"></div>
                         <div class="field country">
                             <label for="country">Страна</label>
-                            <select name="country" class="select2">
+                            <select name="country" class="select2" id="select-country">
                                 <option value="0">Россия</option>
                                 <option value="1">Украина</option>
                                 <option value="2">Казахстан</option>
@@ -120,13 +120,7 @@
                         </div>
                         <div class="field city">
                             <label for="city">Город</label>
-                            <select name="city" class="select2">
-                                <option value="0">Москва</option>
-                                <option value="1">Санкт-Петербург</option>
-                                <option value="2">Тюмень</option>
-                                <option value="3">Курган</option>
-                                <option value="4">Ялуторовск</option>
-                            </select>
+                            <select name="city" class="select2-ajax cities"></select>
                         </div>
                         <div class="clr"></div>
                         <div class="field information">
