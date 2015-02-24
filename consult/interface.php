@@ -6,6 +6,14 @@
 </head>
 
 <body>
+    <NOSCRIPT>
+        <div class="no-script-layout">
+            <div class="wrapper">
+                <h1>В настройках вашего браузера отключен JavaScript.</h1>
+                <h2>Чтобы продолжить пользоваться сайтом вам необходимо активировать JavaScript в настройках или скачать современный браузер.</h2>
+            </div>
+        </div>        
+    </NOSCRIPT>
     <div class="wrapper">
         <section class="typography">
             <h3>Typography</h3>
