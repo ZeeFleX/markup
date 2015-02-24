@@ -37,7 +37,11 @@
                 </form>
             </div>
             <div class="clr"></div>
-            <a class="sign-up" href="#">Создать <span>новый аккаунт</span></a>
+            <div class="links">
+                <a class="sign-up" href="#">Создать <span>новый аккаунт</span></a>
+                <br>
+                <a href="#" class="forgot-password">Забыли пароль?</a>
+            </div>
         </div>
     </div>
     <footer class="footer">
