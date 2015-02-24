@@ -33,6 +33,11 @@
                 <a href="#" class="omni-sign-in" id="fb"><i class="fa fa-facebook"></i><span>Войти через Facebook</span></a>
                 <a href="#" class="omni-sign-in" id="vk"><i class="fa fa-vk"></i><span>Войти через VKontakte</span></a>
                 <a href="#" class="omni-sign-in" id="ok"><i class="fa fa-facebook"></i><span>Войти через Одноклассники</span></a>
+                <p>
+                    Забыли пароль?<br />
+                    Войдите с помощью социальных сетей или<br />
+                    <a href="#" class="forgot-password" id="forgot-password">восстановите пароль</a>
+                </p>
             </div>
             <div class="right">
                 <form action="">
@@ -47,8 +52,6 @@
             <div class="clr"></div>
             <div class="links">
                 <a class="sign-up" id="sign-up" href="#">Создать <span>новый аккаунт</span></a>
-                <br>
-                <a href="#" class="forgot-password" id="forgot-password">Забыли пароль?</a>
             </div>
         </div>
     </div>

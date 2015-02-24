@@ -788,7 +788,7 @@ body.page-mainpage .modal#forgot-password-window#forgot-password-window .contain
 body.page-mainpage .modal#authorization-window .container,
 body.page-mainpage .modal#registration-window .container,
 body.page-mainpage .modal#forgot-password-window .container {
-  padding-bottom: 80px;
+  padding-bottom: 60px;
 }
 /* line 23, mainpage.less */
 body.page-mainpage .modal#authorization-window .container h1,
@@ -877,7 +877,23 @@ body.page-mainpage .modal#registration-window .container .left a.omni-sign-in#ok
 body.page-mainpage .modal#forgot-password-window .container .left a.omni-sign-in#ok i {
   border-color: #d98314;
 }
-/* line 83, mainpage.less */
+/* line 82, mainpage.less */
+body.page-mainpage .modal#authorization-window .container .left p,
+body.page-mainpage .modal#registration-window .container .left p,
+body.page-mainpage .modal#forgot-password-window .container .left p {
+  color: #8aa4a2;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 150%;
+}
+/* line 87, mainpage.less */
+body.page-mainpage .modal#authorization-window .container .left p a,
+body.page-mainpage .modal#registration-window .container .left p a,
+body.page-mainpage .modal#forgot-password-window .container .left p a {
+  color: #4ad0c5;
+  text-decoration: underline;
+}
+/* line 93, mainpage.less */
 body.page-mainpage .modal#authorization-window .container .right,
 body.page-mainpage .modal#registration-window .container .right,
 body.page-mainpage .modal#forgot-password-window .container .right {
@@ -885,13 +901,13 @@ body.page-mainpage .modal#forgot-password-window .container .right {
   float: right;
   padding-left: 15px;
 }
-/* line 87, mainpage.less */
+/* line 97, mainpage.less */
 body.page-mainpage .modal#authorization-window .container .right .btn,
 body.page-mainpage .modal#registration-window .container .right .btn,
 body.page-mainpage .modal#forgot-password-window .container .right .btn {
   width: 100%;
 }
-/* line 90, mainpage.less */
+/* line 100, mainpage.less */
 body.page-mainpage .modal#authorization-window .container .right p,
 body.page-mainpage .modal#registration-window .container .right p,
 body.page-mainpage .modal#forgot-password-window .container .right p {
@@ -899,27 +915,26 @@ body.page-mainpage .modal#forgot-password-window .container .right p {
   font: 400 1.2rem Roboto;
   text-align: center;
 }
-/* line 94, mainpage.less */
+/* line 104, mainpage.less */
 body.page-mainpage .modal#authorization-window .container .right p a,
 body.page-mainpage .modal#registration-window .container .right p a,
 body.page-mainpage .modal#forgot-password-window .container .right p a {
   color: #688280;
   font-weight: bold;
 }
-/* line 100, mainpage.less */
+/* line 110, mainpage.less */
 body.page-mainpage .modal#authorization-window .container .links,
 body.page-mainpage .modal#registration-window .container .links,
 body.page-mainpage .modal#forgot-password-window .container .links {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 55px;
   display: block;
   text-align: center;
   border-top: #b9d4cc 1px solid;
   padding-top: 10px;
 }
-/* line 110, mainpage.less */
+/* line 119, mainpage.less */
 body.page-mainpage .modal#authorization-window .container a.sign-up,
 body.page-mainpage .modal#registration-window .container a.sign-up,
 body.page-mainpage .modal#forgot-password-window .container a.sign-up,
@@ -935,7 +950,7 @@ body.page-mainpage .modal#forgot-password-window .container a.sign-in {
   margin-top: 10px;
   line-height: 26px;
 }
-/* line 116, mainpage.less */
+/* line 125, mainpage.less */
 body.page-mainpage .modal#authorization-window .container a.sign-up span,
 body.page-mainpage .modal#registration-window .container a.sign-up span,
 body.page-mainpage .modal#forgot-password-window .container a.sign-up span,
@@ -948,7 +963,7 @@ body.page-mainpage .modal#forgot-password-window .container a.sign-in span {
   color: #4ad0c5;
   font-weight: bold;
 }
-/* line 120, mainpage.less */
+/* line 129, mainpage.less */
 body.page-mainpage .modal#authorization-window .container a.sign-up.forgot-password,
 body.page-mainpage .modal#registration-window .container a.sign-up.forgot-password,
 body.page-mainpage .modal#forgot-password-window .container a.sign-up.forgot-password,
