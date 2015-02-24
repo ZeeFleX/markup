@@ -38,9 +38,33 @@
             </div>
             <div class="clr"></div>
             <div class="links">
-                <a class="sign-up" href="#">Создать <span>новый аккаунт</span></a>
+                <a class="sign-up" id="sign-up" href="#">Создать <span>новый аккаунт</span></a>
                 <br>
                 <a href="#" class="forgot-password">Забыли пароль?</a>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="registration-window">
+        <div class="container">
+            <h1>Регистрация</h1>
+            <div class="left">
+                <a href="#" class="omni-sign-in" id="fb"><i class="fa fa-facebook"></i><span>Войти через Facebook</span></a>
+                <a href="#" class="omni-sign-in" id="vk"><i class="fa fa-vk"></i><span>Войти через VKontakte</span></a>
+                <a href="#" class="omni-sign-in" id="ok"><i class="fa fa-facebook"></i><span>Войти через Одноклассники</span></a>
+            </div>
+            <div class="right">
+                <form action="">
+                    <input type="text" name="email" placeholder="Ваш email" />
+                    <input type="text" name="password" placeholder="Ваш пароль" />
+                    <input type="submit" class="btn" value="Зарегистрироваться" />
+                    <p>
+                        Нажимая на кнопку «Вход» Вы подтверждаете согласие с <a href="#">Политикой конфиденциальности</a> и <a href="#">Условиями использования</a>
+                    </p>
+                </form>
+            </div>
+            <div class="clr"></div>
+            <div class="links">
+                <a class="sign-in" id="sign-in" href="#">Уже зарегистрированы? <span>Войдите</span></a>
             </div>
         </div>
     </div>
