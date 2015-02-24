@@ -3,9 +3,21 @@ body.page-mainpage{
         margin-left: -16px !important;
         margin-top: 0 !important;
     }
-    .modal#authorization-window, .modal#registration-window{
+    .modal#authorization-window, .modal#registration-window, .modal#forgot-password-window{
         padding-bottom: 0;
-        
+        &#forgot-password-window{
+            .container{
+                width:500px;
+                form{
+                    width: 300px;
+                    margin:auto;
+                    margin-bottom: 20px;
+                    input[type="submit"]{
+                        width: 100%;
+                    }
+                }
+            }
+        }
         .container{
             padding-bottom: 80px;
             h1{

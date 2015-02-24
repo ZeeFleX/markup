@@ -40,7 +40,7 @@
             <div class="links">
                 <a class="sign-up" id="sign-up" href="#">Создать <span>новый аккаунт</span></a>
                 <br>
-                <a href="#" class="forgot-password">Забыли пароль?</a>
+                <a href="#" class="forgot-password" id="forgot-password">Забыли пароль?</a>
             </div>
         </div>
     </div>
@@ -65,6 +65,19 @@
             <div class="clr"></div>
             <div class="links">
                 <a class="sign-in" id="sign-in" href="#">Уже зарегистрированы? <span>Войдите</span></a>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="forgot-password-window">
+        <div class="container">
+            <h1>Восстановление пароля</h1>
+            <form action="">
+                <input type="text" name="email" placeholder="Ваш email" />
+                <input type="submit" class="btn" value="Сбросить пароль" />
+            </form>
+            <div class="clr"></div>
+            <div class="links">
+                <a class="sign-in" id="sign-in" href="#">Вспомнили пароль? <span>Войдите</span></a>
             </div>
         </div>
     </div>
