@@ -425,6 +425,35 @@ ul.badge-marked li {
   padding-left: 20px;
   margin: 3px 0;
 }
+/* line 393, interface.less */
+.ui-widget-overlay.ui-front {
+  background: rgba(0, 0, 0, 0.3);
+}
+/* line 396, interface.less */
+.ui-dialog.ui-widget.ui-widget-content {
+  background: #ffffff;
+  padding: 10px;
+}
+/* line 399, interface.less */
+.ui-dialog.ui-widget.ui-widget-content .ui-dialog-titlebar.ui-widget-header {
+  border: none;
+  background: none;
+  overflow: visible;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  box-sizing: border-box;
+  z-index: 1;
+}
+/* line 408, interface.less */
+.ui-dialog.ui-widget.ui-widget-content .ui-dialog-titlebar.ui-widget-header .ui-dialog-titlebar-close {
+  margin-right: .6em;
+}
+/* line 411, interface.less */
+.ui-dialog.ui-widget.ui-widget-content .ui-dialog-titlebar.ui-widget-header .ui-button.ui-widget {
+  border: none;
+  background: none;
+}
 /* line 1, global.less */
 .clr {
   clear: both;
@@ -707,6 +736,128 @@ header.header .mainmenu li a {
 /* line 238, global.less */
 .footer section.bottom ul.footer-menu li a:hover {
   text-decoration: underline;
+}
+/* line 2, mainpage.less */
+body.page-mainpage .ui-button-icon-primary {
+  margin-left: -16px !important;
+  margin-top: 0 !important;
+}
+/* line 6, mainpage.less */
+body.page-mainpage .modal#authorization-window {
+  padding-bottom: 0;
+}
+/* line 9, mainpage.less */
+body.page-mainpage .modal#authorization-window .container {
+  padding-bottom: 80px;
+}
+/* line 11, mainpage.less */
+body.page-mainpage .modal#authorization-window .container h1 {
+  color: #35504e;
+  font: 500 2.4rem Roboto;
+  margin-bottom: 20px;
+}
+/* line 16, mainpage.less */
+body.page-mainpage .modal#authorization-window .container .left {
+  padding-right: 15px;
+  width: 255px;
+  float: left;
+  border-right: solid 1px #b9d4cc;
+}
+/* line 21, mainpage.less */
+body.page-mainpage .modal#authorization-window .container .left a.omni-sign-in {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  -o-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0 10px;
+  clear: both;
+  overflow: hidden;
+  margin-bottom: 21px;
+}
+/* line 36, mainpage.less */
+body.page-mainpage .modal#authorization-window .container .left a.omni-sign-in i {
+  position: relative;
+  height: 100%;
+  display: block;
+  float: left;
+  border-right: solid 1px #2f4779;
+  font-size: 1.8rem;
+  padding: 10px 10px 10px 0;
+  text-align: center;
+  width: 30px;
+}
+/* line 47, mainpage.less */
+body.page-mainpage .modal#authorization-window .container .left a.omni-sign-in span {
+  position: relative;
+  height: 100%;
+  display: block;
+  float: left;
+  font-size: 1.2rem;
+  padding-left: 15px;
+  margin-top: 10px;
+}
+/* line 56, mainpage.less */
+body.page-mainpage .modal#authorization-window .container .left a.omni-sign-in#fb {
+  background: #3b5998;
+}
+/* line 59, mainpage.less */
+body.page-mainpage .modal#authorization-window .container .left a.omni-sign-in#vk {
+  background: #4c75a3;
+}
+/* line 62, mainpage.less */
+body.page-mainpage .modal#authorization-window .container .left a.omni-sign-in#ok {
+  background: #fa9616;
+  margin-bottom: 0;
+}
+/* line 65, mainpage.less */
+body.page-mainpage .modal#authorization-window .container .left a.omni-sign-in#ok i {
+  border-color: #d98314;
+}
+/* line 71, mainpage.less */
+body.page-mainpage .modal#authorization-window .container .right {
+  width: 255px;
+  float: right;
+  padding-left: 15px;
+}
+/* line 75, mainpage.less */
+body.page-mainpage .modal#authorization-window .container .right .btn {
+  width: 100%;
+}
+/* line 78, mainpage.less */
+body.page-mainpage .modal#authorization-window .container .right p {
+  color: #8aa4a2;
+  font: 400 1.2rem Roboto;
+  text-align: center;
+}
+/* line 82, mainpage.less */
+body.page-mainpage .modal#authorization-window .container .right p a {
+  color: #688280;
+  font-weight: bold;
+}
+/* line 88, mainpage.less */
+body.page-mainpage .modal#authorization-window .container a.sign-up {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 55px;
+  text-align: center;
+  display: block;
+  color: #35504e;
+  font: 400 1.4rem Roboto;
+  line-height: 55px;
+  text-decoration: none;
+  border-top: #b9d4cc 1px solid;
+}
+/* line 100, mainpage.less */
+body.page-mainpage .modal#authorization-window .container a.sign-up span {
+  color: #4ad0c5;
+  font-weight: bold;
 }
 /* line 1, page_profile.less */
 .wrapper {

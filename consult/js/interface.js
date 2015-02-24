@@ -3,6 +3,8 @@ $(document).ready(function () {
 });
 
 var loadInterface = function(){
+    //Модальные окна
+    $('.modal').dialog({width: 'auto', autoOpen: false, modal: true });
     //Поле отображения рейтинга
     var ratingFields = $('div.rating-field');
     $.each(ratingFields, function(){

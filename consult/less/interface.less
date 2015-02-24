@@ -388,3 +388,30 @@ ul.badge-marked {
         margin:3px 0;
     }
 }
+
+//jQuery UI
+.ui-widget-overlay.ui-front{
+    background: rgba(0,0,0,.3); 
+}
+.ui-dialog.ui-widget.ui-widget-content{
+    background: @white;
+    padding: 10px;
+    .ui-dialog-titlebar.ui-widget-header{
+        border:none;
+        background: none;
+        overflow: visible;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        box-sizing: border-box;
+        z-index: 1;
+        .ui-dialog-titlebar-close{
+            margin-right: .6em;
+        }
+        .ui-button.ui-widget{
+            border:none;
+            background: none;
+            
+        }
+    }
+}
