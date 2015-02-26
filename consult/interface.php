@@ -137,6 +137,10 @@
                 <input type="text" class="allow-clear" placeholder="Placeholder" value="Текст для примера"/>
             </div>
             <div class="item">
+                <label>input[type="text"].phone-mask</label>
+                <input type="text" class="allow-clear phone-mask" />
+            </div>
+            <div class="item">
                 <label>textarea.allow-clear</label>
                 <textarea class="allow-clear" placeholder="Placeholder"></textarea>
             </div>
