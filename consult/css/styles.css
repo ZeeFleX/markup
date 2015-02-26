@@ -255,16 +255,16 @@ input[type="password"]:focus {
   border-color: #4ad0c5;
 }
 /* line 236, interface.less */
-.field.required span {
+.field span {
   display: none;
 }
 /* line 239, interface.less */
-.field.required.required span {
+.field.required span {
   color: #eb5245;
   display: inline;
 }
 /* line 243, interface.less */
-.field.required label {
+.field label {
   color: #35504e;
   font-weight: 500;
   margin-bottom: 5px;
@@ -1762,6 +1762,21 @@ body.page-profile-settings.about-me form section.professional .certificate a#rem
 }
 /* line 253, page_profile_settings.less */
 body.page-profile-settings.about-me form input[type="submit"] {
+  margin-right: 20px;
+  margin-top: 30px;
+}
+/* line 261, page_profile_settings.less */
+body.page-profile-settings.contacts form .field {
+  float: left;
+  width: 48%;
+  margin-right: 4%;
+}
+/* line 265, page_profile_settings.less */
+body.page-profile-settings.contacts form .field.phone {
+  margin-right: 0;
+}
+/* line 269, page_profile_settings.less */
+body.page-profile-settings.contacts form input[type="submit"] {
   margin-right: 20px;
   margin-top: 30px;
 }

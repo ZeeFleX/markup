@@ -3,6 +3,8 @@ $(document).ready(function () {
 });
 
 var loadInterface = function(){
+    //Маска телефонов
+    $('.phone-mask').mask('8 (000) 000-00-00', {placeholder: '8 (___) ___-__-__'});
     //Модальные окна
     $('.modal').dialog({width: 'auto', autoOpen: false, modal: true });
     //Поле отображения рейтинга
