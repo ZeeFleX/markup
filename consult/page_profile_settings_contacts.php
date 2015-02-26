@@ -110,13 +110,13 @@
                     <li>
                         <a href="#">Информация о себе</a>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="#">Контакты</a>
                     </li>
                     <li>
                         <a href="#">Партнеры</a>
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="#">Настройки безопасности</a>
                     </li>
                 </ul>

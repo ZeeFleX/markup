@@ -45,7 +45,6 @@ var loadInterface = function(){
                         .removeClass('active');
                 }
             }
-            console.log(currentIndex);
         });
         $(ratingBlock).on('mouseleave', function(){
             $(this).children('.fa').removeClass('active');
@@ -116,7 +115,6 @@ var loadInterface = function(){
             var action = $(input).attr('data-action');
             var width = $(input).outerWidth();
             var height = $(input).outerHeight();
-            console.log(width);
             $(input).wrap('<form action="' + action + '" method="' + method + '" class="input-container"></form>');
             var form = $(input).closest('form');
             $(input).after('<input type="submit" value="" />');
