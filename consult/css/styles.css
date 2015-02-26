@@ -229,7 +229,8 @@ p {
 }
 /* line 213, interface.less */
 input[type="text"],
-textarea {
+textarea,
+input[type="password"] {
   display: block;
   border-radius: 5px;
   border: solid 1px;
@@ -237,7 +238,7 @@ textarea {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   padding: 10px 12px;
-  margin: 0 0 20px 0;
+  margin: 0 0 10px 0;
   transition: border-color 0.3s ease;
   -webkit-transition: border-color 0.3s ease;
   -moz-transition: border-color 0.3s ease;
@@ -248,15 +249,31 @@ textarea {
 }
 /* line 230, interface.less */
 input[type="text"]:focus,
-textarea:focus {
+textarea:focus,
+input[type="password"]:focus {
   outline: none;
   border-color: #4ad0c5;
 }
-/* line 235, interface.less */
+/* line 236, interface.less */
+.field.required span {
+  display: none;
+}
+/* line 239, interface.less */
+.field.required.required span {
+  color: #eb5245;
+  display: inline;
+}
+/* line 243, interface.less */
+.field.required label {
+  color: #35504e;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+/* line 249, interface.less */
 .input-container {
   position: relative;
 }
-/* line 237, interface.less */
+/* line 251, interface.less */
 .input-container .clear {
   width: 10px;
   height: 11px;
@@ -267,42 +284,42 @@ textarea:focus {
   z-index: 1;
   background: url('../images/interface/clear-sprite.png') center 0 no-repeat;
 }
-/* line 246, interface.less */
+/* line 260, interface.less */
 .input-container .clear:hover {
   background-position: center -11px;
 }
-/* line 249, interface.less */
+/* line 263, interface.less */
 .input-container .clear.hidden {
   display: none;
 }
-/* line 254, interface.less */
+/* line 268, interface.less */
 textarea {
   resize: none;
 }
-/* line 257, interface.less */
+/* line 271, interface.less */
 label {
   display: block;
   margin: 10px 0;
 }
-/* line 261, interface.less */
+/* line 275, interface.less */
 select.select2 {
   min-width: 300px;
 }
-/* line 265, interface.less */
+/* line 279, interface.less */
 .select2-container *:focus {
   outline: none !important;
 }
-/* line 268, interface.less */
+/* line 282, interface.less */
 .select2-container .select2-selection {
   border: solid 1px;
   border-color: #8aa4a2;
   height: 36px !important;
 }
-/* line 272, interface.less */
+/* line 286, interface.less */
 .select2-container .select2-selection .select2-selection__rendered {
   line-height: 36px !important;
 }
-/* line 275, interface.less */
+/* line 289, interface.less */
 .select2-container .select2-selection .select2-selection__arrow {
   background: url('../images/interface/dropdown-arrow.png') center center no-repeat #8aa4a2;
   width: 60px !important;
@@ -310,22 +327,22 @@ select.select2 {
   top: 0px !important;
   right: 0px !important;
 }
-/* line 281, interface.less */
+/* line 295, interface.less */
 .select2-container .select2-selection .select2-selection__arrow b {
   display: none;
 }
-/* line 287, interface.less */
+/* line 301, interface.less */
 .dashed {
   border: dashed 1px #b9d4cc;
 }
-/* line 290, interface.less */
+/* line 304, interface.less */
 .b-radius {
   border-radius: 4px;
   -moz-border-radius: 4px;
   -o-border-radius: 4px;
   -webkit-border-radius: 4px;
 }
-/* line 296, interface.less */
+/* line 310, interface.less */
 .content-block {
   padding: 30px;
   box-sizing: border-box;
@@ -341,29 +358,29 @@ select.select2 {
   background: #ffffff;
   margin-bottom: 3px;
 }
-/* line 311, interface.less */
+/* line 325, interface.less */
 .rating-block {
   border-radius: 10px;
   padding: 0 10px;
   border: solid 1px #ffaa3e;
 }
-/* line 315, interface.less */
+/* line 329, interface.less */
 .rating-block p {
   margin: 4px auto;
   text-align: center;
 }
-/* line 318, interface.less */
+/* line 332, interface.less */
 .rating-block p.value {
   font-weight: 700;
   font-size: 1.8rem;
   color: #8aa4a2;
 }
-/* line 322, interface.less */
+/* line 336, interface.less */
 .rating-block p.value .current-value {
   color: #ffaa3e;
   font-weight: bold;
 }
-/* line 328, interface.less */
+/* line 342, interface.less */
 .rating-block p.title {
   position: absolute;
   color: #ffaa3e;
@@ -375,20 +392,20 @@ select.select2 {
   width: 100%;
   left: 0;
 }
-/* line 338, interface.less */
+/* line 352, interface.less */
 .rating-block p.title span {
   background: #ffffff;
   padding: 0 3px;
   text-transform: uppercase;
 }
-/* line 347, interface.less */
+/* line 361, interface.less */
 .raiting-block.value .fa {
   color: #ffaa3e;
   font-size: 2.0rem;
   font-weight: normal;
   margin-right: 3px;
 }
-/* line 357, interface.less */
+/* line 371, interface.less */
 .raiting-block.vote .fa {
   color: #35504e;
   font-size: 2.0rem;
@@ -396,22 +413,22 @@ select.select2 {
   margin-right: 3px;
   cursor: pointer;
 }
-/* line 363, interface.less */
+/* line 377, interface.less */
 .raiting-block.vote .fa.fa-star {
   color: #ffaa3e;
 }
-/* line 366, interface.less */
+/* line 380, interface.less */
 .raiting-block.vote .fa.active {
   color: #ffaa3e;
 }
-/* line 371, interface.less */
+/* line 385, interface.less */
 a.dotts {
   display: block;
   text-decoration: none;
   cursor: pointer;
   padding: 5px 0;
 }
-/* line 376, interface.less */
+/* line 390, interface.less */
 a.dotts .fa-circle {
   color: #8aa4a2;
   font-size: 0.3rem;
@@ -419,22 +436,22 @@ a.dotts .fa-circle {
   float: left;
   margin-right: 2px;
 }
-/* line 385, interface.less */
+/* line 399, interface.less */
 ul.badge-marked li {
   background: url('../images/interface/badge.png') left 2px no-repeat;
   padding-left: 20px;
   margin: 3px 0;
 }
-/* line 393, interface.less */
+/* line 407, interface.less */
 .ui-widget-overlay.ui-front {
   background: rgba(0, 0, 0, 0.3);
 }
-/* line 396, interface.less */
+/* line 410, interface.less */
 .ui-dialog.ui-widget.ui-widget-content {
   background: #ffffff;
   padding: 10px;
 }
-/* line 399, interface.less */
+/* line 413, interface.less */
 .ui-dialog.ui-widget.ui-widget-content .ui-dialog-titlebar.ui-widget-header {
   border: none;
   background: none;
@@ -445,11 +462,11 @@ ul.badge-marked li {
   box-sizing: border-box;
   z-index: 1;
 }
-/* line 408, interface.less */
+/* line 422, interface.less */
 .ui-dialog.ui-widget.ui-widget-content .ui-dialog-titlebar.ui-widget-header .ui-dialog-titlebar-close {
   margin-right: .6em;
 }
-/* line 411, interface.less */
+/* line 425, interface.less */
 .ui-dialog.ui-widget.ui-widget-content .ui-dialog-titlebar.ui-widget-header .ui-button.ui-widget {
   border: none;
   background: none;
@@ -1459,12 +1476,37 @@ body.page-profile .same-users-section .content-block.same-users-list .same-user 
   width: 60px;
   margin: 10px auto 0 auto;
 }
-/* line 3, page_profile_settings.less */
-body.page-profile-settings.common section.content {
+/* line 2, page_profile_settings.less */
+body.page-profile-settings section.content {
   float: left;
   width: 62%;
 }
-/* line 8, page_profile_settings.less */
+/* line 6, page_profile_settings.less */
+body.page-profile-settings aside.additional-menu {
+  float: left;
+  margin-left: 2%;
+  width: 36%;
+}
+/* line 11, page_profile_settings.less */
+body.page-profile-settings aside.additional-menu ul li {
+  margin: 3px 0;
+}
+/* line 13, page_profile_settings.less */
+body.page-profile-settings aside.additional-menu ul li a {
+  color: #8aa4a2;
+  font: 500 1.4rem Roboto;
+  text-decoration: none;
+}
+/* line 17, page_profile_settings.less */
+body.page-profile-settings aside.additional-menu ul li a:hover {
+  text-decoration: underline;
+}
+/* line 21, page_profile_settings.less */
+body.page-profile-settings aside.additional-menu ul li.active a {
+  font-weight: bold;
+  color: #35504e;
+}
+/* line 32, page_profile_settings.less */
 body.page-profile-settings.common section.content .upload-photo form .photo-container {
   overflow: hidden;
   float: left;
@@ -1476,40 +1518,40 @@ body.page-profile-settings.common section.content .upload-photo form .photo-cont
   height: 150px;
   margin-right: 15px;
 }
-/* line 18, page_profile_settings.less */
+/* line 42, page_profile_settings.less */
 body.page-profile-settings.common section.content .upload-photo form .photo-container img {
   display: block;
   width: 100%;
   height: 100%;
 }
-/* line 26, page_profile_settings.less */
+/* line 50, page_profile_settings.less */
 body.page-profile-settings.common section.content .control {
   overflow: hidden;
 }
-/* line 28, page_profile_settings.less */
+/* line 52, page_profile_settings.less */
 body.page-profile-settings.common section.content .control input {
   margin-bottom: 10px;
 }
-/* line 31, page_profile_settings.less */
+/* line 55, page_profile_settings.less */
 body.page-profile-settings.common section.content .control p {
   color: #8aa4a2;
   font: 400 1.2rem Roboto;
 }
-/* line 36, page_profile_settings.less */
+/* line 60, page_profile_settings.less */
 body.page-profile-settings.common section.content form#profile-settings-form {
   margin-top: 20px;
 }
-/* line 38, page_profile_settings.less */
+/* line 62, page_profile_settings.less */
 body.page-profile-settings.common section.content form#profile-settings-form label {
   color: #35504e;
   font: 500 1.4rem Roboto;
   margin-bottom: 5px;
 }
-/* line 43, page_profile_settings.less */
+/* line 67, page_profile_settings.less */
 body.page-profile-settings.common section.content form#profile-settings-form input {
   margin-bottom: 5px;
 }
-/* line 47, page_profile_settings.less */
+/* line 71, page_profile_settings.less */
 body.page-profile-settings.common section.content form#profile-settings-form .field.firstname,
 body.page-profile-settings.common section.content form#profile-settings-form .field.lastname,
 body.page-profile-settings.common section.content form#profile-settings-form .field.middlename,
@@ -1519,7 +1561,7 @@ body.page-profile-settings.common section.content form#profile-settings-form .fi
   width: 48%;
   margin-right: 4%;
 }
-/* line 51, page_profile_settings.less */
+/* line 75, page_profile_settings.less */
 body.page-profile-settings.common section.content form#profile-settings-form .field.firstname.lastname,
 body.page-profile-settings.common section.content form#profile-settings-form .field.lastname.lastname,
 body.page-profile-settings.common section.content form#profile-settings-form .field.middlename.lastname,
@@ -1532,7 +1574,7 @@ body.page-profile-settings.common section.content form#profile-settings-form .fi
 body.page-profile-settings.common section.content form#profile-settings-form .field.country.city {
   margin-right: 0;
 }
-/* line 54, page_profile_settings.less */
+/* line 78, page_profile_settings.less */
 body.page-profile-settings.common section.content form#profile-settings-form .field.firstname .select2-container,
 body.page-profile-settings.common section.content form#profile-settings-form .field.lastname .select2-container,
 body.page-profile-settings.common section.content form#profile-settings-form .field.middlename .select2-container,
@@ -1541,40 +1583,187 @@ body.page-profile-settings.common section.content form#profile-settings-form .fi
   width: 100% !important;
   margin-bottom: 5px;
 }
-/* line 59, page_profile_settings.less */
+/* line 83, page_profile_settings.less */
 body.page-profile-settings.common section.content form#profile-settings-form .field textarea {
   width: 100%;
   height: 100px;
   margin-bottom: 40px;
 }
-/* line 65, page_profile_settings.less */
+/* line 89, page_profile_settings.less */
 body.page-profile-settings.common section.content form#profile-settings-form input[type="submit"] {
   margin-right: 20px;
 }
-/* line 70, page_profile_settings.less */
-body.page-profile-settings.common aside.additional-menu {
+/* line 97, page_profile_settings.less */
+body.page-profile-settings.security form .field {
   float: left;
-  margin-left: 2%;
-  width: 36%;
+  width: 48%;
+  margin-right: 4%;
 }
-/* line 75, page_profile_settings.less */
-body.page-profile-settings.common aside.additional-menu ul li {
-  margin: 3px 0;
+/* line 101, page_profile_settings.less */
+body.page-profile-settings.security form .field.confirm-password {
+  margin-right: 0;
 }
-/* line 77, page_profile_settings.less */
-body.page-profile-settings.common aside.additional-menu ul li a {
+/* line 105, page_profile_settings.less */
+body.page-profile-settings.security form input[type="submit"] {
+  margin-right: 20px;
+  margin-top: 30px;
+}
+/* line 114, page_profile_settings.less */
+body.page-profile-settings.about-me form .field.upload .preview {
+  float: left;
+  width: 80px;
+  min-height: 90px;
+  margin-right: 15px;
+  border-radius: 4px;
+  -o-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  overflow: hidden;
+}
+/* line 124, page_profile_settings.less */
+body.page-profile-settings.about-me form .field.upload .preview img {
+  display: block;
+  width: 100%;
+}
+/* line 129, page_profile_settings.less */
+body.page-profile-settings.about-me form .field.upload .buttons {
+  float: left;
+  width: 38%;
+}
+/* line 132, page_profile_settings.less */
+body.page-profile-settings.about-me form .field.upload .buttons .btn {
+  margin-bottom: 10px;
+}
+/* line 136, page_profile_settings.less */
+body.page-profile-settings.about-me form .field.upload p {
+  display: block;
+  overflow: hidden;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  top: 7px;
+}
+/* line 145, page_profile_settings.less */
+body.page-profile-settings.about-me form a.add-document-button {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  background: #e9f7f1;
+  display: block;
+  padding: 5px 0;
   color: #8aa4a2;
-  font: 500 1.4rem Roboto;
   text-decoration: none;
+  margin-bottom: 30px;
 }
-/* line 81, page_profile_settings.less */
-body.page-profile-settings.common aside.additional-menu ul li a:hover {
-  text-decoration: underline;
-}
-/* line 85, page_profile_settings.less */
-body.page-profile-settings.common aside.additional-menu ul li.active a {
-  font-weight: bold;
+/* line 156, page_profile_settings.less */
+body.page-profile-settings.about-me form a.add-document-button:hover {
+  background: #d8e6e0;
   color: #35504e;
+}
+/* line 161, page_profile_settings.less */
+body.page-profile-settings.about-me form .select2-container {
+  width: 40% !important;
+  margin-right: 4%;
+}
+/* line 166, page_profile_settings.less */
+body.page-profile-settings.about-me form section.specialization .field {
+  float: left;
+  width: 48%;
+  margin: 5px 0;
+}
+/* line 170, page_profile_settings.less */
+body.page-profile-settings.about-me form section.specialization .field:nth-child(even) {
+  margin-right: 0;
+}
+/* line 173, page_profile_settings.less */
+body.page-profile-settings.about-me form section.specialization .field .checkbox {
+  float: left;
+  margin-right: 10px;
+}
+/* line 176, page_profile_settings.less */
+body.page-profile-settings.about-me form section.specialization .field .checkbox.checked + label {
+  color: #4ad0c5;
+}
+/* line 180, page_profile_settings.less */
+body.page-profile-settings.about-me form section.specialization .field label {
+  display: block;
+  overflow: hidden;
+  margin: 2px 0;
+  font-size: 500;
+}
+/* line 187, page_profile_settings.less */
+body.page-profile-settings.about-me form section.specialization input[type="text"] {
+  margin-top: 20px;
+}
+/* line 193, page_profile_settings.less */
+body.page-profile-settings.about-me form section.education .university .input-container {
+  overflow: hidden;
+}
+/* line 196, page_profile_settings.less */
+body.page-profile-settings.about-me form section.education .university a#remove-university {
+  display: block;
+  float: right;
+  border-radius: 15px;
+  -o-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  border: solid 3px #8aa4a2;
+  text-align: center;
+  margin-left: 15px;
+  margin-top: 7px;
+}
+/* line 210, page_profile_settings.less */
+body.page-profile-settings.about-me form section.education .university a#remove-university i {
+  color: #8aa4a2;
+}
+/* line 213, page_profile_settings.less */
+body.page-profile-settings.about-me form section.education .university a#remove-university:hover {
+  border-color: #35504e;
+}
+/* line 215, page_profile_settings.less */
+body.page-profile-settings.about-me form section.education .university a#remove-university:hover i {
+  color: #35504e;
+}
+/* line 224, page_profile_settings.less */
+body.page-profile-settings.about-me form section.professional .certificate .input-container {
+  overflow: hidden;
+}
+/* line 227, page_profile_settings.less */
+body.page-profile-settings.about-me form section.professional .certificate a#remove-certificate {
+  display: block;
+  float: right;
+  border-radius: 15px;
+  -o-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  border: solid 3px #8aa4a2;
+  text-align: center;
+  margin-left: 15px;
+  margin-top: 7px;
+}
+/* line 241, page_profile_settings.less */
+body.page-profile-settings.about-me form section.professional .certificate a#remove-certificate i {
+  color: #8aa4a2;
+}
+/* line 244, page_profile_settings.less */
+body.page-profile-settings.about-me form section.professional .certificate a#remove-certificate:hover {
+  border-color: #35504e;
+}
+/* line 246, page_profile_settings.less */
+body.page-profile-settings.about-me form section.professional .certificate a#remove-certificate:hover i {
+  color: #35504e;
+}
+/* line 253, page_profile_settings.less */
+body.page-profile-settings.about-me form input[type="submit"] {
+  margin-right: 20px;
+  margin-top: 30px;
 }
 /* line 1, cheat-sheet.less */
 .wrapper {

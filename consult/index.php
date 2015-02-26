@@ -19,6 +19,8 @@
             <li><a href="mainpage.php">Главная страница</a></li>
             <li><a href="page_profile.php">Профиль (консультант)</a></li>
             <li><a href="page_profile_settings_common.php">Основные настройки профиля (консультант)</a></li> 
+            <li><a href="page_profile_settings_security.php">Страница настроек безопасности (консультант)</a>
+            <li><a href="page_profile_settings_about_me.php">Страница настроек. Информация о себе (консультант)</a>
         </ol>
         <h1>Полезные ссылки</h1>
         <ol>

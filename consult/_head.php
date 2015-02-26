@@ -10,6 +10,7 @@
 <!--        <script src="js/less.min.js"></script>-->
 <script src="js/select2.min.js"></script>
 <script src="js/jquery-ui.min.js"></script>
+<script src="js/ajax.js"></script>
 <script src="js/interface.js"></script>
 <script src="js/mainpage.js"></script>
 <script src="js/page_profile.js"></script>
