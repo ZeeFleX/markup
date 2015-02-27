@@ -116,6 +116,12 @@
                     <br>
                     <input type="checkbox" checked="checked" name="confirm-checked">
                 </div>
+                <div class="item">
+                    <p>input[type="radio"]</p>
+                    <input type="radio" name="radio-demo">
+                    <br>
+                    <input type="radio" checked="checked" name="radio-demo">
+                </div>
             </div>
             <h3>Other elements</h3>
             <h4>Текущий рейтинг</h4>
@@ -156,6 +162,11 @@
                 <label for="search">input[type="text"].search</label>
                 <p>Аттрибут data-action - Адрес для отправки данных<br />Аттрибут data-method - метод отправки данных</p>
                 <input type="text" name="search" class="search" data-action="index.php" data-method="POST">
+            </div>
+            <div class="item">
+                <label for="plus">input[type="text"].plus#add-place</label>
+                <p>ID будет повешан на кнопку с плюсом, чтобы привязаться евентом</p>
+                <input type="text" class="plus" id="add-place" >
             </div>
         </section>
     </div>

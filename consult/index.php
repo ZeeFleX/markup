@@ -22,6 +22,7 @@
             <li><a href="page_profile_settings_security.php">Страница настроек безопасности (консультант)</a></li>
             <li><a href="page_profile_settings_about_me.php">Страница настроек. Информация о себе (консультант)</a></li>
             <li><a href="page_profile_settings_contacts.php">Страница контактов. (консультант)</a></li>
+            <li><a href="page_profile_settings_consults.php">Страница консультаций. (консультант)</a></li>
         </ol>
         <h1>Полезные ссылки</h1>
         <ol>

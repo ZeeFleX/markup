@@ -3,6 +3,10 @@ $(document).ready(function () {
 });
 
 var loadInterface = function(){
+    //Валидация
+    $('body').on('focus', 'input.error', function(){
+        $(this).removeClass('error');
+    });
     //Маска телефонов
     $('.phone-mask').mask('8 (000) 000-00-00', {placeholder: '8 (___) ___-__-__'});
     //Модальные окна
@@ -89,6 +93,8 @@ var loadInterface = function(){
             $(toggle).trigger('click');
         });
     });
+    //Радио-кнопки
+    loadRadioButtons();
     //Поля ввода
     var inputs = $('input[type="text"], textarea');
     $.each(inputs, function(){
@@ -144,6 +150,43 @@ var loadInterface = function(){
                 border: 'none',
                 cursor: 'pointer'
             });
+        }else if ($(input).hasClass('plus')){
+            var width = $(input).outerWidth();
+            var height = $(input).outerHeight();
+            var id = $(input).attr('id');
+            $(input).removeAttr('id');
+            $(input).wrap('<div class="input-container"></div>');
+            var container = $(input).closest('.input-container');
+            $(input).after('<span id="' + id + '" />');
+            var plus = $(input).siblings('span#' + id);
+            $(container).css({
+                width: width + 'px',
+                height: height + 'px',
+                overflow: 'hidden',
+                borderRadius: $(input).css('borderRadius'),
+                borderColor: $(input).css('borderColor'),
+                borderStyle: $(input).css('borderStyle'),
+                borderWidth: $(input).css('borderWidth'),
+                margin: $(input).css('margin')
+            });
+            $(input).css({
+                position: 'relative',
+                width: width - 60 + 'px',
+                height: '100%',
+                float: 'left',
+                border: 'none',
+                margin: 0
+            });
+            $(plus).css({
+                display: 'block',
+                position: 'relative',
+                width: '60px',
+                height: '100%',
+                float: 'right',
+                background: 'url(images/interface/plus-icon.png) center center no-repeat #4ad0c5',
+                border: 'none',
+                cursor: 'pointer'
+            });
         }
     });
     $('.select2').select2();
@@ -151,4 +194,27 @@ var loadInterface = function(){
 }
 var checkForValue = function(element){
     if($(element).val().length) {return true} else{return false}
+}
+var loadRadioButtons = function(){
+    var radioButtons = $('input[type="radio"]');
+    $.each(radioButtons, function () {
+        var button = $(this);
+        if(typeof($(button).attr('data-id')) === 'undefined'){
+            var id = Math.floor(Math.random() * 1000000);
+            var ifChecked = '';
+            $(button).attr('data-id', id);
+            if($(button).attr('checked')) ifChecked = 'checked'; 
+            $(this)
+                .css('display', 'none')
+                .after('<div class="radio container ' + ifChecked + '" id="' + id + '"></div>');
+            var container = $('.radio#' + id);
+            $(container).click(function(){
+                $(button).trigger('click');
+                if(!$(container).hasClass('checked')){
+                    $('.radio.container').removeClass('checked');
+                    $(this).addClass('checked');
+                }
+            });
+        }
+    });
 }

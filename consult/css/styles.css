@@ -227,7 +227,21 @@ p {
 .container.checkbox.checked {
   background-position: center -20px;
 }
-/* line 213, interface.less */
+/* line 212, interface.less */
+.container.radio {
+  display: inline-block;
+  border-radius: 3px;
+  background: #dbefe5;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  background: url('../images/interface/radio-sprite.png') center 0 no-repeat;
+}
+/* line 220, interface.less */
+.container.radio.checked {
+  background-position: center -20px;
+}
+/* line 225, interface.less */
 input[type="text"],
 textarea,
 input[type="password"] {
@@ -247,33 +261,39 @@ input[type="password"] {
   color: #8aa4a2;
   font: 400 1.2rem Roboto;
 }
-/* line 230, interface.less */
+/* line 242, interface.less */
 input[type="text"]:focus,
 textarea:focus,
 input[type="password"]:focus {
   outline: none;
   border-color: #4ad0c5;
 }
-/* line 236, interface.less */
+/* line 246, interface.less */
+input[type="text"].error,
+textarea.error,
+input[type="password"].error {
+  background-color: #ffd9d9;
+}
+/* line 251, interface.less */
 .field span {
   display: none;
 }
-/* line 239, interface.less */
+/* line 254, interface.less */
 .field.required span {
   color: #eb5245;
   display: inline;
 }
-/* line 243, interface.less */
+/* line 258, interface.less */
 .field label {
   color: #35504e;
   font-weight: 500;
   margin-bottom: 5px;
 }
-/* line 249, interface.less */
+/* line 264, interface.less */
 .input-container {
   position: relative;
 }
-/* line 251, interface.less */
+/* line 266, interface.less */
 .input-container .clear {
   width: 10px;
   height: 11px;
@@ -284,42 +304,42 @@ input[type="password"]:focus {
   z-index: 1;
   background: url('../images/interface/clear-sprite.png') center 0 no-repeat;
 }
-/* line 260, interface.less */
+/* line 275, interface.less */
 .input-container .clear:hover {
   background-position: center -11px;
 }
-/* line 263, interface.less */
+/* line 278, interface.less */
 .input-container .clear.hidden {
   display: none;
 }
-/* line 268, interface.less */
+/* line 283, interface.less */
 textarea {
   resize: none;
 }
-/* line 271, interface.less */
+/* line 286, interface.less */
 label {
   display: block;
   margin: 10px 0;
 }
-/* line 275, interface.less */
+/* line 290, interface.less */
 select.select2 {
   min-width: 300px;
 }
-/* line 279, interface.less */
+/* line 294, interface.less */
 .select2-container *:focus {
   outline: none !important;
 }
-/* line 282, interface.less */
+/* line 297, interface.less */
 .select2-container .select2-selection {
   border: solid 1px;
   border-color: #8aa4a2;
   height: 36px !important;
 }
-/* line 286, interface.less */
+/* line 301, interface.less */
 .select2-container .select2-selection .select2-selection__rendered {
   line-height: 36px !important;
 }
-/* line 289, interface.less */
+/* line 304, interface.less */
 .select2-container .select2-selection .select2-selection__arrow {
   background: url('../images/interface/dropdown-arrow.png') center center no-repeat #8aa4a2;
   width: 60px !important;
@@ -327,22 +347,22 @@ select.select2 {
   top: 0px !important;
   right: 0px !important;
 }
-/* line 295, interface.less */
+/* line 310, interface.less */
 .select2-container .select2-selection .select2-selection__arrow b {
   display: none;
 }
-/* line 301, interface.less */
+/* line 316, interface.less */
 .dashed {
   border: dashed 1px #b9d4cc;
 }
-/* line 304, interface.less */
+/* line 319, interface.less */
 .b-radius {
   border-radius: 4px;
   -moz-border-radius: 4px;
   -o-border-radius: 4px;
   -webkit-border-radius: 4px;
 }
-/* line 310, interface.less */
+/* line 325, interface.less */
 .content-block {
   padding: 30px;
   box-sizing: border-box;
@@ -358,29 +378,29 @@ select.select2 {
   background: #ffffff;
   margin-bottom: 3px;
 }
-/* line 325, interface.less */
+/* line 340, interface.less */
 .rating-block {
   border-radius: 10px;
   padding: 0 10px;
   border: solid 1px #ffaa3e;
 }
-/* line 329, interface.less */
+/* line 344, interface.less */
 .rating-block p {
   margin: 4px auto;
   text-align: center;
 }
-/* line 332, interface.less */
+/* line 347, interface.less */
 .rating-block p.value {
   font-weight: 700;
   font-size: 1.8rem;
   color: #8aa4a2;
 }
-/* line 336, interface.less */
+/* line 351, interface.less */
 .rating-block p.value .current-value {
   color: #ffaa3e;
   font-weight: bold;
 }
-/* line 342, interface.less */
+/* line 357, interface.less */
 .rating-block p.title {
   position: absolute;
   color: #ffaa3e;
@@ -392,20 +412,20 @@ select.select2 {
   width: 100%;
   left: 0;
 }
-/* line 352, interface.less */
+/* line 367, interface.less */
 .rating-block p.title span {
   background: #ffffff;
   padding: 0 3px;
   text-transform: uppercase;
 }
-/* line 361, interface.less */
+/* line 376, interface.less */
 .raiting-block.value .fa {
   color: #ffaa3e;
   font-size: 2.0rem;
   font-weight: normal;
   margin-right: 3px;
 }
-/* line 371, interface.less */
+/* line 386, interface.less */
 .raiting-block.vote .fa {
   color: #35504e;
   font-size: 2.0rem;
@@ -413,22 +433,22 @@ select.select2 {
   margin-right: 3px;
   cursor: pointer;
 }
-/* line 377, interface.less */
+/* line 392, interface.less */
 .raiting-block.vote .fa.fa-star {
   color: #ffaa3e;
 }
-/* line 380, interface.less */
+/* line 395, interface.less */
 .raiting-block.vote .fa.active {
   color: #ffaa3e;
 }
-/* line 385, interface.less */
+/* line 400, interface.less */
 a.dotts {
   display: block;
   text-decoration: none;
   cursor: pointer;
   padding: 5px 0;
 }
-/* line 390, interface.less */
+/* line 405, interface.less */
 a.dotts .fa-circle {
   color: #8aa4a2;
   font-size: 0.3rem;
@@ -436,22 +456,22 @@ a.dotts .fa-circle {
   float: left;
   margin-right: 2px;
 }
-/* line 399, interface.less */
+/* line 414, interface.less */
 ul.badge-marked li {
   background: url('../images/interface/badge.png') left 2px no-repeat;
   padding-left: 20px;
   margin: 3px 0;
 }
-/* line 407, interface.less */
+/* line 422, interface.less */
 .ui-widget-overlay.ui-front {
   background: rgba(0, 0, 0, 0.3);
 }
-/* line 410, interface.less */
+/* line 425, interface.less */
 .ui-dialog.ui-widget.ui-widget-content {
   background: #ffffff;
   padding: 10px;
 }
-/* line 413, interface.less */
+/* line 428, interface.less */
 .ui-dialog.ui-widget.ui-widget-content .ui-dialog-titlebar.ui-widget-header {
   border: none;
   background: none;
@@ -462,11 +482,11 @@ ul.badge-marked li {
   box-sizing: border-box;
   z-index: 1;
 }
-/* line 422, interface.less */
+/* line 437, interface.less */
 .ui-dialog.ui-widget.ui-widget-content .ui-dialog-titlebar.ui-widget-header .ui-dialog-titlebar-close {
   margin-right: .6em;
 }
-/* line 425, interface.less */
+/* line 440, interface.less */
 .ui-dialog.ui-widget.ui-widget-content .ui-dialog-titlebar.ui-widget-header .ui-button.ui-widget {
   border: none;
   background: none;
@@ -1783,6 +1803,113 @@ body.page-profile-settings.contacts form .field.phone {
 body.page-profile-settings.contacts form input[type="submit"] {
   margin-right: 20px;
   margin-top: 30px;
+}
+/* line 276, page_profile_settings.less */
+body.page-profile-settings.consults .prices {
+  margin-bottom: 20px;
+}
+/* line 278, page_profile_settings.less */
+body.page-profile-settings.consults .prices .item {
+  margin-bottom: 0px;
+}
+/* line 281, page_profile_settings.less */
+body.page-profile-settings.consults .prices .item label.name {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  color: #8aa4a2;
+  display: block;
+  float: left;
+}
+/* line 288, page_profile_settings.less */
+body.page-profile-settings.consults .prices .item .toggle.container {
+  margin-top: 7px;
+  margin-left: 15px;
+  float: left;
+}
+/* line 292, page_profile_settings.less */
+body.page-profile-settings.consults .prices .item .toggle.container + p:after {
+  content: 'активировать';
+}
+/* line 295, page_profile_settings.less */
+body.page-profile-settings.consults .prices .item .toggle.container.checked + p:after {
+  content: 'активно';
+  color: #4ad0c5;
+}
+/* line 300, page_profile_settings.less */
+body.page-profile-settings.consults .prices .item p {
+  display: block;
+  float: left;
+  margin-left: 10px;
+  font-size: 1.2rem;
+}
+/* line 306, page_profile_settings.less */
+body.page-profile-settings.consults .prices .item .price {
+  height: 0;
+  transition: all 0.2s ease;
+  overflow: hidden;
+}
+/* line 310, page_profile_settings.less */
+body.page-profile-settings.consults .prices .item .price input {
+  width: 120px;
+  display: inline-block;
+  margin-right: 10px;
+}
+/* line 317, page_profile_settings.less */
+body.page-profile-settings.consults .prices .item.active .price {
+  height: 50px;
+}
+/* line 323, page_profile_settings.less */
+body.page-profile-settings.consults .prices .pay-notice .date {
+  color: #35504e;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+/* line 331, page_profile_settings.less */
+body.page-profile-settings.consults .places .item {
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+/* line 334, page_profile_settings.less */
+body.page-profile-settings.consults .places .item a.remove-place {
+  border-radius: 13px;
+  -o-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -webkit-border-radius: 13px;
+  display: block;
+  float: left;
+  width: 15px;
+  height: 15px;
+  border: solid #f85649 2px;
+  text-align: center;
+  line-height: 13px;
+  margin-right: 8px;
+  top: 2px;
+}
+/* line 348, page_profile_settings.less */
+body.page-profile-settings.consults .places .item a.remove-place i {
+  color: #f85649;
+  font-size: 1.1rem;
+}
+/* line 353, page_profile_settings.less */
+body.page-profile-settings.consults .places .item span.address {
+  margin-right: 20px;
+}
+/* line 359, page_profile_settings.less */
+body.page-profile-settings.consults .places .item .radio.container {
+  top: 4px;
+  margin-right: 4px;
+}
+/* line 363, page_profile_settings.less */
+body.page-profile-settings.consults .places .item label {
+  display: inline;
+}
+/* line 367, page_profile_settings.less */
+body.page-profile-settings.consults .places input.plus {
+  margin: 20px 0 30px 0;
+}
+/* line 371, page_profile_settings.less */
+body.page-profile-settings.consults input[type="submit"] {
+  margin-right: 20px;
 }
 /* line 1, cheat-sheet.less */
 .wrapper {

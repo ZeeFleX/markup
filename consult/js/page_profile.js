@@ -1,4 +1,34 @@
 $(document).ready(function(){
+    //Цены на консультации
+    var itemContainers = $('.prices .item');
+    $.each(itemContainers, function(key,item){
+        $(item).find('input[type="checkbox"]').on('change', function(){
+            if($(this).is(':checked')){
+                $(item).addClass('active');
+            }else{
+                $(item).removeClass('active');
+            }
+        });
+    });
+    //Добавление и удаление офисов проведения консультаций
+    var places = $('.places');
+    $(places).on('click', '.remove-place', function(e){
+        e.preventDefault();
+        $(this).closest('.item').slideUp(300, function(){
+            $(this).closest('.item').remove();
+        });
+    });
+    $('span#add-place').on('click', function(){
+        var newAddress = $(this).siblings('input').val();
+        $(this).siblings('input').val('');
+        if(newAddress.length){
+            $(places).find('.item').last().after('<div class="item hidden"><input type="hidden" name="places[]" value="' + newAddress + '"/><a href="#" class="remove-place"><i class="fa fa-close"></i></a><span class="address">' + newAddress + '</span><input type="radio" name="main-place" value="2"><label for="main-place">Основной город</label><div class="clr"></div></div>');
+            loadRadioButtons();
+            $(places).find('.item').last().slideDown(300);
+        }else{
+            $(this).siblings('input').addClass('error');
+        }
+    });
     //Подгрузка отзывов
     $('#load-more-reviews').on('click', function(e){
         e.preventDefault();

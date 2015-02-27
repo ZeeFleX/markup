@@ -209,6 +209,18 @@ p {
             background-position: center -20px;
         }
     }
+    &.radio{
+        display: inline-block;
+        border-radius:3px;
+        background: @blue_light;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        background:url('../images/interface/radio-sprite.png') center 0 no-repeat;
+        &.checked{
+            background-position: center -20px;
+        }
+    }
 }
 input[type="text"], textarea, input[type="password"]{
     display: block;
@@ -230,6 +242,9 @@ input[type="text"], textarea, input[type="password"]{
     &:focus{
         outline:none;
         border-color: @sky;
+    }
+    &.error{
+        background-color:#ffd9d9;
     }
 }
 .field{

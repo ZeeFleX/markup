@@ -272,4 +272,104 @@ body.page-profile-settings{
             }
         }
     }
+    &.consults{
+        .prices{
+            margin-bottom: 20px;
+            .item{
+                margin-bottom: 0px;
+                
+                label.name{
+                    text-transform: uppercase;
+                    font-size:1.4rem;
+                    color:@sea_light;
+                    display: block;
+                    float: left;
+                }
+                .toggle.container{
+                    margin-top: 7px;
+                    margin-left: 15px;
+                    float: left;
+                    & + p:after{
+                        content: 'активировать';
+                    }
+                    &.checked + p:after{
+                        content: 'активно';
+                        color:@sky;
+                    }
+                } 
+                p{
+                    display: block;
+                    float: left;
+                    margin-left: 10px;
+                    font-size:1.2rem;
+                }
+                .price{
+                    height: 0;
+                    transition:all 0.2s ease;
+                    overflow: hidden;
+                    input{
+                        width: 120px;
+                        display:inline-block;
+                        margin-right: 10px;
+                    }
+                }
+                &.active{
+                    .price{
+                        height: 50px;
+                    }
+                }
+            }
+            .pay-notice{
+                .date{
+                    color:@sea;
+                    font-weight: bold;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+        .places{
+            .item{
+                overflow: hidden;
+                margin-bottom:8px;
+                a.remove-place{
+                    border-radius:13px;
+                    -o-border-radius:13px;
+                    -moz-border-radius:13px;
+                    -webkit-border-radius:13px;
+                    display: block;
+                    float: left;
+                    width: 15px;
+                    height: 15px;
+                    border:solid @red_light 2px;
+                    text-align: center;
+                    line-height: 13px;
+                    margin-right: 8px;
+                    top:2px;
+                    i{
+                        color:@red_light;
+                        font-size:1.1rem;
+                    }
+                }
+                span.address{
+                    margin-right:20px;
+                }
+                input{
+                    
+                }
+                .radio.container{
+                    top: 4px;
+                    margin-right: 4px;
+                }
+                label{
+                    display: inline;
+                }
+            }
+            input.plus{
+                margin:20px 0 30px 0;
+            }
+        }
+        input[type="submit"]{
+            margin-right: 20px;
+        }
+    }
 }
