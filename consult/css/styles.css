@@ -491,6 +491,27 @@ ul.badge-marked li {
   border: none;
   background: none;
 }
+/* line 447, interface.less */
+.ui-autocomplete.ui-widget {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  background: #fff;
+  padding: 5px !important;
+}
+/* line 452, interface.less */
+.ui-autocomplete.ui-widget li.ui-menu-item {
+  padding: 5px !important;
+  border: solid 1px #fff;
+}
+/* line 455, interface.less */
+.ui-autocomplete.ui-widget li.ui-menu-item.ui-state-focus {
+  background: #dbefe5;
+  border: solid 1px #fff;
+  margin: 0;
+  font-weight: 400;
+  padding: 5px !important;
+  color: #35504e;
+}
 /* line 1, global.less */
 .no-script-layout {
   position: fixed;

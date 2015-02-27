@@ -197,7 +197,7 @@
                 <input type="text" name="search" class="search" data-action="index.php" data-method="POST">
             </div>
             <div class="item">
-                <label for="plus">input[type="text"].plus#add-place</label>
+                <label for="plus">input[type="text"].plus.autocomplete#add-place</label>
                 <p>ID будет повешан на кнопку с плюсом, чтобы привязаться евентом</p>
                 <input type="text" class="plus" id="add-place" >
             </div>

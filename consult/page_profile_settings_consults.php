@@ -131,7 +131,7 @@
                             <label for="main-place">Основной город</label>
                             <div class="clr"></div>
                         </div>
-                        <input type="text" class="plus" id="add-place" placeholder="В каком городе вы работаете?" />
+                        <input type="text" class="plus autocomplete" id="add-place" placeholder="В каком городе вы работаете?" />
                     </section>
                     <div class="clr"></div>
                     <input type="submit" value="Сохранить изменения" class="btn" />

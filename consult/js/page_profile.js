@@ -18,6 +18,10 @@ $(document).ready(function(){
             $(this).closest('.item').remove();
         });
     });
+    var autocompleteSource = ['Москва', 'Красноярск', 'Днепропетровск', 'Санкт-Петербург'];
+    $(places).find('input.plus.autocomplete').autocomplete({
+        source: autocompleteSource
+    });
     $('span#add-place').on('click', function(){
         var newAddress = $(this).siblings('input').val();
         $(this).siblings('input').val('');
