@@ -27,7 +27,7 @@
         <h1>Полезные ссылки</h1>
         <ol>
             <li><a href="interface.php">Гайд по элементам интерфейса и их использованию</a></li> 
-            <li><a href="module_calendar.php">Календарь</a></li>
+            <li><a href="calendar.php">Календарь</a></li>
         </ol>
     </div>
 </body>

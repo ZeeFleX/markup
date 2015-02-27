@@ -29,10 +29,10 @@
                         $today = 27;
                         for($i = 1; $i <= $offset; $i++) {
                     ?>
-                        <span class="item <?php echo 'empty'; ?> <?php if(count_weekend($offset)) echo 'weekend'; ?> "></span>
+                        <span class="item <?php echo 'empty'; ?> <?php if($offset % 7 == 6 || $offset % 7 == 0) echo 'weekend'; ?> "></span>
                     <?php } ?>
                     <?php for($i = 1; $i <= 31; $i++) {?>
-                        <a href="#" class="item <?php if(count_weekend($i + $offset)) echo 'weekend'; ?> <?php if($i == $today) echo 'today'; ?>"><?php echo $i; ?></a>
+                        <a href="#" class="item <?php if(($i + $offset) % 7 == 6 || ($i + $offset) % 7 == 0) echo 'weekend'; ?> <?php if($i == $today) echo 'today'; ?>"><?php echo $i; ?></a>
                     <?php } ?>
                     <div class="clr"></div>
                 </section>
@@ -41,8 +41,3 @@
     </div>
 </body>
 </html>
-<?php 
-    function count_weekend($cell){
-        if($cell % 7 == 6 || $cell % 7 == 0) return true;
-    }
-?>
