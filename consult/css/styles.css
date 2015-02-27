@@ -2032,4 +2032,137 @@ body.page-profile-settings.consults input[type="submit"] {
 .wrapper > section select {
   width: 100%;
 }
+/* line 1, module_calendar.less */
+.calendar {
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -o-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  overflow: hidden;
+  width: 300px;
+  margin: 10px;
+  box-shadow: 0 0 3px #ccc;
+}
+/* line 10, module_calendar.less */
+.calendar * {
+  position: relative;
+}
+/* line 13, module_calendar.less */
+.calendar header {
+  height: 30px;
+  background: #7abcff;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7abcff), color-stop(44%, #60abf8), color-stop(100%, #4096ee));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #7abcff 0%, #60abf8 44%, #4096ee 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7abcff', endColorstr='#4096ee', GradientType=0);
+  /* IE6-9 */
+  color: #fff;
+}
+/* line 24, module_calendar.less */
+.calendar header * {
+  line-height: 30px;
+}
+/* line 27, module_calendar.less */
+.calendar header a {
+  color: #fff;
+}
+/* line 30, module_calendar.less */
+.calendar header i {
+  display: block;
+}
+/* line 32, module_calendar.less */
+.calendar header i.fa-angle-double-left {
+  float: left;
+  margin-left: 15px;
+}
+/* line 36, module_calendar.less */
+.calendar header i.fa-angle-double-right {
+  float: right;
+  margin-right: 15px;
+}
+/* line 41, module_calendar.less */
+.calendar header p.month {
+  overflow: hidden;
+  display: block;
+  text-align: center;
+  margin: 0;
+}
+/* line 48, module_calendar.less */
+.calendar .container {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0 5px 5px 5px;
+  background: #fff;
+  border: solid 1px #ddd;
+  border-radius: 0 0 6px 6px;
+  -moz-border-radius: 0 0 6px 6px;
+  -o-border-radius: 0 0 6px 6px;
+  -webkit-border-radius: 0 0 6px 6px;
+}
+/* line 58, module_calendar.less */
+.calendar .container section.day-of-weeks {
+  overflow: hidden;
+  height: 20px;
+}
+/* line 61, module_calendar.less */
+.calendar .container section.day-of-weeks .item {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  width: 14.284%;
+  float: left;
+  text-align: center;
+  line-height: 20px;
+  color: #35504e;
+}
+/* line 72, module_calendar.less */
+.calendar .container section.day-of-month .item {
+  display: block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  width: 14.284%;
+  float: left;
+  text-align: center;
+  height: 35px;
+  line-height: 35px;
+  text-decoration: none;
+}
+/* line 82, module_calendar.less */
+.calendar .container section.day-of-month .item.weekend {
+  background: #eb5245;
+  color: #ffffff;
+}
+/* line 86, module_calendar.less */
+.calendar .container section.day-of-month .item.today {
+  background: #ffaa3e;
+  box-shadow: inset 0 0 2px #666;
+  color: #fff;
+}
+/* line 90, module_calendar.less */
+.calendar .container section.day-of-month .item.today:hover {
+  background: #ffaa3e;
+  box-shadow: inset 0 0 2px #666;
+}
+/* line 96, module_calendar.less */
+.calendar .container section.day-of-month a.item {
+  background: #dbefe5;
+  border: solid 2px #fff;
+}
+/* line 99, module_calendar.less */
+.calendar .container section.day-of-month a.item:hover {
+  background: #b9cdc3;
+}
+/* line 102, module_calendar.less */
+.calendar .container section.day-of-month a.item.weekend:hover {
+  background: #c93023;
+}
 /*# sourceMappingURL=styles.css.map */
