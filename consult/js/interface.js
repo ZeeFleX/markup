@@ -96,6 +96,36 @@ var loadInterface = function(){
     //Радио-кнопки
     loadRadioButtons();
     //Поля ввода
+    loadForms();
+}
+var checkForValue = function(element){
+    if($(element).val().length) {return true} else{return false}
+}
+var loadRadioButtons = function(){
+    var radioButtons = $('input[type="radio"]');
+    $.each(radioButtons, function () {
+        var button = $(this);
+        if(typeof($(button).attr('data-id')) === 'undefined'){
+            var id = Math.floor(Math.random() * 1000000);
+            var ifChecked = '';
+            $(button).attr('data-id', id);
+            if($(button).attr('checked')) ifChecked = 'checked'; 
+            $(this)
+                .css('display', 'none')
+                .after('<div class="radio container ' + ifChecked + '" id="' + id + '"></div>');
+            var container = $('.radio#' + id);
+            $(container).click(function(){
+                $(button).trigger('click');
+                if(!$(container).hasClass('checked')){
+                    $('.radio.container').removeClass('checked');
+                    $(this).addClass('checked');
+                }
+            });
+        }
+    });
+}
+
+var loadForms = function(){
     var inputs = $('input[type="text"], textarea');
     $.each(inputs, function(){
         var input = $(this);
@@ -190,31 +220,4 @@ var loadInterface = function(){
         }
     });
     $('.select2').select2();
-    
-}
-var checkForValue = function(element){
-    if($(element).val().length) {return true} else{return false}
-}
-var loadRadioButtons = function(){
-    var radioButtons = $('input[type="radio"]');
-    $.each(radioButtons, function () {
-        var button = $(this);
-        if(typeof($(button).attr('data-id')) === 'undefined'){
-            var id = Math.floor(Math.random() * 1000000);
-            var ifChecked = '';
-            $(button).attr('data-id', id);
-            if($(button).attr('checked')) ifChecked = 'checked'; 
-            $(this)
-                .css('display', 'none')
-                .after('<div class="radio container ' + ifChecked + '" id="' + id + '"></div>');
-            var container = $('.radio#' + id);
-            $(container).click(function(){
-                $(button).trigger('click');
-                if(!$(container).hasClass('checked')){
-                    $('.radio.container').removeClass('checked');
-                    $(this).addClass('checked');
-                }
-            });
-        }
-    });
 }

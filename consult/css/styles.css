@@ -1657,7 +1657,6 @@ body.page-profile-settings.security form input[type="submit"] {
 body.page-profile-settings.about-me form .field.upload .preview {
   float: left;
   width: 80px;
-  min-height: 90px;
   margin-right: 15px;
   border-radius: 4px;
   -o-border-radius: 4px;
@@ -1665,21 +1664,21 @@ body.page-profile-settings.about-me form .field.upload .preview {
   -webkit-border-radius: 4px;
   overflow: hidden;
 }
-/* line 124, page_profile_settings.less */
+/* line 123, page_profile_settings.less */
 body.page-profile-settings.about-me form .field.upload .preview img {
   display: block;
   width: 100%;
 }
-/* line 129, page_profile_settings.less */
+/* line 128, page_profile_settings.less */
 body.page-profile-settings.about-me form .field.upload .buttons {
   float: left;
   width: 38%;
 }
-/* line 132, page_profile_settings.less */
+/* line 131, page_profile_settings.less */
 body.page-profile-settings.about-me form .field.upload .buttons .btn {
   margin-bottom: 10px;
 }
-/* line 136, page_profile_settings.less */
+/* line 135, page_profile_settings.less */
 body.page-profile-settings.about-me form .field.upload p {
   display: block;
   overflow: hidden;
@@ -1688,7 +1687,7 @@ body.page-profile-settings.about-me form .field.upload p {
   margin-top: 10px;
   top: 7px;
 }
-/* line 145, page_profile_settings.less */
+/* line 144, page_profile_settings.less */
 body.page-profile-settings.about-me form a.add-document-button {
   margin-top: 15px;
   text-align: center;
@@ -1701,51 +1700,51 @@ body.page-profile-settings.about-me form a.add-document-button {
   text-decoration: none;
   margin-bottom: 30px;
 }
-/* line 156, page_profile_settings.less */
+/* line 155, page_profile_settings.less */
 body.page-profile-settings.about-me form a.add-document-button:hover {
   background: #d8e6e0;
   color: #35504e;
 }
-/* line 161, page_profile_settings.less */
+/* line 160, page_profile_settings.less */
 body.page-profile-settings.about-me form .select2-container {
   width: 40% !important;
   margin-right: 4%;
 }
-/* line 166, page_profile_settings.less */
+/* line 165, page_profile_settings.less */
 body.page-profile-settings.about-me form section.specialization .field {
   float: left;
   width: 48%;
   margin: 5px 0;
 }
-/* line 170, page_profile_settings.less */
+/* line 169, page_profile_settings.less */
 body.page-profile-settings.about-me form section.specialization .field:nth-child(even) {
   margin-right: 0;
 }
-/* line 173, page_profile_settings.less */
+/* line 172, page_profile_settings.less */
 body.page-profile-settings.about-me form section.specialization .field .checkbox {
   float: left;
   margin-right: 10px;
 }
-/* line 176, page_profile_settings.less */
+/* line 175, page_profile_settings.less */
 body.page-profile-settings.about-me form section.specialization .field .checkbox.checked + label {
   color: #4ad0c5;
 }
-/* line 180, page_profile_settings.less */
+/* line 179, page_profile_settings.less */
 body.page-profile-settings.about-me form section.specialization .field label {
   display: block;
   overflow: hidden;
   margin: 2px 0;
   font-size: 500;
 }
-/* line 187, page_profile_settings.less */
+/* line 186, page_profile_settings.less */
 body.page-profile-settings.about-me form section.specialization input[type="text"] {
   margin-top: 20px;
 }
-/* line 193, page_profile_settings.less */
+/* line 192, page_profile_settings.less */
 body.page-profile-settings.about-me form section.education .university .input-container {
   overflow: hidden;
 }
-/* line 196, page_profile_settings.less */
+/* line 195, page_profile_settings.less */
 body.page-profile-settings.about-me form section.education .university a#remove-university {
   display: block;
   float: right;
@@ -1761,23 +1760,23 @@ body.page-profile-settings.about-me form section.education .university a#remove-
   margin-left: 15px;
   margin-top: 7px;
 }
-/* line 210, page_profile_settings.less */
+/* line 209, page_profile_settings.less */
 body.page-profile-settings.about-me form section.education .university a#remove-university i {
   color: #8aa4a2;
 }
-/* line 213, page_profile_settings.less */
+/* line 212, page_profile_settings.less */
 body.page-profile-settings.about-me form section.education .university a#remove-university:hover {
   border-color: #35504e;
 }
-/* line 215, page_profile_settings.less */
+/* line 214, page_profile_settings.less */
 body.page-profile-settings.about-me form section.education .university a#remove-university:hover i {
   color: #35504e;
 }
-/* line 224, page_profile_settings.less */
+/* line 223, page_profile_settings.less */
 body.page-profile-settings.about-me form section.professional .certificate .input-container {
   overflow: hidden;
 }
-/* line 227, page_profile_settings.less */
+/* line 226, page_profile_settings.less */
 body.page-profile-settings.about-me form section.professional .certificate a#remove-certificate {
   display: block;
   float: right;
@@ -1793,47 +1792,47 @@ body.page-profile-settings.about-me form section.professional .certificate a#rem
   margin-left: 15px;
   margin-top: 7px;
 }
-/* line 241, page_profile_settings.less */
+/* line 240, page_profile_settings.less */
 body.page-profile-settings.about-me form section.professional .certificate a#remove-certificate i {
   color: #8aa4a2;
 }
-/* line 244, page_profile_settings.less */
+/* line 243, page_profile_settings.less */
 body.page-profile-settings.about-me form section.professional .certificate a#remove-certificate:hover {
   border-color: #35504e;
 }
-/* line 246, page_profile_settings.less */
+/* line 245, page_profile_settings.less */
 body.page-profile-settings.about-me form section.professional .certificate a#remove-certificate:hover i {
   color: #35504e;
 }
-/* line 253, page_profile_settings.less */
+/* line 252, page_profile_settings.less */
 body.page-profile-settings.about-me form input[type="submit"] {
   margin-right: 20px;
   margin-top: 30px;
 }
-/* line 261, page_profile_settings.less */
+/* line 260, page_profile_settings.less */
 body.page-profile-settings.contacts form .field {
   float: left;
   width: 48%;
   margin-right: 4%;
 }
-/* line 265, page_profile_settings.less */
+/* line 264, page_profile_settings.less */
 body.page-profile-settings.contacts form .field.phone {
   margin-right: 0;
 }
-/* line 269, page_profile_settings.less */
+/* line 268, page_profile_settings.less */
 body.page-profile-settings.contacts form input[type="submit"] {
   margin-right: 20px;
   margin-top: 30px;
 }
-/* line 276, page_profile_settings.less */
+/* line 275, page_profile_settings.less */
 body.page-profile-settings.consults .prices {
   margin-bottom: 20px;
 }
-/* line 278, page_profile_settings.less */
+/* line 277, page_profile_settings.less */
 body.page-profile-settings.consults .prices .item {
   margin-bottom: 0px;
 }
-/* line 281, page_profile_settings.less */
+/* line 280, page_profile_settings.less */
 body.page-profile-settings.consults .prices .item label.name {
   text-transform: uppercase;
   font-size: 1.4rem;
@@ -1841,56 +1840,56 @@ body.page-profile-settings.consults .prices .item label.name {
   display: block;
   float: left;
 }
-/* line 288, page_profile_settings.less */
+/* line 287, page_profile_settings.less */
 body.page-profile-settings.consults .prices .item .toggle.container {
   margin-top: 7px;
   margin-left: 15px;
   float: left;
 }
-/* line 292, page_profile_settings.less */
+/* line 291, page_profile_settings.less */
 body.page-profile-settings.consults .prices .item .toggle.container + p:after {
   content: 'активировать';
 }
-/* line 295, page_profile_settings.less */
+/* line 294, page_profile_settings.less */
 body.page-profile-settings.consults .prices .item .toggle.container.checked + p:after {
   content: 'активно';
   color: #4ad0c5;
 }
-/* line 300, page_profile_settings.less */
+/* line 299, page_profile_settings.less */
 body.page-profile-settings.consults .prices .item p {
   display: block;
   float: left;
   margin-left: 10px;
   font-size: 1.2rem;
 }
-/* line 306, page_profile_settings.less */
+/* line 305, page_profile_settings.less */
 body.page-profile-settings.consults .prices .item .price {
   height: 0;
   transition: all 0.2s ease;
   overflow: hidden;
 }
-/* line 310, page_profile_settings.less */
+/* line 309, page_profile_settings.less */
 body.page-profile-settings.consults .prices .item .price input {
   width: 120px;
   display: inline-block;
   margin-right: 10px;
 }
-/* line 317, page_profile_settings.less */
+/* line 316, page_profile_settings.less */
 body.page-profile-settings.consults .prices .item.active .price {
   height: 50px;
 }
-/* line 323, page_profile_settings.less */
+/* line 322, page_profile_settings.less */
 body.page-profile-settings.consults .prices .pay-notice .date {
   color: #35504e;
   font-weight: bold;
   margin-bottom: 15px;
 }
-/* line 331, page_profile_settings.less */
+/* line 330, page_profile_settings.less */
 body.page-profile-settings.consults .places .item {
   overflow: hidden;
   margin-bottom: 8px;
 }
-/* line 334, page_profile_settings.less */
+/* line 333, page_profile_settings.less */
 body.page-profile-settings.consults .places .item a.remove-place {
   border-radius: 13px;
   -o-border-radius: 13px;
@@ -1906,29 +1905,29 @@ body.page-profile-settings.consults .places .item a.remove-place {
   margin-right: 8px;
   top: 2px;
 }
-/* line 348, page_profile_settings.less */
+/* line 347, page_profile_settings.less */
 body.page-profile-settings.consults .places .item a.remove-place i {
   color: #f85649;
   font-size: 1.1rem;
 }
-/* line 353, page_profile_settings.less */
+/* line 352, page_profile_settings.less */
 body.page-profile-settings.consults .places .item span.address {
   margin-right: 20px;
 }
-/* line 359, page_profile_settings.less */
+/* line 358, page_profile_settings.less */
 body.page-profile-settings.consults .places .item .radio.container {
   top: 4px;
   margin-right: 4px;
 }
-/* line 363, page_profile_settings.less */
+/* line 362, page_profile_settings.less */
 body.page-profile-settings.consults .places .item label {
   display: inline;
 }
-/* line 367, page_profile_settings.less */
+/* line 366, page_profile_settings.less */
 body.page-profile-settings.consults .places input.plus {
   margin: 20px 0 30px 0;
 }
-/* line 371, page_profile_settings.less */
+/* line 370, page_profile_settings.less */
 body.page-profile-settings.consults input[type="submit"] {
   margin-right: 20px;
 }

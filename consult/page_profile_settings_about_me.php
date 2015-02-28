@@ -5,6 +5,9 @@
 		<?php include_once('_head.php'); ?>
 </head>
 <body class="default-template page-profile-settings about-me">
+    <form action="server_side/uploader_simple.php" method="POST" enctype="multipart/form-data" id="uploader-form-simple" class="hidden">
+        <input type="file" name="file" />
+    </form>
     <NOSCRIPT>
         <div class="no-script-layout">
             <div class="wrapper">
@@ -75,7 +78,7 @@
         <section class="content">
             <h4>Информация о себе</h4>
             <div class="content-block">
-                <form action="#" method="POST">
+                <form action="server_side/save_education.php" method="POST">
                     <section class="specialization">
                         <h4>Специализация</h4>
                         <div class="field checkbox">
@@ -111,79 +114,19 @@
                             <label for="spec8">Саморазвитие</label>
                         </div>
                         <div class="clr"></div>
-                        <input type="text" name="other[]" class="multirow" />
+<!--                        <input type="text" name="other[]" class="multirow" />-->
                     </section>
                     <section class="education">
                         <h4>Образование</h4>
-                        <h5>Название ВУЗа</h5>
-                        <div class="university">
-                            <a href="#" id="remove-university"><i class="fa fa-close"></i></a>
-                            <input type="text" class="allow-clear" name="edu-universities[]" placeholder="Введите название Вашего учебного заведения" />
-                            <div class="clr"></div>
-                            <h5>Специальность</h5>
-                            <input type="text" class="allow-clear" name="edu-specializations[]" placeholder="Введите специальность" />
-                            <h5>Квалификация</h5>
-                            <input type="text" class="allow-clear" name="edu-qualities[]" placeholder="Введите квалификацию" />
-                            <h5>Период обучения</h5>
-                            <select name="edu-begins[]" class="select2 period begin">
-                                <?php for($i = 1970; $i < 2015; $i++) { ?>
-                                <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
-                                <?php }?>
-                            </select>
-                            <select name="edu-ends[]" class="select2 period end">
-                                <?php for($i = 1970; $i < 2015; $i++) { ?>
-                                <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
-                                <?php }?>
-                            </select>
-                            <h5>Диплом</h5>
-                            <div class="field upload">
-                                <div class="preview">
-                                    <img src="images/scan/scan01.jpg" alt="" />
-                                </div>
-                                <div class="buttons">
-                                    <input type="button" class="btn ghost" id="upload-edu-diplom" value="Загрузить фото диплома" />
-                                    <br>
-                                    <input type="button" class="btn ghost red" id="remove-edu-diplom" value="Удалить" />
-                                </div>
-                                <p>Макс. размер файла 5Mb, (.jpeg, .png)</p>
-                                <div class="clr"></div>
-                            </div>
-                        </div>
                         <a href="#" class="add-document-button" id="add-edu-diplom">Добавить диплом</a>
                     </section>
                     <section class="professional">
-                        <div class="certificate">
-                            <h4>Профессионализм</h4>
-                            <h5>Название курса или семинара</h5>
-                            <a href="#" id="remove-certificate"><i class="fa fa-close"></i></a>
-                            <input type="text" class="allow-clear" name="prof-courses[]" placeholder="Введите название курса или семинара" />
-                            <div class="clr"></div>
-                            <h5>Квалификация</h5>
-                            <input type="text" class="allow-clear" name="prof-qualities[]" placeholder="Введите квалификацию" />
-                            <h5>Год получения сертификата</h5>
-                            <select name="prof-year[]" class="select2">
-                                <?php for($i = 1970; $i < 2015; $i++) { ?>
-                                <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
-                                <?php }?>
-                            </select>
-                            <h5>Сертификат</h5>
-                            <div class="field upload">
-                                <div class="preview">
-                                    <img src="images/scan/scan01.jpg" alt="" />
-                                </div>
-                                <div class="buttons">
-                                    <input type="button" class="btn ghost" id="upload-prof-cert" value="Загрузить фото сертификата" />
-                                    <input type="button" class="btn ghost red" id="remove-prof-cert" value="Загрузить фото диплома" />
-                                </div>
-                                <p>Макс. размер файла 5Mb, (.jpeg, .png)</p>
-                                <div class="clr"></div>
-                            </div>
-                            <a href="#" class="add-document-button" id="add-edu-diplom">Добавить Сертификат</a>
-                        </div>
+                        <h4>Профессионализм</h4>
+                        <a href="#" class="add-document-button" id="add-edu-diplom">Добавить Сертификат</a>
                     </section>
                     <section class="begin-date">
                         <h4>Начало практической деятельности</h4>
-                        <select name="practice-year[]" class="select2">
+                        <select name="practice-begin" class="select2">
                             <?php for($i = 1970; $i < 2015; $i++) { ?>
                             <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
                             <?php }?>

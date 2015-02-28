@@ -1,4 +1,66 @@
 $(document).ready(function(){
+    //Добавление дипломов
+    var uploaderEventObject;
+    $('#uploader-form-simple').ajaxForm({
+        dataType: 'json',
+        beforeSend: function() {
+            
+        },
+        uploadProgress: function(event, position, total, percentComplete) {
+
+        },
+        success: function(data) {
+            $(uploaderEventObject)
+                .find('img').attr('src', data.thumb).end()
+                .find('input.filename').val(JSON.stringify(data));
+        },
+        complete: function(data) {
+            
+        }
+    });
+    
+    $('body').on('click', '.upload-scan', function(e){
+        uploaderEventObject = $(this).closest('.field.upload');
+        $('#uploader-form-simple input[type="file"]').trigger('click');
+    });
+    $('#uploader-form-simple input[type="file"]').on('change', function(){
+        $(this).closest('form').submit();
+        $(this).val('');
+    });
+    $('body').on('click', '.remove-scan', function(e){
+        $(this)
+            .closest('.field.upload').find('img').attr('src', 'images/interface/image-placeholder.png').end()
+            .closest('.field.upload').find('input.filename').val('');
+    });
+    
+    var eduBlock = $('.about-me .education');
+    $(eduBlock).on('click', 'a#remove-university', function(e){
+        e.preventDefault();
+        $(this).closest('.university').slideUp(200, function(){$(this).remove()});
+    });
+    $(eduBlock).on('click', 'a.add-document-button', function(e){
+        e.preventDefault();
+        var id = generateUniqueId();
+        var eduItem = '<div class="university hidden"><h5>Название ВУЗа</h5><a href="#" id="remove-university"><i class="fa fa-close"></i></a><input type="text" class="allow-clear" name="univers[' +  id + '][name]" placeholder="Введите название Вашего учебного заведения" /><div class="clr"></div><h5>Специальность</h5><input type="text" class="allow-clear" name="univers[' +  id + '][specialization]" placeholder="Введите специальность" /><h5>Квалификация</h5><input type="text" class="allow-clear" name="univers[' +  id + '][quality]" placeholder="Введите квалификацию" />         <h5>Период обучения</h5>' + buildSelectList(1970, 2015, 'select2 period begin', 'univers[' +  id + '][begin]') + buildSelectList(1970, 2015, 'select2 period end', 'univers[' +  id + '][end]') + '<h5>Диплом</h5><div class="field upload"><input type="hidden" class="filename" name="univers[' +  id + '][file]" /><div class="preview"><img src="images/interface/image-placeholder.png" alt="" /></div><div class="buttons"><input type="button" class="btn ghost upload-scan" id="upload-edu-diplom" value="Загрузить фото диплома" /><br><input type="button" class="btn ghost red remove-scan" id="remove-edu-diplom" value="Удалить" /></div><p>Макс. размер файла 5Mb, (.jpeg, .png)</p><div class="clr"></div></div></div>';
+        $(this).before(eduItem);
+        loadForms();
+        $(eduBlock).find('.university.hidden').slideDown(200);
+     });
+    //Добавление сертификатов
+    var certsBlock = $('.about-me .professional');
+    $(certsBlock).on('click', 'a#remove-certificate', function(e){
+        e.preventDefault();
+        $(this).closest('.certificate').slideUp(200, function(){$(this).remove()});
+    });
+     $(certsBlock).on('click', 'a.add-document-button', function(e){
+        e.preventDefault();
+        var id = generateUniqueId();
+        var certItem = '<div class="certificate hidden"><h5>Название курса или семинара</h5><a href="#" id="remove-certificate"><i class="fa fa-close"></i></a><input type="text" class="allow-clear" name="certs[' +  id + '][name]" placeholder="Введите название курса или семинара" /><div class="clr"></div><h5>Квалификация</h5><input type="text" class="allow-clear" name="certs[' +  id + '][quality]" placeholder="Введите квалификацию" /><h5>Год получения сертификата</h5>' + buildSelectList(1970, 2015, 'select2', 'certs[' +  id + '][year]') + '<h5>Сертификат</h5><div class="field upload"><input type="hidden" class="filename"  name="certs[' +  id + '][file]" /><div class="preview"><img src="images/interface/image-placeholder.png" alt="" /></div><div class="buttons"><input type="button" class="btn ghost upload-scan" id="upload-prof-cert" value="Загрузить фото сертификата" /><input type="button" class="btn ghost red remove-scan" id="remove-prof-cert" value="Удалить" /></div><p>Макс. размер файла 5Mb, (.jpeg, .png)</p><div class="clr"></div></div></div>';
+        $(this).before(certItem);
+        loadForms();
+        $(certsBlock).find('.certificate.hidden').slideDown(200);
+    });
+    $('a.add-document-button').trigger('click');
     //Цены на консультации
     var itemContainers = $('.prices .item');
     $.each(itemContainers, function(key,item){
@@ -152,4 +214,18 @@ function loadCitiesCallback(cities){
         minimumInputLength: 1,
         data: cities
     });
+}
+
+function buildSelectList(begin, end, cl, name){
+    var html = '';
+    html += '<select class="' + cl + '" name="' + name + '">';
+    for(i = begin; i <= end; i++){
+        html += '<option value="' + i + '">' + i + '</option>';
+    }
+    html += '</select>';
+    return html;
+}
+
+function generateUniqueId(){
+    return Math.floor(Math.random() * 1000000);
 }
