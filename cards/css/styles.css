@@ -1,0 +1,1352 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:500,400italic,700italic,300,700,500italic,300italic,400&subset=latin,cyrillic);
+/*ГЛОБАЛЬНЫЕ ПЕРЕМЕННЫЕ*/
+/*ЦВЕТОВАЯ СХЕМА*/
+/*ПОДГРУЖАЕМЫЕ ШРИФТЫ*/
+/*РАЗМЕРЫ ШРИФТОВ*/
+/*ЗАГОЛОВКИ*/
+/* line 25, interface.less */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 100%;
+}
+/* line 28, interface.less */
+h1 {
+  color: #290019;
+  font: 500 3.6rem Roboto;
+  margin: 0;
+  padding: 10px 0;
+}
+/* line 34, interface.less */
+h2 {
+  color: #290019;
+  font: 500 3.0rem Roboto;
+  margin: 0;
+  padding: 10px 0;
+}
+/* line 40, interface.less */
+h3 {
+  color: #290019;
+  font: 500 2.4rem Roboto;
+  margin: 0;
+  padding: 10px 0;
+}
+/* line 46, interface.less */
+h4 {
+  color: #290019;
+  font: 500 1.8rem Roboto;
+  margin: 0;
+  padding: 10px 0;
+}
+/* line 52, interface.less */
+h5 {
+  color: #290019;
+  font: 500 1.4rem Roboto;
+  margin: 0;
+  padding: 10px 0;
+}
+/* line 58, interface.less */
+h6 {
+  color: #290019;
+  font: 500 1.2rem Roboto;
+  margin: 0;
+  padding: 10px 0;
+}
+/* line 64, interface.less */
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+/* line 69, interface.less */
+html {
+  font-size: 62.5% !important;
+}
+/* line 72, interface.less */
+body {
+  line-height: 135%;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  color: #b099a3;
+  background: #f4efff;
+}
+/* line 79, interface.less */
+p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 135%;
+}
+/*ИМПОРТ*/
+/*ЭЛЕМЕНТЫ*/
+/* line 89, interface.less */
+.btn {
+  box-shadow: 0 3px 0 0 #a73e5c;
+  border-radius: 3px;
+  display: inline-block;
+  text-decoration: none;
+  background: #ec4863;
+  color: #ffffff;
+  padding: 9px 17px 6px 17px;
+  margin-bottom: 3px;
+  border: none;
+  cursor: pointer;
+  transition: background-color, color 0.3s ease;
+  -o-transition: background-color, color 0.3s ease;
+  -moz-transition: background-color, color 0.3s ease;
+  -webkit-transition: background-color, color 0.3s ease;
+}
+/* line 104, interface.less */
+.btn.small {
+  padding: 4px 17px 1px 17px;
+}
+/* line 107, interface.less */
+.btn:hover {
+  background: #a73e5c;
+  box-shadow: 0 3px 0 0 #871e42;
+}
+/* line 111, interface.less */
+.btn:active {
+  background: #871e42;
+}
+/* line 115, interface.less */
+.btn.red {
+  background: #f85649;
+  box-shadow: 0 3px 0 0 #da4134;
+}
+/* line 118, interface.less */
+.btn.red:hover {
+  background: #eb5245;
+}
+/* line 121, interface.less */
+.btn.red:active {
+  background: #da4134;
+}
+/* line 125, interface.less */
+.btn.yellow {
+  background: #fac944;
+  box-shadow: 0 3px 0 0 #ffaa3e;
+}
+/* line 128, interface.less */
+.btn.yellow:hover {
+  background: #ffbb4f;
+}
+/* line 131, interface.less */
+.btn.yellow:active {
+  background: #ffaa3e;
+}
+/* line 135, interface.less */
+.btn.green {
+  background: #33b679;
+  box-shadow: 0 3px 0 0 #0f9b58;
+}
+/* line 138, interface.less */
+.btn.green:hover {
+  background: #20ac69;
+}
+/* line 141, interface.less */
+.btn.green:active {
+  background: #0f9b58;
+}
+/* line 145, interface.less */
+.btn.ghost {
+  background: none;
+  box-shadow: none;
+  border: solid 1px #a73e5c;
+  color: #a73e5c;
+  padding: 7px 17px 6px 17px;
+}
+/* line 151, interface.less */
+.btn.ghost:hover {
+  color: #ffffff;
+  background: #4b223b;
+  border-color: #290019;
+}
+/* line 156, interface.less */
+.btn.ghost:active {
+  color: #ffffff;
+  background: #290019;
+  border-color: #290019;
+}
+/* line 161, interface.less */
+.btn.ghost.red {
+  color: #eb5245;
+  border-color: #eb5245;
+}
+/* line 164, interface.less */
+.btn.ghost.red:hover,
+.btn.ghost.red:active {
+  color: #ffffff;
+  background: #eb5245;
+}
+/*ЧЕКБОКСЫ*/
+/* line 173, interface.less */
+.container.toggle {
+  display: inline-block;
+  border-radius: 50px;
+  background: #b099a3;
+  padding: 2px;
+  width: 38px;
+  height: 18px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  -webkit-user-select: none;
+  -webkit-transition: background 0.3s ease;
+  -moz-transition: background 0.3s ease;
+}
+/* line 185, interface.less */
+.container.toggle .handle {
+  position: relative;
+  border-radius: 18px;
+  width: 18px;
+  height: 18px;
+  background: #290019;
+  transition: left 0.3s ease;
+  left: 0;
+  -webkit-transition: left 0.3s ease;
+  -moz-transition: left 0.3s ease;
+}
+/* line 196, interface.less */
+.container.toggle.checked {
+  background: #ec4863;
+}
+/* line 198, interface.less */
+.container.toggle.checked .handle {
+  left: 19px;
+}
+/* line 203, interface.less */
+.container.checkbox {
+  display: inline-block;
+  border-radius: 3px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  background: url('../images/interface/checkbox-sprite.png') center 0 no-repeat;
+}
+/* line 210, interface.less */
+.container.checkbox.checked {
+  background-position: center -20px;
+}
+/* line 214, interface.less */
+.container.radio {
+  display: inline-block;
+  border-radius: 3px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  background: url('../images/interface/radio-sprite.png') center 0 no-repeat;
+}
+/* line 221, interface.less */
+.container.radio.checked {
+  background-position: center -20px;
+}
+/* line 226, interface.less */
+input[type="text"],
+textarea,
+input[type="password"] {
+  display: block;
+  border-radius: 5px;
+  border: solid 1px;
+  border-color: #b099a3;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 10px 12px;
+  margin: 0 0 10px 0;
+  transition: border-color 0.3s ease;
+  -webkit-transition: border-color 0.3s ease;
+  -moz-transition: border-color 0.3s ease;
+  -o-transition: border-color 0.3s ease;
+  width: 100%;
+  color: #b099a3;
+  color: #8aa4a2;
+  font: 400 1.2rem Roboto;
+}
+/* line 243, interface.less */
+input[type="text"]:focus,
+textarea:focus,
+input[type="password"]:focus {
+  outline: none;
+  border-color: #ec4863;
+}
+/* line 247, interface.less */
+input[type="text"].error,
+textarea.error,
+input[type="password"].error {
+  background-color: #ffd9d9;
+}
+/* line 252, interface.less */
+.field span {
+  display: none;
+}
+/* line 255, interface.less */
+.field.required span {
+  color: #eb5245;
+  display: inline;
+}
+/* line 259, interface.less */
+.field label {
+  color: #290019;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+/* line 265, interface.less */
+.input-container {
+  position: relative;
+}
+/* line 267, interface.less */
+.input-container .clear {
+  width: 10px;
+  height: 11px;
+  position: absolute;
+  right: 8px;
+  top: 12px;
+  cursor: pointer;
+  z-index: 1;
+  background: url('../images/interface/clear-sprite.png') center 0 no-repeat;
+}
+/* line 276, interface.less */
+.input-container .clear:hover {
+  background-position: center -11px;
+}
+/* line 279, interface.less */
+.input-container .clear.hidden {
+  display: none;
+}
+/* line 284, interface.less */
+textarea {
+  resize: none;
+}
+/* line 287, interface.less */
+label {
+  display: block;
+  margin: 10px 0;
+}
+/* line 291, interface.less */
+select.select2 {
+  min-width: 300px;
+}
+/* line 295, interface.less */
+.select2-container *:focus {
+  outline: none !important;
+}
+/* line 298, interface.less */
+.select2-container .select2-selection {
+  border: solid 1px;
+  border-color: #b099a3;
+  height: 36px !important;
+}
+/* line 302, interface.less */
+.select2-container .select2-selection .select2-selection__rendered {
+  line-height: 36px !important;
+}
+/* line 305, interface.less */
+.select2-container .select2-selection .select2-selection__arrow {
+  background: url('../images/interface/dropdown-arrow.png') center center no-repeat #b099a3;
+  width: 60px !important;
+  height: 34px !important;
+  top: 0px !important;
+  right: 0px !important;
+}
+/* line 311, interface.less */
+.select2-container .select2-selection .select2-selection__arrow b {
+  display: none;
+}
+/* line 317, interface.less */
+.dashed {
+  border: dashed 1px #b9d4cc;
+}
+/* line 320, interface.less */
+.b-radius {
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+/* line 326, interface.less */
+.content-block {
+  padding: 30px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  -o-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background: #ffffff;
+  margin-bottom: 3px;
+}
+/* line 341, interface.less */
+.rating-block {
+  border-radius: 10px;
+  padding: 0 10px;
+  border: solid 1px #ffaa3e;
+}
+/* line 345, interface.less */
+.rating-block p {
+  margin: 4px auto;
+  text-align: center;
+}
+/* line 348, interface.less */
+.rating-block p.value {
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #b099a3;
+}
+/* line 352, interface.less */
+.rating-block p.value .current-value {
+  color: #ffaa3e;
+  font-weight: bold;
+}
+/* line 358, interface.less */
+.rating-block p.title {
+  position: absolute;
+  color: #ffaa3e;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  bottom: -12px;
+  width: 100%;
+  left: 0;
+}
+/* line 368, interface.less */
+.rating-block p.title span {
+  background: #ffffff;
+  padding: 0 3px;
+  text-transform: uppercase;
+}
+/* line 377, interface.less */
+.raiting-block.value .fa {
+  color: #ffaa3e;
+  font-size: 2.0rem;
+  font-weight: normal;
+  margin-right: 3px;
+}
+/* line 387, interface.less */
+.raiting-block.vote .fa {
+  color: #ec4863;
+  font-size: 2.0rem;
+  font-weight: normal;
+  margin-right: 3px;
+  cursor: pointer;
+}
+/* line 393, interface.less */
+.raiting-block.vote .fa.fa-star {
+  color: #ffaa3e;
+}
+/* line 396, interface.less */
+.raiting-block.vote .fa.active {
+  color: #ffaa3e;
+}
+/* line 401, interface.less */
+a.dotts {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 5px 0;
+}
+/* line 406, interface.less */
+a.dotts .fa-circle {
+  color: #b099a3;
+  font-size: 0.3rem;
+  display: block;
+  float: left;
+  margin-right: 2px;
+}
+/* line 415, interface.less */
+ul.badge-marked li {
+  background: url('../images/interface/badge.png') left 2px no-repeat;
+  padding-left: 20px;
+  margin: 3px 0;
+}
+/* line 423, interface.less */
+.ui-widget-overlay.ui-front {
+  background: rgba(0, 0, 0, 0.3);
+}
+/* line 426, interface.less */
+.ui-dialog.ui-widget.ui-widget-content {
+  background: #ffffff;
+  padding: 10px;
+}
+/* line 429, interface.less */
+.ui-dialog.ui-widget.ui-widget-content .ui-dialog-titlebar.ui-widget-header {
+  border: none;
+  background: none;
+  overflow: visible;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  box-sizing: border-box;
+  z-index: 1;
+}
+/* line 438, interface.less */
+.ui-dialog.ui-widget.ui-widget-content .ui-dialog-titlebar.ui-widget-header .ui-dialog-titlebar-close {
+  margin-right: .6em;
+}
+/* line 441, interface.less */
+.ui-dialog.ui-widget.ui-widget-content .ui-dialog-titlebar.ui-widget-header .ui-button.ui-widget {
+  border: none;
+  background: none;
+}
+/* line 448, interface.less */
+.ui-autocomplete.ui-widget {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  background: #fff;
+  padding: 5px !important;
+}
+/* line 453, interface.less */
+.ui-autocomplete.ui-widget li.ui-menu-item {
+  padding: 5px !important;
+  border: solid 1px #fff;
+}
+/* line 456, interface.less */
+.ui-autocomplete.ui-widget li.ui-menu-item.ui-state-focus {
+  background: #b099a3;
+  border: solid 1px #fff;
+  margin: 0;
+  font-weight: 400;
+  padding: 5px !important;
+  color: #290019;
+}
+/* line 1, global.less */
+.no-script-layout {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #dbefe5;
+  z-index: 1000;
+}
+/* line 7, global.less */
+.no-script-layout .wrapper {
+  text-align: center;
+}
+/* line 9, global.less */
+.no-script-layout .wrapper h1 {
+  margin-top: 100px;
+}
+/* line 15, global.less */
+body > .wrapper {
+  min-height: 600px;
+}
+/* line 19, global.less */
+.clr {
+  clear: both;
+}
+/* line 22, global.less */
+* {
+  position: relative;
+}
+/* line 24, global.less */
+*:focus {
+  outline: none;
+}
+/* line 28, global.less */
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+/* line 33, global.less */
+.hidden {
+  display: none;
+}
+/* line 36, global.less */
+a {
+  color: #290019;
+}
+/* line 41, global.less */
+header.header {
+  width: 100%;
+  padding: 10px 30px;
+  background: #ffffff;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  overflow: hidden;
+}
+/* line 48, global.less */
+header.header .logo {
+  border-radius: 100%;
+  -moz-border-radius: 100%;
+  -o-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  float: left;
+  width: 40px;
+  height: 40px;
+  background: #a73e5c;
+}
+/* line 58, global.less */
+header.header .title {
+  display: block;
+  float: left;
+  color: #a73e5c;
+  font: 700 1.2rem Roboto;
+  text-transform: uppercase;
+  margin-top: 13px;
+  margin-left: 10px;
+}
+/* line 67, global.less */
+header.header .sign-in {
+  float: right;
+}
+/* line 74, global.less */
+header.header .profile-snippet {
+  float: right;
+}
+/* line 76, global.less */
+header.header .profile-snippet .photo-container {
+  border-radius: 50px;
+  -o-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  float: left;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border: solid 1px #b099a3;
+}
+/* line 86, global.less */
+header.header .profile-snippet .photo-container img {
+  display: block;
+  width: 100%;
+}
+/* line 91, global.less */
+header.header .profile-snippet .info {
+  float: left;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+/* line 95, global.less */
+header.header .profile-snippet .info .name {
+  color: #ec4863;
+  font: 500 1.4rem Roboto;
+}
+/* line 99, global.less */
+header.header .profile-snippet .info .job {
+  color: #ec4863;
+  font: 400 1.2rem Roboto;
+}
+/* line 104, global.less */
+header.header .profile-snippet .more-container {
+  float: left;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+/* line 108, global.less */
+header.header .profile-snippet .more-container i {
+  color: #290019;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+/* line 113, global.less */
+header.header .profile-snippet .more-container .dropdown-menu {
+  display: none;
+}
+/* line 119, global.less */
+header.header .profile-notifications {
+  float: right;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+/* line 123, global.less */
+header.header .profile-notifications > div {
+  float: left;
+  margin: 0 15px;
+  cursor: pointer;
+}
+/* line 127, global.less */
+header.header .profile-notifications > div.active i.fa {
+  color: #eb5245;
+}
+/* line 130, global.less */
+header.header .profile-notifications > div .count {
+  position: absolute;
+  border-radius: 50px;
+  width: 17px;
+  background: #eb5245;
+  color: #ffffff;
+  height: 17px;
+  border: solid 2px #ffffff;
+  right: -12px;
+  top: -11px;
+  text-align: center;
+  z-index: 1;
+  font: 500 1.1rem / 17px Roboto;
+}
+/* line 144, global.less */
+header.header .profile-notifications > div i.fa {
+  color: #b099a3;
+  font-size: 2.0rem;
+}
+/* line 150, global.less */
+header.header .mainmenu {
+  float: right;
+  margin: 9px 0;
+}
+/* line 153, global.less */
+header.header .mainmenu li {
+  float: left;
+  text-transform: uppercase;
+  font: 500 1.2rem Roboto;
+  margin-right: 30px;
+}
+/* line 158, global.less */
+header.header .mainmenu li a {
+  color: #290019;
+  text-decoration: none;
+}
+/* line 165, global.less */
+.user-menu-section {
+  background: #f8f8f8;
+  overflow: hidden;
+  padding: 20px 0;
+  box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.1);
+}
+/* line 174, global.less */
+.user-menu-section .wrapper .user-menu-container {
+  right: 50%;
+  float: right;
+}
+/* line 178, global.less */
+.user-menu-section .wrapper .user-menu {
+  left: 50%;
+  float: left;
+}
+/* line 181, global.less */
+.user-menu-section .wrapper .user-menu li {
+  margin: 0 10px;
+  float: left;
+}
+/* line 185, global.less */
+.user-menu-section .wrapper .user-menu a {
+  color: #290019;
+  font: 400 1.4rem  Roboto;
+  text-decoration: none;
+}
+/* line 189, global.less */
+.user-menu-section .wrapper .user-menu a:hover {
+  text-decoration: underline;
+}
+/* line 198, global.less */
+.footer {
+  width: 100%;
+  margin-top: 20px;
+}
+/* line 201, global.less */
+.footer a {
+  text-decoration: none;
+  color: #ffffff;
+}
+/* line 205, global.less */
+.footer section.library {
+  background: #ec4863;
+  padding: 10px 0 20px 0;
+}
+/* line 208, global.less */
+.footer section.library .title {
+  float: left;
+  width: 25%;
+}
+/* line 211, global.less */
+.footer section.library .title h3 {
+  color: #ffffff;
+}
+/* line 215, global.less */
+.footer section.library .library-list {
+  float: right;
+  width: 75%;
+  margin-top: 8px;
+}
+/* line 219, global.less */
+.footer section.library .library-list h4 {
+  color: #ffffff;
+}
+/* line 222, global.less */
+.footer section.library .library-list .items-container {
+  width: 100%;
+}
+/* line 224, global.less */
+.footer section.library .library-list .items-container .item {
+  float: left;
+  width: 33%;
+  color: #ffffff;
+  font: 400 1.6rem Roboto;
+  margin: 5px 0;
+}
+/* line 230, global.less */
+.footer section.library .library-list .items-container .item:hover {
+  text-decoration: underline;
+}
+/* line 237, global.less */
+.footer section.bottom {
+  background: #a73e5c;
+  padding: 15px 0;
+  overflow: hidden;
+}
+/* line 241, global.less */
+.footer section.bottom p.copyright {
+  display: block;
+  float: left;
+  color: #290019;
+  font: 500 1.4rem Roboto;
+  margin-left: 30px;
+}
+/* line 248, global.less */
+.footer section.bottom ul.footer-menu {
+  float: right;
+  margin-top: 13px;
+}
+/* line 251, global.less */
+.footer section.bottom ul.footer-menu li {
+  float: left;
+  margin-right: 30px;
+}
+/* line 254, global.less */
+.footer section.bottom ul.footer-menu li a {
+  font: 400 14px Roboto;
+}
+/* line 256, global.less */
+.footer section.bottom ul.footer-menu li a:hover {
+  text-decoration: underline;
+}
+/* line 1, mainpage.less */
+body.page-mainpage {
+  background: url('../images/mainpage-bg.jpg') center center no-repeat;
+  background-size: cover;
+}
+/* line 4, mainpage.less */
+body.page-mainpage .ui-button-icon-primary {
+  margin-left: -16px !important;
+  margin-top: 0 !important;
+}
+/* line 8, mainpage.less */
+body.page-mainpage h1 {
+  color: #ffffff;
+  text-align: center;
+  font: 700 4.8rem Roboto;
+  padding-bottom: 0;
+  margin-top: 40px;
+}
+/* line 15, mainpage.less */
+body.page-mainpage h4 {
+  color: #ffffff;
+  text-align: center;
+  font: 500 1.8rem Roboto;
+}
+/* line 20, mainpage.less */
+body.page-mainpage .log-in,
+body.page-mainpage .sign-up,
+body.page-mainpage .forgot-password {
+  border-radius: 5px;
+  -o-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  overflow: hidden;
+  margin: 30px auto;
+  width: 380px;
+  height: 486px;
+}
+/* line 29, mainpage.less */
+body.page-mainpage .log-in .head,
+body.page-mainpage .sign-up .head,
+body.page-mainpage .forgot-password .head {
+  height: 54px;
+  background: url('../images/login-form-header.png');
+}
+/* line 33, mainpage.less */
+body.page-mainpage .log-in form.body,
+body.page-mainpage .sign-up form.body,
+body.page-mainpage .forgot-password form.body {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  background: url('../images/loginform-bg.png');
+  padding: 15px 30px;
+}
+/* line 38, mainpage.less */
+body.page-mainpage .log-in form.body .field,
+body.page-mainpage .sign-up form.body .field,
+body.page-mainpage .forgot-password form.body .field {
+  margin-bottom: 20px;
+}
+/* line 41, mainpage.less */
+body.page-mainpage .log-in form.body .btn,
+body.page-mainpage .sign-up form.body .btn,
+body.page-mainpage .forgot-password form.body .btn {
+  width: 100%;
+  padding: 15px 0;
+  font-size: 1.4rem;
+}
+/* line 46, mainpage.less */
+body.page-mainpage .log-in form.body p.endnote,
+body.page-mainpage .sign-up form.body p.endnote,
+body.page-mainpage .forgot-password form.body p.endnote {
+  color: #b099a3;
+  text-align: center;
+  margin: 10px;
+  font: 500 1.2rem Roboto;
+  line-height: 150%;
+  margin-bottom: 30px;
+}
+/* line 53, mainpage.less */
+body.page-mainpage .log-in form.body p.endnote a,
+body.page-mainpage .sign-up form.body p.endnote a,
+body.page-mainpage .forgot-password form.body p.endnote a {
+  color: #ec4863;
+}
+/* line 57, mainpage.less */
+body.page-mainpage .log-in form.body .remember-me,
+body.page-mainpage .sign-up form.body .remember-me,
+body.page-mainpage .forgot-password form.body .remember-me {
+  float: left;
+}
+/* line 59, mainpage.less */
+body.page-mainpage .log-in form.body .remember-me .checkbox.container,
+body.page-mainpage .sign-up form.body .remember-me .checkbox.container,
+body.page-mainpage .forgot-password form.body .remember-me .checkbox.container {
+  float: left;
+  margin-top: 8px;
+}
+/* line 62, mainpage.less */
+body.page-mainpage .log-in form.body .remember-me .checkbox.container.checked + label,
+body.page-mainpage .sign-up form.body .remember-me .checkbox.container.checked + label,
+body.page-mainpage .forgot-password form.body .remember-me .checkbox.container.checked + label {
+  color: #ec4863;
+}
+/* line 66, mainpage.less */
+body.page-mainpage .log-in form.body .remember-me label,
+body.page-mainpage .sign-up form.body .remember-me label,
+body.page-mainpage .forgot-password form.body .remember-me label {
+  float: left;
+  margin-left: 10px;
+  color: #b099a3;
+}
+/* line 72, mainpage.less */
+body.page-mainpage .log-in form.body a#forgot-password,
+body.page-mainpage .sign-up form.body a#forgot-password,
+body.page-mainpage .forgot-password form.body a#forgot-password {
+  display: block;
+  float: right;
+  margin-top: 10px;
+  color: #ec4863;
+  font-size: 1.2rem;
+}
+/* line 80, mainpage.less */
+body.page-mainpage .log-in .foot,
+body.page-mainpage .sign-up .foot,
+body.page-mainpage .forgot-password .foot {
+  text-align: center;
+  border-top: solid 1px #b099a3;
+  background: url('../images/loginform-bg.png');
+  padding: 15px 0 25px 0;
+}
+/* line 85, mainpage.less */
+body.page-mainpage .log-in .foot p,
+body.page-mainpage .sign-up .foot p,
+body.page-mainpage .forgot-password .foot p {
+  line-height: 100%;
+  font-size: 1.2rem;
+}
+/* line 89, mainpage.less */
+body.page-mainpage .log-in .foot a#sign-up,
+body.page-mainpage .sign-up .foot a#sign-up,
+body.page-mainpage .forgot-password .foot a#sign-up,
+body.page-mainpage .log-in .foot a#sign-in,
+body.page-mainpage .sign-up .foot a#sign-in,
+body.page-mainpage .forgot-password .foot a#sign-in {
+  color: #ec4863;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+/* line 95, mainpage.less */
+body.page-mainpage .log-in.sign-up,
+body.page-mainpage .sign-up.sign-up,
+body.page-mainpage .forgot-password.sign-up,
+body.page-mainpage .log-in.forgot-password,
+body.page-mainpage .sign-up.forgot-password,
+body.page-mainpage .forgot-password.forgot-password {
+  display: none;
+}
+/* line 99, mainpage.less */
+body.page-mainpage footer.footer {
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+/* line 106, mainpage.less */
+body.page-mainpage footer.footer .copyright {
+  float: left;
+  margin-left: 30px;
+}
+/* line 109, mainpage.less */
+body.page-mainpage footer.footer .copyright p {
+  line-height: 155%;
+}
+/* line 113, mainpage.less */
+body.page-mainpage footer.footer .right {
+  float: right;
+  margin-right: 30px;
+  text-align: right;
+}
+/* line 117, mainpage.less */
+body.page-mainpage footer.footer .right ul {
+  margin-top: 35px;
+}
+/* line 119, mainpage.less */
+body.page-mainpage footer.footer .right ul li {
+  float: left;
+  margin-left: 20px;
+}
+/* line 123, mainpage.less */
+body.page-mainpage footer.footer .right ul li a:hover {
+  text-decoration: underline;
+}
+/* line 131, mainpage.less */
+body.page-mainpage #authorization-window,
+body.page-mainpage #registration-window,
+body.page-mainpage #forgot-password-window {
+  padding-bottom: 0;
+}
+/* line 134, mainpage.less */
+body.page-mainpage #authorization-window#forgot-password-window .container,
+body.page-mainpage #registration-window#forgot-password-window .container,
+body.page-mainpage #forgot-password-window#forgot-password-window .container {
+  width: 500px;
+}
+/* line 136, mainpage.less */
+body.page-mainpage #authorization-window#forgot-password-window .container form,
+body.page-mainpage #registration-window#forgot-password-window .container form,
+body.page-mainpage #forgot-password-window#forgot-password-window .container form {
+  width: 300px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+/* line 140, mainpage.less */
+body.page-mainpage #authorization-window#forgot-password-window .container form input[type="submit"],
+body.page-mainpage #registration-window#forgot-password-window .container form input[type="submit"],
+body.page-mainpage #forgot-password-window#forgot-password-window .container form input[type="submit"] {
+  width: 100%;
+}
+/* line 146, mainpage.less */
+body.page-mainpage #authorization-window > .container,
+body.page-mainpage #registration-window > .container,
+body.page-mainpage #forgot-password-window > .container {
+  padding-bottom: 60px;
+}
+/* line 148, mainpage.less */
+body.page-mainpage #authorization-window > .container h1,
+body.page-mainpage #registration-window > .container h1,
+body.page-mainpage #forgot-password-window > .container h1 {
+  color: #290019;
+  font: 500 2.4rem Roboto;
+  margin-bottom: 20px;
+}
+/* line 153, mainpage.less */
+body.page-mainpage #authorization-window > .container .left,
+body.page-mainpage #registration-window > .container .left,
+body.page-mainpage #forgot-password-window > .container .left {
+  padding-right: 15px;
+  width: 255px;
+  float: left;
+  border-right: solid 1px #b9d4cc;
+}
+/* line 158, mainpage.less */
+body.page-mainpage #authorization-window > .container .left a.omni-sign-in,
+body.page-mainpage #registration-window > .container .left a.omni-sign-in,
+body.page-mainpage #forgot-password-window > .container .left a.omni-sign-in {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  -o-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0 10px;
+  clear: both;
+  overflow: hidden;
+  margin-bottom: 21px;
+}
+/* line 173, mainpage.less */
+body.page-mainpage #authorization-window > .container .left a.omni-sign-in i,
+body.page-mainpage #registration-window > .container .left a.omni-sign-in i,
+body.page-mainpage #forgot-password-window > .container .left a.omni-sign-in i {
+  position: relative;
+  height: 100%;
+  display: block;
+  float: left;
+  border-right: solid 1px #2f4779;
+  font-size: 1.8rem;
+  padding: 10px 10px 10px 0;
+  text-align: center;
+  width: 30px;
+}
+/* line 184, mainpage.less */
+body.page-mainpage #authorization-window > .container .left a.omni-sign-in span,
+body.page-mainpage #registration-window > .container .left a.omni-sign-in span,
+body.page-mainpage #forgot-password-window > .container .left a.omni-sign-in span {
+  position: relative;
+  height: 100%;
+  display: block;
+  float: left;
+  font-size: 1.2rem;
+  padding-left: 15px;
+  margin-top: 10px;
+}
+/* line 193, mainpage.less */
+body.page-mainpage #authorization-window > .container .left a.omni-sign-in#fb,
+body.page-mainpage #registration-window > .container .left a.omni-sign-in#fb,
+body.page-mainpage #forgot-password-window > .container .left a.omni-sign-in#fb {
+  background: #3b5998;
+}
+/* line 196, mainpage.less */
+body.page-mainpage #authorization-window > .container .left a.omni-sign-in#vk,
+body.page-mainpage #registration-window > .container .left a.omni-sign-in#vk,
+body.page-mainpage #forgot-password-window > .container .left a.omni-sign-in#vk {
+  background: #4c75a3;
+}
+/* line 199, mainpage.less */
+body.page-mainpage #authorization-window > .container .left a.omni-sign-in#ok,
+body.page-mainpage #registration-window > .container .left a.omni-sign-in#ok,
+body.page-mainpage #forgot-password-window > .container .left a.omni-sign-in#ok {
+  background: #fa9616;
+  margin-bottom: 0;
+}
+/* line 202, mainpage.less */
+body.page-mainpage #authorization-window > .container .left a.omni-sign-in#ok i,
+body.page-mainpage #registration-window > .container .left a.omni-sign-in#ok i,
+body.page-mainpage #forgot-password-window > .container .left a.omni-sign-in#ok i {
+  border-color: #d98314;
+}
+/* line 207, mainpage.less */
+body.page-mainpage #authorization-window > .container .left p,
+body.page-mainpage #registration-window > .container .left p,
+body.page-mainpage #forgot-password-window > .container .left p {
+  color: #b099a3;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 150%;
+}
+/* line 212, mainpage.less */
+body.page-mainpage #authorization-window > .container .left p a,
+body.page-mainpage #registration-window > .container .left p a,
+body.page-mainpage #forgot-password-window > .container .left p a {
+  color: #ec4863;
+  text-decoration: underline;
+}
+/* line 218, mainpage.less */
+body.page-mainpage #authorization-window > .container .right,
+body.page-mainpage #registration-window > .container .right,
+body.page-mainpage #forgot-password-window > .container .right {
+  width: 255px;
+  float: right;
+  padding-left: 15px;
+}
+/* line 222, mainpage.less */
+body.page-mainpage #authorization-window > .container .right .btn,
+body.page-mainpage #registration-window > .container .right .btn,
+body.page-mainpage #forgot-password-window > .container .right .btn {
+  width: 100%;
+}
+/* line 225, mainpage.less */
+body.page-mainpage #authorization-window > .container .right p,
+body.page-mainpage #registration-window > .container .right p,
+body.page-mainpage #forgot-password-window > .container .right p {
+  color: #b099a3;
+  font: 400 1.2rem Roboto;
+  text-align: center;
+}
+/* line 229, mainpage.less */
+body.page-mainpage #authorization-window > .container .right p a,
+body.page-mainpage #registration-window > .container .right p a,
+body.page-mainpage #forgot-password-window > .container .right p a {
+  color: #8e7781;
+  font-weight: bold;
+}
+/* line 235, mainpage.less */
+body.page-mainpage #authorization-window > .container .links,
+body.page-mainpage #registration-window > .container .links,
+body.page-mainpage #forgot-password-window > .container .links {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: block;
+  text-align: center;
+  border-top: #b9d4cc 1px solid;
+  padding-top: 10px;
+}
+/* line 244, mainpage.less */
+body.page-mainpage #authorization-window > .container a.sign-up,
+body.page-mainpage #registration-window > .container a.sign-up,
+body.page-mainpage #forgot-password-window > .container a.sign-up,
+body.page-mainpage #authorization-window > .container a.forgot-password,
+body.page-mainpage #registration-window > .container a.forgot-password,
+body.page-mainpage #forgot-password-window > .container a.forgot-password,
+body.page-mainpage #authorization-window > .container a.sign-in,
+body.page-mainpage #registration-window > .container a.sign-in,
+body.page-mainpage #forgot-password-window > .container a.sign-in {
+  color: #35504e;
+  font: 400 1.4rem Roboto;
+  text-decoration: none;
+  margin-top: 10px;
+  line-height: 26px;
+}
+/* line 250, mainpage.less */
+body.page-mainpage #authorization-window > .container a.sign-up span,
+body.page-mainpage #registration-window > .container a.sign-up span,
+body.page-mainpage #forgot-password-window > .container a.sign-up span,
+body.page-mainpage #authorization-window > .container a.forgot-password span,
+body.page-mainpage #registration-window > .container a.forgot-password span,
+body.page-mainpage #forgot-password-window > .container a.forgot-password span,
+body.page-mainpage #authorization-window > .container a.sign-in span,
+body.page-mainpage #registration-window > .container a.sign-in span,
+body.page-mainpage #forgot-password-window > .container a.sign-in span {
+  color: #ec4863;
+  font-weight: bold;
+}
+/* line 254, mainpage.less */
+body.page-mainpage #authorization-window > .container a.sign-up.forgot-password,
+body.page-mainpage #registration-window > .container a.sign-up.forgot-password,
+body.page-mainpage #forgot-password-window > .container a.sign-up.forgot-password,
+body.page-mainpage #authorization-window > .container a.forgot-password.forgot-password,
+body.page-mainpage #registration-window > .container a.forgot-password.forgot-password,
+body.page-mainpage #forgot-password-window > .container a.forgot-password.forgot-password,
+body.page-mainpage #authorization-window > .container a.sign-in.forgot-password,
+body.page-mainpage #registration-window > .container a.sign-in.forgot-password,
+body.page-mainpage #forgot-password-window > .container a.sign-in.forgot-password {
+  font-size: 1.2rem;
+}
+/* line 1, cheat-sheet.less */
+.wrapper {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+  max-width: 960px;
+}
+/* line 7, cheat-sheet.less */
+.wrapper > section {
+  margin-bottom: 30px;
+}
+/* line 9, cheat-sheet.less */
+.wrapper > section.colors {
+  overflow: hidden;
+}
+/* line 11, cheat-sheet.less */
+.wrapper > section.colors > div {
+  position: relative;
+  float: left;
+  width: 33%;
+  margin-right: 1%;
+  border: solid 1px #ccc;
+}
+/* line 18, cheat-sheet.less */
+.wrapper > section.colors .color {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 5px;
+  position: relative;
+  float: left;
+  width: 33.333%;
+}
+/* line 25, cheat-sheet.less */
+.wrapper > section.colors .color#sky {
+  background: #ec4863;
+  color: #b91530;
+}
+/* line 26, cheat-sheet.less */
+.wrapper > section.colors .color#sea {
+  background: #290019;
+  color: #5c334c;
+}
+/* line 27, cheat-sheet.less */
+.wrapper > section.colors .color#blue_light {
+  background: #f4efff;
+  color: #c1bccc;
+}
+/* line 28, cheat-sheet.less */
+.wrapper > section.colors .color#sky_dark {
+  background: #a73e5c;
+  color: #740b29;
+}
+/* line 29, cheat-sheet.less */
+.wrapper > section.colors .color#sea_light {
+  background: #b099a3;
+  color: #7d6670;
+}
+/* line 30, cheat-sheet.less */
+.wrapper > section.colors .color#white {
+  background: #ffffff;
+  color: #aaaaaa;
+}
+/* line 31, cheat-sheet.less */
+.wrapper > section.colors .color#green_light {
+  background: #33b679;
+  color: #008346;
+}
+/* line 32, cheat-sheet.less */
+.wrapper > section.colors .color#red_light {
+  background: #f85649;
+  color: #c52316;
+}
+/* line 33, cheat-sheet.less */
+.wrapper > section.colors .color#yellow {
+  background: #fac944;
+  color: #c79611;
+}
+/* line 34, cheat-sheet.less */
+.wrapper > section.colors .color#green {
+  background: #0f9b58;
+  color: #006825;
+}
+/* line 35, cheat-sheet.less */
+.wrapper > section.colors .color#red {
+  background: #eb5245;
+  color: #b81f12;
+}
+/* line 36, cheat-sheet.less */
+.wrapper > section.colors .color#yellow_dark {
+  background: #ffaa3e;
+  color: #aa5500;
+}
+/* line 40, cheat-sheet.less */
+.wrapper > section.elements .buttons {
+  overflow: hidden;
+}
+/* line 42, cheat-sheet.less */
+.wrapper > section.elements .buttons .item {
+  position: relative;
+  margin-right: 2%;
+  float: left;
+}
+/* line 48, cheat-sheet.less */
+.wrapper > section.elements .checkboxes {
+  overflow: hidden;
+}
+/* line 50, cheat-sheet.less */
+.wrapper > section.elements .checkboxes .item {
+  position: relative;
+  margin-right: 2%;
+  float: left;
+}
+/* line 58, cheat-sheet.less */
+.wrapper > section.forms .item {
+  width: 50%;
+}
+/* line 62, cheat-sheet.less */
+.wrapper > section select {
+  width: 100%;
+}
+/*# sourceMappingURL=styles.css.map */
