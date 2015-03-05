@@ -2199,4 +2199,14 @@ body.page-profile-settings.consults .places input.plus {
 body.page-profile-settings.consults input[type="submit"] {
   margin-right: 20px;
 }
+/* line 2, page_text.less */
+body.page-text .text-container {
+  margin-top: 20px;
+  min-height: 800px;
+}
+/* line 6, page_text.less */
+body.page-text .text-container .content-block h1:first-child {
+  text-align: center;
+  margin: 30px 0;
+}
 /*# sourceMappingURL=styles.css.map */
