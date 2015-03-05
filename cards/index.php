@@ -17,7 +17,8 @@
         <h1>Содержание</h1>
         <ol>
             <li><a href="mainpage.php">Главная страница</a></li>
-            <li><a href="page_profile.php">Страница профиля терапевта</a></li> 
+            <li><a href="page_profile.php">Страница профиля терапевта</a></li>
+            <li><a href="page_profile_settings_common.php">Терапевт. Настройки профиля (основные)</a></li> 
         </ol>
         <h1>Полезные ссылки</h1>
         <ol>

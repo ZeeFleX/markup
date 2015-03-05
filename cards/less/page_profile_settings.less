@@ -1,0 +1,366 @@
+body.page-profile-settings{
+    section.content{
+        float: left;
+        width: 62%;
+    }
+    aside.additional-menu{
+        float: left;
+        margin-left: 2%;
+        width: 36%;
+        ul{
+            li{
+                margin:3px 0;
+                a{
+                    color: @bordo_light;
+                    font: 500 1.4rem Roboto;
+                    text-decoration: none;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+                &.active a{
+                    font-weight: bold;
+                    color:@bordo;
+                }
+            }
+        }
+    }
+    &.common{
+        section.content{
+            .upload-photo{
+                form{
+                    .photo-container{
+                        overflow: hidden;
+                        float: left;
+                        border-radius:4px;
+                        -o-border-radius:4px;
+                        -moz-border-radius:4px;
+                        -webkit-border-radius:4px;
+                        width: 130px;
+                        height: 150px;
+                        margin-right: 15px;
+                        img{
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+            .control{
+                overflow: hidden;
+                input{
+                    margin-bottom: 10px;
+                }
+                p{
+                    color: @bordo_light;
+                    font: 400 1.2rem Roboto;
+                }
+            }
+            form#profile-settings-form{
+                margin-top: 20px;
+                label{
+                    color: @bordo;
+                    font: 500 1.4rem Roboto;
+                    margin-bottom: 5px;
+                }
+                input{
+                    margin-bottom: 5px;
+                }
+                .field{
+                    &.firstname, &.lastname, &.middlename{
+                        float: left;
+                        width: 48%;
+                        margin-right: 4%;
+                        &.lastname{
+                            margin-right: 0;
+                        }
+                    }
+                }
+                input[type="submit"]{
+                    margin-right: 20px;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+    &.security{
+        form{
+            .field{
+                float: left;
+                width: 48%;
+                margin-right: 4%;
+                &.confirm-password{
+                    margin-right: 0;
+                }
+            }
+            input[type="submit"]{
+                margin-right: 20px;
+                margin-top: 30px;
+            }
+        }
+    }
+    &.about-me{
+        form{
+            .field.upload{
+                .preview{
+                    float: left;
+                    width: 80px;
+                    margin-right: 15px;
+                    border-radius:4px;
+                    -o-border-radius:4px;
+                    -moz-border-radius:4px;
+                    -webkit-border-radius:4px;
+                    overflow: hidden;
+                    img{
+                        display: block;
+                        width: 100%;
+                    }
+                }
+                .buttons{
+                    float: left;
+                    width: 38%;
+                    .btn{
+                        margin-bottom: 10px;
+                    }
+                }
+                p{
+                    display: block;
+                    overflow: hidden;
+                    text-align: center;
+                    font-size:1.2rem;
+                    margin-top: 10px;
+                    top: 7px;
+                }
+            }
+            a.add-document-button{
+                margin-top: 15px;
+                text-align: center;
+                font-size:1.2rem;
+                font-weight: 500;
+                background: #e9f7f1;
+                display: block;
+                padding:5px 0;
+                color:@bordo_light;
+                text-decoration: none;
+                margin-bottom: 30px;
+                &:hover{
+                    background: #e9f7f1 - #111;
+                    color:@bordo;
+                }
+            }
+            .select2-container{
+                width: 40% !important;
+                margin-right: 4%;
+            }
+            section.specialization{
+                .field{
+                    float: left;
+                    width: 48%;
+                    margin:5px 0;
+                    &:nth-child(even){
+                        margin-right: 0;
+                    }
+                    .checkbox{
+                        float: left;
+                        margin-right: 10px;
+                        &.checked + label{
+                            color:@pink;
+                        }
+                    }
+                    label{
+                        display: block;
+                        overflow: hidden;
+                        margin:2px 0;
+                        font-size:500;
+                    }
+                }
+                input[type="text"]{
+                    margin-top: 20px;
+                }
+            }
+            section.education{
+                .university{
+                    .input-container{
+                        overflow: hidden;
+                    }
+                    a#remove-university{
+                        display: block;
+                        float: right;
+                        border-radius:15px;
+                        -o-border-radius:15px;
+                        -moz-border-radius:15px;
+                        -webkit-border-radius:15px;
+                        width: 15px;
+                        height: 15px;
+                        line-height: 15px;
+                        border:solid 3px @bordo_light;
+                        text-align: center;
+                        margin-left: 15px;
+                        margin-top: 7px;
+                        i{
+                            color:@bordo_light;
+                        }
+                        &:hover{
+                            border-color:@bordo;
+                            i{
+                                color:@bordo;
+                            }
+                        }
+                    }
+                }
+            }
+            section.professional{
+                .certificate{
+                    .input-container{
+                        overflow: hidden;
+                    }
+                    a#remove-certificate{
+                        display: block;
+                        float: right;
+                        border-radius:15px;
+                        -o-border-radius:15px;
+                        -moz-border-radius:15px;
+                        -webkit-border-radius:15px;
+                        width: 15px;
+                        height: 15px;
+                        line-height: 15px;
+                        border:solid 3px @bordo_light;
+                        text-align: center;
+                        margin-left: 15px;
+                        margin-top: 7px;
+                        i{
+                            color:@bordo_light;
+                        }
+                        &:hover{
+                            border-color:@bordo;
+                            i{
+                                color:@bordo;
+                            }
+                        }
+                    }
+                }
+            }
+            input[type="submit"]{
+                margin-right: 20px;
+                margin-top: 30px;
+            }
+        }
+    }
+    &.contacts{
+        form{
+            .field{
+                float: left;
+                width: 48%;
+                margin-right: 4%;
+                &.phone{
+                    margin-right: 0;
+                }
+            }
+            input[type="submit"]{
+                margin-right: 20px;
+                margin-top: 30px;
+            }
+        }
+    }
+    &.consults{
+        .prices{
+            margin-bottom: 20px;
+            .item{
+                margin-bottom: 0px;
+                
+                label.name{
+                    text-transform: uppercase;
+                    font-size:1.4rem;
+                    color:@bordo_light;
+                    display: block;
+                    float: left;
+                }
+                .toggle.container{
+                    margin-top: 7px;
+                    margin-left: 15px;
+                    float: left;
+                    & + p:after{
+                        content: 'активировать';
+                    }
+                    &.checked + p:after{
+                        content: 'активно';
+                        color:@pink;
+                    }
+                } 
+                p{
+                    display: block;
+                    float: left;
+                    margin-left: 10px;
+                    font-size:1.2rem;
+                }
+                .price{
+                    height: 0;
+                    transition:all 0.2s ease;
+                    overflow: hidden;
+                    input{
+                        width: 120px;
+                        display:inline-block;
+                        margin-right: 10px;
+                    }
+                }
+                &.active{
+                    .price{
+                        height: 50px;
+                    }
+                }
+            }
+            .pay-notice{
+                .date{
+                    color:@bordo;
+                    font-weight: bold;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+        .places{
+            .item{
+                overflow: hidden;
+                margin-bottom:8px;
+                a.remove-place{
+                    border-radius:13px;
+                    -o-border-radius:13px;
+                    -moz-border-radius:13px;
+                    -webkit-border-radius:13px;
+                    display: block;
+                    float: left;
+                    width: 15px;
+                    height: 15px;
+                    border:solid @red_light 2px;
+                    text-align: center;
+                    line-height: 13px;
+                    margin-right: 8px;
+                    top:2px;
+                    i{
+                        color:@red_light;
+                        font-size:1.1rem;
+                    }
+                }
+                span.address{
+                    margin-right:20px;
+                }
+                input{
+                    
+                }
+                .radio.container{
+                    top: 4px;
+                    margin-right: 4px;
+                }
+                label{
+                    display: inline;
+                }
+            }
+            input.plus{
+                margin:20px 0 30px 0;
+            }
+        }
+        input[type="submit"]{
+            margin-right: 20px;
+        }
+    }
+}
