@@ -245,7 +245,9 @@ p {
 /* line 226, interface.less */
 input[type="text"],
 textarea,
-input[type="password"] {
+input[type="password"],
+input[type="date"],
+input[type="time"] {
   display: block;
   border-radius: 5px;
   border: solid 1px;
@@ -266,14 +268,18 @@ input[type="password"] {
 /* line 243, interface.less */
 input[type="text"]:focus,
 textarea:focus,
-input[type="password"]:focus {
+input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus {
   outline: none;
   border-color: #ec4863;
 }
 /* line 247, interface.less */
 input[type="text"].error,
 textarea.error,
-input[type="password"].error {
+input[type="password"].error,
+input[type="date"].error,
+input[type="time"].error {
   background-color: #ffd9d9;
 }
 /* line 252, interface.less */
@@ -2221,5 +2227,123 @@ body.page-session .text-container {
 /* line 18, page_text.less */
 body.page-session .text-container .content-block {
   min-height: 800px;
+}
+/* line 3, page_session.less */
+body.page-session-manage section.content .filter {
+  margin-top: 20px;
+  overflow: hidden;
+}
+/* line 6, page_session.less */
+body.page-session-manage section.content .filter p {
+  display: block;
+  float: left;
+  margin-right: 40px;
+  color: #290019;
+  font-weight: 500;
+}
+/* line 12, page_session.less */
+body.page-session-manage section.content .filter p .value {
+  color: #ec4863;
+}
+/* line 17, page_session.less */
+body.page-session-manage section.content .sessions {
+  overflow: hidden;
+}
+/* line 19, page_session.less */
+body.page-session-manage section.content .sessions .item {
+  float: left;
+  width: 31%;
+  margin-right: 2%;
+  overflow: hidden;
+}
+/* line 24, page_session.less */
+body.page-session-manage section.content .sessions .item p.invite-sent {
+  display: block;
+  color: #33b679;
+  font-weight: 500;
+  padding-left: 25px;
+  font-size: 1.2rem;
+  margin-top: 0;
+  background: url('../images/interface/check-icon.png') left 4px no-repeat;
+}
+/* line 32, page_session.less */
+body.page-session-manage section.content .sessions .item p.invite-sent .italic {
+  font-style: italic;
+}
+/* line 35, page_session.less */
+body.page-session-manage section.content .sessions .item p.invite-sent .date {
+  font-weight: 400;
+}
+/* line 39, page_session.less */
+body.page-session-manage section.content .sessions .item form {
+  margin-top: 20px;
+}
+/* line 41, page_session.less */
+body.page-session-manage section.content .sessions .item form input[type="submit"] {
+  width: 100%;
+  padding: 8px 0;
+  margin-top: 5px;
+}
+/* line 47, page_session.less */
+body.page-session-manage section.content .sessions .item .separator {
+  width: 145%;
+  background: #f4efff;
+  height: 1px;
+  left: -25%;
+  margin: 20px 0;
+}
+/* line 55, page_session.less */
+body.page-session-manage section.content .sessions .item p.session-begin .value {
+  font-weight: 500;
+  color: #290019;
+}
+/* line 60, page_session.less */
+body.page-session-manage section.content .sessions .item a.cancel {
+  color: #eb5245;
+  text-decoration: none;
+}
+/* line 63, page_session.less */
+body.page-session-manage section.content .sessions .item a.cancel:hover {
+  text-decoration: underline;
+}
+/* line 67, page_session.less */
+body.page-session-manage section.content .sessions .item a.sign-in {
+  display: block;
+  margin-top: 20px;
+}
+/* line 72, page_session.less */
+body.page-session-manage section.content .sessions .item.invitation form {
+  margin-top: 0;
+}
+/* line 75, page_session.less */
+body.page-session-manage section.content .sessions .item.invitation label {
+  font-weight: bold;
+  color: #290019;
+}
+/* line 78, page_session.less */
+body.page-session-manage section.content .sessions .item.invitation label:first-child {
+  margin-top: 0;
+}
+/* line 82, page_session.less */
+body.page-session-manage section.content .sessions .item.invitation input[name="time"] {
+  width: 50%;
+}
+/* line 87, page_session.less */
+body.page-session-manage section.content .sessions .item.new-session a.content-block {
+  display: block;
+  background: #e8e3f3;
+  height: 150px;
+  text-align: center;
+  padding: 0;
+}
+/* line 93, page_session.less */
+body.page-session-manage section.content .sessions .item.new-session a.content-block:hover {
+  background: #d7d2e2;
+}
+/* line 97, page_session.less */
+body.page-session-manage section.content .sessions .item.new-session i {
+  color: #b099a3;
+  font-size: 2.8rem;
+  line-height: 150px;
 }
 /*# sourceMappingURL=styles.css.map */

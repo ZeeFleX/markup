@@ -21,8 +21,9 @@
             <li><a href="page_profile_settings_common.php">Терапевт. Настройки профиля (основные)</a></li>
             <li><a href="page_profile_settings_contacts.php">Терапевт. Настройки профиля (контакты)</a></li> 
             <li><a href="page_profile_settings_security.php">Терапевт. Настройки профиля (Безопасность)</a></li>
+            <li><a href="page_session_manage.php">Управление сессиями</a></li> 
             <li><a href="page_text.php">Текстовая страница</a></li>
-            <li><a href="page_session_room.php">Заготовка для сессионной комнаты</a></li> 
+            <li><a href="page_session_room.php">Заготовка для сессионной комнаты</a></li>
         </ol>
         <h1>Полезные ссылки</h1>
         <ol>

@@ -1,0 +1,106 @@
+body.page-session-manage{
+	section.content{
+		.filter{
+			margin-top: 20px;
+			overflow: hidden;
+			p{
+				display: block;
+				float: left;
+				margin-right: 40px;
+				color:@bordo;
+				font-weight: 500;
+				.value{
+					color:@pink;
+				}
+			}
+		}
+		.sessions{
+			overflow: hidden;
+			.item{
+				float: left;
+				width: 31%;
+				margin-right: 2%;
+				overflow: hidden;
+				p.invite-sent{
+					display: block;
+					color:#33b679;
+					font-weight: 500;
+					padding-left: 25px;
+					font-size:1.2rem;
+					margin-top: 0;
+					background:url('../images/interface/check-icon.png') left 4px no-repeat;
+					.italic{
+						font-style:italic;
+					}
+					.date{
+						font-weight: 400;
+					}
+				}
+				form{
+					margin-top: 20px;
+					input[type="submit"]{
+						width: 100%;
+						padding:8px 0;
+						margin-top: 5px;
+					}
+				}
+				.separator{
+					width: 145%;
+					background: @pink_light;
+					height: 1px;
+					left:-25%;
+					margin:20px 0;
+				}
+				p.session-begin{
+					.value{
+						font-weight: 500;
+						color:@bordo;
+					}
+				}
+				a.cancel{
+					color:@red;
+					text-decoration: none;
+					&:hover{
+						text-decoration: underline;
+					}
+				}
+				a.sign-in{
+					display: block;
+					margin-top: 20px;
+				}
+				&.invitation{
+					form{
+						margin-top: 0;
+					}
+					label{
+						font-weight: bold;
+						color:@bordo;
+						&:first-child{
+							margin-top: 0;
+						}
+					}
+					input[name="time"]{
+						width: 50%;
+					}
+				}
+				&.new-session{
+					a.content-block{
+						display: block;
+						background: #e8e3f3;
+						height: 150px;
+						text-align: center;
+						padding:0;
+						&:hover{
+							background: #e8e3f3 - #111;
+						}
+					}
+					i{
+						color:#b099a3;
+						font-size:2.8rem;
+						line-height: 150px;
+					}
+				}
+			}
+		}
+	}
+}
