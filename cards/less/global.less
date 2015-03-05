@@ -44,7 +44,7 @@ header.header {
     background: @white; 
     box-sizing:border-box;
     -moz-box-sizing:border-box;
-    overflow: hidden;
+    display: table;
     .logo {
         border-radius:100%;
         -moz-border-radius:100%;
@@ -93,7 +93,7 @@ header.header {
             margin-left: 10px;
             margin-top: 5px;
             .name{
-                color: @pink;
+                color: @bordo;
                 font: 500 1.4rem Roboto;
             }
             .job{
@@ -105,6 +105,10 @@ header.header {
             float: left;
             margin-left: 10px;
             margin-top:10px;
+            z-index: 2;
+            &:hover .dropdown-menu{
+                display: block;
+            }
             i{
                 color: @bordo;
                 font-size:1.8rem;
@@ -113,6 +117,39 @@ header.header {
             .dropdown-menu{
                 //временно скрываем, пока нет дизайна
                 display: none;
+                position: absolute;
+                width:150px;
+                right:-28px;
+                top:100%;
+                margin-top:7px;
+                border:dashed 1px @bordo_light;
+                background: @white;
+                padding:10px 15px;
+                border-radius:6px;
+                -o-border-radius:6px;
+                -webkit-border-radius:6px;
+                -moz-border-radius:6px;
+                .arrow{
+                    width: 24px;
+                    height: 12px;
+                    position: absolute;
+                    background: url('../images/menu-arrow.png') no-repeat;
+                    top:-22px;
+                    right:5px;
+                }
+                ul{
+                    li{
+                        font-size:1.2rem;
+                        font-weight: 500;
+                        a{
+                            color:@bordo_light;
+                            text-decoration: none;
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -162,71 +199,46 @@ header.header {
         }
     }
 }
-.user-menu-section {
-    background: #f8f8f8;
-    overflow: hidden;
-    padding: 20px 0;
-    box-shadow: 1px 2px 0px 0.00px rgba(0, 0, 0, 0.1);
-    -o-box-shadow: 1px 2px 0px 0.00px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 1px 2px 0px 0.00px rgba(0, 0, 0, 0.1);
-    -webkit-box-shadow: 1px 2px 0px 0.00px rgba(0, 0, 0, 0.1);
-    .wrapper {
-        .user-menu-container {
-            right: 50%;
-            float: right;
-        }
-        .user-menu {
-            left: 50%;
-            float: left;
-            li {
-                margin:0 10px;
-                float: left;
-            }
-            a {
-                color: @bordo;
-                font: 400 1.4rem  Roboto;
-                text-decoration: none;
-                &:hover{
-                    text-decoration: underline;
-                }
-            }
-        }
-    }
-}
 
 //FOOTER
 .footer {
     width: 100%;
     margin-top: 20px;
+    color:@white;
+    font-weight: 500;
+    font-size:1.4rem;
     a{
         text-decoration: none;
         color:@white;
     }
-    section.library {
+    .top{
+        padding: 8px 30px;
         background: @pink;
-        padding:10px 0 20px 0;
-        .title {
-            float: left;
-            width: 25%;
-            h3 {
-                color:@white;
-            }
+        overflow: hidden;
+        .contact{
+            display: block;
+            float: left; 
         }
-        .library-list {
+        .support{
+            display: block;
             float: right;
-            width: 75%;
-            margin-top: 8px;
-            h4 {
-                color:@white;
-            }
-            .items-container {
-                width: 100%;
-                .item {
-                    float: left;
-                    width: 33%;
-                    color: @white;
-                    font: 400 1.6rem Roboto;
-                    margin:5px 0;
+        }
+    }
+    .bottom{
+        padding: 8px 30px;
+        background: @pink_dark;
+        overflow: hidden;
+        p{
+            display: block;
+            float: left;
+        }
+        ul{
+            float: right;
+            margin-top: 10px;
+            li{
+                float: left;
+                margin-left: 20px;
+                a{
                     &:hover{
                         text-decoration: underline;
                     }
@@ -234,30 +246,12 @@ header.header {
             }
         }
     }
-    section.bottom {
-        background: @pink_dark;
-        padding: 15px 0;
-        overflow: hidden;
-        p.copyright {
-            display: block;
-            float: left;
-            color: @bordo;
-            font: 500 1.4rem Roboto;
-            margin-left: 30px;
-        }
-        ul.footer-menu {
-            float: right;
-            margin-top: 13px;
-            li {
-                float: left;
-                margin-right:30px;
-                a {
-                    font: 400 14px Roboto;
-                    &:hover{
-                        text-decoration: underline;
-                    }
-                }
-            }
-        }
+}
+.page-mainpage footer.footer{
+    .top{
+        background: none;
+    }
+    .bottom{
+        background: none;
     }
 }

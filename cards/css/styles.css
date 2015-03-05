@@ -567,7 +567,7 @@ header.header {
   background: #ffffff;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
-  overflow: hidden;
+  display: table;
 }
 /* line 48, global.less */
 header.header .logo {
@@ -623,7 +623,7 @@ header.header .profile-snippet .info {
 }
 /* line 95, global.less */
 header.header .profile-snippet .info .name {
-  color: #ec4863;
+  color: #290019;
   font: 500 1.4rem Roboto;
 }
 /* line 99, global.less */
@@ -636,34 +636,74 @@ header.header .profile-snippet .more-container {
   float: left;
   margin-left: 10px;
   margin-top: 10px;
+  z-index: 2;
 }
-/* line 108, global.less */
+/* line 109, global.less */
+header.header .profile-snippet .more-container:hover .dropdown-menu {
+  display: block;
+}
+/* line 112, global.less */
 header.header .profile-snippet .more-container i {
   color: #290019;
   font-size: 1.8rem;
   cursor: pointer;
 }
-/* line 113, global.less */
+/* line 117, global.less */
 header.header .profile-snippet .more-container .dropdown-menu {
   display: none;
+  position: absolute;
+  width: 150px;
+  right: -28px;
+  top: 100%;
+  margin-top: 7px;
+  border: dashed 1px #b099a3;
+  background: #ffffff;
+  padding: 10px 15px;
+  border-radius: 6px;
+  -o-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
 }
-/* line 119, global.less */
+/* line 132, global.less */
+header.header .profile-snippet .more-container .dropdown-menu .arrow {
+  width: 24px;
+  height: 12px;
+  position: absolute;
+  background: url('../images/menu-arrow.png') no-repeat;
+  top: -22px;
+  right: 5px;
+}
+/* line 141, global.less */
+header.header .profile-snippet .more-container .dropdown-menu ul li {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+/* line 144, global.less */
+header.header .profile-snippet .more-container .dropdown-menu ul li a {
+  color: #b099a3;
+  text-decoration: none;
+}
+/* line 147, global.less */
+header.header .profile-snippet .more-container .dropdown-menu ul li a:hover {
+  text-decoration: underline;
+}
+/* line 156, global.less */
 header.header .profile-notifications {
   float: right;
   margin-right: 10px;
   margin-top: 10px;
 }
-/* line 123, global.less */
+/* line 160, global.less */
 header.header .profile-notifications > div {
   float: left;
   margin: 0 15px;
   cursor: pointer;
 }
-/* line 127, global.less */
+/* line 164, global.less */
 header.header .profile-notifications > div.active i.fa {
   color: #eb5245;
 }
-/* line 130, global.less */
+/* line 167, global.less */
 header.header .profile-notifications > div .count {
   position: absolute;
   border-radius: 50px;
@@ -678,144 +718,89 @@ header.header .profile-notifications > div .count {
   z-index: 1;
   font: 500 1.1rem / 17px Roboto;
 }
-/* line 144, global.less */
+/* line 181, global.less */
 header.header .profile-notifications > div i.fa {
   color: #b099a3;
   font-size: 2.0rem;
 }
-/* line 150, global.less */
+/* line 187, global.less */
 header.header .mainmenu {
   float: right;
   margin: 9px 0;
 }
-/* line 153, global.less */
+/* line 190, global.less */
 header.header .mainmenu li {
   float: left;
   text-transform: uppercase;
   font: 500 1.2rem Roboto;
   margin-right: 30px;
 }
-/* line 158, global.less */
+/* line 195, global.less */
 header.header .mainmenu li a {
   color: #290019;
   text-decoration: none;
 }
-/* line 165, global.less */
-.user-menu-section {
-  background: #f8f8f8;
-  overflow: hidden;
-  padding: 20px 0;
-  box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.1);
-  -o-box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.1);
-}
-/* line 174, global.less */
-.user-menu-section .wrapper .user-menu-container {
-  right: 50%;
-  float: right;
-}
-/* line 178, global.less */
-.user-menu-section .wrapper .user-menu {
-  left: 50%;
-  float: left;
-}
-/* line 181, global.less */
-.user-menu-section .wrapper .user-menu li {
-  margin: 0 10px;
-  float: left;
-}
-/* line 185, global.less */
-.user-menu-section .wrapper .user-menu a {
-  color: #290019;
-  font: 400 1.4rem  Roboto;
-  text-decoration: none;
-}
-/* line 189, global.less */
-.user-menu-section .wrapper .user-menu a:hover {
-  text-decoration: underline;
-}
-/* line 198, global.less */
+/* line 204, global.less */
 .footer {
   width: 100%;
   margin-top: 20px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1.4rem;
 }
-/* line 201, global.less */
+/* line 210, global.less */
 .footer a {
   text-decoration: none;
   color: #ffffff;
 }
-/* line 205, global.less */
-.footer section.library {
+/* line 214, global.less */
+.footer .top {
+  padding: 8px 30px;
   background: #ec4863;
-  padding: 10px 0 20px 0;
-}
-/* line 208, global.less */
-.footer section.library .title {
-  float: left;
-  width: 25%;
-}
-/* line 211, global.less */
-.footer section.library .title h3 {
-  color: #ffffff;
-}
-/* line 215, global.less */
-.footer section.library .library-list {
-  float: right;
-  width: 75%;
-  margin-top: 8px;
-}
-/* line 219, global.less */
-.footer section.library .library-list h4 {
-  color: #ffffff;
-}
-/* line 222, global.less */
-.footer section.library .library-list .items-container {
-  width: 100%;
-}
-/* line 224, global.less */
-.footer section.library .library-list .items-container .item {
-  float: left;
-  width: 33%;
-  color: #ffffff;
-  font: 400 1.6rem Roboto;
-  margin: 5px 0;
-}
-/* line 230, global.less */
-.footer section.library .library-list .items-container .item:hover {
-  text-decoration: underline;
-}
-/* line 237, global.less */
-.footer section.bottom {
-  background: #a73e5c;
-  padding: 15px 0;
   overflow: hidden;
 }
-/* line 241, global.less */
-.footer section.bottom p.copyright {
+/* line 218, global.less */
+.footer .top .contact {
   display: block;
   float: left;
-  color: #290019;
-  font: 500 1.4rem Roboto;
-  margin-left: 30px;
 }
-/* line 248, global.less */
-.footer section.bottom ul.footer-menu {
+/* line 222, global.less */
+.footer .top .support {
+  display: block;
   float: right;
-  margin-top: 13px;
+}
+/* line 227, global.less */
+.footer .bottom {
+  padding: 8px 30px;
+  background: #a73e5c;
+  overflow: hidden;
+}
+/* line 231, global.less */
+.footer .bottom p {
+  display: block;
+  float: left;
+}
+/* line 235, global.less */
+.footer .bottom ul {
+  float: right;
+  margin-top: 10px;
+}
+/* line 238, global.less */
+.footer .bottom ul li {
+  float: left;
+  margin-left: 20px;
+}
+/* line 242, global.less */
+.footer .bottom ul li a:hover {
+  text-decoration: underline;
 }
 /* line 251, global.less */
-.footer section.bottom ul.footer-menu li {
-  float: left;
-  margin-right: 30px;
+.page-mainpage footer.footer .top {
+  background: none;
 }
 /* line 254, global.less */
-.footer section.bottom ul.footer-menu li a {
-  font: 400 14px Roboto;
-}
-/* line 256, global.less */
-.footer section.bottom ul.footer-menu li a:hover {
-  text-decoration: underline;
+.page-mainpage footer.footer .bottom {
+  background: none;
 }
 /* line 1, mainpage.less */
 body.page-mainpage {
@@ -1348,5 +1333,482 @@ body.page-mainpage #forgot-password-window > .container a.sign-in.forgot-passwor
 /* line 62, cheat-sheet.less */
 .wrapper > section select {
   width: 100%;
+}
+/* line 1, page_profile.less */
+.wrapper {
+  margin: auto;
+  width: 960px;
+}
+/* line 6, page_profile.less */
+body.page-profile .resume-section {
+  overflow: hidden;
+  min-height: 700px;
+}
+/* line 9, page_profile.less */
+body.page-profile .resume-section .profile {
+  float: left;
+  width: 57%;
+  margin-top: 20px;
+}
+/* line 13, page_profile.less */
+body.page-profile .resume-section .profile .left {
+  float: left;
+  width: 28%;
+  margin-top: 10px;
+}
+/* line 18, page_profile.less */
+body.page-profile .resume-section .profile .left .photo img {
+  display: block;
+}
+/* line 23, page_profile.less */
+body.page-profile .resume-section .profile .right {
+  float: right;
+  width: 68%;
+  overflow: hidden;
+}
+/* line 27, page_profile.less */
+body.page-profile .resume-section .profile .right header {
+  overflow: hidden;
+}
+/* line 29, page_profile.less */
+body.page-profile .resume-section .profile .right header .name {
+  color: #290019;
+  font: 700 1.8rem Roboto;
+  float: left;
+}
+/* line 33, page_profile.less */
+body.page-profile .resume-section .profile .right header .name .lastname {
+  text-transform: uppercase;
+}
+/* line 36, page_profile.less */
+body.page-profile .resume-section .profile .right header .name .firstname {
+  text-transform: none;
+}
+/* line 39, page_profile.less */
+body.page-profile .resume-section .profile .right header .name .job {
+  color: #ec4863;
+  font: 500 1.4rem Roboto;
+  margin-top: 5px;
+}
+/* line 44, page_profile.less */
+body.page-profile .resume-section .profile .right header .name p {
+  margin: 0;
+}
+/* line 48, page_profile.less */
+body.page-profile .resume-section .profile .right header .toolbar {
+  float: right;
+}
+/* line 50, page_profile.less */
+body.page-profile .resume-section .profile .right header .toolbar .rating-block {
+  float: right;
+}
+/* line 53, page_profile.less */
+body.page-profile .resume-section .profile .right header .toolbar a.envelope {
+  float: right;
+  color: #290019;
+  text-decoration: none;
+  margin-top: 6px;
+  margin-right: 15px;
+}
+/* line 59, page_profile.less */
+body.page-profile .resume-section .profile .right header .toolbar a.envelope .fa {
+  font-size: 2.0rem;
+}
+/* line 63, page_profile.less */
+body.page-profile .resume-section .profile .right header .toolbar .profile-menu {
+  float: right;
+  margin-top: 9px;
+  margin-right: 15px;
+}
+/* line 75, page_profile.less */
+body.page-profile .resume-section .profile .right .contacts h5 {
+  padding-bottom: 0;
+}
+/* line 78, page_profile.less */
+body.page-profile .resume-section .profile .right .contacts p {
+  margin: 2px 0;
+  font-weight: 500;
+}
+/* line 81, page_profile.less */
+body.page-profile .resume-section .profile .right .contacts p span.value {
+  color: #ec4863;
+}
+/* line 88, page_profile.less */
+body.page-profile .resume-section aside {
+  float: right;
+  width: 41%;
+  overflow: hidden;
+}
+/* line 92, page_profile.less */
+body.page-profile .resume-section aside .price {
+  margin-top: 7px;
+}
+/* line 97, page_profile.less */
+body.page-profile .resume-section aside .price .content-block p.text {
+  margin-top: 0;
+}
+/* line 99, page_profile.less */
+body.page-profile .resume-section aside .price .content-block p.text .date {
+  font-weight: 500;
+  color: #ec4863;
+}
+/* line 104, page_profile.less */
+body.page-profile .resume-section aside .price .content-block p.summary {
+  margin-top: 20px;
+}
+/* line 106, page_profile.less */
+body.page-profile .resume-section aside .price .content-block p.summary .bold {
+  color: #290019;
+  font-weight: 500;
+}
+/* line 110, page_profile.less */
+body.page-profile .resume-section aside .price .content-block p.summary .value {
+  font-weight: bold;
+  color: #ec4863;
+}
+/* line 115, page_profile.less */
+body.page-profile .resume-section aside .price .content-block .btn {
+  display: block;
+  text-align: center;
+}
+/* line 121, page_profile.less */
+body.page-profile .resume-section aside .sessions {
+  margin-top: 10px;
+}
+/* line 123, page_profile.less */
+body.page-profile .resume-section aside .sessions p {
+  font-weight: bold;
+  color: #290019;
+}
+/* line 126, page_profile.less */
+body.page-profile .resume-section aside .sessions p .value {
+  color: #ec4863;
+}
+/* line 130, page_profile.less */
+body.page-profile .resume-section aside .sessions .btn {
+  margin-top: 15px;
+  text-align: center;
+  display: block;
+  color: #ffffff;
+}
+/* line 141, page_profile.less */
+body.page-profile .partners-section .content-block {
+  overflow: hidden;
+}
+/* line 143, page_profile.less */
+body.page-profile .partners-section .content-block .partner {
+  float: left;
+  width: 31.7%;
+  margin-left: 2%;
+  min-height: 120px;
+}
+/* line 148, page_profile.less */
+body.page-profile .partners-section .content-block .partner:first-child {
+  margin-left: 0;
+}
+/* line 157, page_profile.less */
+body.page-profile .information-section .reviews {
+  float: left;
+  width: 57%;
+}
+/* line 161, page_profile.less */
+body.page-profile .information-section .reviews .content-block .review {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 10px 20px 30px 20px;
+  margin-bottom: 60px;
+}
+/* line 166, page_profile.less */
+body.page-profile .information-section .reviews .content-block .review .quote-arrow {
+  position: absolute;
+  width: 43px;
+  height: 25px;
+  background: url('../images/quote-arrow.png');
+  bottom: -25px;
+  left: 60px;
+}
+/* line 179, page_profile.less */
+body.page-profile .information-section .reviews .content-block .review .author {
+  overflow: hidden;
+  margin-top: 25px;
+}
+/* line 182, page_profile.less */
+body.page-profile .information-section .reviews .content-block .review .author .photo {
+  border-radius: 50px;
+  -moz-border-radius: 50px;
+  -o-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+  float: left;
+}
+/* line 191, page_profile.less */
+body.page-profile .information-section .reviews .content-block .review .author .photo img {
+  display: block;
+  min-width: 100%;
+  min-height: 100%;
+}
+/* line 197, page_profile.less */
+body.page-profile .information-section .reviews .content-block .review .author .text {
+  overflow: hidden;
+}
+/* line 199, page_profile.less */
+body.page-profile .information-section .reviews .content-block .review .author .text p {
+  margin-left: 10px;
+  font-size: 1.2rem;
+}
+/* line 202, page_profile.less */
+body.page-profile .information-section .reviews .content-block .review .author .text p .author-name,
+body.page-profile .information-section .reviews .content-block .review .author .text p .user-name {
+  color: #ec4863;
+  font: 700 1.2rem Roboto;
+}
+/* line 209, page_profile.less */
+body.page-profile .information-section .reviews .content-block .review .toolbar {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+/* line 213, page_profile.less */
+body.page-profile .information-section .reviews .content-block .review .toolbar .review-menu {
+  float: left;
+  margin-right: 20px;
+  margin-top: 11px;
+}
+/* line 218, page_profile.less */
+body.page-profile .information-section .reviews .content-block .review .toolbar .review-date {
+  float: left;
+  margin-right: 20px;
+  font-size: 1.2rem;
+}
+/* line 223, page_profile.less */
+body.page-profile .information-section .reviews .content-block .review .toolbar .readmore {
+  border-top-left-radius: 5px;
+  -o-border-top-left-radius: 5px;
+  -moz-border-top-left-radius: 5px;
+  -webkit-border-top-left-radius: 5px;
+  float: left;
+  text-decoration: none;
+  color: #ec4863;
+  display: block;
+  font-size: 1.2rem;
+  border-left: dashed 1px #b9d4cc;
+  border-top: dashed 1px #b9d4cc;
+  padding: 8px 20px;
+}
+/* line 236, page_profile.less */
+body.page-profile .information-section .reviews .content-block .review .toolbar .readmore:hover {
+  text-decoration: underline;
+}
+/* line 242, page_profile.less */
+body.page-profile .information-section .reviews .content-block #load-more-reviews {
+  width: 200px;
+  text-align: center;
+  margin: auto;
+  display: block;
+}
+/* line 253, page_profile.less */
+body.page-profile .information-section .content-block form {
+  overflow: hidden;
+}
+/* line 256, page_profile.less */
+body.page-profile .information-section .content-block form .field textarea {
+  height: 98px;
+}
+/* line 259, page_profile.less */
+body.page-profile .information-section .content-block form .field label {
+  color: #ec4863;
+  font: 500 1.4rem Roboto;
+  margin-bottom: 0;
+}
+/* line 264, page_profile.less */
+body.page-profile .information-section .content-block form .field .raiting-block.vote {
+  float: left;
+  margin-top: 6px;
+}
+/* line 269, page_profile.less */
+body.page-profile .information-section .content-block form .btn {
+  display: block;
+  float: right;
+}
+/* line 275, page_profile.less */
+body.page-profile .information-section .information {
+  float: right;
+  width: 41%;
+}
+/* line 285, page_profile.less */
+body.page-profile .information-section .information .content-block.education-list .item,
+body.page-profile .information-section .information .content-block.proffessions-list .item {
+  margin-bottom: 20px;
+}
+/* line 287, page_profile.less */
+body.page-profile .information-section .information .content-block.education-list .item .scan,
+body.page-profile .information-section .information .content-block.proffessions-list .item .scan {
+  float: left;
+  width: 50px;
+  margin-right: 15px;
+}
+/* line 291, page_profile.less */
+body.page-profile .information-section .information .content-block.education-list .item .scan img,
+body.page-profile .information-section .information .content-block.proffessions-list .item .scan img {
+  display: block;
+  width: 100%;
+}
+/* line 296, page_profile.less */
+body.page-profile .information-section .information .content-block.education-list .item p,
+body.page-profile .information-section .information .content-block.proffessions-list .item p {
+  overflow: hidden;
+}
+/* line 302, page_profile.less */
+body.page-profile .information-section .information .content-block.answers-list .item {
+  margin-bottom: 30px;
+}
+/* line 306, page_profile.less */
+body.page-profile .information-section .information .content-block.answers-list .author .photo {
+  float: left;
+  overflow: hidden;
+  border-radius: 50px;
+  -o-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+/* line 316, page_profile.less */
+body.page-profile .information-section .information .content-block.answers-list .author .photo img {
+  display: block;
+}
+/* line 320, page_profile.less */
+body.page-profile .information-section .information .content-block.answers-list .author .about {
+  overflow: hidden;
+}
+/* line 322, page_profile.less */
+body.page-profile .information-section .information .content-block.answers-list .author .about p {
+  margin: 0;
+}
+/* line 324, page_profile.less */
+body.page-profile .information-section .information .content-block.answers-list .author .about p.name {
+  font-size: 1.2rem;
+  color: #ec4863;
+  font-weight: 700;
+}
+/* line 329, page_profile.less */
+body.page-profile .information-section .information .content-block.answers-list .author .about p.job {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+/* line 333, page_profile.less */
+body.page-profile .information-section .information .content-block.answers-list .author .about p.category {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 30px;
+}
+/* line 337, page_profile.less */
+body.page-profile .information-section .information .content-block.answers-list .author .about p.category .value {
+  color: #290019;
+}
+/* line 344, page_profile.less */
+body.page-profile .information-section .information .content-block.answers-list .item > h5 {
+  padding-bottom: 0;
+}
+/* line 348, page_profile.less */
+body.page-profile .information-section .information .content-block.answers-list .content p {
+  margin: 5px 0 0 0;
+}
+/* line 351, page_profile.less */
+body.page-profile .information-section .information .content-block.answers-list .content .fader {
+  position: absolute;
+  width: 100%;
+  height: 44px;
+  bottom: 0;
+  background: -webkit-linear-gradient(90deg, #fefefe 0%, #fefefe 16%, rgba(255, 255, 255, 0) 100%);
+  background: -moz-linear-gradient(90deg, #fefefe 0%, #fefefe 16%, rgba(255, 255, 255, 0) 100%);
+  background: -o-linear-gradient(90deg, #fefefe 0%, #fefefe 16%, rgba(255, 255, 255, 0) 100%);
+  background: -ms-linear-gradient(90deg, #fefefe 0%, #fefefe 16%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(0deg, #fefefe 0%, #fefefe 16%, rgba(255, 255, 255, 0) 100%);
+  z-index: 1;
+}
+/* line 364, page_profile.less */
+body.page-profile .information-section .information .content-block.answers-list a.readmore {
+  color: #ec4863;
+  font: 400 1.2rem Roboto;
+  text-decoration: none;
+}
+/* line 368, page_profile.less */
+body.page-profile .information-section .information .content-block.answers-list a.readmore:hover {
+  text-decoration: underline;
+}
+/* line 372, page_profile.less */
+body.page-profile .information-section .information .content-block.answers-list a#load-all-answers {
+  display: block;
+  width: 80%;
+  margin: auto;
+}
+/* line 380, page_profile.less */
+body.page-profile .information-section .ask-question {
+  margin-top: 20px;
+  overflow: hidden;
+}
+/* line 383, page_profile.less */
+body.page-profile .information-section .ask-question .ask-text {
+  float: left;
+}
+/* line 385, page_profile.less */
+body.page-profile .information-section .ask-question .ask-text h3 {
+  padding: 0;
+}
+/* line 389, page_profile.less */
+body.page-profile .information-section .ask-question a {
+  display: block;
+  float: right;
+}
+/* line 397, page_profile.less */
+body.page-profile .same-users-section .content-block.same-users-list {
+  overflow: hidden;
+}
+/* line 399, page_profile.less */
+body.page-profile .same-users-section .content-block.same-users-list .same-user {
+  overflow: hidden;
+  float: left;
+  width: 14%;
+  margin-left: 3%;
+  padding-bottom: 20px;
+}
+/* line 404, page_profile.less */
+body.page-profile .same-users-section .content-block.same-users-list .same-user:first-child {
+  margin-left: 0;
+}
+/* line 408, page_profile.less */
+body.page-profile .same-users-section .content-block.same-users-list .same-user .photo {
+  width: 100%;
+  overflow: hidden;
+}
+/* line 411, page_profile.less */
+body.page-profile .same-users-section .content-block.same-users-list .same-user .photo img {
+  width: 100%;
+}
+/* line 415, page_profile.less */
+body.page-profile .same-users-section .content-block.same-users-list .same-user p {
+  text-align: center;
+}
+/* line 418, page_profile.less */
+body.page-profile .same-users-section .content-block.same-users-list .same-user p.lastname {
+  margin: 0;
+  margin-top: 5px;
+  color: #ec4863;
+  font: 500 1.4rem Roboto;
+}
+/* line 424, page_profile.less */
+body.page-profile .same-users-section .content-block.same-users-list .same-user p.firstname {
+  margin: 0;
+  color: #ec4863;
+  font: 700 1.2rem Roboto;
+}
+/* line 430, page_profile.less */
+body.page-profile .same-users-section .content-block.same-users-list .same-user .rating-block {
+  width: 60px;
+  margin: 10px auto 0 auto;
 }
 /*# sourceMappingURL=styles.css.map */

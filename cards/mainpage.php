@@ -89,12 +89,12 @@
         </div>
     </div>
     <footer class="footer">
-        <div class="copyright">
-            <p>ИП Довлатов Константин Николаевич<br />ОГРН 309774619400751</p>
-            <p>Copyright 2015 Карточный сервис</p>
+        <div class="top">
+            <p class="contact">ИП Довлатов Константин Николаевич<br />ОГРН 309774619400751</p>
+            <p class="support">Служба технической поддержки: <a href="mailto:support@dowlatow.ru">support@dowlatow.ru</a></p>
         </div>
-        <div class="right">
-            <p>Служба технической поддержки: <a href="mailto:support@dowlatow.ru">support@dowlatow.ru</a></p>
+        <div class="bottom">
+            <p>Copyright 2015 Карточный сервис</p>
             <ul class="footer-menu">
                 <li><a href="#">О сервисе</a></li>
                 <li><a href="#">Политика конфиденциальности</a></li>
