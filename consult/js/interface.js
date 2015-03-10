@@ -107,7 +107,8 @@ var loadTimePickers = function(){
         timeOnlyTitle: 'Выберите время',
         timeText: 'Время',
         hourText: 'Часы',
-        minuteText: 'Минуты'
+        minuteText: 'Минуты',
+        minuteGrid: 30
     });
     $('.datepicker').datepicker({
 

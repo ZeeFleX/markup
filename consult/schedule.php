@@ -19,7 +19,7 @@
                 <?php
                     if($i < 10) {$title = '0' . $i . ':00';} else{$title = $i . ':00';}
                 ?>
-                <div class="hour"><?php echo $title; ?></div>
+                <div class="hour"><span><?php echo $title; ?></span></div>
             <?php } ?>
         </div>
         <div class="grid">
