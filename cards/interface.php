@@ -129,6 +129,12 @@
             <p>Пример:</p>
             <pre>&lt;div class=&quot;raiting-field&quot; data-scale=&quot;5&quot; data-value=&quot;2&quot;&gt;&lt;/div&gt;</pre>
             <div class="rating-field" data-scale="5" data-value="2"></div>
+            <h4>Выбор времени</h4>
+            <p>input[type="text"].timepicker</p>
+            <input type="text" class="timepicker"> 
+            <h4>Выбор Даты</h4>
+            <p>input[type="text"].datepicker</p>
+            <input type="text" class="datepicker">    
         </section>
         <section class="forms">
             <h3>Forms</h3>

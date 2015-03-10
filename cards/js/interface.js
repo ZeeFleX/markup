@@ -3,6 +3,8 @@ $(document).ready(function () {
 });
 
 var loadInterface = function(){
+    //Загрузка выбора времени
+    loadTimePickers();
     //Валидация
     $('body').on('focus', 'input.error', function(){
         $(this).removeClass('error');
@@ -81,6 +83,20 @@ var loadRadioButtons = function(){
                 }
             });
         }
+    });
+}
+
+var loadTimePickers = function(){
+    $('.timepicker').timepicker({
+        currentText: 'Текущее',
+        closeText: 'Готово',
+        timeOnlyTitle: 'Выберите время',
+        timeText: 'Время',
+        hourText: 'Часы',
+        minuteText: 'Минуты'
+    });
+    $('.datepicker').datepicker({
+
     });
 }
 

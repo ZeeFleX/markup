@@ -74,9 +74,9 @@
                     <div class="content-block">
                         <form action="#" method="POST">
                             <label for="date">Дата</label>
-                            <input type="date" name="date" placeholder="Введите дату сессии" />
+                            <input type="text" class="datepicker" name="date" placeholder="Введите дату сессии" />
                             <label for="time">Время</label>
-                            <input type="time" name="time" placeholder="Введите время" />
+                            <input type="text" class="timepicker" name="time" placeholder="Введите время" />
                             <input type="text" placeholder="Введите email" name="email" autocomplete="off"/>
                             <input type="submit" class="btn ghost red" value="Отправить приглашение" />
                         </form>

@@ -5,10 +5,12 @@
 <link href="css/styles.css" rel="stylesheet">
 <link href="css/jquery.Jcrop.min.css" rel="stylesheet">
 <link href="css/jquery-ui.min.css" rel="stylesheet">
+<link href="css/jquery.timepicker.css" rel="stylesheet">
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <!--        <link rel="stylesheet/less" type="text/css" href="less/styles.less">-->
 <!--        <script src="js/less.min.js"></script>-->
 <script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery.timepicker.js"></script>
 <script src="js/jquery.mask.min.js"></script>
 <script src="js/ajax.js"></script>
 <script src="js/interface.js"></script>
