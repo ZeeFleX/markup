@@ -28,6 +28,7 @@
         <ol>
             <li><a href="interface.php">Гайд по элементам интерфейса и их использованию</a></li> 
             <li><a href="calendar.php">Календарь</a></li>
+            <li><a href="schedule.php">Таблица расписания</a></li> 
         </ol>
     </div>
 </body>

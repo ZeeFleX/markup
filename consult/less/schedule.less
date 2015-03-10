@@ -1,0 +1,41 @@
+.schedule-container{
+	position: relative;
+	width: 480px;
+	padding:15px;
+	.hours{
+		position: relative;
+		float: left;
+		text-align: left;
+		width: 40px;
+		.hour{
+			height: 32px;
+			line-height:32px;
+		}
+	}
+	.grid{
+		position: relative;
+		float: right;
+		width: 400px;
+		-webkit-user-select:none;
+		.row{
+			border-bottom:solid 1px #b9d4cc;
+			height:15px;
+			&.selected{
+				background: #ddd;
+			}
+		}
+		.marker{
+			box-sizing:border-box;
+			-moz-box-sizing:border-box;
+			position: absolute;
+			width: 100%;
+			border-left: solid 5px #aaa;
+			border-right: solid 1px #aaa;
+			border-top: solid 1px #aaa;
+			border-bottom: solid 1px #aaa;
+			z-index: 1;
+			background: rgba(0,0,0,.1);
+			display: none;
+		}
+	}
+}

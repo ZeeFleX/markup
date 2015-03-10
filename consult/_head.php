@@ -9,6 +9,8 @@
 <!--        <link rel="stylesheet/less" type="text/css" href="less/styles.less">-->
 <!--        <script src="js/less.min.js"></script>-->
 <script src="js/select2.min.js"></script>
+<script src="js/underscore-min.js"></script>
+<script src="js/schedule.js"></script>
 <script src="js/jquery-ui.min.js"></script>
 <script src="js/jquery.mask.min.js"></script>
 <script src="js/ajax.js"></script>

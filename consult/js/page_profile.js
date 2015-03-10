@@ -203,7 +203,6 @@ function writeCoords(c)
 };
 
 function loadCitiesCallback(cities){
-    console.log(cities);
     $('select.select2-ajax').html('');
     $.each(cities, function(key,city){
         $('select.select2-ajax').append('<option value="' + city.id + '">' + city.text + '</option>');

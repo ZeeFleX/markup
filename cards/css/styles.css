@@ -2346,4 +2346,52 @@ body.page-session-manage section.content .sessions .item.new-session i {
   font-size: 2.8rem;
   line-height: 150px;
 }
+/* line 1, schedule.less */
+.schedule-container {
+  position: relative;
+  width: 480px;
+  padding: 15px;
+}
+/* line 5, schedule.less */
+.schedule-container .hours {
+  position: relative;
+  float: left;
+  text-align: left;
+  width: 40px;
+}
+/* line 10, schedule.less */
+.schedule-container .hours .hour {
+  height: 32px;
+  line-height: 32px;
+}
+/* line 15, schedule.less */
+.schedule-container .grid {
+  position: relative;
+  float: right;
+  width: 400px;
+  -webkit-user-select: none;
+}
+/* line 20, schedule.less */
+.schedule-container .grid .row {
+  border-bottom: solid 1px #b9d4cc;
+  height: 15px;
+}
+/* line 23, schedule.less */
+.schedule-container .grid .row.selected {
+  background: #ddd;
+}
+/* line 27, schedule.less */
+.schedule-container .grid .marker {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  border-left: solid 5px #aaa;
+  border-right: solid 1px #aaa;
+  border-top: solid 1px #aaa;
+  border-bottom: solid 1px #aaa;
+  z-index: 1;
+  background: #ddd;
+  display: none;
+}
 /*# sourceMappingURL=styles.css.map */
