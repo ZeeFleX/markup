@@ -2190,36 +2190,37 @@ body.page-profile-settings.consults input[type="submit"] {
   position: relative;
   width: 480px;
   padding: 15px;
+  float: left;
 }
-/* line 5, schedule.less */
+/* line 6, schedule.less */
 .schedule-container .hours {
   position: relative;
   float: left;
   text-align: left;
   width: 40px;
 }
-/* line 10, schedule.less */
+/* line 11, schedule.less */
 .schedule-container .hours .hour {
   height: 32px;
   line-height: 32px;
 }
-/* line 15, schedule.less */
+/* line 16, schedule.less */
 .schedule-container .grid {
   position: relative;
   float: right;
   width: 400px;
   -webkit-user-select: none;
 }
-/* line 20, schedule.less */
+/* line 21, schedule.less */
 .schedule-container .grid .row {
   border-bottom: solid 1px #b9d4cc;
   height: 15px;
 }
-/* line 23, schedule.less */
+/* line 24, schedule.less */
 .schedule-container .grid .row.selected {
   background: #ddd;
 }
-/* line 27, schedule.less */
+/* line 28, schedule.less */
 .schedule-container .grid .marker {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -2232,5 +2233,12 @@ body.page-profile-settings.consults input[type="submit"] {
   z-index: 1;
   background: rgba(0, 0, 0, 0.1);
   display: none;
+}
+/* line 43, schedule.less */
+form {
+  display: block;
+  float: left;
+  width: 250px;
+  margin: 10px;
 }
 /*# sourceMappingURL=styles.css.map */

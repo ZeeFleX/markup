@@ -3,6 +3,8 @@ $(document).ready(function () {
 });
 
 var loadInterface = function(){
+    //Загрузка Timepicker
+    loadTimePickers();
     //Валидация
     $('body').on('focus', 'input.error', function(){
         $(this).removeClass('error');
@@ -97,6 +99,19 @@ var loadInterface = function(){
     loadRadioButtons();
     //Поля ввода
     loadForms();
+}
+var loadTimePickers = function(){
+    $('.timepicker').timepicker({
+        currentText: 'Текущее',
+        closeText: 'Готово',
+        timeOnlyTitle: 'Выберите время',
+        timeText: 'Время',
+        hourText: 'Часы',
+        minuteText: 'Минуты'
+    });
+    $('.datepicker').datepicker({
+
+    });
 }
 var checkForValue = function(element){
     if($(element).val().length) {return true} else{return false}

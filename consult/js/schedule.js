@@ -19,6 +19,12 @@ $(document).ready(function(){
 			placeSelector(marker, timeArray);
 		}
 	});
+	$(grid).on('mouseup', function(){
+		pressed = false;
+		$('input#begin-time').val(rowToTime(_.min(timeArray)));
+		$('input#end-time').val(rowToTime(_.max(timeArray) + 1));
+		loadTimePickers();
+	});
 	$('body').on('mouseup', function(){
 		pressed = false;
 	});
@@ -33,4 +39,13 @@ var placeSelector = function(selector, timeArray){
 			display: 'block'
 		});
 	}
+}
+
+var rowToTime = function(row){
+	var hour = Math.floor(row / 2);
+	var minute = (row / 2) % 1 * 60;
+	if(hour.toString().length == 1) hour = '0' + hour;
+	if(hour == 24) hour = '00';
+	if(minute.toString().length == 1) minute = '0' + minute;
+	return hour + ':' + minute
 }
