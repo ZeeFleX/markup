@@ -2254,16 +2254,31 @@ body.page-profile-settings.consults input[type="submit"] {
   display: none;
 }
 /* line 57, schedule.less */
+.schedule-container .grid .reserved-marker p {
+  font-size: 1.3rem;
+  display: block;
+  margin-left: 20px;
+  margin-top: 6px;
+}
+/* line 63, schedule.less */
 .schedule-container .grid .reserved-marker.skype {
   border-color: #33b679;
   background: rgba(51, 152, 121, 0.4);
 }
-/* line 61, schedule.less */
+/* line 66, schedule.less */
+.schedule-container .grid .reserved-marker.skype p {
+  color: #119457;
+}
+/* line 70, schedule.less */
 .schedule-container .grid .reserved-marker.private {
   border-color: #fac944;
   background: rgba(250, 201, 68, 0.4);
 }
-/* line 68, schedule.less */
+/* line 73, schedule.less */
+.schedule-container .grid .reserved-marker.private p {
+  color: #d39a00;
+}
+/* line 80, schedule.less */
 form {
   display: block;
   float: left;

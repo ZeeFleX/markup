@@ -5,6 +5,10 @@ $(document).ready(function(){
 	var marker = $(grid).find('.marker');
 	var timeArray = [];
 	var reservedHoursArray = [];
+	var eventNames = {
+		'private' : 'Личная консультация',
+		'skype' : 'Skype-консультация'
+	};
 	//Если есть расписание, то спрашиваем евенты на эту дату, ждем JSON, строим зарезервированные области
 	if($(grid).length){
 		var date = '19-02-2015';
@@ -18,16 +22,13 @@ $(document).ready(function(){
 			success: function(data){
 				$.each(data, function(typeKey,typeValue){
 					$.each(typeValue, function(timeKey, timeValues){
-						$(grid).prepend('<div class="reserved-marker ' + typeKey + '" id="' + typeKey + '-' + timeKey + '"></div>');
+						$(grid).prepend('<div class="reserved-marker ' + typeKey + '" id="' + typeKey + '-' + timeKey + '"><p>' + eventNames[typeKey] + '</p></div>');
 						var reservedMarker = $(grid).find('div#' + typeKey + '-' + timeKey);
-						$.each(timeValues, function(key, time){
-							if(key){
-								timeArray[key] = timeToRow(time) - 1;
-							}else{
-								timeArray[key] = timeToRow(time);
-							}
-							reservedHoursArray.push(timeToRow(time));
+						timeArray = timesToRows(timeValues);
+						$.each(timeArray, function(key, row){
+							reservedHoursArray.push(row);
 						});
+						
 						placeSelector(reservedMarker, timeArray);
 					});
 				});
@@ -41,23 +42,30 @@ $(document).ready(function(){
 		time = Math.floor((e.pageY - $(grid).offset().top) / 16);
 		timeArray[0] = (time);
 		console.log(_.indexOf(reservedHoursArray, timeArray[1]));
-		if(_.indexOf(reservedHoursArray, timeArray[1]) !== -1) {
+		if(isReserved(timeArray,reservedHoursArray)) {
 			pressed = false;
+		}else{
+			placeSelector(marker, timeArray);
 		}
-		placeSelector(marker, timeArray);
+		
 	});
 	$(grid).on('mousemove', function(e){
-		if(pressed){
+		timeArray[1] = time;
+		if(pressed && !isReserved(timeArray,reservedHoursArray)){
 			time = Math.floor((e.pageY - $(grid).offset().top) / 16);
-			timeArray[1] = time;
-			if(_.indexOf(reservedHoursArray, timeArray[1]) !== -1) {
-				pressed = false;
-			}
 			placeSelector(marker, timeArray);
+		}else{
+			if(timeArray[1] > timeArray[0]){
+				timeArray[1]--;
+			}else{
+				timeArray[1]++;
+			}
+			pressed = false;
 		}
 	});
 	$(grid).on('mouseup', function(){
 		pressed = false;
+		console.log(timeArray);
 		$('input#begin-time').val(rowToTime(_.min(timeArray)));
 		$('input#end-time').val(rowToTime(_.max(timeArray) + 1));
 		loadTimePickers();
@@ -67,6 +75,9 @@ $(document).ready(function(){
 	});
 });
 
+var isReserved = function(timeArray, reservedHoursArray){
+	return _.intersection(_.range(_.min(timeArray),_.max(timeArray) + 1), reservedHoursArray).length
+}
 
 var placeSelector = function(selector, timeArray){
 	if(timeArray.length){
@@ -87,9 +98,14 @@ var rowToTime = function(row){
 	return hour + ':' + minute
 }
 
-var timeToRow = function(time){
-	var hour = parseInt(time.split('-')[0]);
-	var minute = parseInt(time.split('-')[1]);
-	var row = (hour + (minute / 60)) * 2;
-	return row
+var timesToRows = function(times){
+	var rows = [];
+	$.each(times, function(key, time){
+		var hour = parseInt(time.split('-')[0]);
+		var minute = parseInt(time.split('-')[1]);
+		var row = (hour + (minute / 60)) * 2;
+		rows.push(row);
+	});
+	rows[1]--;
+	return rows
 }
