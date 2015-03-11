@@ -43,6 +43,26 @@
 			background: rgba(0,0,0,.1);
 			display: none;
 		}
+		.reserved-marker{
+			box-sizing:border-box;
+			-moz-box-sizing:border-box;
+			position: absolute;
+			width: 100%;
+			border-left: solid 5px #aaa;
+			border-right: solid 1px #aaa;
+			border-top: solid 1px #aaa;
+			border-bottom: solid 1px #aaa;
+			z-index: 1;
+			display: none;
+			&.skype{
+				border-color:#33b679;
+				background: rgba(51,152,121,.4);
+			}
+			&.private{
+				border-color:#fac944;
+				background: rgba(250,201,68,.4);
+			}
+		}
 	}
 }
 form{
