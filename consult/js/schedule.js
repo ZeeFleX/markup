@@ -52,9 +52,9 @@ $(document).ready(function(){
 	//Растягивание евента вниз
 	$(grid).on('mousedown', '.slider', function(e){
 		if($(this).hasClass('slider-top')){
-			currentChange = 'top';
+		 	currentChange = 'top';
 		}else if($(this).hasClass('slider-bottom')){
-			currentChange = 'bottom';
+		 	currentChange = 'bottom';
 		}
 		marker = $(this).closest('.reserved-marker');
 		changePressed = true;
@@ -62,7 +62,7 @@ $(document).ready(function(){
 		tmpArr = timeArray;
 		tmpArr[1]--;
 		reservedHoursArray = _.difference(reservedHoursArray, tmpArr);
-		console.log(reservedHoursArray);
+		//console.log(reservedHoursArray);
 		//time = Math.floor((e.pageY - $(grid).offset().top) / 16);
 		//timeArray[0] = time;
 	});
@@ -81,15 +81,19 @@ $(document).ready(function(){
 	});
 	$(grid).on('mousemove', function(e){
 		if(pressed || changePressed){
+			if(changePressed){
+				if(currentChange == 'bottom' || pressed){
+					timeArray[1] = Math.floor((e.pageY - $(grid).offset().top) / 16);
+				}else if(currentChange == 'top'){
+					timeArray[0] = Math.floor((e.pageY - $(grid).offset().top) / 16);
+				}
+			} 
+			if(pressed){
+				timeArray[1] = Math.floor((e.pageY - $(grid).offset().top) / 16);
+			}
 			if(!isReserved(timeArray,reservedHoursArray)){
 				placeSelector(marker, timeArray);
 			}
-			if(currentChange == 'bottom'){
-				timeArray[1] = Math.floor((e.pageY - $(grid).offset().top) / 16);
-			}else if(currentChange == 'top'){
-				timeArray[0] = Math.floor((e.pageY - $(grid).offset().top) / 16);
-			}
-			
 		}
 	});
 	$(grid).on('mouseup', function(){
@@ -97,7 +101,7 @@ $(document).ready(function(){
 			timeArray = getEventRows(marker, grid);
 			timeArray[1]--;
 			reservedHoursArray = _.union(timeArray, reservedHoursArray);
-			console.log(reservedHoursArray);
+			//console.log(reservedHoursArray);
 		}
 		pressed = false;
 		changePressed = false;
