@@ -74,27 +74,12 @@ $(document).ready(function(){
 		}
 	});
 	$(grid).on('mousemove', function(e){
-		if(pressed){
-			timeArray[1] = time;
+		if(pressed || changePressed){
 			if(!isReserved(timeArray,reservedHoursArray)){
-				time = Math.floor((e.pageY - $(grid).offset().top) / 16);
 				placeSelector(marker, timeArray);
-			}else{
-				if(timeArray[1] > timeArray[0]){
-					timeArray[1]--;
-				}else{
-					timeArray[1]++;
-				}
-				pressed = false;
 			}
+			timeArray[1] = Math.floor((e.pageY - $(grid).offset().top) / 16);
 		}
-		
-		if(changePressed){
-			if(!isReserved(timeArray,reservedHoursArray)){
-				placeSelector(marker, timeArray);
-				timeArray[1] = Math.floor((e.pageY - $(grid).offset().top) / 16);
-			}
-		} 
 	});
 	$(grid).on('mouseup', function(){
 		if(changePressed){
