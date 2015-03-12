@@ -2,6 +2,7 @@ $(document).ready(function(){
 	var grid = $('.schedule-container .grid');
 	var pressed = false;
 	var changePressed = false;
+	var currentChange;
 	var time;
 	var marker;
 	var timeArray = [];
@@ -24,7 +25,7 @@ $(document).ready(function(){
 			success: function(data){
 				$.each(data, function(typeKey,typeValue){
 					$.each(typeValue, function(timeKey, timeValues){
-						$(grid).prepend('<div class="reserved-marker ' + typeKey + '" id="' + typeKey + '-' + timeKey + '"><div class="slider-top"></div><div class="slider-bottom"></div><p class="title">' + eventNames[typeKey] + '</p></div>');
+						$(grid).prepend('<div class="reserved-marker ' + typeKey + '" id="' + typeKey + '-' + timeKey + '"><div class="slider-top slider"></div><div class="slider-bottom slider"></div><p class="title">' + eventNames[typeKey] + '</p></div>');
 						var reservedMarker = $(grid).find('div#' + typeKey + '-' + timeKey);
 						timeArray = timesToRows(timeValues);
 						placeSelector(reservedMarker, timeArray);
@@ -49,7 +50,12 @@ $(document).ready(function(){
 		}
 	});
 	//Растягивание евента вниз
-	$(grid).on('mousedown', '.slider-bottom', function(){
+	$(grid).on('mousedown', '.slider', function(e){
+		if($(this).hasClass('slider-top')){
+			currentChange = 'top';
+		}else if($(this).hasClass('slider-bottom')){
+			currentChange = 'bottom';
+		}
 		marker = $(this).closest('.reserved-marker');
 		changePressed = true;
 		timeArray = getEventRows(marker, grid);
@@ -57,8 +63,8 @@ $(document).ready(function(){
 		tmpArr[1]--;
 		reservedHoursArray = _.difference(reservedHoursArray, tmpArr);
 		console.log(reservedHoursArray);
-		time = Math.floor((e.pageY - $(grid).offset().top) / 16);
-		timeArray[0] = (time);
+		//time = Math.floor((e.pageY - $(grid).offset().top) / 16);
+		//timeArray[0] = time;
 	});
 	//Выделение ячеек
 	$(grid).on('mousedown', '.row, .marker', function(e){
@@ -78,7 +84,12 @@ $(document).ready(function(){
 			if(!isReserved(timeArray,reservedHoursArray)){
 				placeSelector(marker, timeArray);
 			}
-			timeArray[1] = Math.floor((e.pageY - $(grid).offset().top) / 16);
+			if(currentChange == 'bottom'){
+				timeArray[1] = Math.floor((e.pageY - $(grid).offset().top) / 16);
+			}else if(currentChange == 'top'){
+				timeArray[0] = Math.floor((e.pageY - $(grid).offset().top) / 16);
+			}
+			
 		}
 	});
 	$(grid).on('mouseup', function(){
