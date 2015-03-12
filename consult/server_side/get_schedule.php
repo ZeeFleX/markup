@@ -6,7 +6,7 @@
 			Array('16-00', '18-00')
 		),
 		'skype' => Array(
-			Array('12-00', '13-00')
+			Array('12-00', '15-30')
 		)
 	);
 	echo json_encode($schedule);

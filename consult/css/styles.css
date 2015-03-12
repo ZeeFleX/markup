@@ -2269,16 +2269,48 @@ body.page-profile-settings.consults input[type="submit"] {
 .schedule-container .grid .reserved-marker.skype p {
   color: #119457;
 }
-/* line 70, schedule.less */
+/* line 69, schedule.less */
+.schedule-container .grid .reserved-marker.skype.selected {
+  border-color: #119457;
+}
+/* line 73, schedule.less */
 .schedule-container .grid .reserved-marker.private {
   border-color: #fac944;
   background: rgba(250, 201, 68, 0.4);
 }
-/* line 73, schedule.less */
+/* line 76, schedule.less */
 .schedule-container .grid .reserved-marker.private p {
   color: #d39a00;
 }
-/* line 80, schedule.less */
+/* line 79, schedule.less */
+.schedule-container .grid .reserved-marker.private.selected {
+  border-color: #d8a722;
+}
+/* line 83, schedule.less */
+.schedule-container .grid .reserved-marker .slider-top {
+  left: 50%;
+  margin-left: -2px;
+  top: -3px;
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  border: solid 1px #33b679;
+  background: #fff;
+  cursor: s-resize;
+}
+/* line 94, schedule.less */
+.schedule-container .grid .reserved-marker .slider-bottom {
+  left: 50%;
+  margin-left: -2px;
+  bottom: -3px;
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  border: solid 1px #33b679;
+  background: #fff;
+  cursor: s-resize;
+}
+/* line 108, schedule.less */
 form {
   display: block;
   float: left;

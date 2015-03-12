@@ -66,6 +66,9 @@
 				p{
 					color:#33b679 - #222;
 				}
+				&.selected{
+					border-color:#33b679 - #222;
+				}
 			}
 			&.private{
 				border-color:#fac944;
@@ -73,6 +76,31 @@
 				p{
 					color:#d39a00;
 				}
+				&.selected{
+					border-color:#fac944 - #222;
+				}
+			}
+			.slider-top{
+				left:50%;
+				margin-left: -2px;
+				top:-3px;
+				position: absolute;
+				width: 3px;
+				height: 3px;
+				border:solid 1px #33b679;
+				background: #fff;
+				cursor: s-resize;
+			}
+			.slider-bottom{
+				left:50%;
+				margin-left: -2px;
+				bottom:-3px;
+				position: absolute;
+				width: 3px;
+				height: 3px;
+				border:solid 1px #33b679;
+				background: #fff;
+				cursor: s-resize;
 			}
 		}
 	}
