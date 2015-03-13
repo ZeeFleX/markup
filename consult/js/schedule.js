@@ -10,6 +10,7 @@ $(document).ready(function(){
 	var timeArray = []; //Массив времени из двух элементов: начало периода, конец периода
 	var tmpArr = []; //Временный массив для промежуотчных рассчётов
 	var reservedHoursArray = []; //Массив забронированных часов
+	var cursorPosition;
 	var eventNames = { //Типы и перевод событий
 		'private' : 'Личная консультация',
 		'skype' : 'Skype-консультация'
@@ -46,6 +47,12 @@ $(document).ready(function(){
 				.addClass('selected')
 				.siblings('.reserved-marker').removeClass('selected');	//Выделяем элемент, с остальных снимаем выделение
 			$(grid).find('.marker').css('display', 'none');	//Селектор выделения скрываем
+			if($(e.target).hasClass('title') || $(e.target).hasClass('reserved-marker')){
+				changePressed = true;
+				currentChange = 'drag';
+				marker = $(e.target).closest('.reserved-marker');
+				cursorPosition = Math.floor((e.pageY - $(grid).offset().top) / 16) + 1;
+			}
 		}
 	});
 	//Растягивание евента вниз
@@ -82,8 +89,21 @@ $(document).ready(function(){
 					timeArray[1] = Math.floor((e.pageY - $(grid).offset().top) / 16);	//Меняем конечное значение области
 				}else if(currentChange == 'top'){	//Если изменение вверх
 					timeArray[0] = Math.floor((e.pageY - $(grid).offset().top) / 16);	//Меняем начальное значение области
+				}else if(currentChange == 'drag'){
+					timeArray = getEventRows(marker, grid);
+					tmpArr = timeArray;	//Временный массив для сдвига
+					tmpArr[1]--;	//Сдвигаем последнее значение на 1
+					reservedHoursArray = _.difference(reservedHoursArray, tmpArr); //Удаляем из зарезервированных часов текущую область, чтобы была возможность редактировать область
+					var currentCursorPosition = Math.floor((e.pageY - $(grid).offset().top) / 16) + 1;
+					timeArray[0] = timeArray[0] + (currentCursorPosition - cursorPosition);
+					timeArray[1] = timeArray[1] + (currentCursorPosition - cursorPosition);
+					if(!isReserved(timeArray,reservedHoursArray)){
+						cursorPosition = currentCursorPosition;
+					}
+					if(timeArray[1] >= 48) timeArray[1] = 47;
+					if(timeArray[0] <= 0) timeArray[0] = 0;
 				}
-			} 
+			}
 			if(pressed){	//Если флаг нового выделения
 				timeArray[1] = Math.floor((e.pageY - $(grid).offset().top) / 16);	//Меняем конечное значение области выделения
 			}
@@ -130,6 +150,10 @@ var placeSelector = function(selector, timeArray){
 			display: 'block'
 		});
 	}
+}
+
+var disableSelfReserve = function(timeArray, reservedHoursArray){
+	
 }
 //Функция конвертации строк в соответствующее время (1 строка в 1 время)
 var rowToTime = function(row){
