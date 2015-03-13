@@ -2298,8 +2298,9 @@ body.page-profile-settings.consults input[type="submit"] {
   border: solid 1px #33b679;
   background: #fff;
   cursor: s-resize;
+  z-index: 1;
 }
-/* line 95, schedule.less */
+/* line 96, schedule.less */
 .schedule-container .grid .reserved-marker .slider-bottom {
   left: 50%;
   margin-left: -2px;
@@ -2310,8 +2311,9 @@ body.page-profile-settings.consults input[type="submit"] {
   border: solid 1px #33b679;
   background: #fff;
   cursor: s-resize;
+  z-index: 1;
 }
-/* line 109, schedule.less */
+/* line 111, schedule.less */
 form {
   display: block;
   float: left;
