@@ -32,9 +32,11 @@ $(document).ready(function(){
 						var reservedMarker = $(grid).find('div#' + typeKey + '-' + timeKey);	//Переменная с областью для этого прохода
 						timeArray = timesToRows(timeValues);	//Конвертация времени с исходных данных в номера строк
 						placeSelector(reservedMarker, timeArray);	//Размещение теущего селектора
-						reservedHoursArray.push(timeArray[0], timeArray[1]);	//Добавление текущего селектора в зарезервированные часы
+						//reservedHoursArray.push(timeArray[0], timeArray[1]);	//Добавление текущего селектора в зарезервированные часы
+						reservedHoursArray = _.union(_.range(timeArray[0], timeArray[1]), reservedHoursArray);	//Добавление текущего селектора в зарезервированные часы
 					});
 				});
+				console.log(reservedHoursArray);
 			}
 		});
 	}
@@ -65,17 +67,19 @@ $(document).ready(function(){
 		marker = $(this).closest('.reserved-marker');	//Переменная с текущей областью
 		changePressed = true;	//Переменная со статусом редактирования
 		timeArray = getEventRows(marker, grid);	//Массив времени для текущей области
-		tmpArr = timeArray;	//Временный массив для сдвига
-		tmpArr[1]--;	//Сдвигаем последнее значение на 1
+		tmpArr = _.range(timeArray[0], timeArray[1]);	//Временный массив для сдвига
 		reservedHoursArray = _.difference(reservedHoursArray, tmpArr); //Удаляем из зарезервированных часов текущую область, чтобы была возможность редактировать область
+		console.log(reservedHoursArray);
 	});
 	//Выделение ячеек
 	$(grid).on('mousedown', '.row, .marker', function(e){	//При клике по строке или по маркеру выделения
 		marker = $(grid).find('.marker')	//Переменная с маркером
 		pressed = true;	//Флаг, что началось выделение области
 		timeArray = [];	//Обнуляем массив
-		time = Math.floor((e.pageY - $(grid).offset().top) / 16);	//Считаем колонку исходя из позиции мыши при нажатии (стартовая)
+		time = Math.floor((e.pageY - $(grid).offset().top) / 16) + 1;	//Считаем колонку исходя из позиции мыши при нажатии (стартовая)
 		timeArray[0] = (time);	//Заносим в массив начало выделения
+		
+		//console.log(timeArray);
 		if(isReserved(timeArray,reservedHoursArray)) {	//Проверяем не попадает ли в зарезервированную область
 			pressed = false;	//Если попадает, то снимаем флаг нового выделения
 		}else{	
@@ -86,13 +90,12 @@ $(document).ready(function(){
 		if(pressed || changePressed){	//Если есть флаги нового выделения или изменения
 			if(changePressed){	//Если флаг изменения
 				if(currentChange == 'bottom' || pressed){	//Если изменение вниз
-					timeArray[1] = Math.floor((e.pageY - $(grid).offset().top) / 16);	//Меняем конечное значение области
+					timeArray[1] = Math.floor((e.pageY - $(grid).offset().top) / 16) + 2;	//Меняем конечное значение области
 				}else if(currentChange == 'top'){	//Если изменение вверх
-					timeArray[0] = Math.floor((e.pageY - $(grid).offset().top) / 16);	//Меняем начальное значение области
+					timeArray[0] = Math.floor((e.pageY - $(grid).offset().top) / 16) + 1;	//Меняем начальное значение области
 				}else if(currentChange == 'drag'){
 					timeArray = getEventRows(marker, grid);
-					tmpArr = timeArray;	//Временный массив для сдвига
-					tmpArr[1]--;	//Сдвигаем последнее значение на 1
+					tmpArr = _.range(timeArray[0], timeArray[1]);	//Временный массив для сдвига
 					reservedHoursArray = _.difference(reservedHoursArray, tmpArr); //Удаляем из зарезервированных часов текущую область, чтобы была возможность редактировать область
 					var currentCursorPosition = Math.floor((e.pageY - $(grid).offset().top) / 16) + 1;
 					timeArray[0] = timeArray[0] + (currentCursorPosition - cursorPosition);
@@ -100,13 +103,14 @@ $(document).ready(function(){
 					if(!isReserved(timeArray,reservedHoursArray)){
 						cursorPosition = currentCursorPosition;
 					}
-					if(timeArray[1] >= 48) timeArray[1] = 47;
-					if(timeArray[0] <= 0) timeArray[0] = 0;
+					if(timeArray[1] > 49) timeArray[1] = 49;
+					if(timeArray[0] <= 1) timeArray[0] = 1;
 				}
 			}
 			if(pressed){	//Если флаг нового выделения
-				timeArray[1] = Math.floor((e.pageY - $(grid).offset().top) / 16);	//Меняем конечное значение области выделения
+				timeArray[1] = Math.floor((e.pageY - $(grid).offset().top) / 16) + 2;	//Меняем конечное значение области выделения
 			}
+			if(timeArray[0] == timeArray[1]) timeArray[1] = timeArray[0] + 1;
 			if(!isReserved(timeArray,reservedHoursArray)){	//Если рассчитанный выше массив времени не пересекается с резервным временем
 				placeSelector(marker, timeArray);	//Устанавливаем селектор в это положение
 			}
@@ -115,13 +119,14 @@ $(document).ready(function(){
 	$(grid).on('mouseup', function(){	//При отпускании мыши
 		if(changePressed){	//Если был флаг редактирования области
 			timeArray = getEventRows(marker, grid);	//Получаем массив начальной и конечной строк этой области
-			timeArray[1]--;	//Последнюю строку режем на единицу
-			reservedHoursArray = _.union(timeArray, reservedHoursArray);	//Добавляем в зарезервированный массив строки отредактированной области
+			//timeArray[1]--;	//Последнюю строку режем на единицу
+			reservedHoursArray = _.union(_.range(timeArray[0], timeArray[1]), reservedHoursArray);	//Добавляем в зарезервированный массив строки отредактированной области
+			console.log(reservedHoursArray);
 		}
 		pressed = false;	//Флаг нового выделения снимаем
 		changePressed = false;	//Флаг редактирования области снимаем
-		$('input#begin-time').val(rowToTime(_.min(timeArray)));	//Пишем начальный период области в нужное поле
-		$('input#end-time').val(rowToTime(_.max(timeArray) + 1));	//Пишем конечный период области в нужное поле
+		$('input#begin-time').val(rowToTime(_.min(timeArray) - 1));	//Пишем начальный период области в нужное поле
+		$('input#end-time').val(rowToTime(_.max(timeArray) - 1));	//Пишем конечный период области в нужное поле
 		loadTimePickers();	//Подгружаем ползунки для выбора времени
 	});
 	$('body').on('mouseup', function(){	//При отпускании мыши на любой области
@@ -133,20 +138,21 @@ $(document).ready(function(){
 //Функция получения строк у события (зарезервированного маркера)
 var getEventRows = function(marker, grid){
 	var timeArray = []; //объявляем локальный массив времени
-	timeArray[0] = Math.floor(($(marker).offset().top - $(grid).offset().top) / 16) + 1;	//Считаем время начала от позиции области
-	timeArray[1] = Math.floor(($(marker).offset().top - $(grid).offset().top + $(marker).outerHeight()) / 16);	//Считаем время окончания от позиции области
+	timeArray[0] = Math.floor(($(marker).offset().top - $(grid).offset().top) / 16 + 1) + 1;	//Считаем время начала от позиции области
+	timeArray[1] = Math.floor(($(marker).offset().top - $(grid).offset().top + $(marker).outerHeight()) / 16) + 1;	//Считаем время окончания от позиции области
+	//console.log(timeArray);
 	return timeArray
 }
 //Функция проверки пересечения массива текущего времени и массива зарезервированного времени
 var isReserved = function(timeArray, reservedHoursArray){
-	return _.intersection(_.range(_.min(timeArray) - 1,_.max(timeArray) + 2), reservedHoursArray).length
+	return _.intersection(_.range(_.min(timeArray) - 1,_.max(timeArray) + 1), reservedHoursArray).length
 }
 //Функция размещения области по переданному селектору и временному массиву (в строках)
 var placeSelector = function(selector, timeArray){
 	if(timeArray.length){	//Если массив времени нормальный
 		$(selector).css({	//пишем CSS для области
-			top: _.min(timeArray) * 16 - 1 + 'px',
-			height: (_.max(timeArray) - _.min(timeArray) + 1) * 16 + 1 + 'px',
+			top: (_.min(timeArray) - 1) * 16 - 1 + 'px',
+			height: (_.max(timeArray) - _.min(timeArray)) * 16 + 1 + 'px',
 			display: 'block'
 		});
 	}
@@ -170,9 +176,11 @@ var timesToRows = function(times){
 	$.each(times, function(key, time){	//Приходит 2 времени - начало и конец, считаем для каждого
 		var hour = parseInt(time.split('-')[0]);	//Считаем час
 		var minute = parseInt(time.split('-')[1]);	//Считаем минуты
-		var row = (hour + (minute / 60)) * 2;	//Считаем строку для этого времени
+		var row = (hour + (minute / 60)) * 2 + 1;	//Считаем строку для этого времени
 		rows.push(row);	//Пушим строку в локальный массив
+
 	});
-	rows[1]--;	//Строку окончания декрементируем
+	//rows[1]--;	//Строку окончания декрементируем
+	//console.log(rows);
 	return rows
 }
