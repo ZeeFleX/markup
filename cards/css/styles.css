@@ -584,27 +584,32 @@ header.header .logo {
   float: left;
   width: 40px;
   height: 40px;
-  background: #a73e5c;
 }
 /* line 58, global.less */
 header.header .title {
   display: block;
   float: left;
   color: #a73e5c;
-  font: 700 1.2rem Roboto;
-  text-transform: uppercase;
-  margin-top: 13px;
-  margin-left: 10px;
+  font: 700 1.4rem Roboto;
+  margin-top: 5px;
+  margin-left: 20px;
+  color: #ec4863;
 }
-/* line 67, global.less */
+/* line 66, global.less */
+header.header .title span {
+  color: #b099a3;
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+/* line 72, global.less */
 header.header .sign-in {
   float: right;
 }
-/* line 74, global.less */
+/* line 79, global.less */
 header.header .profile-snippet {
   float: right;
 }
-/* line 76, global.less */
+/* line 81, global.less */
 header.header .profile-snippet .photo-container {
   border-radius: 50px;
   -o-border-radius: 50px;
@@ -616,45 +621,45 @@ header.header .profile-snippet .photo-container {
   overflow: hidden;
   border: solid 1px #b099a3;
 }
-/* line 86, global.less */
+/* line 91, global.less */
 header.header .profile-snippet .photo-container img {
   display: block;
   width: 100%;
 }
-/* line 91, global.less */
+/* line 96, global.less */
 header.header .profile-snippet .info {
   float: left;
   margin-left: 10px;
   margin-top: 5px;
 }
-/* line 95, global.less */
+/* line 100, global.less */
 header.header .profile-snippet .info .name {
   color: #290019;
   font: 500 1.4rem Roboto;
 }
-/* line 99, global.less */
+/* line 104, global.less */
 header.header .profile-snippet .info .job {
   color: #ec4863;
   font: 400 1.2rem Roboto;
 }
-/* line 104, global.less */
+/* line 109, global.less */
 header.header .profile-snippet .more-container {
   float: left;
   margin-left: 10px;
   margin-top: 10px;
   z-index: 2;
 }
-/* line 109, global.less */
+/* line 114, global.less */
 header.header .profile-snippet .more-container:hover .dropdown-menu {
   display: block;
 }
-/* line 112, global.less */
+/* line 117, global.less */
 header.header .profile-snippet .more-container i {
   color: #290019;
   font-size: 1.8rem;
   cursor: pointer;
 }
-/* line 117, global.less */
+/* line 122, global.less */
 header.header .profile-snippet .more-container .dropdown-menu {
   display: none;
   position: absolute;
@@ -670,7 +675,7 @@ header.header .profile-snippet .more-container .dropdown-menu {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
 }
-/* line 132, global.less */
+/* line 137, global.less */
 header.header .profile-snippet .more-container .dropdown-menu .arrow {
   width: 24px;
   height: 12px;
@@ -679,37 +684,37 @@ header.header .profile-snippet .more-container .dropdown-menu .arrow {
   top: -22px;
   right: 5px;
 }
-/* line 141, global.less */
+/* line 146, global.less */
 header.header .profile-snippet .more-container .dropdown-menu ul li {
   font-size: 1.2rem;
   font-weight: 500;
 }
-/* line 144, global.less */
+/* line 149, global.less */
 header.header .profile-snippet .more-container .dropdown-menu ul li a {
   color: #b099a3;
   text-decoration: none;
 }
-/* line 147, global.less */
+/* line 152, global.less */
 header.header .profile-snippet .more-container .dropdown-menu ul li a:hover {
   text-decoration: underline;
 }
-/* line 156, global.less */
+/* line 161, global.less */
 header.header .profile-notifications {
   float: right;
   margin-right: 10px;
   margin-top: 10px;
 }
-/* line 160, global.less */
+/* line 165, global.less */
 header.header .profile-notifications > div {
   float: left;
   margin: 0 15px;
   cursor: pointer;
 }
-/* line 164, global.less */
+/* line 169, global.less */
 header.header .profile-notifications > div.active i.fa {
   color: #eb5245;
 }
-/* line 167, global.less */
+/* line 172, global.less */
 header.header .profile-notifications > div .count {
   position: absolute;
   border-radius: 50px;
@@ -724,29 +729,29 @@ header.header .profile-notifications > div .count {
   z-index: 1;
   font: 500 1.1rem / 17px Roboto;
 }
-/* line 181, global.less */
+/* line 186, global.less */
 header.header .profile-notifications > div i.fa {
   color: #b099a3;
   font-size: 2.0rem;
 }
-/* line 187, global.less */
+/* line 192, global.less */
 header.header .mainmenu {
   float: right;
   margin: 9px 0;
 }
-/* line 190, global.less */
+/* line 195, global.less */
 header.header .mainmenu li {
   float: left;
   text-transform: uppercase;
   font: 500 1.2rem Roboto;
   margin-right: 30px;
 }
-/* line 195, global.less */
+/* line 200, global.less */
 header.header .mainmenu li a {
   color: #290019;
   text-decoration: none;
 }
-/* line 204, global.less */
+/* line 209, global.less */
 .footer {
   width: 100%;
   margin-top: 20px;
@@ -754,57 +759,78 @@ header.header .mainmenu li a {
   font-weight: 500;
   font-size: 1.4rem;
 }
-/* line 210, global.less */
+/* line 215, global.less */
 .footer a {
   text-decoration: none;
   color: #ffffff;
 }
-/* line 214, global.less */
+/* line 219, global.less */
 .footer .top {
   padding: 8px 30px;
   background: #ec4863;
   overflow: hidden;
 }
-/* line 218, global.less */
+/* line 223, global.less */
 .footer .top .contact {
   display: block;
   float: left;
 }
-/* line 222, global.less */
+/* line 227, global.less */
 .footer .top .support {
   display: block;
   float: right;
 }
-/* line 227, global.less */
+/* line 231, global.less */
+.footer .top .footer-logo {
+  margin: 20px 0;
+}
+/* line 233, global.less */
+.footer .top .footer-logo .logo {
+  float: left;
+  margin-right: 15px;
+}
+/* line 237, global.less */
+.footer .top .footer-logo .title {
+  display: block;
+  float: left;
+  font-size: 1.4rem;
+  margin-top: 5px;
+}
+/* line 242, global.less */
+.footer .top .footer-logo .title span {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+/* line 249, global.less */
 .footer .bottom {
   padding: 8px 30px;
   background: #a73e5c;
   overflow: hidden;
 }
-/* line 231, global.less */
+/* line 253, global.less */
 .footer .bottom p {
   display: block;
   float: left;
 }
-/* line 235, global.less */
+/* line 257, global.less */
 .footer .bottom ul {
   float: right;
   margin-top: 10px;
 }
-/* line 238, global.less */
+/* line 260, global.less */
 .footer .bottom ul li {
   float: left;
   margin-left: 20px;
 }
-/* line 242, global.less */
+/* line 264, global.less */
 .footer .bottom ul li a:hover {
   text-decoration: underline;
 }
-/* line 251, global.less */
+/* line 273, global.less */
 .page-mainpage footer.footer .top {
   background: none;
 }
-/* line 254, global.less */
+/* line 276, global.less */
 .page-mainpage footer.footer .bottom {
   background: none;
 }
@@ -2345,53 +2371,5 @@ body.page-session-manage section.content .sessions .item.new-session i {
   color: #b099a3;
   font-size: 2.8rem;
   line-height: 150px;
-}
-/* line 1, schedule.less */
-.schedule-container {
-  position: relative;
-  width: 480px;
-  padding: 15px;
-}
-/* line 5, schedule.less */
-.schedule-container .hours {
-  position: relative;
-  float: left;
-  text-align: left;
-  width: 40px;
-}
-/* line 10, schedule.less */
-.schedule-container .hours .hour {
-  height: 32px;
-  line-height: 32px;
-}
-/* line 15, schedule.less */
-.schedule-container .grid {
-  position: relative;
-  float: right;
-  width: 400px;
-  -webkit-user-select: none;
-}
-/* line 20, schedule.less */
-.schedule-container .grid .row {
-  border-bottom: solid 1px #b9d4cc;
-  height: 15px;
-}
-/* line 23, schedule.less */
-.schedule-container .grid .row.selected {
-  background: #ddd;
-}
-/* line 27, schedule.less */
-.schedule-container .grid .marker {
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  position: absolute;
-  width: 100%;
-  border-left: solid 5px #aaa;
-  border-right: solid 1px #aaa;
-  border-top: solid 1px #aaa;
-  border-bottom: solid 1px #aaa;
-  z-index: 1;
-  background: #ddd;
-  display: none;
 }
 /*# sourceMappingURL=styles.css.map */

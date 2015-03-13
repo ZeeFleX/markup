@@ -53,16 +53,21 @@ header.header {
         float: left;
         width: 40px;
         height: 40px;
-        background: @pink_dark;
+        //background: @pink_dark;
     }
     .title {
         display: block;
         float: left;
         color: @pink_dark;
-        font: 700 1.2rem Roboto;
-        text-transform: uppercase;
-        margin-top: 13px;
-        margin-left: 10px;
+        font: 700 1.4rem Roboto;
+        margin-top: 5px;
+        margin-left: 20px;
+        color:#ec4863;
+        span{
+            color:#b099a3;
+            font-size:1.2rem;
+            font-weight: normal;
+        }
     }
     .sign-in {
         float: right;
@@ -222,6 +227,23 @@ header.header {
         .support{
             display: block;
             float: right;
+        }
+        .footer-logo{
+            margin:20px 0;
+            .logo{
+                float: left;
+                margin-right: 15px;
+            }
+            .title{
+                display: block;
+                float: left;
+                font-size:1.4rem;
+                margin-top: 5px;
+                span{
+                    font-size:1.2rem;
+                    font-weight: normal;
+                }
+            }
         }
     }
     .bottom{

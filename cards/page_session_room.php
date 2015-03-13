@@ -14,8 +14,10 @@
         </div>        
     </NOSCRIPT>
     <header class="header">
-        <div class="logo"></div>
-        <p class="title">Карточный сервис</p>
+        <div class="logo">
+            <img src="images/logo.png" />
+        </div>
+        <p class="title">Метафорические Ассоциативные Карты<br/><span>Константина Довлатова</span></p>
         <div class="profile-snippet">
             <div class="photo-container">
                 <img src="images/photos/01.jpg" />
@@ -45,6 +47,13 @@
     </section>
     <footer class="footer">
         <div class="top">
+            <div class="footer-logo">
+                <div class="logo">
+                    <img src="images/footer-logo.png" />
+                </div>
+                <p class="title">Метафорические Ассоциативные Карты<br/><span>Константина Довлатова</span></p>
+            </div>
+            <div class="clr"></div>
             <p class="contact">ИП Довлатов Константин Николаевич<br />ОГРН 309774619400751</p>
             <p class="support">Служба технической поддержки: <a href="mailto:support@dowlatow.ru">support@dowlatow.ru</a></p>
         </div>
