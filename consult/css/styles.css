@@ -1879,6 +1879,12 @@ body.page-profile-settings.consults input[type="submit"] {
   background-color: rgba(138, 164, 162, 0.9);
   border-color: rgba(138, 164, 162, 0.9);
 }
+body.page-profile-schedule form {
+  display: block;
+  float: left;
+  width: 250px;
+  margin: 10px;
+}
 body.page-profile-schedule > .wrapper .content {
   margin-top: 20px;
 }
@@ -2173,10 +2179,4 @@ body.page-profile-schedule > .wrapper .content .today-events .events .event p a:
   background: #fff;
   cursor: s-resize;
   z-index: 1;
-}
-form {
-  display: block;
-  float: left;
-  width: 250px;
-  margin: 10px;
 }
