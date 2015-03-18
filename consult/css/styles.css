@@ -2141,6 +2141,9 @@ body.page-profile-schedule > .wrapper .content .today-events .events .event.priv
 body.page-profile-schedule > .wrapper .content .today-events .events .event.private h5.title {
   color: #35504e;
 }
+body.page-profile-schedule > .wrapper .content .today-events .events .event.unwork .border {
+  background: #aaa;
+}
 body.page-profile-schedule > .wrapper .content .today-events .events .event h5.title {
   margin-top: 2px;
   margin-bottom: 0;
@@ -2250,6 +2253,16 @@ body.page-profile-schedule > .wrapper .content .today-events .events a.btn {
   display: block;
   margin-left: 20px;
   margin-top: 6px;
+}
+.schedule-container .grid .reserved-marker.unwork {
+  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.1);
+}
+.schedule-container .grid .reserved-marker.unwork p {
+  color: #666;
+}
+.schedule-container .grid .reserved-marker.unwork.selected {
+  background: rgba(0, 0, 0, 0.2);
 }
 .schedule-container .grid .reserved-marker.skype {
   border-color: #33b679;
