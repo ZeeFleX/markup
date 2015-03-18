@@ -17,6 +17,19 @@
 			'participiant' => 'Петрова Анна',
 			'participiantProfile' => '#'
 		),
+		Array(
+			'id' => 14,
+			'time' => Array('17:00', '18:30'),
+			'title' => 'Консультация личная',
+			'type' => 'consult',
+			'participiant' => 'Чичваркин Евгений',
+			'participiantProfile' => '#'
+		),
+		Array(
+			'id' => 15,
+			'time' => Array('00:00', '4:00'),
+			'type' => 'unwork'
+		),
 	);
 	echo json_encode($schedule);
 ?>

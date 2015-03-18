@@ -2135,6 +2135,9 @@ body.page-profile-schedule > .wrapper .content .today-events .events .event .bor
 body.page-profile-schedule > .wrapper .content .today-events .events .event.skype .border {
   background: #0f9b58;
 }
+body.page-profile-schedule > .wrapper .content .today-events .events .event.consult .border {
+  background: #4ad0c5;
+}
 body.page-profile-schedule > .wrapper .content .today-events .events .event.private .border {
   background: #ffaa3e;
 }
@@ -2255,14 +2258,14 @@ body.page-profile-schedule > .wrapper .content .today-events .events a.btn {
   margin-top: 6px;
 }
 .schedule-container .grid .reserved-marker.unwork {
-  background: rgba(0, 0, 0, 0.4);
+  border-color: rgba(0, 0, 0, 0.4);
   background: rgba(0, 0, 0, 0.1);
 }
 .schedule-container .grid .reserved-marker.unwork p {
   color: #666;
 }
 .schedule-container .grid .reserved-marker.unwork.selected {
-  background: rgba(0, 0, 0, 0.2);
+  border-color: rgba(0, 0, 0, 0.5);
 }
 .schedule-container .grid .reserved-marker.skype {
   border-color: #33b679;
@@ -2273,6 +2276,16 @@ body.page-profile-schedule > .wrapper .content .today-events .events a.btn {
 }
 .schedule-container .grid .reserved-marker.skype.selected {
   border-color: #119457;
+}
+.schedule-container .grid .reserved-marker.consult {
+  border-color: #41b6ad;
+  background: rgba(74, 208, 197, 0.2);
+}
+.schedule-container .grid .reserved-marker.consult p {
+  color: #35504e;
+}
+.schedule-container .grid .reserved-marker.consult.selected {
+  border-color: #1f948b;
 }
 .schedule-container .grid .reserved-marker.private {
   border-color: #fac944;

@@ -12,7 +12,8 @@
 	var eventNames = { //Типы и перевод событий
 		'private' : 'Личная консультация',
 		'skype' : 'Skype-консультация',
-		'unwork' : 'Нерабочее время'
+		'unwork' : 'Нерабочее время',
+		'consult' : 'Консультация'
 	};
 	var events = {};
 	var tmpEvent = {};
@@ -93,7 +94,7 @@
 			e.preventDefault();
 			ajaxCreateEvent(tmpEvent, function(data){
 				var evnt = data;
-				if(typeof(evnt.title) == 'undefined') evnt.title = eventNames[evnt.type];
+				if(typeof(evnt.title) == 'undefined' || !evnt.title.length) evnt.title = eventNames[evnt.type];
 				timeArray = timesToRows(data.time);
 				var marker = $('<div class="reserved-marker ' + evnt.type + '" data-id="' + evnt.id + '"><div class="slider-top slider"></div><div class="slider-bottom slider"></div><p class="title">' + evnt.title + '</p></div>').prependTo(grid);	//Формирование области
 				reservedHoursArray = _.union(_.range(timeArray[0], timeArray[1]), reservedHoursArray);
@@ -125,6 +126,7 @@
 					events = data;
 					$.each(events, function(key,evnt){	//Перебор типов событий
 						//Добавление события на сетку
+						if(typeof(evnt.title) == 'undefined' || !evnt.title.length) evnt.title = eventNames[evnt.type];
 						$(grid).prepend('<div class="reserved-marker ' + evnt.type + '" data-id="' + evnt.id + '"><div class="slider-top slider"></div><div class="slider-bottom slider"></div><p class="title">' + evnt.title + '</p></div>');	//Формаирование областей
 						var reservedMarker = $(grid).find('div[data-id="' + evnt.id + '"]');	//Переменная с областью для этого прохода
 						timeArray = timesToRows(evnt.time);	//Конвертация времени с исходных данных в номера строк

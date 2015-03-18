@@ -256,6 +256,11 @@ body.page-profile-schedule{
 								background: @green;
 							}
 						}
+						&.consult{
+							.border{
+								background: @sky;
+							}
+						}
 						&.private{
 							.border{
 								background: @yellow_dark;
@@ -383,13 +388,13 @@ body.page-profile-schedule{
 				margin-top: 6px;
 			}
 			&.unwork{
-				background: rgba(0,0,0,.4);
+				border-color: rgba(0,0,0,.4);
 				background: rgba(0,0,0,.1);
 				p{
 					color:#666;
 				}
 				&.selected{
-					background: rgba(0,0,0,.2);
+					border-color: rgba(0,0,0,.5);
 				}
 			}
 			&.skype{
@@ -400,6 +405,16 @@ body.page-profile-schedule{
 				}
 				&.selected{
 					border-color:#33b679 - #222;
+				}
+			}
+			&.consult{
+				border-color:#41b6ad;
+				background: rgba(74,208,197,.2);
+				p{
+					color:#35504e;
+				}
+				&.selected{
+					border-color:#41b6ad - #222;
 				}
 			}
 			&.private{
