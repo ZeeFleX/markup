@@ -13,10 +13,14 @@
 		'private' : 'Личная консультация',
 		'skype' : 'Skype-консультация'
 	};
-	var events = {}
+	var events = {};
+	var editEvent;
+	var taskList;
+	var grid;
 	$(document).ready(function(){
-		var grid = $('.schedule-container .grid'); //Контейнер с расписанием
-		var taskList = $('.today-events .events');
+		grid = $('.schedule-container .grid'); //Контейнер с расписанием
+		taskList = $('.today-events .events');
+		
 		//Вызов календаря
 		$('.day-choose a#select-date').on('click', function(e){
 			e.preventDefault();
@@ -24,6 +28,12 @@
 		});
 		$('.calendars').on('click', '.close', function(){
 			$(this).closest('.calendars').fadeOut(300);
+		});
+		//Добавление события
+		editEventBlock = $('.edit-schedule');
+		$(editEventBlock).on('click', '.close', function(e){
+			e.preventDefault();
+			$(editEventBlock).fadeOut(300);
 		});
 		//Если есть расписание, то спрашиваем евенты на эту дату, ждем JSON, строим зарезервированные области
 		if($(grid).length){
@@ -169,6 +179,9 @@
 				});
 				$(taskList).prepend(tasks);
 				changePressed = false;	//Флаг редактирования области снимаем
+			}
+			if(pressed){
+				$(editEventBlock).fadeIn(300);
 			}
 			pressed = false;	//Флаг нового выделения снимаем
 			$('input#begin-time').val(rowToTime(_.min(timeArray) - 1));	//Пишем начальный период области в нужное поле

@@ -1883,6 +1883,7 @@ body.page-profile-schedule .edit-schedule {
   position: absolute;
   z-index: 2;
   width: 100%;
+  display: none;
 }
 body.page-profile-schedule .edit-schedule .fader {
   position: fixed;
