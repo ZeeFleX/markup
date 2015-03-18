@@ -34,6 +34,28 @@
 		$(editEventBlock).on('click', '.close', function(e){
 			e.preventDefault();
 			$(editEventBlock).fadeOut(300);
+			$(editEventBlock)
+				.find('input.section-handler').removeAttr('checked').end()
+				.find('.checkbox.container').removeClass('checked').end()
+				.find('.accordeon-container').slideUp(300);
+		});
+		$(editEventBlock).on('click', 'input.section-handler', function(){
+			
+			var section = $(this).closest('.section');
+			var siblings = $(section).siblings('.section');
+
+			if($(this).prop('checked')){
+				$(section).find('.accordeon-container').slideDown(300);
+				$.each($(siblings), function(key, item){
+					$(item)
+						.find('input.section-handler').removeAttr('checked').end()
+						.find('.checkbox.container').removeClass('checked').end()
+						.find('.accordeon-container').slideUp(300);
+				});
+			}else{
+				$(section).find('.accordeon-container').slideUp(300);
+			}
+			
 		});
 		//Если есть расписание, то спрашиваем евенты на эту дату, ждем JSON, строим зарезервированные области
 		if($(grid).length){

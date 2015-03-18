@@ -73,8 +73,7 @@ var loadInterface = function(){
     });
     //Чекбоксы
     var toggles = $('input[type="checkbox"]');
-    $.each(toggles, function () {
-        var toggle = $(this);
+    $.each(toggles, function (key, toggle) {
         var id = Math.floor(Math.random() * 1000000);
         var ifChecked = '';
         $(toggle).attr('data-id', id);
@@ -82,17 +81,19 @@ var loadInterface = function(){
         if($(toggle).hasClass('toggle')){
            $(this)
             .css('display', 'none')
-            .after('<div class="toggle container ' + ifChecked + '" id="' + id + '"><div class="handle"></div></div>');
+            .after('<div class="toggle container ' + ifChecked + '" data-id="' + id + '"><div class="handle"></div></div>');
         }else{
            $(this)
             .css('display', 'none')
-            .after('<div class="checkbox container ' + ifChecked + '" id="' + id + '"></div>');
+            .after('<div class="checkbox container ' + ifChecked + '" data-id="' + id + '"></div>');
         }
         
-        var toggleContainer = $('.container#' + id);
+        var toggleContainer = $('.container[data-id="' + id + '"]');
         $(toggleContainer).on('click', function () {
             $(this).toggleClass('checked');
             $(toggle).trigger('click');
+            console.log('РАЗ');
+            console.log($(toggle).prop('checked'));
         });
     });
     //Радио-кнопки

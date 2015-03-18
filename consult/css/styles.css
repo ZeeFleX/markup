@@ -1916,6 +1916,9 @@ body.page-profile-schedule .edit-schedule .content-block h4 {
   margin-left: 20px;
   margin-top: 20px;
 }
+body.page-profile-schedule .edit-schedule .content-block form .accordeon-container {
+  display: none;
+}
 body.page-profile-schedule .edit-schedule .content-block form .field.begin,
 body.page-profile-schedule .edit-schedule .content-block form .field.end {
   float: left;
