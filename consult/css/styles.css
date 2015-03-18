@@ -77,7 +77,7 @@ p {
   text-decoration: none;
   background: #4ad0c5;
   color: #ffffff;
-  padding: 9px 17px 6px 17px;
+  padding: 8px 17px 5px 17px;
   margin-bottom: 3px;
   border: none;
   cursor: pointer;
@@ -1879,11 +1879,106 @@ body.page-profile-settings.consults input[type="submit"] {
   background-color: rgba(138, 164, 162, 0.9);
   border-color: rgba(138, 164, 162, 0.9);
 }
-body.page-profile-schedule form {
-  display: block;
+body.page-profile-schedule .edit-schedule {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+}
+body.page-profile-schedule .edit-schedule .fader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+}
+body.page-profile-schedule .edit-schedule .content-block {
+  position: relative;
+  width: 465px;
+  left: 50%;
+  margin-left: -232px;
+  border: solid 1px #8aa4a2;
+  top: 150px;
+  padding: 0;
+}
+body.page-profile-schedule .edit-schedule .content-block i.close {
+  font-size: 1.4rem;
+  position: absolute;
+  right: 20px;
+  top: 23px;
+  cursor: pointer;
+  z-index: 1;
+}
+body.page-profile-schedule .edit-schedule .content-block i.close:hover {
+  color: #35504e;
+}
+body.page-profile-schedule .edit-schedule .content-block h4 {
+  padding-top: 0;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+body.page-profile-schedule .edit-schedule .content-block form .field.begin,
+body.page-profile-schedule .edit-schedule .content-block form .field.end {
   float: left;
-  width: 250px;
-  margin: 10px;
+  width: 45%;
+  margin-right: 5%;
+}
+body.page-profile-schedule .edit-schedule .content-block form .unwork-time {
+  padding: 30px 20px;
+}
+body.page-profile-schedule .edit-schedule .content-block form .free-time {
+  padding: 30px 20px;
+  border-top: solid 1px #8aa4a2;
+}
+body.page-profile-schedule .edit-schedule .content-block form .free-time .type {
+  margin-left: 30px;
+}
+body.page-profile-schedule .edit-schedule .content-block form .free-time .type .field {
+  overflow: hidden;
+  margin: 5px 0;
+}
+body.page-profile-schedule .edit-schedule .content-block form .free-time .select2-container {
+  width: 100% !important;
+  margin-top: 10px;
+}
+body.page-profile-schedule .edit-schedule .content-block form .free-time .field.begin,
+body.page-profile-schedule .edit-schedule .content-block form .free-time .field.end {
+  margin-top: 30px;
+}
+body.page-profile-schedule .edit-schedule .content-block form .consult {
+  padding: 30px 20px;
+  border-top: solid 1px #8aa4a2;
+}
+body.page-profile-schedule .edit-schedule .content-block form .consult .field.begin,
+body.page-profile-schedule .edit-schedule .content-block form .consult .field.end {
+  margin-top: 0px;
+}
+body.page-profile-schedule .edit-schedule .content-block form .consult .field.comment {
+  margin-top: 10px;
+}
+body.page-profile-schedule .edit-schedule .content-block form .consult .field.comment textarea {
+  height: 80px;
+}
+body.page-profile-schedule .edit-schedule .content-block form .checkbox.container,
+body.page-profile-schedule .edit-schedule .content-block form .radio.container {
+  float: left;
+  margin-right: 10px;
+}
+body.page-profile-schedule .edit-schedule .content-block form .checkbox.container + label,
+body.page-profile-schedule .edit-schedule .content-block form .radio.container + label {
+  float: left;
+  margin-top: 2px;
+  color: #8aa4a2;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: left;
+}
+body.page-profile-schedule .edit-schedule .content-block form input[type="submit"] {
+  float: right;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+body.page-profile-schedule .edit-schedule .content-block form input[type="button"] {
+  float: right;
 }
 body.page-profile-schedule > .wrapper .content {
   margin-top: 20px;
@@ -1981,9 +2076,6 @@ body.page-profile-schedule > .wrapper .content .schedule {
   -moz-box-sizing: border-box;
   float: left;
   width: 58%;
-}
-body.page-profile-schedule > .wrapper .content .schedule .edit-schedule {
-  display: none;
 }
 body.page-profile-schedule > .wrapper .content .schedule .schedule-container {
   width: 100%;
