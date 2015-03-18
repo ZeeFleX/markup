@@ -3,7 +3,7 @@
 	$schedule = Array(
 		Array(
 			'id' => 12,
-			'time' => Array('6-00', '8-30'),
+			'time' => Array('12-00', '14-30'),
 			'title' => 'Консультация с Ивановым',
 			'method' => 'private',
 			'participiant' => 'Иванов Владимир',
@@ -11,7 +11,7 @@
 		),
 		Array(
 			'id' => 13,
-			'time' => Array('12-00', '15-30'),
+			'time' => Array('5-00', '6-30'),
 			'title' => 'Консультация по скайпу',
 			'method' => 'skype',
 			'participiant' => 'Петрова Анна',

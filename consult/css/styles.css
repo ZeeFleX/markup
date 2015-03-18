@@ -1982,6 +1982,9 @@ body.page-profile-schedule > .wrapper .content .schedule {
   float: left;
   width: 58%;
 }
+body.page-profile-schedule > .wrapper .content .schedule .edit-schedule {
+  display: none;
+}
 body.page-profile-schedule > .wrapper .content .schedule .schedule-container {
   width: 100%;
   padding: 30px 30px 30px 50px;

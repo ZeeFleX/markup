@@ -81,7 +81,7 @@
                     <div class="day-choose">
                         <a href="#" class="arrow left"><i class="fa fa-chevron-left"></i></a>
                         <a href="#" class="arrow right"><i class="fa fa-chevron-right"></i></a>
-                        <p><a href="#"><span class="date">9 января, 2015</span> <span class="day-of-week">Пятница</span></a></p>
+                        <p><a href="#" id="select-date"><span class="date">9 января, 2015</span> <span class="day-of-week">Пятница</span></a></p>
                     </div>
                 </div>
                 <div class="clr"></div>
@@ -157,6 +157,76 @@
                 </div>
             </div>
             <div class="schedule">
+                <div class="edit-schedule">
+                    <i class="close fa fa-close"></i>
+                    <h4>Редактирование раписания</h4>
+                    <form action="#" method="POST">
+                        <div class="unwork-time">
+                            <input type="checkbox" name="unwork-time" />
+                            <div class="clr"></div>
+                            <div class="field begin">
+                                <label for="unwork['begin']">Начало</label>
+                                <input type="text" class="timepicker" name="unwork['begin']"  placeholder="Выберите время"/>
+                            </div>
+                            <div class="field end">
+                                <label for="unwork['end']">Начало</label>
+                                <input type="text" class="timepicker" name="unwork['end']"  placeholder="Выберите время"/>
+                            </div>
+                        </div>
+                        <div class="free-time">
+                            <input type="checkbox" name="free-time" />
+                            <label for="free-time">Нерабочее время</label>
+                            <div class="clr"></div>
+                            <div class="type">
+                                <div class="field">
+                                    <input type="radio" name="type" value="skype" />
+                                    <label for="type">Онлайн(Skype, Метафорические карты)</label>
+                                </div>
+                                <div class="field">
+                                    <input type="radio" name="type" value="Личные встречи" />
+                                    <label for="type">Личные встречи</label>
+                                </div>
+                                <select name="office" id="office" class="select2">
+                                    <option value="0">Москва, Петровская-разумовская, 14, оф. 5</option>
+                                </select>
+                            </div>
+                            <div class="field begin">
+                                <label for="free-begin">Начало</label>
+                                <input type="text" class="timepicker" name="free['begin']" placeholder="Выберите время"/>
+                            </div>
+                            <div class="field end">
+                                <label for="free-end">Начало</label>
+                                <input type="text" class="timepicker" name="free['end']" placeholder="Выберите время" />
+                            </div>
+                        </div>
+                        <div class="consult">
+                            <input type="checkbox" name="consult" />
+                            <label for="consult">Консультация</label>
+                            <div class="field method">
+                                <select name="method" id="method" class="select2"></select>
+                            </div>
+                            <div class="field participiant">
+                                <label for="participiant">Участник</label>
+                                <input type="text" name="participiant" placeholder="Введите имя участника консультации" class="allow-clear"/>
+                            </div>
+                            <div class="field begin">
+                                <label for="consult-begin">Начало</label>
+                                <input type="text" class="timepicker" name="consult['begin']" placeholder="Выберите время"/>
+                            </div>
+                            <div class="field end">
+                                <label for="consult-end">Начало</label>
+                                <input type="text" class="timepicker" name="consult['end']" placeholder="Выберите время" />
+                            </div>
+                            <div class="field comment">
+                                <textarea name="comment" id="comment" placeholder="Добавьте комментарий к событию" ></textarea>
+                            </div>
+                            <a href="#" id="cancel">Отменить консультацию</a>
+                            <div class="clr"></div>
+                            <input type="submit" class="btn" value="Сохранить" />
+                            <input type="button" class="btn ghost" value="Отменить" />
+                        </div>
+                    </form>
+                </div>
                 <h4>Расписание</h4>
                 <div class="schedule-container content-block">
                     <div class="elements">
