@@ -11,6 +11,7 @@ $(document).ready(function(){
 	var tmpArr = []; //Временный массив для промежуотчных рассчётов
 	var reservedHoursArray = []; //Массив забронированных часов
 	var cursorPosition;
+	var taskList = $('.today-events .events');
 	var eventNames = { //Типы и перевод событий
 		'private' : 'Личная консультация',
 		'skype' : 'Skype-консультация'
@@ -26,28 +27,56 @@ $(document).ready(function(){
 				date: date
 			},
 			success: function(data){
-				$.each(data, function(typeKey,typeValue){	//Перебор типов событий
-					$.each(typeValue, function(timeKey, timeValues){	//Перебор элементов каждого типа
-						$(grid).prepend('<div class="reserved-marker ' + typeKey + '" id="' + typeKey + '-' + timeKey + '"><div class="slider-top slider"></div><div class="slider-bottom slider"></div><p class="title">' + eventNames[typeKey] + '</p></div>');	//Формаирование областей
-						var reservedMarker = $(grid).find('div#' + typeKey + '-' + timeKey);	//Переменная с областью для этого прохода
-						timeArray = timesToRows(timeValues);	//Конвертация времени с исходных данных в номера строк
-						placeSelector(reservedMarker, timeArray);	//Размещение теущего селектора
-						//reservedHoursArray.push(timeArray[0], timeArray[1]);	//Добавление текущего селектора в зарезервированные часы
-						reservedHoursArray = _.union(_.range(timeArray[0], timeArray[1]), reservedHoursArray);	//Добавление текущего селектора в зарезервированные часы
-					});
+				//console.log(data);
+				$.each(data, function(key,evnt){	//Перебор типов событий
+					//Добавление события на сетку
+					$(grid).prepend('<div class="reserved-marker ' + evnt.method + '" data-id="' + evnt.id + '"><div class="slider-top slider"></div><div class="slider-bottom slider"></div><p class="title">' + evnt.title + '</p></div>');	//Формаирование областей
+					var reservedMarker = $(grid).find('div[data-id="' + evnt.id + '"]');	//Переменная с областью для этого прохода
+					timeArray = timesToRows(evnt.time);	//Конвертация времени с исходных данных в номера строк
+					placeSelector(reservedMarker, timeArray);	//Размещение теущего селектора
+					reservedHoursArray = _.union(_.range(timeArray[0], timeArray[1]), reservedHoursArray);	//Добавление текущего селектора в зарезервированные часы
+					//Добавление события в столбец справа
+					$(taskList).prepend('<div class="event ' + evnt.method + '" data-id="' + evnt.id + '"><div class="border"></div><h5 class="title">' + evnt.title + '</h5><p class="time">Время: <span class="value">' + rowToTime(timeArray[0] - 1) + ' - ' + rowToTime(timeArray[1] - 1) + '</span></p><p class="method">Способ: <span class="value">' + eventNames[evnt.method] + '</span></p><p class="participiant">Участник: <a href="' + evnt.participiantProfile + '" class="value">' +evnt.participiant + '</a></p><a class="fa fa-close removeEvent" href="" title="Удалить событие"></a></div>');
 				});
-				console.log(reservedHoursArray);
 			}
 		});
 	}
+
+	//Выделяем события в правом столбце
+	$(taskList).on('click', '.event', function(e){
+		e.preventDefault();
+		if($(e.target).closest('.removeEvent').length){
+			var evnt = $(this).closest('.event');
+			timeArray = removeEvent(evnt, reservedHoursArray);
+			reservedHoursArray = _.difference(reservedHoursArray, _.range(_.min(timeArray), _.max(timeArray)));
+		}else{
+			var id = $(this).attr('data-id');
+			$(this)
+				.addClass('active')
+				.siblings('.event').removeClass('active');
+			marker = $(grid).find('.reserved-marker[data-id="' + id + '"]');
+			$(grid).find('.marker').css('display', 'none');
+			$(marker)
+				.addClass('selected')
+				.siblings('.reserved-marker').removeClass('selected');
+		}
+				
+	});
 	//Выделение существующих евентов
 	$(grid).on('mousedown', function(e){	//При нажатии мыши на сетке
 		if(!$(e.target).closest('.reserved-marker').length){	//Если элемент не относится к зарезервированной области
 			$(grid).find('.reserved-marker.selected').removeClass('selected');	//Снимаем выделение со всех областей
+			$(taskList).find('.event.active').removeClass('active');
 		}else{	//Если элемент ОТНОСИТСЯ к зарезервированной области
-			$(e.target).closest('.reserved-marker')	
+			marker = $(e.target).closest('.reserved-marker');
+			var id = $(marker).attr('data-id');
+			var task = $(taskList).find('.event[data-id="' + id + '"]');
+			$(marker)
 				.addClass('selected')
 				.siblings('.reserved-marker').removeClass('selected');	//Выделяем элемент, с остальных снимаем выделение
+			$(task)
+				.addClass('active')
+				.siblings('.event').removeClass('active');	//Выделяем элемент, с остальных снимаем выделение
 			$(grid).find('.marker').css('display', 'none');	//Селектор выделения скрываем
 			if($(e.target).hasClass('title') || $(e.target).hasClass('reserved-marker')){
 				changePressed = true;
@@ -69,7 +98,6 @@ $(document).ready(function(){
 		timeArray = getEventRows(marker, grid);	//Массив времени для текущей области
 		tmpArr = _.range(timeArray[0], timeArray[1]);	//Временный массив для сдвига
 		reservedHoursArray = _.difference(reservedHoursArray, tmpArr); //Удаляем из зарезервированных часов текущую область, чтобы была возможность редактировать область
-		console.log(reservedHoursArray);
 	});
 	//Выделение ячеек
 	$(grid).on('mousedown', '.row, .marker', function(e){	//При клике по строке или по маркеру выделения
@@ -121,10 +149,12 @@ $(document).ready(function(){
 			timeArray = getEventRows(marker, grid);	//Получаем массив начальной и конечной строк этой области
 			//timeArray[1]--;	//Последнюю строку режем на единицу
 			reservedHoursArray = _.union(_.range(timeArray[0], timeArray[1]), reservedHoursArray);	//Добавляем в зарезервированный массив строки отредактированной области
-			console.log(reservedHoursArray);
+		}
+		if(changePressed){
+			ajaxUpdateEventTime(marker, timeArray);
+			changePressed = false;	//Флаг редактирования области снимаем
 		}
 		pressed = false;	//Флаг нового выделения снимаем
-		changePressed = false;	//Флаг редактирования области снимаем
 		$('input#begin-time').val(rowToTime(_.min(timeArray) - 1));	//Пишем начальный период области в нужное поле
 		$('input#end-time').val(rowToTime(_.max(timeArray) - 1));	//Пишем конечный период области в нужное поле
 		loadTimePickers();	//Подгружаем ползунки для выбора времени
@@ -134,6 +164,24 @@ $(document).ready(function(){
 		changePressed = false;	//Снимаем флаг редактирования области
 	});
 });
+
+//Функция удаления события
+var removeEvent = function(evnt, reservedHoursArray){
+	var id = $(evnt).attr('data-id');
+	var grid = $('.schedule-container .grid');
+	var marker = $(grid).find('.reserved-marker[data-id="' + id + '"]');
+	var timeArray = getEventRows(marker, grid);
+	//Скрываем с виду и удаляем блоки
+	$(evnt).slideUp(300, function(){
+		$(this).remove();
+	});
+	$(marker).fadeOut(300, function(){
+		$(this).remove();
+	});
+	ajaxRemoveEvent(id);
+	//Возвращаем массив строк удалённого события
+	return timeArray;
+}
 
 //Функция получения строк у события (зарезервированного маркера)
 var getEventRows = function(marker, grid){
@@ -156,6 +204,7 @@ var placeSelector = function(selector, timeArray){
 			display: 'block'
 		});
 	}
+	if($(selector).hasClass('reserved-marker')) setEventTime($(selector).attr('data-id'), timeArray);
 }
 
 var disableSelfReserve = function(timeArray, reservedHoursArray){
@@ -183,4 +232,50 @@ var timesToRows = function(times){
 	//rows[1]--;	//Строку окончания декрементируем
 	//console.log(rows);
 	return rows
+}
+
+//Установка времени для события справа
+var setEventTime = function(eventId, timeArray){
+	var taskList = $('.today-events .events');
+	var evnt = $(taskList).find('.event[data-id="' + eventId + '"]');
+	$(evnt).find('p.time span.value').html(rowToTime(_.min(timeArray) - 1) + ' - ' + rowToTime(_.max(timeArray) - 1));
+}
+
+//Отправка данных на сервер о изменении времени события
+var ajaxUpdateEventTime = function(marker, timeArray){
+	var id = $(marker).attr('data-id');
+	var evnt = {};
+	evnt.id = id;
+	evnt.time = [];
+	evnt.time.push(rowToTime(_.min(timeArray) - 1));
+	evnt.time.push(rowToTime(_.max(timeArray) - 1));
+	$.ajax({	//AJAX-запрос на события определенной даты
+		url: 'server_side/events.php',
+		type: 'POST',
+		data: {
+			action: 'updateEventTime',
+			evnt: evnt
+		},
+		success: function(data){
+			//колбек о записи события в БД
+			console.log(data);
+		}
+	});
+}
+
+var ajaxRemoveEvent = function(eventId){
+	var evnt = {};
+	evnt.id = eventId;
+	$.ajax({	//AJAX-запрос на события определенной даты
+		url: 'server_side/events.php',
+		type: 'POST',
+		data: {
+			action: 'removeEvent',
+			evnt: evnt
+		},
+		success: function(data){
+			//колбек о записи события в БД
+			console.log(data);
+		}
+	});
 }

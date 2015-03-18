@@ -1,13 +1,22 @@
 <?php
 	$day = $_POST['date'];
 	$schedule = Array(
-		'private' => Array(
-			Array('6-00', '8-30'),
-			Array('16-00', '18-00')
+		Array(
+			'id' => 12,
+			'time' => Array('6-00', '8-30'),
+			'title' => 'Консультация с Ивановым',
+			'method' => 'private',
+			'participiant' => 'Иванов Владимир',
+			'participiantProfile' => '#'
 		),
-		'skype' => Array(
-			Array('12-00', '15-30')
-		)
+		Array(
+			'id' => 13,
+			'time' => Array('12-00', '15-30'),
+			'title' => 'Консультация по скайпу',
+			'method' => 'skype',
+			'participiant' => 'Петрова Анна',
+			'participiantProfile' => '#'
+		),
 	);
 	echo json_encode($schedule);
 ?>

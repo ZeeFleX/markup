@@ -189,7 +189,7 @@
             <div class="today-events">
                 <h4>События сегодня</h4>
                 <div class="content-block events">
-                    <div class="event active skype">
+                    <!-- <div class="event active skype">
                         <div class="border"></div>
                         <h5 class="title">Консультация с ивановым</h5>
                         <p class="time">Время: <span class="value">10:00 - 11:00</span></p>
@@ -209,7 +209,7 @@
                         <p class="time">Время: <span class="value">14:00 - 16:00</span></p>
                         <p class="method">Способ: <span class="value">Личная встреча</span></p>
                         <p class="participiant">Участник: <a href="#" class="value">Владимиров Владимир</a></p>
-                    </div>
+                    </div> -->
                     <a href="#" class="btn">Посмотреть все консультации</a>
                 </div>
                 <h4>Офис проведения консультации</h4>

@@ -48,6 +48,7 @@ body.page-profile-schedule{
 			}
 			.calendars{
 				//position: absolute;
+				display: none;
 				position: absolute;
 				width: 745px;
 				height: 400px;
@@ -189,12 +190,27 @@ body.page-profile-schedule{
 								color:@sea;
 							}
 							a{
-								color:@sky;
+								color:@sky; 
 								&:hover{
 									text-decoration: none;
 								}
 							}
 						}
+						a.removeEvent{
+							position: absolute;
+							right:5px;
+							top:5px;
+							text-decoration: none;
+							font-size:1.4rem;
+							color:@sea_light;
+							&:hover{
+								color:@red;
+							}
+						}
+					}
+					a.btn{
+						display: block;
+						text-align: center;
 					}
 				}
 			}

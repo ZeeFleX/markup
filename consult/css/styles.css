@@ -1926,6 +1926,7 @@ body.page-profile-schedule > .wrapper .content .day .day-container .day-choose a
   right: 0;
 }
 body.page-profile-schedule > .wrapper .content .calendars {
+  display: none;
   position: absolute;
   width: 745px;
   height: 400px;
@@ -2069,6 +2070,21 @@ body.page-profile-schedule > .wrapper .content .today-events .events .event p a 
 }
 body.page-profile-schedule > .wrapper .content .today-events .events .event p a:hover {
   text-decoration: none;
+}
+body.page-profile-schedule > .wrapper .content .today-events .events .event a.removeEvent {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #8aa4a2;
+}
+body.page-profile-schedule > .wrapper .content .today-events .events .event a.removeEvent:hover {
+  color: #eb5245;
+}
+body.page-profile-schedule > .wrapper .content .today-events .events a.btn {
+  display: block;
+  text-align: center;
 }
 .schedule-container {
   position: relative;
