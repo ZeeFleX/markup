@@ -20,6 +20,7 @@
 	var editEvent;
 	var taskList;
 	var grid;
+	var section;
 	$(document).ready(function(){
 		grid = $('.schedule-container .grid'); //Контейнер с расписанием
 		taskList = $('.today-events .events');
@@ -43,7 +44,7 @@
 				.find('.accordeon-container').slideUp(300);
 		});
 		$(editEventBlock).on('click', 'input.section-handler', function(){
-			var section = $(this).closest('.section');
+			section = $(this).closest('.section');
 			var siblings = $(section).siblings('.section');
 			if($(this).prop('checked')){
 				$(section)
@@ -52,23 +53,7 @@
 					.find('input[name="end"]').val(tmpEvent.time[1]).end()
 
 				tmpEvent.type = $(section).attr('data-type');
-				switch(tmpEvent.type){
-					case 'unwork':
-						delete tmpEvent.participiant, tmpEvent.comment, tmpEvent.office;
-					break;
-					case 'free':
-						if($(section).find('input[type="radio"]:checked').length){
-							tmpEvent.type = $(section).find('input[type="radio"]:checked').val();
-						}
-						tmpEvent.office = $(section).find('select#office').val();
-						delete tmpEvent.participiant, tmpEvent.comment;
-					break;
-					case 'consult':
-						tmpEvent.participiant = $(section).find('input[name="participiant"]').val();
-						tmpEvent.comment = $(section).find('textarea[name="comment"]').val();
-						delete tmpEvent.office;
-					break;
-				}
+				section = $(section);
 				$.each($(siblings), function(key, item){
 					$(item)
 						.find('input.section-handler').removeAttr('checked').end()
@@ -88,10 +73,26 @@
 		});
 		$(editEventBlock).on('click', 'input[type="radio"]', function(){
 			tmpEvent.type = $(this).val();
-			console.log(tmpEvent);
 		});
 		$(editEventBlock).find('form').on('submit', function(e){
 			e.preventDefault();
+			switch(tmpEvent.type){
+				case 'unwork':
+					delete tmpEvent.participiant, tmpEvent.comment, tmpEvent.office;
+				break;
+				case 'free':
+					if($(section).find('input[type="radio"]:checked').length){
+						tmpEvent.type = $(section).find('input[type="radio"]:checked').val();
+					}
+					tmpEvent.office = $(section).find('select#office').val();
+					delete tmpEvent.participiant, tmpEvent.comment;
+				break;
+				case 'consult':
+					tmpEvent.participiant = $(section).find('input[name="participiant"]').val();
+					tmpEvent.comment = $(section).find('textarea[name="comment"]').val();
+					delete tmpEvent.office;
+				break;
+			}
 			ajaxCreateEvent(tmpEvent, function(data){
 				var evnt = data;
 				if(typeof(evnt.title) == 'undefined' || !evnt.title.length) evnt.title = eventNames[evnt.type];
@@ -122,7 +123,6 @@
 					date: date
 				},
 				success: function(data){
-					//console.log(data);
 					events = data;
 					$.each(events, function(key,evnt){	//Перебор типов событий
 						//Добавление события на сетку
@@ -210,7 +210,6 @@
 			time = Math.floor((e.pageY - $(grid).offset().top) / 16) + 1;	//Считаем колонку исходя из позиции мыши при нажатии (стартовая)
 			timeArray[0] = (time);	//Заносим в массив начало выделения
 			
-			//console.log(timeArray);
 			if(isReserved(timeArray,reservedHoursArray)) {	//Проверяем не попадает ли в зарезервированную область
 				pressed = false;	//Если попадает, то снимаем флаг нового выделения
 			}else{	
@@ -256,15 +255,11 @@
 				tasks = _.sortBy(tasks, function(num){
 					return parseInt($(num).attr('data-begin'))
 				});
-				$.each(tasks, function(key, task){
-					console.log($(task).attr('data-begin'));
-				});
 				$(taskList).prepend(tasks);
 				changePressed = false;	//Флаг редактирования области снимаем
 			}
 			if(pressed){
 				tmpEvent.time = [rowToTime(_.min(timeArray) - 1), rowToTime(_.max(timeArray) - 1)];
-				console.log(tmpEvent.time)
 				$(editEventBlock).fadeIn(300);
 			}
 			pressed = false;	//Флаг нового выделения снимаем
@@ -306,7 +301,6 @@
 		var timeArray = []; //объявляем локальный массив времени
 		timeArray[0] = Math.floor(($(marker).offset().top - $(grid).offset().top) / 16 + 1) + 1;	//Считаем время начала от позиции области
 		timeArray[1] = Math.floor(($(marker).offset().top - $(grid).offset().top + $(marker).outerHeight()) / 16) + 1;	//Считаем время окончания от позиции области
-		//console.log(timeArray);
 		return timeArray
 	}
 	//Функция проверки пересечения массива текущего времени и массива зарезервированного времени
@@ -344,7 +338,6 @@
 
 		});
 		//rows[1]--;	//Строку окончания декрементируем
-		//console.log(rows);
 		return rows
 	}
 
