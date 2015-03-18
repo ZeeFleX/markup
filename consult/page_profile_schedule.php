@@ -11,23 +11,23 @@
             <i class="close fa fa-close"></i>
             <h4>Добавить событие</h4>
             <form action="#" method="POST">
-                <div class="unwork-time section">
+                <div class="unwork-time section" data-type="unwork">
                     <input type="checkbox" name="unwork-time" class="section-handler" />
                     <label for="unwork-time">Нерабочее время</label>
                     <div class="clr"></div>
                     <div class="accordeon-container">
                         <div class="field begin">
-                            <label for="unwork['begin']">Начало</label>
-                            <input type="text" class="timepicker" name="unwork['begin']"  placeholder="Выберите время"/>
+                            <label for="begin">Начало</label>
+                            <input type="text" class="timepicker" name="begin"  placeholder="Выберите время"/>
                         </div>
                         <div class="field end">
-                            <label for="unwork['end']">Окончание</label>
-                            <input type="text" class="timepicker" name="unwork['end']"  placeholder="Выберите время"/>
+                            <label for="end">Окончание</label>
+                            <input type="text" class="timepicker" name="end"  placeholder="Выберите время"/>
                         </div>
                     </div>
                     <div class="clr"></div>
                 </div>
-                <div class="free-time section">
+                <div class="free-time section" data-type="free">
                     <input type="checkbox" name="free-time" class="section-handler" />
                     <label for="free-time">Свободное время</label>
                     <div class="clr"></div>
@@ -38,7 +38,7 @@
                                 <label for="type">Онлайн (Skype, Метафорические карты)</label>
                             </div>
                             <div class="field">
-                                <input type="radio" name="type" value="Личные встречи" />
+                                <input type="radio" name="type" value="private" />
                                 <label for="type">Личные встречи</label>
                             </div>
                             <select name="office" id="office" class="select2">
@@ -47,16 +47,16 @@
                         </div>
                         <div class="field begin">
                             <label for="free-begin">Начало</label>
-                            <input type="text" class="timepicker" name="free['begin']" placeholder="Выберите время"/>
+                            <input type="text" class="timepicker" name="begin" placeholder="Выберите время"/>
                         </div>
                         <div class="field end">
                             <label for="free-end">Окончание</label>
-                            <input type="text" class="timepicker" name="free['end']" placeholder="Выберите время" />
+                            <input type="text" class="timepicker" name="end" placeholder="Выберите время" />
                         </div>
                         <div class="clr"></div>
                     </div>
                 </div>
-                <div class="consult section">
+                <div class="consult section" data-type="consult">
                     <input type="checkbox" name="consult" class="section-handler" />
                     <label for="consult">Консультация</label>
                     <div class="clr"></div>
@@ -70,11 +70,11 @@
                         </div>
                         <div class="field begin">
                             <label for="consult-begin">Начало</label>
-                            <input type="text" class="timepicker" name="consult['begin']" placeholder="Выберите время"/>
+                            <input type="text" class="timepicker" name="begin" placeholder="Выберите время"/>
                         </div>
                         <div class="field end">
                             <label for="consult-end">Окончание</label>
-                            <input type="text" class="timepicker" name="consult['end']" placeholder="Выберите время" />
+                            <input type="text" class="timepicker" name="end" placeholder="Выберите время" />
                         </div>
                         <div class="clr"></div>
                         <div class="field comment">

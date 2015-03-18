@@ -14,6 +14,7 @@
 		'skype' : 'Skype-консультация'
 	};
 	var events = {};
+	var tmpEvent = {};
 	var editEvent;
 	var taskList;
 	var grid;
@@ -40,22 +41,60 @@
 				.find('.accordeon-container').slideUp(300);
 		});
 		$(editEventBlock).on('click', 'input.section-handler', function(){
-			
 			var section = $(this).closest('.section');
 			var siblings = $(section).siblings('.section');
-
 			if($(this).prop('checked')){
-				$(section).find('.accordeon-container').slideDown(300);
+				$(section)
+					.find('.accordeon-container').slideDown(300).end()
+					.find('input[name="begin"]').val(tmpEvent.time[0]).end()
+					.find('input[name="end"]').val(tmpEvent.time[1]).end()
+
+				tmpEvent.type = $(section).attr('data-type');
+				switch(tmpEvent.type){
+					case 'unwork':
+						delete tmpEvent.participiant, tmpEvent.comment, tmpEvent.office;
+					break;
+					case 'free':
+						if($(section).find('input[type="radio"]:checked').length){
+							tmpEvent.type = $(section).find('input[type="radio"]:checked').val();
+						}
+						tmpEvent.office = $(section).find('select#office').val();
+						delete tmpEvent.participiant, tmpEvent.comment;
+					break;
+					case 'consult':
+						tmpEvent.participiant = $(section).find('input[name="participiant"]').val();
+						tmpEvent.comment = $(section).find('textarea[name="comment"]').val();
+						delete tmpEvent.office;
+					break;
+				}
+				
+				console.log(tmpEvent);
 				$.each($(siblings), function(key, item){
 					$(item)
 						.find('input.section-handler').removeAttr('checked').end()
 						.find('.checkbox.container').removeClass('checked').end()
+						.find('input.timepicker').val('').end()
 						.find('.accordeon-container').slideUp(300);
 				});
 			}else{
 				$(section).find('.accordeon-container').slideUp(300);
 			}
-			
+		});
+		$(editEventBlock).on('change', 'input.timepicker[name="begin"]', function(){
+			tmpEvent.time[0] = $(this).val();
+		});
+		$(editEventBlock).on('change', 'input.timepicker[name="end"]', function(){
+			tmpEvent.time[1] = $(this).val();
+		});
+		$(editEventBlock).on('click', 'input[type="radio"]', function(){
+			tmpEvent.type = $(this).val();
+			console.log(tmpEvent);
+		});
+		$(editEventBlock).find('form').on('submit', function(e){
+			e.preventDefault();
+			ajaxCreateEvent(tmpEvent, function(){
+				$(editEventBlock).fadeOut(300);
+			});
 		});
 		//Если есть расписание, то спрашиваем евенты на эту дату, ждем JSON, строим зарезервированные области
 		if($(grid).length){
@@ -203,11 +242,11 @@
 				changePressed = false;	//Флаг редактирования области снимаем
 			}
 			if(pressed){
+				tmpEvent.time = [rowToTime(_.min(timeArray) - 1), rowToTime(_.max(timeArray) - 1)];
+				console.log(tmpEvent.time)
 				$(editEventBlock).fadeIn(300);
 			}
 			pressed = false;	//Флаг нового выделения снимаем
-			$('input#begin-time').val(rowToTime(_.min(timeArray) - 1));	//Пишем начальный период области в нужное поле
-			$('input#end-time').val(rowToTime(_.max(timeArray) - 1));	//Пишем конечный период области в нужное поле
 			loadTimePickers();	//Подгружаем ползунки для выбора времени
 		});
 		$('body').on('mouseup', function(){	//При отпускании мыши на любой области
@@ -304,6 +343,23 @@
 		$(evnt).attr('data-begin', _.min(timeArray) - 1);
 	}
 
+	//Функция добавления нового евента
+	var ajaxCreateEvent = function(evnt, callback){
+		$.ajax({	//AJAX-запрос на события определенной даты
+			url: 'server_side/events.php',
+			type: 'POST',
+			data: {
+				action: 'createEvent',
+				evnt: JSON.stringify(evnt)
+			},
+			success: function(data){
+				//колбек о записи события в БД
+				callback();
+				console.log('Евент создан');
+			}
+		});
+	}
+
 	//Отправка данных на сервер о изменении времени события
 	var ajaxUpdateEventTime = function(marker, timeArray){
 		var id = $(marker).attr('data-id');
@@ -317,7 +373,7 @@
 			type: 'POST',
 			data: {
 				action: 'updateEventTime',
-				evnt: evnt
+				evnt: JSON.stringify(evnt)
 			},
 			success: function(data){
 				//колбек о записи события в БД
@@ -334,7 +390,7 @@
 			type: 'POST',
 			data: {
 				action: 'removeEvent',
-				evnt: evnt
+				evnt: JSON.stringify(evnt)
 			},
 			success: function(data){
 				//колбек о записи события в БД

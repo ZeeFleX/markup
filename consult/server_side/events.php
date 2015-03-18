@@ -1,10 +1,13 @@
 <?php
 	switch($_POST['action']){
+		case 'createEvent':
+			print_r(json_decode($_POST['evnt']));
+		break;
 		case 'updateEventTime':
-			echo 'Время события обновлено';
+			print_r(json_decode($_POST['evnt']));
 		break;
 		case 'removeEvent':
-			echo 'Событие удалено';
+			print_r(json_decode($_POST['evnt']));
 		break;
 	}
 ?>
