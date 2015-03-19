@@ -9,10 +9,10 @@
         <div class="fader"></div>
         <div class="content-block">
             <i class="close fa fa-close"></i>
-            <h4>Добавить событие</h4>
+            <h4>Событие</h4>
             <form action="#" method="POST">
-                <div class="unwork-time section" data-type="unwork">
-                    <input type="checkbox" name="unwork-time" class="section-handler" />
+                <div class="unwork section" data-type="unwork">
+                    <input type="checkbox" name="unwork" class="section-handler" />
                     <label for="unwork-time">Нерабочее время</label>
                     <div class="clr"></div>
                     <div class="accordeon-container">
@@ -27,18 +27,18 @@
                     </div>
                     <div class="clr"></div>
                 </div>
-                <div class="free-time section" data-type="free">
+                <!-- <div class="free-time section" data-type="free">
                     <input type="checkbox" name="free-time" class="section-handler" />
                     <label for="free-time">Свободное время</label>
                     <div class="clr"></div>
                     <div class="accordeon-container">
                         <div class="type">
                             <div class="field">
-                                <input type="radio" name="type" value="skype" />
+                                <input type="checkbox" name="type" value="skype" />
                                 <label for="type">Онлайн (Skype, Метафорические карты)</label>
                             </div>
                             <div class="field">
-                                <input type="radio" name="type" value="private" />
+                                <input type="checkbox" name="type" value="private" />
                                 <label for="type">Личные встречи</label>
                             </div>
                             <select name="office" id="office" class="select2">
@@ -55,14 +55,29 @@
                         </div>
                         <div class="clr"></div>
                     </div>
-                </div>
+                </div> -->
                 <div class="consult section" data-type="consult">
                     <input type="checkbox" name="consult" class="section-handler" />
                     <label for="consult">Консультация</label>
                     <div class="clr"></div>
                     <div class="accordeon-container">
-                        <div class="field method">
-                            <select name="method" id="method" class="select2"></select>
+                        <div class="type">
+                            <div class="field">
+                                <input type="radio" name="type" value="skype" />
+                                <label for="type">Skype</label>
+                            </div>
+                            <div class="field">
+                                <input type="radio" name="type" value="private" />
+                                <label for="type">Личная встреча</label>
+                            </div>
+                            <div class="field">
+                                <input type="radio" name="type" value="cards" />
+                                <label for="type">Метафорические карты</label>
+                            </div>
+                        </div>
+                        <div class="field title">
+                            <label for="title">Название мероприятия</label>
+                            <input type="text" name="title" placeholder="Введите заголовок для мероприятия" class="allow-clear"/>
                         </div>
                         <div class="field participiant">
                             <label for="participiant">Участник</label>
@@ -247,7 +262,7 @@
                 
                 <h4>Расписание</h4>
                 <div class="schedule-container content-block">
-                    <div class="elements">
+                    <!-- <div class="elements">
                         <div class="full-day field">
                             <input type="checkbox" name="full-day" checked="checked" />
                             <label for="full-day">Показать полные сутки</label>
@@ -256,7 +271,7 @@
                             <input type="checkbox" name="weekend" />
                             <label for="weekend">Выходной</label>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="hours">
                         <?php for($i = 0; $i <= 23; $i++) { ?>
                             <?php

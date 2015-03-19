@@ -1925,7 +1925,7 @@ body.page-profile-schedule .edit-schedule .content-block form .field.end {
   width: 45%;
   margin-right: 5%;
 }
-body.page-profile-schedule .edit-schedule .content-block form .unwork-time {
+body.page-profile-schedule .edit-schedule .content-block form .unwork {
   padding: 30px 20px;
 }
 body.page-profile-schedule .edit-schedule .content-block form .free-time {
@@ -1950,6 +1950,19 @@ body.page-profile-schedule .edit-schedule .content-block form .free-time .field.
 body.page-profile-schedule .edit-schedule .content-block form .consult {
   padding: 30px 20px;
   border-top: solid 1px #8aa4a2;
+}
+body.page-profile-schedule .edit-schedule .content-block form .consult .type {
+  margin-left: 30px;
+}
+body.page-profile-schedule .edit-schedule .content-block form .consult .type .field {
+  overflow: hidden;
+}
+body.page-profile-schedule .edit-schedule .content-block form .consult .type .field .checkbox.container {
+  float: left;
+  margin-right: 10px;
+}
+body.page-profile-schedule .edit-schedule .content-block form .consult .type .field .checkbox.container + label {
+  margin-top: 4px;
 }
 body.page-profile-schedule .edit-schedule .content-block form .consult .field.begin,
 body.page-profile-schedule .edit-schedule .content-block form .consult .field.end {
@@ -2132,7 +2145,8 @@ body.page-profile-schedule > .wrapper .content .today-events .events .event .bor
   -o-border-radius: 5px;
   -webkit-border-radius: 5px;
 }
-body.page-profile-schedule > .wrapper .content .today-events .events .event.skype .border {
+body.page-profile-schedule > .wrapper .content .today-events .events .event.skype .border,
+body.page-profile-schedule > .wrapper .content .today-events .events .event.cards .border {
   background: #0f9b58;
 }
 body.page-profile-schedule > .wrapper .content .today-events .events .event.consult .border {
@@ -2143,6 +2157,9 @@ body.page-profile-schedule > .wrapper .content .today-events .events .event.priv
 }
 body.page-profile-schedule > .wrapper .content .today-events .events .event.private h5.title {
   color: #35504e;
+}
+body.page-profile-schedule > .wrapper .content .today-events .events .event.unwork {
+  display: none;
 }
 body.page-profile-schedule > .wrapper .content .today-events .events .event.unwork .border {
   background: #aaa;
@@ -2251,6 +2268,14 @@ body.page-profile-schedule > .wrapper .content .today-events .events a.btn {
   display: none;
   cursor: hand;
 }
+.schedule-container .grid .reserved-marker i.fa.fa-cog {
+  cursor: pointer;
+  position: absolute;
+  font-size: 1.2rem;
+  right: 5px;
+  top: 2px;
+  z-index: 1;
+}
 .schedule-container .grid .reserved-marker p {
   font-size: 1.3rem;
   display: block;
@@ -2261,25 +2286,38 @@ body.page-profile-schedule > .wrapper .content .today-events .events a.btn {
   border-color: rgba(0, 0, 0, 0.4);
   background: rgba(0, 0, 0, 0.1);
 }
+.schedule-container .grid .reserved-marker.unwork i.fa.fa-cog {
+  color: rgba(0, 0, 0, 0.4);
+}
 .schedule-container .grid .reserved-marker.unwork p {
   color: #666;
 }
 .schedule-container .grid .reserved-marker.unwork.selected {
   border-color: rgba(0, 0, 0, 0.5);
 }
-.schedule-container .grid .reserved-marker.skype {
+.schedule-container .grid .reserved-marker.skype,
+.schedule-container .grid .reserved-marker.cards {
   border-color: #33b679;
   background: rgba(51, 152, 121, 0.4);
 }
-.schedule-container .grid .reserved-marker.skype p {
+.schedule-container .grid .reserved-marker.skype i.fa.fa-cog,
+.schedule-container .grid .reserved-marker.cards i.fa.fa-cog {
+  color: #33b679;
+}
+.schedule-container .grid .reserved-marker.skype p,
+.schedule-container .grid .reserved-marker.cards p {
   color: #119457;
 }
-.schedule-container .grid .reserved-marker.skype.selected {
+.schedule-container .grid .reserved-marker.skype.selected,
+.schedule-container .grid .reserved-marker.cards.selected {
   border-color: #119457;
 }
 .schedule-container .grid .reserved-marker.consult {
   border-color: #41b6ad;
   background: rgba(74, 208, 197, 0.2);
+}
+.schedule-container .grid .reserved-marker.consult i.fa.fa-cog {
+  color: #41b6ad;
 }
 .schedule-container .grid .reserved-marker.consult p {
   color: #35504e;
@@ -2290,6 +2328,9 @@ body.page-profile-schedule > .wrapper .content .today-events .events a.btn {
 .schedule-container .grid .reserved-marker.private {
   border-color: #fac944;
   background: rgba(250, 201, 68, 0.4);
+}
+.schedule-container .grid .reserved-marker.private i.fa.fa-cog {
+  color: #d8a722;
 }
 .schedule-container .grid .reserved-marker.private p {
   color: #d39a00;

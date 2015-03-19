@@ -21,7 +21,7 @@
 			'id' => 14,
 			'time' => Array('17:00', '18:30'),
 			'title' => 'Консультация личная',
-			'type' => 'consult',
+			'type' => 'cards',
 			'participiant' => 'Чичваркин Евгений',
 			'participiantProfile' => '#'
 		),

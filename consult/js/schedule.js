@@ -13,7 +13,8 @@
 		'private' : 'Личная консультация',
 		'skype' : 'Skype-консультация',
 		'unwork' : 'Нерабочее время',
-		'consult' : 'Консультация'
+		'consult' : 'Консультация',
+		'cards' : 'Метафорические карты'
 	};
 	var events = {};
 	var tmpEvent = {};
@@ -71,37 +72,41 @@
 		$(editEventBlock).on('change', 'input.timepicker[name="end"]', function(){
 			tmpEvent.time[1] = $(this).val();
 		});
-		$(editEventBlock).on('click', 'input[type="radio"]', function(){
-			tmpEvent.type = $(this).val();
-		});
+		// $(editEventBlock).on('click', 'input[type="radio"]', function(){
+		// 	tmpEvent.type = $(this).val();
+		// });
 		$(editEventBlock).find('form').on('submit', function(e){
 			e.preventDefault();
-			switch(tmpEvent.type){
-				case 'unwork':
-					delete tmpEvent.participiant, tmpEvent.comment, tmpEvent.office;
-				break;
-				case 'free':
-					if($(section).find('input[type="radio"]:checked').length){
-						tmpEvent.type = $(section).find('input[type="radio"]:checked').val();
-					}
-					tmpEvent.office = $(section).find('select#office').val();
-					delete tmpEvent.participiant, tmpEvent.comment;
-				break;
-				case 'consult':
-					tmpEvent.participiant = $(section).find('input[name="participiant"]').val();
-					tmpEvent.comment = $(section).find('textarea[name="comment"]').val();
-					delete tmpEvent.office;
-				break;
-			}
-			ajaxCreateEvent(tmpEvent, function(data){
+			tmpEvent.title = $(section).find('input[name="title"]').val();
+			tmpEvent.participiant = $(section).find('input[name="participiant"]').val();
+			tmpEvent.comment = $(section).find('textarea[name="comment"]').val();
+			tmpEvent.type = $(section).find('input[type="radio"]:checked').val();
+			if(typeof(tmpEvent.type) == 'undefined') tmpEvent.type = 'unwork';
+			tmpEvent.office = $(section).find('select#office').val();
+
+			ajaxEvent(tmpEvent, function(data){
+				if(data.action == 'edit'){
+					var marker = $(grid).find('.reserved-marker[data-id="' + tmpEvent.id + '"]').detach();
+					$(taskList).find('.event[data-id="' + tmpEvent.id + '"]').remove();
+					//var timeArray = getEventRows(marker, grid);
+					reservedHoursArray = _.difference(reservedHoursArray, _.range(_.min(timeArray), _.max(timeArray)));
+				}
 				var evnt = data;
 				if(typeof(evnt.title) == 'undefined' || !evnt.title.length) evnt.title = eventNames[evnt.type];
 				timeArray = timesToRows(data.time);
-				var marker = $('<div class="reserved-marker ' + evnt.type + '" data-id="' + evnt.id + '"><div class="slider-top slider"></div><div class="slider-bottom slider"></div><p class="title">' + evnt.title + '</p></div>').prependTo(grid);	//Формирование области
+				var marker = $('<div class="reserved-marker ' + evnt.type + '" data-id="' + evnt.id + '" data-type="' + evnt.type + '" data-begin="' + evnt.time[0] + '" data-end="' + evnt.time[1] + '"  data-participiant="' + evnt.participiant + '"  data-end="' + evnt.time[1] + '" data-title="' + evnt.title + '"><div class="slider-top slider"></div><div class="slider-bottom slider"></div><i class="fa fa-cog edit-event"></i><p class="title">' + evnt.title + '</p></div>').prependTo(grid);	//Формирование области
 				reservedHoursArray = _.union(_.range(timeArray[0], timeArray[1]), reservedHoursArray);
 				placeSelector(marker, timeArray);
 				$(grid).find('.marker').css('display', 'none');
-				addTask(evnt);
+				console.log(data.type);
+				if(data.type != 'unwork'){
+					addTask(evnt);
+					var tasks = $(taskList).find('.event');
+					tasks = _.sortBy(tasks, function(num){
+						return parseInt($(num).attr('data-begin'))
+					});
+					$(taskList).prepend(tasks);
+				}
 				tmpEvent = {};
 				$(editEventBlock).fadeOut(300);
 				$(editEventBlock)
@@ -127,7 +132,7 @@
 					$.each(events, function(key,evnt){	//Перебор типов событий
 						//Добавление события на сетку
 						if(typeof(evnt.title) == 'undefined' || !evnt.title.length) evnt.title = eventNames[evnt.type];
-						$(grid).prepend('<div class="reserved-marker ' + evnt.type + '" data-id="' + evnt.id + '"><div class="slider-top slider"></div><div class="slider-bottom slider"></div><p class="title">' + evnt.title + '</p></div>');	//Формаирование областей
+						$(grid).prepend('<div class="reserved-marker ' + evnt.type + '" data-id="' + evnt.id + '" data-type="' + evnt.type + '" data-begin="' + evnt.time[0] + '" data-end="' + evnt.time[1] + '"  data-participiant="' + evnt.participiant + '"  data-end="' + evnt.time[1] + '" data-title="' + evnt.title + '"><div class="slider-top slider"></div><div class="slider-bottom slider"></div><i class="fa fa-cog edit-event"></i><p class="title">' + evnt.title + '</p></div>');	//Формаирование областей
 						var reservedMarker = $(grid).find('div[data-id="' + evnt.id + '"]');	//Переменная с областью для этого прохода
 						timeArray = timesToRows(evnt.time);	//Конвертация времени с исходных данных в номера строк
 						placeSelector(reservedMarker, timeArray);	//Размещение теущего селектора
@@ -172,8 +177,15 @@
 				$(taskList).find('.event.active').removeClass('active');
 			}else{	//Если элемент ОТНОСИТСЯ к зарезервированной области
 				marker = $(e.target).closest('.reserved-marker');
-				var id = $(marker).attr('data-id');
-				var task = $(taskList).find('.event[data-id="' + id + '"]');
+				tmpEvent = {
+					id: $(marker).attr('data-id'),
+					type: $(marker).attr('data-type'),
+					time: [$(marker).attr('data-begin'), $(marker).attr('data-end')],
+					title: $(marker).attr('data-title'),
+					participiant: $(marker).attr('data-participiant')
+				}
+				console.log(tmpEvent.type);
+				var task = $(taskList).find('.event[data-id="' + tmpEvent.id + '"]');
 				$(marker)
 					.addClass('selected')
 					.siblings('.reserved-marker').removeClass('selected');	//Выделяем элемент, с остальных снимаем выделение
@@ -186,6 +198,40 @@
 					currentChange = 'drag';
 					marker = $(e.target).closest('.reserved-marker');
 					cursorPosition = Math.floor((e.pageY - $(grid).offset().top) / 16) + 1;
+				}	
+				if($(e.target).closest('.edit-event').length){
+					tmpEvent.action = 'edit';
+					if(_.indexOf(['skype', 'private', 'cards'], tmpEvent.type) == -1){
+						section = $(editEventBlock).find('.section.' + tmpEvent.type);
+						$(section).find('input[type="checkbox"].section-handler').trigger('click');
+						$(section).find('.checkbox.container').addClass('checked');
+						$(editEventBlock).fadeIn(300);
+					}else{
+						section = $(editEventBlock).find('.section.consult');
+						$(section).find('input[type="checkbox"].section-handler').trigger('click');
+						$(section).find('.checkbox.container').addClass('checked');
+						$.each(tmpEvent, function(key, value){
+							switch(key){
+								case 'time':
+									$(section).find('input[name="begin"]').val(value[0]);
+									$(section).find('input[name="end"]').val(value[1]);
+								break;
+								case 'type':
+									tmpEvent.type = $(marker).attr('data-type');
+									$(section).find('.radio.container').removeClass('checked');
+									var radioInput = $(section).find('input[value="' + tmpEvent.type + '"]');
+									$(radioInput).attr('checked', 'checked');
+									$(section).find('.radio.container[data-id="' + $(radioInput).attr('data-id') + '"]').addClass('checked');
+								break;
+								default:
+									$(section).find('input[name="' + key + '"]').val(value);
+								break;
+							}
+						});
+						$(editEventBlock).fadeIn(300);
+					}
+				}else{
+
 				}
 			}
 		});
@@ -236,6 +282,8 @@
 						if(timeArray[1] > 49) timeArray[1] = 49;
 						if(timeArray[0] <= 1) timeArray[0] = 1;
 					}
+					$(marker).attr('data-begin', rowToTime(_.min(timeArray) - 1));
+					$(marker).attr('data-end', rowToTime(_.max(timeArray) - 1));
 				}
 				if(pressed){	//Если флаг нового выделения
 					timeArray[1] = Math.floor((e.pageY - $(grid).offset().top) / 16) + 2;	//Меняем конечное значение области выделения
@@ -350,7 +398,12 @@
 	}
 
 	//Функция добавления нового евента
-	var ajaxCreateEvent = function(evnt, callback){
+	var ajaxEvent = function(evnt, callback){
+		if(evnt.action == 'edit'){
+			var action = 'updateEvent';
+		}else{
+			var action = 'createEvent';
+		}
 		$.ajax({	//AJAX-запрос на события определенной даты
 			url: 'server_side/events.php',
 			type: 'POST',

@@ -129,8 +129,8 @@ var loadRadioButtons = function(){
             if($(button).attr('checked')) ifChecked = 'checked'; 
             $(this)
                 .css('display', 'none')
-                .after('<div class="radio container ' + ifChecked + '" id="' + id + '"></div>');
-            var container = $('.radio#' + id);
+                .after('<div class="radio container ' + ifChecked + '" data-id="' + id + '"></div>');
+            var container = $('.radio[data-id="' + id + '"]');
             $(container).click(function(){
                 $(button).trigger('click');
                 if(!$(container).hasClass('checked')){
