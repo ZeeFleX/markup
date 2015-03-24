@@ -1,4 +1,40 @@
 $(document).ready(function(){
+    //Добавление дипломов
+    var uploaderEventObject;
+    $('#uploader-form-simple').ajaxForm({
+        dataType: 'json',
+        beforeSend: function() {
+            
+        },
+        uploadProgress: function(event, position, total, percentComplete) {
+
+        },
+        success: function(data) {
+            $(uploaderEventObject)
+                .find('img').attr('src', data.thumb).end()
+                .find('input.filename').val(JSON.stringify(data));
+        },
+        complete: function(data) {
+            
+        }
+    });
+    
+    $('body').on('click', '.upload-scan', function(e){
+        uploaderEventObject = $(this).closest('.field.upload');
+        $('#uploader-form-simple input[type="file"]').trigger('click');
+    });
+    $('#uploader-form-simple input[type="file"]').on('change', function(){
+        $(this).closest('form').submit();
+        $(this).val('');
+    });
+    $('body').on('click', '.remove-scan', function(e){
+        $(this)
+            .closest('.field.upload').find('img').attr('src', 'images/interface/image-placeholder.png').end()
+            .closest('.field.upload').find('input.filename').val('');
+    });
+    
+    //Добавление сертификатов
+    
     //Загрузка городов при выборе страны
     // $.ajax({
     //     type: 'POST',

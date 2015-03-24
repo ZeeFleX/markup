@@ -283,11 +283,11 @@ input[type="time"].error {
   background-color: #ffd9d9;
 }
 /* line 252, interface.less */
-.field span {
+.field span.star {
   display: none;
 }
 /* line 255, interface.less */
-.field.required span {
+.field.required span.star {
   color: #eb5245;
   display: inline;
 }
@@ -751,7 +751,42 @@ header.header .mainmenu li a {
   color: #290019;
   text-decoration: none;
 }
-/* line 209, global.less */
+/* line 207, global.less */
+.user-menu-section {
+  background: #f8f8f8;
+  overflow: hidden;
+  padding: 20px 0;
+  box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.1);
+}
+/* line 216, global.less */
+.user-menu-section .wrapper .user-menu-container {
+  right: 50%;
+  float: right;
+}
+/* line 220, global.less */
+.user-menu-section .wrapper .user-menu {
+  left: 50%;
+  float: left;
+}
+/* line 223, global.less */
+.user-menu-section .wrapper .user-menu li {
+  margin: 0 10px;
+  float: left;
+}
+/* line 227, global.less */
+.user-menu-section .wrapper .user-menu a {
+  color: #290019;
+  font: 400 1.4rem  Roboto;
+  text-decoration: none;
+}
+/* line 231, global.less */
+.user-menu-section .wrapper .user-menu a:hover {
+  text-decoration: underline;
+}
+/* line 240, global.less */
 .footer {
   width: 100%;
   margin-top: 20px;
@@ -759,78 +794,78 @@ header.header .mainmenu li a {
   font-weight: 500;
   font-size: 1.4rem;
 }
-/* line 215, global.less */
+/* line 246, global.less */
 .footer a {
   text-decoration: none;
   color: #ffffff;
 }
-/* line 219, global.less */
+/* line 250, global.less */
 .footer .top {
   padding: 8px 30px;
   background: #ec4863;
   overflow: hidden;
 }
-/* line 223, global.less */
+/* line 254, global.less */
 .footer .top .contact {
   display: block;
   float: left;
 }
-/* line 227, global.less */
+/* line 258, global.less */
 .footer .top .support {
   display: block;
   float: right;
 }
-/* line 231, global.less */
+/* line 262, global.less */
 .footer .top .footer-logo {
   margin: 20px 0;
 }
-/* line 233, global.less */
+/* line 264, global.less */
 .footer .top .footer-logo .logo {
   float: left;
   margin-right: 15px;
 }
-/* line 237, global.less */
+/* line 268, global.less */
 .footer .top .footer-logo .title {
   display: block;
   float: left;
   font-size: 1.4rem;
   margin-top: 5px;
 }
-/* line 242, global.less */
+/* line 273, global.less */
 .footer .top .footer-logo .title span {
   font-size: 1.2rem;
   font-weight: normal;
 }
-/* line 249, global.less */
+/* line 280, global.less */
 .footer .bottom {
   padding: 8px 30px;
   background: #a73e5c;
   overflow: hidden;
 }
-/* line 253, global.less */
+/* line 284, global.less */
 .footer .bottom p {
   display: block;
   float: left;
 }
-/* line 257, global.less */
+/* line 288, global.less */
 .footer .bottom ul {
   float: right;
   margin-top: 10px;
 }
-/* line 260, global.less */
+/* line 291, global.less */
 .footer .bottom ul li {
   float: left;
   margin-left: 20px;
 }
-/* line 264, global.less */
+/* line 295, global.less */
 .footer .bottom ul li a:hover {
   text-decoration: underline;
 }
-/* line 273, global.less */
+/* line 304, global.less */
 .page-mainpage footer.footer .top {
   background: none;
 }
-/* line 276, global.less */
+/* line 307, global.less */
 .page-mainpage footer.footer .bottom {
   background: none;
 }
@@ -1392,49 +1427,80 @@ body.page-profile .resume-section .profile .left {
 body.page-profile .resume-section .profile .left .photo img {
   display: block;
 }
-/* line 23, page_profile.less */
+/* line 22, page_profile.less */
+body.page-profile .resume-section .profile .left .place {
+  margin-top: 17px;
+  text-align: center;
+  color: #b099a3;
+  font: 400 1.2rem Roboto;
+}
+/* line 27, page_profile.less */
+body.page-profile .resume-section .profile .left .place .fa {
+  color: #ec4863;
+}
+/* line 33, page_profile.less */
+body.page-profile .resume-section .profile .left .expirience {
+  text-align: center;
+  margin-top: 13px;
+}
+/* line 36, page_profile.less */
+body.page-profile .resume-section .profile .left .expirience .fa {
+  display: block;
+  width: 100%;
+  font-size: 18px;
+}
+/* line 41, page_profile.less */
+body.page-profile .resume-section .profile .left .expirience p {
+  font: 400 1.4rem Roboto;
+}
+/* line 43, page_profile.less */
+body.page-profile .resume-section .profile .left .expirience p .value {
+  color: #290019;
+  font-weight: 700;
+}
+/* line 50, page_profile.less */
 body.page-profile .resume-section .profile .right {
   float: right;
   width: 68%;
   overflow: hidden;
 }
-/* line 27, page_profile.less */
+/* line 54, page_profile.less */
 body.page-profile .resume-section .profile .right header {
   overflow: hidden;
 }
-/* line 29, page_profile.less */
+/* line 56, page_profile.less */
 body.page-profile .resume-section .profile .right header .name {
   color: #290019;
   font: 700 1.8rem Roboto;
   float: left;
 }
-/* line 33, page_profile.less */
+/* line 60, page_profile.less */
 body.page-profile .resume-section .profile .right header .name .lastname {
   text-transform: uppercase;
 }
-/* line 36, page_profile.less */
+/* line 63, page_profile.less */
 body.page-profile .resume-section .profile .right header .name .firstname {
   text-transform: none;
 }
-/* line 39, page_profile.less */
+/* line 66, page_profile.less */
 body.page-profile .resume-section .profile .right header .name .job {
   color: #ec4863;
   font: 500 1.4rem Roboto;
   margin-top: 5px;
 }
-/* line 44, page_profile.less */
+/* line 71, page_profile.less */
 body.page-profile .resume-section .profile .right header .name p {
   margin: 0;
 }
-/* line 48, page_profile.less */
+/* line 75, page_profile.less */
 body.page-profile .resume-section .profile .right header .toolbar {
   float: right;
 }
-/* line 50, page_profile.less */
+/* line 77, page_profile.less */
 body.page-profile .resume-section .profile .right header .toolbar .rating-block {
   float: right;
 }
-/* line 53, page_profile.less */
+/* line 80, page_profile.less */
 body.page-profile .resume-section .profile .right header .toolbar a.envelope {
   float: right;
   color: #290019;
@@ -1442,115 +1508,190 @@ body.page-profile .resume-section .profile .right header .toolbar a.envelope {
   margin-top: 6px;
   margin-right: 15px;
 }
-/* line 59, page_profile.less */
+/* line 86, page_profile.less */
 body.page-profile .resume-section .profile .right header .toolbar a.envelope .fa {
   font-size: 2.0rem;
 }
-/* line 63, page_profile.less */
+/* line 90, page_profile.less */
 body.page-profile .resume-section .profile .right header .toolbar .profile-menu {
   float: right;
   margin-top: 9px;
   margin-right: 15px;
 }
-/* line 75, page_profile.less */
+/* line 102, page_profile.less */
 body.page-profile .resume-section .profile .right .contacts h5 {
   padding-bottom: 0;
 }
-/* line 78, page_profile.less */
+/* line 105, page_profile.less */
 body.page-profile .resume-section .profile .right .contacts p {
   margin: 2px 0;
   font-weight: 500;
 }
-/* line 81, page_profile.less */
+/* line 108, page_profile.less */
 body.page-profile .resume-section .profile .right .contacts p span.value {
   color: #ec4863;
 }
-/* line 88, page_profile.less */
+/* line 114, page_profile.less */
+body.page-profile .resume-section .profile .right .introtext a.readmore {
+  color: #ec4863;
+  font: italic 1.4rem Roboto;
+}
+/* line 121, page_profile.less */
 body.page-profile .resume-section aside {
   float: right;
   width: 41%;
   overflow: hidden;
 }
-/* line 92, page_profile.less */
+/* line 125, page_profile.less */
 body.page-profile .resume-section aside .price {
   margin-top: 7px;
 }
-/* line 97, page_profile.less */
+/* line 130, page_profile.less */
 body.page-profile .resume-section aside .price .content-block p.text {
   margin-top: 0;
 }
-/* line 99, page_profile.less */
+/* line 132, page_profile.less */
 body.page-profile .resume-section aside .price .content-block p.text .date {
   font-weight: 500;
   color: #ec4863;
 }
-/* line 104, page_profile.less */
-body.page-profile .resume-section aside .price .content-block p.summary {
+/* line 137, page_profile.less */
+body.page-profile .resume-section aside .price .content-block form.summary {
   margin-top: 20px;
 }
-/* line 106, page_profile.less */
-body.page-profile .resume-section aside .price .content-block p.summary .bold {
-  color: #290019;
-  font-weight: 500;
+/* line 139, page_profile.less */
+body.page-profile .resume-section aside .price .content-block form.summary .field {
+  clear: both;
+  margin-bottom: 20px;
 }
-/* line 110, page_profile.less */
-body.page-profile .resume-section aside .price .content-block p.summary .value {
+/* line 142, page_profile.less */
+body.page-profile .resume-section aside .price .content-block form.summary .field .radio.container {
+  float: left;
+  margin-right: 15px;
+}
+/* line 147, page_profile.less */
+body.page-profile .resume-section aside .price .content-block form.summary label {
+  overflow: hidden;
+  color: #b099a3;
+  font-size: 1.4rem;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 500;
+  font-style: italic;
+  font-weight: normal;
+}
+/* line 155, page_profile.less */
+body.page-profile .resume-section aside .price .content-block form.summary span {
+  display: inline;
+}
+/* line 158, page_profile.less */
+body.page-profile .resume-section aside .price .content-block form.summary span.value {
   font-weight: bold;
   color: #ec4863;
 }
-/* line 115, page_profile.less */
-body.page-profile .resume-section aside .price .content-block .btn {
+/* line 162, page_profile.less */
+body.page-profile .resume-section aside .price .content-block form.summary .btn {
   display: block;
   text-align: center;
+  width: 100%;
 }
-/* line 121, page_profile.less */
+/* line 168, page_profile.less */
+body.page-profile .resume-section aside .price .content-block.paid {
+  margin-top: 20px;
+}
+/* line 170, page_profile.less */
+body.page-profile .resume-section aside .price .content-block.paid .visibility {
+  overflow: hidden;
+}
+/* line 172, page_profile.less */
+body.page-profile .resume-section aside .price .content-block.paid .visibility i {
+  display: block;
+  float: left;
+  margin-right: 15px;
+  color: #ec4863;
+  font-size: 1.8rem;
+}
+/* line 179, page_profile.less */
+body.page-profile .resume-section aside .price .content-block.paid .visibility p {
+  display: block;
+  overflow: hidden;
+  margin: 2px 0;
+}
+/* line 188, page_profile.less */
 body.page-profile .resume-section aside .sessions {
   margin-top: 10px;
 }
-/* line 123, page_profile.less */
+/* line 190, page_profile.less */
 body.page-profile .resume-section aside .sessions p {
   font-weight: bold;
   color: #290019;
 }
-/* line 126, page_profile.less */
+/* line 193, page_profile.less */
 body.page-profile .resume-section aside .sessions p .value {
   color: #ec4863;
 }
-/* line 130, page_profile.less */
+/* line 197, page_profile.less */
 body.page-profile .resume-section aside .sessions .btn {
   margin-top: 15px;
   text-align: center;
   display: block;
   color: #ffffff;
 }
-/* line 141, page_profile.less */
+/* line 205, page_profile.less */
+body.page-profile .resume-section aside .information {
+  float: right;
+  width: 100%;
+}
+/* line 215, page_profile.less */
+body.page-profile .resume-section aside .information .content-block.education-list .item,
+body.page-profile .resume-section aside .information .content-block.proffessions-list .item {
+  margin-bottom: 20px;
+}
+/* line 217, page_profile.less */
+body.page-profile .resume-section aside .information .content-block.education-list .item .scan,
+body.page-profile .resume-section aside .information .content-block.proffessions-list .item .scan {
+  float: left;
+  width: 50px;
+  margin-right: 15px;
+}
+/* line 221, page_profile.less */
+body.page-profile .resume-section aside .information .content-block.education-list .item .scan img,
+body.page-profile .resume-section aside .information .content-block.proffessions-list .item .scan img {
+  display: block;
+  width: 100%;
+}
+/* line 226, page_profile.less */
+body.page-profile .resume-section aside .information .content-block.education-list .item p,
+body.page-profile .resume-section aside .information .content-block.proffessions-list .item p {
+  overflow: hidden;
+}
+/* line 236, page_profile.less */
 body.page-profile .partners-section .content-block {
   overflow: hidden;
 }
-/* line 143, page_profile.less */
+/* line 238, page_profile.less */
 body.page-profile .partners-section .content-block .partner {
   float: left;
   width: 31.7%;
   margin-left: 2%;
   min-height: 120px;
 }
-/* line 148, page_profile.less */
+/* line 243, page_profile.less */
 body.page-profile .partners-section .content-block .partner:first-child {
   margin-left: 0;
 }
-/* line 157, page_profile.less */
+/* line 252, page_profile.less */
 body.page-profile .information-section .reviews {
   float: left;
   width: 57%;
 }
-/* line 161, page_profile.less */
+/* line 256, page_profile.less */
 body.page-profile .information-section .reviews .content-block .review {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   padding: 10px 20px 30px 20px;
   margin-bottom: 60px;
 }
-/* line 166, page_profile.less */
+/* line 261, page_profile.less */
 body.page-profile .information-section .reviews .content-block .review .quote-arrow {
   position: absolute;
   width: 43px;
@@ -1559,12 +1700,12 @@ body.page-profile .information-section .reviews .content-block .review .quote-ar
   bottom: -25px;
   left: 60px;
 }
-/* line 179, page_profile.less */
+/* line 274, page_profile.less */
 body.page-profile .information-section .reviews .content-block .review .author {
   overflow: hidden;
   margin-top: 25px;
 }
-/* line 182, page_profile.less */
+/* line 277, page_profile.less */
 body.page-profile .information-section .reviews .content-block .review .author .photo {
   border-radius: 50px;
   -moz-border-radius: 50px;
@@ -1575,46 +1716,46 @@ body.page-profile .information-section .reviews .content-block .review .author .
   height: 50px;
   float: left;
 }
-/* line 191, page_profile.less */
+/* line 286, page_profile.less */
 body.page-profile .information-section .reviews .content-block .review .author .photo img {
   display: block;
   min-width: 100%;
   min-height: 100%;
 }
-/* line 197, page_profile.less */
+/* line 292, page_profile.less */
 body.page-profile .information-section .reviews .content-block .review .author .text {
   overflow: hidden;
 }
-/* line 199, page_profile.less */
+/* line 294, page_profile.less */
 body.page-profile .information-section .reviews .content-block .review .author .text p {
   margin-left: 10px;
   font-size: 1.2rem;
 }
-/* line 202, page_profile.less */
+/* line 297, page_profile.less */
 body.page-profile .information-section .reviews .content-block .review .author .text p .author-name,
 body.page-profile .information-section .reviews .content-block .review .author .text p .user-name {
   color: #ec4863;
   font: 700 1.2rem Roboto;
 }
-/* line 209, page_profile.less */
+/* line 304, page_profile.less */
 body.page-profile .information-section .reviews .content-block .review .toolbar {
   position: absolute;
   right: 0;
   bottom: 0;
 }
-/* line 213, page_profile.less */
+/* line 308, page_profile.less */
 body.page-profile .information-section .reviews .content-block .review .toolbar .review-menu {
   float: left;
   margin-right: 20px;
   margin-top: 11px;
 }
-/* line 218, page_profile.less */
+/* line 313, page_profile.less */
 body.page-profile .information-section .reviews .content-block .review .toolbar .review-date {
   float: left;
   margin-right: 20px;
   font-size: 1.2rem;
 }
-/* line 223, page_profile.less */
+/* line 318, page_profile.less */
 body.page-profile .information-section .reviews .content-block .review .toolbar .readmore {
   border-top-left-radius: 5px;
   -o-border-top-left-radius: 5px;
@@ -1629,74 +1770,74 @@ body.page-profile .information-section .reviews .content-block .review .toolbar 
   border-top: dashed 1px #b9d4cc;
   padding: 8px 20px;
 }
-/* line 236, page_profile.less */
+/* line 331, page_profile.less */
 body.page-profile .information-section .reviews .content-block .review .toolbar .readmore:hover {
   text-decoration: underline;
 }
-/* line 242, page_profile.less */
+/* line 337, page_profile.less */
 body.page-profile .information-section .reviews .content-block #load-more-reviews {
   width: 200px;
   text-align: center;
   margin: auto;
   display: block;
 }
-/* line 253, page_profile.less */
+/* line 348, page_profile.less */
 body.page-profile .information-section .content-block form {
   overflow: hidden;
 }
-/* line 256, page_profile.less */
+/* line 351, page_profile.less */
 body.page-profile .information-section .content-block form .field textarea {
   height: 98px;
 }
-/* line 259, page_profile.less */
+/* line 354, page_profile.less */
 body.page-profile .information-section .content-block form .field label {
   color: #ec4863;
   font: 500 1.4rem Roboto;
   margin-bottom: 0;
 }
-/* line 264, page_profile.less */
+/* line 359, page_profile.less */
 body.page-profile .information-section .content-block form .field .raiting-block.vote {
   float: left;
   margin-top: 6px;
 }
-/* line 269, page_profile.less */
+/* line 364, page_profile.less */
 body.page-profile .information-section .content-block form .btn {
   display: block;
   float: right;
 }
-/* line 275, page_profile.less */
+/* line 370, page_profile.less */
 body.page-profile .information-section .information {
   float: right;
   width: 41%;
 }
-/* line 285, page_profile.less */
+/* line 380, page_profile.less */
 body.page-profile .information-section .information .content-block.education-list .item,
 body.page-profile .information-section .information .content-block.proffessions-list .item {
   margin-bottom: 20px;
 }
-/* line 287, page_profile.less */
+/* line 382, page_profile.less */
 body.page-profile .information-section .information .content-block.education-list .item .scan,
 body.page-profile .information-section .information .content-block.proffessions-list .item .scan {
   float: left;
   width: 50px;
   margin-right: 15px;
 }
-/* line 291, page_profile.less */
+/* line 386, page_profile.less */
 body.page-profile .information-section .information .content-block.education-list .item .scan img,
 body.page-profile .information-section .information .content-block.proffessions-list .item .scan img {
   display: block;
   width: 100%;
 }
-/* line 296, page_profile.less */
+/* line 391, page_profile.less */
 body.page-profile .information-section .information .content-block.education-list .item p,
 body.page-profile .information-section .information .content-block.proffessions-list .item p {
   overflow: hidden;
 }
-/* line 302, page_profile.less */
+/* line 397, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .item {
   margin-bottom: 30px;
 }
-/* line 306, page_profile.less */
+/* line 401, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .author .photo {
   float: left;
   overflow: hidden;
@@ -1708,48 +1849,48 @@ body.page-profile .information-section .information .content-block.answers-list 
   height: 50px;
   margin-right: 15px;
 }
-/* line 316, page_profile.less */
+/* line 411, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .author .photo img {
   display: block;
 }
-/* line 320, page_profile.less */
+/* line 415, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .author .about {
   overflow: hidden;
 }
-/* line 322, page_profile.less */
+/* line 417, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .author .about p {
   margin: 0;
 }
-/* line 324, page_profile.less */
+/* line 419, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .author .about p.name {
   font-size: 1.2rem;
   color: #ec4863;
   font-weight: 700;
 }
-/* line 329, page_profile.less */
+/* line 424, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .author .about p.job {
   font-size: 1.2rem;
   font-weight: 700;
 }
-/* line 333, page_profile.less */
+/* line 428, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .author .about p.category {
   font-size: 1.2rem;
   font-weight: 700;
   margin-top: 30px;
 }
-/* line 337, page_profile.less */
+/* line 432, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .author .about p.category .value {
   color: #290019;
 }
-/* line 344, page_profile.less */
+/* line 439, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .item > h5 {
   padding-bottom: 0;
 }
-/* line 348, page_profile.less */
+/* line 443, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .content p {
   margin: 5px 0 0 0;
 }
-/* line 351, page_profile.less */
+/* line 446, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .content .fader {
   position: absolute;
   width: 100%;
@@ -1762,45 +1903,45 @@ body.page-profile .information-section .information .content-block.answers-list 
   background: linear-gradient(0deg, #fefefe 0%, #fefefe 16%, rgba(255, 255, 255, 0) 100%);
   z-index: 1;
 }
-/* line 364, page_profile.less */
+/* line 459, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list a.readmore {
   color: #ec4863;
   font: 400 1.2rem Roboto;
   text-decoration: none;
 }
-/* line 368, page_profile.less */
+/* line 463, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list a.readmore:hover {
   text-decoration: underline;
 }
-/* line 372, page_profile.less */
+/* line 467, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list a#load-all-answers {
   display: block;
   width: 80%;
   margin: auto;
 }
-/* line 380, page_profile.less */
+/* line 475, page_profile.less */
 body.page-profile .information-section .ask-question {
   margin-top: 20px;
   overflow: hidden;
 }
-/* line 383, page_profile.less */
+/* line 478, page_profile.less */
 body.page-profile .information-section .ask-question .ask-text {
   float: left;
 }
-/* line 385, page_profile.less */
+/* line 480, page_profile.less */
 body.page-profile .information-section .ask-question .ask-text h3 {
   padding: 0;
 }
-/* line 389, page_profile.less */
+/* line 484, page_profile.less */
 body.page-profile .information-section .ask-question a {
   display: block;
   float: right;
 }
-/* line 397, page_profile.less */
+/* line 492, page_profile.less */
 body.page-profile .same-users-section .content-block.same-users-list {
   overflow: hidden;
 }
-/* line 399, page_profile.less */
+/* line 494, page_profile.less */
 body.page-profile .same-users-section .content-block.same-users-list .same-user {
   overflow: hidden;
   float: left;
@@ -1808,37 +1949,37 @@ body.page-profile .same-users-section .content-block.same-users-list .same-user 
   margin-left: 3%;
   padding-bottom: 20px;
 }
-/* line 404, page_profile.less */
+/* line 499, page_profile.less */
 body.page-profile .same-users-section .content-block.same-users-list .same-user:first-child {
   margin-left: 0;
 }
-/* line 408, page_profile.less */
+/* line 503, page_profile.less */
 body.page-profile .same-users-section .content-block.same-users-list .same-user .photo {
   width: 100%;
   overflow: hidden;
 }
-/* line 411, page_profile.less */
+/* line 506, page_profile.less */
 body.page-profile .same-users-section .content-block.same-users-list .same-user .photo img {
   width: 100%;
 }
-/* line 415, page_profile.less */
+/* line 510, page_profile.less */
 body.page-profile .same-users-section .content-block.same-users-list .same-user p {
   text-align: center;
 }
-/* line 418, page_profile.less */
+/* line 513, page_profile.less */
 body.page-profile .same-users-section .content-block.same-users-list .same-user p.lastname {
   margin: 0;
   margin-top: 5px;
   color: #ec4863;
   font: 500 1.4rem Roboto;
 }
-/* line 424, page_profile.less */
+/* line 519, page_profile.less */
 body.page-profile .same-users-section .content-block.same-users-list .same-user p.firstname {
   margin: 0;
   color: #ec4863;
   font: 700 1.2rem Roboto;
 }
-/* line 430, page_profile.less */
+/* line 525, page_profile.less */
 body.page-profile .same-users-section .content-block.same-users-list .same-user .rating-block {
   width: 60px;
   margin: 10px auto 0 auto;
@@ -1953,8 +2094,8 @@ body.page-profile-settings.security form input[type="submit"] {
   margin-right: 20px;
   margin-top: 30px;
 }
-/* line 107, page_profile_settings.less */
-body.page-profile-settings.about-me form .field.upload .preview {
+/* line 106, page_profile_settings.less */
+body.page-profile-settings.about-me .field.upload .preview {
   float: left;
   width: 80px;
   margin-right: 15px;
@@ -1964,22 +2105,22 @@ body.page-profile-settings.about-me form .field.upload .preview {
   -webkit-border-radius: 4px;
   overflow: hidden;
 }
-/* line 116, page_profile_settings.less */
-body.page-profile-settings.about-me form .field.upload .preview img {
+/* line 115, page_profile_settings.less */
+body.page-profile-settings.about-me .field.upload .preview img {
   display: block;
   width: 100%;
 }
-/* line 121, page_profile_settings.less */
-body.page-profile-settings.about-me form .field.upload .buttons {
+/* line 120, page_profile_settings.less */
+body.page-profile-settings.about-me .field.upload .buttons {
   float: left;
   width: 38%;
 }
-/* line 124, page_profile_settings.less */
-body.page-profile-settings.about-me form .field.upload .buttons .btn {
+/* line 123, page_profile_settings.less */
+body.page-profile-settings.about-me .field.upload .buttons .btn {
   margin-bottom: 10px;
 }
-/* line 128, page_profile_settings.less */
-body.page-profile-settings.about-me form .field.upload p {
+/* line 127, page_profile_settings.less */
+body.page-profile-settings.about-me .field.upload p {
   display: block;
   overflow: hidden;
   text-align: center;
@@ -1987,8 +2128,8 @@ body.page-profile-settings.about-me form .field.upload p {
   margin-top: 10px;
   top: 7px;
 }
-/* line 137, page_profile_settings.less */
-body.page-profile-settings.about-me form a.add-document-button {
+/* line 136, page_profile_settings.less */
+body.page-profile-settings.about-me a.add-document-button {
   margin-top: 15px;
   text-align: center;
   font-size: 1.2rem;
@@ -2000,139 +2141,238 @@ body.page-profile-settings.about-me form a.add-document-button {
   text-decoration: none;
   margin-bottom: 30px;
 }
-/* line 148, page_profile_settings.less */
-body.page-profile-settings.about-me form a.add-document-button:hover {
+/* line 147, page_profile_settings.less */
+body.page-profile-settings.about-me a.add-document-button:hover {
   background: #d8e6e0;
   color: #290019;
 }
-/* line 153, page_profile_settings.less */
-body.page-profile-settings.about-me form .select2-container {
-  width: 40% !important;
+/* line 152, page_profile_settings.less */
+body.page-profile-settings.about-me .select2-container {
+  width: 45% !important;
   margin-right: 4%;
 }
-/* line 158, page_profile_settings.less */
-body.page-profile-settings.about-me form section.specialization .field {
+/* line 157, page_profile_settings.less */
+body.page-profile-settings.about-me section.specialization .field {
   float: left;
   width: 48%;
   margin: 5px 0;
 }
-/* line 162, page_profile_settings.less */
-body.page-profile-settings.about-me form section.specialization .field:nth-child(even) {
+/* line 161, page_profile_settings.less */
+body.page-profile-settings.about-me section.specialization .field:nth-child(even) {
   margin-right: 0;
 }
-/* line 165, page_profile_settings.less */
-body.page-profile-settings.about-me form section.specialization .field .checkbox {
+/* line 164, page_profile_settings.less */
+body.page-profile-settings.about-me section.specialization .field .checkbox {
   float: left;
   margin-right: 10px;
 }
-/* line 168, page_profile_settings.less */
-body.page-profile-settings.about-me form section.specialization .field .checkbox.checked + label {
+/* line 167, page_profile_settings.less */
+body.page-profile-settings.about-me section.specialization .field .checkbox.checked + label {
   color: #ec4863;
 }
-/* line 172, page_profile_settings.less */
-body.page-profile-settings.about-me form section.specialization .field label {
+/* line 171, page_profile_settings.less */
+body.page-profile-settings.about-me section.specialization .field label {
   display: block;
   overflow: hidden;
   margin: 2px 0;
   font-size: 500;
 }
-/* line 179, page_profile_settings.less */
-body.page-profile-settings.about-me form section.specialization input[type="text"] {
+/* line 178, page_profile_settings.less */
+body.page-profile-settings.about-me section.specialization input[type="text"] {
   margin-top: 20px;
 }
-/* line 185, page_profile_settings.less */
-body.page-profile-settings.about-me form section.education .university .input-container {
+/* line 183, page_profile_settings.less */
+body.page-profile-settings.about-me section.education .items {
   overflow: hidden;
+}
+/* line 185, page_profile_settings.less */
+body.page-profile-settings.about-me section.education .items .item {
+  overflow: hidden;
+  margin-bottom: 30px;
 }
 /* line 188, page_profile_settings.less */
-body.page-profile-settings.about-me form section.education .university a#remove-university {
-  display: block;
-  float: right;
-  border-radius: 15px;
-  -o-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -webkit-border-radius: 15px;
-  width: 15px;
-  height: 15px;
-  line-height: 15px;
-  border: solid 3px #b099a3;
-  text-align: center;
-  margin-left: 15px;
-  margin-top: 7px;
+body.page-profile-settings.about-me section.education .items .item .controls {
+  float: left;
 }
-/* line 202, page_profile_settings.less */
-body.page-profile-settings.about-me form section.education .university a#remove-university i {
-  color: #b099a3;
+/* line 190, page_profile_settings.less */
+body.page-profile-settings.about-me section.education .items .item .controls i {
+  font-size: 1.8rem;
+  display: block;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+/* line 196, page_profile_settings.less */
+body.page-profile-settings.about-me section.education .items .item .controls i.fa-times-circle-o {
+  color: #eb5245;
+}
+/* line 201, page_profile_settings.less */
+body.page-profile-settings.about-me section.education .items .item .scan-container {
+  float: left;
+  width: 60px;
+  margin-right: 15px;
 }
 /* line 205, page_profile_settings.less */
-body.page-profile-settings.about-me form section.education .university a#remove-university:hover {
-  border-color: #290019;
+body.page-profile-settings.about-me section.education .items .item .scan-container img {
+  display: block;
+  width: 100%;
 }
-/* line 207, page_profile_settings.less */
-body.page-profile-settings.about-me form section.education .university a#remove-university:hover i {
-  color: #290019;
-}
-/* line 216, page_profile_settings.less */
-body.page-profile-settings.about-me form section.professional .certificate .input-container {
+/* line 210, page_profile_settings.less */
+body.page-profile-settings.about-me section.education .items .item .info {
   overflow: hidden;
 }
-/* line 219, page_profile_settings.less */
-body.page-profile-settings.about-me form section.professional .certificate a#remove-certificate {
-  display: block;
-  float: right;
-  border-radius: 15px;
-  -o-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -webkit-border-radius: 15px;
-  width: 15px;
-  height: 15px;
-  line-height: 15px;
-  border: solid 3px #b099a3;
-  text-align: center;
-  margin-left: 15px;
-  margin-top: 7px;
+/* line 212, page_profile_settings.less */
+body.page-profile-settings.about-me section.education .items .item .info p {
+  margin-top: 0;
+  margin-bottom: 5px;
 }
-/* line 233, page_profile_settings.less */
-body.page-profile-settings.about-me form section.professional .certificate a#remove-certificate i {
-  color: #b099a3;
-}
-/* line 236, page_profile_settings.less */
-body.page-profile-settings.about-me form section.professional .certificate a#remove-certificate:hover {
-  border-color: #290019;
-}
-/* line 238, page_profile_settings.less */
-body.page-profile-settings.about-me form section.professional .certificate a#remove-certificate:hover i {
+/* line 215, page_profile_settings.less */
+body.page-profile-settings.about-me section.education .items .item .info p span.key {
+  font-weight: bold;
   color: #290019;
 }
-/* line 245, page_profile_settings.less */
-body.page-profile-settings.about-me form input[type="submit"] {
+/* line 224, page_profile_settings.less */
+body.page-profile-settings.about-me section.education form.university .input-container {
+  overflow: hidden;
+}
+/* line 227, page_profile_settings.less */
+body.page-profile-settings.about-me section.education form.university .field.special,
+body.page-profile-settings.about-me section.education form.university .field.quality {
+  float: left;
+  width: 45%;
+  margin-right: 5%;
+}
+/* line 232, page_profile_settings.less */
+body.page-profile-settings.about-me section.education form.university input[type="submit"] {
+  border-radius: 5px;
+  background-color: #f4efff;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  color: #b099a3;
+  display: block;
+  padding: 6px 0;
+}
+/* line 242, page_profile_settings.less */
+body.page-profile-settings.about-me section.education form.university input[type="submit"]:hover {
+  background-color: #d2cddd;
+  color: #290019;
+}
+/* line 250, page_profile_settings.less */
+body.page-profile-settings.about-me section.professional .items {
+  overflow: hidden;
+}
+/* line 252, page_profile_settings.less */
+body.page-profile-settings.about-me section.professional .items .item {
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+/* line 255, page_profile_settings.less */
+body.page-profile-settings.about-me section.professional .items .item .controls {
+  float: left;
+}
+/* line 257, page_profile_settings.less */
+body.page-profile-settings.about-me section.professional .items .item .controls i {
+  font-size: 1.8rem;
+  display: block;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+/* line 263, page_profile_settings.less */
+body.page-profile-settings.about-me section.professional .items .item .controls i.fa-times-circle-o {
+  color: #eb5245;
+}
+/* line 268, page_profile_settings.less */
+body.page-profile-settings.about-me section.professional .items .item .scan-container {
+  float: left;
+  width: 60px;
+  margin-right: 15px;
+}
+/* line 272, page_profile_settings.less */
+body.page-profile-settings.about-me section.professional .items .item .scan-container img {
+  display: block;
+  width: 100%;
+}
+/* line 277, page_profile_settings.less */
+body.page-profile-settings.about-me section.professional .items .item .info {
+  overflow: hidden;
+}
+/* line 279, page_profile_settings.less */
+body.page-profile-settings.about-me section.professional .items .item .info p {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+/* line 282, page_profile_settings.less */
+body.page-profile-settings.about-me section.professional .items .item .info p span.key {
+  font-weight: bold;
+  color: #290019;
+}
+/* line 290, page_profile_settings.less */
+body.page-profile-settings.about-me section.professional form.cert {
+  width: 100%;
+}
+/* line 292, page_profile_settings.less */
+body.page-profile-settings.about-me section.professional form.cert .input-container {
+  overflow: hidden;
+}
+/* line 295, page_profile_settings.less */
+body.page-profile-settings.about-me section.professional form.cert .field.year,
+body.page-profile-settings.about-me section.professional form.cert .field.quality {
+  float: left;
+  width: 45%;
+  margin-right: 5%;
+}
+/* line 299, page_profile_settings.less */
+body.page-profile-settings.about-me section.professional form.cert .field.year .select2-container,
+body.page-profile-settings.about-me section.professional form.cert .field.quality .select2-container {
+  width: 100% !important;
+}
+/* line 303, page_profile_settings.less */
+body.page-profile-settings.about-me section.professional form.cert input[type="submit"] {
+  border-radius: 5px;
+  background-color: #f4efff;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  color: #b099a3;
+  display: block;
+  padding: 6px 0;
+}
+/* line 313, page_profile_settings.less */
+body.page-profile-settings.about-me section.professional form.cert input[type="submit"]:hover {
+  background-color: #d2cddd;
+  color: #290019;
+}
+/* line 320, page_profile_settings.less */
+body.page-profile-settings.about-me input[type="submit"] {
   margin-right: 20px;
   margin-top: 30px;
 }
-/* line 253, page_profile_settings.less */
+/* line 327, page_profile_settings.less */
 body.page-profile-settings.contacts form .field {
   float: left;
   width: 48%;
   margin-right: 4%;
 }
-/* line 257, page_profile_settings.less */
+/* line 331, page_profile_settings.less */
 body.page-profile-settings.contacts form .field.phone {
   margin-right: 0;
 }
-/* line 261, page_profile_settings.less */
+/* line 335, page_profile_settings.less */
 body.page-profile-settings.contacts form input[type="submit"] {
   margin-right: 20px;
   margin-top: 30px;
 }
-/* line 268, page_profile_settings.less */
+/* line 342, page_profile_settings.less */
 body.page-profile-settings.consults .prices {
   margin-bottom: 20px;
 }
-/* line 270, page_profile_settings.less */
+/* line 344, page_profile_settings.less */
 body.page-profile-settings.consults .prices .item {
   margin-bottom: 0px;
 }
-/* line 273, page_profile_settings.less */
+/* line 347, page_profile_settings.less */
 body.page-profile-settings.consults .prices .item label.name {
   text-transform: uppercase;
   font-size: 1.4rem;
@@ -2140,56 +2380,56 @@ body.page-profile-settings.consults .prices .item label.name {
   display: block;
   float: left;
 }
-/* line 280, page_profile_settings.less */
+/* line 354, page_profile_settings.less */
 body.page-profile-settings.consults .prices .item .toggle.container {
   margin-top: 7px;
   margin-left: 15px;
   float: left;
 }
-/* line 284, page_profile_settings.less */
+/* line 358, page_profile_settings.less */
 body.page-profile-settings.consults .prices .item .toggle.container + p:after {
   content: 'активировать';
 }
-/* line 287, page_profile_settings.less */
+/* line 361, page_profile_settings.less */
 body.page-profile-settings.consults .prices .item .toggle.container.checked + p:after {
   content: 'активно';
   color: #ec4863;
 }
-/* line 292, page_profile_settings.less */
+/* line 366, page_profile_settings.less */
 body.page-profile-settings.consults .prices .item p {
   display: block;
   float: left;
   margin-left: 10px;
   font-size: 1.2rem;
 }
-/* line 298, page_profile_settings.less */
+/* line 372, page_profile_settings.less */
 body.page-profile-settings.consults .prices .item .price {
   height: 0;
   transition: all 0.2s ease;
   overflow: hidden;
 }
-/* line 302, page_profile_settings.less */
+/* line 376, page_profile_settings.less */
 body.page-profile-settings.consults .prices .item .price input {
   width: 120px;
   display: inline-block;
   margin-right: 10px;
 }
-/* line 309, page_profile_settings.less */
+/* line 383, page_profile_settings.less */
 body.page-profile-settings.consults .prices .item.active .price {
   height: 50px;
 }
-/* line 315, page_profile_settings.less */
+/* line 389, page_profile_settings.less */
 body.page-profile-settings.consults .prices .pay-notice .date {
   color: #290019;
   font-weight: bold;
   margin-bottom: 15px;
 }
-/* line 323, page_profile_settings.less */
+/* line 397, page_profile_settings.less */
 body.page-profile-settings.consults .places .item {
   overflow: hidden;
   margin-bottom: 8px;
 }
-/* line 326, page_profile_settings.less */
+/* line 400, page_profile_settings.less */
 body.page-profile-settings.consults .places .item a.remove-place {
   border-radius: 13px;
   -o-border-radius: 13px;
@@ -2205,29 +2445,29 @@ body.page-profile-settings.consults .places .item a.remove-place {
   margin-right: 8px;
   top: 2px;
 }
-/* line 340, page_profile_settings.less */
+/* line 414, page_profile_settings.less */
 body.page-profile-settings.consults .places .item a.remove-place i {
   color: #f85649;
   font-size: 1.1rem;
 }
-/* line 345, page_profile_settings.less */
+/* line 419, page_profile_settings.less */
 body.page-profile-settings.consults .places .item span.address {
   margin-right: 20px;
 }
-/* line 351, page_profile_settings.less */
+/* line 425, page_profile_settings.less */
 body.page-profile-settings.consults .places .item .radio.container {
   top: 4px;
   margin-right: 4px;
 }
-/* line 355, page_profile_settings.less */
+/* line 429, page_profile_settings.less */
 body.page-profile-settings.consults .places .item label {
   display: inline;
 }
-/* line 359, page_profile_settings.less */
+/* line 433, page_profile_settings.less */
 body.page-profile-settings.consults .places input.plus {
   margin: 20px 0 30px 0;
 }
-/* line 363, page_profile_settings.less */
+/* line 437, page_profile_settings.less */
 body.page-profile-settings.consults input[type="submit"] {
   margin-right: 20px;
 }

@@ -19,6 +19,33 @@ body.page-profile{
                         display: block;
                     }
                 }
+                .place {
+                    margin-top: 17px;
+                    text-align: center;
+                    color: @bordo_light;
+                    font: 400 1.2rem Roboto;
+                    .fa {
+                        color:@pink;
+                        &.fa-map-marker{
+                        }
+                    }
+                }
+                .expirience {
+                    text-align: center;
+                    margin-top: 13px;
+                    .fa {
+                        display: block;
+                        width: 100%;
+                        font-size: 18px;
+                    }
+                    p {
+                        font: 400 1.4rem Roboto;
+                        .value {
+                            color:@bordo;
+                            font-weight: 700;
+                        }
+                    }
+                }
             }
             .right {
                 float: right;
@@ -83,6 +110,12 @@ body.page-profile{
                         }
                     }
                 }
+                .introtext {
+                    a.readmore{
+                        color: @pink;
+                        font: italic 1.4rem Roboto;
+                    }
+                }
             }
         }
         aside{
@@ -93,7 +126,7 @@ body.page-profile{
                 margin-top: 7px;
                 h4 {
                 }
-                .content-block {
+                .content-block{
                     p.text{
                         margin-top: 0;
                         .date{
@@ -101,20 +134,54 @@ body.page-profile{
                             color:@pink;
                         }
                     }
-                    p.summary{
+                    form.summary{
                         margin-top: 20px;
-                        .bold{
-                            color:@bordo;
-                            font-weight: 500;
+                        .field{
+                            clear:both;
+                            margin-bottom: 20px;
+                            .radio.container{
+                                float: left;
+                                margin-right: 15px;
+                            }
                         }
-                        .value{
+                        label{
+                            overflow: hidden;
+                            color:  @bordo_light;
+                            font-size: 1.4rem; /* Приближение из-за подстановки шрифтов */
+                            font-weight: 500;
+                            font-style: italic;
+                            font-weight: normal;
+                        }
+                        span{
+                            display: inline;
+                        }
+                        span.value{
                             font-weight: bold;
                             color:@pink;
                         }
+                        .btn{
+                            display: block;
+                            text-align: center;
+                            width: 100%;
+                        }
                     }
-                    .btn{
-                        display: block;
-                        text-align: center;
+                    &.paid{
+                        margin-top: 20px;
+                        .visibility{
+                            overflow: hidden;
+                            i{
+                                display: block;
+                                float: left;
+                                margin-right: 15px;
+                                color:@pink;
+                                font-size:1.8rem;
+                            }
+                            p{
+                                display: block;
+                                overflow: hidden;
+                                margin:2px 0;
+                            }
+                        }
                     }
                 }
             }
@@ -133,6 +200,34 @@ body.page-profile{
                     display: block;
                     color: @white;
 
+                }
+            }
+            .information {
+                float: right;
+                width: 100%;
+                h4 {
+                    
+                }
+                .content-block {
+                    h5 {
+                    }
+                    &.education-list, &.proffessions-list{
+                        .item {
+                            margin-bottom: 20px;
+                            .scan{
+                                float: left;
+                                width: 50px;
+                                margin-right: 15px;
+                                img{
+                                    display: block;
+                                    width: 100%;
+                                }
+                            }
+                            p{
+                                overflow: hidden;
+                            }
+                        }
+                    }
                 }
             }
         }

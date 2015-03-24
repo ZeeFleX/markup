@@ -47,6 +47,11 @@
                     <div class="photo">
                         <img src="images/photos/01.jpg" alt="" />
                     </div>
+                    <p class="place"><i class="fa fa-map-marker"></i> Россия, Москва</p>
+                    <div class="expirience">
+                        <i class="fa fa-suitcase"></i>
+                        <p>Стаж: <span class="value">6 лет</span></p>
+                    </div>
                 </div>
                 <div class="right">
                     <header>
@@ -72,19 +77,44 @@
                         <p>Телефон: <span class="value">+7 999 99 99</span></p>
                         <p>E-mail: <span class="value">bratanova@gmail.com</span></p>
                     </div>
+                    <div class="introtext">
+                        <p>
+                            Идейные активности позволяет выполнять важные задания по разработке модели развития. позволяет выполнять важные задания по разработке по разработке  модели развития...
+                        </p>
+                    </div>
                 </div>
             </div>
             <aside>
                 <div class="price">
                     <h4>Оплата</h4>
-                    <div class="content-block">
+                    <div class="content-block not-paid">
                         <p class="text">
                             Необходимо оплатить пользование сессионной комнатой. Ваша предыдущая оплата была действительна до <span class="date">10.02.2015</span>
                         </p>
-                        <p class="summary">
-                            <span class="bold">Сумма к оплате</span> <span class="value">2000 рублей</span> <span class="italic">за месяц пользования сессионной комнатой</span>
+                        <form class="summary">
+                            <div class="field">
+                                <input type="radio" name="summ" checked="checked" value="5000" />
+                                <label for="summ">
+                                    <span class="value">5000 рублей в месяц</span> <span>(Ваш профиль будет виден в общем списке терапевтов и доступен для просмотра всеми пользователями сайта)</span>
+                                </label>
+                            </div>
+                            <div class="field">
+                                <input type="radio" name="summ" value="2000" />
+                                <label for="summ">
+                                    <span class="value">2000 рублей в месяц</span> <span>(Ваш профиль не будет виден никаким  пользователям сайта, кроме вас самих)</span>
+                                </label>
+                            </div>
+                            <input type="submit" class="btn green" value="Оплатить">
+                        </form>
+                    </div>
+                    <div class="content-block paid">
+                        <p class="text">
+                            Оплата в сумме <span class="value">5 000 рублей</span> была внесена <span class="date">01.03.2015</span>. Вы можете пользоваться сессионной комнатой до <span class="date">01.04.2015</span>.
                         </p>
-                        <a href="#" class="btn green">Оплатить</a>
+                        <div class="visibility">
+                            <i class="fa fa-eye"></i>
+                            <p>Ваш профиль видят все пользователи сайта</p>
+                        </div>
                     </div>
                 </div>
                 <div class="sessions">
@@ -94,6 +124,58 @@
                         <a href="#" class="btn">Записаться на консультацию</a>
                     </div>
                 </div>
+                <div class="information">
+                    <h4>Информация о терапевте</h4>
+                    <div class="content-block education-list">
+                        <div class="specialization">
+                            <h5>Специализация</h5>
+                            <ul class="badge-marked">
+                                <li>Развитие способностей</li>
+                                <li>Развитие карьеры</li>
+                                <li>Азартные игры</li>
+                                <li>Разрешение конфликтов</li>
+                            </ul>
+                        </div>
+                        <div class="education">
+                            <h5>Образование</h5>
+                            <div class="education-list">
+                                <div class="item">
+                                    <div class="scan">
+                                        <img src="images/scan/scan01.jpg" alt="" />
+                                    </div>
+                                    <p class="title">
+                                        2004-2009 гг. – ВГМА (Воронежская Государственная Медицинская Академия) им. Н.Н. Бурденко по специальности психология, диплом с отличием;
+                                    </p>
+                                    <div class="clr"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="professional">
+                            <h5>Профессионализм</h5>
+                            <div class="professions-list">
+                                <div class="item">
+                                    <div class="scan">
+                                        <img src="images/scan/scan01.jpg" alt="" />
+                                    </div>
+                                    <p class="title">
+                                        2007 – курсы компании 3M, получен сертификат;
+                                    </p>
+                                    <div class="clr"></div>
+                                </div>
+                                <div class="item">
+                                    <div class="scan">
+                                        <img src="images/scan/scan01.jpg" alt="" />
+                                    </div>
+                                    <p class="title">
+                                        2010 – участие в конгрессе Alpha Bio Tec по психологическим техникам– Израиль, получен сертификат;
+                                    </p>
+                                    <div class="clr"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clr"></div>
             </aside>
             <div class="clr"></div>
         </div>

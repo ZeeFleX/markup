@@ -4,6 +4,7 @@
 /*ПОДГРУЖАЕМЫЕ ШРИФТЫ*/
 /*РАЗМЕРЫ ШРИФТОВ*/
 /*ЗАГОЛОВКИ*/
+/* line 25, interface.less */
 h1,
 h2,
 h3,
@@ -12,50 +13,59 @@ h5,
 h6 {
   line-height: 100%;
 }
+/* line 28, interface.less */
 h1 {
   color: #35504e;
   font: 500 3.6rem Roboto;
   margin: 0;
   padding: 10px 0;
 }
+/* line 34, interface.less */
 h2 {
   color: #35504e;
   font: 500 3.0rem Roboto;
   margin: 0;
   padding: 10px 0;
 }
+/* line 40, interface.less */
 h3 {
   color: #35504e;
   font: 500 2.4rem Roboto;
   margin: 0;
   padding: 10px 0;
 }
+/* line 46, interface.less */
 h4 {
   color: #35504e;
   font: 500 1.8rem Roboto;
   margin: 0;
   padding: 10px 0;
 }
+/* line 52, interface.less */
 h5 {
   color: #35504e;
   font: 500 1.4rem Roboto;
   margin: 0;
   padding: 10px 0;
 }
+/* line 58, interface.less */
 h6 {
   color: #35504e;
   font: 500 1.2rem Roboto;
   margin: 0;
   padding: 10px 0;
 }
+/* line 64, interface.less */
 body,
 html {
   margin: 0;
   padding: 0;
 }
+/* line 69, interface.less */
 html {
   font-size: 62.5% !important;
 }
+/* line 72, interface.less */
 body {
   line-height: 135%;
   font-family: "Roboto", sans-serif;
@@ -63,6 +73,7 @@ body {
   color: #8aa4a2;
   background: #dbefe5;
 }
+/* line 79, interface.less */
 p {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -70,6 +81,7 @@ p {
 }
 /*ИМПОРТ*/
 /*ЭЛЕМЕНТЫ*/
+/* line 89, interface.less */
 .btn {
   box-shadow: 0 3px 0 0 #41b6ad;
   border-radius: 3px;
@@ -86,45 +98,58 @@ p {
   -moz-transition: background-color, color 0.3s ease;
   -webkit-transition: background-color, color 0.3s ease;
 }
+/* line 104, interface.less */
 .btn.small {
   padding: 4px 17px 1px 17px;
 }
+/* line 107, interface.less */
 .btn:hover {
   background: #52c7be;
 }
+/* line 110, interface.less */
 .btn:active {
   background: #41b6ad;
 }
+/* line 114, interface.less */
 .btn.red {
   background: #f85649;
   box-shadow: 0 3px 0 0 #da4134;
 }
+/* line 117, interface.less */
 .btn.red:hover {
   background: #eb5245;
 }
+/* line 120, interface.less */
 .btn.red:active {
   background: #da4134;
 }
+/* line 124, interface.less */
 .btn.yellow {
   background: #fac944;
   box-shadow: 0 3px 0 0 #ffaa3e;
 }
+/* line 127, interface.less */
 .btn.yellow:hover {
   background: #ffbb4f;
 }
+/* line 130, interface.less */
 .btn.yellow:active {
   background: #ffaa3e;
 }
+/* line 134, interface.less */
 .btn.green {
   background: #33b679;
   box-shadow: 0 3px 0 0 #0f9b58;
 }
+/* line 137, interface.less */
 .btn.green:hover {
   background: #20ac69;
 }
+/* line 140, interface.less */
 .btn.green:active {
   background: #0f9b58;
 }
+/* line 144, interface.less */
 .btn.ghost {
   background: none;
   box-shadow: none;
@@ -132,24 +157,29 @@ p {
   color: #35504e;
   padding: 7px 17px 6px 17px;
 }
+/* line 150, interface.less */
 .btn.ghost:hover {
   color: #ffffff;
   background: #577270;
 }
+/* line 154, interface.less */
 .btn.ghost:active {
   color: #ffffff;
   background: #35504e;
 }
+/* line 158, interface.less */
 .btn.ghost.red {
   color: #eb5245;
   border-color: #eb5245;
 }
+/* line 161, interface.less */
 .btn.ghost.red:hover,
 .btn.ghost.red:active {
   color: #ffffff;
   background: #eb5245;
 }
 /*ЧЕКБОКСЫ*/
+/* line 170, interface.less */
 .container.toggle {
   display: inline-block;
   border-radius: 50px;
@@ -163,6 +193,7 @@ p {
   -webkit-transition: background 0.3s ease;
   -moz-transition: background 0.3s ease;
 }
+/* line 182, interface.less */
 .container.toggle .handle {
   position: relative;
   border-radius: 18px;
@@ -174,12 +205,15 @@ p {
   -webkit-transition: left 0.3s ease;
   -moz-transition: left 0.3s ease;
 }
+/* line 193, interface.less */
 .container.toggle.checked {
   background: #4ad0c5;
 }
+/* line 195, interface.less */
 .container.toggle.checked .handle {
   left: 19px;
 }
+/* line 200, interface.less */
 .container.checkbox {
   display: inline-block;
   border-radius: 3px;
@@ -189,9 +223,11 @@ p {
   cursor: pointer;
   background: url('../images/interface/checkbox-sprite.png') center 0 no-repeat;
 }
+/* line 208, interface.less */
 .container.checkbox.checked {
   background-position: center -20px;
 }
+/* line 212, interface.less */
 .container.radio {
   display: inline-block;
   border-radius: 3px;
@@ -201,9 +237,11 @@ p {
   cursor: pointer;
   background: url('../images/interface/radio-sprite.png') center 0 no-repeat;
 }
+/* line 220, interface.less */
 .container.radio.checked {
   background-position: center -20px;
 }
+/* line 225, interface.less */
 input[type="text"],
 textarea,
 input[type="password"] {
@@ -223,32 +261,39 @@ input[type="password"] {
   color: #8aa4a2;
   font: 400 1.2rem Roboto;
 }
+/* line 242, interface.less */
 input[type="text"]:focus,
 textarea:focus,
 input[type="password"]:focus {
   outline: none;
   border-color: #4ad0c5;
 }
+/* line 246, interface.less */
 input[type="text"].error,
 textarea.error,
 input[type="password"].error {
   background-color: #ffd9d9;
 }
+/* line 251, interface.less */
 .field span {
   display: none;
 }
+/* line 254, interface.less */
 .field.required span {
   color: #eb5245;
   display: inline;
 }
+/* line 258, interface.less */
 .field label {
   color: #35504e;
   font-weight: 500;
   margin-bottom: 5px;
 }
+/* line 264, interface.less */
 .input-container {
   position: relative;
 }
+/* line 266, interface.less */
 .input-container .clear {
   width: 10px;
   height: 11px;
@@ -259,33 +304,42 @@ input[type="password"].error {
   z-index: 1;
   background: url('../images/interface/clear-sprite.png') center 0 no-repeat;
 }
+/* line 275, interface.less */
 .input-container .clear:hover {
   background-position: center -11px;
 }
+/* line 278, interface.less */
 .input-container .clear.hidden {
   display: none;
 }
+/* line 283, interface.less */
 textarea {
   resize: none;
 }
+/* line 286, interface.less */
 label {
   display: block;
   margin: 10px 0;
 }
+/* line 290, interface.less */
 select.select2 {
   min-width: 300px;
 }
+/* line 294, interface.less */
 .select2-container *:focus {
   outline: none !important;
 }
+/* line 297, interface.less */
 .select2-container .select2-selection {
   border: solid 1px;
   border-color: #8aa4a2;
   height: 36px !important;
 }
+/* line 301, interface.less */
 .select2-container .select2-selection .select2-selection__rendered {
   line-height: 36px !important;
 }
+/* line 304, interface.less */
 .select2-container .select2-selection .select2-selection__arrow {
   background: url('../images/interface/dropdown-arrow.png') center center no-repeat #8aa4a2;
   width: 60px !important;
@@ -293,18 +347,22 @@ select.select2 {
   top: 0px !important;
   right: 0px !important;
 }
+/* line 310, interface.less */
 .select2-container .select2-selection .select2-selection__arrow b {
   display: none;
 }
+/* line 316, interface.less */
 .dashed {
   border: dashed 1px #b9d4cc;
 }
+/* line 319, interface.less */
 .b-radius {
   border-radius: 4px;
   -moz-border-radius: 4px;
   -o-border-radius: 4px;
   -webkit-border-radius: 4px;
 }
+/* line 325, interface.less */
 .content-block {
   padding: 30px;
   box-sizing: border-box;
@@ -320,24 +378,29 @@ select.select2 {
   background: #ffffff;
   margin-bottom: 3px;
 }
+/* line 340, interface.less */
 .rating-block {
   border-radius: 10px;
   padding: 0 10px;
   border: solid 1px #ffaa3e;
 }
+/* line 344, interface.less */
 .rating-block p {
   margin: 4px auto;
   text-align: center;
 }
+/* line 347, interface.less */
 .rating-block p.value {
   font-weight: 700;
   font-size: 1.8rem;
   color: #8aa4a2;
 }
+/* line 351, interface.less */
 .rating-block p.value .current-value {
   color: #ffaa3e;
   font-weight: bold;
 }
+/* line 357, interface.less */
 .rating-block p.title {
   position: absolute;
   color: #ffaa3e;
@@ -349,17 +412,20 @@ select.select2 {
   width: 100%;
   left: 0;
 }
+/* line 367, interface.less */
 .rating-block p.title span {
   background: #ffffff;
   padding: 0 3px;
   text-transform: uppercase;
 }
+/* line 376, interface.less */
 .raiting-block.value .fa {
   color: #ffaa3e;
   font-size: 2.0rem;
   font-weight: normal;
   margin-right: 3px;
 }
+/* line 386, interface.less */
 .raiting-block.vote .fa {
   color: #35504e;
   font-size: 2.0rem;
@@ -367,18 +433,22 @@ select.select2 {
   margin-right: 3px;
   cursor: pointer;
 }
+/* line 392, interface.less */
 .raiting-block.vote .fa.fa-star {
   color: #ffaa3e;
 }
+/* line 395, interface.less */
 .raiting-block.vote .fa.active {
   color: #ffaa3e;
 }
+/* line 400, interface.less */
 a.dotts {
   display: block;
   text-decoration: none;
   cursor: pointer;
   padding: 5px 0;
 }
+/* line 405, interface.less */
 a.dotts .fa-circle {
   color: #8aa4a2;
   font-size: 0.3rem;
@@ -386,18 +456,22 @@ a.dotts .fa-circle {
   float: left;
   margin-right: 2px;
 }
+/* line 414, interface.less */
 ul.badge-marked li {
   background: url('../images/interface/badge.png') left 2px no-repeat;
   padding-left: 20px;
   margin: 3px 0;
 }
+/* line 422, interface.less */
 .ui-widget-overlay.ui-front {
   background: rgba(0, 0, 0, 0.3);
 }
+/* line 425, interface.less */
 .ui-dialog.ui-widget.ui-widget-content {
   background: #ffffff;
   padding: 10px;
 }
+/* line 428, interface.less */
 .ui-dialog.ui-widget.ui-widget-content .ui-dialog-titlebar.ui-widget-header {
   border: none;
   background: none;
@@ -408,23 +482,28 @@ ul.badge-marked li {
   box-sizing: border-box;
   z-index: 1;
 }
+/* line 437, interface.less */
 .ui-dialog.ui-widget.ui-widget-content .ui-dialog-titlebar.ui-widget-header .ui-dialog-titlebar-close {
   margin-right: .6em;
 }
+/* line 440, interface.less */
 .ui-dialog.ui-widget.ui-widget-content .ui-dialog-titlebar.ui-widget-header .ui-button.ui-widget {
   border: none;
   background: none;
 }
+/* line 447, interface.less */
 .ui-autocomplete.ui-widget {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   background: #fff;
   padding: 5px !important;
 }
+/* line 452, interface.less */
 .ui-autocomplete.ui-widget li.ui-menu-item {
   padding: 5px !important;
   border: solid 1px #fff;
 }
+/* line 455, interface.less */
 .ui-autocomplete.ui-widget li.ui-menu-item.ui-state-focus {
   background: #dbefe5;
   border: solid 1px #fff;
@@ -433,6 +512,7 @@ ul.badge-marked li {
   padding: 5px !important;
   color: #35504e;
 }
+/* line 1, global.less */
 .no-script-layout {
   position: fixed;
   width: 100%;
@@ -440,35 +520,45 @@ ul.badge-marked li {
   background: #dbefe5;
   z-index: 1000;
 }
+/* line 7, global.less */
 .no-script-layout .wrapper {
   text-align: center;
 }
+/* line 9, global.less */
 .no-script-layout .wrapper h1 {
   margin-top: 100px;
 }
+/* line 15, global.less */
 body > .wrapper {
   min-height: 600px;
 }
+/* line 19, global.less */
 .clr {
   clear: both;
 }
+/* line 22, global.less */
 * {
   position: relative;
 }
+/* line 24, global.less */
 *:focus {
   outline: none;
 }
+/* line 28, global.less */
 ul {
   padding: 0;
   margin: 0;
   list-style: none;
 }
+/* line 33, global.less */
 .hidden {
   display: none;
 }
+/* line 36, global.less */
 a {
   color: #35504e;
 }
+/* line 41, global.less */
 header.header {
   width: 100%;
   padding: 10px 30px;
@@ -477,6 +567,7 @@ header.header {
   -moz-box-sizing: border-box;
   overflow: hidden;
 }
+/* line 48, global.less */
 header.header .logo {
   border-radius: 100%;
   -moz-border-radius: 100%;
@@ -487,6 +578,7 @@ header.header .logo {
   height: 40px;
   background: #4ad0c5;
 }
+/* line 58, global.less */
 header.header .title {
   display: block;
   float: left;
@@ -496,12 +588,15 @@ header.header .title {
   margin-top: 13px;
   margin-left: 10px;
 }
+/* line 67, global.less */
 header.header .sign-in {
   float: right;
 }
+/* line 74, global.less */
 header.header .profile-snippet {
   float: right;
 }
+/* line 76, global.less */
 header.header .profile-snippet .photo-container {
   border-radius: 50px;
   -o-border-radius: 50px;
@@ -513,49 +608,60 @@ header.header .profile-snippet .photo-container {
   overflow: hidden;
   border: solid 1px #8aa4a2;
 }
+/* line 86, global.less */
 header.header .profile-snippet .photo-container img {
   display: block;
   width: 100%;
 }
+/* line 91, global.less */
 header.header .profile-snippet .info {
   float: left;
   margin-left: 10px;
   margin-top: 5px;
 }
+/* line 95, global.less */
 header.header .profile-snippet .info .name {
   color: #35504e;
   font: 500 1.4rem Roboto;
 }
+/* line 99, global.less */
 header.header .profile-snippet .info .job {
   color: #4ad0c5;
   font: 400 1.2rem Roboto;
 }
+/* line 104, global.less */
 header.header .profile-snippet .more-container {
   float: left;
   margin-left: 10px;
   margin-top: 10px;
 }
+/* line 108, global.less */
 header.header .profile-snippet .more-container i {
   color: #35504e;
   font-size: 1.8rem;
   cursor: pointer;
 }
+/* line 113, global.less */
 header.header .profile-snippet .more-container .dropdown-menu {
   display: none;
 }
+/* line 119, global.less */
 header.header .profile-notifications {
   float: right;
   margin-right: 10px;
   margin-top: 10px;
 }
+/* line 123, global.less */
 header.header .profile-notifications > div {
   float: left;
   margin: 0 15px;
   cursor: pointer;
 }
+/* line 127, global.less */
 header.header .profile-notifications > div.active i.fa {
   color: #eb5245;
 }
+/* line 130, global.less */
 header.header .profile-notifications > div .count {
   position: absolute;
   border-radius: 50px;
@@ -570,24 +676,29 @@ header.header .profile-notifications > div .count {
   z-index: 1;
   font: 500 1.1rem / 17px Roboto;
 }
+/* line 144, global.less */
 header.header .profile-notifications > div i.fa {
   color: #8aa4a2;
   font-size: 2.0rem;
 }
+/* line 150, global.less */
 header.header .mainmenu {
   float: right;
   margin: 9px 0;
 }
+/* line 153, global.less */
 header.header .mainmenu li {
   float: left;
   text-transform: uppercase;
   font: 500 1.2rem Roboto;
   margin-right: 30px;
 }
+/* line 158, global.less */
 header.header .mainmenu li a {
   color: #35504e;
   text-decoration: none;
 }
+/* line 165, global.less */
 .user-menu-section {
   background: #f8f8f8;
   overflow: hidden;
@@ -597,56 +708,70 @@ header.header .mainmenu li a {
   -moz-box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.1);
 }
+/* line 174, global.less */
 .user-menu-section .wrapper .user-menu-container {
   right: 50%;
   float: right;
 }
+/* line 178, global.less */
 .user-menu-section .wrapper .user-menu {
   left: 50%;
   float: left;
 }
+/* line 181, global.less */
 .user-menu-section .wrapper .user-menu li {
   margin: 0 10px;
   float: left;
 }
+/* line 185, global.less */
 .user-menu-section .wrapper .user-menu a {
   color: #35504e;
   font: 400 1.4rem  Roboto;
   text-decoration: none;
 }
+/* line 189, global.less */
 .user-menu-section .wrapper .user-menu a:hover {
   text-decoration: underline;
 }
+/* line 198, global.less */
 .footer {
   width: 100%;
   margin-top: 20px;
 }
+/* line 201, global.less */
 .footer a {
   text-decoration: none;
   color: #ffffff;
 }
+/* line 205, global.less */
 .footer section.library {
   background: #4ad0c5;
   padding: 10px 0 20px 0;
 }
+/* line 208, global.less */
 .footer section.library .title {
   float: left;
   width: 25%;
 }
+/* line 211, global.less */
 .footer section.library .title h3 {
   color: #ffffff;
 }
+/* line 215, global.less */
 .footer section.library .library-list {
   float: right;
   width: 75%;
   margin-top: 8px;
 }
+/* line 219, global.less */
 .footer section.library .library-list h4 {
   color: #ffffff;
 }
+/* line 222, global.less */
 .footer section.library .library-list .items-container {
   width: 100%;
 }
+/* line 224, global.less */
 .footer section.library .library-list .items-container .item {
   float: left;
   width: 33%;
@@ -654,14 +779,17 @@ header.header .mainmenu li a {
   font: 400 1.6rem Roboto;
   margin: 5px 0;
 }
+/* line 230, global.less */
 .footer section.library .library-list .items-container .item:hover {
   text-decoration: underline;
 }
+/* line 237, global.less */
 .footer section.bottom {
   background: #41b6ad;
   padding: 15px 0;
   overflow: hidden;
 }
+/* line 241, global.less */
 .footer section.bottom p.copyright {
   display: block;
   float: left;
@@ -669,34 +797,42 @@ header.header .mainmenu li a {
   font: 500 1.4rem Roboto;
   margin-left: 30px;
 }
+/* line 248, global.less */
 .footer section.bottom ul.footer-menu {
   float: right;
   margin-top: 13px;
 }
+/* line 251, global.less */
 .footer section.bottom ul.footer-menu li {
   float: left;
   margin-right: 30px;
 }
+/* line 254, global.less */
 .footer section.bottom ul.footer-menu li a {
   font: 400 14px Roboto;
 }
+/* line 256, global.less */
 .footer section.bottom ul.footer-menu li a:hover {
   text-decoration: underline;
 }
+/* line 2, mainpage.less */
 body.page-mainpage .ui-button-icon-primary {
   margin-left: -16px !important;
   margin-top: 0 !important;
 }
+/* line 6, mainpage.less */
 body.page-mainpage .modal#authorization-window,
 body.page-mainpage .modal#registration-window,
 body.page-mainpage .modal#forgot-password-window {
   padding-bottom: 0;
 }
+/* line 9, mainpage.less */
 body.page-mainpage .modal#authorization-window#forgot-password-window .container,
 body.page-mainpage .modal#registration-window#forgot-password-window .container,
 body.page-mainpage .modal#forgot-password-window#forgot-password-window .container {
   width: 500px;
 }
+/* line 11, mainpage.less */
 body.page-mainpage .modal#authorization-window#forgot-password-window .container form,
 body.page-mainpage .modal#registration-window#forgot-password-window .container form,
 body.page-mainpage .modal#forgot-password-window#forgot-password-window .container form {
@@ -704,16 +840,19 @@ body.page-mainpage .modal#forgot-password-window#forgot-password-window .contain
   margin: auto;
   margin-bottom: 20px;
 }
+/* line 15, mainpage.less */
 body.page-mainpage .modal#authorization-window#forgot-password-window .container form input[type="submit"],
 body.page-mainpage .modal#registration-window#forgot-password-window .container form input[type="submit"],
 body.page-mainpage .modal#forgot-password-window#forgot-password-window .container form input[type="submit"] {
   width: 100%;
 }
+/* line 21, mainpage.less */
 body.page-mainpage .modal#authorization-window .container,
 body.page-mainpage .modal#registration-window .container,
 body.page-mainpage .modal#forgot-password-window .container {
   padding-bottom: 60px;
 }
+/* line 23, mainpage.less */
 body.page-mainpage .modal#authorization-window .container h1,
 body.page-mainpage .modal#registration-window .container h1,
 body.page-mainpage .modal#forgot-password-window .container h1 {
@@ -721,6 +860,7 @@ body.page-mainpage .modal#forgot-password-window .container h1 {
   font: 500 2.4rem Roboto;
   margin-bottom: 20px;
 }
+/* line 28, mainpage.less */
 body.page-mainpage .modal#authorization-window .container .left,
 body.page-mainpage .modal#registration-window .container .left,
 body.page-mainpage .modal#forgot-password-window .container .left {
@@ -729,6 +869,7 @@ body.page-mainpage .modal#forgot-password-window .container .left {
   float: left;
   border-right: solid 1px #b9d4cc;
 }
+/* line 33, mainpage.less */
 body.page-mainpage .modal#authorization-window .container .left a.omni-sign-in,
 body.page-mainpage .modal#registration-window .container .left a.omni-sign-in,
 body.page-mainpage .modal#forgot-password-window .container .left a.omni-sign-in {
@@ -747,6 +888,7 @@ body.page-mainpage .modal#forgot-password-window .container .left a.omni-sign-in
   overflow: hidden;
   margin-bottom: 21px;
 }
+/* line 48, mainpage.less */
 body.page-mainpage .modal#authorization-window .container .left a.omni-sign-in i,
 body.page-mainpage .modal#registration-window .container .left a.omni-sign-in i,
 body.page-mainpage .modal#forgot-password-window .container .left a.omni-sign-in i {
@@ -760,6 +902,7 @@ body.page-mainpage .modal#forgot-password-window .container .left a.omni-sign-in
   text-align: center;
   width: 30px;
 }
+/* line 59, mainpage.less */
 body.page-mainpage .modal#authorization-window .container .left a.omni-sign-in span,
 body.page-mainpage .modal#registration-window .container .left a.omni-sign-in span,
 body.page-mainpage .modal#forgot-password-window .container .left a.omni-sign-in span {
@@ -771,27 +914,32 @@ body.page-mainpage .modal#forgot-password-window .container .left a.omni-sign-in
   padding-left: 15px;
   margin-top: 10px;
 }
+/* line 68, mainpage.less */
 body.page-mainpage .modal#authorization-window .container .left a.omni-sign-in#fb,
 body.page-mainpage .modal#registration-window .container .left a.omni-sign-in#fb,
 body.page-mainpage .modal#forgot-password-window .container .left a.omni-sign-in#fb {
   background: #3b5998;
 }
+/* line 71, mainpage.less */
 body.page-mainpage .modal#authorization-window .container .left a.omni-sign-in#vk,
 body.page-mainpage .modal#registration-window .container .left a.omni-sign-in#vk,
 body.page-mainpage .modal#forgot-password-window .container .left a.omni-sign-in#vk {
   background: #4c75a3;
 }
+/* line 74, mainpage.less */
 body.page-mainpage .modal#authorization-window .container .left a.omni-sign-in#ok,
 body.page-mainpage .modal#registration-window .container .left a.omni-sign-in#ok,
 body.page-mainpage .modal#forgot-password-window .container .left a.omni-sign-in#ok {
   background: #fa9616;
   margin-bottom: 0;
 }
+/* line 77, mainpage.less */
 body.page-mainpage .modal#authorization-window .container .left a.omni-sign-in#ok i,
 body.page-mainpage .modal#registration-window .container .left a.omni-sign-in#ok i,
 body.page-mainpage .modal#forgot-password-window .container .left a.omni-sign-in#ok i {
   border-color: #d98314;
 }
+/* line 82, mainpage.less */
 body.page-mainpage .modal#authorization-window .container .left p,
 body.page-mainpage .modal#registration-window .container .left p,
 body.page-mainpage .modal#forgot-password-window .container .left p {
@@ -800,12 +948,14 @@ body.page-mainpage .modal#forgot-password-window .container .left p {
   font-size: 1.2rem;
   line-height: 150%;
 }
+/* line 87, mainpage.less */
 body.page-mainpage .modal#authorization-window .container .left p a,
 body.page-mainpage .modal#registration-window .container .left p a,
 body.page-mainpage .modal#forgot-password-window .container .left p a {
   color: #4ad0c5;
   text-decoration: underline;
 }
+/* line 93, mainpage.less */
 body.page-mainpage .modal#authorization-window .container .right,
 body.page-mainpage .modal#registration-window .container .right,
 body.page-mainpage .modal#forgot-password-window .container .right {
@@ -813,11 +963,13 @@ body.page-mainpage .modal#forgot-password-window .container .right {
   float: right;
   padding-left: 15px;
 }
+/* line 97, mainpage.less */
 body.page-mainpage .modal#authorization-window .container .right .btn,
 body.page-mainpage .modal#registration-window .container .right .btn,
 body.page-mainpage .modal#forgot-password-window .container .right .btn {
   width: 100%;
 }
+/* line 100, mainpage.less */
 body.page-mainpage .modal#authorization-window .container .right p,
 body.page-mainpage .modal#registration-window .container .right p,
 body.page-mainpage .modal#forgot-password-window .container .right p {
@@ -825,12 +977,14 @@ body.page-mainpage .modal#forgot-password-window .container .right p {
   font: 400 1.2rem Roboto;
   text-align: center;
 }
+/* line 104, mainpage.less */
 body.page-mainpage .modal#authorization-window .container .right p a,
 body.page-mainpage .modal#registration-window .container .right p a,
 body.page-mainpage .modal#forgot-password-window .container .right p a {
   color: #688280;
   font-weight: bold;
 }
+/* line 110, mainpage.less */
 body.page-mainpage .modal#authorization-window .container .links,
 body.page-mainpage .modal#registration-window .container .links,
 body.page-mainpage .modal#forgot-password-window .container .links {
@@ -842,6 +996,7 @@ body.page-mainpage .modal#forgot-password-window .container .links {
   border-top: #b9d4cc 1px solid;
   padding-top: 10px;
 }
+/* line 119, mainpage.less */
 body.page-mainpage .modal#authorization-window .container a.sign-up,
 body.page-mainpage .modal#registration-window .container a.sign-up,
 body.page-mainpage .modal#forgot-password-window .container a.sign-up,
@@ -857,6 +1012,7 @@ body.page-mainpage .modal#forgot-password-window .container a.sign-in {
   margin-top: 10px;
   line-height: 26px;
 }
+/* line 125, mainpage.less */
 body.page-mainpage .modal#authorization-window .container a.sign-up span,
 body.page-mainpage .modal#registration-window .container a.sign-up span,
 body.page-mainpage .modal#forgot-password-window .container a.sign-up span,
@@ -869,6 +1025,7 @@ body.page-mainpage .modal#forgot-password-window .container a.sign-in span {
   color: #4ad0c5;
   font-weight: bold;
 }
+/* line 129, mainpage.less */
 body.page-mainpage .modal#authorization-window .container a.sign-up.forgot-password,
 body.page-mainpage .modal#registration-window .container a.sign-up.forgot-password,
 body.page-mainpage .modal#forgot-password-window .container a.sign-up.forgot-password,
@@ -880,84 +1037,105 @@ body.page-mainpage .modal#registration-window .container a.sign-in.forgot-passwo
 body.page-mainpage .modal#forgot-password-window .container a.sign-in.forgot-password {
   font-size: 1.2rem;
 }
+/* line 1, page_profile.less */
 .wrapper {
   margin: auto;
   width: 960px;
 }
+/* line 6, page_profile.less */
 body.page-profile .resume-section {
   overflow: hidden;
 }
+/* line 8, page_profile.less */
 body.page-profile .resume-section .profile {
   float: left;
   width: 57%;
   margin-top: 20px;
 }
+/* line 12, page_profile.less */
 body.page-profile .resume-section .profile .left {
   float: left;
   width: 28%;
   margin-top: 10px;
 }
+/* line 17, page_profile.less */
 body.page-profile .resume-section .profile .left .photo img {
   display: block;
 }
+/* line 21, page_profile.less */
 body.page-profile .resume-section .profile .left .place {
   margin-top: 17px;
   text-align: center;
   color: #8aa4a2;
   font: 400 1.2rem Roboto;
 }
+/* line 26, page_profile.less */
 body.page-profile .resume-section .profile .left .place .fa {
   color: #4ad0c5;
 }
+/* line 32, page_profile.less */
 body.page-profile .resume-section .profile .left .expirience {
   text-align: center;
   margin-top: 13px;
 }
+/* line 35, page_profile.less */
 body.page-profile .resume-section .profile .left .expirience .fa {
   display: block;
   width: 100%;
   font-size: 18px;
 }
+/* line 40, page_profile.less */
 body.page-profile .resume-section .profile .left .expirience p {
   font: 400 1.4rem Roboto;
 }
+/* line 42, page_profile.less */
 body.page-profile .resume-section .profile .left .expirience p .value {
   color: #35504e;
   font-weight: 700;
 }
+/* line 49, page_profile.less */
 body.page-profile .resume-section .profile .right {
   float: right;
   width: 68%;
   overflow: hidden;
 }
+/* line 53, page_profile.less */
 body.page-profile .resume-section .profile .right header {
   overflow: hidden;
 }
+/* line 55, page_profile.less */
 body.page-profile .resume-section .profile .right header .name {
   color: #35504e;
   font: 700 1.8rem Roboto;
   float: left;
 }
+/* line 59, page_profile.less */
 body.page-profile .resume-section .profile .right header .name .lastname {
   text-transform: uppercase;
 }
+/* line 62, page_profile.less */
 body.page-profile .resume-section .profile .right header .name .firstname {
   text-transform: none;
 }
+/* line 65, page_profile.less */
 body.page-profile .resume-section .profile .right header .name .job {
   color: #4ad0c5;
   font: 500 1.4rem Roboto;
   margin-top: 5px;
 }
+/* line 70, page_profile.less */
 body.page-profile .resume-section .profile .right header .name p {
   margin: 0;
 }
+/* line 74, page_profile.less */
 body.page-profile .resume-section .profile .right header .toolbar {
   float: right;
 }
+/* line 76, page_profile.less */
 body.page-profile .resume-section .profile .right header .toolbar .rating-block {
   float: right;
 }
+/* line 79, page_profile.less */
 body.page-profile .resume-section .profile .right header .toolbar a.envelope {
   float: right;
   color: #4ad0c5;
@@ -965,45 +1143,56 @@ body.page-profile .resume-section .profile .right header .toolbar a.envelope {
   margin-top: 6px;
   margin-right: 15px;
 }
+/* line 85, page_profile.less */
 body.page-profile .resume-section .profile .right header .toolbar a.envelope .fa {
   font-size: 2.0rem;
 }
+/* line 89, page_profile.less */
 body.page-profile .resume-section .profile .right header .toolbar .profile-menu {
   float: right;
   margin-top: 9px;
   margin-right: 15px;
 }
+/* line 101, page_profile.less */
 body.page-profile .resume-section .profile .right .contacts h5 {
   padding-bottom: 0;
 }
+/* line 104, page_profile.less */
 body.page-profile .resume-section .profile .right .contacts p {
   margin: 2px 0;
   font-weight: 500;
 }
+/* line 107, page_profile.less */
 body.page-profile .resume-section .profile .right .contacts p span.value {
   color: #4ad0c5;
 }
+/* line 113, page_profile.less */
 body.page-profile .resume-section .profile .right .introtext a.readmore {
   color: #4ad0c5;
   font: italic 1.4rem Roboto;
 }
+/* line 120, page_profile.less */
 body.page-profile .resume-section .price {
   float: right;
   width: 41%;
   margin-top: 7px;
 }
+/* line 127, page_profile.less */
 body.page-profile .resume-section .price .content-block table {
   font: 500 1.4rem Roboto;
   width: 100%;
 }
+/* line 134, page_profile.less */
 body.page-profile .resume-section .price .content-block table tbody tr td.value {
   text-align: right;
 }
+/* line 142, page_profile.less */
 body.page-profile .resume-section .sign-up {
   float: right;
   width: 41%;
   margin-top: 10px;
 }
+/* line 146, page_profile.less */
 body.page-profile .resume-section .sign-up .btn {
   padding: 17px 0;
   text-align: center;
@@ -1012,28 +1201,34 @@ body.page-profile .resume-section .sign-up .btn {
   font: 700 1.8rem Roboto;
   text-shadow: 1px 1px 0 #da8820;
 }
+/* line 157, page_profile.less */
 body.page-profile .partners-section .content-block {
   overflow: hidden;
 }
+/* line 159, page_profile.less */
 body.page-profile .partners-section .content-block .partner {
   float: left;
   width: 31.7%;
   margin-left: 2%;
   min-height: 120px;
 }
+/* line 164, page_profile.less */
 body.page-profile .partners-section .content-block .partner:first-child {
   margin-left: 0;
 }
+/* line 173, page_profile.less */
 body.page-profile .information-section .reviews {
   float: left;
   width: 57%;
 }
+/* line 177, page_profile.less */
 body.page-profile .information-section .reviews .content-block .review {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   padding: 10px 20px 30px 20px;
   margin-bottom: 60px;
 }
+/* line 182, page_profile.less */
 body.page-profile .information-section .reviews .content-block .review .quote-arrow {
   position: absolute;
   width: 43px;
@@ -1042,10 +1237,12 @@ body.page-profile .information-section .reviews .content-block .review .quote-ar
   bottom: -25px;
   left: 60px;
 }
+/* line 195, page_profile.less */
 body.page-profile .information-section .reviews .content-block .review .author {
   overflow: hidden;
   margin-top: 25px;
 }
+/* line 198, page_profile.less */
 body.page-profile .information-section .reviews .content-block .review .author .photo {
   border-radius: 50px;
   -moz-border-radius: 50px;
@@ -1056,38 +1253,46 @@ body.page-profile .information-section .reviews .content-block .review .author .
   height: 50px;
   float: left;
 }
+/* line 207, page_profile.less */
 body.page-profile .information-section .reviews .content-block .review .author .photo img {
   display: block;
   min-width: 100%;
   min-height: 100%;
 }
+/* line 213, page_profile.less */
 body.page-profile .information-section .reviews .content-block .review .author .text {
   overflow: hidden;
 }
+/* line 215, page_profile.less */
 body.page-profile .information-section .reviews .content-block .review .author .text p {
   margin-left: 10px;
   font-size: 1.2rem;
 }
+/* line 218, page_profile.less */
 body.page-profile .information-section .reviews .content-block .review .author .text p .author-name,
 body.page-profile .information-section .reviews .content-block .review .author .text p .user-name {
   color: #4ad0c5;
   font: 700 1.2rem Roboto;
 }
+/* line 225, page_profile.less */
 body.page-profile .information-section .reviews .content-block .review .toolbar {
   position: absolute;
   right: 0;
   bottom: 0;
 }
+/* line 229, page_profile.less */
 body.page-profile .information-section .reviews .content-block .review .toolbar .review-menu {
   float: left;
   margin-right: 20px;
   margin-top: 11px;
 }
+/* line 234, page_profile.less */
 body.page-profile .information-section .reviews .content-block .review .toolbar .review-date {
   float: left;
   margin-right: 20px;
   font-size: 1.2rem;
 }
+/* line 239, page_profile.less */
 body.page-profile .information-section .reviews .content-block .review .toolbar .readmore {
   border-top-left-radius: 5px;
   -o-border-top-left-radius: 5px;
@@ -1102,60 +1307,74 @@ body.page-profile .information-section .reviews .content-block .review .toolbar 
   border-top: dashed 1px #b9d4cc;
   padding: 8px 20px;
 }
+/* line 252, page_profile.less */
 body.page-profile .information-section .reviews .content-block .review .toolbar .readmore:hover {
   text-decoration: underline;
 }
+/* line 258, page_profile.less */
 body.page-profile .information-section .reviews .content-block #load-more-reviews {
   width: 200px;
   text-align: center;
   margin: auto;
   display: block;
 }
+/* line 269, page_profile.less */
 body.page-profile .information-section .content-block form {
   overflow: hidden;
 }
+/* line 272, page_profile.less */
 body.page-profile .information-section .content-block form .field textarea {
   height: 98px;
 }
+/* line 275, page_profile.less */
 body.page-profile .information-section .content-block form .field label {
   color: #35504e;
   font: 500 1.4rem Roboto;
   margin-bottom: 0;
 }
+/* line 280, page_profile.less */
 body.page-profile .information-section .content-block form .field .raiting-block.vote {
   float: left;
   margin-top: 6px;
 }
+/* line 285, page_profile.less */
 body.page-profile .information-section .content-block form .btn {
   display: block;
   float: right;
 }
+/* line 291, page_profile.less */
 body.page-profile .information-section .information {
   float: right;
   width: 41%;
 }
+/* line 301, page_profile.less */
 body.page-profile .information-section .information .content-block.education-list .item,
 body.page-profile .information-section .information .content-block.proffessions-list .item {
   margin-bottom: 20px;
 }
+/* line 303, page_profile.less */
 body.page-profile .information-section .information .content-block.education-list .item .scan,
 body.page-profile .information-section .information .content-block.proffessions-list .item .scan {
   float: left;
   width: 50px;
   margin-right: 15px;
 }
+/* line 307, page_profile.less */
 body.page-profile .information-section .information .content-block.education-list .item .scan img,
 body.page-profile .information-section .information .content-block.proffessions-list .item .scan img {
   display: block;
   width: 100%;
 }
+/* line 312, page_profile.less */
 body.page-profile .information-section .information .content-block.education-list .item p,
 body.page-profile .information-section .information .content-block.proffessions-list .item p {
   overflow: hidden;
 }
+/* line 318, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .item {
   margin-bottom: 30px;
 }
+/* line 322, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .author .photo {
   float: left;
   overflow: hidden;
@@ -1167,38 +1386,48 @@ body.page-profile .information-section .information .content-block.answers-list 
   height: 50px;
   margin-right: 15px;
 }
+/* line 332, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .author .photo img {
   display: block;
 }
+/* line 336, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .author .about {
   overflow: hidden;
 }
+/* line 338, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .author .about p {
   margin: 0;
 }
+/* line 340, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .author .about p.name {
   font-size: 1.2rem;
   color: #4ad0c5;
   font-weight: 700;
 }
+/* line 345, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .author .about p.job {
   font-size: 1.2rem;
   font-weight: 700;
 }
+/* line 349, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .author .about p.category {
   font-size: 1.2rem;
   font-weight: 700;
   margin-top: 30px;
 }
+/* line 353, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .author .about p.category .value {
   color: #35504e;
 }
+/* line 360, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .item > h5 {
   padding-bottom: 0;
 }
+/* line 364, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .content p {
   margin: 5px 0 0 0;
 }
+/* line 367, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .content .fader {
   position: absolute;
   width: 100%;
@@ -1211,36 +1440,45 @@ body.page-profile .information-section .information .content-block.answers-list 
   background: linear-gradient(0deg, #fefefe 0%, #fefefe 16%, rgba(255, 255, 255, 0) 100%);
   z-index: 1;
 }
+/* line 380, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list a.readmore {
   color: #4ad0c5;
   font: 400 1.2rem Roboto;
   text-decoration: none;
 }
+/* line 384, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list a.readmore:hover {
   text-decoration: underline;
 }
+/* line 388, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list a#load-all-answers {
   display: block;
   width: 80%;
   margin: auto;
 }
+/* line 396, page_profile.less */
 body.page-profile .information-section .ask-question {
   margin-top: 20px;
   overflow: hidden;
 }
+/* line 399, page_profile.less */
 body.page-profile .information-section .ask-question .ask-text {
   float: left;
 }
+/* line 401, page_profile.less */
 body.page-profile .information-section .ask-question .ask-text h3 {
   padding: 0;
 }
+/* line 405, page_profile.less */
 body.page-profile .information-section .ask-question a {
   display: block;
   float: right;
 }
+/* line 413, page_profile.less */
 body.page-profile .same-users-section .content-block.same-users-list {
   overflow: hidden;
 }
+/* line 415, page_profile.less */
 body.page-profile .same-users-section .content-block.same-users-list .same-user {
   overflow: hidden;
   float: left;
@@ -1248,58 +1486,72 @@ body.page-profile .same-users-section .content-block.same-users-list .same-user 
   margin-left: 3%;
   padding-bottom: 20px;
 }
+/* line 420, page_profile.less */
 body.page-profile .same-users-section .content-block.same-users-list .same-user:first-child {
   margin-left: 0;
 }
+/* line 424, page_profile.less */
 body.page-profile .same-users-section .content-block.same-users-list .same-user .photo {
   width: 100%;
   overflow: hidden;
 }
+/* line 427, page_profile.less */
 body.page-profile .same-users-section .content-block.same-users-list .same-user .photo img {
   width: 100%;
 }
+/* line 431, page_profile.less */
 body.page-profile .same-users-section .content-block.same-users-list .same-user p {
   text-align: center;
 }
+/* line 434, page_profile.less */
 body.page-profile .same-users-section .content-block.same-users-list .same-user p.lastname {
   margin: 0;
   margin-top: 5px;
   color: #4ad0c5;
   font: 500 1.4rem Roboto;
 }
+/* line 440, page_profile.less */
 body.page-profile .same-users-section .content-block.same-users-list .same-user p.firstname {
   margin: 0;
   color: #4ad0c5;
   font: 700 1.2rem Roboto;
 }
+/* line 446, page_profile.less */
 body.page-profile .same-users-section .content-block.same-users-list .same-user .rating-block {
   width: 60px;
   margin: 10px auto 0 auto;
 }
+/* line 2, page_profile_settings.less */
 body.page-profile-settings section.content {
   float: left;
   width: 62%;
 }
+/* line 6, page_profile_settings.less */
 body.page-profile-settings aside.additional-menu {
   float: left;
   margin-left: 2%;
   width: 36%;
 }
+/* line 11, page_profile_settings.less */
 body.page-profile-settings aside.additional-menu ul li {
   margin: 3px 0;
 }
+/* line 13, page_profile_settings.less */
 body.page-profile-settings aside.additional-menu ul li a {
   color: #8aa4a2;
   font: 500 1.4rem Roboto;
   text-decoration: none;
 }
+/* line 17, page_profile_settings.less */
 body.page-profile-settings aside.additional-menu ul li a:hover {
   text-decoration: underline;
 }
+/* line 21, page_profile_settings.less */
 body.page-profile-settings aside.additional-menu ul li.active a {
   font-weight: bold;
   color: #35504e;
 }
+/* line 32, page_profile_settings.less */
 body.page-profile-settings.common section.content .upload-photo form .photo-container {
   overflow: hidden;
   float: left;
@@ -1311,32 +1563,40 @@ body.page-profile-settings.common section.content .upload-photo form .photo-cont
   height: 150px;
   margin-right: 15px;
 }
+/* line 42, page_profile_settings.less */
 body.page-profile-settings.common section.content .upload-photo form .photo-container img {
   display: block;
   width: 100%;
   height: 100%;
 }
+/* line 50, page_profile_settings.less */
 body.page-profile-settings.common section.content .control {
   overflow: hidden;
 }
+/* line 52, page_profile_settings.less */
 body.page-profile-settings.common section.content .control input {
   margin-bottom: 10px;
 }
+/* line 55, page_profile_settings.less */
 body.page-profile-settings.common section.content .control p {
   color: #8aa4a2;
   font: 400 1.2rem Roboto;
 }
+/* line 60, page_profile_settings.less */
 body.page-profile-settings.common section.content form#profile-settings-form {
   margin-top: 20px;
 }
+/* line 62, page_profile_settings.less */
 body.page-profile-settings.common section.content form#profile-settings-form label {
   color: #35504e;
   font: 500 1.4rem Roboto;
   margin-bottom: 5px;
 }
+/* line 67, page_profile_settings.less */
 body.page-profile-settings.common section.content form#profile-settings-form input {
   margin-bottom: 5px;
 }
+/* line 71, page_profile_settings.less */
 body.page-profile-settings.common section.content form#profile-settings-form .field.firstname,
 body.page-profile-settings.common section.content form#profile-settings-form .field.lastname,
 body.page-profile-settings.common section.content form#profile-settings-form .field.middlename,
@@ -1346,6 +1606,7 @@ body.page-profile-settings.common section.content form#profile-settings-form .fi
   width: 48%;
   margin-right: 4%;
 }
+/* line 75, page_profile_settings.less */
 body.page-profile-settings.common section.content form#profile-settings-form .field.firstname.lastname,
 body.page-profile-settings.common section.content form#profile-settings-form .field.lastname.lastname,
 body.page-profile-settings.common section.content form#profile-settings-form .field.middlename.lastname,
@@ -1358,6 +1619,7 @@ body.page-profile-settings.common section.content form#profile-settings-form .fi
 body.page-profile-settings.common section.content form#profile-settings-form .field.country.city {
   margin-right: 0;
 }
+/* line 78, page_profile_settings.less */
 body.page-profile-settings.common section.content form#profile-settings-form .field.firstname .select2-container,
 body.page-profile-settings.common section.content form#profile-settings-form .field.lastname .select2-container,
 body.page-profile-settings.common section.content form#profile-settings-form .field.middlename .select2-container,
@@ -1366,26 +1628,32 @@ body.page-profile-settings.common section.content form#profile-settings-form .fi
   width: 100% !important;
   margin-bottom: 5px;
 }
+/* line 83, page_profile_settings.less */
 body.page-profile-settings.common section.content form#profile-settings-form .field textarea {
   width: 100%;
   height: 100px;
   margin-bottom: 40px;
 }
+/* line 89, page_profile_settings.less */
 body.page-profile-settings.common section.content form#profile-settings-form input[type="submit"] {
   margin-right: 20px;
 }
+/* line 97, page_profile_settings.less */
 body.page-profile-settings.security form .field {
   float: left;
   width: 48%;
   margin-right: 4%;
 }
+/* line 101, page_profile_settings.less */
 body.page-profile-settings.security form .field.confirm-password {
   margin-right: 0;
 }
+/* line 105, page_profile_settings.less */
 body.page-profile-settings.security form input[type="submit"] {
   margin-right: 20px;
   margin-top: 30px;
 }
+/* line 114, page_profile_settings.less */
 body.page-profile-settings.about-me form .field.upload .preview {
   float: left;
   width: 80px;
@@ -1396,17 +1664,21 @@ body.page-profile-settings.about-me form .field.upload .preview {
   -webkit-border-radius: 4px;
   overflow: hidden;
 }
+/* line 123, page_profile_settings.less */
 body.page-profile-settings.about-me form .field.upload .preview img {
   display: block;
   width: 100%;
 }
+/* line 128, page_profile_settings.less */
 body.page-profile-settings.about-me form .field.upload .buttons {
   float: left;
   width: 38%;
 }
+/* line 131, page_profile_settings.less */
 body.page-profile-settings.about-me form .field.upload .buttons .btn {
   margin-bottom: 10px;
 }
+/* line 135, page_profile_settings.less */
 body.page-profile-settings.about-me form .field.upload p {
   display: block;
   overflow: hidden;
@@ -1415,6 +1687,7 @@ body.page-profile-settings.about-me form .field.upload p {
   margin-top: 10px;
   top: 7px;
 }
+/* line 144, page_profile_settings.less */
 body.page-profile-settings.about-me form a.add-document-button {
   margin-top: 15px;
   text-align: center;
@@ -1427,41 +1700,51 @@ body.page-profile-settings.about-me form a.add-document-button {
   text-decoration: none;
   margin-bottom: 30px;
 }
+/* line 155, page_profile_settings.less */
 body.page-profile-settings.about-me form a.add-document-button:hover {
   background: #d8e6e0;
   color: #35504e;
 }
+/* line 160, page_profile_settings.less */
 body.page-profile-settings.about-me form .select2-container {
   width: 40% !important;
   margin-right: 4%;
 }
+/* line 165, page_profile_settings.less */
 body.page-profile-settings.about-me form section.specialization .field {
   float: left;
   width: 48%;
   margin: 5px 0;
 }
+/* line 169, page_profile_settings.less */
 body.page-profile-settings.about-me form section.specialization .field:nth-child(even) {
   margin-right: 0;
 }
+/* line 172, page_profile_settings.less */
 body.page-profile-settings.about-me form section.specialization .field .checkbox {
   float: left;
   margin-right: 10px;
 }
+/* line 175, page_profile_settings.less */
 body.page-profile-settings.about-me form section.specialization .field .checkbox.checked + label {
   color: #4ad0c5;
 }
+/* line 179, page_profile_settings.less */
 body.page-profile-settings.about-me form section.specialization .field label {
   display: block;
   overflow: hidden;
   margin: 2px 0;
   font-size: 500;
 }
+/* line 186, page_profile_settings.less */
 body.page-profile-settings.about-me form section.specialization input[type="text"] {
   margin-top: 20px;
 }
+/* line 192, page_profile_settings.less */
 body.page-profile-settings.about-me form section.education .university .input-container {
   overflow: hidden;
 }
+/* line 195, page_profile_settings.less */
 body.page-profile-settings.about-me form section.education .university a#remove-university {
   display: block;
   float: right;
@@ -1477,18 +1760,23 @@ body.page-profile-settings.about-me form section.education .university a#remove-
   margin-left: 15px;
   margin-top: 7px;
 }
+/* line 209, page_profile_settings.less */
 body.page-profile-settings.about-me form section.education .university a#remove-university i {
   color: #8aa4a2;
 }
+/* line 212, page_profile_settings.less */
 body.page-profile-settings.about-me form section.education .university a#remove-university:hover {
   border-color: #35504e;
 }
+/* line 214, page_profile_settings.less */
 body.page-profile-settings.about-me form section.education .university a#remove-university:hover i {
   color: #35504e;
 }
+/* line 223, page_profile_settings.less */
 body.page-profile-settings.about-me form section.professional .certificate .input-container {
   overflow: hidden;
 }
+/* line 226, page_profile_settings.less */
 body.page-profile-settings.about-me form section.professional .certificate a#remove-certificate {
   display: block;
   float: right;
@@ -1504,37 +1792,47 @@ body.page-profile-settings.about-me form section.professional .certificate a#rem
   margin-left: 15px;
   margin-top: 7px;
 }
+/* line 240, page_profile_settings.less */
 body.page-profile-settings.about-me form section.professional .certificate a#remove-certificate i {
   color: #8aa4a2;
 }
+/* line 243, page_profile_settings.less */
 body.page-profile-settings.about-me form section.professional .certificate a#remove-certificate:hover {
   border-color: #35504e;
 }
+/* line 245, page_profile_settings.less */
 body.page-profile-settings.about-me form section.professional .certificate a#remove-certificate:hover i {
   color: #35504e;
 }
+/* line 252, page_profile_settings.less */
 body.page-profile-settings.about-me form input[type="submit"] {
   margin-right: 20px;
   margin-top: 30px;
 }
+/* line 260, page_profile_settings.less */
 body.page-profile-settings.contacts form .field {
   float: left;
   width: 48%;
   margin-right: 4%;
 }
+/* line 264, page_profile_settings.less */
 body.page-profile-settings.contacts form .field.phone {
   margin-right: 0;
 }
+/* line 268, page_profile_settings.less */
 body.page-profile-settings.contacts form input[type="submit"] {
   margin-right: 20px;
   margin-top: 30px;
 }
+/* line 275, page_profile_settings.less */
 body.page-profile-settings.consults .prices {
   margin-bottom: 20px;
 }
+/* line 277, page_profile_settings.less */
 body.page-profile-settings.consults .prices .item {
   margin-bottom: 0px;
 }
+/* line 280, page_profile_settings.less */
 body.page-profile-settings.consults .prices .item label.name {
   text-transform: uppercase;
   font-size: 1.4rem;
@@ -1542,46 +1840,56 @@ body.page-profile-settings.consults .prices .item label.name {
   display: block;
   float: left;
 }
+/* line 287, page_profile_settings.less */
 body.page-profile-settings.consults .prices .item .toggle.container {
   margin-top: 7px;
   margin-left: 15px;
   float: left;
 }
+/* line 291, page_profile_settings.less */
 body.page-profile-settings.consults .prices .item .toggle.container + p:after {
   content: 'активировать';
 }
+/* line 294, page_profile_settings.less */
 body.page-profile-settings.consults .prices .item .toggle.container.checked + p:after {
   content: 'активно';
   color: #4ad0c5;
 }
+/* line 299, page_profile_settings.less */
 body.page-profile-settings.consults .prices .item p {
   display: block;
   float: left;
   margin-left: 10px;
   font-size: 1.2rem;
 }
+/* line 305, page_profile_settings.less */
 body.page-profile-settings.consults .prices .item .price {
   height: 0;
   transition: all 0.2s ease;
   overflow: hidden;
 }
+/* line 309, page_profile_settings.less */
 body.page-profile-settings.consults .prices .item .price input {
   width: 120px;
   display: inline-block;
   margin-right: 10px;
 }
+/* line 316, page_profile_settings.less */
 body.page-profile-settings.consults .prices .item.active .price {
   height: 50px;
 }
+/* line 322, page_profile_settings.less */
 body.page-profile-settings.consults .prices .pay-notice .date {
   color: #35504e;
   font-weight: bold;
   margin-bottom: 15px;
 }
+/* line 330, page_profile_settings.less */
 body.page-profile-settings.consults .places .item {
   overflow: hidden;
   margin-bottom: 8px;
 }
+/* line 333, page_profile_settings.less */
 body.page-profile-settings.consults .places .item a.remove-place {
   border-radius: 13px;
   -o-border-radius: 13px;
@@ -1597,26 +1905,33 @@ body.page-profile-settings.consults .places .item a.remove-place {
   margin-right: 8px;
   top: 2px;
 }
+/* line 347, page_profile_settings.less */
 body.page-profile-settings.consults .places .item a.remove-place i {
   color: #f85649;
   font-size: 1.1rem;
 }
+/* line 352, page_profile_settings.less */
 body.page-profile-settings.consults .places .item span.address {
   margin-right: 20px;
 }
+/* line 358, page_profile_settings.less */
 body.page-profile-settings.consults .places .item .radio.container {
   top: 4px;
   margin-right: 4px;
 }
+/* line 362, page_profile_settings.less */
 body.page-profile-settings.consults .places .item label {
   display: inline;
 }
+/* line 366, page_profile_settings.less */
 body.page-profile-settings.consults .places input.plus {
   margin: 20px 0 30px 0;
 }
+/* line 370, page_profile_settings.less */
 body.page-profile-settings.consults input[type="submit"] {
   margin-right: 20px;
 }
+/* line 1, cheat-sheet.less */
 .wrapper {
   position: relative;
   width: 90%;
@@ -1624,12 +1939,15 @@ body.page-profile-settings.consults input[type="submit"] {
   overflow: hidden;
   max-width: 960px;
 }
+/* line 7, cheat-sheet.less */
 .wrapper > section {
   margin-bottom: 30px;
 }
+/* line 9, cheat-sheet.less */
 .wrapper > section.colors {
   overflow: hidden;
 }
+/* line 11, cheat-sheet.less */
 .wrapper > section.colors > div {
   position: relative;
   float: left;
@@ -1637,6 +1955,7 @@ body.page-profile-settings.consults input[type="submit"] {
   margin-right: 1%;
   border: solid 1px #ccc;
 }
+/* line 18, cheat-sheet.less */
 .wrapper > section.colors .color {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1645,76 +1964,95 @@ body.page-profile-settings.consults input[type="submit"] {
   float: left;
   width: 33.333%;
 }
+/* line 25, cheat-sheet.less */
 .wrapper > section.colors .color#sky {
   background: #4ad0c5;
   color: #179d92;
 }
+/* line 26, cheat-sheet.less */
 .wrapper > section.colors .color#sea {
   background: #35504e;
   color: #688381;
 }
+/* line 27, cheat-sheet.less */
 .wrapper > section.colors .color#blue_light {
   background: #dbefe5;
   color: #a8bcb2;
 }
+/* line 28, cheat-sheet.less */
 .wrapper > section.colors .color#sky_dark {
   background: #41b6ad;
   color: #0e837a;
 }
+/* line 29, cheat-sheet.less */
 .wrapper > section.colors .color#sea_light {
   background: #8aa4a2;
   color: #57716f;
 }
+/* line 30, cheat-sheet.less */
 .wrapper > section.colors .color#white {
   background: #ffffff;
   color: #aaaaaa;
 }
+/* line 31, cheat-sheet.less */
 .wrapper > section.colors .color#green_light {
   background: #33b679;
   color: #008346;
 }
+/* line 32, cheat-sheet.less */
 .wrapper > section.colors .color#red_light {
   background: #f85649;
   color: #c52316;
 }
+/* line 33, cheat-sheet.less */
 .wrapper > section.colors .color#yellow {
   background: #fac944;
   color: #c79611;
 }
+/* line 34, cheat-sheet.less */
 .wrapper > section.colors .color#green {
   background: #0f9b58;
   color: #006825;
 }
+/* line 35, cheat-sheet.less */
 .wrapper > section.colors .color#red {
   background: #eb5245;
   color: #b81f12;
 }
+/* line 36, cheat-sheet.less */
 .wrapper > section.colors .color#yellow_dark {
   background: #ffaa3e;
   color: #aa5500;
 }
+/* line 40, cheat-sheet.less */
 .wrapper > section.elements .buttons {
   overflow: hidden;
 }
+/* line 42, cheat-sheet.less */
 .wrapper > section.elements .buttons .item {
   position: relative;
   margin-right: 2%;
   float: left;
 }
+/* line 48, cheat-sheet.less */
 .wrapper > section.elements .checkboxes {
   overflow: hidden;
 }
+/* line 50, cheat-sheet.less */
 .wrapper > section.elements .checkboxes .item {
   position: relative;
   margin-right: 2%;
   float: left;
 }
+/* line 58, cheat-sheet.less */
 .wrapper > section.forms .item {
   width: 50%;
 }
+/* line 62, cheat-sheet.less */
 .wrapper > section select {
   width: 100%;
 }
+/* line 1, module_calendar.less */
 .calendar,
 .calendars .months .month {
   border-radius: 6px;
@@ -1725,10 +2063,12 @@ body.page-profile-settings.consults input[type="submit"] {
   width: 300px;
   margin: 10px;
 }
+/* line 9, module_calendar.less */
 .calendar *,
 .calendars .months .month * {
   position: relative;
 }
+/* line 12, module_calendar.less */
 .calendar header,
 .calendars .months .month header {
   height: 30px;
@@ -1740,28 +2080,34 @@ body.page-profile-settings.consults input[type="submit"] {
   border: solid 1px #dbefe5;
   font-weight: 500;
 }
+/* line 21, module_calendar.less */
 .calendar header *,
 .calendars .months .month header * {
   line-height: 30px;
 }
+/* line 24, module_calendar.less */
 .calendar header a,
 .calendars .months .month header a {
   color: #fff;
 }
+/* line 27, module_calendar.less */
 .calendar header i,
 .calendars .months .month header i {
   display: block;
 }
+/* line 29, module_calendar.less */
 .calendar header i.fa-angle-double-left,
 .calendars .months .month header i.fa-angle-double-left {
   float: left;
   margin-left: 15px;
 }
+/* line 33, module_calendar.less */
 .calendar header i.fa-angle-double-right,
 .calendars .months .month header i.fa-angle-double-right {
   float: right;
   margin-right: 15px;
 }
+/* line 38, module_calendar.less */
 .calendar header p.month,
 .calendars .months .month header p.month {
   overflow: hidden;
@@ -1769,6 +2115,7 @@ body.page-profile-settings.consults input[type="submit"] {
   text-align: center;
   margin: 0;
 }
+/* line 45, module_calendar.less */
 .calendar .container,
 .calendars .months .month .container {
   box-sizing: border-box;
@@ -1779,6 +2126,7 @@ body.page-profile-settings.consults input[type="submit"] {
   -o-border-radius: 0 0 6px 6px;
   -webkit-border-radius: 0 0 6px 6px;
 }
+/* line 53, module_calendar.less */
 .calendar .container section.day-of-weeks,
 .calendars .months .month .container section.day-of-weeks {
   overflow: hidden;
@@ -1786,6 +2134,7 @@ body.page-profile-settings.consults input[type="submit"] {
   margin-top: 2px;
   margin-bottom: 2px;
 }
+/* line 58, module_calendar.less */
 .calendar .container section.day-of-weeks .item,
 .calendars .months .month .container section.day-of-weeks .item {
   box-sizing: border-box;
@@ -1802,10 +2151,12 @@ body.page-profile-settings.consults input[type="submit"] {
   -o-border-radius: 3px;
   -webkit-border-radius: 3px;
 }
+/* line 72, module_calendar.less */
 .calendar .container section.day-of-weeks .item:first-child,
 .calendars .months .month .container section.day-of-weeks .item:first-child {
   margin-left: 0;
 }
+/* line 78, module_calendar.less */
 .calendar .container section.day-of-month .item,
 .calendars .months .month .container section.day-of-month .item {
   display: block;
@@ -1826,6 +2177,7 @@ body.page-profile-settings.consults input[type="submit"] {
   -webkit-border-radius: 3px;
   color: #35504e;
 }
+/* line 96, module_calendar.less */
 .calendar .container section.day-of-month .item.weekend,
 .calendars .months .month .container section.day-of-month .item.weekend {
   background-color: rgba(138, 164, 162, 0.7);
@@ -1833,17 +2185,20 @@ body.page-profile-settings.consults input[type="submit"] {
   color: #ffffff;
   border-radius: 5px;
 }
+/* line 102, module_calendar.less */
 .calendar .container section.day-of-month .item.today,
 .calendars .months .month .container section.day-of-month .item.today {
   background: #0f9b58;
   box-shadow: inset 0 0 2px #666;
   color: #fff;
 }
+/* line 106, module_calendar.less */
 .calendar .container section.day-of-month .item.today:hover,
 .calendars .months .month .container section.day-of-month .item.today:hover {
   background: #007936;
   box-shadow: inset 0 0 2px #666;
 }
+/* line 111, module_calendar.less */
 .calendar .container section.day-of-month .item.skype,
 .calendars .months .month .container section.day-of-month .item.skype {
   background-color: #9cebc6;
@@ -1851,12 +2206,14 @@ body.page-profile-settings.consults input[type="submit"] {
   color: #ffffff;
   border-bottom: solid 3px #fac944;
 }
+/* line 116, module_calendar.less */
 .calendar .container section.day-of-month .item.skype:hover,
 .calendars .months .month .container section.day-of-month .item.skype:hover {
   background: #7ac9a4;
   border-color: #7ac9a4;
   border-bottom: solid 3px #fac944;
 }
+/* line 122, module_calendar.less */
 .calendar .container section.day-of-month .item.private,
 .calendars .months .month .container section.day-of-month .item.private {
   background-color: #ffdf5c;
@@ -1864,33 +2221,39 @@ body.page-profile-settings.consults input[type="submit"] {
   color: #ffffff;
   border-bottom: solid 3px #fac944;
 }
+/* line 127, module_calendar.less */
 .calendar .container section.day-of-month .item.private:hover,
 .calendars .months .month .container section.day-of-month .item.private:hover {
   background: #ddbd3a;
   border-color: #ddbd3a;
   border-bottom: solid 3px #fac944;
 }
+/* line 135, module_calendar.less */
 .calendar .container section.day-of-month a.item:hover,
 .calendars .months .month .container section.day-of-month a.item:hover {
   background: #dbefe5;
 }
+/* line 138, module_calendar.less */
 .calendar .container section.day-of-month a.item.weekend:hover,
 .calendars .months .month .container section.day-of-month a.item.weekend:hover {
   background-color: rgba(138, 164, 162, 0.9);
   border-color: rgba(138, 164, 162, 0.9);
 }
+/* line 3, schedule.less */
 body.page-profile-schedule .edit-schedule {
   position: absolute;
   z-index: 2;
   width: 100%;
   display: none;
 }
+/* line 8, schedule.less */
 body.page-profile-schedule .edit-schedule .fader {
   position: fixed;
   width: 100%;
   height: 100%;
   background: rgba(255, 255, 255, 0.5);
 }
+/* line 14, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block {
   position: relative;
   width: 465px;
@@ -1900,6 +2263,7 @@ body.page-profile-schedule .edit-schedule .content-block {
   top: 150px;
   padding: 0;
 }
+/* line 22, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block i.close {
   font-size: 1.4rem;
   position: absolute;
@@ -1908,77 +2272,97 @@ body.page-profile-schedule .edit-schedule .content-block i.close {
   cursor: pointer;
   z-index: 1;
 }
+/* line 30, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block i.close:hover {
   color: #35504e;
 }
+/* line 34, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block h4 {
   padding-top: 0;
   margin-left: 20px;
   margin-top: 20px;
 }
+/* line 40, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block form .accordeon-container {
   display: none;
 }
+/* line 43, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block form .field.begin,
 body.page-profile-schedule .edit-schedule .content-block form .field.end {
   float: left;
   width: 45%;
   margin-right: 5%;
 }
+/* line 48, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block form .unwork {
   padding: 30px 20px;
 }
+/* line 51, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block form .free-time {
   padding: 30px 20px;
   border-top: solid 1px #8aa4a2;
 }
+/* line 54, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block form .free-time .type {
   margin-left: 30px;
 }
+/* line 56, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block form .free-time .type .field {
   overflow: hidden;
   margin: 5px 0;
 }
+/* line 61, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block form .free-time .select2-container {
   width: 100% !important;
   margin-top: 10px;
 }
+/* line 65, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block form .free-time .field.begin,
 body.page-profile-schedule .edit-schedule .content-block form .free-time .field.end {
   margin-top: 30px;
 }
+/* line 69, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block form .consult {
   padding: 30px 20px;
   border-top: solid 1px #8aa4a2;
 }
+/* line 72, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block form .consult .type {
   margin-left: 30px;
 }
+/* line 74, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block form .consult .type .field {
   overflow: hidden;
 }
+/* line 76, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block form .consult .type .field .checkbox.container {
   float: left;
   margin-right: 10px;
 }
+/* line 79, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block form .consult .type .field .checkbox.container + label {
   margin-top: 4px;
 }
+/* line 85, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block form .consult .field.begin,
 body.page-profile-schedule .edit-schedule .content-block form .consult .field.end {
   margin-top: 0px;
 }
+/* line 88, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block form .consult .field.comment {
   margin-top: 10px;
 }
+/* line 90, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block form .consult .field.comment textarea {
   height: 80px;
 }
+/* line 95, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block form .checkbox.container,
 body.page-profile-schedule .edit-schedule .content-block form .radio.container {
   float: left;
   margin-right: 10px;
 }
+/* line 98, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block form .checkbox.container + label,
 body.page-profile-schedule .edit-schedule .content-block form .radio.container + label {
   float: left;
@@ -1988,34 +2372,42 @@ body.page-profile-schedule .edit-schedule .content-block form .radio.container +
   font-weight: 500;
   text-align: left;
 }
+/* line 107, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block form input[type="submit"] {
   float: right;
   margin-right: 20px;
   margin-left: 20px;
   margin-bottom: 20px;
 }
+/* line 113, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block form input[type="button"] {
   float: right;
 }
+/* line 120, schedule.less */
 body.page-profile-schedule > .wrapper .content {
   margin-top: 20px;
 }
+/* line 122, schedule.less */
 body.page-profile-schedule > .wrapper .content .day {
   padding: 5px 0;
 }
+/* line 124, schedule.less */
 body.page-profile-schedule > .wrapper .content .day .day-container {
   float: left;
   left: 50%;
 }
+/* line 127, schedule.less */
 body.page-profile-schedule > .wrapper .content .day .day-container .day-choose {
   float: right;
   right: 50%;
   padding-left: 50px;
   padding-right: 50px;
 }
+/* line 132, schedule.less */
 body.page-profile-schedule > .wrapper .content .day .day-container .day-choose p {
   text-align: center;
 }
+/* line 134, schedule.less */
 body.page-profile-schedule > .wrapper .content .day .day-container .day-choose p a {
   color: #35504e;
   font-size: 1.4rem;
@@ -2023,20 +2415,25 @@ body.page-profile-schedule > .wrapper .content .day .day-container .day-choose p
   text-align: center;
   text-decoration: none;
 }
+/* line 140, schedule.less */
 body.page-profile-schedule > .wrapper .content .day .day-container .day-choose p a:hover {
   text-decoration: underline;
 }
+/* line 145, schedule.less */
 body.page-profile-schedule > .wrapper .content .day .day-container .day-choose a.arrow {
   position: absolute;
   display: block;
   top: 11px;
 }
+/* line 149, schedule.less */
 body.page-profile-schedule > .wrapper .content .day .day-container .day-choose a.arrow.left {
   left: 0;
 }
+/* line 152, schedule.less */
 body.page-profile-schedule > .wrapper .content .day .day-container .day-choose a.arrow.right {
   right: 0;
 }
+/* line 159, schedule.less */
 body.page-profile-schedule > .wrapper .content .calendars {
   display: none;
   position: absolute;
@@ -2048,6 +2445,7 @@ body.page-profile-schedule > .wrapper .content .calendars {
   margin-top: 10px;
   border: solid 1px #dbefe5;
 }
+/* line 170, schedule.less */
 body.page-profile-schedule > .wrapper .content .calendars i.close {
   cursor: pointer;
   float: right;
@@ -2055,66 +2453,83 @@ body.page-profile-schedule > .wrapper .content .calendars i.close {
   margin-right: 22px;
   font-size: 1.8rem;
 }
+/* line 176, schedule.less */
 body.page-profile-schedule > .wrapper .content .calendars i.close:hover {
   color: #35504e;
 }
+/* line 180, schedule.less */
 body.page-profile-schedule > .wrapper .content .calendars a#today {
   margin-left: 20px;
 }
+/* line 183, schedule.less */
 body.page-profile-schedule > .wrapper .content .calendars .months {
   overflow: hidden;
 }
+/* line 185, schedule.less */
 body.page-profile-schedule > .wrapper .content .calendars .months div.month {
   margin: 20px;
   float: left;
   overflow: hidden;
 }
+/* line 191, schedule.less */
 body.page-profile-schedule > .wrapper .content .calendars .controls {
   width: 95px;
   margin: auto;
 }
+/* line 194, schedule.less */
 body.page-profile-schedule > .wrapper .content .calendars .controls a {
   display: block;
   color: #8aa4a2;
   font-size: 1.8rem;
   text-decoration: none;
 }
+/* line 199, schedule.less */
 body.page-profile-schedule > .wrapper .content .calendars .controls a:hover {
   color: #35504e;
 }
+/* line 202, schedule.less */
 body.page-profile-schedule > .wrapper .content .calendars .controls a.left {
   float: left;
 }
+/* line 205, schedule.less */
 body.page-profile-schedule > .wrapper .content .calendars .controls a.right {
   float: right;
 }
+/* line 211, schedule.less */
 body.page-profile-schedule > .wrapper .content .schedule {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   float: left;
   width: 58%;
 }
+/* line 216, schedule.less */
 body.page-profile-schedule > .wrapper .content .schedule .schedule-container {
   width: 100%;
   padding: 30px 30px 30px 50px;
 }
+/* line 219, schedule.less */
 body.page-profile-schedule > .wrapper .content .schedule .schedule-container .elements {
   overflow: hidden;
   margin-bottom: 20px;
   padding-left: 10px;
 }
+/* line 223, schedule.less */
 body.page-profile-schedule > .wrapper .content .schedule .schedule-container .elements .field {
   overflow: hidden;
 }
+/* line 225, schedule.less */
 body.page-profile-schedule > .wrapper .content .schedule .schedule-container .elements .field.full-day {
   float: left;
 }
+/* line 228, schedule.less */
 body.page-profile-schedule > .wrapper .content .schedule .schedule-container .elements .field.weekend {
   float: right;
 }
+/* line 231, schedule.less */
 body.page-profile-schedule > .wrapper .content .schedule .schedule-container .elements .field .checkbox.container {
   float: left;
 }
+/* line 234, schedule.less */
 body.page-profile-schedule > .wrapper .content .schedule .schedule-container .elements .field label {
   display: block;
   float: left;
@@ -2122,17 +2537,21 @@ body.page-profile-schedule > .wrapper .content .schedule .schedule-container .el
   color: #35504e;
   font-size: 1.2rem;
 }
+/* line 245, schedule.less */
 body.page-profile-schedule > .wrapper .content .today-events {
   float: right;
   width: 40%;
 }
+/* line 249, schedule.less */
 body.page-profile-schedule > .wrapper .content .today-events .events .event {
   margin-bottom: 15px;
   padding-left: 15px;
 }
+/* line 252, schedule.less */
 body.page-profile-schedule > .wrapper .content .today-events .events .event.active {
   background: #dbefe5;
 }
+/* line 255, schedule.less */
 body.page-profile-schedule > .wrapper .content .today-events .events .event .border {
   position: absolute;
   width: 5px;
@@ -2145,25 +2564,32 @@ body.page-profile-schedule > .wrapper .content .today-events .events .event .bor
   -o-border-radius: 5px;
   -webkit-border-radius: 5px;
 }
+/* line 268, schedule.less */
 body.page-profile-schedule > .wrapper .content .today-events .events .event.skype .border,
 body.page-profile-schedule > .wrapper .content .today-events .events .event.cards .border {
   background: #0f9b58;
 }
+/* line 273, schedule.less */
 body.page-profile-schedule > .wrapper .content .today-events .events .event.consult .border {
   background: #4ad0c5;
 }
+/* line 278, schedule.less */
 body.page-profile-schedule > .wrapper .content .today-events .events .event.private .border {
   background: #ffaa3e;
 }
+/* line 281, schedule.less */
 body.page-profile-schedule > .wrapper .content .today-events .events .event.private h5.title {
   color: #35504e;
 }
+/* line 285, schedule.less */
 body.page-profile-schedule > .wrapper .content .today-events .events .event.unwork {
   display: none;
 }
+/* line 287, schedule.less */
 body.page-profile-schedule > .wrapper .content .today-events .events .event.unwork .border {
   background: #aaa;
 }
+/* line 291, schedule.less */
 body.page-profile-schedule > .wrapper .content .today-events .events .event h5.title {
   margin-top: 2px;
   margin-bottom: 0;
@@ -2174,25 +2600,31 @@ body.page-profile-schedule > .wrapper .content .today-events .events .event h5.t
   font-size: 1.4rem;
   font-weight: 500;
 }
+/* line 301, schedule.less */
 body.page-profile-schedule > .wrapper .content .today-events .events .event p.participiant {
   margin-bottom: 2px;
   padding-bottom: 0;
 }
+/* line 305, schedule.less */
 body.page-profile-schedule > .wrapper .content .today-events .events .event p {
   margin: 4px 0;
   font-size: 1.4rem;
   font-weight: 500;
   color: #8aa4a2;
 }
+/* line 310, schedule.less */
 body.page-profile-schedule > .wrapper .content .today-events .events .event p span.value {
   color: #35504e;
 }
+/* line 313, schedule.less */
 body.page-profile-schedule > .wrapper .content .today-events .events .event p a {
   color: #4ad0c5;
 }
+/* line 315, schedule.less */
 body.page-profile-schedule > .wrapper .content .today-events .events .event p a:hover {
   text-decoration: none;
 }
+/* line 320, schedule.less */
 body.page-profile-schedule > .wrapper .content .today-events .events .event a.removeEvent {
   position: absolute;
   right: 5px;
@@ -2201,47 +2633,57 @@ body.page-profile-schedule > .wrapper .content .today-events .events .event a.re
   font-size: 1.4rem;
   color: #8aa4a2;
 }
+/* line 327, schedule.less */
 body.page-profile-schedule > .wrapper .content .today-events .events .event a.removeEvent:hover {
   color: #eb5245;
 }
+/* line 332, schedule.less */
 body.page-profile-schedule > .wrapper .content .today-events .events a.btn {
   display: block;
   text-align: center;
 }
+/* line 341, schedule.less */
 .schedule-container {
   position: relative;
   width: 480px;
   padding: 15px;
   float: left;
 }
+/* line 346, schedule.less */
 .schedule-container .hours {
   position: relative;
   float: left;
   text-align: left;
   width: 55px;
 }
+/* line 351, schedule.less */
 .schedule-container .hours .hour {
   height: 32px;
   text-align: center;
 }
+/* line 354, schedule.less */
 .schedule-container .hours .hour span {
   position: relative;
   font-size: 1.2rem;
   top: -1px;
 }
+/* line 361, schedule.less */
 .schedule-container .grid {
   position: relative;
   float: right;
   width: 420px;
   -webkit-user-select: none;
 }
+/* line 366, schedule.less */
 .schedule-container .grid .row {
   border-bottom: solid 1px #b9d4cc;
   height: 15px;
 }
+/* line 369, schedule.less */
 .schedule-container .grid .row.selected {
   background: #ddd;
 }
+/* line 373, schedule.less */
 .schedule-container .grid .marker {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -2255,6 +2697,7 @@ body.page-profile-schedule > .wrapper .content .today-events .events a.btn {
   background: rgba(0, 0, 0, 0.1);
   display: none;
 }
+/* line 386, schedule.less */
 .schedule-container .grid .reserved-marker {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -2268,6 +2711,7 @@ body.page-profile-schedule > .wrapper .content .today-events .events a.btn {
   display: none;
   cursor: hand;
 }
+/* line 398, schedule.less */
 .schedule-container .grid .reserved-marker i.fa.fa-cog {
   cursor: pointer;
   position: absolute;
@@ -2276,68 +2720,86 @@ body.page-profile-schedule > .wrapper .content .today-events .events a.btn {
   top: 2px;
   z-index: 1;
 }
+/* line 406, schedule.less */
 .schedule-container .grid .reserved-marker p {
   font-size: 1.3rem;
   display: block;
   margin-left: 20px;
   margin-top: 6px;
 }
+/* line 412, schedule.less */
 .schedule-container .grid .reserved-marker.unwork {
   border-color: rgba(0, 0, 0, 0.4);
   background: rgba(0, 0, 0, 0.1);
 }
+/* line 415, schedule.less */
 .schedule-container .grid .reserved-marker.unwork i.fa.fa-cog {
   color: rgba(0, 0, 0, 0.4);
 }
+/* line 418, schedule.less */
 .schedule-container .grid .reserved-marker.unwork p {
   color: #666;
 }
+/* line 421, schedule.less */
 .schedule-container .grid .reserved-marker.unwork.selected {
   border-color: rgba(0, 0, 0, 0.5);
 }
+/* line 425, schedule.less */
 .schedule-container .grid .reserved-marker.skype,
 .schedule-container .grid .reserved-marker.cards {
   border-color: #33b679;
   background: rgba(51, 152, 121, 0.4);
 }
+/* line 428, schedule.less */
 .schedule-container .grid .reserved-marker.skype i.fa.fa-cog,
 .schedule-container .grid .reserved-marker.cards i.fa.fa-cog {
   color: #33b679;
 }
+/* line 431, schedule.less */
 .schedule-container .grid .reserved-marker.skype p,
 .schedule-container .grid .reserved-marker.cards p {
   color: #119457;
 }
+/* line 434, schedule.less */
 .schedule-container .grid .reserved-marker.skype.selected,
 .schedule-container .grid .reserved-marker.cards.selected {
   border-color: #119457;
 }
+/* line 438, schedule.less */
 .schedule-container .grid .reserved-marker.consult {
   border-color: #41b6ad;
   background: rgba(74, 208, 197, 0.2);
 }
+/* line 441, schedule.less */
 .schedule-container .grid .reserved-marker.consult i.fa.fa-cog {
   color: #41b6ad;
 }
+/* line 444, schedule.less */
 .schedule-container .grid .reserved-marker.consult p {
   color: #35504e;
 }
+/* line 447, schedule.less */
 .schedule-container .grid .reserved-marker.consult.selected {
   border-color: #1f948b;
 }
+/* line 451, schedule.less */
 .schedule-container .grid .reserved-marker.private {
   border-color: #fac944;
   background: rgba(250, 201, 68, 0.4);
 }
+/* line 454, schedule.less */
 .schedule-container .grid .reserved-marker.private i.fa.fa-cog {
   color: #d8a722;
 }
+/* line 457, schedule.less */
 .schedule-container .grid .reserved-marker.private p {
   color: #d39a00;
 }
+/* line 460, schedule.less */
 .schedule-container .grid .reserved-marker.private.selected {
   border-color: #d8a722;
 }
+/* line 464, schedule.less */
 .schedule-container .grid .reserved-marker .slider-top {
   left: 50%;
   margin-left: -2px;
@@ -2350,6 +2812,7 @@ body.page-profile-schedule > .wrapper .content .today-events .events a.btn {
   cursor: s-resize;
   z-index: 1;
 }
+/* line 476, schedule.less */
 .schedule-container .grid .reserved-marker .slider-bottom {
   left: 50%;
   margin-left: -2px;
@@ -2362,3 +2825,4 @@ body.page-profile-schedule > .wrapper .content .today-events .events a.btn {
   cursor: s-resize;
   z-index: 1;
 }
+/*# sourceMappingURL=styles.css.map */
