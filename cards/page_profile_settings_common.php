@@ -59,7 +59,7 @@
                             <p>Макс.размер файла 5MB. (.jpeg, .png)</p>
                         </div>
                         <div class="clr"></div>
-                        <div id="crop-image-container">
+                        <div id="crop-image-container" style="margin-top: 25px;">
                             <div id="crop-image-placeholder"></div>
                             <a href="#" class="btn" id="crop-image-button" style="color:#fff; text-align: center; display: block; margin-top: 20px;">Готово</a>
                         </div>
