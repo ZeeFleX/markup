@@ -4,7 +4,7 @@
     <head>
 		<?php include_once('_head.php'); ?>
 </head>
-<body class="default-template page-password-recovery">
+<body class="default-template page-sign-up">
     <NOSCRIPT>
         <div class="no-script-layout">
             <div class="wrapper">
@@ -18,17 +18,29 @@
             <h1>Метафорические Ассоциативные карты</h1>
             <h2>Константина Довлатова</h2>
             <h4>Индивидуальные онлайн консультации</h4>
-            <div class="forgot-password" id="forgot-password-window">
+            <div class="sign-up" id="registration-window">
                 <div class="head">
                 </div>
                 <form class="body" action="#" method="POST">
                     <div class="field email">
                         <input type="text" name="email" placeholder="Email" />
                     </div>
-                    <input type="submit" class="btn" value="Восстановить пароль" />
+                    <div class="field password">
+                        <input type="password" name="password" placeholder="Введите ваш пароль" />
+                    </div>
+                    <div class="field confirm-password">
+                        <input type="password" name="confirm-password" placeholder="Подтвердите ваш пароль" />
+                    </div>
+                    <input type="submit" class="btn" value="Зарегистрироваться" />
+                    <p class="endnote">
+                        Регистрируясь Вы подтверждаете согласие с
+                        <a href="#">Политикой конфиденциальности</a>
+                        и <a href="#">Условиями пользования сайтом</a>
+                    </p>
+                    <div class="clr"></div>
                 </form>
                 <div class="foot">
-                    <p>Вспомнили пароль?</p>
+                    <p>Уже зарегистрированы?</p>
                     <a href="#" id="sign-in">Войдите</a>
                 </div>
             </div>

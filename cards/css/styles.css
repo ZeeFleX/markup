@@ -861,6 +861,16 @@ header.header .mainmenu li a {
 .footer .bottom ul li a:hover {
   text-decoration: underline;
 }
+/* line 304, global.less */
+body.page-password-recovery footer.footer .top,
+body.page-sign-up footer.footer .top {
+  background: none;
+}
+/* line 307, global.less */
+body.page-password-recovery footer.footer .bottom,
+body.page-sign-up footer.footer .bottom {
+  background: none;
+}
 /* line 1, mainpage.less */
 body.page-mainpage {
   background: #f4efff;
@@ -1310,19 +1320,19 @@ body.page-mainpage #authorization-window > .container a.sign-in.forgot-password 
   font-size: 1.2rem;
 }
 /* line 378, mainpage.less */
-body.page-recovery-password,
+body.page-password-recovery,
 body.page-sign-up {
   background: url('../images/mainpage-bg.jpg') center center no-repeat;
   background-size: cover;
 }
 /* line 381, mainpage.less */
-body.page-recovery-password .ui-button-icon-primary,
+body.page-password-recovery .ui-button-icon-primary,
 body.page-sign-up .ui-button-icon-primary {
   margin-left: -16px !important;
   margin-top: 0 !important;
 }
 /* line 385, mainpage.less */
-body.page-recovery-password h1,
+body.page-password-recovery h1,
 body.page-sign-up h1 {
   color: #ffffff;
   text-align: center;
@@ -1331,18 +1341,25 @@ body.page-sign-up h1 {
   margin-top: 40px;
 }
 /* line 392, mainpage.less */
-body.page-recovery-password h4,
+body.page-password-recovery h2,
+body.page-sign-up h2 {
+  color: #ffffff;
+  font-size: 3.0rem;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 0;
+}
+/* line 399, mainpage.less */
+body.page-password-recovery h4,
 body.page-sign-up h4 {
   color: #ffffff;
   text-align: center;
   font: 500 1.8rem Roboto;
 }
-/* line 397, mainpage.less */
-body.page-recovery-password .log-in,
-body.page-sign-up .log-in,
-body.page-recovery-password .sign-up,
+/* line 404, mainpage.less */
+body.page-password-recovery .sign-up,
 body.page-sign-up .sign-up,
-body.page-recovery-password .forgot-password,
+body.page-password-recovery .forgot-password,
 body.page-sign-up .forgot-password {
   border-radius: 5px;
   -o-border-radius: 5px;
@@ -1351,56 +1368,45 @@ body.page-sign-up .forgot-password {
   overflow: hidden;
   margin: 30px auto;
   width: 380px;
-  height: 486px;
 }
-/* line 406, mainpage.less */
-body.page-recovery-password .log-in .head,
-body.page-sign-up .log-in .head,
-body.page-recovery-password .sign-up .head,
+/* line 412, mainpage.less */
+body.page-password-recovery .sign-up .head,
 body.page-sign-up .sign-up .head,
-body.page-recovery-password .forgot-password .head,
+body.page-password-recovery .forgot-password .head,
 body.page-sign-up .forgot-password .head {
   height: 54px;
   background: url('../images/login-form-header.png');
 }
-/* line 410, mainpage.less */
-body.page-recovery-password .log-in form.body,
-body.page-sign-up .log-in form.body,
-body.page-recovery-password .sign-up form.body,
+/* line 416, mainpage.less */
+body.page-password-recovery .sign-up form.body,
 body.page-sign-up .sign-up form.body,
-body.page-recovery-password .forgot-password form.body,
+body.page-password-recovery .forgot-password form.body,
 body.page-sign-up .forgot-password form.body {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   background: url('../images/loginform-bg.png');
   padding: 15px 30px;
 }
-/* line 415, mainpage.less */
-body.page-recovery-password .log-in form.body .field,
-body.page-sign-up .log-in form.body .field,
-body.page-recovery-password .sign-up form.body .field,
+/* line 421, mainpage.less */
+body.page-password-recovery .sign-up form.body .field,
 body.page-sign-up .sign-up form.body .field,
-body.page-recovery-password .forgot-password form.body .field,
+body.page-password-recovery .forgot-password form.body .field,
 body.page-sign-up .forgot-password form.body .field {
   margin-bottom: 20px;
 }
-/* line 418, mainpage.less */
-body.page-recovery-password .log-in form.body .btn,
-body.page-sign-up .log-in form.body .btn,
-body.page-recovery-password .sign-up form.body .btn,
+/* line 424, mainpage.less */
+body.page-password-recovery .sign-up form.body .btn,
 body.page-sign-up .sign-up form.body .btn,
-body.page-recovery-password .forgot-password form.body .btn,
+body.page-password-recovery .forgot-password form.body .btn,
 body.page-sign-up .forgot-password form.body .btn {
   width: 100%;
   padding: 15px 0;
   font-size: 1.4rem;
 }
-/* line 423, mainpage.less */
-body.page-recovery-password .log-in form.body p.endnote,
-body.page-sign-up .log-in form.body p.endnote,
-body.page-recovery-password .sign-up form.body p.endnote,
+/* line 429, mainpage.less */
+body.page-password-recovery .sign-up form.body p.endnote,
 body.page-sign-up .sign-up form.body p.endnote,
-body.page-recovery-password .forgot-password form.body p.endnote,
+body.page-password-recovery .forgot-password form.body p.endnote,
 body.page-sign-up .forgot-password form.body p.endnote {
   color: #b099a3;
   text-align: center;
@@ -1409,60 +1415,48 @@ body.page-sign-up .forgot-password form.body p.endnote {
   line-height: 150%;
   margin-bottom: 30px;
 }
-/* line 430, mainpage.less */
-body.page-recovery-password .log-in form.body p.endnote a,
-body.page-sign-up .log-in form.body p.endnote a,
-body.page-recovery-password .sign-up form.body p.endnote a,
+/* line 436, mainpage.less */
+body.page-password-recovery .sign-up form.body p.endnote a,
 body.page-sign-up .sign-up form.body p.endnote a,
-body.page-recovery-password .forgot-password form.body p.endnote a,
+body.page-password-recovery .forgot-password form.body p.endnote a,
 body.page-sign-up .forgot-password form.body p.endnote a {
   color: #ec4863;
 }
-/* line 434, mainpage.less */
-body.page-recovery-password .log-in form.body .remember-me,
-body.page-sign-up .log-in form.body .remember-me,
-body.page-recovery-password .sign-up form.body .remember-me,
+/* line 440, mainpage.less */
+body.page-password-recovery .sign-up form.body .remember-me,
 body.page-sign-up .sign-up form.body .remember-me,
-body.page-recovery-password .forgot-password form.body .remember-me,
+body.page-password-recovery .forgot-password form.body .remember-me,
 body.page-sign-up .forgot-password form.body .remember-me {
   float: left;
 }
-/* line 436, mainpage.less */
-body.page-recovery-password .log-in form.body .remember-me .checkbox.container,
-body.page-sign-up .log-in form.body .remember-me .checkbox.container,
-body.page-recovery-password .sign-up form.body .remember-me .checkbox.container,
+/* line 442, mainpage.less */
+body.page-password-recovery .sign-up form.body .remember-me .checkbox.container,
 body.page-sign-up .sign-up form.body .remember-me .checkbox.container,
-body.page-recovery-password .forgot-password form.body .remember-me .checkbox.container,
+body.page-password-recovery .forgot-password form.body .remember-me .checkbox.container,
 body.page-sign-up .forgot-password form.body .remember-me .checkbox.container {
   float: left;
   margin-top: 8px;
 }
-/* line 439, mainpage.less */
-body.page-recovery-password .log-in form.body .remember-me .checkbox.container.checked + label,
-body.page-sign-up .log-in form.body .remember-me .checkbox.container.checked + label,
-body.page-recovery-password .sign-up form.body .remember-me .checkbox.container.checked + label,
+/* line 445, mainpage.less */
+body.page-password-recovery .sign-up form.body .remember-me .checkbox.container.checked + label,
 body.page-sign-up .sign-up form.body .remember-me .checkbox.container.checked + label,
-body.page-recovery-password .forgot-password form.body .remember-me .checkbox.container.checked + label,
+body.page-password-recovery .forgot-password form.body .remember-me .checkbox.container.checked + label,
 body.page-sign-up .forgot-password form.body .remember-me .checkbox.container.checked + label {
   color: #ec4863;
 }
-/* line 443, mainpage.less */
-body.page-recovery-password .log-in form.body .remember-me label,
-body.page-sign-up .log-in form.body .remember-me label,
-body.page-recovery-password .sign-up form.body .remember-me label,
+/* line 449, mainpage.less */
+body.page-password-recovery .sign-up form.body .remember-me label,
 body.page-sign-up .sign-up form.body .remember-me label,
-body.page-recovery-password .forgot-password form.body .remember-me label,
+body.page-password-recovery .forgot-password form.body .remember-me label,
 body.page-sign-up .forgot-password form.body .remember-me label {
   float: left;
   margin-left: 10px;
   color: #b099a3;
 }
-/* line 449, mainpage.less */
-body.page-recovery-password .log-in form.body a#forgot-password,
-body.page-sign-up .log-in form.body a#forgot-password,
-body.page-recovery-password .sign-up form.body a#forgot-password,
+/* line 455, mainpage.less */
+body.page-password-recovery .sign-up form.body a#forgot-password,
 body.page-sign-up .sign-up form.body a#forgot-password,
-body.page-recovery-password .forgot-password form.body a#forgot-password,
+body.page-password-recovery .forgot-password form.body a#forgot-password,
 body.page-sign-up .forgot-password form.body a#forgot-password {
   display: block;
   float: right;
@@ -1470,62 +1464,39 @@ body.page-sign-up .forgot-password form.body a#forgot-password {
   color: #ec4863;
   font-size: 1.2rem;
 }
-/* line 457, mainpage.less */
-body.page-recovery-password .log-in .foot,
-body.page-sign-up .log-in .foot,
-body.page-recovery-password .sign-up .foot,
+/* line 463, mainpage.less */
+body.page-password-recovery .sign-up .foot,
 body.page-sign-up .sign-up .foot,
-body.page-recovery-password .forgot-password .foot,
+body.page-password-recovery .forgot-password .foot,
 body.page-sign-up .forgot-password .foot {
   text-align: center;
   border-top: solid 1px #b099a3;
   background: url('../images/loginform-bg.png');
   padding: 15px 0 25px 0;
 }
-/* line 462, mainpage.less */
-body.page-recovery-password .log-in .foot p,
-body.page-sign-up .log-in .foot p,
-body.page-recovery-password .sign-up .foot p,
+/* line 468, mainpage.less */
+body.page-password-recovery .sign-up .foot p,
 body.page-sign-up .sign-up .foot p,
-body.page-recovery-password .forgot-password .foot p,
+body.page-password-recovery .forgot-password .foot p,
 body.page-sign-up .forgot-password .foot p {
   line-height: 100%;
   font-size: 1.2rem;
 }
-/* line 466, mainpage.less */
-body.page-recovery-password .log-in .foot a#sign-up,
-body.page-sign-up .log-in .foot a#sign-up,
-body.page-recovery-password .sign-up .foot a#sign-up,
+/* line 472, mainpage.less */
+body.page-password-recovery .sign-up .foot a#sign-up,
 body.page-sign-up .sign-up .foot a#sign-up,
-body.page-recovery-password .forgot-password .foot a#sign-up,
+body.page-password-recovery .forgot-password .foot a#sign-up,
 body.page-sign-up .forgot-password .foot a#sign-up,
-body.page-recovery-password .log-in .foot a#sign-in,
-body.page-sign-up .log-in .foot a#sign-in,
-body.page-recovery-password .sign-up .foot a#sign-in,
+body.page-password-recovery .sign-up .foot a#sign-in,
 body.page-sign-up .sign-up .foot a#sign-in,
-body.page-recovery-password .forgot-password .foot a#sign-in,
+body.page-password-recovery .forgot-password .foot a#sign-in,
 body.page-sign-up .forgot-password .foot a#sign-in {
   color: #ec4863;
   font-size: 1.4rem;
   font-weight: 500;
 }
-/* line 472, mainpage.less */
-body.page-recovery-password .log-in.sign-up,
-body.page-sign-up .log-in.sign-up,
-body.page-recovery-password .sign-up.sign-up,
-body.page-sign-up .sign-up.sign-up,
-body.page-recovery-password .forgot-password.sign-up,
-body.page-sign-up .forgot-password.sign-up,
-body.page-recovery-password .log-in.forgot-password,
-body.page-sign-up .log-in.forgot-password,
-body.page-recovery-password .sign-up.forgot-password,
-body.page-sign-up .sign-up.forgot-password,
-body.page-recovery-password .forgot-password.forgot-password,
-body.page-sign-up .forgot-password.forgot-password {
-  display: none;
-}
-/* line 476, mainpage.less */
-body.page-recovery-password footer.footer,
+/* line 479, mainpage.less */
+body.page-password-recovery footer.footer,
 body.page-sign-up footer.footer {
   color: #ffffff;
   font-size: 1.4rem;
@@ -1534,116 +1505,116 @@ body.page-sign-up footer.footer {
   margin-bottom: 20px;
   overflow: hidden;
 }
-/* line 483, mainpage.less */
-body.page-recovery-password footer.footer .copyright,
+/* line 486, mainpage.less */
+body.page-password-recovery footer.footer .copyright,
 body.page-sign-up footer.footer .copyright {
   float: left;
   margin-left: 30px;
 }
-/* line 486, mainpage.less */
-body.page-recovery-password footer.footer .copyright p,
+/* line 489, mainpage.less */
+body.page-password-recovery footer.footer .copyright p,
 body.page-sign-up footer.footer .copyright p {
   line-height: 155%;
 }
-/* line 490, mainpage.less */
-body.page-recovery-password footer.footer .right,
+/* line 493, mainpage.less */
+body.page-password-recovery footer.footer .right,
 body.page-sign-up footer.footer .right {
   float: right;
   margin-right: 30px;
   text-align: right;
 }
-/* line 494, mainpage.less */
-body.page-recovery-password footer.footer .right ul,
+/* line 497, mainpage.less */
+body.page-password-recovery footer.footer .right ul,
 body.page-sign-up footer.footer .right ul {
   margin-top: 35px;
 }
-/* line 496, mainpage.less */
-body.page-recovery-password footer.footer .right ul li,
+/* line 499, mainpage.less */
+body.page-password-recovery footer.footer .right ul li,
 body.page-sign-up footer.footer .right ul li {
   float: left;
   margin-left: 20px;
 }
-/* line 500, mainpage.less */
-body.page-recovery-password footer.footer .right ul li a:hover,
+/* line 503, mainpage.less */
+body.page-password-recovery footer.footer .right ul li a:hover,
 body.page-sign-up footer.footer .right ul li a:hover {
   text-decoration: underline;
 }
-/* line 508, mainpage.less */
-body.page-recovery-password #authorization-window,
+/* line 511, mainpage.less */
+body.page-password-recovery #authorization-window,
 body.page-sign-up #authorization-window,
-body.page-recovery-password #registration-window,
+body.page-password-recovery #registration-window,
 body.page-sign-up #registration-window,
-body.page-recovery-password #forgot-password-window,
+body.page-password-recovery #forgot-password-window,
 body.page-sign-up #forgot-password-window {
   padding-bottom: 0;
 }
-/* line 511, mainpage.less */
-body.page-recovery-password #authorization-window#forgot-password-window .container,
+/* line 514, mainpage.less */
+body.page-password-recovery #authorization-window#forgot-password-window .container,
 body.page-sign-up #authorization-window#forgot-password-window .container,
-body.page-recovery-password #registration-window#forgot-password-window .container,
+body.page-password-recovery #registration-window#forgot-password-window .container,
 body.page-sign-up #registration-window#forgot-password-window .container,
-body.page-recovery-password #forgot-password-window#forgot-password-window .container,
+body.page-password-recovery #forgot-password-window#forgot-password-window .container,
 body.page-sign-up #forgot-password-window#forgot-password-window .container {
   width: 500px;
 }
-/* line 513, mainpage.less */
-body.page-recovery-password #authorization-window#forgot-password-window .container form,
+/* line 516, mainpage.less */
+body.page-password-recovery #authorization-window#forgot-password-window .container form,
 body.page-sign-up #authorization-window#forgot-password-window .container form,
-body.page-recovery-password #registration-window#forgot-password-window .container form,
+body.page-password-recovery #registration-window#forgot-password-window .container form,
 body.page-sign-up #registration-window#forgot-password-window .container form,
-body.page-recovery-password #forgot-password-window#forgot-password-window .container form,
+body.page-password-recovery #forgot-password-window#forgot-password-window .container form,
 body.page-sign-up #forgot-password-window#forgot-password-window .container form {
   width: 300px;
   margin: auto;
   margin-bottom: 20px;
 }
-/* line 517, mainpage.less */
-body.page-recovery-password #authorization-window#forgot-password-window .container form input[type="submit"],
+/* line 520, mainpage.less */
+body.page-password-recovery #authorization-window#forgot-password-window .container form input[type="submit"],
 body.page-sign-up #authorization-window#forgot-password-window .container form input[type="submit"],
-body.page-recovery-password #registration-window#forgot-password-window .container form input[type="submit"],
+body.page-password-recovery #registration-window#forgot-password-window .container form input[type="submit"],
 body.page-sign-up #registration-window#forgot-password-window .container form input[type="submit"],
-body.page-recovery-password #forgot-password-window#forgot-password-window .container form input[type="submit"],
+body.page-password-recovery #forgot-password-window#forgot-password-window .container form input[type="submit"],
 body.page-sign-up #forgot-password-window#forgot-password-window .container form input[type="submit"] {
   width: 100%;
 }
-/* line 523, mainpage.less */
-body.page-recovery-password #authorization-window > .container,
+/* line 526, mainpage.less */
+body.page-password-recovery #authorization-window > .container,
 body.page-sign-up #authorization-window > .container,
-body.page-recovery-password #registration-window > .container,
+body.page-password-recovery #registration-window > .container,
 body.page-sign-up #registration-window > .container,
-body.page-recovery-password #forgot-password-window > .container,
+body.page-password-recovery #forgot-password-window > .container,
 body.page-sign-up #forgot-password-window > .container {
   padding-bottom: 60px;
 }
-/* line 525, mainpage.less */
-body.page-recovery-password #authorization-window > .container h1,
+/* line 528, mainpage.less */
+body.page-password-recovery #authorization-window > .container h1,
 body.page-sign-up #authorization-window > .container h1,
-body.page-recovery-password #registration-window > .container h1,
+body.page-password-recovery #registration-window > .container h1,
 body.page-sign-up #registration-window > .container h1,
-body.page-recovery-password #forgot-password-window > .container h1,
+body.page-password-recovery #forgot-password-window > .container h1,
 body.page-sign-up #forgot-password-window > .container h1 {
   color: #290019;
   font: 500 2.4rem Roboto;
   margin-bottom: 20px;
 }
-/* line 530, mainpage.less */
-body.page-recovery-password #authorization-window > .container .left,
+/* line 533, mainpage.less */
+body.page-password-recovery #authorization-window > .container .left,
 body.page-sign-up #authorization-window > .container .left,
-body.page-recovery-password #registration-window > .container .left,
+body.page-password-recovery #registration-window > .container .left,
 body.page-sign-up #registration-window > .container .left,
-body.page-recovery-password #forgot-password-window > .container .left,
+body.page-password-recovery #forgot-password-window > .container .left,
 body.page-sign-up #forgot-password-window > .container .left {
   padding-right: 15px;
   width: 255px;
   float: left;
   border-right: solid 1px #b9d4cc;
 }
-/* line 535, mainpage.less */
-body.page-recovery-password #authorization-window > .container .left a.omni-sign-in,
+/* line 538, mainpage.less */
+body.page-password-recovery #authorization-window > .container .left a.omni-sign-in,
 body.page-sign-up #authorization-window > .container .left a.omni-sign-in,
-body.page-recovery-password #registration-window > .container .left a.omni-sign-in,
+body.page-password-recovery #registration-window > .container .left a.omni-sign-in,
 body.page-sign-up #registration-window > .container .left a.omni-sign-in,
-body.page-recovery-password #forgot-password-window > .container .left a.omni-sign-in,
+body.page-password-recovery #forgot-password-window > .container .left a.omni-sign-in,
 body.page-sign-up #forgot-password-window > .container .left a.omni-sign-in {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1660,12 +1631,12 @@ body.page-sign-up #forgot-password-window > .container .left a.omni-sign-in {
   overflow: hidden;
   margin-bottom: 21px;
 }
-/* line 550, mainpage.less */
-body.page-recovery-password #authorization-window > .container .left a.omni-sign-in i,
+/* line 553, mainpage.less */
+body.page-password-recovery #authorization-window > .container .left a.omni-sign-in i,
 body.page-sign-up #authorization-window > .container .left a.omni-sign-in i,
-body.page-recovery-password #registration-window > .container .left a.omni-sign-in i,
+body.page-password-recovery #registration-window > .container .left a.omni-sign-in i,
 body.page-sign-up #registration-window > .container .left a.omni-sign-in i,
-body.page-recovery-password #forgot-password-window > .container .left a.omni-sign-in i,
+body.page-password-recovery #forgot-password-window > .container .left a.omni-sign-in i,
 body.page-sign-up #forgot-password-window > .container .left a.omni-sign-in i {
   position: relative;
   height: 100%;
@@ -1677,12 +1648,12 @@ body.page-sign-up #forgot-password-window > .container .left a.omni-sign-in i {
   text-align: center;
   width: 30px;
 }
-/* line 561, mainpage.less */
-body.page-recovery-password #authorization-window > .container .left a.omni-sign-in span,
+/* line 564, mainpage.less */
+body.page-password-recovery #authorization-window > .container .left a.omni-sign-in span,
 body.page-sign-up #authorization-window > .container .left a.omni-sign-in span,
-body.page-recovery-password #registration-window > .container .left a.omni-sign-in span,
+body.page-password-recovery #registration-window > .container .left a.omni-sign-in span,
 body.page-sign-up #registration-window > .container .left a.omni-sign-in span,
-body.page-recovery-password #forgot-password-window > .container .left a.omni-sign-in span,
+body.page-password-recovery #forgot-password-window > .container .left a.omni-sign-in span,
 body.page-sign-up #forgot-password-window > .container .left a.omni-sign-in span {
   position: relative;
   height: 100%;
@@ -1692,112 +1663,112 @@ body.page-sign-up #forgot-password-window > .container .left a.omni-sign-in span
   padding-left: 15px;
   margin-top: 10px;
 }
-/* line 570, mainpage.less */
-body.page-recovery-password #authorization-window > .container .left a.omni-sign-in#fb,
+/* line 573, mainpage.less */
+body.page-password-recovery #authorization-window > .container .left a.omni-sign-in#fb,
 body.page-sign-up #authorization-window > .container .left a.omni-sign-in#fb,
-body.page-recovery-password #registration-window > .container .left a.omni-sign-in#fb,
+body.page-password-recovery #registration-window > .container .left a.omni-sign-in#fb,
 body.page-sign-up #registration-window > .container .left a.omni-sign-in#fb,
-body.page-recovery-password #forgot-password-window > .container .left a.omni-sign-in#fb,
+body.page-password-recovery #forgot-password-window > .container .left a.omni-sign-in#fb,
 body.page-sign-up #forgot-password-window > .container .left a.omni-sign-in#fb {
   background: #3b5998;
 }
-/* line 573, mainpage.less */
-body.page-recovery-password #authorization-window > .container .left a.omni-sign-in#vk,
+/* line 576, mainpage.less */
+body.page-password-recovery #authorization-window > .container .left a.omni-sign-in#vk,
 body.page-sign-up #authorization-window > .container .left a.omni-sign-in#vk,
-body.page-recovery-password #registration-window > .container .left a.omni-sign-in#vk,
+body.page-password-recovery #registration-window > .container .left a.omni-sign-in#vk,
 body.page-sign-up #registration-window > .container .left a.omni-sign-in#vk,
-body.page-recovery-password #forgot-password-window > .container .left a.omni-sign-in#vk,
+body.page-password-recovery #forgot-password-window > .container .left a.omni-sign-in#vk,
 body.page-sign-up #forgot-password-window > .container .left a.omni-sign-in#vk {
   background: #4c75a3;
 }
-/* line 576, mainpage.less */
-body.page-recovery-password #authorization-window > .container .left a.omni-sign-in#ok,
+/* line 579, mainpage.less */
+body.page-password-recovery #authorization-window > .container .left a.omni-sign-in#ok,
 body.page-sign-up #authorization-window > .container .left a.omni-sign-in#ok,
-body.page-recovery-password #registration-window > .container .left a.omni-sign-in#ok,
+body.page-password-recovery #registration-window > .container .left a.omni-sign-in#ok,
 body.page-sign-up #registration-window > .container .left a.omni-sign-in#ok,
-body.page-recovery-password #forgot-password-window > .container .left a.omni-sign-in#ok,
+body.page-password-recovery #forgot-password-window > .container .left a.omni-sign-in#ok,
 body.page-sign-up #forgot-password-window > .container .left a.omni-sign-in#ok {
   background: #fa9616;
   margin-bottom: 0;
 }
-/* line 579, mainpage.less */
-body.page-recovery-password #authorization-window > .container .left a.omni-sign-in#ok i,
+/* line 582, mainpage.less */
+body.page-password-recovery #authorization-window > .container .left a.omni-sign-in#ok i,
 body.page-sign-up #authorization-window > .container .left a.omni-sign-in#ok i,
-body.page-recovery-password #registration-window > .container .left a.omni-sign-in#ok i,
+body.page-password-recovery #registration-window > .container .left a.omni-sign-in#ok i,
 body.page-sign-up #registration-window > .container .left a.omni-sign-in#ok i,
-body.page-recovery-password #forgot-password-window > .container .left a.omni-sign-in#ok i,
+body.page-password-recovery #forgot-password-window > .container .left a.omni-sign-in#ok i,
 body.page-sign-up #forgot-password-window > .container .left a.omni-sign-in#ok i {
   border-color: #d98314;
 }
-/* line 584, mainpage.less */
-body.page-recovery-password #authorization-window > .container .left p,
+/* line 587, mainpage.less */
+body.page-password-recovery #authorization-window > .container .left p,
 body.page-sign-up #authorization-window > .container .left p,
-body.page-recovery-password #registration-window > .container .left p,
+body.page-password-recovery #registration-window > .container .left p,
 body.page-sign-up #registration-window > .container .left p,
-body.page-recovery-password #forgot-password-window > .container .left p,
+body.page-password-recovery #forgot-password-window > .container .left p,
 body.page-sign-up #forgot-password-window > .container .left p {
   color: #b099a3;
   text-align: center;
   font-size: 1.2rem;
   line-height: 150%;
 }
-/* line 589, mainpage.less */
-body.page-recovery-password #authorization-window > .container .left p a,
+/* line 592, mainpage.less */
+body.page-password-recovery #authorization-window > .container .left p a,
 body.page-sign-up #authorization-window > .container .left p a,
-body.page-recovery-password #registration-window > .container .left p a,
+body.page-password-recovery #registration-window > .container .left p a,
 body.page-sign-up #registration-window > .container .left p a,
-body.page-recovery-password #forgot-password-window > .container .left p a,
+body.page-password-recovery #forgot-password-window > .container .left p a,
 body.page-sign-up #forgot-password-window > .container .left p a {
   color: #ec4863;
   text-decoration: underline;
 }
-/* line 595, mainpage.less */
-body.page-recovery-password #authorization-window > .container .right,
+/* line 598, mainpage.less */
+body.page-password-recovery #authorization-window > .container .right,
 body.page-sign-up #authorization-window > .container .right,
-body.page-recovery-password #registration-window > .container .right,
+body.page-password-recovery #registration-window > .container .right,
 body.page-sign-up #registration-window > .container .right,
-body.page-recovery-password #forgot-password-window > .container .right,
+body.page-password-recovery #forgot-password-window > .container .right,
 body.page-sign-up #forgot-password-window > .container .right {
   width: 255px;
   float: right;
   padding-left: 15px;
 }
-/* line 599, mainpage.less */
-body.page-recovery-password #authorization-window > .container .right .btn,
+/* line 602, mainpage.less */
+body.page-password-recovery #authorization-window > .container .right .btn,
 body.page-sign-up #authorization-window > .container .right .btn,
-body.page-recovery-password #registration-window > .container .right .btn,
+body.page-password-recovery #registration-window > .container .right .btn,
 body.page-sign-up #registration-window > .container .right .btn,
-body.page-recovery-password #forgot-password-window > .container .right .btn,
+body.page-password-recovery #forgot-password-window > .container .right .btn,
 body.page-sign-up #forgot-password-window > .container .right .btn {
   width: 100%;
 }
-/* line 602, mainpage.less */
-body.page-recovery-password #authorization-window > .container .right p,
+/* line 605, mainpage.less */
+body.page-password-recovery #authorization-window > .container .right p,
 body.page-sign-up #authorization-window > .container .right p,
-body.page-recovery-password #registration-window > .container .right p,
+body.page-password-recovery #registration-window > .container .right p,
 body.page-sign-up #registration-window > .container .right p,
-body.page-recovery-password #forgot-password-window > .container .right p,
+body.page-password-recovery #forgot-password-window > .container .right p,
 body.page-sign-up #forgot-password-window > .container .right p {
   color: #b099a3;
   font: 400 1.2rem Roboto;
   text-align: center;
 }
-/* line 606, mainpage.less */
-body.page-recovery-password #authorization-window > .container .right p a,
+/* line 609, mainpage.less */
+body.page-password-recovery #authorization-window > .container .right p a,
 body.page-sign-up #authorization-window > .container .right p a,
-body.page-recovery-password #registration-window > .container .right p a,
+body.page-password-recovery #registration-window > .container .right p a,
 body.page-sign-up #registration-window > .container .right p a,
-body.page-recovery-password #forgot-password-window > .container .right p a,
+body.page-password-recovery #forgot-password-window > .container .right p a,
 body.page-sign-up #forgot-password-window > .container .right p a {
   color: #8e7781;
   font-weight: bold;
 }
-/* line 612, mainpage.less */
-body.page-recovery-password #authorization-window > .container .links,
+/* line 615, mainpage.less */
+body.page-password-recovery #authorization-window > .container .links,
 body.page-sign-up #authorization-window > .container .links,
-body.page-recovery-password #registration-window > .container .links,
+body.page-password-recovery #registration-window > .container .links,
 body.page-sign-up #registration-window > .container .links,
-body.page-recovery-password #forgot-password-window > .container .links,
+body.page-password-recovery #forgot-password-window > .container .links,
 body.page-sign-up #forgot-password-window > .container .links {
   position: absolute;
   bottom: 0;
@@ -1807,24 +1778,24 @@ body.page-sign-up #forgot-password-window > .container .links {
   border-top: #b9d4cc 1px solid;
   padding-top: 10px;
 }
-/* line 621, mainpage.less */
-body.page-recovery-password #authorization-window > .container a.sign-up,
+/* line 624, mainpage.less */
+body.page-password-recovery #authorization-window > .container a.sign-up,
 body.page-sign-up #authorization-window > .container a.sign-up,
-body.page-recovery-password #registration-window > .container a.sign-up,
+body.page-password-recovery #registration-window > .container a.sign-up,
 body.page-sign-up #registration-window > .container a.sign-up,
-body.page-recovery-password #forgot-password-window > .container a.sign-up,
+body.page-password-recovery #forgot-password-window > .container a.sign-up,
 body.page-sign-up #forgot-password-window > .container a.sign-up,
-body.page-recovery-password #authorization-window > .container a.forgot-password,
+body.page-password-recovery #authorization-window > .container a.forgot-password,
 body.page-sign-up #authorization-window > .container a.forgot-password,
-body.page-recovery-password #registration-window > .container a.forgot-password,
+body.page-password-recovery #registration-window > .container a.forgot-password,
 body.page-sign-up #registration-window > .container a.forgot-password,
-body.page-recovery-password #forgot-password-window > .container a.forgot-password,
+body.page-password-recovery #forgot-password-window > .container a.forgot-password,
 body.page-sign-up #forgot-password-window > .container a.forgot-password,
-body.page-recovery-password #authorization-window > .container a.sign-in,
+body.page-password-recovery #authorization-window > .container a.sign-in,
 body.page-sign-up #authorization-window > .container a.sign-in,
-body.page-recovery-password #registration-window > .container a.sign-in,
+body.page-password-recovery #registration-window > .container a.sign-in,
 body.page-sign-up #registration-window > .container a.sign-in,
-body.page-recovery-password #forgot-password-window > .container a.sign-in,
+body.page-password-recovery #forgot-password-window > .container a.sign-in,
 body.page-sign-up #forgot-password-window > .container a.sign-in {
   color: #35504e;
   font: 400 1.4rem Roboto;
@@ -1832,46 +1803,46 @@ body.page-sign-up #forgot-password-window > .container a.sign-in {
   margin-top: 10px;
   line-height: 26px;
 }
-/* line 627, mainpage.less */
-body.page-recovery-password #authorization-window > .container a.sign-up span,
+/* line 630, mainpage.less */
+body.page-password-recovery #authorization-window > .container a.sign-up span,
 body.page-sign-up #authorization-window > .container a.sign-up span,
-body.page-recovery-password #registration-window > .container a.sign-up span,
+body.page-password-recovery #registration-window > .container a.sign-up span,
 body.page-sign-up #registration-window > .container a.sign-up span,
-body.page-recovery-password #forgot-password-window > .container a.sign-up span,
+body.page-password-recovery #forgot-password-window > .container a.sign-up span,
 body.page-sign-up #forgot-password-window > .container a.sign-up span,
-body.page-recovery-password #authorization-window > .container a.forgot-password span,
+body.page-password-recovery #authorization-window > .container a.forgot-password span,
 body.page-sign-up #authorization-window > .container a.forgot-password span,
-body.page-recovery-password #registration-window > .container a.forgot-password span,
+body.page-password-recovery #registration-window > .container a.forgot-password span,
 body.page-sign-up #registration-window > .container a.forgot-password span,
-body.page-recovery-password #forgot-password-window > .container a.forgot-password span,
+body.page-password-recovery #forgot-password-window > .container a.forgot-password span,
 body.page-sign-up #forgot-password-window > .container a.forgot-password span,
-body.page-recovery-password #authorization-window > .container a.sign-in span,
+body.page-password-recovery #authorization-window > .container a.sign-in span,
 body.page-sign-up #authorization-window > .container a.sign-in span,
-body.page-recovery-password #registration-window > .container a.sign-in span,
+body.page-password-recovery #registration-window > .container a.sign-in span,
 body.page-sign-up #registration-window > .container a.sign-in span,
-body.page-recovery-password #forgot-password-window > .container a.sign-in span,
+body.page-password-recovery #forgot-password-window > .container a.sign-in span,
 body.page-sign-up #forgot-password-window > .container a.sign-in span {
   color: #ec4863;
   font-weight: bold;
 }
-/* line 631, mainpage.less */
-body.page-recovery-password #authorization-window > .container a.sign-up.forgot-password,
+/* line 634, mainpage.less */
+body.page-password-recovery #authorization-window > .container a.sign-up.forgot-password,
 body.page-sign-up #authorization-window > .container a.sign-up.forgot-password,
-body.page-recovery-password #registration-window > .container a.sign-up.forgot-password,
+body.page-password-recovery #registration-window > .container a.sign-up.forgot-password,
 body.page-sign-up #registration-window > .container a.sign-up.forgot-password,
-body.page-recovery-password #forgot-password-window > .container a.sign-up.forgot-password,
+body.page-password-recovery #forgot-password-window > .container a.sign-up.forgot-password,
 body.page-sign-up #forgot-password-window > .container a.sign-up.forgot-password,
-body.page-recovery-password #authorization-window > .container a.forgot-password.forgot-password,
+body.page-password-recovery #authorization-window > .container a.forgot-password.forgot-password,
 body.page-sign-up #authorization-window > .container a.forgot-password.forgot-password,
-body.page-recovery-password #registration-window > .container a.forgot-password.forgot-password,
+body.page-password-recovery #registration-window > .container a.forgot-password.forgot-password,
 body.page-sign-up #registration-window > .container a.forgot-password.forgot-password,
-body.page-recovery-password #forgot-password-window > .container a.forgot-password.forgot-password,
+body.page-password-recovery #forgot-password-window > .container a.forgot-password.forgot-password,
 body.page-sign-up #forgot-password-window > .container a.forgot-password.forgot-password,
-body.page-recovery-password #authorization-window > .container a.sign-in.forgot-password,
+body.page-password-recovery #authorization-window > .container a.sign-in.forgot-password,
 body.page-sign-up #authorization-window > .container a.sign-in.forgot-password,
-body.page-recovery-password #registration-window > .container a.sign-in.forgot-password,
+body.page-password-recovery #registration-window > .container a.sign-in.forgot-password,
 body.page-sign-up #registration-window > .container a.sign-in.forgot-password,
-body.page-recovery-password #forgot-password-window > .container a.sign-in.forgot-password,
+body.page-password-recovery #forgot-password-window > .container a.sign-in.forgot-password,
 body.page-sign-up #forgot-password-window > .container a.sign-in.forgot-password {
   font-size: 1.2rem;
 }

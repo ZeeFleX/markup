@@ -375,7 +375,7 @@ body.page-mainpage{
         }
     }
 }
-body.page-recovery-password, body.page-sign-up{
+body.page-password-recovery, body.page-sign-up{
     background: url('../images/mainpage-bg.jpg') center center no-repeat;
     background-size:cover;
     .ui-button-icon-primary{
@@ -389,12 +389,19 @@ body.page-recovery-password, body.page-sign-up{
         padding-bottom: 0;
         margin-top: 40px;
     }
+    h2{
+        color:  @white;
+        font-size: 3.0rem;
+        font-weight: 700;
+        text-align: center;
+        padding-top: 0;
+    }
     h4{
         color:@white;
         text-align: center;
         font:500 1.8rem Roboto;
     }
-    .log-in, .sign-up, .forgot-password{
+    .sign-up, .forgot-password{
         border-radius:5px;
         -o-border-radius:5px;
         -moz-border-radius:5px;
@@ -402,7 +409,6 @@ body.page-recovery-password, body.page-sign-up{
         overflow: hidden;
         margin:30px auto;
         width: 380px;
-        height:486px;
         .head{
             height: 54px;
             background: url('../images/login-form-header.png');
@@ -468,9 +474,6 @@ body.page-recovery-password, body.page-sign-up{
                 font-size: 1.4rem;
                 font-weight: 500;
             }
-        }
-        &.sign-up, &.forgot-password{
-            display: none;
         }
     }
     footer.footer{
