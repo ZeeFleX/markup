@@ -87,6 +87,60 @@
                             <input type="text" name="middlename" class="allow-clear" />
                         </div>
                         <div class="clr"></div>
+                        <div class="field gender">
+                            <label for="gender">Пол</label>
+                            <select name="gender" class="select2">
+                                <option value="male">Мужской</option>
+                                <option value="female">Женский</option>
+                            </select>
+                        </div>
+                        <div class="field birthdate">
+                            <label>Дата рождения</label>
+                            <div class="clr"></div>
+                            <div class="day">
+                                <select name="birthday" class="select2">
+                                    <?php for($i = 1; $i <= 31; $i++) {?>
+                                        <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
+                                    <?php } ?>
+                                </select>
+                            </div>
+                            <div class="month">
+                                <select name="birthmonth" class="select2">
+                                    <?php
+                                    $months = Array('Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь');
+                                    for($i = 1; $i <= 12; $i++) {?>
+                                        <option value="<?php echo $i; ?>"><?php echo $months[$i]; ?></option>
+                                    <?php } ?>
+                                </select>
+                            </div>
+                            <div class="year">
+                                <select name="birthyear" class="select2">
+                                    <?php for($i = 1950; $i <= 1998; $i++) {?>
+                                        <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
+                                    <?php } ?>
+                                </select>
+                            </div>
+                            <div class="clr"></div>
+                        </div>
+                        <div class="field country">
+                            <label for="country">Страна</label>
+                            <select name="country" class="select2" id="select-country">
+                                <option value="0">Россия</option>
+                                <option value="1">Украина</option>
+                                <option value="2">Казахстан</option>
+                                <option value="3">Финляндия</option>
+                                <option value="4">Польша</option>
+                            </select>
+                        </div>
+                        <div class="field city">
+                            <label for="city">Город</label>
+                            <select name="city" class="select2-ajax cities"></select>
+                        </div>
+                        <div class="clr"></div>
+                        <div class="field information">
+                            <label for="information">Информация обо мне</label>
+                            <textarea name="information" class="allow-clear"></textarea>
+                        </div>
                         <input type="submit" class="btn" value="Сохранить изменения" />
                         <a href="#" class="btn ghost">Перейти в профиль</a>
                     </form>
