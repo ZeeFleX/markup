@@ -143,16 +143,6 @@ function loadCitiesCallback(cities){
     });
 }
 
-function buildSelectList(begin, end, cl, name){
-    var html = '';
-    html += '<select class="' + cl + '" name="' + name + '">';
-    for(i = begin; i <= end; i++){
-        html += '<option value="' + i + '">' + i + '</option>';
-    }
-    html += '</select>';
-    return html;
-}
-
 function generateUniqueId(){
     return Math.floor(Math.random() * 1000000);
 }

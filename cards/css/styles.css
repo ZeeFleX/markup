@@ -2612,4 +2612,85 @@ body.page-session-manage section.content .sessions .item.new-session i {
   font-size: 2.8rem;
   line-height: 150px;
 }
+/* line 2, page_list.less */
+body.page-list section.list {
+  min-height: 800px;
+}
+/* line 4, page_list.less */
+body.page-list section.list .search-user {
+  margin-top: 20px;
+  overflow: hidden;
+}
+/* line 7, page_list.less */
+body.page-list section.list .search-user form {
+  width: 100%;
+}
+/* line 9, page_list.less */
+body.page-list section.list .search-user form .input-container {
+  float: left;
+  width: 88%;
+}
+/* line 12, page_list.less */
+body.page-list section.list .search-user form .input-container input {
+  margin-bottom: 0;
+}
+/* line 16, page_list.less */
+body.page-list section.list .search-user form input[type="submit"] {
+  display: block;
+  float: right;
+  width: 10%;
+}
+/* line 23, page_list.less */
+body.page-list section.list .search-results {
+  margin-top: 20px;
+  overflow: hidden;
+}
+/* line 26, page_list.less */
+body.page-list section.list .search-results .result {
+  float: left;
+  width: 23%;
+  margin-left: 2.65%;
+  margin-bottom: 20px;
+}
+/* line 31, page_list.less */
+body.page-list section.list .search-results .result.first-of-row {
+  margin-left: 0;
+}
+/* line 34, page_list.less */
+body.page-list section.list .search-results .result .photo-container {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 500px;
+  -o-border-radius: 500px;
+  -moz-border-radius: 500px;
+  -webkit-border-radius: 500px;
+}
+/* line 41, page_list.less */
+body.page-list section.list .search-results .result .photo-container a {
+  display: block;
+  text-decoration: none;
+}
+/* line 44, page_list.less */
+body.page-list section.list .search-results .result .photo-container a img {
+  display: block;
+  width: 100%;
+}
+/* line 50, page_list.less */
+body.page-list section.list .search-results .result a.username {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  color: #ec4863;
+  font-size: 1.4rem;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+}
+/* line 57, page_list.less */
+body.page-list section.list .search-results .result a.username span.lastname {
+  font-weight: 700;
+}
+/* line 60, page_list.less */
+body.page-list section.list .search-results .result a.username:hover {
+  color: #a73e5c;
+}
 /*# sourceMappingURL=styles.css.map */

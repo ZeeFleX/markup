@@ -26,6 +26,7 @@
             <li><a href="page_session_manage.php">Управление сессиями</a></li> 
             <li><a href="page_text.php">Текстовая страница</a></li>
             <li><a href="page_session_room.php">Заготовка для сессионной комнаты</a></li>
+            <li><a href="page_list.php">Список терапевтов</a></li> 
         </ol>
         <h1>Полезные ссылки</h1>
         <ol>
