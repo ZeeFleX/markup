@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
     <head>
 		<?php include_once('_head.php'); ?>
@@ -169,8 +168,10 @@
                             <?php } ?>
                         </select>
                         <select name="end" class="select2">
-                            <?php for($i = 1970; $i < 2015; $i++){ ?>
-                                <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
+                            <?php
+                                
+                                for($i = 1970; $i < 2015; $i++){ ?>
+                                <option value="<?php echo $i; ?>" ><?php echo $i; ?></option>
                             <?php } ?>
                         </select>
                         <div class="clr"></div>
@@ -233,9 +234,9 @@
                             <input type="text" class="allow-clear" name="quality" placeholder="Введите квалификацию" />
                         </div>
                         <div class="field year">
-                            <h5>Период обучения</h5>
+                            <h5>Год получения</h5>
                             <select name="year" class="select2">
-                                <?php for($i = 1970; $i < 2015; $i++){ ?>
+                                <?php for($i = 1970; $i <= 2015; $i++){ ?>
                                     <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
                                 <?php } ?>
                             </select>
@@ -260,8 +261,8 @@
                 <section class="begin-date">
                     <h4>Начало практической деятельности</h4>
                     <select name="practice-begin" class="select2">
-                        <?php for($i = 1970; $i < 2015; $i++) { ?>
-                        <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
+                        <?php for($i = 1970; $i <= 2015; $i++) { ?>
+                        <option value="<?php echo $i; ?>" <?php if($i == date_format(date_create(), 'Y')) echo 'selected="selected"'; ?>><?php echo $i; ?></option>
                         <?php }?>
                     </select>
                 </section>
