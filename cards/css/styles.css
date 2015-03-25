@@ -861,25 +861,16 @@ header.header .mainmenu li a {
 .footer .bottom ul li a:hover {
   text-decoration: underline;
 }
-/* line 304, global.less */
-.page-mainpage footer.footer .top {
-  background: none;
-}
-/* line 307, global.less */
-.page-mainpage footer.footer .bottom {
-  background: none;
-}
 /* line 1, mainpage.less */
 body.page-mainpage {
-  background: url('../images/mainpage-bg.jpg') center center no-repeat;
-  background-size: cover;
+  background: #f4efff;
 }
-/* line 4, mainpage.less */
+/* line 3, mainpage.less */
 body.page-mainpage .ui-button-icon-primary {
   margin-left: -16px !important;
   margin-top: 0 !important;
 }
-/* line 8, mainpage.less */
+/* line 7, mainpage.less */
 body.page-mainpage h1 {
   color: #ffffff;
   text-align: center;
@@ -887,16 +878,147 @@ body.page-mainpage h1 {
   padding-bottom: 0;
   margin-top: 40px;
 }
-/* line 15, mainpage.less */
+/* line 14, mainpage.less */
+body.page-mainpage h2 {
+  color: #ffffff;
+  font-size: 3.0rem;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 0;
+}
+/* line 21, mainpage.less */
 body.page-mainpage h4 {
   color: #ffffff;
   text-align: center;
   font: 500 1.8rem Roboto;
 }
-/* line 20, mainpage.less */
-body.page-mainpage .log-in,
-body.page-mainpage .sign-up,
-body.page-mainpage .forgot-password {
+/* line 26, mainpage.less */
+body.page-mainpage .content {
+  background: url('../images/mainpage-bg.jpg') center center no-repeat;
+  background-size: cover;
+}
+/* line 31, mainpage.less */
+body.page-mainpage .professionals h4 {
+  color: #290019;
+  font-size: 2.4rem;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+/* line 39, mainpage.less */
+body.page-mainpage .professionals .slider {
+  padding-bottom: 50px;
+}
+/* line 42, mainpage.less */
+body.page-mainpage .professionals .slider .wrapper .item {
+  float: left;
+  width: 23%;
+  margin-left: 2%;
+  margin-bottom: 20px;
+}
+/* line 47, mainpage.less */
+body.page-mainpage .professionals .slider .wrapper .item.first-of-row {
+  margin-left: 0;
+}
+/* line 50, mainpage.less */
+body.page-mainpage .professionals .slider .wrapper .item .photo-container {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 500px;
+  -o-border-radius: 500px;
+  -moz-border-radius: 500px;
+  -webkit-border-radius: 500px;
+}
+/* line 57, mainpage.less */
+body.page-mainpage .professionals .slider .wrapper .item .photo-container a {
+  display: block;
+  text-decoration: none;
+}
+/* line 60, mainpage.less */
+body.page-mainpage .professionals .slider .wrapper .item .photo-container a img {
+  display: block;
+  width: 100%;
+}
+/* line 66, mainpage.less */
+body.page-mainpage .professionals .slider .wrapper .item a.username {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  color: #ec4863;
+  font-size: 1.4rem;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+}
+/* line 73, mainpage.less */
+body.page-mainpage .professionals .slider .wrapper .item a.username span.lastname {
+  font-weight: 700;
+}
+/* line 76, mainpage.less */
+body.page-mainpage .professionals .slider .wrapper .item a.username:hover {
+  color: #a73e5c;
+}
+/* line 82, mainpage.less */
+body.page-mainpage .professionals .slider .controls-container {
+  left: 50%;
+  float: left;
+}
+/* line 85, mainpage.less */
+body.page-mainpage .professionals .slider .controls-container .controls {
+  right: 50%;
+  margin-top: 10px;
+  float: right;
+}
+/* line 89, mainpage.less */
+body.page-mainpage .professionals .slider .controls-container .controls .circle {
+  border-radius: 15px;
+  -o-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  width: 8px;
+  height: 8px;
+  float: left;
+  margin-right: 6px;
+  background: #b099a3;
+  cursor: pointer;
+}
+/* line 100, mainpage.less */
+body.page-mainpage .professionals .slider .controls-container .controls .circle.active {
+  background: #ec4863;
+}
+/* line 107, mainpage.less */
+body.page-mainpage .professionals #show-all-users {
+  width: 210px;
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+/* line 114, mainpage.less */
+body.page-mainpage .content .wrapper {
+  overflow: hidden;
+}
+/* line 116, mainpage.less */
+body.page-mainpage .content .wrapper .greetings {
+  overflow: hidden;
+  margin-top: 50px;
+}
+/* line 120, mainpage.less */
+body.page-mainpage .content .wrapper .greetings h1 {
+  margin-top: 0;
+  padding-bottom: 0;
+  text-align: left;
+  font-size: 4.8rem;
+}
+/* line 126, mainpage.less */
+body.page-mainpage .content .wrapper .greetings p {
+  font-size: 2.4rem;
+  color: #ffffff;
+  font-weight: 500;
+  line-height: 34px;
+}
+/* line 133, mainpage.less */
+body.page-mainpage .content .wrapper .log-in {
+  float: right;
   border-radius: 5px;
   -o-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -905,41 +1027,32 @@ body.page-mainpage .forgot-password {
   margin: 30px auto;
   width: 380px;
   height: 486px;
+  margin-left: 30px;
 }
-/* line 29, mainpage.less */
-body.page-mainpage .log-in .head,
-body.page-mainpage .sign-up .head,
-body.page-mainpage .forgot-password .head {
+/* line 145, mainpage.less */
+body.page-mainpage .content .wrapper .log-in .head {
   height: 54px;
   background: url('../images/login-form-header.png');
 }
-/* line 33, mainpage.less */
-body.page-mainpage .log-in form.body,
-body.page-mainpage .sign-up form.body,
-body.page-mainpage .forgot-password form.body {
+/* line 149, mainpage.less */
+body.page-mainpage .content .wrapper .log-in form.body {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   background: url('../images/loginform-bg.png');
   padding: 15px 30px;
 }
-/* line 38, mainpage.less */
-body.page-mainpage .log-in form.body .field,
-body.page-mainpage .sign-up form.body .field,
-body.page-mainpage .forgot-password form.body .field {
+/* line 154, mainpage.less */
+body.page-mainpage .content .wrapper .log-in form.body .field {
   margin-bottom: 20px;
 }
-/* line 41, mainpage.less */
-body.page-mainpage .log-in form.body .btn,
-body.page-mainpage .sign-up form.body .btn,
-body.page-mainpage .forgot-password form.body .btn {
+/* line 157, mainpage.less */
+body.page-mainpage .content .wrapper .log-in form.body .btn {
   width: 100%;
   padding: 15px 0;
   font-size: 1.4rem;
 }
-/* line 46, mainpage.less */
-body.page-mainpage .log-in form.body p.endnote,
-body.page-mainpage .sign-up form.body p.endnote,
-body.page-mainpage .forgot-password form.body p.endnote {
+/* line 162, mainpage.less */
+body.page-mainpage .content .wrapper .log-in form.body p.endnote {
   color: #b099a3;
   text-align: center;
   margin: 10px;
@@ -947,86 +1060,62 @@ body.page-mainpage .forgot-password form.body p.endnote {
   line-height: 150%;
   margin-bottom: 30px;
 }
-/* line 53, mainpage.less */
-body.page-mainpage .log-in form.body p.endnote a,
-body.page-mainpage .sign-up form.body p.endnote a,
-body.page-mainpage .forgot-password form.body p.endnote a {
+/* line 169, mainpage.less */
+body.page-mainpage .content .wrapper .log-in form.body p.endnote a {
   color: #ec4863;
 }
-/* line 57, mainpage.less */
-body.page-mainpage .log-in form.body .remember-me,
-body.page-mainpage .sign-up form.body .remember-me,
-body.page-mainpage .forgot-password form.body .remember-me {
+/* line 173, mainpage.less */
+body.page-mainpage .content .wrapper .log-in form.body .remember-me {
   float: left;
 }
-/* line 59, mainpage.less */
-body.page-mainpage .log-in form.body .remember-me .checkbox.container,
-body.page-mainpage .sign-up form.body .remember-me .checkbox.container,
-body.page-mainpage .forgot-password form.body .remember-me .checkbox.container {
+/* line 175, mainpage.less */
+body.page-mainpage .content .wrapper .log-in form.body .remember-me .checkbox.container {
   float: left;
   margin-top: 8px;
 }
-/* line 62, mainpage.less */
-body.page-mainpage .log-in form.body .remember-me .checkbox.container.checked + label,
-body.page-mainpage .sign-up form.body .remember-me .checkbox.container.checked + label,
-body.page-mainpage .forgot-password form.body .remember-me .checkbox.container.checked + label {
+/* line 178, mainpage.less */
+body.page-mainpage .content .wrapper .log-in form.body .remember-me .checkbox.container.checked + label {
   color: #ec4863;
 }
-/* line 66, mainpage.less */
-body.page-mainpage .log-in form.body .remember-me label,
-body.page-mainpage .sign-up form.body .remember-me label,
-body.page-mainpage .forgot-password form.body .remember-me label {
+/* line 182, mainpage.less */
+body.page-mainpage .content .wrapper .log-in form.body .remember-me label {
   float: left;
   margin-left: 10px;
   color: #b099a3;
 }
-/* line 72, mainpage.less */
-body.page-mainpage .log-in form.body a#forgot-password,
-body.page-mainpage .sign-up form.body a#forgot-password,
-body.page-mainpage .forgot-password form.body a#forgot-password {
+/* line 188, mainpage.less */
+body.page-mainpage .content .wrapper .log-in form.body a#forgot-password {
   display: block;
   float: right;
   margin-top: 10px;
   color: #ec4863;
   font-size: 1.2rem;
 }
-/* line 80, mainpage.less */
-body.page-mainpage .log-in .foot,
-body.page-mainpage .sign-up .foot,
-body.page-mainpage .forgot-password .foot {
+/* line 196, mainpage.less */
+body.page-mainpage .content .wrapper .log-in .foot {
   text-align: center;
   border-top: solid 1px #b099a3;
   background: url('../images/loginform-bg.png');
   padding: 15px 0 25px 0;
 }
-/* line 85, mainpage.less */
-body.page-mainpage .log-in .foot p,
-body.page-mainpage .sign-up .foot p,
-body.page-mainpage .forgot-password .foot p {
+/* line 201, mainpage.less */
+body.page-mainpage .content .wrapper .log-in .foot p {
   line-height: 100%;
   font-size: 1.2rem;
 }
-/* line 89, mainpage.less */
-body.page-mainpage .log-in .foot a#sign-up,
-body.page-mainpage .sign-up .foot a#sign-up,
-body.page-mainpage .forgot-password .foot a#sign-up,
-body.page-mainpage .log-in .foot a#sign-in,
-body.page-mainpage .sign-up .foot a#sign-in,
-body.page-mainpage .forgot-password .foot a#sign-in {
+/* line 205, mainpage.less */
+body.page-mainpage .content .wrapper .log-in .foot a#sign-up,
+body.page-mainpage .content .wrapper .log-in .foot a#sign-in {
   color: #ec4863;
   font-size: 1.4rem;
   font-weight: 500;
 }
-/* line 95, mainpage.less */
-body.page-mainpage .log-in.sign-up,
-body.page-mainpage .sign-up.sign-up,
-body.page-mainpage .forgot-password.sign-up,
-body.page-mainpage .log-in.forgot-password,
-body.page-mainpage .sign-up.forgot-password,
-body.page-mainpage .forgot-password.forgot-password {
+/* line 211, mainpage.less */
+body.page-mainpage .content .wrapper .log-in.sign-up,
+body.page-mainpage .content .wrapper .log-in.forgot-password {
   display: none;
 }
-/* line 99, mainpage.less */
+/* line 216, mainpage.less */
 body.page-mainpage footer.footer {
   color: #ffffff;
   font-size: 1.4rem;
@@ -1035,87 +1124,71 @@ body.page-mainpage footer.footer {
   margin-bottom: 20px;
   overflow: hidden;
 }
-/* line 106, mainpage.less */
+/* line 223, mainpage.less */
 body.page-mainpage footer.footer .copyright {
   float: left;
   margin-left: 30px;
 }
-/* line 109, mainpage.less */
+/* line 226, mainpage.less */
 body.page-mainpage footer.footer .copyright p {
   line-height: 155%;
 }
-/* line 113, mainpage.less */
+/* line 230, mainpage.less */
 body.page-mainpage footer.footer .right {
   float: right;
   margin-right: 30px;
   text-align: right;
 }
-/* line 117, mainpage.less */
+/* line 234, mainpage.less */
 body.page-mainpage footer.footer .right ul {
   margin-top: 35px;
 }
-/* line 119, mainpage.less */
+/* line 236, mainpage.less */
 body.page-mainpage footer.footer .right ul li {
   float: left;
   margin-left: 20px;
 }
-/* line 123, mainpage.less */
+/* line 240, mainpage.less */
 body.page-mainpage footer.footer .right ul li a:hover {
   text-decoration: underline;
 }
-/* line 131, mainpage.less */
-body.page-mainpage #authorization-window,
-body.page-mainpage #registration-window,
-body.page-mainpage #forgot-password-window {
+/* line 248, mainpage.less */
+body.page-mainpage #authorization-window {
   padding-bottom: 0;
 }
-/* line 134, mainpage.less */
-body.page-mainpage #authorization-window#forgot-password-window .container,
-body.page-mainpage #registration-window#forgot-password-window .container,
-body.page-mainpage #forgot-password-window#forgot-password-window .container {
+/* line 251, mainpage.less */
+body.page-mainpage #authorization-window#forgot-password-window .container {
   width: 500px;
 }
-/* line 136, mainpage.less */
-body.page-mainpage #authorization-window#forgot-password-window .container form,
-body.page-mainpage #registration-window#forgot-password-window .container form,
-body.page-mainpage #forgot-password-window#forgot-password-window .container form {
+/* line 253, mainpage.less */
+body.page-mainpage #authorization-window#forgot-password-window .container form {
   width: 300px;
   margin: auto;
   margin-bottom: 20px;
 }
-/* line 140, mainpage.less */
-body.page-mainpage #authorization-window#forgot-password-window .container form input[type="submit"],
-body.page-mainpage #registration-window#forgot-password-window .container form input[type="submit"],
-body.page-mainpage #forgot-password-window#forgot-password-window .container form input[type="submit"] {
+/* line 257, mainpage.less */
+body.page-mainpage #authorization-window#forgot-password-window .container form input[type="submit"] {
   width: 100%;
 }
-/* line 146, mainpage.less */
-body.page-mainpage #authorization-window > .container,
-body.page-mainpage #registration-window > .container,
-body.page-mainpage #forgot-password-window > .container {
+/* line 263, mainpage.less */
+body.page-mainpage #authorization-window > .container {
   padding-bottom: 60px;
 }
-/* line 148, mainpage.less */
-body.page-mainpage #authorization-window > .container h1,
-body.page-mainpage #registration-window > .container h1,
-body.page-mainpage #forgot-password-window > .container h1 {
+/* line 265, mainpage.less */
+body.page-mainpage #authorization-window > .container h1 {
   color: #290019;
   font: 500 2.4rem Roboto;
   margin-bottom: 20px;
 }
-/* line 153, mainpage.less */
-body.page-mainpage #authorization-window > .container .left,
-body.page-mainpage #registration-window > .container .left,
-body.page-mainpage #forgot-password-window > .container .left {
+/* line 270, mainpage.less */
+body.page-mainpage #authorization-window > .container .left {
   padding-right: 15px;
   width: 255px;
   float: left;
   border-right: solid 1px #b9d4cc;
 }
-/* line 158, mainpage.less */
-body.page-mainpage #authorization-window > .container .left a.omni-sign-in,
-body.page-mainpage #registration-window > .container .left a.omni-sign-in,
-body.page-mainpage #forgot-password-window > .container .left a.omni-sign-in {
+/* line 275, mainpage.less */
+body.page-mainpage #authorization-window > .container .left a.omni-sign-in {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   display: block;
@@ -1131,10 +1204,8 @@ body.page-mainpage #forgot-password-window > .container .left a.omni-sign-in {
   overflow: hidden;
   margin-bottom: 21px;
 }
-/* line 173, mainpage.less */
-body.page-mainpage #authorization-window > .container .left a.omni-sign-in i,
-body.page-mainpage #registration-window > .container .left a.omni-sign-in i,
-body.page-mainpage #forgot-password-window > .container .left a.omni-sign-in i {
+/* line 290, mainpage.less */
+body.page-mainpage #authorization-window > .container .left a.omni-sign-in i {
   position: relative;
   height: 100%;
   display: block;
@@ -1145,10 +1216,8 @@ body.page-mainpage #forgot-password-window > .container .left a.omni-sign-in i {
   text-align: center;
   width: 30px;
 }
-/* line 184, mainpage.less */
-body.page-mainpage #authorization-window > .container .left a.omni-sign-in span,
-body.page-mainpage #registration-window > .container .left a.omni-sign-in span,
-body.page-mainpage #forgot-password-window > .container .left a.omni-sign-in span {
+/* line 301, mainpage.less */
+body.page-mainpage #authorization-window > .container .left a.omni-sign-in span {
   position: relative;
   height: 100%;
   display: block;
@@ -1157,80 +1226,58 @@ body.page-mainpage #forgot-password-window > .container .left a.omni-sign-in spa
   padding-left: 15px;
   margin-top: 10px;
 }
-/* line 193, mainpage.less */
-body.page-mainpage #authorization-window > .container .left a.omni-sign-in#fb,
-body.page-mainpage #registration-window > .container .left a.omni-sign-in#fb,
-body.page-mainpage #forgot-password-window > .container .left a.omni-sign-in#fb {
+/* line 310, mainpage.less */
+body.page-mainpage #authorization-window > .container .left a.omni-sign-in#fb {
   background: #3b5998;
 }
-/* line 196, mainpage.less */
-body.page-mainpage #authorization-window > .container .left a.omni-sign-in#vk,
-body.page-mainpage #registration-window > .container .left a.omni-sign-in#vk,
-body.page-mainpage #forgot-password-window > .container .left a.omni-sign-in#vk {
+/* line 313, mainpage.less */
+body.page-mainpage #authorization-window > .container .left a.omni-sign-in#vk {
   background: #4c75a3;
 }
-/* line 199, mainpage.less */
-body.page-mainpage #authorization-window > .container .left a.omni-sign-in#ok,
-body.page-mainpage #registration-window > .container .left a.omni-sign-in#ok,
-body.page-mainpage #forgot-password-window > .container .left a.omni-sign-in#ok {
+/* line 316, mainpage.less */
+body.page-mainpage #authorization-window > .container .left a.omni-sign-in#ok {
   background: #fa9616;
   margin-bottom: 0;
 }
-/* line 202, mainpage.less */
-body.page-mainpage #authorization-window > .container .left a.omni-sign-in#ok i,
-body.page-mainpage #registration-window > .container .left a.omni-sign-in#ok i,
-body.page-mainpage #forgot-password-window > .container .left a.omni-sign-in#ok i {
+/* line 319, mainpage.less */
+body.page-mainpage #authorization-window > .container .left a.omni-sign-in#ok i {
   border-color: #d98314;
 }
-/* line 207, mainpage.less */
-body.page-mainpage #authorization-window > .container .left p,
-body.page-mainpage #registration-window > .container .left p,
-body.page-mainpage #forgot-password-window > .container .left p {
+/* line 324, mainpage.less */
+body.page-mainpage #authorization-window > .container .left p {
   color: #b099a3;
   text-align: center;
   font-size: 1.2rem;
   line-height: 150%;
 }
-/* line 212, mainpage.less */
-body.page-mainpage #authorization-window > .container .left p a,
-body.page-mainpage #registration-window > .container .left p a,
-body.page-mainpage #forgot-password-window > .container .left p a {
+/* line 329, mainpage.less */
+body.page-mainpage #authorization-window > .container .left p a {
   color: #ec4863;
   text-decoration: underline;
 }
-/* line 218, mainpage.less */
-body.page-mainpage #authorization-window > .container .right,
-body.page-mainpage #registration-window > .container .right,
-body.page-mainpage #forgot-password-window > .container .right {
+/* line 335, mainpage.less */
+body.page-mainpage #authorization-window > .container .right {
   width: 255px;
   float: right;
   padding-left: 15px;
 }
-/* line 222, mainpage.less */
-body.page-mainpage #authorization-window > .container .right .btn,
-body.page-mainpage #registration-window > .container .right .btn,
-body.page-mainpage #forgot-password-window > .container .right .btn {
+/* line 339, mainpage.less */
+body.page-mainpage #authorization-window > .container .right .btn {
   width: 100%;
 }
-/* line 225, mainpage.less */
-body.page-mainpage #authorization-window > .container .right p,
-body.page-mainpage #registration-window > .container .right p,
-body.page-mainpage #forgot-password-window > .container .right p {
+/* line 342, mainpage.less */
+body.page-mainpage #authorization-window > .container .right p {
   color: #b099a3;
   font: 400 1.2rem Roboto;
   text-align: center;
 }
-/* line 229, mainpage.less */
-body.page-mainpage #authorization-window > .container .right p a,
-body.page-mainpage #registration-window > .container .right p a,
-body.page-mainpage #forgot-password-window > .container .right p a {
+/* line 346, mainpage.less */
+body.page-mainpage #authorization-window > .container .right p a {
   color: #8e7781;
   font-weight: bold;
 }
-/* line 235, mainpage.less */
-body.page-mainpage #authorization-window > .container .links,
-body.page-mainpage #registration-window > .container .links,
-body.page-mainpage #forgot-password-window > .container .links {
+/* line 352, mainpage.less */
+body.page-mainpage #authorization-window > .container .links {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -1239,45 +1286,593 @@ body.page-mainpage #forgot-password-window > .container .links {
   border-top: #b9d4cc 1px solid;
   padding-top: 10px;
 }
-/* line 244, mainpage.less */
+/* line 361, mainpage.less */
 body.page-mainpage #authorization-window > .container a.sign-up,
-body.page-mainpage #registration-window > .container a.sign-up,
-body.page-mainpage #forgot-password-window > .container a.sign-up,
 body.page-mainpage #authorization-window > .container a.forgot-password,
-body.page-mainpage #registration-window > .container a.forgot-password,
-body.page-mainpage #forgot-password-window > .container a.forgot-password,
-body.page-mainpage #authorization-window > .container a.sign-in,
-body.page-mainpage #registration-window > .container a.sign-in,
-body.page-mainpage #forgot-password-window > .container a.sign-in {
+body.page-mainpage #authorization-window > .container a.sign-in {
   color: #35504e;
   font: 400 1.4rem Roboto;
   text-decoration: none;
   margin-top: 10px;
   line-height: 26px;
 }
-/* line 250, mainpage.less */
+/* line 367, mainpage.less */
 body.page-mainpage #authorization-window > .container a.sign-up span,
-body.page-mainpage #registration-window > .container a.sign-up span,
-body.page-mainpage #forgot-password-window > .container a.sign-up span,
 body.page-mainpage #authorization-window > .container a.forgot-password span,
-body.page-mainpage #registration-window > .container a.forgot-password span,
-body.page-mainpage #forgot-password-window > .container a.forgot-password span,
-body.page-mainpage #authorization-window > .container a.sign-in span,
-body.page-mainpage #registration-window > .container a.sign-in span,
-body.page-mainpage #forgot-password-window > .container a.sign-in span {
+body.page-mainpage #authorization-window > .container a.sign-in span {
   color: #ec4863;
   font-weight: bold;
 }
-/* line 254, mainpage.less */
+/* line 371, mainpage.less */
 body.page-mainpage #authorization-window > .container a.sign-up.forgot-password,
-body.page-mainpage #registration-window > .container a.sign-up.forgot-password,
-body.page-mainpage #forgot-password-window > .container a.sign-up.forgot-password,
 body.page-mainpage #authorization-window > .container a.forgot-password.forgot-password,
-body.page-mainpage #registration-window > .container a.forgot-password.forgot-password,
-body.page-mainpage #forgot-password-window > .container a.forgot-password.forgot-password,
-body.page-mainpage #authorization-window > .container a.sign-in.forgot-password,
-body.page-mainpage #registration-window > .container a.sign-in.forgot-password,
-body.page-mainpage #forgot-password-window > .container a.sign-in.forgot-password {
+body.page-mainpage #authorization-window > .container a.sign-in.forgot-password {
+  font-size: 1.2rem;
+}
+/* line 378, mainpage.less */
+body.page-recovery-password,
+body.page-sign-up {
+  background: url('../images/mainpage-bg.jpg') center center no-repeat;
+  background-size: cover;
+}
+/* line 381, mainpage.less */
+body.page-recovery-password .ui-button-icon-primary,
+body.page-sign-up .ui-button-icon-primary {
+  margin-left: -16px !important;
+  margin-top: 0 !important;
+}
+/* line 385, mainpage.less */
+body.page-recovery-password h1,
+body.page-sign-up h1 {
+  color: #ffffff;
+  text-align: center;
+  font: 700 4.8rem Roboto;
+  padding-bottom: 0;
+  margin-top: 40px;
+}
+/* line 392, mainpage.less */
+body.page-recovery-password h4,
+body.page-sign-up h4 {
+  color: #ffffff;
+  text-align: center;
+  font: 500 1.8rem Roboto;
+}
+/* line 397, mainpage.less */
+body.page-recovery-password .log-in,
+body.page-sign-up .log-in,
+body.page-recovery-password .sign-up,
+body.page-sign-up .sign-up,
+body.page-recovery-password .forgot-password,
+body.page-sign-up .forgot-password {
+  border-radius: 5px;
+  -o-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  overflow: hidden;
+  margin: 30px auto;
+  width: 380px;
+  height: 486px;
+}
+/* line 406, mainpage.less */
+body.page-recovery-password .log-in .head,
+body.page-sign-up .log-in .head,
+body.page-recovery-password .sign-up .head,
+body.page-sign-up .sign-up .head,
+body.page-recovery-password .forgot-password .head,
+body.page-sign-up .forgot-password .head {
+  height: 54px;
+  background: url('../images/login-form-header.png');
+}
+/* line 410, mainpage.less */
+body.page-recovery-password .log-in form.body,
+body.page-sign-up .log-in form.body,
+body.page-recovery-password .sign-up form.body,
+body.page-sign-up .sign-up form.body,
+body.page-recovery-password .forgot-password form.body,
+body.page-sign-up .forgot-password form.body {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  background: url('../images/loginform-bg.png');
+  padding: 15px 30px;
+}
+/* line 415, mainpage.less */
+body.page-recovery-password .log-in form.body .field,
+body.page-sign-up .log-in form.body .field,
+body.page-recovery-password .sign-up form.body .field,
+body.page-sign-up .sign-up form.body .field,
+body.page-recovery-password .forgot-password form.body .field,
+body.page-sign-up .forgot-password form.body .field {
+  margin-bottom: 20px;
+}
+/* line 418, mainpage.less */
+body.page-recovery-password .log-in form.body .btn,
+body.page-sign-up .log-in form.body .btn,
+body.page-recovery-password .sign-up form.body .btn,
+body.page-sign-up .sign-up form.body .btn,
+body.page-recovery-password .forgot-password form.body .btn,
+body.page-sign-up .forgot-password form.body .btn {
+  width: 100%;
+  padding: 15px 0;
+  font-size: 1.4rem;
+}
+/* line 423, mainpage.less */
+body.page-recovery-password .log-in form.body p.endnote,
+body.page-sign-up .log-in form.body p.endnote,
+body.page-recovery-password .sign-up form.body p.endnote,
+body.page-sign-up .sign-up form.body p.endnote,
+body.page-recovery-password .forgot-password form.body p.endnote,
+body.page-sign-up .forgot-password form.body p.endnote {
+  color: #b099a3;
+  text-align: center;
+  margin: 10px;
+  font: 500 1.2rem Roboto;
+  line-height: 150%;
+  margin-bottom: 30px;
+}
+/* line 430, mainpage.less */
+body.page-recovery-password .log-in form.body p.endnote a,
+body.page-sign-up .log-in form.body p.endnote a,
+body.page-recovery-password .sign-up form.body p.endnote a,
+body.page-sign-up .sign-up form.body p.endnote a,
+body.page-recovery-password .forgot-password form.body p.endnote a,
+body.page-sign-up .forgot-password form.body p.endnote a {
+  color: #ec4863;
+}
+/* line 434, mainpage.less */
+body.page-recovery-password .log-in form.body .remember-me,
+body.page-sign-up .log-in form.body .remember-me,
+body.page-recovery-password .sign-up form.body .remember-me,
+body.page-sign-up .sign-up form.body .remember-me,
+body.page-recovery-password .forgot-password form.body .remember-me,
+body.page-sign-up .forgot-password form.body .remember-me {
+  float: left;
+}
+/* line 436, mainpage.less */
+body.page-recovery-password .log-in form.body .remember-me .checkbox.container,
+body.page-sign-up .log-in form.body .remember-me .checkbox.container,
+body.page-recovery-password .sign-up form.body .remember-me .checkbox.container,
+body.page-sign-up .sign-up form.body .remember-me .checkbox.container,
+body.page-recovery-password .forgot-password form.body .remember-me .checkbox.container,
+body.page-sign-up .forgot-password form.body .remember-me .checkbox.container {
+  float: left;
+  margin-top: 8px;
+}
+/* line 439, mainpage.less */
+body.page-recovery-password .log-in form.body .remember-me .checkbox.container.checked + label,
+body.page-sign-up .log-in form.body .remember-me .checkbox.container.checked + label,
+body.page-recovery-password .sign-up form.body .remember-me .checkbox.container.checked + label,
+body.page-sign-up .sign-up form.body .remember-me .checkbox.container.checked + label,
+body.page-recovery-password .forgot-password form.body .remember-me .checkbox.container.checked + label,
+body.page-sign-up .forgot-password form.body .remember-me .checkbox.container.checked + label {
+  color: #ec4863;
+}
+/* line 443, mainpage.less */
+body.page-recovery-password .log-in form.body .remember-me label,
+body.page-sign-up .log-in form.body .remember-me label,
+body.page-recovery-password .sign-up form.body .remember-me label,
+body.page-sign-up .sign-up form.body .remember-me label,
+body.page-recovery-password .forgot-password form.body .remember-me label,
+body.page-sign-up .forgot-password form.body .remember-me label {
+  float: left;
+  margin-left: 10px;
+  color: #b099a3;
+}
+/* line 449, mainpage.less */
+body.page-recovery-password .log-in form.body a#forgot-password,
+body.page-sign-up .log-in form.body a#forgot-password,
+body.page-recovery-password .sign-up form.body a#forgot-password,
+body.page-sign-up .sign-up form.body a#forgot-password,
+body.page-recovery-password .forgot-password form.body a#forgot-password,
+body.page-sign-up .forgot-password form.body a#forgot-password {
+  display: block;
+  float: right;
+  margin-top: 10px;
+  color: #ec4863;
+  font-size: 1.2rem;
+}
+/* line 457, mainpage.less */
+body.page-recovery-password .log-in .foot,
+body.page-sign-up .log-in .foot,
+body.page-recovery-password .sign-up .foot,
+body.page-sign-up .sign-up .foot,
+body.page-recovery-password .forgot-password .foot,
+body.page-sign-up .forgot-password .foot {
+  text-align: center;
+  border-top: solid 1px #b099a3;
+  background: url('../images/loginform-bg.png');
+  padding: 15px 0 25px 0;
+}
+/* line 462, mainpage.less */
+body.page-recovery-password .log-in .foot p,
+body.page-sign-up .log-in .foot p,
+body.page-recovery-password .sign-up .foot p,
+body.page-sign-up .sign-up .foot p,
+body.page-recovery-password .forgot-password .foot p,
+body.page-sign-up .forgot-password .foot p {
+  line-height: 100%;
+  font-size: 1.2rem;
+}
+/* line 466, mainpage.less */
+body.page-recovery-password .log-in .foot a#sign-up,
+body.page-sign-up .log-in .foot a#sign-up,
+body.page-recovery-password .sign-up .foot a#sign-up,
+body.page-sign-up .sign-up .foot a#sign-up,
+body.page-recovery-password .forgot-password .foot a#sign-up,
+body.page-sign-up .forgot-password .foot a#sign-up,
+body.page-recovery-password .log-in .foot a#sign-in,
+body.page-sign-up .log-in .foot a#sign-in,
+body.page-recovery-password .sign-up .foot a#sign-in,
+body.page-sign-up .sign-up .foot a#sign-in,
+body.page-recovery-password .forgot-password .foot a#sign-in,
+body.page-sign-up .forgot-password .foot a#sign-in {
+  color: #ec4863;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+/* line 472, mainpage.less */
+body.page-recovery-password .log-in.sign-up,
+body.page-sign-up .log-in.sign-up,
+body.page-recovery-password .sign-up.sign-up,
+body.page-sign-up .sign-up.sign-up,
+body.page-recovery-password .forgot-password.sign-up,
+body.page-sign-up .forgot-password.sign-up,
+body.page-recovery-password .log-in.forgot-password,
+body.page-sign-up .log-in.forgot-password,
+body.page-recovery-password .sign-up.forgot-password,
+body.page-sign-up .sign-up.forgot-password,
+body.page-recovery-password .forgot-password.forgot-password,
+body.page-sign-up .forgot-password.forgot-password {
+  display: none;
+}
+/* line 476, mainpage.less */
+body.page-recovery-password footer.footer,
+body.page-sign-up footer.footer {
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+/* line 483, mainpage.less */
+body.page-recovery-password footer.footer .copyright,
+body.page-sign-up footer.footer .copyright {
+  float: left;
+  margin-left: 30px;
+}
+/* line 486, mainpage.less */
+body.page-recovery-password footer.footer .copyright p,
+body.page-sign-up footer.footer .copyright p {
+  line-height: 155%;
+}
+/* line 490, mainpage.less */
+body.page-recovery-password footer.footer .right,
+body.page-sign-up footer.footer .right {
+  float: right;
+  margin-right: 30px;
+  text-align: right;
+}
+/* line 494, mainpage.less */
+body.page-recovery-password footer.footer .right ul,
+body.page-sign-up footer.footer .right ul {
+  margin-top: 35px;
+}
+/* line 496, mainpage.less */
+body.page-recovery-password footer.footer .right ul li,
+body.page-sign-up footer.footer .right ul li {
+  float: left;
+  margin-left: 20px;
+}
+/* line 500, mainpage.less */
+body.page-recovery-password footer.footer .right ul li a:hover,
+body.page-sign-up footer.footer .right ul li a:hover {
+  text-decoration: underline;
+}
+/* line 508, mainpage.less */
+body.page-recovery-password #authorization-window,
+body.page-sign-up #authorization-window,
+body.page-recovery-password #registration-window,
+body.page-sign-up #registration-window,
+body.page-recovery-password #forgot-password-window,
+body.page-sign-up #forgot-password-window {
+  padding-bottom: 0;
+}
+/* line 511, mainpage.less */
+body.page-recovery-password #authorization-window#forgot-password-window .container,
+body.page-sign-up #authorization-window#forgot-password-window .container,
+body.page-recovery-password #registration-window#forgot-password-window .container,
+body.page-sign-up #registration-window#forgot-password-window .container,
+body.page-recovery-password #forgot-password-window#forgot-password-window .container,
+body.page-sign-up #forgot-password-window#forgot-password-window .container {
+  width: 500px;
+}
+/* line 513, mainpage.less */
+body.page-recovery-password #authorization-window#forgot-password-window .container form,
+body.page-sign-up #authorization-window#forgot-password-window .container form,
+body.page-recovery-password #registration-window#forgot-password-window .container form,
+body.page-sign-up #registration-window#forgot-password-window .container form,
+body.page-recovery-password #forgot-password-window#forgot-password-window .container form,
+body.page-sign-up #forgot-password-window#forgot-password-window .container form {
+  width: 300px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+/* line 517, mainpage.less */
+body.page-recovery-password #authorization-window#forgot-password-window .container form input[type="submit"],
+body.page-sign-up #authorization-window#forgot-password-window .container form input[type="submit"],
+body.page-recovery-password #registration-window#forgot-password-window .container form input[type="submit"],
+body.page-sign-up #registration-window#forgot-password-window .container form input[type="submit"],
+body.page-recovery-password #forgot-password-window#forgot-password-window .container form input[type="submit"],
+body.page-sign-up #forgot-password-window#forgot-password-window .container form input[type="submit"] {
+  width: 100%;
+}
+/* line 523, mainpage.less */
+body.page-recovery-password #authorization-window > .container,
+body.page-sign-up #authorization-window > .container,
+body.page-recovery-password #registration-window > .container,
+body.page-sign-up #registration-window > .container,
+body.page-recovery-password #forgot-password-window > .container,
+body.page-sign-up #forgot-password-window > .container {
+  padding-bottom: 60px;
+}
+/* line 525, mainpage.less */
+body.page-recovery-password #authorization-window > .container h1,
+body.page-sign-up #authorization-window > .container h1,
+body.page-recovery-password #registration-window > .container h1,
+body.page-sign-up #registration-window > .container h1,
+body.page-recovery-password #forgot-password-window > .container h1,
+body.page-sign-up #forgot-password-window > .container h1 {
+  color: #290019;
+  font: 500 2.4rem Roboto;
+  margin-bottom: 20px;
+}
+/* line 530, mainpage.less */
+body.page-recovery-password #authorization-window > .container .left,
+body.page-sign-up #authorization-window > .container .left,
+body.page-recovery-password #registration-window > .container .left,
+body.page-sign-up #registration-window > .container .left,
+body.page-recovery-password #forgot-password-window > .container .left,
+body.page-sign-up #forgot-password-window > .container .left {
+  padding-right: 15px;
+  width: 255px;
+  float: left;
+  border-right: solid 1px #b9d4cc;
+}
+/* line 535, mainpage.less */
+body.page-recovery-password #authorization-window > .container .left a.omni-sign-in,
+body.page-sign-up #authorization-window > .container .left a.omni-sign-in,
+body.page-recovery-password #registration-window > .container .left a.omni-sign-in,
+body.page-sign-up #registration-window > .container .left a.omni-sign-in,
+body.page-recovery-password #forgot-password-window > .container .left a.omni-sign-in,
+body.page-sign-up #forgot-password-window > .container .left a.omni-sign-in {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  -o-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0 10px;
+  clear: both;
+  overflow: hidden;
+  margin-bottom: 21px;
+}
+/* line 550, mainpage.less */
+body.page-recovery-password #authorization-window > .container .left a.omni-sign-in i,
+body.page-sign-up #authorization-window > .container .left a.omni-sign-in i,
+body.page-recovery-password #registration-window > .container .left a.omni-sign-in i,
+body.page-sign-up #registration-window > .container .left a.omni-sign-in i,
+body.page-recovery-password #forgot-password-window > .container .left a.omni-sign-in i,
+body.page-sign-up #forgot-password-window > .container .left a.omni-sign-in i {
+  position: relative;
+  height: 100%;
+  display: block;
+  float: left;
+  border-right: solid 1px #2f4779;
+  font-size: 1.8rem;
+  padding: 10px 10px 10px 0;
+  text-align: center;
+  width: 30px;
+}
+/* line 561, mainpage.less */
+body.page-recovery-password #authorization-window > .container .left a.omni-sign-in span,
+body.page-sign-up #authorization-window > .container .left a.omni-sign-in span,
+body.page-recovery-password #registration-window > .container .left a.omni-sign-in span,
+body.page-sign-up #registration-window > .container .left a.omni-sign-in span,
+body.page-recovery-password #forgot-password-window > .container .left a.omni-sign-in span,
+body.page-sign-up #forgot-password-window > .container .left a.omni-sign-in span {
+  position: relative;
+  height: 100%;
+  display: block;
+  float: left;
+  font-size: 1.2rem;
+  padding-left: 15px;
+  margin-top: 10px;
+}
+/* line 570, mainpage.less */
+body.page-recovery-password #authorization-window > .container .left a.omni-sign-in#fb,
+body.page-sign-up #authorization-window > .container .left a.omni-sign-in#fb,
+body.page-recovery-password #registration-window > .container .left a.omni-sign-in#fb,
+body.page-sign-up #registration-window > .container .left a.omni-sign-in#fb,
+body.page-recovery-password #forgot-password-window > .container .left a.omni-sign-in#fb,
+body.page-sign-up #forgot-password-window > .container .left a.omni-sign-in#fb {
+  background: #3b5998;
+}
+/* line 573, mainpage.less */
+body.page-recovery-password #authorization-window > .container .left a.omni-sign-in#vk,
+body.page-sign-up #authorization-window > .container .left a.omni-sign-in#vk,
+body.page-recovery-password #registration-window > .container .left a.omni-sign-in#vk,
+body.page-sign-up #registration-window > .container .left a.omni-sign-in#vk,
+body.page-recovery-password #forgot-password-window > .container .left a.omni-sign-in#vk,
+body.page-sign-up #forgot-password-window > .container .left a.omni-sign-in#vk {
+  background: #4c75a3;
+}
+/* line 576, mainpage.less */
+body.page-recovery-password #authorization-window > .container .left a.omni-sign-in#ok,
+body.page-sign-up #authorization-window > .container .left a.omni-sign-in#ok,
+body.page-recovery-password #registration-window > .container .left a.omni-sign-in#ok,
+body.page-sign-up #registration-window > .container .left a.omni-sign-in#ok,
+body.page-recovery-password #forgot-password-window > .container .left a.omni-sign-in#ok,
+body.page-sign-up #forgot-password-window > .container .left a.omni-sign-in#ok {
+  background: #fa9616;
+  margin-bottom: 0;
+}
+/* line 579, mainpage.less */
+body.page-recovery-password #authorization-window > .container .left a.omni-sign-in#ok i,
+body.page-sign-up #authorization-window > .container .left a.omni-sign-in#ok i,
+body.page-recovery-password #registration-window > .container .left a.omni-sign-in#ok i,
+body.page-sign-up #registration-window > .container .left a.omni-sign-in#ok i,
+body.page-recovery-password #forgot-password-window > .container .left a.omni-sign-in#ok i,
+body.page-sign-up #forgot-password-window > .container .left a.omni-sign-in#ok i {
+  border-color: #d98314;
+}
+/* line 584, mainpage.less */
+body.page-recovery-password #authorization-window > .container .left p,
+body.page-sign-up #authorization-window > .container .left p,
+body.page-recovery-password #registration-window > .container .left p,
+body.page-sign-up #registration-window > .container .left p,
+body.page-recovery-password #forgot-password-window > .container .left p,
+body.page-sign-up #forgot-password-window > .container .left p {
+  color: #b099a3;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 150%;
+}
+/* line 589, mainpage.less */
+body.page-recovery-password #authorization-window > .container .left p a,
+body.page-sign-up #authorization-window > .container .left p a,
+body.page-recovery-password #registration-window > .container .left p a,
+body.page-sign-up #registration-window > .container .left p a,
+body.page-recovery-password #forgot-password-window > .container .left p a,
+body.page-sign-up #forgot-password-window > .container .left p a {
+  color: #ec4863;
+  text-decoration: underline;
+}
+/* line 595, mainpage.less */
+body.page-recovery-password #authorization-window > .container .right,
+body.page-sign-up #authorization-window > .container .right,
+body.page-recovery-password #registration-window > .container .right,
+body.page-sign-up #registration-window > .container .right,
+body.page-recovery-password #forgot-password-window > .container .right,
+body.page-sign-up #forgot-password-window > .container .right {
+  width: 255px;
+  float: right;
+  padding-left: 15px;
+}
+/* line 599, mainpage.less */
+body.page-recovery-password #authorization-window > .container .right .btn,
+body.page-sign-up #authorization-window > .container .right .btn,
+body.page-recovery-password #registration-window > .container .right .btn,
+body.page-sign-up #registration-window > .container .right .btn,
+body.page-recovery-password #forgot-password-window > .container .right .btn,
+body.page-sign-up #forgot-password-window > .container .right .btn {
+  width: 100%;
+}
+/* line 602, mainpage.less */
+body.page-recovery-password #authorization-window > .container .right p,
+body.page-sign-up #authorization-window > .container .right p,
+body.page-recovery-password #registration-window > .container .right p,
+body.page-sign-up #registration-window > .container .right p,
+body.page-recovery-password #forgot-password-window > .container .right p,
+body.page-sign-up #forgot-password-window > .container .right p {
+  color: #b099a3;
+  font: 400 1.2rem Roboto;
+  text-align: center;
+}
+/* line 606, mainpage.less */
+body.page-recovery-password #authorization-window > .container .right p a,
+body.page-sign-up #authorization-window > .container .right p a,
+body.page-recovery-password #registration-window > .container .right p a,
+body.page-sign-up #registration-window > .container .right p a,
+body.page-recovery-password #forgot-password-window > .container .right p a,
+body.page-sign-up #forgot-password-window > .container .right p a {
+  color: #8e7781;
+  font-weight: bold;
+}
+/* line 612, mainpage.less */
+body.page-recovery-password #authorization-window > .container .links,
+body.page-sign-up #authorization-window > .container .links,
+body.page-recovery-password #registration-window > .container .links,
+body.page-sign-up #registration-window > .container .links,
+body.page-recovery-password #forgot-password-window > .container .links,
+body.page-sign-up #forgot-password-window > .container .links {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: block;
+  text-align: center;
+  border-top: #b9d4cc 1px solid;
+  padding-top: 10px;
+}
+/* line 621, mainpage.less */
+body.page-recovery-password #authorization-window > .container a.sign-up,
+body.page-sign-up #authorization-window > .container a.sign-up,
+body.page-recovery-password #registration-window > .container a.sign-up,
+body.page-sign-up #registration-window > .container a.sign-up,
+body.page-recovery-password #forgot-password-window > .container a.sign-up,
+body.page-sign-up #forgot-password-window > .container a.sign-up,
+body.page-recovery-password #authorization-window > .container a.forgot-password,
+body.page-sign-up #authorization-window > .container a.forgot-password,
+body.page-recovery-password #registration-window > .container a.forgot-password,
+body.page-sign-up #registration-window > .container a.forgot-password,
+body.page-recovery-password #forgot-password-window > .container a.forgot-password,
+body.page-sign-up #forgot-password-window > .container a.forgot-password,
+body.page-recovery-password #authorization-window > .container a.sign-in,
+body.page-sign-up #authorization-window > .container a.sign-in,
+body.page-recovery-password #registration-window > .container a.sign-in,
+body.page-sign-up #registration-window > .container a.sign-in,
+body.page-recovery-password #forgot-password-window > .container a.sign-in,
+body.page-sign-up #forgot-password-window > .container a.sign-in {
+  color: #35504e;
+  font: 400 1.4rem Roboto;
+  text-decoration: none;
+  margin-top: 10px;
+  line-height: 26px;
+}
+/* line 627, mainpage.less */
+body.page-recovery-password #authorization-window > .container a.sign-up span,
+body.page-sign-up #authorization-window > .container a.sign-up span,
+body.page-recovery-password #registration-window > .container a.sign-up span,
+body.page-sign-up #registration-window > .container a.sign-up span,
+body.page-recovery-password #forgot-password-window > .container a.sign-up span,
+body.page-sign-up #forgot-password-window > .container a.sign-up span,
+body.page-recovery-password #authorization-window > .container a.forgot-password span,
+body.page-sign-up #authorization-window > .container a.forgot-password span,
+body.page-recovery-password #registration-window > .container a.forgot-password span,
+body.page-sign-up #registration-window > .container a.forgot-password span,
+body.page-recovery-password #forgot-password-window > .container a.forgot-password span,
+body.page-sign-up #forgot-password-window > .container a.forgot-password span,
+body.page-recovery-password #authorization-window > .container a.sign-in span,
+body.page-sign-up #authorization-window > .container a.sign-in span,
+body.page-recovery-password #registration-window > .container a.sign-in span,
+body.page-sign-up #registration-window > .container a.sign-in span,
+body.page-recovery-password #forgot-password-window > .container a.sign-in span,
+body.page-sign-up #forgot-password-window > .container a.sign-in span {
+  color: #ec4863;
+  font-weight: bold;
+}
+/* line 631, mainpage.less */
+body.page-recovery-password #authorization-window > .container a.sign-up.forgot-password,
+body.page-sign-up #authorization-window > .container a.sign-up.forgot-password,
+body.page-recovery-password #registration-window > .container a.sign-up.forgot-password,
+body.page-sign-up #registration-window > .container a.sign-up.forgot-password,
+body.page-recovery-password #forgot-password-window > .container a.sign-up.forgot-password,
+body.page-sign-up #forgot-password-window > .container a.sign-up.forgot-password,
+body.page-recovery-password #authorization-window > .container a.forgot-password.forgot-password,
+body.page-sign-up #authorization-window > .container a.forgot-password.forgot-password,
+body.page-recovery-password #registration-window > .container a.forgot-password.forgot-password,
+body.page-sign-up #registration-window > .container a.forgot-password.forgot-password,
+body.page-recovery-password #forgot-password-window > .container a.forgot-password.forgot-password,
+body.page-sign-up #forgot-password-window > .container a.forgot-password.forgot-password,
+body.page-recovery-password #authorization-window > .container a.sign-in.forgot-password,
+body.page-sign-up #authorization-window > .container a.sign-in.forgot-password,
+body.page-recovery-password #registration-window > .container a.sign-in.forgot-password,
+body.page-sign-up #registration-window > .container a.sign-in.forgot-password,
+body.page-recovery-password #forgot-password-window > .container a.sign-in.forgot-password,
+body.page-sign-up #forgot-password-window > .container a.sign-in.forgot-password {
   font-size: 1.2rem;
 }
 /* line 1, cheat-sheet.less */
