@@ -62,7 +62,7 @@
         <h4>Профессиональные терапевты</h4>
         <div class="slider">
             <div class="wrapper">
-                <?php for($i = 0; $i <= 3; $i++) { ?>
+                <?php for($i = 0; $i <= 18; $i++) { ?>
                 <div class="item content-block">
                     <div class="photo-container">
                         <a href="#">
@@ -78,10 +78,6 @@
             </div>
             <div class="controls-container">
                 <div class="controls">
-                    <div class="circle active"></div>
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                    <div class="circle"></div>
                 </div>
             </div>
         </div>
