@@ -114,6 +114,7 @@ var loadTimePickers = function(){
     $('.datepicker').datepicker({
 
     });
+    //$('.timepicker-light').timepickerLight();
 }
 var checkForValue = function(element){
     if($(element).val().length) {return true} else{return false}

@@ -1,6 +1,7 @@
 <?php
 	$day = $_POST['date'];
 	$schedule = Array(
+		//'weekend' => true,
 		Array(
 			'id' => 12,
 			'time' => Array('12:00', '14:30'),
@@ -29,7 +30,7 @@
 			'id' => 15,
 			'time' => Array('00:00', '4:00'),
 			'type' => 'unwork'
-		),
+		)
 	);
 	echo json_encode($schedule);
 ?>

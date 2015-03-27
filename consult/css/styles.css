@@ -2307,62 +2307,71 @@ body.page-profile-schedule .edit-schedule .content-block form .free-time .type {
   margin-left: 30px;
 }
 /* line 56, schedule.less */
-body.page-profile-schedule .edit-schedule .content-block form .free-time .type .field {
+body.page-profile-schedule .edit-schedule .content-block form .free-time .type > .field {
   overflow: hidden;
   margin: 5px 0;
 }
-/* line 61, schedule.less */
+/* line 60, schedule.less */
+body.page-profile-schedule .edit-schedule .content-block form .free-time .type .times {
+  margin-bottom: 30px;
+  display: none;
+}
+/* line 63, schedule.less */
+body.page-profile-schedule .edit-schedule .content-block form .free-time .type .times label {
+  margin-top: 0;
+}
+/* line 66, schedule.less */
+body.page-profile-schedule .edit-schedule .content-block form .free-time .type .times .field {
+  float: left;
+  width: 44%;
+}
+/* line 72, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block form .free-time .select2-container {
   width: 100% !important;
   margin-top: 10px;
 }
-/* line 65, schedule.less */
-body.page-profile-schedule .edit-schedule .content-block form .free-time .field.begin,
-body.page-profile-schedule .edit-schedule .content-block form .free-time .field.end {
-  margin-top: 30px;
-}
-/* line 69, schedule.less */
+/* line 77, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block form .consult {
   padding: 30px 20px;
   border-top: solid 1px #8aa4a2;
 }
-/* line 72, schedule.less */
+/* line 80, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block form .consult .type {
   margin-left: 30px;
 }
-/* line 74, schedule.less */
+/* line 82, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block form .consult .type .field {
   overflow: hidden;
 }
-/* line 76, schedule.less */
+/* line 84, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block form .consult .type .field .checkbox.container {
   float: left;
   margin-right: 10px;
 }
-/* line 79, schedule.less */
+/* line 87, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block form .consult .type .field .checkbox.container + label {
   margin-top: 4px;
 }
-/* line 85, schedule.less */
+/* line 93, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block form .consult .field.begin,
 body.page-profile-schedule .edit-schedule .content-block form .consult .field.end {
   margin-top: 0px;
 }
-/* line 88, schedule.less */
+/* line 96, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block form .consult .field.comment {
   margin-top: 10px;
 }
-/* line 90, schedule.less */
+/* line 98, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block form .consult .field.comment textarea {
   height: 80px;
 }
-/* line 95, schedule.less */
+/* line 103, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block form .checkbox.container,
 body.page-profile-schedule .edit-schedule .content-block form .radio.container {
   float: left;
   margin-right: 10px;
 }
-/* line 98, schedule.less */
+/* line 106, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block form .checkbox.container + label,
 body.page-profile-schedule .edit-schedule .content-block form .radio.container + label {
   float: left;
@@ -2372,42 +2381,42 @@ body.page-profile-schedule .edit-schedule .content-block form .radio.container +
   font-weight: 500;
   text-align: left;
 }
-/* line 107, schedule.less */
+/* line 115, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block form input[type="submit"] {
   float: right;
   margin-right: 20px;
   margin-left: 20px;
   margin-bottom: 20px;
 }
-/* line 113, schedule.less */
+/* line 121, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block form input[type="button"] {
   float: right;
 }
-/* line 120, schedule.less */
+/* line 128, schedule.less */
 body.page-profile-schedule > .wrapper .content {
   margin-top: 20px;
 }
-/* line 122, schedule.less */
+/* line 130, schedule.less */
 body.page-profile-schedule > .wrapper .content .day {
   padding: 5px 0;
 }
-/* line 124, schedule.less */
+/* line 132, schedule.less */
 body.page-profile-schedule > .wrapper .content .day .day-container {
   float: left;
   left: 50%;
 }
-/* line 127, schedule.less */
+/* line 135, schedule.less */
 body.page-profile-schedule > .wrapper .content .day .day-container .day-choose {
   float: right;
   right: 50%;
   padding-left: 50px;
   padding-right: 50px;
 }
-/* line 132, schedule.less */
+/* line 140, schedule.less */
 body.page-profile-schedule > .wrapper .content .day .day-container .day-choose p {
   text-align: center;
 }
-/* line 134, schedule.less */
+/* line 142, schedule.less */
 body.page-profile-schedule > .wrapper .content .day .day-container .day-choose p a {
   color: #35504e;
   font-size: 1.4rem;
@@ -2415,25 +2424,25 @@ body.page-profile-schedule > .wrapper .content .day .day-container .day-choose p
   text-align: center;
   text-decoration: none;
 }
-/* line 140, schedule.less */
+/* line 148, schedule.less */
 body.page-profile-schedule > .wrapper .content .day .day-container .day-choose p a:hover {
   text-decoration: underline;
 }
-/* line 145, schedule.less */
+/* line 153, schedule.less */
 body.page-profile-schedule > .wrapper .content .day .day-container .day-choose a.arrow {
   position: absolute;
   display: block;
   top: 11px;
 }
-/* line 149, schedule.less */
+/* line 157, schedule.less */
 body.page-profile-schedule > .wrapper .content .day .day-container .day-choose a.arrow.left {
   left: 0;
 }
-/* line 152, schedule.less */
+/* line 160, schedule.less */
 body.page-profile-schedule > .wrapper .content .day .day-container .day-choose a.arrow.right {
   right: 0;
 }
-/* line 159, schedule.less */
+/* line 167, schedule.less */
 body.page-profile-schedule > .wrapper .content .calendars {
   display: none;
   position: absolute;
@@ -2445,7 +2454,7 @@ body.page-profile-schedule > .wrapper .content .calendars {
   margin-top: 10px;
   border: solid 1px #dbefe5;
 }
-/* line 170, schedule.less */
+/* line 178, schedule.less */
 body.page-profile-schedule > .wrapper .content .calendars i.close {
   cursor: pointer;
   float: right;
@@ -2453,83 +2462,83 @@ body.page-profile-schedule > .wrapper .content .calendars i.close {
   margin-right: 22px;
   font-size: 1.8rem;
 }
-/* line 176, schedule.less */
+/* line 184, schedule.less */
 body.page-profile-schedule > .wrapper .content .calendars i.close:hover {
   color: #35504e;
 }
-/* line 180, schedule.less */
+/* line 188, schedule.less */
 body.page-profile-schedule > .wrapper .content .calendars a#today {
   margin-left: 20px;
 }
-/* line 183, schedule.less */
+/* line 191, schedule.less */
 body.page-profile-schedule > .wrapper .content .calendars .months {
   overflow: hidden;
 }
-/* line 185, schedule.less */
+/* line 193, schedule.less */
 body.page-profile-schedule > .wrapper .content .calendars .months div.month {
   margin: 20px;
   float: left;
   overflow: hidden;
 }
-/* line 191, schedule.less */
+/* line 199, schedule.less */
 body.page-profile-schedule > .wrapper .content .calendars .controls {
   width: 95px;
   margin: auto;
 }
-/* line 194, schedule.less */
+/* line 202, schedule.less */
 body.page-profile-schedule > .wrapper .content .calendars .controls a {
   display: block;
   color: #8aa4a2;
   font-size: 1.8rem;
   text-decoration: none;
 }
-/* line 199, schedule.less */
+/* line 207, schedule.less */
 body.page-profile-schedule > .wrapper .content .calendars .controls a:hover {
   color: #35504e;
 }
-/* line 202, schedule.less */
+/* line 210, schedule.less */
 body.page-profile-schedule > .wrapper .content .calendars .controls a.left {
   float: left;
 }
-/* line 205, schedule.less */
+/* line 213, schedule.less */
 body.page-profile-schedule > .wrapper .content .calendars .controls a.right {
   float: right;
 }
-/* line 211, schedule.less */
+/* line 219, schedule.less */
 body.page-profile-schedule > .wrapper .content .schedule {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   float: left;
   width: 58%;
 }
-/* line 216, schedule.less */
+/* line 224, schedule.less */
 body.page-profile-schedule > .wrapper .content .schedule .schedule-container {
   width: 100%;
   padding: 30px 30px 30px 50px;
 }
-/* line 219, schedule.less */
+/* line 227, schedule.less */
 body.page-profile-schedule > .wrapper .content .schedule .schedule-container .elements {
   overflow: hidden;
   margin-bottom: 20px;
   padding-left: 10px;
 }
-/* line 223, schedule.less */
+/* line 231, schedule.less */
 body.page-profile-schedule > .wrapper .content .schedule .schedule-container .elements .field {
   overflow: hidden;
 }
-/* line 225, schedule.less */
+/* line 233, schedule.less */
 body.page-profile-schedule > .wrapper .content .schedule .schedule-container .elements .field.full-day {
   float: left;
 }
-/* line 228, schedule.less */
+/* line 236, schedule.less */
 body.page-profile-schedule > .wrapper .content .schedule .schedule-container .elements .field.weekend {
   float: right;
 }
-/* line 231, schedule.less */
+/* line 239, schedule.less */
 body.page-profile-schedule > .wrapper .content .schedule .schedule-container .elements .field .checkbox.container {
   float: left;
 }
-/* line 234, schedule.less */
+/* line 242, schedule.less */
 body.page-profile-schedule > .wrapper .content .schedule .schedule-container .elements .field label {
   display: block;
   float: left;
@@ -2537,21 +2546,21 @@ body.page-profile-schedule > .wrapper .content .schedule .schedule-container .el
   color: #35504e;
   font-size: 1.2rem;
 }
-/* line 245, schedule.less */
+/* line 253, schedule.less */
 body.page-profile-schedule > .wrapper .content .today-events {
   float: right;
   width: 40%;
 }
-/* line 249, schedule.less */
+/* line 257, schedule.less */
 body.page-profile-schedule > .wrapper .content .today-events .events .event {
   margin-bottom: 15px;
   padding-left: 15px;
 }
-/* line 252, schedule.less */
+/* line 260, schedule.less */
 body.page-profile-schedule > .wrapper .content .today-events .events .event.active {
   background: #dbefe5;
 }
-/* line 255, schedule.less */
+/* line 263, schedule.less */
 body.page-profile-schedule > .wrapper .content .today-events .events .event .border {
   position: absolute;
   width: 5px;
@@ -2564,32 +2573,32 @@ body.page-profile-schedule > .wrapper .content .today-events .events .event .bor
   -o-border-radius: 5px;
   -webkit-border-radius: 5px;
 }
-/* line 268, schedule.less */
+/* line 276, schedule.less */
 body.page-profile-schedule > .wrapper .content .today-events .events .event.skype .border,
 body.page-profile-schedule > .wrapper .content .today-events .events .event.cards .border {
   background: #0f9b58;
 }
-/* line 273, schedule.less */
+/* line 281, schedule.less */
 body.page-profile-schedule > .wrapper .content .today-events .events .event.consult .border {
   background: #4ad0c5;
 }
-/* line 278, schedule.less */
+/* line 286, schedule.less */
 body.page-profile-schedule > .wrapper .content .today-events .events .event.private .border {
   background: #ffaa3e;
 }
-/* line 281, schedule.less */
+/* line 289, schedule.less */
 body.page-profile-schedule > .wrapper .content .today-events .events .event.private h5.title {
   color: #35504e;
 }
-/* line 285, schedule.less */
+/* line 293, schedule.less */
 body.page-profile-schedule > .wrapper .content .today-events .events .event.unwork {
   display: none;
 }
-/* line 287, schedule.less */
+/* line 295, schedule.less */
 body.page-profile-schedule > .wrapper .content .today-events .events .event.unwork .border {
   background: #aaa;
 }
-/* line 291, schedule.less */
+/* line 299, schedule.less */
 body.page-profile-schedule > .wrapper .content .today-events .events .event h5.title {
   margin-top: 2px;
   margin-bottom: 0;
@@ -2600,31 +2609,31 @@ body.page-profile-schedule > .wrapper .content .today-events .events .event h5.t
   font-size: 1.4rem;
   font-weight: 500;
 }
-/* line 301, schedule.less */
+/* line 309, schedule.less */
 body.page-profile-schedule > .wrapper .content .today-events .events .event p.participiant {
   margin-bottom: 2px;
   padding-bottom: 0;
 }
-/* line 305, schedule.less */
+/* line 313, schedule.less */
 body.page-profile-schedule > .wrapper .content .today-events .events .event p {
   margin: 4px 0;
   font-size: 1.4rem;
   font-weight: 500;
   color: #8aa4a2;
 }
-/* line 310, schedule.less */
+/* line 318, schedule.less */
 body.page-profile-schedule > .wrapper .content .today-events .events .event p span.value {
   color: #35504e;
 }
-/* line 313, schedule.less */
+/* line 321, schedule.less */
 body.page-profile-schedule > .wrapper .content .today-events .events .event p a {
   color: #4ad0c5;
 }
-/* line 315, schedule.less */
+/* line 323, schedule.less */
 body.page-profile-schedule > .wrapper .content .today-events .events .event p a:hover {
   text-decoration: none;
 }
-/* line 320, schedule.less */
+/* line 328, schedule.less */
 body.page-profile-schedule > .wrapper .content .today-events .events .event a.removeEvent {
   position: absolute;
   right: 5px;
@@ -2633,57 +2642,81 @@ body.page-profile-schedule > .wrapper .content .today-events .events .event a.re
   font-size: 1.4rem;
   color: #8aa4a2;
 }
-/* line 327, schedule.less */
+/* line 335, schedule.less */
 body.page-profile-schedule > .wrapper .content .today-events .events .event a.removeEvent:hover {
   color: #eb5245;
 }
-/* line 332, schedule.less */
+/* line 340, schedule.less */
 body.page-profile-schedule > .wrapper .content .today-events .events a.btn {
   display: block;
   text-align: center;
 }
-/* line 341, schedule.less */
+/* line 349, schedule.less */
 .schedule-container {
   position: relative;
   width: 480px;
   padding: 15px;
   float: left;
 }
-/* line 346, schedule.less */
+/* line 354, schedule.less */
 .schedule-container .hours {
   position: relative;
   float: left;
   text-align: left;
   width: 55px;
 }
-/* line 351, schedule.less */
+/* line 359, schedule.less */
 .schedule-container .hours .hour {
   height: 32px;
   text-align: center;
 }
-/* line 354, schedule.less */
+/* line 362, schedule.less */
 .schedule-container .hours .hour span {
   position: relative;
   font-size: 1.2rem;
   top: -1px;
 }
-/* line 361, schedule.less */
+/* line 369, schedule.less */
 .schedule-container .grid {
   position: relative;
   float: right;
   width: 420px;
   -webkit-user-select: none;
 }
-/* line 366, schedule.less */
+/* line 374, schedule.less */
+.schedule-container .grid .free-time-container {
+  position: absolute;
+  left: -65px;
+  top: 0;
+  width: 20px;
+  height: 100%;
+}
+/* line 380, schedule.less */
+.schedule-container .grid .free-time-container .line {
+  border-radius: 5px;
+  width: 5px;
+  margin-right: 4px;
+  float: left;
+  position: relative;
+}
+/* line 386, schedule.less */
+.schedule-container .grid .free-time-container .line.meet-time {
+  background: #ffaa3e;
+}
+/* line 389, schedule.less */
+.schedule-container .grid .free-time-container .line.online-time {
+  background: #0f9b58;
+}
+/* line 394, schedule.less */
 .schedule-container .grid .row {
   border-bottom: solid 1px #b9d4cc;
   height: 15px;
 }
-/* line 369, schedule.less */
+/* line 397, schedule.less */
 .schedule-container .grid .row.selected {
   background: #ddd;
 }
-/* line 373, schedule.less */
+/* line 401, schedule.less */
 .schedule-container .grid .marker {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -2697,7 +2730,31 @@ body.page-profile-schedule > .wrapper .content .today-events .events a.btn {
   background: rgba(0, 0, 0, 0.1);
   display: none;
 }
-/* line 386, schedule.less */
+/* line 414, schedule.less */
+.schedule-container .grid .weekend-marker {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  border-left: solid 5px #aaa;
+  border-right: solid 1px #aaa;
+  border-top: solid 1px #aaa;
+  border-bottom: solid 1px #aaa;
+  z-index: 1;
+  display: none;
+  cursor: hand;
+  border-color: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.1);
+}
+/* line 428, schedule.less */
+.schedule-container .grid .weekend-marker p {
+  font-size: 1.3rem;
+  display: block;
+  margin-left: 20px;
+  margin-top: 6px;
+  color: #333;
+}
+/* line 436, schedule.less */
 .schedule-container .grid .reserved-marker {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -2711,7 +2768,7 @@ body.page-profile-schedule > .wrapper .content .today-events .events a.btn {
   display: none;
   cursor: hand;
 }
-/* line 398, schedule.less */
+/* line 448, schedule.less */
 .schedule-container .grid .reserved-marker i.fa.fa-cog {
   cursor: pointer;
   position: absolute;
@@ -2720,86 +2777,86 @@ body.page-profile-schedule > .wrapper .content .today-events .events a.btn {
   top: 2px;
   z-index: 1;
 }
-/* line 406, schedule.less */
+/* line 456, schedule.less */
 .schedule-container .grid .reserved-marker p {
   font-size: 1.3rem;
   display: block;
   margin-left: 20px;
   margin-top: 6px;
 }
-/* line 412, schedule.less */
+/* line 462, schedule.less */
 .schedule-container .grid .reserved-marker.unwork {
   border-color: rgba(0, 0, 0, 0.4);
   background: rgba(0, 0, 0, 0.1);
 }
-/* line 415, schedule.less */
+/* line 465, schedule.less */
 .schedule-container .grid .reserved-marker.unwork i.fa.fa-cog {
   color: rgba(0, 0, 0, 0.4);
 }
-/* line 418, schedule.less */
+/* line 468, schedule.less */
 .schedule-container .grid .reserved-marker.unwork p {
   color: #666;
 }
-/* line 421, schedule.less */
+/* line 471, schedule.less */
 .schedule-container .grid .reserved-marker.unwork.selected {
   border-color: rgba(0, 0, 0, 0.5);
 }
-/* line 425, schedule.less */
+/* line 475, schedule.less */
 .schedule-container .grid .reserved-marker.skype,
 .schedule-container .grid .reserved-marker.cards {
   border-color: #33b679;
   background: rgba(51, 152, 121, 0.4);
 }
-/* line 428, schedule.less */
+/* line 478, schedule.less */
 .schedule-container .grid .reserved-marker.skype i.fa.fa-cog,
 .schedule-container .grid .reserved-marker.cards i.fa.fa-cog {
   color: #33b679;
 }
-/* line 431, schedule.less */
+/* line 481, schedule.less */
 .schedule-container .grid .reserved-marker.skype p,
 .schedule-container .grid .reserved-marker.cards p {
   color: #119457;
 }
-/* line 434, schedule.less */
+/* line 484, schedule.less */
 .schedule-container .grid .reserved-marker.skype.selected,
 .schedule-container .grid .reserved-marker.cards.selected {
   border-color: #119457;
 }
-/* line 438, schedule.less */
+/* line 488, schedule.less */
 .schedule-container .grid .reserved-marker.consult {
   border-color: #41b6ad;
   background: rgba(74, 208, 197, 0.2);
 }
-/* line 441, schedule.less */
+/* line 491, schedule.less */
 .schedule-container .grid .reserved-marker.consult i.fa.fa-cog {
   color: #41b6ad;
 }
-/* line 444, schedule.less */
+/* line 494, schedule.less */
 .schedule-container .grid .reserved-marker.consult p {
   color: #35504e;
 }
-/* line 447, schedule.less */
+/* line 497, schedule.less */
 .schedule-container .grid .reserved-marker.consult.selected {
   border-color: #1f948b;
 }
-/* line 451, schedule.less */
+/* line 501, schedule.less */
 .schedule-container .grid .reserved-marker.private {
   border-color: #fac944;
   background: rgba(250, 201, 68, 0.4);
 }
-/* line 454, schedule.less */
+/* line 504, schedule.less */
 .schedule-container .grid .reserved-marker.private i.fa.fa-cog {
   color: #d8a722;
 }
-/* line 457, schedule.less */
+/* line 507, schedule.less */
 .schedule-container .grid .reserved-marker.private p {
   color: #d39a00;
 }
-/* line 460, schedule.less */
+/* line 510, schedule.less */
 .schedule-container .grid .reserved-marker.private.selected {
   border-color: #d8a722;
 }
-/* line 464, schedule.less */
+/* line 514, schedule.less */
 .schedule-container .grid .reserved-marker .slider-top {
   left: 50%;
   margin-left: -2px;
@@ -2812,7 +2869,7 @@ body.page-profile-schedule > .wrapper .content .today-events .events a.btn {
   cursor: s-resize;
   z-index: 1;
 }
-/* line 476, schedule.less */
+/* line 526, schedule.less */
 .schedule-container .grid .reserved-marker .slider-bottom {
   left: 50%;
   margin-left: -2px;

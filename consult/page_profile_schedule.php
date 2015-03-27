@@ -18,44 +18,58 @@
                     <div class="accordeon-container">
                         <div class="field begin">
                             <label for="begin">Начало</label>
-                            <input type="text" class="timepicker" name="begin"  placeholder="Выберите время"/>
+                            <input type="text" class="timepicker-light" name="begin"  placeholder="Выберите время"/>
                         </div>
                         <div class="field end">
                             <label for="end">Окончание</label>
-                            <input type="text" class="timepicker" name="end"  placeholder="Выберите время"/>
+                            <input type="text" class="timepicker-light" name="end"  placeholder="Выберите время"/>
                         </div>
                     </div>
                     <div class="clr"></div>
                 </div>
-                <!-- <div class="free-time section" data-type="free">
+                <div class="free-time section" data-type="free">
                     <input type="checkbox" name="free-time" class="section-handler" />
                     <label for="free-time">Свободное время</label>
                     <div class="clr"></div>
                     <div class="accordeon-container">
                         <div class="type">
                             <div class="field">
-                                <input type="checkbox" name="type" value="skype" />
+                                <input type="checkbox" name="type" value="online-time" />
                                 <label for="type">Онлайн (Skype, Метафорические карты)</label>
                             </div>
+                            <div class="times online-time">
+                                <div class="field begin">
+                                    <label for="free-begin">Начало</label>
+                                    <input type="text" class="timepicker" name="free-begin" placeholder="Выберите время"/>
+                                </div>
+                                <div class="field end">
+                                    <label for="free-end">Окончание</label>
+                                    <input type="text" class="timepicker" name="free-end" placeholder="Выберите время" />
+                                </div>
+                                <div class="clr"></div>
+                            </div>
                             <div class="field">
-                                <input type="checkbox" name="type" value="private" />
+                                <input type="checkbox" name="type" value="meet-time" />
                                 <label for="type">Личные встречи</label>
+                            </div>
+                            <div class="times meet-time">
+                                <div class="field begin">
+                                    <label for="free-begin">Начало</label>
+                                    <input type="text" class="timepicker" name="free-begin" placeholder="Выберите время"/>
+                                </div>
+                                <div class="field end">
+                                    <label for="free-end">Окончание</label>
+                                    <input type="text" class="timepicker" name="free-end" placeholder="Выберите время" />
+                                </div>
+                                <div class="clr"></div>
                             </div>
                             <select name="office" id="office" class="select2">
                                 <option value="0">Москва, Петровская-разумовская, 14, оф. 5</option>
                             </select>
                         </div>
-                        <div class="field begin">
-                            <label for="free-begin">Начало</label>
-                            <input type="text" class="timepicker" name="begin" placeholder="Выберите время"/>
-                        </div>
-                        <div class="field end">
-                            <label for="free-end">Окончание</label>
-                            <input type="text" class="timepicker" name="end" placeholder="Выберите время" />
-                        </div>
                         <div class="clr"></div>
                     </div>
-                </div> -->
+                </div>
                 <div class="consult section" data-type="consult">
                     <input type="checkbox" name="consult" class="section-handler" />
                     <label for="consult">Консультация</label>
@@ -85,11 +99,11 @@
                         </div>
                         <div class="field begin">
                             <label for="consult-begin">Начало</label>
-                            <input type="text" class="timepicker" name="begin" placeholder="Выберите время"/>
+                            <input type="text" class="timepicker-light" name="begin" placeholder="Выберите время"/>
                         </div>
                         <div class="field end">
                             <label for="consult-end">Окончание</label>
-                            <input type="text" class="timepicker" name="end" placeholder="Выберите время" />
+                            <input type="text" class="timepicker-light" name="end" placeholder="Выберите время" />
                         </div>
                         <div class="clr"></div>
                         <div class="field comment">
@@ -262,16 +276,16 @@
                 
                 <h4>Расписание</h4>
                 <div class="schedule-container content-block">
-                    <!-- <div class="elements">
-                        <div class="full-day field">
+                    <div class="elements">
+                        <!-- <div class="full-day field">
                             <input type="checkbox" name="full-day" checked="checked" />
                             <label for="full-day">Показать полные сутки</label>
-                        </div>
+                        </div> -->
                         <div class="field weekend">
                             <input type="checkbox" name="weekend" />
                             <label for="weekend">Выходной</label>
                         </div>
-                    </div> -->
+                    </div>
                     <div class="hours">
                         <?php for($i = 0; $i <= 23; $i++) { ?>
                             <?php
@@ -281,6 +295,10 @@
                         <?php } ?>
                     </div>
                     <div class="grid">
+                        <div class="free-time-container">
+                            <div class="line meet-time"></div>
+                            <div class="line online-time"></div>
+                        </div>
                         <div class="marker"></div>
                         <?php for($i = 1; $i <= 48; $i++) { ?>
                             <div class="row" data-time="<?php echo $i; ?>"></div>

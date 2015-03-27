@@ -53,17 +53,25 @@ body.page-profile-schedule{
 					border-top:solid 1px @sea_light;
 					.type{
 						margin-left: 30px;
-						.field{
+						& > .field{
 							overflow: hidden;
 							margin:5px 0;
+						}
+						.times{
+							margin-bottom: 30px;
+							display: none;
+							label{
+								margin-top: 0;
+							}
+							.field{
+								float: left;
+								width: 44%;
+							}
 						}
 					}
 					.select2-container{
 						width: 100% !important;
 						margin-top: 10px;
-					}
-					.field.begin, .field.end{
-						margin-top: 30px;
 					}
 				}
 				.consult{
@@ -363,6 +371,26 @@ body.page-profile-schedule{
 		float: right;
 		width: 420px;
 		-webkit-user-select:none;
+		.free-time-container{
+			position: absolute;
+			left:-65px;
+			top:0;
+			width: 20px;
+			height: 100%;
+			.line{
+				border-radius:5px;
+				width: 5px;
+				margin-right: 4px;
+				float: left;
+				position: relative;
+				&.meet-time{
+					background: @yellow_dark;
+				}
+				&.online-time{
+					background: @green;
+				}
+			}
+		}
 		.row{
 			border-bottom:solid 1px #b9d4cc;
 			height:15px;
@@ -382,6 +410,28 @@ body.page-profile-schedule{
 			z-index: 1;
 			background: rgba(0,0,0,.1);
 			display: none;
+		}
+		.weekend-marker{
+			box-sizing:border-box;
+			-moz-box-sizing:border-box;
+			position: absolute;
+			width: 100%;
+			border-left: solid 5px #aaa;
+			border-right: solid 1px #aaa;
+			border-top: solid 1px #aaa;
+			border-bottom: solid 1px #aaa;
+			z-index: 1;
+			display: none;
+			cursor: hand;
+			border-color: rgba(0,0,0,.4);
+			background: rgba(0,0,0,.1);
+			p{
+				font-size:1.3rem;
+				display: block;
+				margin-left: 20px;
+				margin-top: 6px;
+				color:#333;
+			}
 		}
 		.reserved-marker{
 			box-sizing:border-box;
