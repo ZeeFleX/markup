@@ -132,7 +132,7 @@
 					var marker = $('.free-time-container').find('.line.' + type);
 					placeFreetimeMarker(marker, timeArray);
 					ajaxEvent(tmpEvent, function(data){
-						console.log(data);
+						
 					});
 				});
 				$(editEventBlock).fadeOut(300);
@@ -166,7 +166,7 @@
 					reservedHoursArray = _.union(_.range(timeArray[0], timeArray[1]), reservedHoursArray);
 					placeSelector(marker, timeArray);
 					$(grid).find('.marker').css('display', 'none');
-					console.log(data.type);
+					
 					if(data.type != 'unwork'){
 						addTask(evnt);
 						var tasks = $(taskList).find('.event');
@@ -204,7 +204,7 @@
 					}
 					$.each(events, function(key,evnt){	//Перебор событий
 						//Добавление события на сетку
-						console.log('111');
+						
 						if(typeof(evnt.title) == 'undefined' || !evnt.title.length) evnt.title = eventNames[evnt.type];
 						$(grid).prepend('<div class="reserved-marker ' + evnt.type + '" data-id="' + evnt.id + '" data-type="' + evnt.type + '" data-begin="' + evnt.time[0] + '" data-end="' + evnt.time[1] + '"  data-participiant="' + evnt.participiant + '"  data-end="' + evnt.time[1] + '" data-title="' + evnt.title + '"><div class="slider-top slider"></div><div class="slider-bottom slider"></div><i class="fa fa-cog edit-event"></i><p class="title">' + evnt.title + '</p></div>');	//Формаирование областей
 						var reservedMarker = $(grid).find('div[data-id="' + evnt.id + '"]');	//Переменная с областью для этого прохода
@@ -271,7 +271,7 @@
 					title: $(marker).attr('data-title'),
 					participiant: $(marker).attr('data-participiant')
 				}
-				console.log(tmpEvent.type);
+				
 				var task = $(taskList).find('.event[data-id="' + tmpEvent.id + '"]');
 				$(marker)
 					.addClass('selected')
@@ -290,7 +290,7 @@
 					tmpEvent.action = 'edit';
 					var tmpTimeRange = getTimeRanges();
 					tmpTimeRange.splice($(marker).index('.reserved-marker'),1);
-					console.log(tmpTimeRange);
+					
 					$('.timepicker-light').timepickerLight({
 						'disableTimeRanges': tmpTimeRange
 					});
@@ -430,7 +430,7 @@
 		var minute = parseInt(time.split(':')[1]);	//Считаем минуты
 		var row = (hour + (minute / 60)) * 2 + 1;
 		var maxRow, minRow;
-		console.log(row);
+		
 		for(i = row; _.indexOf(reservedHoursArray, i + 1) == -1 && i <= 48; i++){
 			maxRow = i;
 		}
