@@ -41,13 +41,20 @@
                 </form>
                 <div class="foot">
                     <p>Уже зарегистрированы?</p>
-                    <a href="#" id="sign-in">Войдите</a>
+                    <a href="mainpage.php" id="sign-in">Войдите</a>
                 </div>
             </div>
         </div>
     </div>
     <footer class="footer">
         <div class="top">
+            <div class="footer-logo">
+                <div class="logo">
+                    <img src="images/footer-logo.png" />
+                </div>
+                <p class="title">Метафорические Ассоциативные Карты<br/><span>Константина Довлатова</span></p>
+            </div>
+            <div class="clr"></div>
             <p class="contact">ИП Довлатов Константин Николаевич<br />ОГРН 309774619400751</p>
             <p class="support">Служба технической поддержки: <a href="mailto:support@dowlatow.ru">support@dowlatow.ru</a></p>
         </div>

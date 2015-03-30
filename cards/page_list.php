@@ -18,6 +18,7 @@
             <img src="images/logo.png" />
         </div>
         <p class="title">Метафорические Ассоциативные Карты<br/><span>Константина Довлатова</span></p>
+        
         <div class="profile-snippet">
             <div class="photo-container">
                 <img src="images/photos/01.jpg" />
@@ -31,13 +32,19 @@
                 <div class="dropdown-menu">
                     <ul>
                         <li class="arrow"></li>
-                        <li><a href="#">Мой профиль</a></li>
-                        <li><a href="#">Настройки профиля</a></li>
-                        <li><a href="#">Выйти</a></li>
-                        
+                        <li><a href="page_profile.php">Мой профиль</a></li>
+                        <li><a href="page_profile_settings_common.php">Настройки профиля</a></li>
+                        <li><a href="mainpage.php">Выйти</a></li>
                     </ul>
                 </div>
             </div>
+        </div>
+        <div class="mainmenu">
+            <ul>
+                <li>
+                    <a href="page_list.php">Терапевты</a>
+                </li>
+            </ul>
         </div>
     </header>
     <section class="list">

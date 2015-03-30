@@ -13,6 +13,40 @@
             </div>
         </div>        
     </NOSCRIPT>
+    <header class="header">
+        <div class="logo">
+            <img src="images/logo.png" />
+        </div>
+        <p class="title">Метафорические Ассоциативные Карты<br/><span>Константина Довлатова</span></p>
+        
+        <div class="profile-snippet">
+            <div class="photo-container">
+                <img src="images/photos/01.jpg" />
+            </div>
+            <div class="info">
+                <div class="name">Братанова Мария</div>
+                <div class="job">Терапевт</div>
+            </div>
+            <div class="more-container">
+                <i class="fa fa-caret-down"></i>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li class="arrow"></li>
+                        <li><a href="page_profile.php">Мой профиль</a></li>
+                        <li><a href="page_profile_settings_common.php">Настройки профиля</a></li>
+                        <li><a href="mainpage.php">Выйти</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="mainmenu">
+            <ul>
+                <li>
+                    <a href="page_list.php">Терапевты</a>
+                </li>
+            </ul>
+        </div>
+    </header>
     <div class="content">
         <div class="wrapper">
             <h1>Метафорические Ассоциативные карты</h1>
@@ -31,7 +65,7 @@
                         </div>
                         <input type="submit" class="btn" value="Войти" />
                         <p class="endnote">
-                            Нажимая на кнопку «Войти» Вы соглашаетесь с 
+                            Нажимая на кнопку «Войти», Вы соглашаетесь с 
                             <a href="#">Политикой конфиденциальности</a>
                             и <a href="#">Условиями пользования сайтом</a>
                         </p>
@@ -40,19 +74,25 @@
                             <input type="checkbox" name="remember-me" />
                             <label for="remember-me">Запомнить меня</label>
                         </div>
-                        <a href="#" id="forgot-password">Забыли пароль?</a>
+                        <a href="page_password_recovery.php" id="forgot-password">Забыли пароль?</a>
                         <div class="clr"></div>
                     </form>
                     <div class="foot">
                         <p>Не зарегистрированы?</p>
-                        <a href="#" id="sign-up">Пройдите регистрацию</a>
+                        <a href="page_sign_up.php" id="sign-up">Пройдите регистрацию</a>
                     </div>
                 </div>
                 <div class="greetings">
                     <h1>Добро пожаловать</h1>
                     <p>
-                        Хотите БОЛЬШЕ? Больше денег, свободы, любви?<br />
-                        С помощью RPT вы получите все это. Быстро и навсегда. RPT не изменит Ваше прошлое, а исцелит Вашу настоящую жизнь.
+                        Открой понимание своего внутреннего мира через образы в метафорических картах.
+                        
+                    </p>
+                    <p>
+                        Сделай свою жизнь лучше, радостней, счастливей и здоровей.
+                    </p>
+                    <p>
+                        Проработай травмирующие моменты своей жизни более эффективными и менее  болезненные способами с помощью метафорических карт.
                     </p>
                 </div>
             </section>

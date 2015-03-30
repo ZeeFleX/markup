@@ -31,13 +31,19 @@
                 <div class="dropdown-menu">
                     <ul>
                         <li class="arrow"></li>
-                        <li><a href="#">Мой профиль</a></li>
-                        <li><a href="#">Настройки профиля</a></li>
-                        <li><a href="#">Выйти</a></li>
-                        
+                        <li><a href="page_profile.php">Мой профиль</a></li>
+                        <li><a href="page_profile_settings_common.php">Настройки профиля</a></li>
+                        <li><a href="mainpage.php">Выйти</a></li>
                     </ul>
                 </div>
             </div>
+        </div>
+        <div class="mainmenu">
+            <ul>
+                <li>
+                    <a href="page_list.php">Терапевты</a>
+                </li>
+            </ul>
         </div>
     </header>
     <div class="wrapper">
@@ -66,15 +72,18 @@
         <aside class="additional-menu">
             <h4>Настройки профиля</h4>
             <div class="content-block">
-                <ul>
+               <ul>
                     <li>
-                        <a href="#">Основные настройки</a>
+                        <a href="page_profile_settings_common.php">Основные настройки</a>
                     </li>
                     <li class="active">
-                        <a href="#">Контакты</a>
+                        <a href="page_profile_settings_about_me.php">Информация о себе</a>
                     </li>
                     <li>
-                        <a href="#">Настройки безопасности</a>
+                        <a href="page_profile_settings_contacts.php">Контакты</a>
+                    </li>
+                    <li>
+                        <a href="page_profile_settings_security.php">Настройки безопасности</a>
                     </li>
                 </ul>
             </div>

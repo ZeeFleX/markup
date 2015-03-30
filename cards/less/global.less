@@ -12,8 +12,8 @@
     }
 }
 
-body > .wrapper{
-    min-height:600px;
+body > .wrapper, body > .content{
+    min-height:800px;
 }
 
 .clr{
@@ -78,6 +78,7 @@ header.header {
     }
     .profile-snippet{
         float: right;
+
         .photo-container{
             border-radius: 50px;
             -o-border-radius: 50px;
@@ -97,6 +98,7 @@ header.header {
             float: left;
             margin-left: 10px;
             margin-top: 5px;
+             margin-right: 20px;
             .name{
                 color: @bordo;
                 font: 500 1.4rem Roboto;
@@ -107,10 +109,14 @@ header.header {
             }
         }
         .more-container{
-            float: left;
-            margin-left: 10px;
-            margin-top:10px;
-            z-index: 2;
+              float: left;
+              /* margin-left: 10px; */
+              /* margin-top: 10px; */
+              z-index: 2;
+              position: absolute;
+              width: 50px;
+              height: 50px;
+              right: 0;
             &:hover .dropdown-menu{
                 display: block;
             }
@@ -118,6 +124,10 @@ header.header {
                 color: @bordo;
                 font-size:1.8rem;
                 cursor: pointer;
+                width: 100%;
+                display: block;
+                text-align: right;
+                margin-top:12px;
             }
             .dropdown-menu{
                 //временно скрываем, пока нет дизайна
@@ -126,7 +136,7 @@ header.header {
                 width:150px;
                 right:-28px;
                 top:100%;
-                margin-top:7px;
+                margin-top:-8px;
                 border:dashed 1px @bordo_light;
                 background: @white;
                 padding:10px 15px;
@@ -191,7 +201,7 @@ header.header {
     }
     .mainmenu {
         float: right;
-        margin:9px 0;
+        margin:17px 0;
         li {
             float: left;
             text-transform: uppercase;
@@ -200,6 +210,9 @@ header.header {
             a{
                 color: @bordo;
                 text-decoration: none;
+                &:hover{
+                    text-decoration: underline;
+                }
             }
         }
     }
@@ -301,10 +314,10 @@ header.header {
     }
 }
 body.page-password-recovery footer.footer, body.page-sign-up footer.footer{
-    .top{
-        background: none;
-    }
-    .bottom{
-        background: none;
-    }
+    // .top{
+    //     background: none;
+    // }
+    // .bottom{
+    //     background: none;
+    // }
 }

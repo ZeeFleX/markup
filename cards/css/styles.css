@@ -537,8 +537,9 @@ ul.badge-marked li {
   margin-top: 100px;
 }
 /* line 15, global.less */
-body > .wrapper {
-  min-height: 600px;
+body > .wrapper,
+body > .content {
+  min-height: 800px;
 }
 /* line 19, global.less */
 .clr {
@@ -609,7 +610,7 @@ header.header .sign-in {
 header.header .profile-snippet {
   float: right;
 }
-/* line 81, global.less */
+/* line 82, global.less */
 header.header .profile-snippet .photo-container {
   border-radius: 50px;
   -o-border-radius: 50px;
@@ -621,52 +622,61 @@ header.header .profile-snippet .photo-container {
   overflow: hidden;
   border: solid 1px #b099a3;
 }
-/* line 91, global.less */
+/* line 92, global.less */
 header.header .profile-snippet .photo-container img {
   display: block;
   width: 100%;
 }
-/* line 96, global.less */
+/* line 97, global.less */
 header.header .profile-snippet .info {
   float: left;
   margin-left: 10px;
   margin-top: 5px;
+  margin-right: 20px;
 }
-/* line 100, global.less */
+/* line 102, global.less */
 header.header .profile-snippet .info .name {
   color: #290019;
   font: 500 1.4rem Roboto;
 }
-/* line 104, global.less */
+/* line 106, global.less */
 header.header .profile-snippet .info .job {
   color: #ec4863;
   font: 400 1.2rem Roboto;
 }
-/* line 109, global.less */
+/* line 111, global.less */
 header.header .profile-snippet .more-container {
   float: left;
-  margin-left: 10px;
-  margin-top: 10px;
+  /* margin-left: 10px; */
+  /* margin-top: 10px; */
   z-index: 2;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: 0;
 }
-/* line 114, global.less */
+/* line 120, global.less */
 header.header .profile-snippet .more-container:hover .dropdown-menu {
   display: block;
 }
-/* line 117, global.less */
+/* line 123, global.less */
 header.header .profile-snippet .more-container i {
   color: #290019;
   font-size: 1.8rem;
   cursor: pointer;
+  width: 100%;
+  display: block;
+  text-align: right;
+  margin-top: 12px;
 }
-/* line 122, global.less */
+/* line 132, global.less */
 header.header .profile-snippet .more-container .dropdown-menu {
   display: none;
   position: absolute;
   width: 150px;
   right: -28px;
   top: 100%;
-  margin-top: 7px;
+  margin-top: -8px;
   border: dashed 1px #b099a3;
   background: #ffffff;
   padding: 10px 15px;
@@ -675,7 +685,7 @@ header.header .profile-snippet .more-container .dropdown-menu {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
 }
-/* line 137, global.less */
+/* line 147, global.less */
 header.header .profile-snippet .more-container .dropdown-menu .arrow {
   width: 24px;
   height: 12px;
@@ -684,37 +694,37 @@ header.header .profile-snippet .more-container .dropdown-menu .arrow {
   top: -22px;
   right: 5px;
 }
-/* line 146, global.less */
+/* line 156, global.less */
 header.header .profile-snippet .more-container .dropdown-menu ul li {
   font-size: 1.2rem;
   font-weight: 500;
 }
-/* line 149, global.less */
+/* line 159, global.less */
 header.header .profile-snippet .more-container .dropdown-menu ul li a {
   color: #b099a3;
   text-decoration: none;
 }
-/* line 152, global.less */
+/* line 162, global.less */
 header.header .profile-snippet .more-container .dropdown-menu ul li a:hover {
   text-decoration: underline;
 }
-/* line 161, global.less */
+/* line 171, global.less */
 header.header .profile-notifications {
   float: right;
   margin-right: 10px;
   margin-top: 10px;
 }
-/* line 165, global.less */
+/* line 175, global.less */
 header.header .profile-notifications > div {
   float: left;
   margin: 0 15px;
   cursor: pointer;
 }
-/* line 169, global.less */
+/* line 179, global.less */
 header.header .profile-notifications > div.active i.fa {
   color: #eb5245;
 }
-/* line 172, global.less */
+/* line 182, global.less */
 header.header .profile-notifications > div .count {
   position: absolute;
   border-radius: 50px;
@@ -729,29 +739,33 @@ header.header .profile-notifications > div .count {
   z-index: 1;
   font: 500 1.1rem / 17px Roboto;
 }
-/* line 186, global.less */
+/* line 196, global.less */
 header.header .profile-notifications > div i.fa {
   color: #b099a3;
   font-size: 2.0rem;
 }
-/* line 192, global.less */
+/* line 202, global.less */
 header.header .mainmenu {
   float: right;
-  margin: 9px 0;
+  margin: 17px 0;
 }
-/* line 195, global.less */
+/* line 205, global.less */
 header.header .mainmenu li {
   float: left;
   text-transform: uppercase;
   font: 500 1.2rem Roboto;
   margin-right: 30px;
 }
-/* line 200, global.less */
+/* line 210, global.less */
 header.header .mainmenu li a {
   color: #290019;
   text-decoration: none;
 }
-/* line 207, global.less */
+/* line 213, global.less */
+header.header .mainmenu li a:hover {
+  text-decoration: underline;
+}
+/* line 220, global.less */
 .user-menu-section {
   background: #f8f8f8;
   overflow: hidden;
@@ -761,32 +775,32 @@ header.header .mainmenu li a {
   -moz-box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.1);
 }
-/* line 216, global.less */
+/* line 229, global.less */
 .user-menu-section .wrapper .user-menu-container {
   right: 50%;
   float: right;
 }
-/* line 220, global.less */
+/* line 233, global.less */
 .user-menu-section .wrapper .user-menu {
   left: 50%;
   float: left;
 }
-/* line 223, global.less */
+/* line 236, global.less */
 .user-menu-section .wrapper .user-menu li {
   margin: 0 10px;
   float: left;
 }
-/* line 227, global.less */
+/* line 240, global.less */
 .user-menu-section .wrapper .user-menu a {
   color: #290019;
   font: 400 1.4rem  Roboto;
   text-decoration: none;
 }
-/* line 231, global.less */
+/* line 244, global.less */
 .user-menu-section .wrapper .user-menu a:hover {
   text-decoration: underline;
 }
-/* line 240, global.less */
+/* line 253, global.less */
 .footer {
   width: 100%;
   margin-top: 20px;
@@ -794,82 +808,72 @@ header.header .mainmenu li a {
   font-weight: 500;
   font-size: 1.4rem;
 }
-/* line 246, global.less */
+/* line 259, global.less */
 .footer a {
   text-decoration: none;
   color: #ffffff;
 }
-/* line 250, global.less */
+/* line 263, global.less */
 .footer .top {
   padding: 8px 30px;
   background: #ec4863;
   overflow: hidden;
 }
-/* line 254, global.less */
+/* line 267, global.less */
 .footer .top .contact {
   display: block;
   float: left;
 }
-/* line 258, global.less */
+/* line 271, global.less */
 .footer .top .support {
   display: block;
   float: right;
 }
-/* line 262, global.less */
+/* line 275, global.less */
 .footer .top .footer-logo {
   margin: 20px 0;
 }
-/* line 264, global.less */
+/* line 277, global.less */
 .footer .top .footer-logo .logo {
   float: left;
   margin-right: 15px;
 }
-/* line 268, global.less */
+/* line 281, global.less */
 .footer .top .footer-logo .title {
   display: block;
   float: left;
   font-size: 1.4rem;
   margin-top: 5px;
 }
-/* line 273, global.less */
+/* line 286, global.less */
 .footer .top .footer-logo .title span {
   font-size: 1.2rem;
   font-weight: normal;
 }
-/* line 280, global.less */
+/* line 293, global.less */
 .footer .bottom {
   padding: 8px 30px;
   background: #a73e5c;
   overflow: hidden;
 }
-/* line 284, global.less */
+/* line 297, global.less */
 .footer .bottom p {
   display: block;
   float: left;
 }
-/* line 288, global.less */
+/* line 301, global.less */
 .footer .bottom ul {
   float: right;
   margin-top: 10px;
 }
-/* line 291, global.less */
+/* line 304, global.less */
 .footer .bottom ul li {
   float: left;
   margin-left: 20px;
 }
-/* line 295, global.less */
+/* line 308, global.less */
 .footer .bottom ul li a:hover {
   text-decoration: underline;
-}
-/* line 304, global.less */
-body.page-password-recovery footer.footer .top,
-body.page-sign-up footer.footer .top {
-  background: none;
-}
-/* line 307, global.less */
-body.page-password-recovery footer.footer .bottom,
-body.page-sign-up footer.footer .bottom {
-  background: none;
 }
 /* line 1, mainpage.less */
 body.page-mainpage {
@@ -902,12 +906,12 @@ body.page-mainpage h4 {
   text-align: center;
   font: 500 1.8rem Roboto;
 }
-/* line 26, mainpage.less */
+/* line 29, mainpage.less */
 body.page-mainpage .content {
   background: url('../images/mainpage-bg.jpg') center center no-repeat;
   background-size: cover;
 }
-/* line 31, mainpage.less */
+/* line 34, mainpage.less */
 body.page-mainpage .professionals h4 {
   color: #290019;
   font-size: 2.4rem;
@@ -916,26 +920,26 @@ body.page-mainpage .professionals h4 {
   margin-top: 50px;
   margin-bottom: 20px;
 }
-/* line 39, mainpage.less */
+/* line 42, mainpage.less */
 body.page-mainpage .professionals .slider {
   padding-bottom: 50px;
 }
-/* line 41, mainpage.less */
+/* line 44, mainpage.less */
 body.page-mainpage .professionals .slider .wrapper {
   max-width: none;
 }
-/* line 43, mainpage.less */
+/* line 46, mainpage.less */
 body.page-mainpage .professionals .slider .wrapper .item {
   float: left;
   width: 220px;
   margin-left: 20px;
   margin-bottom: 20px;
 }
-/* line 48, mainpage.less */
+/* line 51, mainpage.less */
 body.page-mainpage .professionals .slider .wrapper .item.first-of-row {
   margin-left: 0;
 }
-/* line 51, mainpage.less */
+/* line 54, mainpage.less */
 body.page-mainpage .professionals .slider .wrapper .item .photo-container {
   width: 100%;
   overflow: hidden;
@@ -944,17 +948,17 @@ body.page-mainpage .professionals .slider .wrapper .item .photo-container {
   -moz-border-radius: 500px;
   -webkit-border-radius: 500px;
 }
-/* line 58, mainpage.less */
+/* line 61, mainpage.less */
 body.page-mainpage .professionals .slider .wrapper .item .photo-container a {
   display: block;
   text-decoration: none;
 }
-/* line 61, mainpage.less */
+/* line 64, mainpage.less */
 body.page-mainpage .professionals .slider .wrapper .item .photo-container a img {
   display: block;
   width: 100%;
 }
-/* line 67, mainpage.less */
+/* line 70, mainpage.less */
 body.page-mainpage .professionals .slider .wrapper .item a.username {
   display: block;
   margin-top: 20px;
@@ -964,26 +968,26 @@ body.page-mainpage .professionals .slider .wrapper .item a.username {
   /* Приближение из-за подстановки шрифтов */
   font-weight: 400;
 }
-/* line 74, mainpage.less */
+/* line 77, mainpage.less */
 body.page-mainpage .professionals .slider .wrapper .item a.username span.lastname {
   font-weight: 700;
 }
-/* line 77, mainpage.less */
+/* line 80, mainpage.less */
 body.page-mainpage .professionals .slider .wrapper .item a.username:hover {
   color: #a73e5c;
 }
-/* line 83, mainpage.less */
+/* line 86, mainpage.less */
 body.page-mainpage .professionals .slider .controls-container {
   left: 50%;
   float: left;
 }
-/* line 86, mainpage.less */
+/* line 89, mainpage.less */
 body.page-mainpage .professionals .slider .controls-container .controls {
   right: 50%;
   margin-top: 10px;
   float: right;
 }
-/* line 90, mainpage.less */
+/* line 93, mainpage.less */
 body.page-mainpage .professionals .slider .controls-container .controls .circle {
   border-radius: 15px;
   -o-border-radius: 15px;
@@ -996,41 +1000,41 @@ body.page-mainpage .professionals .slider .controls-container .controls .circle 
   background: #b099a3;
   cursor: pointer;
 }
-/* line 101, mainpage.less */
+/* line 104, mainpage.less */
 body.page-mainpage .professionals .slider .controls-container .controls .circle.active {
   background: #ec4863;
 }
-/* line 108, mainpage.less */
+/* line 111, mainpage.less */
 body.page-mainpage .professionals #show-all-users {
   width: 210px;
   display: block;
   margin: auto;
   text-align: center;
 }
-/* line 115, mainpage.less */
+/* line 118, mainpage.less */
 body.page-mainpage .content .wrapper {
   overflow: hidden;
 }
-/* line 117, mainpage.less */
+/* line 120, mainpage.less */
 body.page-mainpage .content .wrapper .greetings {
   overflow: hidden;
   margin-top: 50px;
 }
-/* line 121, mainpage.less */
+/* line 124, mainpage.less */
 body.page-mainpage .content .wrapper .greetings h1 {
   margin-top: 0;
   padding-bottom: 0;
   text-align: left;
   font-size: 4.8rem;
 }
-/* line 127, mainpage.less */
+/* line 130, mainpage.less */
 body.page-mainpage .content .wrapper .greetings p {
   font-size: 2.4rem;
   color: #ffffff;
   font-weight: 500;
   line-height: 34px;
 }
-/* line 134, mainpage.less */
+/* line 137, mainpage.less */
 body.page-mainpage .content .wrapper .log-in {
   float: right;
   border-radius: 5px;
@@ -1043,29 +1047,29 @@ body.page-mainpage .content .wrapper .log-in {
   height: 486px;
   margin-left: 30px;
 }
-/* line 146, mainpage.less */
+/* line 149, mainpage.less */
 body.page-mainpage .content .wrapper .log-in .head {
   height: 54px;
   background: url('../images/login-form-header.png');
 }
-/* line 150, mainpage.less */
+/* line 153, mainpage.less */
 body.page-mainpage .content .wrapper .log-in form.body {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   background: url('../images/loginform-bg.png');
   padding: 15px 30px;
 }
-/* line 155, mainpage.less */
+/* line 158, mainpage.less */
 body.page-mainpage .content .wrapper .log-in form.body .field {
   margin-bottom: 20px;
 }
-/* line 158, mainpage.less */
+/* line 161, mainpage.less */
 body.page-mainpage .content .wrapper .log-in form.body .btn {
   width: 100%;
   padding: 15px 0;
   font-size: 1.4rem;
 }
-/* line 163, mainpage.less */
+/* line 166, mainpage.less */
 body.page-mainpage .content .wrapper .log-in form.body p.endnote {
   color: #b099a3;
   text-align: center;
@@ -1074,30 +1078,30 @@ body.page-mainpage .content .wrapper .log-in form.body p.endnote {
   line-height: 150%;
   margin-bottom: 30px;
 }
-/* line 170, mainpage.less */
+/* line 173, mainpage.less */
 body.page-mainpage .content .wrapper .log-in form.body p.endnote a {
   color: #ec4863;
 }
-/* line 174, mainpage.less */
+/* line 177, mainpage.less */
 body.page-mainpage .content .wrapper .log-in form.body .remember-me {
   float: left;
 }
-/* line 176, mainpage.less */
+/* line 179, mainpage.less */
 body.page-mainpage .content .wrapper .log-in form.body .remember-me .checkbox.container {
   float: left;
   margin-top: 8px;
 }
-/* line 179, mainpage.less */
+/* line 182, mainpage.less */
 body.page-mainpage .content .wrapper .log-in form.body .remember-me .checkbox.container.checked + label {
   color: #ec4863;
 }
-/* line 183, mainpage.less */
+/* line 186, mainpage.less */
 body.page-mainpage .content .wrapper .log-in form.body .remember-me label {
   float: left;
   margin-left: 10px;
   color: #b099a3;
 }
-/* line 189, mainpage.less */
+/* line 192, mainpage.less */
 body.page-mainpage .content .wrapper .log-in form.body a#forgot-password {
   display: block;
   float: right;
@@ -1105,31 +1109,31 @@ body.page-mainpage .content .wrapper .log-in form.body a#forgot-password {
   color: #ec4863;
   font-size: 1.2rem;
 }
-/* line 197, mainpage.less */
+/* line 200, mainpage.less */
 body.page-mainpage .content .wrapper .log-in .foot {
   text-align: center;
   border-top: solid 1px #b099a3;
   background: url('../images/loginform-bg.png');
   padding: 15px 0 25px 0;
 }
-/* line 202, mainpage.less */
+/* line 205, mainpage.less */
 body.page-mainpage .content .wrapper .log-in .foot p {
   line-height: 100%;
   font-size: 1.2rem;
 }
-/* line 206, mainpage.less */
+/* line 209, mainpage.less */
 body.page-mainpage .content .wrapper .log-in .foot a#sign-up,
 body.page-mainpage .content .wrapper .log-in .foot a#sign-in {
   color: #ec4863;
   font-size: 1.4rem;
   font-weight: 500;
 }
-/* line 212, mainpage.less */
+/* line 215, mainpage.less */
 body.page-mainpage .content .wrapper .log-in.sign-up,
 body.page-mainpage .content .wrapper .log-in.forgot-password {
   display: none;
 }
-/* line 217, mainpage.less */
+/* line 220, mainpage.less */
 body.page-mainpage footer.footer {
   color: #ffffff;
   font-size: 1.4rem;
@@ -1138,70 +1142,70 @@ body.page-mainpage footer.footer {
   margin-bottom: 20px;
   overflow: hidden;
 }
-/* line 224, mainpage.less */
+/* line 227, mainpage.less */
 body.page-mainpage footer.footer .copyright {
   float: left;
   margin-left: 30px;
 }
-/* line 227, mainpage.less */
+/* line 230, mainpage.less */
 body.page-mainpage footer.footer .copyright p {
   line-height: 155%;
 }
-/* line 231, mainpage.less */
+/* line 234, mainpage.less */
 body.page-mainpage footer.footer .right {
   float: right;
   margin-right: 30px;
   text-align: right;
 }
-/* line 235, mainpage.less */
+/* line 238, mainpage.less */
 body.page-mainpage footer.footer .right ul {
   margin-top: 35px;
 }
-/* line 237, mainpage.less */
+/* line 240, mainpage.less */
 body.page-mainpage footer.footer .right ul li {
   float: left;
   margin-left: 20px;
 }
-/* line 241, mainpage.less */
+/* line 244, mainpage.less */
 body.page-mainpage footer.footer .right ul li a:hover {
   text-decoration: underline;
 }
-/* line 249, mainpage.less */
+/* line 252, mainpage.less */
 body.page-mainpage #authorization-window {
   padding-bottom: 0;
 }
-/* line 252, mainpage.less */
+/* line 255, mainpage.less */
 body.page-mainpage #authorization-window#forgot-password-window .container {
   width: 500px;
 }
-/* line 254, mainpage.less */
+/* line 257, mainpage.less */
 body.page-mainpage #authorization-window#forgot-password-window .container form {
   width: 300px;
   margin: auto;
   margin-bottom: 20px;
 }
-/* line 258, mainpage.less */
+/* line 261, mainpage.less */
 body.page-mainpage #authorization-window#forgot-password-window .container form input[type="submit"] {
   width: 100%;
 }
-/* line 264, mainpage.less */
+/* line 267, mainpage.less */
 body.page-mainpage #authorization-window > .container {
   padding-bottom: 60px;
 }
-/* line 266, mainpage.less */
+/* line 269, mainpage.less */
 body.page-mainpage #authorization-window > .container h1 {
   color: #290019;
   font: 500 2.4rem Roboto;
   margin-bottom: 20px;
 }
-/* line 271, mainpage.less */
+/* line 274, mainpage.less */
 body.page-mainpage #authorization-window > .container .left {
   padding-right: 15px;
   width: 255px;
   float: left;
   border-right: solid 1px #b9d4cc;
 }
-/* line 276, mainpage.less */
+/* line 279, mainpage.less */
 body.page-mainpage #authorization-window > .container .left a.omni-sign-in {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1218,7 +1222,7 @@ body.page-mainpage #authorization-window > .container .left a.omni-sign-in {
   overflow: hidden;
   margin-bottom: 21px;
 }
-/* line 291, mainpage.less */
+/* line 294, mainpage.less */
 body.page-mainpage #authorization-window > .container .left a.omni-sign-in i {
   position: relative;
   height: 100%;
@@ -1230,7 +1234,7 @@ body.page-mainpage #authorization-window > .container .left a.omni-sign-in i {
   text-align: center;
   width: 30px;
 }
-/* line 302, mainpage.less */
+/* line 305, mainpage.less */
 body.page-mainpage #authorization-window > .container .left a.omni-sign-in span {
   position: relative;
   height: 100%;
@@ -1240,57 +1244,57 @@ body.page-mainpage #authorization-window > .container .left a.omni-sign-in span 
   padding-left: 15px;
   margin-top: 10px;
 }
-/* line 311, mainpage.less */
+/* line 314, mainpage.less */
 body.page-mainpage #authorization-window > .container .left a.omni-sign-in#fb {
   background: #3b5998;
 }
-/* line 314, mainpage.less */
+/* line 317, mainpage.less */
 body.page-mainpage #authorization-window > .container .left a.omni-sign-in#vk {
   background: #4c75a3;
 }
-/* line 317, mainpage.less */
+/* line 320, mainpage.less */
 body.page-mainpage #authorization-window > .container .left a.omni-sign-in#ok {
   background: #fa9616;
   margin-bottom: 0;
 }
-/* line 320, mainpage.less */
+/* line 323, mainpage.less */
 body.page-mainpage #authorization-window > .container .left a.omni-sign-in#ok i {
   border-color: #d98314;
 }
-/* line 325, mainpage.less */
+/* line 328, mainpage.less */
 body.page-mainpage #authorization-window > .container .left p {
   color: #b099a3;
   text-align: center;
   font-size: 1.2rem;
   line-height: 150%;
 }
-/* line 330, mainpage.less */
+/* line 333, mainpage.less */
 body.page-mainpage #authorization-window > .container .left p a {
   color: #ec4863;
   text-decoration: underline;
 }
-/* line 336, mainpage.less */
+/* line 339, mainpage.less */
 body.page-mainpage #authorization-window > .container .right {
   width: 255px;
   float: right;
   padding-left: 15px;
 }
-/* line 340, mainpage.less */
+/* line 343, mainpage.less */
 body.page-mainpage #authorization-window > .container .right .btn {
   width: 100%;
 }
-/* line 343, mainpage.less */
+/* line 346, mainpage.less */
 body.page-mainpage #authorization-window > .container .right p {
   color: #b099a3;
   font: 400 1.2rem Roboto;
   text-align: center;
 }
-/* line 347, mainpage.less */
+/* line 350, mainpage.less */
 body.page-mainpage #authorization-window > .container .right p a {
   color: #8e7781;
   font-weight: bold;
 }
-/* line 353, mainpage.less */
+/* line 356, mainpage.less */
 body.page-mainpage #authorization-window > .container .links {
   position: absolute;
   bottom: 0;
@@ -1300,7 +1304,7 @@ body.page-mainpage #authorization-window > .container .links {
   border-top: #b9d4cc 1px solid;
   padding-top: 10px;
 }
-/* line 362, mainpage.less */
+/* line 365, mainpage.less */
 body.page-mainpage #authorization-window > .container a.sign-up,
 body.page-mainpage #authorization-window > .container a.forgot-password,
 body.page-mainpage #authorization-window > .container a.sign-in {
@@ -1310,32 +1314,32 @@ body.page-mainpage #authorization-window > .container a.sign-in {
   margin-top: 10px;
   line-height: 26px;
 }
-/* line 368, mainpage.less */
+/* line 371, mainpage.less */
 body.page-mainpage #authorization-window > .container a.sign-up span,
 body.page-mainpage #authorization-window > .container a.forgot-password span,
 body.page-mainpage #authorization-window > .container a.sign-in span {
   color: #ec4863;
   font-weight: bold;
 }
-/* line 372, mainpage.less */
+/* line 375, mainpage.less */
 body.page-mainpage #authorization-window > .container a.sign-up.forgot-password,
 body.page-mainpage #authorization-window > .container a.forgot-password.forgot-password,
 body.page-mainpage #authorization-window > .container a.sign-in.forgot-password {
   font-size: 1.2rem;
 }
-/* line 379, mainpage.less */
+/* line 382, mainpage.less */
 body.page-password-recovery,
 body.page-sign-up {
   background: url('../images/mainpage-bg.jpg') center center no-repeat;
   background-size: cover;
 }
-/* line 382, mainpage.less */
+/* line 385, mainpage.less */
 body.page-password-recovery .ui-button-icon-primary,
 body.page-sign-up .ui-button-icon-primary {
   margin-left: -16px !important;
   margin-top: 0 !important;
 }
-/* line 386, mainpage.less */
+/* line 389, mainpage.less */
 body.page-password-recovery h1,
 body.page-sign-up h1 {
   color: #ffffff;
@@ -1344,7 +1348,7 @@ body.page-sign-up h1 {
   padding-bottom: 0;
   margin-top: 40px;
 }
-/* line 393, mainpage.less */
+/* line 396, mainpage.less */
 body.page-password-recovery h2,
 body.page-sign-up h2 {
   color: #ffffff;
@@ -1353,14 +1357,14 @@ body.page-sign-up h2 {
   text-align: center;
   padding-top: 0;
 }
-/* line 400, mainpage.less */
+/* line 403, mainpage.less */
 body.page-password-recovery h4,
 body.page-sign-up h4 {
   color: #ffffff;
   text-align: center;
   font: 500 1.8rem Roboto;
 }
-/* line 405, mainpage.less */
+/* line 408, mainpage.less */
 body.page-password-recovery .sign-up,
 body.page-sign-up .sign-up,
 body.page-password-recovery .forgot-password,
@@ -1373,7 +1377,7 @@ body.page-sign-up .forgot-password {
   margin: 30px auto;
   width: 380px;
 }
-/* line 413, mainpage.less */
+/* line 416, mainpage.less */
 body.page-password-recovery .sign-up .head,
 body.page-sign-up .sign-up .head,
 body.page-password-recovery .forgot-password .head,
@@ -1381,7 +1385,7 @@ body.page-sign-up .forgot-password .head {
   height: 54px;
   background: url('../images/login-form-header.png');
 }
-/* line 417, mainpage.less */
+/* line 420, mainpage.less */
 body.page-password-recovery .sign-up form.body,
 body.page-sign-up .sign-up form.body,
 body.page-password-recovery .forgot-password form.body,
@@ -1391,14 +1395,14 @@ body.page-sign-up .forgot-password form.body {
   background: url('../images/loginform-bg.png');
   padding: 15px 30px;
 }
-/* line 422, mainpage.less */
+/* line 425, mainpage.less */
 body.page-password-recovery .sign-up form.body .field,
 body.page-sign-up .sign-up form.body .field,
 body.page-password-recovery .forgot-password form.body .field,
 body.page-sign-up .forgot-password form.body .field {
   margin-bottom: 20px;
 }
-/* line 425, mainpage.less */
+/* line 428, mainpage.less */
 body.page-password-recovery .sign-up form.body .btn,
 body.page-sign-up .sign-up form.body .btn,
 body.page-password-recovery .forgot-password form.body .btn,
@@ -1407,7 +1411,7 @@ body.page-sign-up .forgot-password form.body .btn {
   padding: 15px 0;
   font-size: 1.4rem;
 }
-/* line 430, mainpage.less */
+/* line 433, mainpage.less */
 body.page-password-recovery .sign-up form.body p.endnote,
 body.page-sign-up .sign-up form.body p.endnote,
 body.page-password-recovery .forgot-password form.body p.endnote,
@@ -1419,21 +1423,21 @@ body.page-sign-up .forgot-password form.body p.endnote {
   line-height: 150%;
   margin-bottom: 30px;
 }
-/* line 437, mainpage.less */
+/* line 440, mainpage.less */
 body.page-password-recovery .sign-up form.body p.endnote a,
 body.page-sign-up .sign-up form.body p.endnote a,
 body.page-password-recovery .forgot-password form.body p.endnote a,
 body.page-sign-up .forgot-password form.body p.endnote a {
   color: #ec4863;
 }
-/* line 441, mainpage.less */
+/* line 444, mainpage.less */
 body.page-password-recovery .sign-up form.body .remember-me,
 body.page-sign-up .sign-up form.body .remember-me,
 body.page-password-recovery .forgot-password form.body .remember-me,
 body.page-sign-up .forgot-password form.body .remember-me {
   float: left;
 }
-/* line 443, mainpage.less */
+/* line 446, mainpage.less */
 body.page-password-recovery .sign-up form.body .remember-me .checkbox.container,
 body.page-sign-up .sign-up form.body .remember-me .checkbox.container,
 body.page-password-recovery .forgot-password form.body .remember-me .checkbox.container,
@@ -1441,14 +1445,14 @@ body.page-sign-up .forgot-password form.body .remember-me .checkbox.container {
   float: left;
   margin-top: 8px;
 }
-/* line 446, mainpage.less */
+/* line 449, mainpage.less */
 body.page-password-recovery .sign-up form.body .remember-me .checkbox.container.checked + label,
 body.page-sign-up .sign-up form.body .remember-me .checkbox.container.checked + label,
 body.page-password-recovery .forgot-password form.body .remember-me .checkbox.container.checked + label,
 body.page-sign-up .forgot-password form.body .remember-me .checkbox.container.checked + label {
   color: #ec4863;
 }
-/* line 450, mainpage.less */
+/* line 453, mainpage.less */
 body.page-password-recovery .sign-up form.body .remember-me label,
 body.page-sign-up .sign-up form.body .remember-me label,
 body.page-password-recovery .forgot-password form.body .remember-me label,
@@ -1457,7 +1461,7 @@ body.page-sign-up .forgot-password form.body .remember-me label {
   margin-left: 10px;
   color: #b099a3;
 }
-/* line 456, mainpage.less */
+/* line 459, mainpage.less */
 body.page-password-recovery .sign-up form.body a#forgot-password,
 body.page-sign-up .sign-up form.body a#forgot-password,
 body.page-password-recovery .forgot-password form.body a#forgot-password,
@@ -1468,7 +1472,7 @@ body.page-sign-up .forgot-password form.body a#forgot-password {
   color: #ec4863;
   font-size: 1.2rem;
 }
-/* line 464, mainpage.less */
+/* line 467, mainpage.less */
 body.page-password-recovery .sign-up .foot,
 body.page-sign-up .sign-up .foot,
 body.page-password-recovery .forgot-password .foot,
@@ -1478,7 +1482,7 @@ body.page-sign-up .forgot-password .foot {
   background: url('../images/loginform-bg.png');
   padding: 15px 0 25px 0;
 }
-/* line 469, mainpage.less */
+/* line 472, mainpage.less */
 body.page-password-recovery .sign-up .foot p,
 body.page-sign-up .sign-up .foot p,
 body.page-password-recovery .forgot-password .foot p,
@@ -1486,7 +1490,7 @@ body.page-sign-up .forgot-password .foot p {
   line-height: 100%;
   font-size: 1.2rem;
 }
-/* line 473, mainpage.less */
+/* line 476, mainpage.less */
 body.page-password-recovery .sign-up .foot a#sign-up,
 body.page-sign-up .sign-up .foot a#sign-up,
 body.page-password-recovery .forgot-password .foot a#sign-up,
@@ -1499,51 +1503,7 @@ body.page-sign-up .forgot-password .foot a#sign-in {
   font-size: 1.4rem;
   font-weight: 500;
 }
-/* line 480, mainpage.less */
-body.page-password-recovery footer.footer,
-body.page-sign-up footer.footer {
-  color: #ffffff;
-  font-size: 1.4rem;
-  font-weight: 500;
-  margin-top: 50px;
-  margin-bottom: 20px;
-  overflow: hidden;
-}
-/* line 487, mainpage.less */
-body.page-password-recovery footer.footer .copyright,
-body.page-sign-up footer.footer .copyright {
-  float: left;
-  margin-left: 30px;
-}
-/* line 490, mainpage.less */
-body.page-password-recovery footer.footer .copyright p,
-body.page-sign-up footer.footer .copyright p {
-  line-height: 155%;
-}
-/* line 494, mainpage.less */
-body.page-password-recovery footer.footer .right,
-body.page-sign-up footer.footer .right {
-  float: right;
-  margin-right: 30px;
-  text-align: right;
-}
-/* line 498, mainpage.less */
-body.page-password-recovery footer.footer .right ul,
-body.page-sign-up footer.footer .right ul {
-  margin-top: 35px;
-}
-/* line 500, mainpage.less */
-body.page-password-recovery footer.footer .right ul li,
-body.page-sign-up footer.footer .right ul li {
-  float: left;
-  margin-left: 20px;
-}
-/* line 504, mainpage.less */
-body.page-password-recovery footer.footer .right ul li a:hover,
-body.page-sign-up footer.footer .right ul li a:hover {
-  text-decoration: underline;
-}
-/* line 512, mainpage.less */
+/* line 515, mainpage.less */
 body.page-password-recovery #authorization-window,
 body.page-sign-up #authorization-window,
 body.page-password-recovery #registration-window,
@@ -1552,7 +1512,7 @@ body.page-password-recovery #forgot-password-window,
 body.page-sign-up #forgot-password-window {
   padding-bottom: 0;
 }
-/* line 515, mainpage.less */
+/* line 518, mainpage.less */
 body.page-password-recovery #authorization-window#forgot-password-window .container,
 body.page-sign-up #authorization-window#forgot-password-window .container,
 body.page-password-recovery #registration-window#forgot-password-window .container,
@@ -1561,7 +1521,7 @@ body.page-password-recovery #forgot-password-window#forgot-password-window .cont
 body.page-sign-up #forgot-password-window#forgot-password-window .container {
   width: 500px;
 }
-/* line 517, mainpage.less */
+/* line 520, mainpage.less */
 body.page-password-recovery #authorization-window#forgot-password-window .container form,
 body.page-sign-up #authorization-window#forgot-password-window .container form,
 body.page-password-recovery #registration-window#forgot-password-window .container form,
@@ -1572,7 +1532,7 @@ body.page-sign-up #forgot-password-window#forgot-password-window .container form
   margin: auto;
   margin-bottom: 20px;
 }
-/* line 521, mainpage.less */
+/* line 524, mainpage.less */
 body.page-password-recovery #authorization-window#forgot-password-window .container form input[type="submit"],
 body.page-sign-up #authorization-window#forgot-password-window .container form input[type="submit"],
 body.page-password-recovery #registration-window#forgot-password-window .container form input[type="submit"],
@@ -1581,7 +1541,7 @@ body.page-password-recovery #forgot-password-window#forgot-password-window .cont
 body.page-sign-up #forgot-password-window#forgot-password-window .container form input[type="submit"] {
   width: 100%;
 }
-/* line 527, mainpage.less */
+/* line 530, mainpage.less */
 body.page-password-recovery #authorization-window > .container,
 body.page-sign-up #authorization-window > .container,
 body.page-password-recovery #registration-window > .container,
@@ -1590,7 +1550,7 @@ body.page-password-recovery #forgot-password-window > .container,
 body.page-sign-up #forgot-password-window > .container {
   padding-bottom: 60px;
 }
-/* line 529, mainpage.less */
+/* line 532, mainpage.less */
 body.page-password-recovery #authorization-window > .container h1,
 body.page-sign-up #authorization-window > .container h1,
 body.page-password-recovery #registration-window > .container h1,
@@ -1601,7 +1561,7 @@ body.page-sign-up #forgot-password-window > .container h1 {
   font: 500 2.4rem Roboto;
   margin-bottom: 20px;
 }
-/* line 534, mainpage.less */
+/* line 537, mainpage.less */
 body.page-password-recovery #authorization-window > .container .left,
 body.page-sign-up #authorization-window > .container .left,
 body.page-password-recovery #registration-window > .container .left,
@@ -1613,7 +1573,7 @@ body.page-sign-up #forgot-password-window > .container .left {
   float: left;
   border-right: solid 1px #b9d4cc;
 }
-/* line 539, mainpage.less */
+/* line 542, mainpage.less */
 body.page-password-recovery #authorization-window > .container .left a.omni-sign-in,
 body.page-sign-up #authorization-window > .container .left a.omni-sign-in,
 body.page-password-recovery #registration-window > .container .left a.omni-sign-in,
@@ -1635,7 +1595,7 @@ body.page-sign-up #forgot-password-window > .container .left a.omni-sign-in {
   overflow: hidden;
   margin-bottom: 21px;
 }
-/* line 554, mainpage.less */
+/* line 557, mainpage.less */
 body.page-password-recovery #authorization-window > .container .left a.omni-sign-in i,
 body.page-sign-up #authorization-window > .container .left a.omni-sign-in i,
 body.page-password-recovery #registration-window > .container .left a.omni-sign-in i,
@@ -1652,7 +1612,7 @@ body.page-sign-up #forgot-password-window > .container .left a.omni-sign-in i {
   text-align: center;
   width: 30px;
 }
-/* line 565, mainpage.less */
+/* line 568, mainpage.less */
 body.page-password-recovery #authorization-window > .container .left a.omni-sign-in span,
 body.page-sign-up #authorization-window > .container .left a.omni-sign-in span,
 body.page-password-recovery #registration-window > .container .left a.omni-sign-in span,
@@ -1667,7 +1627,7 @@ body.page-sign-up #forgot-password-window > .container .left a.omni-sign-in span
   padding-left: 15px;
   margin-top: 10px;
 }
-/* line 574, mainpage.less */
+/* line 577, mainpage.less */
 body.page-password-recovery #authorization-window > .container .left a.omni-sign-in#fb,
 body.page-sign-up #authorization-window > .container .left a.omni-sign-in#fb,
 body.page-password-recovery #registration-window > .container .left a.omni-sign-in#fb,
@@ -1676,7 +1636,7 @@ body.page-password-recovery #forgot-password-window > .container .left a.omni-si
 body.page-sign-up #forgot-password-window > .container .left a.omni-sign-in#fb {
   background: #3b5998;
 }
-/* line 577, mainpage.less */
+/* line 580, mainpage.less */
 body.page-password-recovery #authorization-window > .container .left a.omni-sign-in#vk,
 body.page-sign-up #authorization-window > .container .left a.omni-sign-in#vk,
 body.page-password-recovery #registration-window > .container .left a.omni-sign-in#vk,
@@ -1685,7 +1645,7 @@ body.page-password-recovery #forgot-password-window > .container .left a.omni-si
 body.page-sign-up #forgot-password-window > .container .left a.omni-sign-in#vk {
   background: #4c75a3;
 }
-/* line 580, mainpage.less */
+/* line 583, mainpage.less */
 body.page-password-recovery #authorization-window > .container .left a.omni-sign-in#ok,
 body.page-sign-up #authorization-window > .container .left a.omni-sign-in#ok,
 body.page-password-recovery #registration-window > .container .left a.omni-sign-in#ok,
@@ -1695,7 +1655,7 @@ body.page-sign-up #forgot-password-window > .container .left a.omni-sign-in#ok {
   background: #fa9616;
   margin-bottom: 0;
 }
-/* line 583, mainpage.less */
+/* line 586, mainpage.less */
 body.page-password-recovery #authorization-window > .container .left a.omni-sign-in#ok i,
 body.page-sign-up #authorization-window > .container .left a.omni-sign-in#ok i,
 body.page-password-recovery #registration-window > .container .left a.omni-sign-in#ok i,
@@ -1704,7 +1664,7 @@ body.page-password-recovery #forgot-password-window > .container .left a.omni-si
 body.page-sign-up #forgot-password-window > .container .left a.omni-sign-in#ok i {
   border-color: #d98314;
 }
-/* line 588, mainpage.less */
+/* line 591, mainpage.less */
 body.page-password-recovery #authorization-window > .container .left p,
 body.page-sign-up #authorization-window > .container .left p,
 body.page-password-recovery #registration-window > .container .left p,
@@ -1716,7 +1676,7 @@ body.page-sign-up #forgot-password-window > .container .left p {
   font-size: 1.2rem;
   line-height: 150%;
 }
-/* line 593, mainpage.less */
+/* line 596, mainpage.less */
 body.page-password-recovery #authorization-window > .container .left p a,
 body.page-sign-up #authorization-window > .container .left p a,
 body.page-password-recovery #registration-window > .container .left p a,
@@ -1726,7 +1686,7 @@ body.page-sign-up #forgot-password-window > .container .left p a {
   color: #ec4863;
   text-decoration: underline;
 }
-/* line 599, mainpage.less */
+/* line 602, mainpage.less */
 body.page-password-recovery #authorization-window > .container .right,
 body.page-sign-up #authorization-window > .container .right,
 body.page-password-recovery #registration-window > .container .right,
@@ -1737,7 +1697,7 @@ body.page-sign-up #forgot-password-window > .container .right {
   float: right;
   padding-left: 15px;
 }
-/* line 603, mainpage.less */
+/* line 606, mainpage.less */
 body.page-password-recovery #authorization-window > .container .right .btn,
 body.page-sign-up #authorization-window > .container .right .btn,
 body.page-password-recovery #registration-window > .container .right .btn,
@@ -1746,7 +1706,7 @@ body.page-password-recovery #forgot-password-window > .container .right .btn,
 body.page-sign-up #forgot-password-window > .container .right .btn {
   width: 100%;
 }
-/* line 606, mainpage.less */
+/* line 609, mainpage.less */
 body.page-password-recovery #authorization-window > .container .right p,
 body.page-sign-up #authorization-window > .container .right p,
 body.page-password-recovery #registration-window > .container .right p,
@@ -1757,7 +1717,7 @@ body.page-sign-up #forgot-password-window > .container .right p {
   font: 400 1.2rem Roboto;
   text-align: center;
 }
-/* line 610, mainpage.less */
+/* line 613, mainpage.less */
 body.page-password-recovery #authorization-window > .container .right p a,
 body.page-sign-up #authorization-window > .container .right p a,
 body.page-password-recovery #registration-window > .container .right p a,
@@ -1767,7 +1727,7 @@ body.page-sign-up #forgot-password-window > .container .right p a {
   color: #8e7781;
   font-weight: bold;
 }
-/* line 616, mainpage.less */
+/* line 619, mainpage.less */
 body.page-password-recovery #authorization-window > .container .links,
 body.page-sign-up #authorization-window > .container .links,
 body.page-password-recovery #registration-window > .container .links,
@@ -1782,7 +1742,7 @@ body.page-sign-up #forgot-password-window > .container .links {
   border-top: #b9d4cc 1px solid;
   padding-top: 10px;
 }
-/* line 625, mainpage.less */
+/* line 628, mainpage.less */
 body.page-password-recovery #authorization-window > .container a.sign-up,
 body.page-sign-up #authorization-window > .container a.sign-up,
 body.page-password-recovery #registration-window > .container a.sign-up,
@@ -1807,7 +1767,7 @@ body.page-sign-up #forgot-password-window > .container a.sign-in {
   margin-top: 10px;
   line-height: 26px;
 }
-/* line 631, mainpage.less */
+/* line 634, mainpage.less */
 body.page-password-recovery #authorization-window > .container a.sign-up span,
 body.page-sign-up #authorization-window > .container a.sign-up span,
 body.page-password-recovery #registration-window > .container a.sign-up span,
@@ -1829,7 +1789,7 @@ body.page-sign-up #forgot-password-window > .container a.sign-in span {
   color: #ec4863;
   font-weight: bold;
 }
-/* line 635, mainpage.less */
+/* line 638, mainpage.less */
 body.page-password-recovery #authorization-window > .container a.sign-up.forgot-password,
 body.page-sign-up #authorization-window > .container a.sign-up.forgot-password,
 body.page-password-recovery #registration-window > .container a.sign-up.forgot-password,

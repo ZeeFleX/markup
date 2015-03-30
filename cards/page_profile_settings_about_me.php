@@ -30,7 +30,10 @@
                 <i class="fa fa-caret-down"></i>
                 <div class="dropdown-menu">
                     <ul>
-                        <a href="#">Выйти</a>
+                        <li class="arrow"></li>
+                        <li><a href="page_profile.php">Мой профиль</a></li>
+                        <li><a href="page_profile_settings_common.php">Настройки профиля</a></li>
+                        <li><a href="mainpage.php">Выйти</a></li>
                     </ul>
                 </div>
             </div>
@@ -48,6 +51,13 @@
                 <div class="count">2</div>
                 <i class="fa fa-bell"></i>
             </div>
+        </div>
+        <div class="mainmenu">
+            <ul>
+                <li>
+                    <a href="page_list.php">Терапевты</a>
+                </li>
+            </ul>
         </div>
     </header>
     <!-- <section class="user-menu-section">
@@ -276,16 +286,16 @@
             <div class="content-block">
                 <ul>
                     <li>
-                        <a href="#">Основные настройки</a>
+                        <a href="page_profile_settings_common.php">Основные настройки</a>
                     </li>
                     <li class="active">
-                        <a href="#">Информация о себе</a>
+                        <a href="page_profile_settings_about_me.php">Информация о себе</a>
                     </li>
                     <li>
-                        <a href="#">Контакты</a>
+                        <a href="page_profile_settings_contacts.php">Контакты</a>
                     </li>
                     <li>
-                        <a href="#">Настройки безопасности</a>
+                        <a href="page_profile_settings_security.php">Настройки безопасности</a>
                     </li>
                 </ul>
             </div>
