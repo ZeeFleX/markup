@@ -1,0 +1,98 @@
+body.page-consultant-list{
+   .wrapper{
+        overflow: hidden;
+        .search-consultant.content-block{
+            margin-top: 20px;
+            background: @sky;
+            h3{
+                text-align: center;
+                margin:0;
+                padding:0;
+                color:@white;
+                font-size:1.8rem;
+            }
+            form{
+                width: 80%;
+                margin:30px auto 10px auto;
+                .field{
+                    width: 40%;
+                    float: left;
+                    margin-right: 2%;
+                    .select2-container{
+                        width: 100% !important;
+                        .select2-selection__arrow{
+                            background:  url('../images/interface/dropdown-arrow.png') center center no-repeat #41b6ad !important;
+                        }
+                        .select2-selection{
+                            border-color: #41b6ad;
+                        }
+                    }
+                }
+                input[type="submit"]{
+                    width: 16%;
+                    padding: 10px 17px 8px 17px;
+                    border-radius:6px;
+                    -moz-border-radius:6px;
+                    -o-border-radius:6px;
+                    -webkit-border-radius:6px;
+                }
+            }
+        }
+        .search-results{
+            margin-top: 20px;
+            overflow: hidden;
+            .result{
+                float: left;
+                width: 23%;
+                margin-left: 2.65%;
+                margin-bottom: 20px;
+                &.first-of-row{
+                    margin-left: 0;
+                }
+                .photo-container{
+                    width: 160px;
+                    height: 160px;
+                    overflow: hidden;
+                    border-radius:500px;
+                    -o-border-radius:500px;
+                    -moz-border-radius:500px;
+                    -webkit-border-radius:500px;
+                    a{
+                        display: block;
+                        text-decoration: none;
+                        img{
+                            display: block;
+                            width: 100%;
+                        }
+                    }
+                }
+                a.username{
+                    display: block;
+                    margin-top: 20px;
+                    text-align: center;
+                    color:  @sky;
+                    font-size: 1.4rem; /* Приближение из-за подстановки шрифтов */
+                    font-weight: 400;
+                    span.lastname{
+                        font-weight: 700;
+                    }
+                    &:hover{
+                        color:@sky_dark;
+                    }
+                }
+                .rating-block{
+                    margin-top: 10px;
+                    width: 65px;
+                    margin-left:auto;
+                    margin-right: auto;
+                }
+                a#sign-up-to-consult{
+                    font-size:1.2rem;
+                    text-align: center;
+                    padding: 9px 7px 7px 7px;
+                    margin-top: 20px;
+                }
+            }
+        }
+   }
+}

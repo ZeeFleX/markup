@@ -1,0 +1,68 @@
+body.page-notifications{
+    section.content{
+        float: left;
+        width: 62%;
+        .items{
+        	overflow: hidden;
+        	.item{
+        		overflow: hidden;
+        		padding:0;
+        		margin-bottom: 20px;
+        		.indicator{
+        			float: left;
+        			width: 80px;
+        			height: 95px;
+        			background: url('../images/notify-indicator-sprite.png') repeat-y;
+        			background-position: -80px 0;
+        		}
+        		&.important .indicator{
+        			background-position: 0 0;
+    			}
+        		.submit{
+        			float: right;
+        			margin-top: 33px;
+					margin-right: 34px;
+        		}
+        		p{
+        			display: block;
+        			padding:10px 20px;
+        			overflow: hidden;
+        			font-family: Roboto;
+					color: @sea_light;
+					font-size: 1.4rem;
+					margin-top: 20px;
+					a{
+						color: @sky;
+						font-size: 1.4rem;
+						font-weight: 500;
+						line-height: 18px;
+					}
+
+        		}
+        	}
+        }
+    }
+    aside.additional-menu{
+        float: left;
+        margin-left: 2%;
+        width: 36%;
+        ul{
+            li{
+                margin:3px 0;
+                a{
+                    color: @sea_light;
+                    font: 500 1.4rem Roboto;
+                    text-decoration: none;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+                &.active a{
+                    font-weight: bold;
+                    color:@sea;
+                }
+            }
+        }
+        a.btn{}
+    }
+}

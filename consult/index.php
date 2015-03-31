@@ -24,6 +24,9 @@
             <li><a href="page_profile_settings_contacts.php">Страница контактов. (консультант)</a></li>
             <li><a href="page_profile_settings_consults.php">Страница консультаций. (консультант)</a></li>
             <li><a href="page_profile_schedule.php">Мое расписание. (консультант)</a></li>
+            <li><a href="page_notifications.php">Мои уведомления.</a></li>
+            <li><a href="page_participiant_profile.php">Профиль участника.</a></li>
+            <li><a href="page_consultant_list.php">Список консультантов.</a></li>
         </ol>
         <h1>Полезные ссылки</h1>
         <ol>

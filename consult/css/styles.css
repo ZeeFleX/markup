@@ -275,16 +275,16 @@ input[type="password"].error {
   background-color: #ffd9d9;
 }
 /* line 251, interface.less */
-.field span {
+.field.required span {
   display: none;
 }
 /* line 254, interface.less */
-.field.required span {
+.field.required.required span {
   color: #eb5245;
   display: inline;
 }
 /* line 258, interface.less */
-.field label {
+.field.required label {
   color: #35504e;
   font-weight: 500;
   margin-bottom: 5px;
@@ -591,12 +591,13 @@ header.header .title {
 /* line 67, global.less */
 header.header .sign-in {
   float: right;
+  margin-top: 3px;
 }
-/* line 74, global.less */
+/* line 75, global.less */
 header.header .profile-snippet {
   float: right;
 }
-/* line 76, global.less */
+/* line 77, global.less */
 header.header .profile-snippet .photo-container {
   border-radius: 50px;
   -o-border-radius: 50px;
@@ -608,60 +609,60 @@ header.header .profile-snippet .photo-container {
   overflow: hidden;
   border: solid 1px #8aa4a2;
 }
-/* line 86, global.less */
+/* line 87, global.less */
 header.header .profile-snippet .photo-container img {
   display: block;
   width: 100%;
 }
-/* line 91, global.less */
+/* line 92, global.less */
 header.header .profile-snippet .info {
   float: left;
   margin-left: 10px;
   margin-top: 5px;
 }
-/* line 95, global.less */
+/* line 96, global.less */
 header.header .profile-snippet .info .name {
   color: #35504e;
   font: 500 1.4rem Roboto;
 }
-/* line 99, global.less */
+/* line 100, global.less */
 header.header .profile-snippet .info .job {
   color: #4ad0c5;
   font: 400 1.2rem Roboto;
 }
-/* line 104, global.less */
+/* line 105, global.less */
 header.header .profile-snippet .more-container {
   float: left;
   margin-left: 10px;
   margin-top: 10px;
 }
-/* line 108, global.less */
+/* line 109, global.less */
 header.header .profile-snippet .more-container i {
   color: #35504e;
   font-size: 1.8rem;
   cursor: pointer;
 }
-/* line 113, global.less */
+/* line 114, global.less */
 header.header .profile-snippet .more-container .dropdown-menu {
   display: none;
 }
-/* line 119, global.less */
+/* line 120, global.less */
 header.header .profile-notifications {
   float: right;
   margin-right: 10px;
   margin-top: 10px;
 }
-/* line 123, global.less */
+/* line 124, global.less */
 header.header .profile-notifications > div {
   float: left;
   margin: 0 15px;
   cursor: pointer;
 }
-/* line 127, global.less */
+/* line 128, global.less */
 header.header .profile-notifications > div.active i.fa {
   color: #eb5245;
 }
-/* line 130, global.less */
+/* line 131, global.less */
 header.header .profile-notifications > div .count {
   position: absolute;
   border-radius: 50px;
@@ -676,29 +677,29 @@ header.header .profile-notifications > div .count {
   z-index: 1;
   font: 500 1.1rem / 17px Roboto;
 }
-/* line 144, global.less */
+/* line 145, global.less */
 header.header .profile-notifications > div i.fa {
   color: #8aa4a2;
   font-size: 2.0rem;
 }
-/* line 150, global.less */
+/* line 151, global.less */
 header.header .mainmenu {
   float: right;
-  margin: 9px 0;
+  margin: 13px 0;
 }
-/* line 153, global.less */
+/* line 154, global.less */
 header.header .mainmenu li {
   float: left;
   text-transform: uppercase;
   font: 500 1.2rem Roboto;
   margin-right: 30px;
 }
-/* line 158, global.less */
+/* line 159, global.less */
 header.header .mainmenu li a {
   color: #35504e;
   text-decoration: none;
 }
-/* line 165, global.less */
+/* line 166, global.less */
 .user-menu-section {
   background: #f8f8f8;
   overflow: hidden;
@@ -708,70 +709,70 @@ header.header .mainmenu li a {
   -moz-box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.1);
 }
-/* line 174, global.less */
+/* line 175, global.less */
 .user-menu-section .wrapper .user-menu-container {
   right: 50%;
   float: right;
 }
-/* line 178, global.less */
+/* line 179, global.less */
 .user-menu-section .wrapper .user-menu {
   left: 50%;
   float: left;
 }
-/* line 181, global.less */
+/* line 182, global.less */
 .user-menu-section .wrapper .user-menu li {
   margin: 0 10px;
   float: left;
 }
-/* line 185, global.less */
+/* line 186, global.less */
 .user-menu-section .wrapper .user-menu a {
   color: #35504e;
   font: 400 1.4rem  Roboto;
   text-decoration: none;
 }
-/* line 189, global.less */
+/* line 190, global.less */
 .user-menu-section .wrapper .user-menu a:hover {
   text-decoration: underline;
 }
-/* line 198, global.less */
+/* line 199, global.less */
 .footer {
   width: 100%;
   margin-top: 20px;
 }
-/* line 201, global.less */
+/* line 202, global.less */
 .footer a {
   text-decoration: none;
   color: #ffffff;
 }
-/* line 205, global.less */
+/* line 206, global.less */
 .footer section.library {
   background: #4ad0c5;
   padding: 10px 0 20px 0;
 }
-/* line 208, global.less */
+/* line 209, global.less */
 .footer section.library .title {
   float: left;
   width: 25%;
 }
-/* line 211, global.less */
+/* line 212, global.less */
 .footer section.library .title h3 {
   color: #ffffff;
 }
-/* line 215, global.less */
+/* line 216, global.less */
 .footer section.library .library-list {
   float: right;
   width: 75%;
   margin-top: 8px;
 }
-/* line 219, global.less */
+/* line 220, global.less */
 .footer section.library .library-list h4 {
   color: #ffffff;
 }
-/* line 222, global.less */
+/* line 223, global.less */
 .footer section.library .library-list .items-container {
   width: 100%;
 }
-/* line 224, global.less */
+/* line 225, global.less */
 .footer section.library .library-list .items-container .item {
   float: left;
   width: 33%;
@@ -779,17 +780,17 @@ header.header .mainmenu li a {
   font: 400 1.6rem Roboto;
   margin: 5px 0;
 }
-/* line 230, global.less */
+/* line 231, global.less */
 .footer section.library .library-list .items-container .item:hover {
   text-decoration: underline;
 }
-/* line 237, global.less */
+/* line 238, global.less */
 .footer section.bottom {
   background: #41b6ad;
   padding: 15px 0;
   overflow: hidden;
 }
-/* line 241, global.less */
+/* line 242, global.less */
 .footer section.bottom p.copyright {
   display: block;
   float: left;
@@ -797,21 +798,21 @@ header.header .mainmenu li a {
   font: 500 1.4rem Roboto;
   margin-left: 30px;
 }
-/* line 248, global.less */
+/* line 249, global.less */
 .footer section.bottom ul.footer-menu {
   float: right;
   margin-top: 13px;
 }
-/* line 251, global.less */
+/* line 252, global.less */
 .footer section.bottom ul.footer-menu li {
   float: left;
   margin-right: 30px;
 }
-/* line 254, global.less */
+/* line 255, global.less */
 .footer section.bottom ul.footer-menu li a {
   font: 400 14px Roboto;
 }
-/* line 256, global.less */
+/* line 257, global.less */
 .footer section.bottom ul.footer-menu li a:hover {
   text-decoration: underline;
 }
@@ -1058,84 +1059,93 @@ body.page-profile .resume-section .profile .left {
   width: 28%;
   margin-top: 10px;
 }
-/* line 17, page_profile.less */
+/* line 16, page_profile.less */
+body.page-profile .resume-section .profile .left .photo {
+  overflow: hidden;
+  border-radius: 7px;
+  -o-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+}
+/* line 22, page_profile.less */
 body.page-profile .resume-section .profile .left .photo img {
   display: block;
+  width: 100%;
 }
-/* line 21, page_profile.less */
+/* line 27, page_profile.less */
 body.page-profile .resume-section .profile .left .place {
   margin-top: 17px;
   text-align: center;
   color: #8aa4a2;
   font: 400 1.2rem Roboto;
 }
-/* line 26, page_profile.less */
+/* line 32, page_profile.less */
 body.page-profile .resume-section .profile .left .place .fa {
   color: #4ad0c5;
 }
-/* line 32, page_profile.less */
+/* line 38, page_profile.less */
 body.page-profile .resume-section .profile .left .expirience {
   text-align: center;
   margin-top: 13px;
 }
-/* line 35, page_profile.less */
+/* line 41, page_profile.less */
 body.page-profile .resume-section .profile .left .expirience .fa {
   display: block;
   width: 100%;
   font-size: 18px;
 }
-/* line 40, page_profile.less */
+/* line 46, page_profile.less */
 body.page-profile .resume-section .profile .left .expirience p {
   font: 400 1.4rem Roboto;
 }
-/* line 42, page_profile.less */
+/* line 48, page_profile.less */
 body.page-profile .resume-section .profile .left .expirience p .value {
   color: #35504e;
   font-weight: 700;
 }
-/* line 49, page_profile.less */
+/* line 55, page_profile.less */
 body.page-profile .resume-section .profile .right {
   float: right;
   width: 68%;
   overflow: hidden;
 }
-/* line 53, page_profile.less */
+/* line 59, page_profile.less */
 body.page-profile .resume-section .profile .right header {
   overflow: hidden;
 }
-/* line 55, page_profile.less */
+/* line 61, page_profile.less */
 body.page-profile .resume-section .profile .right header .name {
   color: #35504e;
   font: 700 1.8rem Roboto;
   float: left;
 }
-/* line 59, page_profile.less */
+/* line 65, page_profile.less */
 body.page-profile .resume-section .profile .right header .name .lastname {
   text-transform: uppercase;
 }
-/* line 62, page_profile.less */
+/* line 68, page_profile.less */
 body.page-profile .resume-section .profile .right header .name .firstname {
   text-transform: none;
 }
-/* line 65, page_profile.less */
+/* line 71, page_profile.less */
 body.page-profile .resume-section .profile .right header .name .job {
   color: #4ad0c5;
   font: 500 1.4rem Roboto;
   margin-top: 5px;
 }
-/* line 70, page_profile.less */
+/* line 76, page_profile.less */
 body.page-profile .resume-section .profile .right header .name p {
   margin: 0;
 }
-/* line 74, page_profile.less */
+/* line 80, page_profile.less */
 body.page-profile .resume-section .profile .right header .toolbar {
   float: right;
 }
-/* line 76, page_profile.less */
+/* line 82, page_profile.less */
 body.page-profile .resume-section .profile .right header .toolbar .rating-block {
   float: right;
 }
-/* line 79, page_profile.less */
+/* line 85, page_profile.less */
 body.page-profile .resume-section .profile .right header .toolbar a.envelope {
   float: right;
   color: #4ad0c5;
@@ -1143,56 +1153,56 @@ body.page-profile .resume-section .profile .right header .toolbar a.envelope {
   margin-top: 6px;
   margin-right: 15px;
 }
-/* line 85, page_profile.less */
+/* line 91, page_profile.less */
 body.page-profile .resume-section .profile .right header .toolbar a.envelope .fa {
   font-size: 2.0rem;
 }
-/* line 89, page_profile.less */
+/* line 95, page_profile.less */
 body.page-profile .resume-section .profile .right header .toolbar .profile-menu {
   float: right;
   margin-top: 9px;
   margin-right: 15px;
 }
-/* line 101, page_profile.less */
+/* line 107, page_profile.less */
 body.page-profile .resume-section .profile .right .contacts h5 {
   padding-bottom: 0;
 }
-/* line 104, page_profile.less */
+/* line 110, page_profile.less */
 body.page-profile .resume-section .profile .right .contacts p {
   margin: 2px 0;
   font-weight: 500;
 }
-/* line 107, page_profile.less */
+/* line 113, page_profile.less */
 body.page-profile .resume-section .profile .right .contacts p span.value {
   color: #4ad0c5;
 }
-/* line 113, page_profile.less */
+/* line 119, page_profile.less */
 body.page-profile .resume-section .profile .right .introtext a.readmore {
   color: #4ad0c5;
   font: italic 1.4rem Roboto;
 }
-/* line 120, page_profile.less */
+/* line 126, page_profile.less */
 body.page-profile .resume-section .price {
   float: right;
   width: 41%;
   margin-top: 7px;
 }
-/* line 127, page_profile.less */
+/* line 133, page_profile.less */
 body.page-profile .resume-section .price .content-block table {
   font: 500 1.4rem Roboto;
   width: 100%;
 }
-/* line 134, page_profile.less */
+/* line 140, page_profile.less */
 body.page-profile .resume-section .price .content-block table tbody tr td.value {
   text-align: right;
 }
-/* line 142, page_profile.less */
+/* line 148, page_profile.less */
 body.page-profile .resume-section .sign-up {
   float: right;
   width: 41%;
   margin-top: 10px;
 }
-/* line 146, page_profile.less */
+/* line 152, page_profile.less */
 body.page-profile .resume-section .sign-up .btn {
   padding: 17px 0;
   text-align: center;
@@ -1201,35 +1211,35 @@ body.page-profile .resume-section .sign-up .btn {
   font: 700 1.8rem Roboto;
   text-shadow: 1px 1px 0 #da8820;
 }
-/* line 157, page_profile.less */
+/* line 163, page_profile.less */
 body.page-profile .partners-section .content-block {
   overflow: hidden;
 }
-/* line 159, page_profile.less */
+/* line 165, page_profile.less */
 body.page-profile .partners-section .content-block .partner {
   float: left;
   width: 31.7%;
   margin-left: 2%;
   min-height: 120px;
 }
-/* line 164, page_profile.less */
+/* line 170, page_profile.less */
 body.page-profile .partners-section .content-block .partner:first-child {
   margin-left: 0;
 }
-/* line 173, page_profile.less */
-body.page-profile .information-section .reviews {
+/* line 178, page_profile.less */
+body.page-profile .reviews {
   float: left;
   width: 57%;
 }
-/* line 177, page_profile.less */
-body.page-profile .information-section .reviews .content-block .review {
+/* line 182, page_profile.less */
+body.page-profile .reviews .content-block .review {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   padding: 10px 20px 30px 20px;
   margin-bottom: 60px;
 }
-/* line 182, page_profile.less */
-body.page-profile .information-section .reviews .content-block .review .quote-arrow {
+/* line 187, page_profile.less */
+body.page-profile .reviews .content-block .review .quote-arrow {
   position: absolute;
   width: 43px;
   height: 25px;
@@ -1237,13 +1247,13 @@ body.page-profile .information-section .reviews .content-block .review .quote-ar
   bottom: -25px;
   left: 60px;
 }
-/* line 195, page_profile.less */
-body.page-profile .information-section .reviews .content-block .review .author {
+/* line 200, page_profile.less */
+body.page-profile .reviews .content-block .review .author {
   overflow: hidden;
   margin-top: 25px;
 }
-/* line 198, page_profile.less */
-body.page-profile .information-section .reviews .content-block .review .author .photo {
+/* line 203, page_profile.less */
+body.page-profile .reviews .content-block .review .author .photo {
   border-radius: 50px;
   -moz-border-radius: 50px;
   -o-border-radius: 50px;
@@ -1253,47 +1263,47 @@ body.page-profile .information-section .reviews .content-block .review .author .
   height: 50px;
   float: left;
 }
-/* line 207, page_profile.less */
-body.page-profile .information-section .reviews .content-block .review .author .photo img {
+/* line 212, page_profile.less */
+body.page-profile .reviews .content-block .review .author .photo img {
   display: block;
   min-width: 100%;
   min-height: 100%;
 }
-/* line 213, page_profile.less */
-body.page-profile .information-section .reviews .content-block .review .author .text {
+/* line 218, page_profile.less */
+body.page-profile .reviews .content-block .review .author .text {
   overflow: hidden;
 }
-/* line 215, page_profile.less */
-body.page-profile .information-section .reviews .content-block .review .author .text p {
+/* line 220, page_profile.less */
+body.page-profile .reviews .content-block .review .author .text p {
   margin-left: 10px;
   font-size: 1.2rem;
 }
-/* line 218, page_profile.less */
-body.page-profile .information-section .reviews .content-block .review .author .text p .author-name,
-body.page-profile .information-section .reviews .content-block .review .author .text p .user-name {
+/* line 223, page_profile.less */
+body.page-profile .reviews .content-block .review .author .text p .author-name,
+body.page-profile .reviews .content-block .review .author .text p .user-name {
   color: #4ad0c5;
   font: 700 1.2rem Roboto;
 }
-/* line 225, page_profile.less */
-body.page-profile .information-section .reviews .content-block .review .toolbar {
+/* line 230, page_profile.less */
+body.page-profile .reviews .content-block .review .toolbar {
   position: absolute;
   right: 0;
   bottom: 0;
 }
-/* line 229, page_profile.less */
-body.page-profile .information-section .reviews .content-block .review .toolbar .review-menu {
+/* line 234, page_profile.less */
+body.page-profile .reviews .content-block .review .toolbar .review-menu {
   float: left;
   margin-right: 20px;
   margin-top: 11px;
 }
-/* line 234, page_profile.less */
-body.page-profile .information-section .reviews .content-block .review .toolbar .review-date {
+/* line 239, page_profile.less */
+body.page-profile .reviews .content-block .review .toolbar .review-date {
   float: left;
   margin-right: 20px;
   font-size: 1.2rem;
 }
-/* line 239, page_profile.less */
-body.page-profile .information-section .reviews .content-block .review .toolbar .readmore {
+/* line 244, page_profile.less */
+body.page-profile .reviews .content-block .review .toolbar .readmore {
   border-top-left-radius: 5px;
   -o-border-top-left-radius: 5px;
   -moz-border-top-left-radius: 5px;
@@ -1307,74 +1317,74 @@ body.page-profile .information-section .reviews .content-block .review .toolbar 
   border-top: dashed 1px #b9d4cc;
   padding: 8px 20px;
 }
-/* line 252, page_profile.less */
-body.page-profile .information-section .reviews .content-block .review .toolbar .readmore:hover {
+/* line 257, page_profile.less */
+body.page-profile .reviews .content-block .review .toolbar .readmore:hover {
   text-decoration: underline;
 }
-/* line 258, page_profile.less */
-body.page-profile .information-section .reviews .content-block #load-more-reviews {
+/* line 263, page_profile.less */
+body.page-profile .reviews .content-block #load-more-reviews {
   width: 200px;
   text-align: center;
   margin: auto;
   display: block;
 }
-/* line 269, page_profile.less */
+/* line 275, page_profile.less */
 body.page-profile .information-section .content-block form {
   overflow: hidden;
 }
-/* line 272, page_profile.less */
+/* line 278, page_profile.less */
 body.page-profile .information-section .content-block form .field textarea {
   height: 98px;
 }
-/* line 275, page_profile.less */
+/* line 281, page_profile.less */
 body.page-profile .information-section .content-block form .field label {
   color: #35504e;
   font: 500 1.4rem Roboto;
   margin-bottom: 0;
 }
-/* line 280, page_profile.less */
+/* line 286, page_profile.less */
 body.page-profile .information-section .content-block form .field .raiting-block.vote {
   float: left;
   margin-top: 6px;
 }
-/* line 285, page_profile.less */
+/* line 291, page_profile.less */
 body.page-profile .information-section .content-block form .btn {
   display: block;
   float: right;
 }
-/* line 291, page_profile.less */
+/* line 297, page_profile.less */
 body.page-profile .information-section .information {
   float: right;
   width: 41%;
 }
-/* line 301, page_profile.less */
+/* line 307, page_profile.less */
 body.page-profile .information-section .information .content-block.education-list .item,
 body.page-profile .information-section .information .content-block.proffessions-list .item {
   margin-bottom: 20px;
 }
-/* line 303, page_profile.less */
+/* line 309, page_profile.less */
 body.page-profile .information-section .information .content-block.education-list .item .scan,
 body.page-profile .information-section .information .content-block.proffessions-list .item .scan {
   float: left;
   width: 50px;
   margin-right: 15px;
 }
-/* line 307, page_profile.less */
+/* line 313, page_profile.less */
 body.page-profile .information-section .information .content-block.education-list .item .scan img,
 body.page-profile .information-section .information .content-block.proffessions-list .item .scan img {
   display: block;
   width: 100%;
 }
-/* line 312, page_profile.less */
+/* line 318, page_profile.less */
 body.page-profile .information-section .information .content-block.education-list .item p,
 body.page-profile .information-section .information .content-block.proffessions-list .item p {
   overflow: hidden;
 }
-/* line 318, page_profile.less */
+/* line 324, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .item {
   margin-bottom: 30px;
 }
-/* line 322, page_profile.less */
+/* line 328, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .author .photo {
   float: left;
   overflow: hidden;
@@ -1386,48 +1396,48 @@ body.page-profile .information-section .information .content-block.answers-list 
   height: 50px;
   margin-right: 15px;
 }
-/* line 332, page_profile.less */
+/* line 338, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .author .photo img {
   display: block;
 }
-/* line 336, page_profile.less */
+/* line 342, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .author .about {
   overflow: hidden;
 }
-/* line 338, page_profile.less */
+/* line 344, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .author .about p {
   margin: 0;
 }
-/* line 340, page_profile.less */
+/* line 346, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .author .about p.name {
   font-size: 1.2rem;
   color: #4ad0c5;
   font-weight: 700;
 }
-/* line 345, page_profile.less */
+/* line 351, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .author .about p.job {
   font-size: 1.2rem;
   font-weight: 700;
 }
-/* line 349, page_profile.less */
+/* line 355, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .author .about p.category {
   font-size: 1.2rem;
   font-weight: 700;
   margin-top: 30px;
 }
-/* line 353, page_profile.less */
+/* line 359, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .author .about p.category .value {
   color: #35504e;
 }
-/* line 360, page_profile.less */
+/* line 366, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .item > h5 {
   padding-bottom: 0;
 }
-/* line 364, page_profile.less */
+/* line 370, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .content p {
   margin: 5px 0 0 0;
 }
-/* line 367, page_profile.less */
+/* line 373, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .content .fader {
   position: absolute;
   width: 100%;
@@ -1440,45 +1450,45 @@ body.page-profile .information-section .information .content-block.answers-list 
   background: linear-gradient(0deg, #fefefe 0%, #fefefe 16%, rgba(255, 255, 255, 0) 100%);
   z-index: 1;
 }
-/* line 380, page_profile.less */
+/* line 386, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list a.readmore {
   color: #4ad0c5;
   font: 400 1.2rem Roboto;
   text-decoration: none;
 }
-/* line 384, page_profile.less */
+/* line 390, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list a.readmore:hover {
   text-decoration: underline;
 }
-/* line 388, page_profile.less */
+/* line 394, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list a#load-all-answers {
   display: block;
   width: 80%;
   margin: auto;
 }
-/* line 396, page_profile.less */
+/* line 402, page_profile.less */
 body.page-profile .information-section .ask-question {
   margin-top: 20px;
   overflow: hidden;
 }
-/* line 399, page_profile.less */
+/* line 405, page_profile.less */
 body.page-profile .information-section .ask-question .ask-text {
   float: left;
 }
-/* line 401, page_profile.less */
+/* line 407, page_profile.less */
 body.page-profile .information-section .ask-question .ask-text h3 {
   padding: 0;
 }
-/* line 405, page_profile.less */
+/* line 411, page_profile.less */
 body.page-profile .information-section .ask-question a {
   display: block;
   float: right;
 }
-/* line 413, page_profile.less */
+/* line 419, page_profile.less */
 body.page-profile .same-users-section .content-block.same-users-list {
   overflow: hidden;
 }
-/* line 415, page_profile.less */
+/* line 421, page_profile.less */
 body.page-profile .same-users-section .content-block.same-users-list .same-user {
   overflow: hidden;
   float: left;
@@ -1486,37 +1496,37 @@ body.page-profile .same-users-section .content-block.same-users-list .same-user 
   margin-left: 3%;
   padding-bottom: 20px;
 }
-/* line 420, page_profile.less */
+/* line 426, page_profile.less */
 body.page-profile .same-users-section .content-block.same-users-list .same-user:first-child {
   margin-left: 0;
 }
-/* line 424, page_profile.less */
+/* line 430, page_profile.less */
 body.page-profile .same-users-section .content-block.same-users-list .same-user .photo {
   width: 100%;
   overflow: hidden;
 }
-/* line 427, page_profile.less */
+/* line 433, page_profile.less */
 body.page-profile .same-users-section .content-block.same-users-list .same-user .photo img {
   width: 100%;
 }
-/* line 431, page_profile.less */
+/* line 437, page_profile.less */
 body.page-profile .same-users-section .content-block.same-users-list .same-user p {
   text-align: center;
 }
-/* line 434, page_profile.less */
+/* line 440, page_profile.less */
 body.page-profile .same-users-section .content-block.same-users-list .same-user p.lastname {
   margin: 0;
   margin-top: 5px;
   color: #4ad0c5;
   font: 500 1.4rem Roboto;
 }
-/* line 440, page_profile.less */
+/* line 446, page_profile.less */
 body.page-profile .same-users-section .content-block.same-users-list .same-user p.firstname {
   margin: 0;
   color: #4ad0c5;
   font: 700 1.2rem Roboto;
 }
-/* line 446, page_profile.less */
+/* line 452, page_profile.less */
 body.page-profile .same-users-section .content-block.same-users-list .same-user .rating-block {
   width: 60px;
   margin: 10px auto 0 auto;
@@ -2881,5 +2891,424 @@ body.page-profile-schedule > .wrapper .content .today-events .events a.btn {
   background: #fff;
   cursor: s-resize;
   z-index: 1;
+}
+/* line 2, page_notifications.less */
+body.page-notifications section.content {
+  float: left;
+  width: 62%;
+}
+/* line 5, page_notifications.less */
+body.page-notifications section.content .items {
+  overflow: hidden;
+}
+/* line 7, page_notifications.less */
+body.page-notifications section.content .items .item {
+  overflow: hidden;
+  padding: 0;
+  margin-bottom: 20px;
+}
+/* line 11, page_notifications.less */
+body.page-notifications section.content .items .item .indicator {
+  float: left;
+  width: 80px;
+  height: 95px;
+  background: url('../images/notify-indicator-sprite.png') repeat-y;
+  background-position: -80px 0;
+}
+/* line 18, page_notifications.less */
+body.page-notifications section.content .items .item.important .indicator {
+  background-position: 0 0;
+}
+/* line 21, page_notifications.less */
+body.page-notifications section.content .items .item .submit {
+  float: right;
+  margin-top: 33px;
+  margin-right: 34px;
+}
+/* line 26, page_notifications.less */
+body.page-notifications section.content .items .item p {
+  display: block;
+  padding: 10px 20px;
+  overflow: hidden;
+  font-family: Roboto;
+  color: #8aa4a2;
+  font-size: 1.4rem;
+  margin-top: 20px;
+}
+/* line 34, page_notifications.less */
+body.page-notifications section.content .items .item p a {
+  color: #4ad0c5;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 18px;
+}
+/* line 45, page_notifications.less */
+body.page-notifications aside.additional-menu {
+  float: left;
+  margin-left: 2%;
+  width: 36%;
+}
+/* line 50, page_notifications.less */
+body.page-notifications aside.additional-menu ul li {
+  margin: 3px 0;
+}
+/* line 52, page_notifications.less */
+body.page-notifications aside.additional-menu ul li a {
+  color: #8aa4a2;
+  font: 500 1.4rem Roboto;
+  text-decoration: none;
+}
+/* line 56, page_notifications.less */
+body.page-notifications aside.additional-menu ul li a:hover {
+  text-decoration: underline;
+}
+/* line 60, page_notifications.less */
+body.page-notifications aside.additional-menu ul li.active a {
+  font-weight: bold;
+  color: #35504e;
+}
+/* line 1, page_participiant_profile.less */
+.wrapper {
+  margin: auto;
+  width: 960px;
+}
+/* line 6, page_participiant_profile.less */
+body.page-profile.participiant .resume-section {
+  overflow: hidden;
+}
+/* line 8, page_participiant_profile.less */
+body.page-profile.participiant .resume-section section.left {
+  float: left;
+  width: 57%;
+}
+/* line 11, page_participiant_profile.less */
+body.page-profile.participiant .resume-section section.left .profile {
+  width: 100%;
+}
+/* line 17, page_participiant_profile.less */
+body.page-profile.participiant .resume-section section.left .profile .right header .job {
+  color: #4ad0c5;
+  font: 500 1.4rem Roboto;
+  margin-top: 5px;
+}
+/* line 21, page_participiant_profile.less */
+body.page-profile.participiant .resume-section section.left .profile .right header .job span {
+  color: #8aa4a2;
+  margin-left: 10px;
+}
+/* line 33, page_participiant_profile.less */
+body.page-profile.participiant .resume-section section.left .content-block form {
+  overflow: hidden;
+}
+/* line 36, page_participiant_profile.less */
+body.page-profile.participiant .resume-section section.left .content-block form .field textarea {
+  height: 98px;
+}
+/* line 42, page_participiant_profile.less */
+body.page-profile.participiant .resume-section section.left .reviews {
+  width: 100%;
+}
+/* line 46, page_participiant_profile.less */
+body.page-profile.participiant .resume-section aside.right {
+  float: right;
+  width: 41%;
+  margin-top: 7px;
+}
+/* line 51, page_participiant_profile.less */
+body.page-profile.participiant .resume-section aside.right section.next-consult .content-block {
+  padding: 0;
+}
+/* line 53, page_participiant_profile.less */
+body.page-profile.participiant .resume-section aside.right section.next-consult .content-block .info {
+  padding: 20px;
+}
+/* line 55, page_participiant_profile.less */
+body.page-profile.participiant .resume-section aside.right section.next-consult .content-block .info .head {
+  position: relative;
+}
+/* line 57, page_participiant_profile.less */
+body.page-profile.participiant .resume-section aside.right section.next-consult .content-block .info .head i.fa.fa-calendar {
+  color: #eb5245;
+  font-size: 1.8rem;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+/* line 67, page_participiant_profile.less */
+body.page-profile.participiant .resume-section aside.right section.next-consult .content-block .info .content p {
+  margin: 5px 0;
+  color: #8aa4a2;
+  font-size: 1.4rem;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 500;
+}
+/* line 72, page_participiant_profile.less */
+body.page-profile.participiant .resume-section aside.right section.next-consult .content-block .info .content p span.value {
+  color: #35504e;
+}
+/* line 75, page_participiant_profile.less */
+body.page-profile.participiant .resume-section aside.right section.next-consult .content-block .info .content p span.not-paid {
+  margin-left: 15px;
+  color: #eb5245;
+}
+/* line 80, page_participiant_profile.less */
+body.page-profile.participiant .resume-section aside.right section.next-consult .content-block .info .content a#pay {
+  margin-top: 10px;
+}
+/* line 85, page_participiant_profile.less */
+body.page-profile.participiant .resume-section aside.right section.next-consult .content-block .questions {
+  overflow: hidden;
+}
+/* line 87, page_participiant_profile.less */
+body.page-profile.participiant .resume-section aside.right section.next-consult .content-block .questions h5 {
+  margin-left: 20px;
+}
+/* line 90, page_participiant_profile.less */
+body.page-profile.participiant .resume-section aside.right section.next-consult .content-block .questions .items {
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  background: rgba(250, 201, 68, 0.1);
+  padding: 20px;
+  padding-bottom: 1px;
+  margin-bottom: 10px;
+}
+/* line 98, page_participiant_profile.less */
+body.page-profile.participiant .resume-section aside.right section.next-consult .content-block .questions .items .item {
+  position: relative;
+  margin-bottom: 20px;
+}
+/* line 101, page_participiant_profile.less */
+body.page-profile.participiant .resume-section aside.right section.next-consult .content-block .questions .items .item .question-menu {
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  right: 0;
+  cursor: pointer;
+  top: 5px;
+}
+/* line 109, page_participiant_profile.less */
+body.page-profile.participiant .resume-section aside.right section.next-consult .content-block .questions .items .item .photo-container {
+  float: left;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 50px;
+  -o-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border: solid 1px #dbefe5;
+  margin-right: 10px;
+}
+/* line 121, page_participiant_profile.less */
+body.page-profile.participiant .resume-section aside.right section.next-consult .content-block .questions .items .item .content {
+  overflow: hidden;
+}
+/* line 123, page_participiant_profile.less */
+body.page-profile.participiant .resume-section aside.right section.next-consult .content-block .questions .items .item .content p {
+  margin: 3px 0;
+  font-size: 1.2rem;
+}
+/* line 126, page_participiant_profile.less */
+body.page-profile.participiant .resume-section aside.right section.next-consult .content-block .questions .items .item .content p.author-name {
+  margin-top: 5px;
+  font-weight: 700;
+  color: #4ad0c5;
+}
+/* line 131, page_participiant_profile.less */
+body.page-profile.participiant .resume-section aside.right section.next-consult .content-block .questions .items .item .content p.job {
+  font-weight: bold;
+}
+/* line 135, page_participiant_profile.less */
+body.page-profile.participiant .resume-section aside.right section.next-consult .content-block .questions .items .item .content p.question {
+  margin-top: 15px;
+  font-size: 1.4rem;
+}
+/* line 139, page_participiant_profile.less */
+body.page-profile.participiant .resume-section aside.right section.next-consult .content-block .questions .items .item .content p.date {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+/* line 148, page_participiant_profile.less */
+body.page-profile.participiant .resume-section aside.right section.next-consult .content-block .questions a#show-history {
+  position: relative;
+  color: #4ad0c5;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-left: 80px;
+}
+/* line 155, page_participiant_profile.less */
+body.page-profile.participiant .resume-section aside.right section.next-consult .content-block .questions form {
+  overflow: hidden;
+  padding: 20px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+/* line 160, page_participiant_profile.less */
+body.page-profile.participiant .resume-section aside.right section.next-consult .content-block .questions form textarea {
+  height: 98px;
+}
+/* line 163, page_participiant_profile.less */
+body.page-profile.participiant .resume-section aside.right section.next-consult .content-block .questions form input.btn {
+  float: right;
+}
+/* line 170, page_participiant_profile.less */
+body.page-profile.participiant .resume-section aside.right section.my-notes {
+  overflow: hidden;
+}
+/* line 173, page_participiant_profile.less */
+body.page-profile.participiant .resume-section aside.right section.my-notes .notes .note {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+/* line 176, page_participiant_profile.less */
+body.page-profile.participiant .resume-section aside.right section.my-notes .notes .note span.date {
+  color: #b9d4cc;
+  font-size: 1.2rem;
+  font-weight: 400;
+  display: block;
+  float: left;
+}
+/* line 183, page_participiant_profile.less */
+body.page-profile.participiant .resume-section aside.right section.my-notes .notes .note .note-menu {
+  float: left;
+  margin-left: 20px;
+  margin-top: 2px;
+}
+/* line 187, page_participiant_profile.less */
+body.page-profile.participiant .resume-section aside.right section.my-notes .notes .note .note-menu .fa-circle {
+  color: #b9d4cc;
+  font-size: 0.5rem;
+}
+/* line 194, page_participiant_profile.less */
+body.page-profile.participiant .resume-section aside.right section.my-notes form {
+  overflow: hidden;
+}
+/* line 196, page_participiant_profile.less */
+body.page-profile.participiant .resume-section aside.right section.my-notes form textarea {
+  height: 98px;
+}
+/* line 199, page_participiant_profile.less */
+body.page-profile.participiant .resume-section aside.right section.my-notes form input.btn {
+  float: right;
+}
+/* line 2, page_consultant_list.less */
+body.page-consultant-list .wrapper {
+  overflow: hidden;
+}
+/* line 4, page_consultant_list.less */
+body.page-consultant-list .wrapper .search-consultant.content-block {
+  margin-top: 20px;
+  background: #4ad0c5;
+}
+/* line 7, page_consultant_list.less */
+body.page-consultant-list .wrapper .search-consultant.content-block h3 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  font-size: 1.8rem;
+}
+/* line 14, page_consultant_list.less */
+body.page-consultant-list .wrapper .search-consultant.content-block form {
+  width: 80%;
+  margin: 30px auto 10px auto;
+}
+/* line 17, page_consultant_list.less */
+body.page-consultant-list .wrapper .search-consultant.content-block form .field {
+  width: 40%;
+  float: left;
+  margin-right: 2%;
+}
+/* line 21, page_consultant_list.less */
+body.page-consultant-list .wrapper .search-consultant.content-block form .field .select2-container {
+  width: 100% !important;
+}
+/* line 23, page_consultant_list.less */
+body.page-consultant-list .wrapper .search-consultant.content-block form .field .select2-container .select2-selection__arrow {
+  background: url('../images/interface/dropdown-arrow.png') center center no-repeat #41b6ad !important;
+}
+/* line 26, page_consultant_list.less */
+body.page-consultant-list .wrapper .search-consultant.content-block form .field .select2-container .select2-selection {
+  border-color: #41b6ad;
+}
+/* line 31, page_consultant_list.less */
+body.page-consultant-list .wrapper .search-consultant.content-block form input[type="submit"] {
+  width: 16%;
+  padding: 10px 17px 8px 17px;
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -o-border-radius: 6px;
+  -webkit-border-radius: 6px;
+}
+/* line 41, page_consultant_list.less */
+body.page-consultant-list .wrapper .search-results {
+  margin-top: 20px;
+  overflow: hidden;
+}
+/* line 44, page_consultant_list.less */
+body.page-consultant-list .wrapper .search-results .result {
+  float: left;
+  width: 23%;
+  margin-left: 2.65%;
+  margin-bottom: 20px;
+}
+/* line 49, page_consultant_list.less */
+body.page-consultant-list .wrapper .search-results .result.first-of-row {
+  margin-left: 0;
+}
+/* line 52, page_consultant_list.less */
+body.page-consultant-list .wrapper .search-results .result .photo-container {
+  width: 160px;
+  height: 160px;
+  overflow: hidden;
+  border-radius: 500px;
+  -o-border-radius: 500px;
+  -moz-border-radius: 500px;
+  -webkit-border-radius: 500px;
+}
+/* line 60, page_consultant_list.less */
+body.page-consultant-list .wrapper .search-results .result .photo-container a {
+  display: block;
+  text-decoration: none;
+}
+/* line 63, page_consultant_list.less */
+body.page-consultant-list .wrapper .search-results .result .photo-container a img {
+  display: block;
+  width: 100%;
+}
+/* line 69, page_consultant_list.less */
+body.page-consultant-list .wrapper .search-results .result a.username {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  color: #4ad0c5;
+  font-size: 1.4rem;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+}
+/* line 76, page_consultant_list.less */
+body.page-consultant-list .wrapper .search-results .result a.username span.lastname {
+  font-weight: 700;
+}
+/* line 79, page_consultant_list.less */
+body.page-consultant-list .wrapper .search-results .result a.username:hover {
+  color: #41b6ad;
+}
+/* line 83, page_consultant_list.less */
+body.page-consultant-list .wrapper .search-results .result .rating-block {
+  margin-top: 10px;
+  width: 65px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 89, page_consultant_list.less */
+body.page-consultant-list .wrapper .search-results .result a#sign-up-to-consult {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 9px 7px 7px 7px;
+  margin-top: 20px;
 }
 /*# sourceMappingURL=styles.css.map */

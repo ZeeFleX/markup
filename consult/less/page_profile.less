@@ -14,8 +14,14 @@ body.page-profile{
                 width: 28%;
                 margin-top: 10px;
                 .photo {
+                    overflow: hidden;
+                    border-radius:7px;
+                    -o-border-radius:7px;
+                    -moz-border-radius:7px;
+                    -webkit-border-radius:7px;
                     img {
                         display: block;
+                        width: 100%;
                     }
                 }
                 .place {
@@ -169,100 +175,100 @@ body.page-profile{
             }
         }
     }
-    .information-section {
-        .reviews {
-            float: left;
-            width: 57%;
-            .content-block {
-                .review {
-                    box-sizing:border-box;
-                    -moz-box-sizing:border-box;
-                    padding: 10px 20px 30px 20px;
-                    margin-bottom: 60px;
-                    .quote-arrow {
-                        position: absolute;
-                        width: 43px;
-                        height: 25px;
-                        background: url('../images/quote-arrow.png');
-                        bottom:-25px;
-                        left:60px;
-                    }
-                    .content {
-                    }
-                    .raiting-block {
-                        
-                    }
-                    .author {
+    .reviews {
+        float: left;
+        width: 57%;
+        .content-block {
+            .review {
+                box-sizing:border-box;
+                -moz-box-sizing:border-box;
+                padding: 10px 20px 30px 20px;
+                margin-bottom: 60px;
+                .quote-arrow {
+                    position: absolute;
+                    width: 43px;
+                    height: 25px;
+                    background: url('../images/quote-arrow.png');
+                    bottom:-25px;
+                    left:60px;
+                }
+                .content {
+                }
+                .raiting-block {
+                    
+                }
+                .author {
+                    overflow: hidden;
+                    margin-top: 25px;
+                    .photo {
+                        border-radius:50px;
+                        -moz-border-radius:50px;
+                        -o-border-radius:50px;
+                        -webkit-border-radius:50px;
                         overflow: hidden;
-                        margin-top: 25px;
-                        .photo {
-                            border-radius:50px;
-                            -moz-border-radius:50px;
-                            -o-border-radius:50px;
-                            -webkit-border-radius:50px;
-                            overflow: hidden;
-                            width: 50px;
-                            height: 50px;
-                            float: left;
-                            img {
-                                display: block;
-                                min-width:100%;
-                                min-height:100%;
-                            }
-                        }
-                        .text {
-                            overflow: hidden;
-                            p {
-                                margin-left: 10px;
-                                font-size: 1.2rem;
-                                .author-name, .user-name {
-                                    color: @sky;
-                                    font: 700 1.2rem Roboto;
-                                }
-                            }
+                        width: 50px;
+                        height: 50px;
+                        float: left;
+                        img {
+                            display: block;
+                            min-width:100%;
+                            min-height:100%;
                         }
                     }
-                    .toolbar {
-                        position: absolute;
-                        right:0;
-                        bottom:0;
-                        .review-menu {
-                            float: left;
-                            margin-right: 20px;
-                            margin-top: 11px;
-                        }
-                        .review-date {
-                            float: left;
-                            margin-right: 20px;
+                    .text {
+                        overflow: hidden;
+                        p {
+                            margin-left: 10px;
                             font-size: 1.2rem;
-                        }
-                        .readmore {
-                            border-top-left-radius: 5px;
-                            -o-border-top-left-radius: 5px;
-                            -moz-border-top-left-radius: 5px;
-                            -webkit-border-top-left-radius: 5px;
-                            float: left;
-                            text-decoration: none;
-                            color:@sky;
-                            display: block;
-                            font-size: 1.2rem;
-                            border-left:dashed 1px #b9d4cc;
-                            border-top:dashed 1px #b9d4cc;
-                            padding:8px 20px;
-                            &:hover{
-                                text-decoration: underline;
+                            .author-name, .user-name {
+                                color: @sky;
+                                font: 700 1.2rem Roboto;
                             }
                         }
                     }
                 }
-                #load-more-reviews {
-                    width:200px;
-                    text-align: center;
-                    margin:auto;
-                    display: block;
+                .toolbar {
+                    position: absolute;
+                    right:0;
+                    bottom:0;
+                    .review-menu {
+                        float: left;
+                        margin-right: 20px;
+                        margin-top: 11px;
+                    }
+                    .review-date {
+                        float: left;
+                        margin-right: 20px;
+                        font-size: 1.2rem;
+                    }
+                    .readmore {
+                        border-top-left-radius: 5px;
+                        -o-border-top-left-radius: 5px;
+                        -moz-border-top-left-radius: 5px;
+                        -webkit-border-top-left-radius: 5px;
+                        float: left;
+                        text-decoration: none;
+                        color:@sky;
+                        display: block;
+                        font-size: 1.2rem;
+                        border-left:dashed 1px #b9d4cc;
+                        border-top:dashed 1px #b9d4cc;
+                        padding:8px 20px;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
                 }
             }
+            #load-more-reviews {
+                width:200px;
+                text-align: center;
+                margin:auto;
+                display: block;
+            }
         }
+    }
+    .information-section {
         .content-block {
             &.write-review{
             }
