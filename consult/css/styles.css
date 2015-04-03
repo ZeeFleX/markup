@@ -3507,4 +3507,147 @@ body.page-question-list .wrapper .dialogue .messages .message .content .date {
   color: #8aa4a2;
   margin: 0;
 }
+/* line 3, page_reviews.less */
+body.page-reviews .wrapper section.reviews {
+  float: left;
+  width: 58%;
+}
+/* line 6, page_reviews.less */
+body.page-reviews .wrapper section.reviews .review {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 10px 20px 30px 20px;
+  margin-bottom: 60px;
+}
+/* line 11, page_reviews.less */
+body.page-reviews .wrapper section.reviews .review .quote-arrow {
+  position: absolute;
+  width: 43px;
+  height: 25px;
+  background: url('../images/quote-arrow.png');
+  bottom: -25px;
+  left: 60px;
+}
+/* line 24, page_reviews.less */
+body.page-reviews .wrapper section.reviews .review .author {
+  overflow: hidden;
+  margin-top: 25px;
+}
+/* line 27, page_reviews.less */
+body.page-reviews .wrapper section.reviews .review .author .photo {
+  border-radius: 50px;
+  -moz-border-radius: 50px;
+  -o-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+  float: left;
+}
+/* line 36, page_reviews.less */
+body.page-reviews .wrapper section.reviews .review .author .photo img {
+  display: block;
+  min-width: 100%;
+  min-height: 100%;
+}
+/* line 42, page_reviews.less */
+body.page-reviews .wrapper section.reviews .review .author .text {
+  overflow: hidden;
+}
+/* line 44, page_reviews.less */
+body.page-reviews .wrapper section.reviews .review .author .text p {
+  margin-left: 10px;
+  font-size: 1.2rem;
+}
+/* line 47, page_reviews.less */
+body.page-reviews .wrapper section.reviews .review .author .text p .author-name,
+body.page-reviews .wrapper section.reviews .review .author .text p .user-name {
+  color: #4ad0c5;
+  font: 700 1.2rem Roboto;
+}
+/* line 54, page_reviews.less */
+body.page-reviews .wrapper section.reviews .review .toolbar {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+/* line 58, page_reviews.less */
+body.page-reviews .wrapper section.reviews .review .toolbar .review-menu {
+  float: left;
+  margin-right: 20px;
+  margin-top: 11px;
+}
+/* line 63, page_reviews.less */
+body.page-reviews .wrapper section.reviews .review .toolbar .review-date {
+  float: left;
+  margin-right: 20px;
+  font-size: 1.2rem;
+}
+/* line 68, page_reviews.less */
+body.page-reviews .wrapper section.reviews .review .toolbar .readmore {
+  border-top-left-radius: 5px;
+  -o-border-top-left-radius: 5px;
+  -moz-border-top-left-radius: 5px;
+  -webkit-border-top-left-radius: 5px;
+  float: left;
+  text-decoration: none;
+  color: #4ad0c5;
+  display: block;
+  font-size: 1.2rem;
+  border-left: dashed 1px #b9d4cc;
+  border-top: dashed 1px #b9d4cc;
+  padding: 8px 20px;
+}
+/* line 81, page_reviews.less */
+body.page-reviews .wrapper section.reviews .review .toolbar .readmore:hover {
+  text-decoration: underline;
+}
+/* line 87, page_reviews.less */
+body.page-reviews .wrapper section.reviews #load-more-reviews {
+  width: 200px;
+  text-align: center;
+  margin: auto;
+  display: block;
+}
+/* line 94, page_reviews.less */
+body.page-reviews .wrapper aside {
+  float: right;
+  width: 40%;
+}
+/* line 98, page_reviews.less */
+body.page-reviews .wrapper aside .search-reviews .select2-container {
+  width: 100% !important;
+}
+/* line 103, page_reviews.less */
+body.page-reviews .wrapper aside .write-review form {
+  overflow: hidden;
+}
+/* line 106, page_reviews.less */
+body.page-reviews .wrapper aside .write-review form .field .select2-container {
+  width: 100% !important;
+  margin-top: 10px;
+}
+/* line 110, page_reviews.less */
+body.page-reviews .wrapper aside .write-review form .field textarea {
+  height: 98px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+/* line 115, page_reviews.less */
+body.page-reviews .wrapper aside .write-review form .field label {
+  color: #35504e;
+  font: 500 1.4rem Roboto;
+  margin-bottom: 0;
+}
+/* line 120, page_reviews.less */
+body.page-reviews .wrapper aside .write-review form .field .raiting-block.vote {
+  float: left;
+  margin-top: 6px;
+}
+/* line 125, page_reviews.less */
+body.page-reviews .wrapper aside .write-review form .btn {
+  display: block;
+  float: left;
+  margin-top: 15px;
+}
 /*# sourceMappingURL=styles.css.map */

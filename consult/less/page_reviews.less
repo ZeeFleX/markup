@@ -1,0 +1,134 @@
+body.page-reviews{
+	.wrapper{
+		section.reviews{
+			float: left;
+			width: 58%;
+			.review {
+                box-sizing:border-box;
+                -moz-box-sizing:border-box;
+                padding: 10px 20px 30px 20px;
+                margin-bottom: 60px;
+                .quote-arrow {
+                    position: absolute;
+                    width: 43px;
+                    height: 25px;
+                    background: url('../images/quote-arrow.png');
+                    bottom:-25px;
+                    left:60px;
+                }
+                .content {
+                }
+                .raiting-block {
+                    
+                }
+                .author {
+                    overflow: hidden;
+                    margin-top: 25px;
+                    .photo {
+                        border-radius:50px;
+                        -moz-border-radius:50px;
+                        -o-border-radius:50px;
+                        -webkit-border-radius:50px;
+                        overflow: hidden;
+                        width: 50px;
+                        height: 50px;
+                        float: left;
+                        img {
+                            display: block;
+                            min-width:100%;
+                            min-height:100%;
+                        }
+                    }
+                    .text {
+                        overflow: hidden;
+                        p {
+                            margin-left: 10px;
+                            font-size: 1.2rem;
+                            .author-name, .user-name {
+                                color: @sky;
+                                font: 700 1.2rem Roboto;
+                            }
+                        }
+                    }
+                }
+                .toolbar {
+                    position: absolute;
+                    right:0;
+                    bottom:0;
+                    .review-menu {
+                        float: left;
+                        margin-right: 20px;
+                        margin-top: 11px;
+                    }
+                    .review-date {
+                        float: left;
+                        margin-right: 20px;
+                        font-size: 1.2rem;
+                    }
+                    .readmore {
+                        border-top-left-radius: 5px;
+                        -o-border-top-left-radius: 5px;
+                        -moz-border-top-left-radius: 5px;
+                        -webkit-border-top-left-radius: 5px;
+                        float: left;
+                        text-decoration: none;
+                        color:@sky;
+                        display: block;
+                        font-size: 1.2rem;
+                        border-left:dashed 1px #b9d4cc;
+                        border-top:dashed 1px #b9d4cc;
+                        padding:8px 20px;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+            #load-more-reviews {
+                width:200px;
+                text-align: center;
+                margin:auto;
+                display: block;
+            }
+		}
+		aside{
+			float: right;
+			width: 40%;
+			.search-reviews{
+				.select2-container{
+					width: 100% !important;
+				}
+			}
+			.write-review{
+	            form {
+	                overflow: hidden;
+	                .field {
+	                	.select2-container{
+	                		width: 100% !important;
+	                		margin-top: 10px;
+	                	}
+	                    textarea {
+	                        height:98px;
+	                        margin-top: 20px;
+	                        margin-bottom: 15px;
+	                    }
+	                    label {
+	                        color: @sea;
+	                        font: 500 1.4rem Roboto;
+	                        margin-bottom: 0;
+	                    }
+	                    .raiting-block.vote {
+	                        float: left;
+	                        margin-top: 6px;
+	                    }
+	                }
+	                .btn {
+	                    display: block;
+	                    float: left;
+	                    margin-top: 15px;
+	                }
+	            }
+            }
+		}
+	}
+}

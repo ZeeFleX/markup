@@ -28,6 +28,7 @@
             <li><a href="page_participiant_profile.php">Профиль участника.</a></li>
             <li><a href="page_consultant_list.php">Список консультантов.</a></li>
             <li><a href="page_question_list.php">Список личных вопросов.</a></li>
+            <li><a href="page_reviews.php">Список отзывов о консультантах.</a></li>
         </ol>
         <h1>Полезные ссылки</h1>
         <ol>
