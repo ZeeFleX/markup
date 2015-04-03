@@ -3455,9 +3455,8 @@ body.page-question-list .wrapper .dialogue .messages .message {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   padding: 10px 0;
-  cursor: pointer;
 }
-/* line 125, page_question_list.less */
+/* line 124, page_question_list.less */
 body.page-question-list .wrapper .dialogue .messages .message .photo-container {
   float: left;
   width: 35px;
@@ -3469,16 +3468,16 @@ body.page-question-list .wrapper .dialogue .messages .message .photo-container {
   overflow: hidden;
   margin-right: 10px;
 }
-/* line 135, page_question_list.less */
+/* line 134, page_question_list.less */
 body.page-question-list .wrapper .dialogue .messages .message .photo-container img {
   width: 100%;
   display: block;
 }
-/* line 140, page_question_list.less */
+/* line 139, page_question_list.less */
 body.page-question-list .wrapper .dialogue .messages .message .content {
   overflow: hidden;
 }
-/* line 142, page_question_list.less */
+/* line 141, page_question_list.less */
 body.page-question-list .wrapper .dialogue .messages .message .content .author {
   color: #ffffff;
   font-size: 1.2rem;
@@ -3488,17 +3487,17 @@ body.page-question-list .wrapper .dialogue .messages .message .content .author {
   color: #4ad0c5;
   margin: 0;
 }
-/* line 151, page_question_list.less */
+/* line 150, page_question_list.less */
 body.page-question-list .wrapper .dialogue .messages .message .content .message-menu {
   float: right;
 }
-/* line 154, page_question_list.less */
+/* line 153, page_question_list.less */
 body.page-question-list .wrapper .dialogue .messages .message .content .text {
   margin: 5px 0 10px 0;
   color: #8aa4a2;
   font-size: 1.2rem;
 }
-/* line 159, page_question_list.less */
+/* line 158, page_question_list.less */
 body.page-question-list .wrapper .dialogue .messages .message .content .date {
   color: #ffffff;
   font-size: 1.0rem;
