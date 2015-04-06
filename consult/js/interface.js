@@ -1,5 +1,30 @@
 $(document).ready(function () {
     loadInterface();
+    //Трёхмерные тени
+
+    var $shadowBlocks = $('.with-shadow');
+    $.each($shadowBlocks, function(key, $block){
+        var $shadow = $('<div class="shadow"></div>').appendTo($block);
+        $shadow.css({
+            position: 'absolute',
+            width: '80%',
+            height: '20px',
+            bottom: '-20px',
+            backgroundImage: 'url(images/interface/3d-shadow.png)',
+            backgroundPosition: 'top center',
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: '100% 100%',
+            zIndex: '0'
+        });
+        $shadow.css({
+            left: '50%',
+            marginLeft: $shadow.outerWidth() / 2 * -1 + 'px'
+        });
+        $($block).css({
+            position: 'relative',
+            zIndex: 1
+        });
+    });
 });
 
 var loadInterface = function(){

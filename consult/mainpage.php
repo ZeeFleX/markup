@@ -14,8 +14,14 @@
         </div>        
     </NOSCRIPT>
     <header class="header">
-        <div class="logo"></div>
-        <p class="title">Консультации</p>
+        <div class="logo">
+            <img src="images/logo.png" alt="">
+        </div>
+        <div class="project-name">
+             <p class="title">Психолог для Вас</p>
+             <p class="author">Проект Константина Довлатова</p>
+        </div>
+       
         <a class="sign-in btn" id="sign-in" href="/">Войти</a>
         <ul class="mainmenu">
             <li><a href="#">Публичные вопросы</a></li>
@@ -23,8 +29,167 @@
             <li><a href="#">Библиотека</a></li>
         </ul>
     </header>
-    <div class="content" style="height:1000px">
-        <div class="wrapper"></div>
+    <div class="content" >
+        <div class="wrapper">
+            <section class="statistic content-block">
+                <div class="item">
+                    <i class="fa fa-check-circle-o"></i>
+                    <div class="text">
+                        <p class="count">71 456</p>
+                        <p class="object">КОНСУЛЬТАЦИЙ</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <i class="fa fa-users"></i>
+                    <div class="text">
+                        <p class="count">1 456</p>
+                        <p class="object">КОНСУЛЬТАНТОВ</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <i class="fa fa-comment-o"></i>
+                    <div class="text">
+                        <p class="count">2 465</p>
+                        <p class="object">ОТЗЫВОВ</p>
+                    </div>
+                </div>
+                <div class="item last">
+                    <i class="fa fa-microphone"></i>
+                    <div class="text">
+                        <p class="count">1 589</p>
+                        <p class="object">Публичных вопросов</p>
+                    </div>
+                </div>
+            </section>
+            <section class="content-block search-consultant">
+                <h3>Найдите вашего консультанта</h3>
+                <form action="#" id="search-consultant" method="POST">
+                    <div class="field special with-shadow">
+                        <select name="special" class="select2">
+                            <option value="0">Выберите специализацию</option>
+                            <option value="1">Животноводство</option>
+                        </select>
+                    </div>
+                     <div class="field city with-shadow">
+                        <select name="city" class="select2">
+                            <option value="0">Москва</option>
+                            <option value="1">Санкт-Петербург</option>
+                        </select>
+                    </div>
+                    <div class="submit with-shadow">
+                        <input type="submit" class="btn yellow" value="Найти" />
+                    </div>
+                    <div class="clr"></div>
+                </form>
+            </section>
+            <section class="urgent-consult content-block">
+                <i class="fa fa-warning"></i>
+                <h2>Нужна срочная консультация?</h2>
+                <a href="#" class="btn ghost">Записаться на срочную консультацию</a>
+            </section>
+            <section class="catalog-articles">
+                <div class="categories">
+                    <h4>Категории статей</h4>
+                    <div class="content-block">
+                        <ul class="menu">
+                            <li><a href="#">Он и она</a></li>
+                            <li><a href="#">Проблемные адаптация</a></li>
+                            <li><a href="#">Наши дети</a></li>
+                            <li><a href="#">Дела семейные</a></li>
+                            <li><a href="#">Кризисы, депрессия</a></li>
+                            <li><a href="#">Страхи и комплексы</a></li>
+                            <li><a href="#">Бизнес-психология</a></li>
+                            <li><a href="#">Психотерапия</a></li>
+                        </ul>
+                        <a href="#" class="btn">Библиотека</a>
+                    </div>
+                </div>
+                <div class="last-articles">
+                    <h4>Новые статьи</h4>
+                    <div class="clr"></div>
+                    <?php for($i = 0; $i <= 2; $i++) {?>
+                    <div class="article content-block">
+                        <div class="teaser-container">
+                            <img src="images/interface/image-placeholder.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h4>Название статьи</h4>
+                            <p class="category">Категория: <span>Проблемные адаптации</span></p>
+                            <p class="author">Иван Иванов</p>
+                            <p class="introtext">Равным образом укрепление и развитие структуры позволяет выполнять важные задания по разработке системы обучения кадров...</p>
+                            <p class="date">Месяц назад</p>
+                        </div>
+                        <a href="#" class="btn ghost">Посмотреть</a>
+                    </div>
+                    <?php } ?>
+                </div>
+            </section>
+            <section class="ask-question content-block">
+                <a href="#" class="btn with-shadow">Задать публичный вопрос</a>
+                <h2>Хотите задать публичный вопрос консультантам?</h2>
+            </section>
+            <section class="questions">
+                <?php for($i = 0; $i <= 3; $i++) { ?>
+                <?php //if($i % 2 == 0) echo '<div class="clr"></div>'; ?>
+                <div class="question content-block">
+                    <div class="author">
+                        <div class="photo-container">
+                            <img src="images/photos/02.jpg" alt="">
+                        </div>
+                        <div class="container">
+                            <p class="name">Иван Иванов</p>
+                            <p class="job">Участник</p>
+                            <p class="category">Категория: <span>Разрешение конфликтов</span></p>
+                        </div>
+                    </div>
+                    <h4>Вопрос:</h4>
+                    <div class="question-content">
+                        <div class="fader"></div>
+                        <p>
+                            Равным образом укрепление и развитие структуры позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным потребностям. Идейные соображения выс...
+                        </p>
+                    </div>
+                    <h4>Ответил: <span>Владимиров Владимир</span></h4>
+                    <div class="answer-content">
+                        <div class="fader"></div>
+                        <p>
+                            Разнообразный и богатый опыт сложившаяся структура организации играет важную роль в формировании соответствующий условий активизации. Идейные соображения высшего порядка, а также сложившаяся структура организации обеспечивает широкому кругу (специалистов) участие в формировании позиций.
+                        </p>
+                    </div>
+                    <a href="#" id="read-more">Посмотреть ответ полностью</a>
+                </div>
+                <?php } ?>
+            </section>
+            <section class="professional-consults">
+                <h4>Профессиональные консультанты</h4>
+                <div class="slider">
+                    <div class="wrapper">
+                        <?php for($i = 0; $i <= 18; $i++) { ?>
+                        <div class="item content-block">
+                            <div class="photo-container">
+                                <a href="#">
+                                    <img src="images/interface/image-placeholder.png" alt="" />
+                                </a>
+                            </div>
+                            <a href="#" class="username">
+                                <span class="lastname">Иванов</span><br />
+                                <span>Иван Иванович</span>
+                            </a>
+                            <div class="rating-block">
+                                <p class="value"><span class="current-value">8</span>/10</p>
+                                <p class="title"><span>Рейтинг</span></p>
+                            </div>
+                        </div>
+                        <?php } ?>
+                    </div>
+                    <div class="controls-container">
+                        <div class="controls">
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn" id="show-all-users">Посмотреть всех консультантов</a>
+            </section>
+        </div>
     </div>
     <div class="modal" id="authorization-window">
         <div class="container">
@@ -119,7 +284,7 @@
             </div>
         </section>
         <section class="bottom">
-            <p class="copyright">Copyright 2015 Консультации</p>
+            <p class="copyright">Copyright 2015 Психолог для Вас</p>
             <ul class="footer-menu">
                 <li>
                     <a href="#">О сервисе</a>

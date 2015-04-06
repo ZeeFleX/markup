@@ -14,7 +14,7 @@
             </div>
         </div>        
     </NOSCRIPT>
-    <div class="wrapper">
+    <div class="wrapper cheatsheet">
         <section class="typography">
             <h3>Typography</h3>
             <h1>H1 - font: 500 3.6rem "Roboto"</h1>

@@ -50,19 +50,25 @@ header.header {
         -moz-border-radius:100%;
         -o-border-radius:100%;
         -webkit-border-radius:100%;
-        float: left;
-        width: 40px;
-        height: 40px;
-        background: @sky;
+        float: left;        
     }
-    .title {
-        display: block;
+    .project-name{
         float: left;
-        color: #4ad0c5;
-        font: 700 1.2rem Roboto;
-        text-transform: uppercase;
-        margin-top: 13px;
         margin-left: 10px;
+        margin-top: 5px;
+        .title {
+            color: @sky;
+            font-size: 1.2rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            margin:0;
+        }
+        .author{
+            color: @sea_light;
+            font-size: 1.0rem;
+            font-weight: 300;
+            margin:0;
+        }
     }
     .sign-in {
         float: right;
