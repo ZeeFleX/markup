@@ -15,42 +15,42 @@ h6 {
 }
 /* line 28, interface.less */
 h1 {
-  color: #290019;
+  color: #082e41;
   font: 500 3.6rem Roboto;
   margin: 0;
   padding: 10px 0;
 }
 /* line 34, interface.less */
 h2 {
-  color: #290019;
+  color: #082e41;
   font: 500 3.0rem Roboto;
   margin: 0;
   padding: 10px 0;
 }
 /* line 40, interface.less */
 h3 {
-  color: #290019;
+  color: #082e41;
   font: 500 2.4rem Roboto;
   margin: 0;
   padding: 10px 0;
 }
 /* line 46, interface.less */
 h4 {
-  color: #290019;
+  color: #082e41;
   font: 500 1.8rem Roboto;
   margin: 0;
   padding: 10px 0;
 }
 /* line 52, interface.less */
 h5 {
-  color: #290019;
+  color: #082e41;
   font: 500 1.4rem Roboto;
   margin: 0;
   padding: 10px 0;
 }
 /* line 58, interface.less */
 h6 {
-  color: #290019;
+  color: #082e41;
   font: 500 1.2rem Roboto;
   margin: 0;
   padding: 10px 0;
@@ -70,8 +70,8 @@ body {
   line-height: 135%;
   font-family: "Roboto", sans-serif;
   font-size: 1.4rem;
-  color: #b099a3;
-  background: #f4efff;
+  color: #99a9b0;
+  background: #eeeeee;
 }
 /* line 79, interface.less */
 p {
@@ -161,14 +161,14 @@ p {
 /* line 151, interface.less */
 .btn.ghost:hover {
   color: #ffffff;
-  background: #4b223b;
-  border-color: #290019;
+  background: #2a5063;
+  border-color: #082e41;
 }
 /* line 156, interface.less */
 .btn.ghost:active {
   color: #ffffff;
-  background: #290019;
-  border-color: #290019;
+  background: #082e41;
+  border-color: #082e41;
 }
 /* line 161, interface.less */
 .btn.ghost.red {
@@ -186,7 +186,7 @@ p {
 .container.toggle {
   display: inline-block;
   border-radius: 50px;
-  background: #b099a3;
+  background: #99a9b0;
   padding: 2px;
   width: 38px;
   height: 18px;
@@ -202,7 +202,7 @@ p {
   border-radius: 18px;
   width: 18px;
   height: 18px;
-  background: #290019;
+  background: #082e41;
   transition: left 0.3s ease;
   left: 0;
   -webkit-transition: left 0.3s ease;
@@ -251,7 +251,7 @@ input[type="time"] {
   display: block;
   border-radius: 5px;
   border: solid 1px;
-  border-color: #b099a3;
+  border-color: #99a9b0;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   padding: 10px 12px;
@@ -261,7 +261,7 @@ input[type="time"] {
   -moz-transition: border-color 0.3s ease;
   -o-transition: border-color 0.3s ease;
   width: 100%;
-  color: #b099a3;
+  color: #99a9b0;
   color: #8aa4a2;
   font: 400 1.2rem Roboto;
 }
@@ -293,7 +293,7 @@ input[type="time"].error {
 }
 /* line 259, interface.less */
 .field label {
-  color: #290019;
+  color: #082e41;
   font-weight: 500;
   margin-bottom: 5px;
 }
@@ -340,7 +340,7 @@ select.select2 {
 /* line 298, interface.less */
 .select2-container .select2-selection {
   border: solid 1px;
-  border-color: #b099a3;
+  border-color: #99a9b0;
   height: 36px !important;
 }
 /* line 302, interface.less */
@@ -349,7 +349,7 @@ select.select2 {
 }
 /* line 305, interface.less */
 .select2-container .select2-selection .select2-selection__arrow {
-  background: url('../images/interface/dropdown-arrow.png') center center no-repeat #b099a3;
+  background: url('../images/interface/dropdown-arrow.png') center center no-repeat #99a9b0;
   width: 60px !important;
   height: 34px !important;
   top: 0px !important;
@@ -401,7 +401,7 @@ select.select2 {
 .rating-block p.value {
   font-weight: 700;
   font-size: 1.8rem;
-  color: #b099a3;
+  color: #99a9b0;
 }
 /* line 352, interface.less */
 .rating-block p.value .current-value {
@@ -458,7 +458,7 @@ a.dotts {
 }
 /* line 406, interface.less */
 a.dotts .fa-circle {
-  color: #b099a3;
+  color: #99a9b0;
   font-size: 0.3rem;
   display: block;
   float: left;
@@ -513,12 +513,12 @@ ul.badge-marked li {
 }
 /* line 456, interface.less */
 .ui-autocomplete.ui-widget li.ui-menu-item.ui-state-focus {
-  background: #b099a3;
+  background: #99a9b0;
   border: solid 1px #fff;
   margin: 0;
   font-weight: 400;
   padding: 5px !important;
-  color: #290019;
+  color: #082e41;
 }
 /* line 1, global.less */
 .no-script-layout {
@@ -537,9 +537,8 @@ ul.badge-marked li {
   margin-top: 100px;
 }
 /* line 15, global.less */
-body > .wrapper,
-body > .content {
-  min-height: 800px;
+body > .wrapper {
+  min-height: 600px;
 }
 /* line 19, global.less */
 .clr {
@@ -565,13 +564,13 @@ ul {
 }
 /* line 36, global.less */
 a {
-  color: #290019;
+  color: #082e41;
 }
 /* line 41, global.less */
 header.header {
   width: 100%;
   padding: 10px 30px;
-  background: #ffffff;
+  background: #fafafa;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   display: table;
@@ -620,7 +619,7 @@ header.header .profile-snippet .photo-container {
   width: 40px;
   height: 40px;
   overflow: hidden;
-  border: solid 1px #b099a3;
+  border: solid 1px #99a9b0;
 }
 /* line 92, global.less */
 header.header .profile-snippet .photo-container img {
@@ -631,12 +630,12 @@ header.header .profile-snippet .photo-container img {
 header.header .profile-snippet .info {
   float: left;
   margin-left: 10px;
-  margin-top: 5px;
   margin-right: 20px;
+  margin-top: 5px;
 }
 /* line 102, global.less */
 header.header .profile-snippet .info .name {
-  color: #290019;
+  color: #082e41;
   font: 500 1.4rem Roboto;
 }
 /* line 106, global.less */
@@ -647,21 +646,19 @@ header.header .profile-snippet .info .job {
 /* line 111, global.less */
 header.header .profile-snippet .more-container {
   float: left;
-  /* margin-left: 10px; */
-  /* margin-top: 10px; */
-  z-index: 2;
-  position: absolute;
-  width: 50px;
   height: 50px;
+  position: absolute;
   right: 0;
+  width: 50px;
+  z-index: 2;
 }
-/* line 120, global.less */
+/* line 118, global.less */
 header.header .profile-snippet .more-container:hover .dropdown-menu {
   display: block;
 }
-/* line 123, global.less */
+/* line 121, global.less */
 header.header .profile-snippet .more-container i {
-  color: #290019;
+  color: #082e41;
   font-size: 1.8rem;
   cursor: pointer;
   width: 100%;
@@ -669,23 +666,20 @@ header.header .profile-snippet .more-container i {
   text-align: right;
   margin-top: 12px;
 }
-/* line 132, global.less */
+/* line 130, global.less */
 header.header .profile-snippet .more-container .dropdown-menu {
+  background: none repeat scroll 0 0 #ffffff;
+  border: 1px dashed #b099a3;
+  border-radius: 6px;
   display: none;
+  margin-top: -8px;
+  padding: 10px 15px;
   position: absolute;
-  width: 150px;
   right: -28px;
   top: 100%;
-  margin-top: -8px;
-  border: dashed 1px #b099a3;
-  background: #ffffff;
-  padding: 10px 15px;
-  border-radius: 6px;
-  -o-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
+  width: 150px;
 }
-/* line 147, global.less */
+/* line 141, global.less */
 header.header .profile-snippet .more-container .dropdown-menu .arrow {
   width: 24px;
   height: 12px;
@@ -694,37 +688,37 @@ header.header .profile-snippet .more-container .dropdown-menu .arrow {
   top: -22px;
   right: 5px;
 }
-/* line 156, global.less */
+/* line 150, global.less */
 header.header .profile-snippet .more-container .dropdown-menu ul li {
   font-size: 1.2rem;
   font-weight: 500;
 }
-/* line 159, global.less */
+/* line 153, global.less */
 header.header .profile-snippet .more-container .dropdown-menu ul li a {
-  color: #b099a3;
+  color: #99a9b0;
   text-decoration: none;
 }
-/* line 162, global.less */
+/* line 156, global.less */
 header.header .profile-snippet .more-container .dropdown-menu ul li a:hover {
   text-decoration: underline;
 }
-/* line 171, global.less */
+/* line 165, global.less */
 header.header .profile-notifications {
   float: right;
   margin-right: 10px;
   margin-top: 10px;
 }
-/* line 175, global.less */
+/* line 169, global.less */
 header.header .profile-notifications > div {
   float: left;
   margin: 0 15px;
   cursor: pointer;
 }
-/* line 179, global.less */
+/* line 173, global.less */
 header.header .profile-notifications > div.active i.fa {
   color: #eb5245;
 }
-/* line 182, global.less */
+/* line 176, global.less */
 header.header .profile-notifications > div .count {
   position: absolute;
   border-radius: 50px;
@@ -739,33 +733,33 @@ header.header .profile-notifications > div .count {
   z-index: 1;
   font: 500 1.1rem / 17px Roboto;
 }
-/* line 196, global.less */
+/* line 190, global.less */
 header.header .profile-notifications > div i.fa {
-  color: #b099a3;
+  color: #99a9b0;
   font-size: 2.0rem;
 }
-/* line 202, global.less */
+/* line 196, global.less */
 header.header .mainmenu {
   float: right;
   margin: 17px 0;
 }
-/* line 205, global.less */
+/* line 199, global.less */
 header.header .mainmenu li {
   float: left;
   text-transform: uppercase;
   font: 500 1.2rem Roboto;
   margin-right: 30px;
 }
-/* line 210, global.less */
+/* line 204, global.less */
 header.header .mainmenu li a {
-  color: #290019;
+  color: #082e41;
   text-decoration: none;
 }
-/* line 213, global.less */
+/* line 207, global.less */
 header.header .mainmenu li a:hover {
   text-decoration: underline;
 }
-/* line 220, global.less */
+/* line 214, global.less */
 .user-menu-section {
   background: #f8f8f8;
   overflow: hidden;
@@ -775,105 +769,214 @@ header.header .mainmenu li a:hover {
   -moz-box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.1);
 }
-/* line 229, global.less */
+/* line 223, global.less */
 .user-menu-section .wrapper .user-menu-container {
   right: 50%;
   float: right;
 }
-/* line 233, global.less */
+/* line 227, global.less */
 .user-menu-section .wrapper .user-menu {
   left: 50%;
   float: left;
 }
-/* line 236, global.less */
+/* line 230, global.less */
 .user-menu-section .wrapper .user-menu li {
   margin: 0 10px;
   float: left;
 }
-/* line 240, global.less */
+/* line 234, global.less */
 .user-menu-section .wrapper .user-menu a {
-  color: #290019;
+  color: #082e41;
   font: 400 1.4rem  Roboto;
   text-decoration: none;
 }
-/* line 244, global.less */
+/* line 238, global.less */
 .user-menu-section .wrapper .user-menu a:hover {
   text-decoration: underline;
 }
-/* line 253, global.less */
+/* line 247, global.less */
 .footer {
   width: 100%;
   margin-top: 20px;
-  color: #ffffff;
+  color: #082e41;
   font-weight: 500;
   font-size: 1.4rem;
 }
-/* line 259, global.less */
+/* line 253, global.less */
 .footer a {
   text-decoration: none;
-  color: #ffffff;
+  color: #082e41;
 }
-/* line 263, global.less */
+/* line 257, global.less */
 .footer .top {
   padding: 8px 30px;
-  background: #ec4863;
+  background: #f9f9f9;
   overflow: hidden;
+  box-shadow: 0 2px 3px #ddd;
+  z-index: 1;
 }
-/* line 267, global.less */
+/* line 263, global.less */
 .footer .top .contact {
   display: block;
   float: left;
 }
-/* line 271, global.less */
+/* line 267, global.less */
 .footer .top .support {
   display: block;
   float: right;
 }
-/* line 275, global.less */
+/* line 271, global.less */
 .footer .top .footer-logo {
   margin: 20px 0;
 }
-/* line 277, global.less */
+/* line 273, global.less */
 .footer .top .footer-logo .logo {
   float: left;
   margin-right: 15px;
 }
-/* line 281, global.less */
+/* line 277, global.less */
 .footer .top .footer-logo .title {
   display: block;
   float: left;
   font-size: 1.4rem;
   margin-top: 5px;
 }
-/* line 286, global.less */
+/* line 282, global.less */
 .footer .top .footer-logo .title span {
   font-size: 1.2rem;
   font-weight: normal;
 }
-/* line 293, global.less */
+/* line 289, global.less */
 .footer .bottom {
   padding: 8px 30px;
-  background: #a73e5c;
+  background: #f5f5f5;
   overflow: hidden;
 }
-/* line 297, global.less */
+/* line 293, global.less */
 .footer .bottom p {
   display: block;
   float: left;
 }
-/* line 301, global.less */
+/* line 297, global.less */
 .footer .bottom ul {
   float: right;
   margin-top: 10px;
 }
-/* line 304, global.less */
+/* line 300, global.less */
 .footer .bottom ul li {
   float: left;
   margin-left: 20px;
 }
-/* line 308, global.less */
+/* line 304, global.less */
 .footer .bottom ul li a:hover {
   text-decoration: underline;
+}
+/* line 320, global.less */
+.error {
+  color: #ec4863;
+}
+/* line 324, global.less */
+#success {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  background: url('../images/loginform-bg.png');
+  padding: 15px 30px;
+  display: none;
+}
+/* line 333, global.less */
+#success_forgot {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  background: url('../images/loginform-bg.png');
+  padding: 15px 30px;
+  display: none;
+}
+/* line 342, global.less */
+.preloader_popup {
+  background: url("../images/preloader.gif") 50% 50% no-repeat #ffffff !important;
+  opacity: 0.3;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 10000;
+}
+/* line 350, global.less */
+.preloader_popup_a {
+  background: url("../images/preloader.gif") 50% 50% no-repeat #ffffff !important;
+  opacity: 0.3;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 10000;
+  height: 190px !important;
+  width: 535px;
+}
+/* line 361, global.less */
+.preloader_popup_s {
+  background: url("../images/preloader.gif") 50% 50% no-repeat #ffffff !important;
+  opacity: 0.3;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 10000;
+  height: 245px !important;
+  width: 238px;
+}
+/* line 371, global.less */
+.preloader_popup_l {
+  background: url("../images/preloader.gif") 50% 50% no-repeat #ffffff !important;
+  opacity: 0.3;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 10000;
+  height: 440px !important;
+  width: 380px;
+}
+/* line 381, global.less */
+.preloader_popup_r {
+  background: url("../images/preloader.gif") 50% 50% no-repeat #ffffff !important;
+  opacity: 0.3;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 10000;
+  height: 453px !important;
+  width: 380px;
+}
+/* line 391, global.less */
+.preloader_popup_f {
+  background: url("../images/preloader.gif") 50% 50% no-repeat #ffffff !important;
+  opacity: 0.3;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 10000;
+  height: 265px !important;
+  width: 380px;
+}
+/* line 401, global.less */
+.preloader_popup_spec {
+  background: url("../images/preloader.gif") 50% 50% no-repeat #ffffff !important;
+  opacity: 0.3;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 10000;
+  height: 295px !important;
+  width: 400px;
+}
+/* line 411, global.less */
+#registration-window {
+  display: none;
+}
+/* line 414, global.less */
+#forgot-password-window {
+  display: none;
+}
+/* line 417, global.less */
+.hidden {
+  display: none;
 }
 /* line 1, mainpage.less */
 body.page-mainpage {
@@ -913,7 +1016,7 @@ body.page-mainpage .content {
 }
 /* line 34, mainpage.less */
 body.page-mainpage .professionals h4 {
-  color: #290019;
+  color: #082e41;
   font-size: 2.4rem;
   font-weight: 500;
   text-align: center;
@@ -997,7 +1100,7 @@ body.page-mainpage .professionals .slider .controls-container .controls .circle 
   height: 8px;
   float: left;
   margin-right: 6px;
-  background: #b099a3;
+  background: #99a9b0;
   cursor: pointer;
 }
 /* line 104, mainpage.less */
@@ -1099,7 +1202,7 @@ body.page-mainpage .content .wrapper .log-in form.body .remember-me .checkbox.co
 body.page-mainpage .content .wrapper .log-in form.body .remember-me label {
   float: left;
   margin-left: 10px;
-  color: #b099a3;
+  color: #99a9b0;
 }
 /* line 192, mainpage.less */
 body.page-mainpage .content .wrapper .log-in form.body a#forgot-password {
@@ -1112,7 +1215,7 @@ body.page-mainpage .content .wrapper .log-in form.body a#forgot-password {
 /* line 200, mainpage.less */
 body.page-mainpage .content .wrapper .log-in .foot {
   text-align: center;
-  border-top: solid 1px #b099a3;
+  border-top: solid 1px #99a9b0;
   background: url('../images/loginform-bg.png');
   padding: 15px 0 25px 0;
 }
@@ -1135,7 +1238,7 @@ body.page-mainpage .content .wrapper .log-in.forgot-password {
 }
 /* line 220, mainpage.less */
 body.page-mainpage footer.footer {
-  color: #ffffff;
+  color: #082e41;
   font-size: 1.4rem;
   font-weight: 500;
   margin-top: 50px;
@@ -1194,7 +1297,7 @@ body.page-mainpage #authorization-window > .container {
 }
 /* line 269, mainpage.less */
 body.page-mainpage #authorization-window > .container h1 {
-  color: #290019;
+  color: #082e41;
   font: 500 2.4rem Roboto;
   margin-bottom: 20px;
 }
@@ -1263,7 +1366,7 @@ body.page-mainpage #authorization-window > .container .left a.omni-sign-in#ok i 
 }
 /* line 328, mainpage.less */
 body.page-mainpage #authorization-window > .container .left p {
-  color: #b099a3;
+  color: #99a9b0;
   text-align: center;
   font-size: 1.2rem;
   line-height: 150%;
@@ -1285,13 +1388,13 @@ body.page-mainpage #authorization-window > .container .right .btn {
 }
 /* line 346, mainpage.less */
 body.page-mainpage #authorization-window > .container .right p {
-  color: #b099a3;
+  color: #99a9b0;
   font: 400 1.2rem Roboto;
   text-align: center;
 }
 /* line 350, mainpage.less */
 body.page-mainpage #authorization-window > .container .right p a {
-  color: #8e7781;
+  color: #77878e;
   font-weight: bold;
 }
 /* line 356, mainpage.less */
@@ -1326,12 +1429,6 @@ body.page-mainpage #authorization-window > .container a.sign-up.forgot-password,
 body.page-mainpage #authorization-window > .container a.forgot-password.forgot-password,
 body.page-mainpage #authorization-window > .container a.sign-in.forgot-password {
   font-size: 1.2rem;
-}
-/* line 382, mainpage.less */
-body.page-password-recovery,
-body.page-sign-up {
-  background: url('../images/mainpage-bg.jpg') center center no-repeat;
-  background-size: cover;
 }
 /* line 385, mainpage.less */
 body.page-password-recovery .ui-button-icon-primary,
@@ -1459,7 +1556,7 @@ body.page-password-recovery .forgot-password form.body .remember-me label,
 body.page-sign-up .forgot-password form.body .remember-me label {
   float: left;
   margin-left: 10px;
-  color: #b099a3;
+  color: #99a9b0;
 }
 /* line 459, mainpage.less */
 body.page-password-recovery .sign-up form.body a#forgot-password,
@@ -1478,7 +1575,7 @@ body.page-sign-up .sign-up .foot,
 body.page-password-recovery .forgot-password .foot,
 body.page-sign-up .forgot-password .foot {
   text-align: center;
-  border-top: solid 1px #b099a3;
+  border-top: solid 1px #99a9b0;
   background: url('../images/loginform-bg.png');
   padding: 15px 0 25px 0;
 }
@@ -1557,7 +1654,7 @@ body.page-password-recovery #registration-window > .container h1,
 body.page-sign-up #registration-window > .container h1,
 body.page-password-recovery #forgot-password-window > .container h1,
 body.page-sign-up #forgot-password-window > .container h1 {
-  color: #290019;
+  color: #082e41;
   font: 500 2.4rem Roboto;
   margin-bottom: 20px;
 }
@@ -1671,7 +1768,7 @@ body.page-password-recovery #registration-window > .container .left p,
 body.page-sign-up #registration-window > .container .left p,
 body.page-password-recovery #forgot-password-window > .container .left p,
 body.page-sign-up #forgot-password-window > .container .left p {
-  color: #b099a3;
+  color: #99a9b0;
   text-align: center;
   font-size: 1.2rem;
   line-height: 150%;
@@ -1713,7 +1810,7 @@ body.page-password-recovery #registration-window > .container .right p,
 body.page-sign-up #registration-window > .container .right p,
 body.page-password-recovery #forgot-password-window > .container .right p,
 body.page-sign-up #forgot-password-window > .container .right p {
-  color: #b099a3;
+  color: #99a9b0;
   font: 400 1.2rem Roboto;
   text-align: center;
 }
@@ -1724,7 +1821,7 @@ body.page-password-recovery #registration-window > .container .right p a,
 body.page-sign-up #registration-window > .container .right p a,
 body.page-password-recovery #forgot-password-window > .container .right p a,
 body.page-sign-up #forgot-password-window > .container .right p a {
-  color: #8e7781;
+  color: #77878e;
   font-weight: bold;
 }
 /* line 619, mainpage.less */
@@ -1850,8 +1947,8 @@ body.page-sign-up #forgot-password-window > .container a.sign-in.forgot-password
 }
 /* line 26, cheat-sheet.less */
 .wrapper > section.colors .color#sea {
-  background: #290019;
-  color: #5c334c;
+  background: #082e41;
+  color: #3b6174;
 }
 /* line 27, cheat-sheet.less */
 .wrapper > section.colors .color#blue_light {
@@ -1865,8 +1962,8 @@ body.page-sign-up #forgot-password-window > .container a.sign-in.forgot-password
 }
 /* line 29, cheat-sheet.less */
 .wrapper > section.colors .color#sea_light {
-  background: #b099a3;
-  color: #7d6670;
+  background: #99a9b0;
+  color: #66767d;
 }
 /* line 30, cheat-sheet.less */
 .wrapper > section.colors .color#white {
@@ -1939,7 +2036,7 @@ body.page-sign-up #forgot-password-window > .container a.sign-in.forgot-password
 /* line 6, page_profile.less */
 body.page-profile .resume-section {
   overflow: hidden;
-  min-height: 800px;
+  min-height: 600px;
 }
 /* line 9, page_profile.less */
 body.page-profile .resume-section .profile {
@@ -1961,7 +2058,7 @@ body.page-profile .resume-section .profile .left .photo img {
 body.page-profile .resume-section .profile .left .place {
   margin-top: 17px;
   text-align: center;
-  color: #b099a3;
+  color: #99a9b0;
   font: 400 1.2rem Roboto;
 }
 /* line 27, page_profile.less */
@@ -1985,7 +2082,7 @@ body.page-profile .resume-section .profile .left .expirience p {
 }
 /* line 43, page_profile.less */
 body.page-profile .resume-section .profile .left .expirience p .value {
-  color: #290019;
+  color: #082e41;
   font-weight: 700;
 }
 /* line 50, page_profile.less */
@@ -2000,7 +2097,7 @@ body.page-profile .resume-section .profile .right header {
 }
 /* line 56, page_profile.less */
 body.page-profile .resume-section .profile .right header .name {
-  color: #290019;
+  color: #082e41;
   font: 700 1.8rem Roboto;
   float: left;
 }
@@ -2033,7 +2130,7 @@ body.page-profile .resume-section .profile .right header .toolbar .rating-block 
 /* line 80, page_profile.less */
 body.page-profile .resume-section .profile .right header .toolbar a.envelope {
   float: right;
-  color: #290019;
+  color: #082e41;
   text-decoration: none;
   margin-top: 6px;
   margin-right: 15px;
@@ -2073,66 +2170,66 @@ body.page-profile .resume-section aside {
   overflow: hidden;
 }
 /* line 125, page_profile.less */
+body.page-profile .resume-section aside .infor-info {
+  margin-top: 7px;
+}
+/* line 128, page_profile.less */
 body.page-profile .resume-section aside .price {
   margin-top: 7px;
 }
-/* line 130, page_profile.less */
+/* line 133, page_profile.less */
 body.page-profile .resume-section aside .price .content-block p.text {
   margin-top: 0;
 }
-/* line 132, page_profile.less */
+/* line 135, page_profile.less */
 body.page-profile .resume-section aside .price .content-block p.text .date {
   font-weight: 500;
   color: #ec4863;
 }
-/* line 137, page_profile.less */
+/* line 140, page_profile.less */
 body.page-profile .resume-section aside .price .content-block form.summary {
   margin-top: 20px;
 }
-/* line 139, page_profile.less */
+/* line 142, page_profile.less */
 body.page-profile .resume-section aside .price .content-block form.summary .field {
   clear: both;
   margin-bottom: 20px;
 }
-/* line 142, page_profile.less */
+/* line 145, page_profile.less */
 body.page-profile .resume-section aside .price .content-block form.summary .field .radio.container {
   float: left;
   margin-right: 15px;
 }
-/* line 147, page_profile.less */
+/* line 150, page_profile.less */
 body.page-profile .resume-section aside .price .content-block form.summary label {
   overflow: hidden;
-  color: #b099a3;
+  color: #99a9b0;
   font-size: 1.4rem;
   /* Приближение из-за подстановки шрифтов */
   font-weight: 500;
   font-style: italic;
   font-weight: normal;
 }
-/* line 155, page_profile.less */
+/* line 158, page_profile.less */
 body.page-profile .resume-section aside .price .content-block form.summary span {
   display: inline;
 }
-/* line 158, page_profile.less */
+/* line 161, page_profile.less */
 body.page-profile .resume-section aside .price .content-block form.summary span.value {
   font-weight: bold;
   color: #ec4863;
 }
-/* line 162, page_profile.less */
+/* line 165, page_profile.less */
 body.page-profile .resume-section aside .price .content-block form.summary .btn {
   display: block;
   text-align: center;
   width: 100%;
 }
-/* line 168, page_profile.less */
-body.page-profile .resume-section aside .price .content-block.paid {
-  margin-top: 20px;
-}
-/* line 170, page_profile.less */
+/* line 173, page_profile.less */
 body.page-profile .resume-section aside .price .content-block.paid .visibility {
   overflow: hidden;
 }
-/* line 172, page_profile.less */
+/* line 175, page_profile.less */
 body.page-profile .resume-section aside .price .content-block.paid .visibility i {
   display: block;
   float: left;
@@ -2140,88 +2237,88 @@ body.page-profile .resume-section aside .price .content-block.paid .visibility i
   color: #ec4863;
   font-size: 1.8rem;
 }
-/* line 179, page_profile.less */
+/* line 182, page_profile.less */
 body.page-profile .resume-section aside .price .content-block.paid .visibility p {
   display: block;
   overflow: hidden;
   margin: 2px 0;
 }
-/* line 188, page_profile.less */
+/* line 191, page_profile.less */
 body.page-profile .resume-section aside .sessions {
   margin-top: 10px;
 }
-/* line 190, page_profile.less */
+/* line 193, page_profile.less */
 body.page-profile .resume-section aside .sessions p {
   font-weight: bold;
-  color: #290019;
+  color: #082e41;
 }
-/* line 193, page_profile.less */
+/* line 196, page_profile.less */
 body.page-profile .resume-section aside .sessions p .value {
   color: #ec4863;
 }
-/* line 197, page_profile.less */
+/* line 200, page_profile.less */
 body.page-profile .resume-section aside .sessions .btn {
   margin-top: 15px;
   text-align: center;
   display: block;
   color: #ffffff;
 }
-/* line 205, page_profile.less */
+/* line 208, page_profile.less */
 body.page-profile .resume-section aside .information {
   float: right;
   width: 100%;
 }
-/* line 215, page_profile.less */
+/* line 218, page_profile.less */
 body.page-profile .resume-section aside .information .content-block.education-list .item,
 body.page-profile .resume-section aside .information .content-block.proffessions-list .item {
   margin-bottom: 20px;
 }
-/* line 217, page_profile.less */
+/* line 220, page_profile.less */
 body.page-profile .resume-section aside .information .content-block.education-list .item .scan,
 body.page-profile .resume-section aside .information .content-block.proffessions-list .item .scan {
   float: left;
   width: 50px;
   margin-right: 15px;
 }
-/* line 221, page_profile.less */
+/* line 224, page_profile.less */
 body.page-profile .resume-section aside .information .content-block.education-list .item .scan img,
 body.page-profile .resume-section aside .information .content-block.proffessions-list .item .scan img {
   display: block;
   width: 100%;
 }
-/* line 226, page_profile.less */
+/* line 229, page_profile.less */
 body.page-profile .resume-section aside .information .content-block.education-list .item p,
 body.page-profile .resume-section aside .information .content-block.proffessions-list .item p {
   overflow: hidden;
 }
-/* line 236, page_profile.less */
+/* line 239, page_profile.less */
 body.page-profile .partners-section .content-block {
   overflow: hidden;
 }
-/* line 238, page_profile.less */
+/* line 241, page_profile.less */
 body.page-profile .partners-section .content-block .partner {
   float: left;
   width: 31.7%;
   margin-left: 2%;
   min-height: 120px;
 }
-/* line 243, page_profile.less */
+/* line 246, page_profile.less */
 body.page-profile .partners-section .content-block .partner:first-child {
   margin-left: 0;
 }
-/* line 252, page_profile.less */
+/* line 255, page_profile.less */
 body.page-profile .information-section .reviews {
   float: left;
   width: 57%;
 }
-/* line 256, page_profile.less */
+/* line 259, page_profile.less */
 body.page-profile .information-section .reviews .content-block .review {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   padding: 10px 20px 30px 20px;
   margin-bottom: 60px;
 }
-/* line 261, page_profile.less */
+/* line 264, page_profile.less */
 body.page-profile .information-section .reviews .content-block .review .quote-arrow {
   position: absolute;
   width: 43px;
@@ -2230,12 +2327,12 @@ body.page-profile .information-section .reviews .content-block .review .quote-ar
   bottom: -25px;
   left: 60px;
 }
-/* line 274, page_profile.less */
+/* line 277, page_profile.less */
 body.page-profile .information-section .reviews .content-block .review .author {
   overflow: hidden;
   margin-top: 25px;
 }
-/* line 277, page_profile.less */
+/* line 280, page_profile.less */
 body.page-profile .information-section .reviews .content-block .review .author .photo {
   border-radius: 50px;
   -moz-border-radius: 50px;
@@ -2246,46 +2343,46 @@ body.page-profile .information-section .reviews .content-block .review .author .
   height: 50px;
   float: left;
 }
-/* line 286, page_profile.less */
+/* line 289, page_profile.less */
 body.page-profile .information-section .reviews .content-block .review .author .photo img {
   display: block;
   min-width: 100%;
   min-height: 100%;
 }
-/* line 292, page_profile.less */
+/* line 295, page_profile.less */
 body.page-profile .information-section .reviews .content-block .review .author .text {
   overflow: hidden;
 }
-/* line 294, page_profile.less */
+/* line 297, page_profile.less */
 body.page-profile .information-section .reviews .content-block .review .author .text p {
   margin-left: 10px;
   font-size: 1.2rem;
 }
-/* line 297, page_profile.less */
+/* line 300, page_profile.less */
 body.page-profile .information-section .reviews .content-block .review .author .text p .author-name,
 body.page-profile .information-section .reviews .content-block .review .author .text p .user-name {
   color: #ec4863;
   font: 700 1.2rem Roboto;
 }
-/* line 304, page_profile.less */
+/* line 307, page_profile.less */
 body.page-profile .information-section .reviews .content-block .review .toolbar {
   position: absolute;
   right: 0;
   bottom: 0;
 }
-/* line 308, page_profile.less */
+/* line 311, page_profile.less */
 body.page-profile .information-section .reviews .content-block .review .toolbar .review-menu {
   float: left;
   margin-right: 20px;
   margin-top: 11px;
 }
-/* line 313, page_profile.less */
+/* line 316, page_profile.less */
 body.page-profile .information-section .reviews .content-block .review .toolbar .review-date {
   float: left;
   margin-right: 20px;
   font-size: 1.2rem;
 }
-/* line 318, page_profile.less */
+/* line 321, page_profile.less */
 body.page-profile .information-section .reviews .content-block .review .toolbar .readmore {
   border-top-left-radius: 5px;
   -o-border-top-left-radius: 5px;
@@ -2300,74 +2397,74 @@ body.page-profile .information-section .reviews .content-block .review .toolbar 
   border-top: dashed 1px #b9d4cc;
   padding: 8px 20px;
 }
-/* line 331, page_profile.less */
+/* line 334, page_profile.less */
 body.page-profile .information-section .reviews .content-block .review .toolbar .readmore:hover {
   text-decoration: underline;
 }
-/* line 337, page_profile.less */
+/* line 340, page_profile.less */
 body.page-profile .information-section .reviews .content-block #load-more-reviews {
   width: 200px;
   text-align: center;
   margin: auto;
   display: block;
 }
-/* line 348, page_profile.less */
+/* line 351, page_profile.less */
 body.page-profile .information-section .content-block form {
   overflow: hidden;
 }
-/* line 351, page_profile.less */
+/* line 354, page_profile.less */
 body.page-profile .information-section .content-block form .field textarea {
   height: 98px;
 }
-/* line 354, page_profile.less */
+/* line 357, page_profile.less */
 body.page-profile .information-section .content-block form .field label {
   color: #ec4863;
   font: 500 1.4rem Roboto;
   margin-bottom: 0;
 }
-/* line 359, page_profile.less */
+/* line 362, page_profile.less */
 body.page-profile .information-section .content-block form .field .raiting-block.vote {
   float: left;
   margin-top: 6px;
 }
-/* line 364, page_profile.less */
+/* line 367, page_profile.less */
 body.page-profile .information-section .content-block form .btn {
   display: block;
   float: right;
 }
-/* line 370, page_profile.less */
+/* line 373, page_profile.less */
 body.page-profile .information-section .information {
   float: right;
   width: 41%;
 }
-/* line 380, page_profile.less */
+/* line 383, page_profile.less */
 body.page-profile .information-section .information .content-block.education-list .item,
 body.page-profile .information-section .information .content-block.proffessions-list .item {
   margin-bottom: 20px;
 }
-/* line 382, page_profile.less */
+/* line 385, page_profile.less */
 body.page-profile .information-section .information .content-block.education-list .item .scan,
 body.page-profile .information-section .information .content-block.proffessions-list .item .scan {
   float: left;
   width: 50px;
   margin-right: 15px;
 }
-/* line 386, page_profile.less */
+/* line 389, page_profile.less */
 body.page-profile .information-section .information .content-block.education-list .item .scan img,
 body.page-profile .information-section .information .content-block.proffessions-list .item .scan img {
   display: block;
   width: 100%;
 }
-/* line 391, page_profile.less */
+/* line 394, page_profile.less */
 body.page-profile .information-section .information .content-block.education-list .item p,
 body.page-profile .information-section .information .content-block.proffessions-list .item p {
   overflow: hidden;
 }
-/* line 397, page_profile.less */
+/* line 400, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .item {
   margin-bottom: 30px;
 }
-/* line 401, page_profile.less */
+/* line 404, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .author .photo {
   float: left;
   overflow: hidden;
@@ -2379,48 +2476,48 @@ body.page-profile .information-section .information .content-block.answers-list 
   height: 50px;
   margin-right: 15px;
 }
-/* line 411, page_profile.less */
+/* line 414, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .author .photo img {
   display: block;
 }
-/* line 415, page_profile.less */
+/* line 418, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .author .about {
   overflow: hidden;
 }
-/* line 417, page_profile.less */
+/* line 420, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .author .about p {
   margin: 0;
 }
-/* line 419, page_profile.less */
+/* line 422, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .author .about p.name {
   font-size: 1.2rem;
   color: #ec4863;
   font-weight: 700;
 }
-/* line 424, page_profile.less */
+/* line 427, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .author .about p.job {
   font-size: 1.2rem;
   font-weight: 700;
 }
-/* line 428, page_profile.less */
+/* line 431, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .author .about p.category {
   font-size: 1.2rem;
   font-weight: 700;
   margin-top: 30px;
 }
-/* line 432, page_profile.less */
+/* line 435, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .author .about p.category .value {
-  color: #290019;
+  color: #082e41;
 }
-/* line 439, page_profile.less */
+/* line 442, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .item > h5 {
   padding-bottom: 0;
 }
-/* line 443, page_profile.less */
+/* line 446, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .content p {
   margin: 5px 0 0 0;
 }
-/* line 446, page_profile.less */
+/* line 449, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .content .fader {
   position: absolute;
   width: 100%;
@@ -2433,45 +2530,45 @@ body.page-profile .information-section .information .content-block.answers-list 
   background: linear-gradient(0deg, #fefefe 0%, #fefefe 16%, rgba(255, 255, 255, 0) 100%);
   z-index: 1;
 }
-/* line 459, page_profile.less */
+/* line 462, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list a.readmore {
   color: #ec4863;
   font: 400 1.2rem Roboto;
   text-decoration: none;
 }
-/* line 463, page_profile.less */
+/* line 466, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list a.readmore:hover {
   text-decoration: underline;
 }
-/* line 467, page_profile.less */
+/* line 470, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list a#load-all-answers {
   display: block;
   width: 80%;
   margin: auto;
 }
-/* line 475, page_profile.less */
+/* line 478, page_profile.less */
 body.page-profile .information-section .ask-question {
   margin-top: 20px;
   overflow: hidden;
 }
-/* line 478, page_profile.less */
+/* line 481, page_profile.less */
 body.page-profile .information-section .ask-question .ask-text {
   float: left;
 }
-/* line 480, page_profile.less */
+/* line 483, page_profile.less */
 body.page-profile .information-section .ask-question .ask-text h3 {
   padding: 0;
 }
-/* line 484, page_profile.less */
+/* line 487, page_profile.less */
 body.page-profile .information-section .ask-question a {
   display: block;
   float: right;
 }
-/* line 492, page_profile.less */
+/* line 495, page_profile.less */
 body.page-profile .same-users-section .content-block.same-users-list {
   overflow: hidden;
 }
-/* line 494, page_profile.less */
+/* line 497, page_profile.less */
 body.page-profile .same-users-section .content-block.same-users-list .same-user {
   overflow: hidden;
   float: left;
@@ -2479,37 +2576,37 @@ body.page-profile .same-users-section .content-block.same-users-list .same-user 
   margin-left: 3%;
   padding-bottom: 20px;
 }
-/* line 499, page_profile.less */
+/* line 502, page_profile.less */
 body.page-profile .same-users-section .content-block.same-users-list .same-user:first-child {
   margin-left: 0;
 }
-/* line 503, page_profile.less */
+/* line 506, page_profile.less */
 body.page-profile .same-users-section .content-block.same-users-list .same-user .photo {
   width: 100%;
   overflow: hidden;
 }
-/* line 506, page_profile.less */
+/* line 509, page_profile.less */
 body.page-profile .same-users-section .content-block.same-users-list .same-user .photo img {
   width: 100%;
 }
-/* line 510, page_profile.less */
+/* line 513, page_profile.less */
 body.page-profile .same-users-section .content-block.same-users-list .same-user p {
   text-align: center;
 }
-/* line 513, page_profile.less */
+/* line 516, page_profile.less */
 body.page-profile .same-users-section .content-block.same-users-list .same-user p.lastname {
   margin: 0;
   margin-top: 5px;
   color: #ec4863;
   font: 500 1.4rem Roboto;
 }
-/* line 519, page_profile.less */
+/* line 522, page_profile.less */
 body.page-profile .same-users-section .content-block.same-users-list .same-user p.firstname {
   margin: 0;
   color: #ec4863;
   font: 700 1.2rem Roboto;
 }
-/* line 525, page_profile.less */
+/* line 528, page_profile.less */
 body.page-profile .same-users-section .content-block.same-users-list .same-user .rating-block {
   width: 60px;
   margin: 10px auto 0 auto;
@@ -2532,7 +2629,7 @@ body.page-profile-settings aside.additional-menu ul li {
 }
 /* line 14, page_profile_settings.less */
 body.page-profile-settings aside.additional-menu ul li a {
-  color: #b099a3;
+  color: #99a9b0;
   font: 500 1.4rem Roboto;
   text-decoration: none;
 }
@@ -2543,7 +2640,7 @@ body.page-profile-settings aside.additional-menu ul li a:hover {
 /* line 22, page_profile_settings.less */
 body.page-profile-settings aside.additional-menu ul li.active a {
   font-weight: bold;
-  color: #290019;
+  color: #082e41;
 }
 /* line 33, page_profile_settings.less */
 body.page-profile-settings.common section.content .upload-photo form .photo-container {
@@ -2573,7 +2670,7 @@ body.page-profile-settings.common section.content .control input {
 }
 /* line 56, page_profile_settings.less */
 body.page-profile-settings.common section.content .control p {
-  color: #b099a3;
+  color: #99a9b0;
   font: 400 1.2rem Roboto;
 }
 /* line 61, page_profile_settings.less */
@@ -2582,7 +2679,7 @@ body.page-profile-settings.common section.content form#profile-settings-form {
 }
 /* line 63, page_profile_settings.less */
 body.page-profile-settings.common section.content form#profile-settings-form label {
-  color: #290019;
+  color: #082e41;
   font: 500 1.4rem Roboto;
   margin-bottom: 5px;
 }
@@ -2714,71 +2811,73 @@ body.page-profile-settings.about-me .field.upload p {
 }
 /* line 180, page_profile_settings.less */
 body.page-profile-settings.about-me a.add-document-button {
-  margin-top: 15px;
-  text-align: center;
-  font-size: 1.2rem;
-  font-weight: 500;
-  background: #e9f7f1;
-  display: block;
-  padding: 5px 0;
+  background-color: #f4efff;
+  border: medium none;
+  border-radius: 5px;
   color: #b099a3;
+  cursor: pointer;
+  display: block;
+  padding: 6px 0;
+  width: 100%;
+  margin-right: 20px;
+  margin-top: 10px;
   text-decoration: none;
-  margin-bottom: 30px;
+  text-align: center;
 }
-/* line 191, page_profile_settings.less */
+/* line 193, page_profile_settings.less */
 body.page-profile-settings.about-me a.add-document-button:hover {
-  background: #d8e6e0;
-  color: #290019;
+  background: #d2cddd;
+  color: #082e41;
 }
-/* line 196, page_profile_settings.less */
+/* line 198, page_profile_settings.less */
 body.page-profile-settings.about-me .select2-container {
   width: 45% !important;
   margin-right: 4%;
 }
-/* line 201, page_profile_settings.less */
+/* line 203, page_profile_settings.less */
 body.page-profile-settings.about-me section.specialization .field {
   float: left;
   width: 48%;
   margin: 5px 0;
 }
-/* line 205, page_profile_settings.less */
+/* line 207, page_profile_settings.less */
 body.page-profile-settings.about-me section.specialization .field:nth-child(even) {
   margin-right: 0;
 }
-/* line 208, page_profile_settings.less */
+/* line 210, page_profile_settings.less */
 body.page-profile-settings.about-me section.specialization .field .checkbox {
   float: left;
   margin-right: 10px;
 }
-/* line 211, page_profile_settings.less */
+/* line 213, page_profile_settings.less */
 body.page-profile-settings.about-me section.specialization .field .checkbox.checked + label {
   color: #ec4863;
 }
-/* line 215, page_profile_settings.less */
+/* line 217, page_profile_settings.less */
 body.page-profile-settings.about-me section.specialization .field label {
   display: block;
   overflow: hidden;
   margin: 2px 0;
   font-size: 500;
 }
-/* line 222, page_profile_settings.less */
+/* line 224, page_profile_settings.less */
 body.page-profile-settings.about-me section.specialization input[type="text"] {
   margin-top: 20px;
 }
-/* line 227, page_profile_settings.less */
+/* line 229, page_profile_settings.less */
 body.page-profile-settings.about-me section.education .items {
   overflow: hidden;
 }
-/* line 229, page_profile_settings.less */
+/* line 231, page_profile_settings.less */
 body.page-profile-settings.about-me section.education .items .item {
   overflow: hidden;
   margin-bottom: 30px;
 }
-/* line 232, page_profile_settings.less */
+/* line 234, page_profile_settings.less */
 body.page-profile-settings.about-me section.education .items .item .controls {
   float: left;
 }
-/* line 234, page_profile_settings.less */
+/* line 236, page_profile_settings.less */
 body.page-profile-settings.about-me section.education .items .item .controls i {
   font-size: 1.8rem;
   display: block;
@@ -2786,76 +2885,60 @@ body.page-profile-settings.about-me section.education .items .item .controls i {
   margin-bottom: 5px;
   cursor: pointer;
 }
-/* line 240, page_profile_settings.less */
+/* line 242, page_profile_settings.less */
 body.page-profile-settings.about-me section.education .items .item .controls i.fa-times-circle-o {
   color: #eb5245;
 }
-/* line 245, page_profile_settings.less */
+/* line 247, page_profile_settings.less */
 body.page-profile-settings.about-me section.education .items .item .scan-container {
   float: left;
   width: 60px;
   margin-right: 15px;
 }
-/* line 249, page_profile_settings.less */
+/* line 251, page_profile_settings.less */
 body.page-profile-settings.about-me section.education .items .item .scan-container img {
   display: block;
   width: 100%;
 }
-/* line 254, page_profile_settings.less */
+/* line 256, page_profile_settings.less */
 body.page-profile-settings.about-me section.education .items .item .info {
   overflow: hidden;
 }
-/* line 256, page_profile_settings.less */
+/* line 258, page_profile_settings.less */
 body.page-profile-settings.about-me section.education .items .item .info p {
   margin-top: 0;
   margin-bottom: 5px;
 }
-/* line 259, page_profile_settings.less */
+/* line 261, page_profile_settings.less */
 body.page-profile-settings.about-me section.education .items .item .info p span.key {
   font-weight: bold;
-  color: #290019;
+  color: #082e41;
 }
-/* line 268, page_profile_settings.less */
+/* line 270, page_profile_settings.less */
 body.page-profile-settings.about-me section.education form.university .input-container {
   overflow: hidden;
 }
-/* line 271, page_profile_settings.less */
+/* line 273, page_profile_settings.less */
 body.page-profile-settings.about-me section.education form.university .field.special,
 body.page-profile-settings.about-me section.education form.university .field.quality {
   float: left;
   width: 45%;
   margin-right: 5%;
 }
-/* line 276, page_profile_settings.less */
-body.page-profile-settings.about-me section.education form.university input[type="submit"] {
-  border-radius: 5px;
-  background-color: #f4efff;
-  width: 100%;
-  border: none;
-  cursor: pointer;
-  color: #b099a3;
-  display: block;
-  padding: 6px 0;
-}
-/* line 286, page_profile_settings.less */
-body.page-profile-settings.about-me section.education form.university input[type="submit"]:hover {
-  background-color: #d2cddd;
-  color: #290019;
-}
-/* line 294, page_profile_settings.less */
+/* line 296, page_profile_settings.less */
 body.page-profile-settings.about-me section.professional .items {
   overflow: hidden;
 }
-/* line 296, page_profile_settings.less */
+/* line 298, page_profile_settings.less */
 body.page-profile-settings.about-me section.professional .items .item {
   overflow: hidden;
   margin-bottom: 30px;
 }
-/* line 299, page_profile_settings.less */
+/* line 301, page_profile_settings.less */
 body.page-profile-settings.about-me section.professional .items .item .controls {
   float: left;
 }
-/* line 301, page_profile_settings.less */
+/* line 303, page_profile_settings.less */
 body.page-profile-settings.about-me section.professional .items .item .controls i {
   font-size: 1.8rem;
   display: block;
@@ -2863,157 +2946,157 @@ body.page-profile-settings.about-me section.professional .items .item .controls 
   margin-bottom: 5px;
   cursor: pointer;
 }
-/* line 307, page_profile_settings.less */
+/* line 309, page_profile_settings.less */
 body.page-profile-settings.about-me section.professional .items .item .controls i.fa-times-circle-o {
   color: #eb5245;
 }
-/* line 312, page_profile_settings.less */
+/* line 314, page_profile_settings.less */
 body.page-profile-settings.about-me section.professional .items .item .scan-container {
   float: left;
   width: 60px;
   margin-right: 15px;
 }
-/* line 316, page_profile_settings.less */
+/* line 318, page_profile_settings.less */
 body.page-profile-settings.about-me section.professional .items .item .scan-container img {
   display: block;
   width: 100%;
 }
-/* line 321, page_profile_settings.less */
+/* line 323, page_profile_settings.less */
 body.page-profile-settings.about-me section.professional .items .item .info {
   overflow: hidden;
 }
-/* line 323, page_profile_settings.less */
+/* line 325, page_profile_settings.less */
 body.page-profile-settings.about-me section.professional .items .item .info p {
   margin-top: 0;
   margin-bottom: 5px;
 }
-/* line 326, page_profile_settings.less */
+/* line 328, page_profile_settings.less */
 body.page-profile-settings.about-me section.professional .items .item .info p span.key {
   font-weight: bold;
-  color: #290019;
+  color: #082e41;
 }
-/* line 334, page_profile_settings.less */
+/* line 336, page_profile_settings.less */
 body.page-profile-settings.about-me section.professional form.cert {
   width: 100%;
 }
-/* line 336, page_profile_settings.less */
+/* line 338, page_profile_settings.less */
 body.page-profile-settings.about-me section.professional form.cert .input-container {
   overflow: hidden;
 }
-/* line 339, page_profile_settings.less */
+/* line 341, page_profile_settings.less */
 body.page-profile-settings.about-me section.professional form.cert .field.year,
 body.page-profile-settings.about-me section.professional form.cert .field.quality {
   float: left;
   width: 45%;
   margin-right: 5%;
 }
-/* line 343, page_profile_settings.less */
+/* line 345, page_profile_settings.less */
 body.page-profile-settings.about-me section.professional form.cert .field.year .select2-container,
 body.page-profile-settings.about-me section.professional form.cert .field.quality .select2-container {
   width: 100% !important;
 }
-/* line 347, page_profile_settings.less */
+/* line 349, page_profile_settings.less */
 body.page-profile-settings.about-me section.professional form.cert input[type="submit"] {
   border-radius: 5px;
   background-color: #f4efff;
   width: 100%;
   border: none;
   cursor: pointer;
-  color: #b099a3;
+  color: #99a9b0;
   display: block;
   padding: 6px 0;
 }
-/* line 357, page_profile_settings.less */
+/* line 359, page_profile_settings.less */
 body.page-profile-settings.about-me section.professional form.cert input[type="submit"]:hover {
   background-color: #d2cddd;
-  color: #290019;
+  color: #082e41;
 }
-/* line 364, page_profile_settings.less */
+/* line 366, page_profile_settings.less */
 body.page-profile-settings.about-me input[type="submit"] {
   margin-right: 20px;
   margin-top: 30px;
 }
-/* line 371, page_profile_settings.less */
+/* line 373, page_profile_settings.less */
 body.page-profile-settings.contacts form .field {
   float: left;
   width: 48%;
   margin-right: 4%;
 }
-/* line 375, page_profile_settings.less */
+/* line 377, page_profile_settings.less */
 body.page-profile-settings.contacts form .field.phone {
   margin-right: 0;
 }
-/* line 379, page_profile_settings.less */
+/* line 381, page_profile_settings.less */
 body.page-profile-settings.contacts form input[type="submit"] {
   margin-right: 20px;
   margin-top: 30px;
 }
-/* line 386, page_profile_settings.less */
+/* line 388, page_profile_settings.less */
 body.page-profile-settings.consults .prices {
   margin-bottom: 20px;
 }
-/* line 388, page_profile_settings.less */
+/* line 390, page_profile_settings.less */
 body.page-profile-settings.consults .prices .item {
   margin-bottom: 0px;
 }
-/* line 391, page_profile_settings.less */
+/* line 393, page_profile_settings.less */
 body.page-profile-settings.consults .prices .item label.name {
   text-transform: uppercase;
   font-size: 1.4rem;
-  color: #b099a3;
+  color: #99a9b0;
   display: block;
   float: left;
 }
-/* line 398, page_profile_settings.less */
+/* line 400, page_profile_settings.less */
 body.page-profile-settings.consults .prices .item .toggle.container {
   margin-top: 7px;
   margin-left: 15px;
   float: left;
 }
-/* line 402, page_profile_settings.less */
+/* line 404, page_profile_settings.less */
 body.page-profile-settings.consults .prices .item .toggle.container + p:after {
   content: 'активировать';
 }
-/* line 405, page_profile_settings.less */
+/* line 407, page_profile_settings.less */
 body.page-profile-settings.consults .prices .item .toggle.container.checked + p:after {
   content: 'активно';
   color: #ec4863;
 }
-/* line 410, page_profile_settings.less */
+/* line 412, page_profile_settings.less */
 body.page-profile-settings.consults .prices .item p {
   display: block;
   float: left;
   margin-left: 10px;
   font-size: 1.2rem;
 }
-/* line 416, page_profile_settings.less */
+/* line 418, page_profile_settings.less */
 body.page-profile-settings.consults .prices .item .price {
   height: 0;
   transition: all 0.2s ease;
   overflow: hidden;
 }
-/* line 420, page_profile_settings.less */
+/* line 422, page_profile_settings.less */
 body.page-profile-settings.consults .prices .item .price input {
   width: 120px;
   display: inline-block;
   margin-right: 10px;
 }
-/* line 427, page_profile_settings.less */
+/* line 429, page_profile_settings.less */
 body.page-profile-settings.consults .prices .item.active .price {
   height: 50px;
 }
-/* line 433, page_profile_settings.less */
+/* line 435, page_profile_settings.less */
 body.page-profile-settings.consults .prices .pay-notice .date {
-  color: #290019;
+  color: #082e41;
   font-weight: bold;
   margin-bottom: 15px;
 }
-/* line 441, page_profile_settings.less */
+/* line 443, page_profile_settings.less */
 body.page-profile-settings.consults .places .item {
   overflow: hidden;
   margin-bottom: 8px;
 }
-/* line 444, page_profile_settings.less */
+/* line 446, page_profile_settings.less */
 body.page-profile-settings.consults .places .item a.remove-place {
   border-radius: 13px;
   -o-border-radius: 13px;
@@ -3029,29 +3112,29 @@ body.page-profile-settings.consults .places .item a.remove-place {
   margin-right: 8px;
   top: 2px;
 }
-/* line 458, page_profile_settings.less */
+/* line 460, page_profile_settings.less */
 body.page-profile-settings.consults .places .item a.remove-place i {
   color: #f85649;
   font-size: 1.1rem;
 }
-/* line 463, page_profile_settings.less */
+/* line 465, page_profile_settings.less */
 body.page-profile-settings.consults .places .item span.address {
   margin-right: 20px;
 }
-/* line 469, page_profile_settings.less */
+/* line 471, page_profile_settings.less */
 body.page-profile-settings.consults .places .item .radio.container {
   top: 4px;
   margin-right: 4px;
 }
-/* line 473, page_profile_settings.less */
+/* line 475, page_profile_settings.less */
 body.page-profile-settings.consults .places .item label {
   display: inline;
 }
-/* line 477, page_profile_settings.less */
+/* line 479, page_profile_settings.less */
 body.page-profile-settings.consults .places input.plus {
   margin: 20px 0 30px 0;
 }
-/* line 481, page_profile_settings.less */
+/* line 483, page_profile_settings.less */
 body.page-profile-settings.consults input[type="submit"] {
   margin-right: 20px;
 }
@@ -3088,7 +3171,7 @@ body.page-session-manage section.content .filter p {
   display: block;
   float: left;
   margin-right: 40px;
-  color: #290019;
+  color: #082e41;
   font-weight: 500;
 }
 /* line 12, page_session.less */
@@ -3145,7 +3228,7 @@ body.page-session-manage section.content .sessions .item .separator {
 /* line 55, page_session.less */
 body.page-session-manage section.content .sessions .item p.session-begin .value {
   font-weight: 500;
-  color: #290019;
+  color: #082e41;
 }
 /* line 60, page_session.less */
 body.page-session-manage section.content .sessions .item a.cancel {
@@ -3168,7 +3251,7 @@ body.page-session-manage section.content .sessions .item.invitation form {
 /* line 75, page_session.less */
 body.page-session-manage section.content .sessions .item.invitation label {
   font-weight: bold;
-  color: #290019;
+  color: #082e41;
 }
 /* line 78, page_session.less */
 body.page-session-manage section.content .sessions .item.invitation label:first-child {
