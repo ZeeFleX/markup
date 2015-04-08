@@ -759,7 +759,30 @@ header.header .mainmenu li a {
 header.header .mainmenu li a:hover {
   text-decoration: underline;
 }
-/* line 214, global.less */
+/* line 213, global.less */
+header.header .time {
+  float: right;
+  margin: 0 30px;
+  overflow: hidden;
+  padding: 3px;
+}
+/* line 218, global.less */
+header.header .time p {
+  display: block;
+  float: left;
+  margin-right: 20px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #aeaeae;
+  text-transform: uppercase;
+  background: #f5f5f5;
+  border-radius: 30px;
+  -o-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  padding: 4px 20px;
+}
+/* line 235, global.less */
 .user-menu-section {
   background: #f8f8f8;
   overflow: hidden;
@@ -769,32 +792,32 @@ header.header .mainmenu li a:hover {
   -moz-box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.1);
 }
-/* line 223, global.less */
+/* line 244, global.less */
 .user-menu-section .wrapper .user-menu-container {
   right: 50%;
   float: right;
 }
-/* line 227, global.less */
+/* line 248, global.less */
 .user-menu-section .wrapper .user-menu {
   left: 50%;
   float: left;
 }
-/* line 230, global.less */
+/* line 251, global.less */
 .user-menu-section .wrapper .user-menu li {
   margin: 0 10px;
   float: left;
 }
-/* line 234, global.less */
+/* line 255, global.less */
 .user-menu-section .wrapper .user-menu a {
   color: #082e41;
   font: 400 1.4rem  Roboto;
   text-decoration: none;
 }
-/* line 238, global.less */
+/* line 259, global.less */
 .user-menu-section .wrapper .user-menu a:hover {
   text-decoration: underline;
 }
-/* line 247, global.less */
+/* line 268, global.less */
 .footer {
   width: 100%;
   margin-top: 20px;
@@ -802,12 +825,12 @@ header.header .mainmenu li a:hover {
   font-weight: 500;
   font-size: 1.4rem;
 }
-/* line 253, global.less */
+/* line 274, global.less */
 .footer a {
   text-decoration: none;
   color: #082e41;
 }
-/* line 257, global.less */
+/* line 278, global.less */
 .footer .top {
   padding: 8px 30px;
   background: #f9f9f9;
@@ -815,71 +838,71 @@ header.header .mainmenu li a:hover {
   box-shadow: 0 2px 3px #ddd;
   z-index: 1;
 }
-/* line 263, global.less */
+/* line 284, global.less */
 .footer .top .contact {
   display: block;
   float: left;
 }
-/* line 267, global.less */
+/* line 288, global.less */
 .footer .top .support {
   display: block;
   float: right;
 }
-/* line 270, global.less */
+/* line 291, global.less */
 .footer .top .support a {
   color: #ec4863;
 }
-/* line 274, global.less */
+/* line 295, global.less */
 .footer .top .footer-logo {
   margin: 20px 0;
 }
-/* line 276, global.less */
+/* line 297, global.less */
 .footer .top .footer-logo .logo {
   float: left;
   margin-right: 15px;
 }
-/* line 280, global.less */
+/* line 301, global.less */
 .footer .top .footer-logo .title {
   display: block;
   float: left;
   font-size: 1.4rem;
   margin-top: 5px;
 }
-/* line 285, global.less */
+/* line 306, global.less */
 .footer .top .footer-logo .title span {
   font-size: 1.2rem;
   font-weight: normal;
 }
-/* line 292, global.less */
+/* line 313, global.less */
 .footer .bottom {
   padding: 8px 30px;
   background: #f5f5f5;
   overflow: hidden;
 }
-/* line 296, global.less */
+/* line 317, global.less */
 .footer .bottom p {
   display: block;
   float: left;
 }
-/* line 300, global.less */
+/* line 321, global.less */
 .footer .bottom ul {
   float: right;
   margin-top: 10px;
 }
-/* line 303, global.less */
+/* line 324, global.less */
 .footer .bottom ul li {
   float: left;
   margin-left: 20px;
 }
-/* line 307, global.less */
+/* line 328, global.less */
 .footer .bottom ul li a:hover {
   text-decoration: underline;
 }
-/* line 323, global.less */
+/* line 344, global.less */
 .error {
   color: #ec4863;
 }
-/* line 327, global.less */
+/* line 348, global.less */
 #success {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -887,7 +910,7 @@ header.header .mainmenu li a:hover {
   padding: 15px 30px;
   display: none;
 }
-/* line 336, global.less */
+/* line 357, global.less */
 #success_forgot {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -895,7 +918,7 @@ header.header .mainmenu li a:hover {
   padding: 15px 30px;
   display: none;
 }
-/* line 345, global.less */
+/* line 366, global.less */
 .preloader_popup {
   background: url("../images/preloader.gif") 50% 50% no-repeat #ffffff !important;
   opacity: 0.3;
@@ -904,7 +927,7 @@ header.header .mainmenu li a:hover {
   left: 0px;
   z-index: 10000;
 }
-/* line 353, global.less */
+/* line 374, global.less */
 .preloader_popup_a {
   background: url("../images/preloader.gif") 50% 50% no-repeat #ffffff !important;
   opacity: 0.3;
@@ -915,7 +938,7 @@ header.header .mainmenu li a:hover {
   height: 190px !important;
   width: 535px;
 }
-/* line 364, global.less */
+/* line 385, global.less */
 .preloader_popup_s {
   background: url("../images/preloader.gif") 50% 50% no-repeat #ffffff !important;
   opacity: 0.3;
@@ -926,7 +949,7 @@ header.header .mainmenu li a:hover {
   height: 245px !important;
   width: 238px;
 }
-/* line 374, global.less */
+/* line 395, global.less */
 .preloader_popup_l {
   background: url("../images/preloader.gif") 50% 50% no-repeat #ffffff !important;
   opacity: 0.3;
@@ -937,7 +960,7 @@ header.header .mainmenu li a:hover {
   height: 440px !important;
   width: 380px;
 }
-/* line 384, global.less */
+/* line 405, global.less */
 .preloader_popup_r {
   background: url("../images/preloader.gif") 50% 50% no-repeat #ffffff !important;
   opacity: 0.3;
@@ -948,7 +971,7 @@ header.header .mainmenu li a:hover {
   height: 453px !important;
   width: 380px;
 }
-/* line 394, global.less */
+/* line 415, global.less */
 .preloader_popup_f {
   background: url("../images/preloader.gif") 50% 50% no-repeat #ffffff !important;
   opacity: 0.3;
@@ -959,7 +982,7 @@ header.header .mainmenu li a:hover {
   height: 265px !important;
   width: 380px;
 }
-/* line 404, global.less */
+/* line 425, global.less */
 .preloader_popup_spec {
   background: url("../images/preloader.gif") 50% 50% no-repeat #ffffff !important;
   opacity: 0.3;
@@ -970,15 +993,15 @@ header.header .mainmenu li a:hover {
   height: 295px !important;
   width: 400px;
 }
-/* line 414, global.less */
+/* line 435, global.less */
 #registration-window {
   display: none;
 }
-/* line 417, global.less */
+/* line 438, global.less */
 #forgot-password-window {
   display: none;
 }
-/* line 420, global.less */
+/* line 441, global.less */
 .hidden {
   display: none;
 }

@@ -46,6 +46,10 @@
                 </li>
             </ul>
         </div>
+        <div class="time">
+            <p>Мы работаем по московскому времени</p>
+            <div class="clock"></div>
+        </div>
     </header>
     <section class="resume-section">
         <div class="wrapper">

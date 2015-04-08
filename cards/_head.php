@@ -20,3 +20,4 @@
 <script src="js/uploader.js"></script>
 <script src="js/jquery.jcrop.min.js"></script>
 <script src="js/select2.min.js"></script>
+<script src="js/time.js"></script>
