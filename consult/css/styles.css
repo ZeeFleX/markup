@@ -4001,6 +4001,165 @@ body.page-question-list .wrapper .dialogue .messages .message .content .date {
   color: #8aa4a2;
   margin: 0;
 }
+/* line 3, page_public_question_list.less */
+body.page-public-question-list .wrapper section.ask-question {
+  overflow: hidden;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+/* line 7, page_public_question_list.less */
+body.page-public-question-list .wrapper section.ask-question a.btn {
+  display: block;
+  float: right;
+}
+/* line 11, page_public_question_list.less */
+body.page-public-question-list .wrapper section.ask-question h2 {
+  display: block;
+  overflow: hidden;
+  font-size: 2.4rem;
+  font-weight: 500;
+  padding: 0;
+}
+/* line 19, page_public_question_list.less */
+body.page-public-question-list .wrapper section.search-questions {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+/* line 22, page_public_question_list.less */
+body.page-public-question-list .wrapper section.search-questions .left {
+  float: left;
+  width: 62%;
+  margin-right: 2%;
+}
+/* line 27, page_public_question_list.less */
+body.page-public-question-list .wrapper section.search-questions .right {
+  overflow: hidden;
+}
+/* line 29, page_public_question_list.less */
+body.page-public-question-list .wrapper section.search-questions .right a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+/* line 38, page_public_question_list.less */
+body.page-public-question-list .wrapper section.questions {
+  overflow: hidden;
+}
+/* line 40, page_public_question_list.less */
+body.page-public-question-list .wrapper section.questions .question {
+  float: left;
+  margin-right: 2%;
+  width: 49%;
+  margin-bottom: 20px;
+}
+/* line 45, page_public_question_list.less */
+body.page-public-question-list .wrapper section.questions .question:nth-child(2n) {
+  margin-right: 0;
+}
+/* line 48, page_public_question_list.less */
+body.page-public-question-list .wrapper section.questions .question:nth-child(2n+1) {
+  clear: left;
+}
+/* line 51, page_public_question_list.less */
+body.page-public-question-list .wrapper section.questions .question .author {
+  overflow: hidden;
+}
+/* line 53, page_public_question_list.less */
+body.page-public-question-list .wrapper section.questions .question .author .photo-container {
+  float: left;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  -o-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  overflow: hidden;
+  border: solid 1px #8aa4a2;
+  margin-right: 20px;
+}
+/* line 65, page_public_question_list.less */
+body.page-public-question-list .wrapper section.questions .question .author .container {
+  overflow: hidden;
+}
+/* line 67, page_public_question_list.less */
+body.page-public-question-list .wrapper section.questions .question .author .container p {
+  margin: 2px 0;
+}
+/* line 69, page_public_question_list.less */
+body.page-public-question-list .wrapper section.questions .question .author .container p.name {
+  color: #4ad0c5;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+/* line 74, page_public_question_list.less */
+body.page-public-question-list .wrapper section.questions .question .author .container p.job {
+  color: #8aa4a2;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+/* line 79, page_public_question_list.less */
+body.page-public-question-list .wrapper section.questions .question .author .container p.category {
+  font-size: 1.0rem;
+  color: #8aa4a2;
+  margin-top: 10px;
+  font-weight: 700;
+}
+/* line 84, page_public_question_list.less */
+body.page-public-question-list .wrapper section.questions .question .author .container p.category span {
+  color: #35504e;
+}
+/* line 91, page_public_question_list.less */
+body.page-public-question-list .wrapper section.questions .question h4 {
+  color: #35504e;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+/* line 95, page_public_question_list.less */
+body.page-public-question-list .wrapper section.questions .question h4 span {
+  color: #4ad0c5;
+}
+/* line 99, page_public_question_list.less */
+body.page-public-question-list .wrapper section.questions .question .answer-content,
+body.page-public-question-list .wrapper section.questions .question .question-content {
+  min-height: 100px;
+  max-height: 300px;
+  overflow: hidden;
+}
+/* line 103, page_public_question_list.less */
+body.page-public-question-list .wrapper section.questions .question .answer-content .fader,
+body.page-public-question-list .wrapper section.questions .question .question-content .fader {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  z-index: 1;
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, #ffffff));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#ffffff', GradientType=0);
+  /* IE6-9 */
+}
+/* line 119, page_public_question_list.less */
+body.page-public-question-list .wrapper section.questions .question a#read-more {
+  color: #4ad0c5;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+/* line 123, page_public_question_list.less */
+body.page-public-question-list .wrapper section.questions .question a#read-more:hover {
+  text-decoration: underline;
+}
 /* line 3, page_reviews.less */
 body.page-reviews .wrapper section.reviews {
   float: left;
