@@ -1,0 +1,380 @@
+body.page-consultation{
+	.profile {
+        float: left;
+        width: 57%;
+        margin-top: 20px;
+        .left {
+            float: left;
+            width: 28%;
+            margin-top: 10px;
+            .photo {
+                overflow: hidden;
+                border-radius:7px;
+                -o-border-radius:7px;
+                -moz-border-radius:7px;
+                -webkit-border-radius:7px;
+                img {
+                    display: block;
+                    width: 100%;
+                }
+            }
+            .place {
+                margin-top: 17px;
+                text-align: center;
+                color: @sea_light;
+                font: 400 1.2rem Roboto;
+                .fa {
+                    color:@sky;
+                    &.fa-map-marker{
+                    }
+                }
+            }
+            .expirience {
+                text-align: center;
+                margin-top: 13px;
+                .fa {
+                    display: block;
+                    width: 100%;
+                    font-size: 18px;
+                }
+                p {
+                    font: 400 1.4rem Roboto;
+                    .value {
+                        color:@sea;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+        .right {
+            float: right;
+            width: 68%;
+            overflow: hidden;
+            header {
+                overflow: hidden;
+                .name {
+                    color: @sea;
+                    font: 700 1.8rem Roboto;
+                    float: left;
+                    .lastname {
+                        text-transform: uppercase;
+                    }
+                    .firstname {
+                        text-transform: none;
+                    }
+                    .job {
+                        color: @sky;
+                        font: 500 1.4rem Roboto;
+                        margin-top: 5px;
+                    }
+                    p{
+                        margin:0;
+                    }
+                }
+                .toolbar {
+                    float: right;
+                    .rating-block {
+                        float: right;
+                    }
+                    a.envelope {
+                        float: right;
+                        color: @sky;
+                        text-decoration: none;
+                        margin-top: 6px;
+                        margin-right: 15px;
+                        .fa {
+                            font-size: 2.0rem;
+                        }
+                    }
+                    .profile-menu {
+                        float: right;
+                        margin-top: 9px;
+                        margin-right: 15px;
+                        a {
+                            &:hover{
+                            }
+                        }
+                    }
+                }
+            }
+            .contacts {
+                h5{
+                    padding-bottom: 0;
+                }
+                p {
+                    margin:2px 0;
+                    font-weight: 500;
+                    span.value {
+                        color:@sky;
+                    }
+                }
+            }
+            .introtext {
+                a.readmore{
+                    color: @sky;
+                    font: italic 1.4rem Roboto;
+                }
+            }
+        }
+    }
+    section.consultation-info{
+    	float: left;
+    	width: 41%;
+    	margin-left: 2%;
+    	margin-top: 7px;
+    	margin-bottom: 0;
+        .content-block{
+            padding:0;
+            .info{
+                padding:20px;
+                .head{
+                    position: relative;
+                    i.fa.fa-calendar{
+                        color:@red;
+                        font-size:1.8rem;
+                        cursor: pointer;
+                        position: absolute;
+                        top:10px;
+                        right:10px;
+                    }
+                }
+                .content{
+                    p{
+                        margin:5px 0;
+                        color:  @sea_light;
+                        font-size: 1.4rem; /* Приближение из-за подстановки шрифтов */
+                        font-weight: 500;
+                        span.value{
+                            color:@sea;
+                        }
+                        span.not-paid{
+                            margin-left: 15px;
+                            color:@red;
+                        }
+                        span.paid{
+                            margin-left: 15px;
+                            color:@green;
+                        }
+                        &.remaining{
+                        	margin:15px 0;
+                        	span{
+                        		color:@sky;
+                        	}
+                        }
+                    }
+                    a#pay{
+                        margin-top: 10px;
+                    }
+                    a.btn.ghost{
+                    	margin:5px 0;
+                    }
+                }
+            }
+        }
+    }
+    section.questions{
+        overflow: hidden;
+        float: left;
+        margin-right: 2%;
+        width: 57%;
+        margin-bottom: 0;
+        .messages{
+	        .message{
+	            margin-bottom: 20px;
+	            .question-menu{
+	            	position: absolute;
+	            	right:0;
+	            	top:0;
+	            }
+	            .author{
+	                overflow: hidden;
+	                .photo-container{
+	                    float: left;
+	                    width: 50px;
+	                    height: 50px;
+	                    border-radius:50px;
+	                    -o-border-radius:50px;
+	                    -moz-border-radius:50px;
+	                    -webkit-border-radius:50px;
+	                    overflow: hidden;
+	                    border:solid 1px @sea_light;
+	                    margin-right: 20px;
+	                }
+	                .container{
+	                    overflow: hidden;
+	                    p{
+	                        margin:2px 0;
+	                        &.name{
+	                            color: @sky;
+	                            font-size: 1.2rem;
+	                            font-weight: 700;
+	                        }
+	                        &.job{
+	                            color: @sea_light;
+	                            font-size: 1.2rem;
+	                            font-weight: 700;
+	                        }
+	                    }
+	                }
+	            }
+	           	p.text{
+	           		margin-left:70px;
+	           	}
+	           	p.date{
+	           		margin-left:70px;
+					color: #b9d4cc;
+					font-size: 1.2rem;
+					font-weight: 400;
+					margin-top:10px;
+	           	}
+	        }
+            a#read-more{
+                color:@sky;
+                font-size:1.2rem;
+                text-decoration: none;
+                text-align: center;
+                display: block;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+            form.ask-question{
+                overflow: hidden;
+                margin-top: 20px;
+                textarea{
+                    height: 98px;
+                }
+                input.btn{
+                    float: right;
+                }
+            }
+        }
+    }
+    section.my-notes{
+        overflow: hidden;
+        .notes{
+            .note{
+                overflow: hidden;
+                margin-bottom: 20px;
+                span.date{
+                    color:  #b9d4cc;
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                    display: block;
+                    float: left;
+                }
+                .note-menu{
+                    float: left;
+                    margin-left: 20px;
+                    margin-top: 2px;
+                    .fa-circle{
+                        color: #b9d4cc;
+                        font-size:0.5rem;
+                    }
+                }
+            }
+        }
+        form{
+            overflow: hidden;
+            textarea{
+                height: 98px;
+            }
+            input.btn{
+                float: right;
+            }
+        }
+    }
+    section.reviews {
+        float: left;
+        width: 57%;
+        .content-block {
+            .review {
+                box-sizing:border-box;
+                -moz-box-sizing:border-box;
+                padding: 10px 20px 30px 20px;
+                margin-bottom: 60px;
+                .quote-arrow {
+                    position: absolute;
+                    width: 43px;
+                    height: 25px;
+                    background: url('../images/quote-arrow.png');
+                    bottom:-25px;
+                    left:60px;
+                }
+                .author {
+                    overflow: hidden;
+                    margin-top: 25px;
+                    .photo {
+                        border-radius:50px;
+                        -moz-border-radius:50px;
+                        -o-border-radius:50px;
+                        -webkit-border-radius:50px;
+                        overflow: hidden;
+                        width: 50px;
+                        height: 50px;
+                        float: left;
+                        img {
+                            display: block;
+                            min-width:100%;
+                            min-height:100%;
+                        }
+                    }
+                    .text {
+                        overflow: hidden;
+                        p {
+                            margin-left: 10px;
+                            font-size: 1.2rem;
+                            .author-name, .user-name {
+                                color: @sky;
+                                font: 700 1.2rem Roboto;
+                            }
+                        }
+                    }
+                }
+                .toolbar {
+                    position: absolute;
+                    right:0;
+                    bottom:0;
+                    .review-menu {
+                        float: left;
+                        margin-right: 20px;
+                        margin-top: 11px;
+                    }
+                    .review-date {
+                        float: left;
+                        margin-right: 20px;
+                        font-size: 1.2rem;
+                    }
+                    .readmore {
+                        border-top-left-radius: 5px;
+                        -o-border-top-left-radius: 5px;
+                        -moz-border-top-left-radius: 5px;
+                        -webkit-border-top-left-radius: 5px;
+                        float: left;
+                        text-decoration: none;
+                        color:@sky;
+                        display: block;
+                        font-size: 1.2rem;
+                        border-left:dashed 1px #b9d4cc;
+                        border-top:dashed 1px #b9d4cc;
+                        padding:8px 20px;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+            #load-more-reviews {
+                width:200px;
+                text-align: center;
+                margin:auto;
+                display: block;
+            }
+        }
+        .write-review{
+        	textarea{
+        		height:98px;
+        	}
+        }
+    }
+}

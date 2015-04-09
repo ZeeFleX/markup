@@ -28,6 +28,9 @@ $(document).ready(function () {
 });
 
 var loadInterface = function(){
+    $('.btn.disabled').on('click', function(e){
+        e.preventDefault();
+    });
     //Загрузка Timepicker
     loadTimePickers();
     //Валидация

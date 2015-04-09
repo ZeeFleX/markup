@@ -178,8 +178,20 @@ p {
   color: #ffffff;
   background: #eb5245;
 }
-/*ЧЕКБОКСЫ*/
+/* line 166, interface.less */
+.btn.ghost.disabled {
+  cursor: default;
+  border-color: #b9d4cc;
+  color: #b9d4cc;
+}
 /* line 170, interface.less */
+.btn.ghost.disabled:hover {
+  border-color: #b9d4cc;
+  color: #b9d4cc;
+  background: #ffffff;
+}
+/*ЧЕКБОКСЫ*/
+/* line 180, interface.less */
 .container.toggle {
   display: inline-block;
   border-radius: 50px;
@@ -193,7 +205,7 @@ p {
   -webkit-transition: background 0.3s ease;
   -moz-transition: background 0.3s ease;
 }
-/* line 182, interface.less */
+/* line 192, interface.less */
 .container.toggle .handle {
   position: relative;
   border-radius: 18px;
@@ -205,15 +217,15 @@ p {
   -webkit-transition: left 0.3s ease;
   -moz-transition: left 0.3s ease;
 }
-/* line 193, interface.less */
+/* line 203, interface.less */
 .container.toggle.checked {
   background: #4ad0c5;
 }
-/* line 195, interface.less */
+/* line 205, interface.less */
 .container.toggle.checked .handle {
   left: 19px;
 }
-/* line 200, interface.less */
+/* line 210, interface.less */
 .container.checkbox {
   display: inline-block;
   border-radius: 3px;
@@ -223,11 +235,11 @@ p {
   cursor: pointer;
   background: url('../images/interface/checkbox-sprite.png') center 0 no-repeat;
 }
-/* line 208, interface.less */
+/* line 218, interface.less */
 .container.checkbox.checked {
   background-position: center -20px;
 }
-/* line 212, interface.less */
+/* line 222, interface.less */
 .container.radio {
   display: inline-block;
   border-radius: 3px;
@@ -237,11 +249,11 @@ p {
   cursor: pointer;
   background: url('../images/interface/radio-sprite.png') center 0 no-repeat;
 }
-/* line 220, interface.less */
+/* line 230, interface.less */
 .container.radio.checked {
   background-position: center -20px;
 }
-/* line 225, interface.less */
+/* line 235, interface.less */
 input[type="text"],
 textarea,
 input[type="password"] {
@@ -261,39 +273,39 @@ input[type="password"] {
   color: #8aa4a2;
   font: 400 1.2rem Roboto;
 }
-/* line 242, interface.less */
+/* line 252, interface.less */
 input[type="text"]:focus,
 textarea:focus,
 input[type="password"]:focus {
   outline: none;
   border-color: #4ad0c5;
 }
-/* line 246, interface.less */
+/* line 256, interface.less */
 input[type="text"].error,
 textarea.error,
 input[type="password"].error {
   background-color: #ffd9d9;
 }
-/* line 251, interface.less */
+/* line 261, interface.less */
 .field.required span {
   display: none;
 }
-/* line 254, interface.less */
+/* line 264, interface.less */
 .field.required.required span {
   color: #eb5245;
   display: inline;
 }
-/* line 258, interface.less */
+/* line 268, interface.less */
 .field.required label {
   color: #35504e;
   font-weight: 500;
   margin-bottom: 5px;
 }
-/* line 264, interface.less */
+/* line 274, interface.less */
 .input-container {
   position: relative;
 }
-/* line 266, interface.less */
+/* line 276, interface.less */
 .input-container .clear {
   width: 10px;
   height: 11px;
@@ -304,42 +316,42 @@ input[type="password"].error {
   z-index: 1;
   background: url('../images/interface/clear-sprite.png') center 0 no-repeat;
 }
-/* line 275, interface.less */
+/* line 285, interface.less */
 .input-container .clear:hover {
   background-position: center -11px;
 }
-/* line 278, interface.less */
+/* line 288, interface.less */
 .input-container .clear.hidden {
   display: none;
 }
-/* line 283, interface.less */
+/* line 293, interface.less */
 textarea {
   resize: none;
 }
-/* line 286, interface.less */
+/* line 296, interface.less */
 label {
   display: block;
   margin: 10px 0;
 }
-/* line 290, interface.less */
+/* line 300, interface.less */
 select.select2 {
   min-width: 300px;
 }
-/* line 294, interface.less */
+/* line 304, interface.less */
 .select2-container *:focus {
   outline: none !important;
 }
-/* line 297, interface.less */
+/* line 307, interface.less */
 .select2-container .select2-selection {
   border: solid 1px;
   border-color: #8aa4a2;
   height: 36px !important;
 }
-/* line 301, interface.less */
+/* line 311, interface.less */
 .select2-container .select2-selection .select2-selection__rendered {
   line-height: 36px !important;
 }
-/* line 304, interface.less */
+/* line 314, interface.less */
 .select2-container .select2-selection .select2-selection__arrow {
   background: url('../images/interface/dropdown-arrow.png') center center no-repeat #8aa4a2;
   width: 60px !important;
@@ -347,22 +359,22 @@ select.select2 {
   top: 0px !important;
   right: 0px !important;
 }
-/* line 310, interface.less */
+/* line 320, interface.less */
 .select2-container .select2-selection .select2-selection__arrow b {
   display: none;
 }
-/* line 316, interface.less */
+/* line 326, interface.less */
 .dashed {
   border: dashed 1px #b9d4cc;
 }
-/* line 319, interface.less */
+/* line 329, interface.less */
 .b-radius {
   border-radius: 4px;
   -moz-border-radius: 4px;
   -o-border-radius: 4px;
   -webkit-border-radius: 4px;
 }
-/* line 325, interface.less */
+/* line 335, interface.less */
 .content-block {
   padding: 30px;
   box-sizing: border-box;
@@ -378,29 +390,29 @@ select.select2 {
   background: #ffffff;
   margin-bottom: 3px;
 }
-/* line 340, interface.less */
+/* line 350, interface.less */
 .rating-block {
   border-radius: 10px;
   padding: 0 10px;
   border: solid 1px #ffaa3e;
 }
-/* line 344, interface.less */
+/* line 354, interface.less */
 .rating-block p {
   margin: 4px auto;
   text-align: center;
 }
-/* line 347, interface.less */
+/* line 357, interface.less */
 .rating-block p.value {
   font-weight: 700;
   font-size: 1.8rem;
   color: #8aa4a2;
 }
-/* line 351, interface.less */
+/* line 361, interface.less */
 .rating-block p.value .current-value {
   color: #ffaa3e;
   font-weight: bold;
 }
-/* line 357, interface.less */
+/* line 367, interface.less */
 .rating-block p.title {
   position: absolute;
   color: #ffaa3e;
@@ -412,20 +424,20 @@ select.select2 {
   width: 100%;
   left: 0;
 }
-/* line 367, interface.less */
+/* line 377, interface.less */
 .rating-block p.title span {
   background: #ffffff;
   padding: 0 3px;
   text-transform: uppercase;
 }
-/* line 376, interface.less */
+/* line 386, interface.less */
 .raiting-block.value .fa {
   color: #ffaa3e;
   font-size: 2.0rem;
   font-weight: normal;
   margin-right: 3px;
 }
-/* line 386, interface.less */
+/* line 396, interface.less */
 .raiting-block.vote .fa {
   color: #35504e;
   font-size: 2.0rem;
@@ -433,22 +445,22 @@ select.select2 {
   margin-right: 3px;
   cursor: pointer;
 }
-/* line 392, interface.less */
+/* line 402, interface.less */
 .raiting-block.vote .fa.fa-star {
   color: #ffaa3e;
 }
-/* line 395, interface.less */
+/* line 405, interface.less */
 .raiting-block.vote .fa.active {
   color: #ffaa3e;
 }
-/* line 400, interface.less */
+/* line 410, interface.less */
 a.dotts {
   display: block;
   text-decoration: none;
   cursor: pointer;
   padding: 5px 0;
 }
-/* line 405, interface.less */
+/* line 415, interface.less */
 a.dotts .fa-circle {
   color: #8aa4a2;
   font-size: 0.3rem;
@@ -456,22 +468,22 @@ a.dotts .fa-circle {
   float: left;
   margin-right: 2px;
 }
-/* line 414, interface.less */
+/* line 424, interface.less */
 ul.badge-marked li {
   background: url('../images/interface/badge.png') left 2px no-repeat;
   padding-left: 20px;
   margin: 3px 0;
 }
-/* line 422, interface.less */
+/* line 432, interface.less */
 .ui-widget-overlay.ui-front {
   background: rgba(0, 0, 0, 0.3);
 }
-/* line 425, interface.less */
+/* line 435, interface.less */
 .ui-dialog.ui-widget.ui-widget-content {
   background: #ffffff;
   padding: 10px;
 }
-/* line 428, interface.less */
+/* line 438, interface.less */
 .ui-dialog.ui-widget.ui-widget-content .ui-dialog-titlebar.ui-widget-header {
   border: none;
   background: none;
@@ -482,28 +494,28 @@ ul.badge-marked li {
   box-sizing: border-box;
   z-index: 1;
 }
-/* line 437, interface.less */
+/* line 447, interface.less */
 .ui-dialog.ui-widget.ui-widget-content .ui-dialog-titlebar.ui-widget-header .ui-dialog-titlebar-close {
   margin-right: .6em;
 }
-/* line 440, interface.less */
+/* line 450, interface.less */
 .ui-dialog.ui-widget.ui-widget-content .ui-dialog-titlebar.ui-widget-header .ui-button.ui-widget {
   border: none;
   background: none;
 }
-/* line 447, interface.less */
+/* line 457, interface.less */
 .ui-autocomplete.ui-widget {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   background: #fff;
   padding: 5px !important;
 }
-/* line 452, interface.less */
+/* line 462, interface.less */
 .ui-autocomplete.ui-widget li.ui-menu-item {
   padding: 5px !important;
   border: solid 1px #fff;
 }
-/* line 455, interface.less */
+/* line 465, interface.less */
 .ui-autocomplete.ui-widget li.ui-menu-item.ui-state-focus {
   background: #dbefe5;
   border: solid 1px #fff;
@@ -4302,5 +4314,444 @@ body.page-reviews .wrapper aside .write-review form .btn {
   display: block;
   float: left;
   margin-top: 15px;
+}
+/* line 2, page_consultation.less */
+body.page-consultation .profile {
+  float: left;
+  width: 57%;
+  margin-top: 20px;
+}
+/* line 6, page_consultation.less */
+body.page-consultation .profile .left {
+  float: left;
+  width: 28%;
+  margin-top: 10px;
+}
+/* line 10, page_consultation.less */
+body.page-consultation .profile .left .photo {
+  overflow: hidden;
+  border-radius: 7px;
+  -o-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+}
+/* line 16, page_consultation.less */
+body.page-consultation .profile .left .photo img {
+  display: block;
+  width: 100%;
+}
+/* line 21, page_consultation.less */
+body.page-consultation .profile .left .place {
+  margin-top: 17px;
+  text-align: center;
+  color: #8aa4a2;
+  font: 400 1.2rem Roboto;
+}
+/* line 26, page_consultation.less */
+body.page-consultation .profile .left .place .fa {
+  color: #4ad0c5;
+}
+/* line 32, page_consultation.less */
+body.page-consultation .profile .left .expirience {
+  text-align: center;
+  margin-top: 13px;
+}
+/* line 35, page_consultation.less */
+body.page-consultation .profile .left .expirience .fa {
+  display: block;
+  width: 100%;
+  font-size: 18px;
+}
+/* line 40, page_consultation.less */
+body.page-consultation .profile .left .expirience p {
+  font: 400 1.4rem Roboto;
+}
+/* line 42, page_consultation.less */
+body.page-consultation .profile .left .expirience p .value {
+  color: #35504e;
+  font-weight: 700;
+}
+/* line 49, page_consultation.less */
+body.page-consultation .profile .right {
+  float: right;
+  width: 68%;
+  overflow: hidden;
+}
+/* line 53, page_consultation.less */
+body.page-consultation .profile .right header {
+  overflow: hidden;
+}
+/* line 55, page_consultation.less */
+body.page-consultation .profile .right header .name {
+  color: #35504e;
+  font: 700 1.8rem Roboto;
+  float: left;
+}
+/* line 59, page_consultation.less */
+body.page-consultation .profile .right header .name .lastname {
+  text-transform: uppercase;
+}
+/* line 62, page_consultation.less */
+body.page-consultation .profile .right header .name .firstname {
+  text-transform: none;
+}
+/* line 65, page_consultation.less */
+body.page-consultation .profile .right header .name .job {
+  color: #4ad0c5;
+  font: 500 1.4rem Roboto;
+  margin-top: 5px;
+}
+/* line 70, page_consultation.less */
+body.page-consultation .profile .right header .name p {
+  margin: 0;
+}
+/* line 74, page_consultation.less */
+body.page-consultation .profile .right header .toolbar {
+  float: right;
+}
+/* line 76, page_consultation.less */
+body.page-consultation .profile .right header .toolbar .rating-block {
+  float: right;
+}
+/* line 79, page_consultation.less */
+body.page-consultation .profile .right header .toolbar a.envelope {
+  float: right;
+  color: #4ad0c5;
+  text-decoration: none;
+  margin-top: 6px;
+  margin-right: 15px;
+}
+/* line 85, page_consultation.less */
+body.page-consultation .profile .right header .toolbar a.envelope .fa {
+  font-size: 2.0rem;
+}
+/* line 89, page_consultation.less */
+body.page-consultation .profile .right header .toolbar .profile-menu {
+  float: right;
+  margin-top: 9px;
+  margin-right: 15px;
+}
+/* line 101, page_consultation.less */
+body.page-consultation .profile .right .contacts h5 {
+  padding-bottom: 0;
+}
+/* line 104, page_consultation.less */
+body.page-consultation .profile .right .contacts p {
+  margin: 2px 0;
+  font-weight: 500;
+}
+/* line 107, page_consultation.less */
+body.page-consultation .profile .right .contacts p span.value {
+  color: #4ad0c5;
+}
+/* line 113, page_consultation.less */
+body.page-consultation .profile .right .introtext a.readmore {
+  color: #4ad0c5;
+  font: italic 1.4rem Roboto;
+}
+/* line 120, page_consultation.less */
+body.page-consultation section.consultation-info {
+  float: left;
+  width: 41%;
+  margin-left: 2%;
+  margin-top: 7px;
+  margin-bottom: 0;
+}
+/* line 126, page_consultation.less */
+body.page-consultation section.consultation-info .content-block {
+  padding: 0;
+}
+/* line 128, page_consultation.less */
+body.page-consultation section.consultation-info .content-block .info {
+  padding: 20px;
+}
+/* line 130, page_consultation.less */
+body.page-consultation section.consultation-info .content-block .info .head {
+  position: relative;
+}
+/* line 132, page_consultation.less */
+body.page-consultation section.consultation-info .content-block .info .head i.fa.fa-calendar {
+  color: #eb5245;
+  font-size: 1.8rem;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+/* line 142, page_consultation.less */
+body.page-consultation section.consultation-info .content-block .info .content p {
+  margin: 5px 0;
+  color: #8aa4a2;
+  font-size: 1.4rem;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 500;
+}
+/* line 147, page_consultation.less */
+body.page-consultation section.consultation-info .content-block .info .content p span.value {
+  color: #35504e;
+}
+/* line 150, page_consultation.less */
+body.page-consultation section.consultation-info .content-block .info .content p span.not-paid {
+  margin-left: 15px;
+  color: #eb5245;
+}
+/* line 154, page_consultation.less */
+body.page-consultation section.consultation-info .content-block .info .content p span.paid {
+  margin-left: 15px;
+  color: #0f9b58;
+}
+/* line 158, page_consultation.less */
+body.page-consultation section.consultation-info .content-block .info .content p.remaining {
+  margin: 15px 0;
+}
+/* line 160, page_consultation.less */
+body.page-consultation section.consultation-info .content-block .info .content p.remaining span {
+  color: #4ad0c5;
+}
+/* line 165, page_consultation.less */
+body.page-consultation section.consultation-info .content-block .info .content a#pay {
+  margin-top: 10px;
+}
+/* line 168, page_consultation.less */
+body.page-consultation section.consultation-info .content-block .info .content a.btn.ghost {
+  margin: 5px 0;
+}
+/* line 175, page_consultation.less */
+body.page-consultation section.questions {
+  overflow: hidden;
+  float: left;
+  margin-right: 2%;
+  width: 57%;
+  margin-bottom: 0;
+}
+/* line 182, page_consultation.less */
+body.page-consultation section.questions .messages .message {
+  margin-bottom: 20px;
+}
+/* line 184, page_consultation.less */
+body.page-consultation section.questions .messages .message .question-menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+/* line 189, page_consultation.less */
+body.page-consultation section.questions .messages .message .author {
+  overflow: hidden;
+}
+/* line 191, page_consultation.less */
+body.page-consultation section.questions .messages .message .author .photo-container {
+  float: left;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  -o-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  overflow: hidden;
+  border: solid 1px #8aa4a2;
+  margin-right: 20px;
+}
+/* line 203, page_consultation.less */
+body.page-consultation section.questions .messages .message .author .container {
+  overflow: hidden;
+}
+/* line 205, page_consultation.less */
+body.page-consultation section.questions .messages .message .author .container p {
+  margin: 2px 0;
+}
+/* line 207, page_consultation.less */
+body.page-consultation section.questions .messages .message .author .container p.name {
+  color: #4ad0c5;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+/* line 212, page_consultation.less */
+body.page-consultation section.questions .messages .message .author .container p.job {
+  color: #8aa4a2;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+/* line 220, page_consultation.less */
+body.page-consultation section.questions .messages .message p.text {
+  margin-left: 70px;
+}
+/* line 223, page_consultation.less */
+body.page-consultation section.questions .messages .message p.date {
+  margin-left: 70px;
+  color: #b9d4cc;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 10px;
+}
+/* line 231, page_consultation.less */
+body.page-consultation section.questions .messages a#read-more {
+  color: #4ad0c5;
+  font-size: 1.2rem;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+}
+/* line 237, page_consultation.less */
+body.page-consultation section.questions .messages a#read-more:hover {
+  text-decoration: underline;
+}
+/* line 241, page_consultation.less */
+body.page-consultation section.questions .messages form.ask-question {
+  overflow: hidden;
+  margin-top: 20px;
+}
+/* line 244, page_consultation.less */
+body.page-consultation section.questions .messages form.ask-question textarea {
+  height: 98px;
+}
+/* line 247, page_consultation.less */
+body.page-consultation section.questions .messages form.ask-question input.btn {
+  float: right;
+}
+/* line 253, page_consultation.less */
+body.page-consultation section.my-notes {
+  overflow: hidden;
+}
+/* line 256, page_consultation.less */
+body.page-consultation section.my-notes .notes .note {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+/* line 259, page_consultation.less */
+body.page-consultation section.my-notes .notes .note span.date {
+  color: #b9d4cc;
+  font-size: 1.2rem;
+  font-weight: 400;
+  display: block;
+  float: left;
+}
+/* line 266, page_consultation.less */
+body.page-consultation section.my-notes .notes .note .note-menu {
+  float: left;
+  margin-left: 20px;
+  margin-top: 2px;
+}
+/* line 270, page_consultation.less */
+body.page-consultation section.my-notes .notes .note .note-menu .fa-circle {
+  color: #b9d4cc;
+  font-size: 0.5rem;
+}
+/* line 277, page_consultation.less */
+body.page-consultation section.my-notes form {
+  overflow: hidden;
+}
+/* line 279, page_consultation.less */
+body.page-consultation section.my-notes form textarea {
+  height: 98px;
+}
+/* line 282, page_consultation.less */
+body.page-consultation section.my-notes form input.btn {
+  float: right;
+}
+/* line 287, page_consultation.less */
+body.page-consultation section.reviews {
+  float: left;
+  width: 57%;
+}
+/* line 291, page_consultation.less */
+body.page-consultation section.reviews .content-block .review {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 10px 20px 30px 20px;
+  margin-bottom: 60px;
+}
+/* line 296, page_consultation.less */
+body.page-consultation section.reviews .content-block .review .quote-arrow {
+  position: absolute;
+  width: 43px;
+  height: 25px;
+  background: url('../images/quote-arrow.png');
+  bottom: -25px;
+  left: 60px;
+}
+/* line 304, page_consultation.less */
+body.page-consultation section.reviews .content-block .review .author {
+  overflow: hidden;
+  margin-top: 25px;
+}
+/* line 307, page_consultation.less */
+body.page-consultation section.reviews .content-block .review .author .photo {
+  border-radius: 50px;
+  -moz-border-radius: 50px;
+  -o-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+  float: left;
+}
+/* line 316, page_consultation.less */
+body.page-consultation section.reviews .content-block .review .author .photo img {
+  display: block;
+  min-width: 100%;
+  min-height: 100%;
+}
+/* line 322, page_consultation.less */
+body.page-consultation section.reviews .content-block .review .author .text {
+  overflow: hidden;
+}
+/* line 324, page_consultation.less */
+body.page-consultation section.reviews .content-block .review .author .text p {
+  margin-left: 10px;
+  font-size: 1.2rem;
+}
+/* line 327, page_consultation.less */
+body.page-consultation section.reviews .content-block .review .author .text p .author-name,
+body.page-consultation section.reviews .content-block .review .author .text p .user-name {
+  color: #4ad0c5;
+  font: 700 1.2rem Roboto;
+}
+/* line 334, page_consultation.less */
+body.page-consultation section.reviews .content-block .review .toolbar {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+/* line 338, page_consultation.less */
+body.page-consultation section.reviews .content-block .review .toolbar .review-menu {
+  float: left;
+  margin-right: 20px;
+  margin-top: 11px;
+}
+/* line 343, page_consultation.less */
+body.page-consultation section.reviews .content-block .review .toolbar .review-date {
+  float: left;
+  margin-right: 20px;
+  font-size: 1.2rem;
+}
+/* line 348, page_consultation.less */
+body.page-consultation section.reviews .content-block .review .toolbar .readmore {
+  border-top-left-radius: 5px;
+  -o-border-top-left-radius: 5px;
+  -moz-border-top-left-radius: 5px;
+  -webkit-border-top-left-radius: 5px;
+  float: left;
+  text-decoration: none;
+  color: #4ad0c5;
+  display: block;
+  font-size: 1.2rem;
+  border-left: dashed 1px #b9d4cc;
+  border-top: dashed 1px #b9d4cc;
+  padding: 8px 20px;
+}
+/* line 361, page_consultation.less */
+body.page-consultation section.reviews .content-block .review .toolbar .readmore:hover {
+  text-decoration: underline;
+}
+/* line 367, page_consultation.less */
+body.page-consultation section.reviews .content-block #load-more-reviews {
+  width: 200px;
+  text-align: center;
+  margin: auto;
+  display: block;
+}
+/* line 375, page_consultation.less */
+body.page-consultation section.reviews .write-review textarea {
+  height: 98px;
 }
 /*# sourceMappingURL=styles.css.map */
