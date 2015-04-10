@@ -33,6 +33,7 @@
             <li><a href="page_consultation.php">Страница консультации.</a></li>
             <li><a href="modal_signup_to_consultation.php">Окно записи на консультацию.</a></li>
             <li><a href="page_library.php">Библиотека (главная страница)</a></li>
+            <li><a href="page_library_fluid.php">Библиотека (главная страница) - mosaic</a></li>
         </ol>
         <h1>Полезные ссылки</h1>
         <ol>

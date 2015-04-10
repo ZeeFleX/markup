@@ -4949,6 +4949,12 @@ body.page-library .wrapper section.articles-flow {
   overflow: hidden;
 }
 /* line 74, page_library.less */
+body.page-library .wrapper section.articles-flow .column {
+  float: left;
+  width: 23%;
+  margin-right: 2.66%;
+}
+/* line 79, page_library.less */
 body.page-library .wrapper section.articles-flow .article {
   float: left;
   width: 23%;
@@ -4957,63 +4963,63 @@ body.page-library .wrapper section.articles-flow .article {
   overflow: hidden;
   margin-bottom: 20px;
 }
-/* line 81, page_library.less */
+/* line 86, page_library.less */
 body.page-library .wrapper section.articles-flow .article:nth-child(4n) {
   margin-right: 0;
 }
-/* line 84, page_library.less */
+/* line 89, page_library.less */
 body.page-library .wrapper section.articles-flow .article .image {
   width: 100%;
 }
-/* line 86, page_library.less */
+/* line 91, page_library.less */
 body.page-library .wrapper section.articles-flow .article .image img {
   display: block;
   width: 100%;
 }
-/* line 91, page_library.less */
+/* line 96, page_library.less */
 body.page-library .wrapper section.articles-flow .article .content {
   width: 100%;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   padding: 20px 30px;
 }
-/* line 96, page_library.less */
+/* line 101, page_library.less */
 body.page-library .wrapper section.articles-flow .article .content h4.article-name {
   font-size: 1.4rem;
   font-weight: 500;
   padding-top: 0;
 }
-/* line 102, page_library.less */
+/* line 107, page_library.less */
 body.page-library .wrapper section.articles-flow .article .content p {
   font-size: 1.1rem;
   margin: 5px 0;
 }
-/* line 105, page_library.less */
+/* line 110, page_library.less */
 body.page-library .wrapper section.articles-flow .article .content p.category {
   color: #35504e;
   margin-top: 0;
   font-weight: 500;
 }
-/* line 109, page_library.less */
+/* line 114, page_library.less */
 body.page-library .wrapper section.articles-flow .article .content p.category span.value {
   color: #8aa4a2;
 }
-/* line 113, page_library.less */
+/* line 118, page_library.less */
 body.page-library .wrapper section.articles-flow .article .content p.author {
   font-size: 1.2rem;
   color: #4ad0c5;
 }
-/* line 117, page_library.less */
+/* line 122, page_library.less */
 body.page-library .wrapper section.articles-flow .article .content p.introtext {
   line-height: 155%;
 }
-/* line 120, page_library.less */
+/* line 125, page_library.less */
 body.page-library .wrapper section.articles-flow .article .content p.date {
   margin-top: 10px;
   color: #b9d4cc;
   font-size: 1.0rem;
 }
-/* line 126, page_library.less */
+/* line 131, page_library.less */
 body.page-library .wrapper section.articles-flow .article .content a.btn {
   display: block;
   text-align: center;
