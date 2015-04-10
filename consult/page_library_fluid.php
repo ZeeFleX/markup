@@ -102,7 +102,7 @@
             <div class="article flow-item content-block">
                 <?php if($img) { ?>
                 <div class="image">
-                    <img src="images/interface/image-placeholder.png" alt="" />
+                    <img src="<?php echo 'images/articles/' . rand(1,7) . '.jpg';?>" alt="" />
                 </div>
                 <?php } ?>
                 <div class="content">
