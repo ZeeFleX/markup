@@ -4,15 +4,16 @@
 		var $grids = $('.articles-flow');
 		$.each($grids, function(key, grid){
 			var $grid = $(grid);
+			var columnsCount = $grid.attr('data-columns');
 			var $articles = $grid.find('.article').detach();
-			for(var i = 0; i < 4; i++){
+			for(var i = 0; i < columnsCount; i++){
 				$grid.append('<div class="column" id="col' + i + '"></div>');
 			}
 			var $columns = $grid.find('.column');
 			$columns.css({
 				float: 'left',
-				width: '23%',
-				marginRight: '2.66%'
+				width: 100.00 / columnsCount - ((columnsCount - 1) * 2 / columnsCount)  + '%',
+				marginRight: '2%'
 			});
 			$columns.last().css('marginRight', 0);
 			$articles.css({

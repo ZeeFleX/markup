@@ -81,7 +81,7 @@
                 </div>
             </div>
         </section>
-        <section class="articles-flow">
+        <section class="articles-flow" data-columns="<?php if(isset($_GET['columns'])) {echo $_GET['columns'] ;} else{echo '4';}?>">
             <?php for($i = 0; $i <= 10; $i++) { ?>
             <?php 
                 $rand = rand(200, 500);
