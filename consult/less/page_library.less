@@ -4,6 +4,16 @@ body.page-library{
 			&.search-article{
 				background: @sky;
 				margin-top: 30px;
+				.select2-container{
+					width: 100% !important;
+					margin-top: 10px;
+					.select2-selection__arrow{
+						background: url('../images/interface/dropdown-arrow.png') center center no-repeat #41b6ad;
+					}
+					.select2-selection{
+						border-color:#41b6ad;
+					}
+				}
 				form{
 					overflow: hidden;
 					width: 85%;
@@ -13,16 +23,6 @@ body.page-library{
 						float: left;
 						margin-right: 20px;
 						.field{
-							.select2-container{
-								width: 100% !important;
-								margin-top: 10px;
-								.select2-selection__arrow{
-									background: url('../images/interface/dropdown-arrow.png') center center no-repeat #41b6ad;
-								}
-								.select2-selection{
-									border-color:#41b6ad;
-								}
-							}
 							&.category{
 								float: left;
 								width: 48%;
@@ -42,6 +42,96 @@ body.page-library{
 						}
 					}
 				}
+			}
+			&.resume{
+				overflow: hidden;
+				float: left;
+				width: 50%;
+				margin-right: 2%;
+				margin-top: 30px;
+	            .left {
+	                float: left;
+	                width: 28%;
+	                .photo {
+	                    overflow: hidden;
+	                    border-radius:7px;
+	                    -o-border-radius:7px;
+	                    -moz-border-radius:7px;
+	                    -webkit-border-radius:7px;
+	                    img {
+	                        display: block;
+	                        width: 100%;
+	                    }
+	                }
+	                .place {
+	                    margin-top: 17px;
+	                    text-align: center;
+	                    color: @sea_light;
+	                    font: 400 1.2rem Roboto;
+	                    .fa {
+	                        color:@sky;
+	                        &.fa-map-marker{
+	                        }
+	                    }
+	                }
+	            }
+	            .right {
+	                float: right;
+	                width: 68%;
+	                overflow: hidden;
+	                header {
+	                    overflow: hidden;
+	                    .name {
+	                        font: 700 1.8rem Roboto;
+	                        a{
+	                        	color: @sky;
+	                        }
+	                        .lastname {
+	                            text-transform: uppercase;
+	                        }
+	                        .firstname {
+	                            text-transform: none;
+	                        }
+	                        .job {
+	                            color: @sea;
+	                            font: 500 1.4rem Roboto;
+	                            margin-top: 10px;
+	                            span.age{
+	                            	margin-left: 15px;
+	                            	color:@sea_light;
+	                            }
+	                        }
+	                        p{
+	                            margin:0;
+	                        }
+	                    }
+	                }
+	               	.rating-block{
+	               		width:50px;
+	               		margin-top: 5px;
+	               		margin-bottom: 5px;
+	               	}
+	               	a.btn{
+	               		margin-top: 10px;
+	               	}
+	            }
+	            & + .search-article{
+	            	float: right;
+	            	width: 48%;
+	            	overflow: hidden;
+	            	form{
+	            		width: 100%;
+	            		.left{
+	            			width: 65%;
+	            		}
+	            		.right{
+
+	            		}
+	            		.select2-container{
+	            			margin-top: 10px;
+	            		}
+	            	}
+	            }
 			}
 			&.write-article{
 				overflow: hidden;
