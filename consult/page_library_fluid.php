@@ -82,7 +82,7 @@
             </div>
         </section>
         <section class="articles-flow" data-columns="<?php if(isset($_GET['columns'])) {echo $_GET['columns'] ;} else{echo '4';}?>">
-            <?php for($i = 0; $i <= 10; $i++) { ?>
+            <?php for($i = 20; $i >= 10; $i--) { ?>
             <?php 
                 $rand = rand(200, 500);
                 $img = $rand % 2 == 0;
@@ -112,7 +112,7 @@
                     <p class="introtext">
                         <?php echo $contents[rand(0, count($contents) - 1)];?>
                     </p>
-                    <p class="date">Месяц назад</p>
+                    <p class="date"><?php echo $i . '.04.2015'; ?></p>
                     <a href="#" class="btn ghost">Посмотреть</a>
                 </div>
             </div>
