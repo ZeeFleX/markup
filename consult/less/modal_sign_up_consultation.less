@@ -1,0 +1,96 @@
+.window.sign-up-consultation{
+	position:absolute;
+	left:0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.4);
+	z-index: 10;
+	& > .container{
+		position: relative;
+		width: 480px;
+		height: auto;
+		margin:100px auto;
+		background: @white;
+		border-radius:5px;
+		-o-border-radius:5px;
+		-moz-border-radius:5px;
+		-webkit-border-radius:5px;
+		padding:30px;
+		i.fa-close{
+			position: absolute;
+			right:30px;
+			top:30px;
+			cursor: pointer;
+			font-size:1.8rem;
+			&:hover{
+				color:@sea;
+			}
+		}
+		h1{
+			font-size: 2.4rem;
+			font-weight: 500;
+			padding-top: 0;
+			margin-top: -7px;
+		}
+		.profile{
+			overflow: hidden;
+			.photo-container{
+				float: left;
+				margin-right: 20px;
+				width: 120px;
+				height: 120px;
+				border-radius:120px;
+				-o-border-radius:120px;
+				-webkit-border-radius:120px;
+				-moz-border-radius:120px;
+				overflow: hidden;
+				img{
+					width: 100%;
+					display: block;
+				}
+			}
+			.about{
+				overflow: hidden;
+				.rating-block{
+					float: right;
+					width: 50px;
+				}
+				p.name{
+					display: block;
+					overflow: hidden;
+					color:@sea;
+					.lastname{
+						font-size:1.8rem;
+						text-transform: uppercase;
+						font-weight: 700;
+					}
+					.firstname{
+						font-size:1.6rem;
+						font-weight: 700;
+					}
+				}
+				p.job{
+					font-size:1.4rem;
+					font-weight: 500;
+					color:@sky;
+					span.age{
+						margin-left: 20px;
+						color:@sea_light;
+					}
+				}
+			}
+		}
+		form{
+			overflow: hidden;
+			.calendar{
+				margin:0;
+				header{
+					a{
+						color:@sea;
+					}
+				}
+			}
+		}
+	}
+}

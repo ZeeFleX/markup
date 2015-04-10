@@ -31,6 +31,8 @@
             <li><a href="page_public_question_list.php">Список публичных вопросов.</a></li>
             <li><a href="page_reviews.php">Список отзывов о консультантах.</a></li>
             <li><a href="page_consultation.php">Страница консультации.</a></li>
+            <li><a href="modal_signup_to_consultation.php">Окно записи на консультацию.</a></li>
+            <li><a href="page_library.php">Библиотека (главная страница)</a></li>
         </ol>
         <h1>Полезные ссылки</h1>
         <ol>

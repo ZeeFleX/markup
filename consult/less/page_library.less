@@ -1,0 +1,137 @@
+body.page-library{
+	.wrapper{
+		section{
+			&.search-article{
+				background: @sky;
+				margin-top: 20px;
+				form{
+					overflow: hidden;
+					width: 85%;
+					margin:auto;
+					.left{
+						width: 80%;
+						float: left;
+						margin-right: 20px;
+						.field{
+							.select2-container{
+								width: 100% !important;
+								margin-top: 10px;
+								.select2-selection__arrow{
+									background: url('../images/interface/dropdown-arrow.png') center center no-repeat #41b6ad;
+								}
+								.select2-selection{
+									border-color:#41b6ad;
+								}
+							}
+							&.category{
+								float: left;
+								width: 48%;
+								margin-right: 4%;
+							}
+							&.author{
+								overflow: hidden;
+
+							}
+						}
+					}
+					.right{
+						overflow: hidden;
+						input[type="submit"]{
+							width: 100%;
+							padding: 9px 17px 8px 17px;
+						}
+					}
+				}
+			}
+			&.write-article{
+				overflow: hidden;
+				.align-container{
+					float: right;
+					right: 50%;
+					.align-wrapper{
+						float: left;
+						left: 50%;
+						a.btn{
+							display: block;
+							float: right;
+							//width: 140px;
+							margin-left: 40px;
+							margin-top: 10px;
+						}
+						h1{
+							display: block;
+							float: left;
+							overflow: hidden;
+							font-size: 2.4rem;
+							font-weight: 500;
+						}
+					}
+				}
+			}
+			&.articles-flow{
+				overflow: hidden;
+				//width: 100%;
+				.article{
+					float: left;
+					width: 23%;
+					margin-right: 2.66%;
+					padding: 0;
+					overflow: hidden;
+					margin-bottom: 20px;
+					&:nth-child(4n){
+						margin-right: 0;
+					}
+					.image{
+						width: 100%;
+						img{
+							display: block;
+							width: 100%;
+						}
+					}
+					.content{
+						width: 100%;
+						box-sizing:border-box;
+						-moz-box-sizing:border-box;
+						padding: 20px 30px;
+						h4.article-name{
+							padding-top: 0;
+							font-size: 1.4rem;
+							font-weight: 500;
+							padding-top: 0;
+						}
+						p{
+							font-size:1.1rem;
+							margin:5px 0;
+							&.category{
+								color:@sea;
+								margin-top: 0;
+								font-weight: 500;
+								span.value{
+									color:@sea_light;
+								}
+							}
+							&.author{
+								font-size:1.2rem;
+								color:@sky;
+							}
+							&.introtext{
+								line-height:155%;
+							}
+							&.date{
+								margin-top: 10px;
+								color:#b9d4cc;
+								font-size:1.0rem;
+							}
+						}
+						a.btn{
+							display: block;
+							text-align: center;
+							font-size:1.2.rem;
+							margin-top: 15px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
