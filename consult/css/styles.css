@@ -5132,4 +5132,361 @@ body.page-library .wrapper section.articles-flow .article .content a.btn {
   font-size: 1.2.rem;
   margin-top: 15px;
 }
+/* line 2, page_library_article.less */
+body.page-library-article section.article {
+  padding: 0;
+  margin-top: 20px;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+/* line 8, page_library_article.less */
+body.page-library-article section.article .article-image img {
+  display: block;
+  width: 100%;
+}
+/* line 13, page_library_article.less */
+body.page-library-article section.article .article-content {
+  padding: 20px 30px;
+}
+/* line 15, page_library_article.less */
+body.page-library-article section.article .article-content .article-menu {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+/* line 20, page_library_article.less */
+body.page-library-article section.article .article-content h1.article-title {
+  text-align: center;
+  font-size: 3.6rem;
+  font-weight: 500;
+}
+/* line 25, page_library_article.less */
+body.page-library-article section.article .article-content h3.category {
+  text-align: center;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 48px;
+  padding-top: 0;
+}
+/* line 32, page_library_article.less */
+body.page-library-article section.article .article-content h3.category span {
+  border-radius: 100px;
+  background: #fac944;
+  padding: 10px 25px;
+}
+/* line 39, page_library_article.less */
+body.page-library-article section.article .article-content .article-text p {
+  margin: 15px 0;
+}
+/* line 45, page_library_article.less */
+body.page-library-article section.comments {
+  float: right;
+  width: 55%;
+  margin-left: 2%;
+}
+/* line 49, page_library_article.less */
+body.page-library-article section.comments form.write-comment {
+  overflow: hidden;
+}
+/* line 51, page_library_article.less */
+body.page-library-article section.comments form.write-comment .photo-container {
+  float: left;
+  overflow: hidden;
+  width: 50px;
+  border-radius: 50px;
+  -o-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  margin-right: 20px;
+  border: solid 1px #8aa4a2;
+}
+/* line 61, page_library_article.less */
+body.page-library-article section.comments form.write-comment .photo-container img {
+  display: block;
+}
+/* line 65, page_library_article.less */
+body.page-library-article section.comments form.write-comment .field.comment {
+  overflow: hidden;
+}
+/* line 68, page_library_article.less */
+body.page-library-article section.comments form.write-comment input[type="submit"] {
+  float: right;
+  margin-top: 10px;
+}
+/* line 74, page_library_article.less */
+body.page-library-article section.comments .all-comments .comment {
+  margin-top: 20px;
+}
+/* line 77, page_library_article.less */
+body.page-library-article section.comments .all-comments .comment .author .author-menu {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  z-index: 1;
+}
+/* line 83, page_library_article.less */
+body.page-library-article section.comments .all-comments .comment .author .photo-container {
+  overflow: hidden;
+  float: left;
+  width: 50px;
+  border-radius: 50px;
+  -o-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  margin-right: 20px;
+  border: solid 1px #8aa4a2;
+}
+/* line 93, page_library_article.less */
+body.page-library-article section.comments .all-comments .comment .author .photo-container img {
+  display: block;
+}
+/* line 97, page_library_article.less */
+body.page-library-article section.comments .all-comments .comment .author .about {
+  overflow: hidden;
+}
+/* line 99, page_library_article.less */
+body.page-library-article section.comments .all-comments .comment .author .about p.name {
+  color: #4ad0c5;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 4px 0;
+}
+/* line 104, page_library_article.less */
+body.page-library-article section.comments .all-comments .comment .author .about p.name span {
+  color: #8aa4a2;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+/* line 109, page_library_article.less */
+body.page-library-article section.comments .all-comments .comment .author .about p.name i.fa {
+  margin-left: 5px;
+  margin-right: 10px;
+}
+/* line 113, page_library_article.less */
+body.page-library-article section.comments .all-comments .comment .author .about p.name .online {
+  color: #fac944;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+/* line 118, page_library_article.less */
+body.page-library-article section.comments .all-comments .comment .author .about p.name .offline {
+  color: #b9d4cc;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+/* line 124, page_library_article.less */
+body.page-library-article section.comments .all-comments .comment .author .about p.job {
+  color: #8aa4a2;
+  font-weight: 700;
+  margin: 4px 0;
+}
+/* line 129, page_library_article.less */
+body.page-library-article section.comments .all-comments .comment .author .about p.like-it {
+  text-align: right;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+/* line 134, page_library_article.less */
+body.page-library-article section.comments .all-comments .comment .author .about p.like-it:hover {
+  color: #35504e;
+}
+/* line 137, page_library_article.less */
+body.page-library-article section.comments .all-comments .comment .author .about p.like-it i.fa {
+  margin: 0 5px;
+  font-size: 1.4rem;
+}
+/* line 141, page_library_article.less */
+body.page-library-article section.comments .all-comments .comment .author .about p.like-it span.count {
+  color: #ffffff;
+  background: #fac944;
+  border-radius: 4px;
+  -o-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  padding: 3px 7px;
+}
+/* line 156, page_library_article.less */
+body.page-library-article section.article-author {
+  overflow: hidden;
+  margin-bottom: 0;
+}
+/* line 159, page_library_article.less */
+body.page-library-article section.article-author .resume a.btn.ghost {
+  margin-top: 20px;
+}
+/* line 162, page_library_article.less */
+body.page-library-article section.article-author .left {
+  width: 120px;
+  float: left;
+  margin-right: 20px;
+}
+/* line 166, page_library_article.less */
+body.page-library-article section.article-author .left .photo {
+  overflow: hidden;
+  border-radius: 5px;
+  -o-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+/* line 172, page_library_article.less */
+body.page-library-article section.article-author .left .photo img {
+  display: block;
+  width: 100%;
+}
+/* line 178, page_library_article.less */
+body.page-library-article section.article-author .right {
+  overflow: hidden;
+}
+/* line 180, page_library_article.less */
+body.page-library-article section.article-author .right header {
+  overflow: hidden;
+}
+/* line 182, page_library_article.less */
+body.page-library-article section.article-author .right header .name {
+  font: 700 1.8rem Roboto;
+}
+/* line 184, page_library_article.less */
+body.page-library-article section.article-author .right header .name a {
+  color: #4ad0c5;
+}
+/* line 187, page_library_article.less */
+body.page-library-article section.article-author .right header .name .lastname {
+  text-transform: uppercase;
+}
+/* line 189, page_library_article.less */
+body.page-library-article section.article-author .right header .name .lastname i {
+  margin: 0 10px;
+}
+/* line 191, page_library_article.less */
+body.page-library-article section.article-author .right header .name .lastname i.online {
+  color: #fac944;
+}
+/* line 194, page_library_article.less */
+body.page-library-article section.article-author .right header .name .lastname i.offline {
+  color: #8aa4a2;
+}
+/* line 199, page_library_article.less */
+body.page-library-article section.article-author .right header .name .firstname {
+  text-transform: none;
+}
+/* line 202, page_library_article.less */
+body.page-library-article section.article-author .right header .name .job {
+  color: #35504e;
+  font: 500 1.4rem Roboto;
+  margin-top: 5px;
+}
+/* line 206, page_library_article.less */
+body.page-library-article section.article-author .right header .name .job span.age {
+  margin-left: 15px;
+  color: #8aa4a2;
+}
+/* line 211, page_library_article.less */
+body.page-library-article section.article-author .right header .name p {
+  margin: 0;
+}
+/* line 215, page_library_article.less */
+body.page-library-article section.article-author .right header .published {
+  margin-top: 10px;
+}
+/* line 217, page_library_article.less */
+body.page-library-article section.article-author .right header .published p {
+  color: #35504e;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 3px 0;
+}
+/* line 222, page_library_article.less */
+body.page-library-article section.article-author .right header .published p.date {
+  color: #8aa4a2;
+}
+/* line 228, page_library_article.less */
+body.page-library-article section.article-author .right .rating-block {
+  width: 50px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+/* line 233, page_library_article.less */
+body.page-library-article section.article-author .right a.btn {
+  margin-top: 10px;
+}
+/* line 238, page_library_article.less */
+body.page-library-article section.repost-article {
+  overflow: hidden;
+}
+/* line 241, page_library_article.less */
+body.page-library-article section.repost-article .social .social-item {
+  float: left;
+  width: 100px;
+  height: 83px;
+  cursor: pointer;
+  margin-right: 25px;
+}
+/* line 247, page_library_article.less */
+body.page-library-article section.repost-article .social .social-item p.value {
+  margin: 0;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-top: 10px;
+}
+/* line 254, page_library_article.less */
+body.page-library-article section.repost-article .social .social-item.fb {
+  background: url('../images/fb-sprite.png');
+  color: #3b5998;
+}
+/* line 258, page_library_article.less */
+body.page-library-article section.repost-article .social .social-item.vk {
+  background: url('../images/vk-sprite.png');
+  color: #4c75a3;
+}
+/* line 262, page_library_article.less */
+body.page-library-article section.repost-article .social .social-item.ok {
+  background: url('../images/ok-sprite.png');
+  color: #fa9616;
+  margin-right: 0;
+}
+/* line 267, page_library_article.less */
+body.page-library-article section.repost-article .social .social-item:hover {
+  background-position: -100px 0;
+}
+/* line 271, page_library_article.less */
+body.page-library-article section.repost-article .social h5 {
+  margin-top: 20px;
+}
+/* line 274, page_library_article.less */
+body.page-library-article section.repost-article .social .copy-link-container {
+  height: 38px;
+  border: solid 1px #8aa4a2;
+  border-radius: 4px;
+  -o-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  overflow: hidden;
+}
+/* line 282, page_library_article.less */
+body.page-library-article section.repost-article .social .copy-link-container input[type="text"] {
+  display: block;
+  overflow: hidden;
+  width: 85%;
+  border: none;
+  font-size: 1.4rem;
+}
+/* line 289, page_library_article.less */
+body.page-library-article section.repost-article .social .copy-link-container span.copy-link-button {
+  display: block;
+  cursor: pointer;
+  float: right;
+  width: 15%;
+  height: 100%;
+  text-align: center;
+  color: #ffffff;
+  line-height: 38px;
+  background: #4ad0c5;
+}
+/* line 299, page_library_article.less */
+body.page-library-article section.repost-article .social .copy-link-container span.copy-link-button:hover {
+  background: #41b6ad;
+}
 /*# sourceMappingURL=styles.css.map */
