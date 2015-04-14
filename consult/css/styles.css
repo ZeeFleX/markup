@@ -3199,8 +3199,9 @@ body.page-profile-schedule > .wrapper .content .today-events .events a.btn {
   float: right;
   width: 420px;
   -webkit-user-select: none;
+  -moz-user-select: none;
 }
-/* line 374, schedule.less */
+/* line 375, schedule.less */
 .schedule-container .grid .free-time-container {
   position: absolute;
   left: -65px;
@@ -3208,7 +3209,7 @@ body.page-profile-schedule > .wrapper .content .today-events .events a.btn {
   width: 20px;
   height: 100%;
 }
-/* line 380, schedule.less */
+/* line 381, schedule.less */
 .schedule-container .grid .free-time-container .line {
   border-radius: 5px;
   width: 5px;
@@ -3216,24 +3217,24 @@ body.page-profile-schedule > .wrapper .content .today-events .events a.btn {
   float: left;
   position: relative;
 }
-/* line 386, schedule.less */
+/* line 387, schedule.less */
 .schedule-container .grid .free-time-container .line.meet-time {
   background: #ffaa3e;
 }
-/* line 389, schedule.less */
+/* line 390, schedule.less */
 .schedule-container .grid .free-time-container .line.online-time {
   background: #0f9b58;
 }
-/* line 394, schedule.less */
+/* line 395, schedule.less */
 .schedule-container .grid .row {
   border-bottom: solid 1px #b9d4cc;
   height: 15px;
 }
-/* line 397, schedule.less */
+/* line 398, schedule.less */
 .schedule-container .grid .row.selected {
   background: #ddd;
 }
-/* line 401, schedule.less */
+/* line 402, schedule.less */
 .schedule-container .grid .marker {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -3247,7 +3248,7 @@ body.page-profile-schedule > .wrapper .content .today-events .events a.btn {
   background: rgba(0, 0, 0, 0.1);
   display: none;
 }
-/* line 414, schedule.less */
+/* line 415, schedule.less */
 .schedule-container .grid .weekend-marker {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -3263,7 +3264,7 @@ body.page-profile-schedule > .wrapper .content .today-events .events a.btn {
   border-color: rgba(0, 0, 0, 0.4);
   background: rgba(0, 0, 0, 0.1);
 }
-/* line 428, schedule.less */
+/* line 429, schedule.less */
 .schedule-container .grid .weekend-marker p {
   font-size: 1.3rem;
   display: block;
@@ -3271,7 +3272,7 @@ body.page-profile-schedule > .wrapper .content .today-events .events a.btn {
   margin-top: 6px;
   color: #333;
 }
-/* line 436, schedule.less */
+/* line 437, schedule.less */
 .schedule-container .grid .reserved-marker {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -3285,7 +3286,7 @@ body.page-profile-schedule > .wrapper .content .today-events .events a.btn {
   display: none;
   cursor: hand;
 }
-/* line 448, schedule.less */
+/* line 449, schedule.less */
 .schedule-container .grid .reserved-marker i.fa.fa-cog {
   cursor: pointer;
   position: absolute;
@@ -3294,86 +3295,86 @@ body.page-profile-schedule > .wrapper .content .today-events .events a.btn {
   top: 2px;
   z-index: 1;
 }
-/* line 456, schedule.less */
+/* line 457, schedule.less */
 .schedule-container .grid .reserved-marker p {
   font-size: 1.3rem;
   display: block;
   margin-left: 20px;
   margin-top: 6px;
 }
-/* line 462, schedule.less */
+/* line 463, schedule.less */
 .schedule-container .grid .reserved-marker.unwork {
   border-color: rgba(0, 0, 0, 0.4);
   background: rgba(0, 0, 0, 0.1);
 }
-/* line 465, schedule.less */
+/* line 466, schedule.less */
 .schedule-container .grid .reserved-marker.unwork i.fa.fa-cog {
   color: rgba(0, 0, 0, 0.4);
 }
-/* line 468, schedule.less */
+/* line 469, schedule.less */
 .schedule-container .grid .reserved-marker.unwork p {
   color: #666;
 }
-/* line 471, schedule.less */
+/* line 472, schedule.less */
 .schedule-container .grid .reserved-marker.unwork.selected {
   border-color: rgba(0, 0, 0, 0.5);
 }
-/* line 475, schedule.less */
+/* line 476, schedule.less */
 .schedule-container .grid .reserved-marker.skype,
 .schedule-container .grid .reserved-marker.cards {
   border-color: #33b679;
   background: rgba(51, 152, 121, 0.4);
 }
-/* line 478, schedule.less */
+/* line 479, schedule.less */
 .schedule-container .grid .reserved-marker.skype i.fa.fa-cog,
 .schedule-container .grid .reserved-marker.cards i.fa.fa-cog {
   color: #33b679;
 }
-/* line 481, schedule.less */
+/* line 482, schedule.less */
 .schedule-container .grid .reserved-marker.skype p,
 .schedule-container .grid .reserved-marker.cards p {
   color: #119457;
 }
-/* line 484, schedule.less */
+/* line 485, schedule.less */
 .schedule-container .grid .reserved-marker.skype.selected,
 .schedule-container .grid .reserved-marker.cards.selected {
   border-color: #119457;
 }
-/* line 488, schedule.less */
+/* line 489, schedule.less */
 .schedule-container .grid .reserved-marker.consult {
   border-color: #41b6ad;
   background: rgba(74, 208, 197, 0.2);
 }
-/* line 491, schedule.less */
+/* line 492, schedule.less */
 .schedule-container .grid .reserved-marker.consult i.fa.fa-cog {
   color: #41b6ad;
 }
-/* line 494, schedule.less */
+/* line 495, schedule.less */
 .schedule-container .grid .reserved-marker.consult p {
   color: #35504e;
 }
-/* line 497, schedule.less */
+/* line 498, schedule.less */
 .schedule-container .grid .reserved-marker.consult.selected {
   border-color: #1f948b;
 }
-/* line 501, schedule.less */
+/* line 502, schedule.less */
 .schedule-container .grid .reserved-marker.private {
   border-color: #fac944;
   background: rgba(250, 201, 68, 0.4);
 }
-/* line 504, schedule.less */
+/* line 505, schedule.less */
 .schedule-container .grid .reserved-marker.private i.fa.fa-cog {
   color: #d8a722;
 }
-/* line 507, schedule.less */
+/* line 508, schedule.less */
 .schedule-container .grid .reserved-marker.private p {
   color: #d39a00;
 }
-/* line 510, schedule.less */
+/* line 511, schedule.less */
 .schedule-container .grid .reserved-marker.private.selected {
   border-color: #d8a722;
 }
-/* line 514, schedule.less */
+/* line 515, schedule.less */
 .schedule-container .grid .reserved-marker .slider-top {
   left: 50%;
   margin-left: -2px;
@@ -3386,7 +3387,7 @@ body.page-profile-schedule > .wrapper .content .today-events .events a.btn {
   cursor: s-resize;
   z-index: 1;
 }
-/* line 526, schedule.less */
+/* line 527, schedule.less */
 .schedule-container .grid .reserved-marker .slider-bottom {
   left: 50%;
   margin-left: -2px;
@@ -5068,64 +5069,74 @@ body.page-library .wrapper section.articles-flow .article {
   padding: 0;
   overflow: hidden;
   margin-bottom: 20px;
+  height: 500px;
 }
-/* line 176, page_library.less */
+/* line 177, page_library.less */
 body.page-library .wrapper section.articles-flow .article:nth-child(4n) {
   margin-right: 0;
 }
-/* line 179, page_library.less */
+/* line 180, page_library.less */
 body.page-library .wrapper section.articles-flow .article .image {
   width: 100%;
 }
-/* line 181, page_library.less */
+/* line 182, page_library.less */
 body.page-library .wrapper section.articles-flow .article .image img {
   display: block;
   width: 100%;
 }
-/* line 186, page_library.less */
+/* line 187, page_library.less */
 body.page-library .wrapper section.articles-flow .article .content {
   width: 100%;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   padding: 20px 30px;
 }
-/* line 191, page_library.less */
+/* line 192, page_library.less */
+body.page-library .wrapper section.articles-flow .article .content .fader-container {
+  overflow: hidden;
+  height: 165px;
+}
+/* line 195, page_library.less */
+body.page-library .wrapper section.articles-flow .article .content .fader-container.full-height {
+  height: 385px;
+}
+/* line 199, page_library.less */
 body.page-library .wrapper section.articles-flow .article .content h4.article-name {
   font-size: 1.4rem;
   font-weight: 500;
   padding-top: 0;
 }
-/* line 197, page_library.less */
+/* line 205, page_library.less */
 body.page-library .wrapper section.articles-flow .article .content p {
   font-size: 1.1rem;
   margin: 5px 0;
 }
-/* line 200, page_library.less */
+/* line 208, page_library.less */
 body.page-library .wrapper section.articles-flow .article .content p.category {
   color: #35504e;
   margin-top: 0;
   font-weight: 500;
 }
-/* line 204, page_library.less */
+/* line 212, page_library.less */
 body.page-library .wrapper section.articles-flow .article .content p.category span.value {
   color: #8aa4a2;
 }
-/* line 208, page_library.less */
+/* line 216, page_library.less */
 body.page-library .wrapper section.articles-flow .article .content p.author {
   font-size: 1.2rem;
   color: #4ad0c5;
 }
-/* line 212, page_library.less */
+/* line 220, page_library.less */
 body.page-library .wrapper section.articles-flow .article .content p.introtext {
   line-height: 155%;
 }
-/* line 215, page_library.less */
+/* line 223, page_library.less */
 body.page-library .wrapper section.articles-flow .article .content p.date {
   margin-top: 10px;
   color: #b9d4cc;
   font-size: 1.0rem;
 }
-/* line 221, page_library.less */
+/* line 229, page_library.less */
 body.page-library .wrapper section.articles-flow .article .content a.btn {
   display: block;
   text-align: center;
