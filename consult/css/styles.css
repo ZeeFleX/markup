@@ -5489,4 +5489,68 @@ body.page-library-article section.repost-article .social .copy-link-container sp
 body.page-library-article section.repost-article .social .copy-link-container span.copy-link-button:hover {
   background: #41b6ad;
 }
+/* line 2, page_library_add_article.less */
+body.page-library-add-article form.article-form {
+  margin-top: 20px;
+  overflow: hidden;
+}
+/* line 5, page_library_add_article.less */
+body.page-library-add-article form.article-form label {
+  margin-top: 0;
+  color: #35504e;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+/* line 11, page_library_add_article.less */
+body.page-library-add-article form.article-form .field {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+/* line 14, page_library_add_article.less */
+body.page-library-add-article form.article-form .field input[type="text"] {
+  margin-bottom: 0;
+}
+/* line 17, page_library_add_article.less */
+body.page-library-add-article form.article-form .field .select2-container {
+  width: 100% !important;
+}
+/* line 20, page_library_add_article.less */
+body.page-library-add-article form.article-form .field.category {
+  width: 55%;
+}
+/* line 23, page_library_add_article.less */
+body.page-library-add-article form.article-form .field.image {
+  overflow: hidden;
+}
+/* line 25, page_library_add_article.less */
+body.page-library-add-article form.article-form .field.image .image-container {
+  width: 220px;
+  height: 160px;
+  border-radius: 5px;
+  -o-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background: url('../images/interface/image-placeholder.png') center center no-repeat #b9d4cc;
+  float: left;
+  margin-right: 20px;
+}
+/* line 37, page_library_add_article.less */
+body.page-library-add-article form.article-form .field.image .float-wrapper input[type="button"] {
+  display: block;
+  margin-bottom: 10px;
+}
+/* line 42, page_library_add_article.less */
+body.page-library-add-article form.article-form .field.image.teaser .teaser-container {
+  width: 330px;
+}
+/* line 46, page_library_add_article.less */
+body.page-library-add-article form.article-form .field textarea {
+  height: 540px;
+}
+/* line 50, page_library_add_article.less */
+body.page-library-add-article form.article-form input[type="submit"],
+body.page-library-add-article form.article-form a.btn.ghost {
+  float: right;
+  margin-left: 20px;
+}
 /*# sourceMappingURL=styles.css.map */

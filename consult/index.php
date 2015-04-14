@@ -36,6 +36,7 @@
             <li><a href="page_library_fluid.php?columns=3">Библиотека (главная страница) - mosaic</a></li>
             <li><a href="page_user_library_fluid.php?columns=3">Библиотека консультанта(главная страница) - mosaic</a></li>
             <li><a href="page_library_article.php">Библиотека. Статья</a></li>
+            <li><a href="page_library_add_article.php">Библиотека. Добавление статьи</a></li>
         </ol>
         <h1>Полезные ссылки</h1>
         <ol>
