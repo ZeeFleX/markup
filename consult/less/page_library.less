@@ -161,6 +161,22 @@ body.page-library{
 			&.articles-flow{
 				overflow: hidden;
 				//width: 100%;
+				&.three-columns{
+					.article{
+						width: 32%;
+						margin-right: 2%;
+						&:nth-child(3n){
+							margin-right: 0;
+						}
+					}
+				}
+				&.four-columns{
+					.article{
+						&:nth-child(4n){
+							margin-right: 0;
+						}
+					}
+				}
 				.column{
 					float: left;
 					width: 23%;
@@ -174,9 +190,6 @@ body.page-library{
 					overflow: hidden;
 					margin-bottom: 20px;
 					height:500px;
-					&:nth-child(4n){
-						margin-right: 0;
-					}
 					.image{
 						width: 100%;
 						img{

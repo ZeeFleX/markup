@@ -80,7 +80,7 @@
                 </div>
             </div>
         </section>
-        <section class="articles-flow four-columns">
+        <section class="articles-flow three-columns">
             <?php 
                 for($i = 0; $i <= 10; $i++) {
                 $img = rand(0,1);
