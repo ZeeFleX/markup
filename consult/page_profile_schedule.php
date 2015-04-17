@@ -9,9 +9,9 @@
         <div class="fader"></div>
         <div class="content-block">
             <i class="close fa fa-close"></i>
-            <h4>Событие</h4>
+            <h4>Добавить cобытие</h4>
             <form action="#" method="POST">
-                <div class="unwork section" data-type="unwork">
+                <!-- <div class="unwork section" data-type="unwork">
                     <input type="checkbox" name="unwork" class="section-handler" />
                     <label for="unwork-time">Нерабочее время</label>
                     <div class="clr"></div>
@@ -69,50 +69,48 @@
                         </div>
                         <div class="clr"></div>
                     </div>
-                </div>
+                </div> -->
                 <div class="consult section" data-type="consult">
-                    <input type="checkbox" name="consult" class="section-handler" />
-                    <label for="consult">Консультация</label>
-                    <div class="clr"></div>
-                    <div class="accordeon-container">
-                        <div class="type">
-                            <div class="field">
-                                <input type="radio" name="type" value="skype" />
-                                <label for="type">Skype</label>
-                            </div>
-                            <div class="field">
-                                <input type="radio" name="type" value="private" />
-                                <label for="type">Личная встреча</label>
-                            </div>
-                            <div class="field">
-                                <input type="radio" name="type" value="cards" />
-                                <label for="type">Метафорические карты</label>
-                            </div>
-                        </div>
-                        <div class="field title">
-                            <label for="title">Название мероприятия</label>
-                            <input type="text" name="title" placeholder="Введите заголовок для мероприятия" class="allow-clear"/>
-                        </div>
-                        <div class="field participiant">
-                            <label for="participiant">Участник</label>
-                            <input type="text" name="participiant" placeholder="Введите имя участника консультации" class="allow-clear"/>
-                        </div>
-                        <div class="field begin">
-                            <label for="consult-begin">Начало</label>
-                            <input type="text" class="timepicker-light" name="begin" placeholder="Выберите время"/>
-                        </div>
-                        <div class="field end">
-                            <label for="consult-end">Окончание</label>
-                            <input type="text" class="timepicker-light" name="end" placeholder="Выберите время" />
+                    <div class="type">
+                        <div class="field">
+                            <input type="radio" name="type" value="skype" />
+                            <label for="type">Skype</label>
                         </div>
                         <div class="clr"></div>
-                        <div class="field comment">
-                            <label for="comment">Комментарий</label>
-                            <textarea name="comment" id="comment" placeholder="Добавьте комментарий к событию" ></textarea>
+                        <div class="field">
+                            <input type="radio" name="type" value="private" />
+                            <label for="type">Личная встреча</label>
                         </div>
-                        <!-- <a href="#" id="cancel">Отменить консультацию</a> -->
                         <div class="clr"></div>
+                        <div class="field">
+                            <input type="radio" name="type" value="cards" />
+                            <label for="type">Метафорические карты</label>
+                        </div>
                     </div>
+                    <div class="clr"></div>
+                    <div class="field title">
+                        <label for="title">Название мероприятия</label>
+                        <input type="text" name="title" placeholder="Введите заголовок для мероприятия" class="allow-clear"/>
+                    </div>
+                    <div class="field participiant">
+                        <label for="participiant">Участник</label>
+                        <input type="text" name="participiant" placeholder="Введите имя участника консультации" class="allow-clear"/>
+                    </div>
+                    <div class="field begin">
+                        <label for="consult-begin">Начало</label>
+                        <input type="text" class="timepicker-light" name="begin" placeholder="Выберите время"/>
+                    </div>
+                    <div class="field end">
+                        <label for="consult-end">Окончание</label>
+                        <input type="text" class="timepicker-light" name="end" placeholder="Выберите время" />
+                    </div>
+                    <div class="clr"></div>
+                    <div class="field comment">
+                        <label for="comment">Комментарий</label>
+                        <textarea name="comment" id="comment" placeholder="Добавьте комментарий к событию" ></textarea>
+                    </div>
+                    <!-- <a href="#" id="cancel">Отменить консультацию</a> -->
+                    <div class="clr"></div>
                 </div>
                 <input type="submit" class="btn" value="Сохранить" />
                 <input type="button" class="btn ghost" value="Отменить" />
@@ -286,6 +284,16 @@
                             <label for="weekend">Выходной</label>
                         </div>
                     </div>
+                    <div class="freetime-grid">
+                        <p class="label">Планирование дня</p>
+                        <?php for($i = 1; $i <= 48; $i++) { ?>
+                            <div class="row <?php if($i > 4 && $i < 16) echo 'meeting'; ?> <?php if($i > 12 && $i < 35) echo 'online'; ?>" data-time="<?php echo $i; ?>">
+                                <div class="marker meeting"></div>
+                                <div class="marker online"></div>
+                                <div class="marker selector"></div>
+                            </div>
+                        <?php } ?>
+                    </div>
                     <div class="hours">
                         <?php for($i = 0; $i <= 23; $i++) { ?>
                             <?php
@@ -295,14 +303,30 @@
                         <?php } ?>
                     </div>
                     <div class="grid">
-                        <div class="free-time-container">
-                            <div class="line meet-time"></div>
-                            <div class="line online-time"></div>
-                        </div>
+                        
                         <div class="marker"></div>
                         <?php for($i = 1; $i <= 48; $i++) { ?>
                             <div class="row" data-time="<?php echo $i; ?>"></div>
                         <?php } ?>
+                    </div>
+                    <div class="legend">
+                        <h5>Планирование дня</h5>
+                        <p>
+                            <span class="meeting"></span> - Время для проведения личных встреч 
+                        </p>
+                        <p>
+                            <span class="online"></span> - Время для проведения online-консультаций 
+                        </p>
+                        <p>
+                            <span class="unwork"></span> - Нерабочее время 
+                        </p>
+                        <h5>События</h5>
+                        <p>
+                            <span class="meeting"></span> - Личная встреча 
+                        </p>
+                        <p>
+                            <span class="online"></span> - Online-консультация 
+                        </p>
                     </div>
                     <div class="clr"></div>
                 </div>

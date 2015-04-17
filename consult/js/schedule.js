@@ -2,6 +2,7 @@
 (function(){
 	var pressed = false; //Флаг, выделяется ли область
 	var changePressed = false; //Флаг, редактируется ли область
+	var planerPressed = false; //Флаг, выдеряется ли планирование дня
 	var currentChange; //Переменная. В какую сторону редактируется область
 	var time; //Универсальная переменная
 	var marker; //Переменная с контейнером, над которым работаем (выделяемая область, редактируемая область)
@@ -12,22 +13,21 @@
 	var eventNames = { //Типы и перевод событий
 		'private' : 'Личная консультация',
 		'skype' : 'Skype-консультация',
-		'unwork' : 'Нерабочее время',
-		'consult' : 'Консультация',
 		'cards' : 'Метафорические карты'
 	};
 	var events = {};
 	var tmpEvent = {};
 	var editEvent;
 	var taskList;
-	var grid;
-	var section;
+	var grid, planer;
 	var markers;
 	var tasks;
 	var date = '19-02-2015'; //Дата для примера
 	$(document).ready(function(){
 		grid = $('.schedule-container .grid'); //Контейнер с расписанием
+		planer = $('.schedule-container .freetime-grid'); //Контейнер с распорядком дня
 		taskList = $('.today-events .events');
+		var section = $('.consult.section');
 		
 		//Вызов календаря
 		$('.day-choose a#select-date').on('click', function(e){
@@ -42,36 +42,11 @@
 		$(editEventBlock).on('click', '.close', function(e){
 			e.preventDefault();
 			$(editEventBlock).fadeOut(300);
-			$(editEventBlock)
-				.find('input.section-handler').removeAttr('checked').end()
-				.find('.checkbox.container').removeClass('checked').end()
-				.find('input[type="checkbox"]').removeAttr('checked').end()
-				.find('.times').slideUp(300).end()
-				.find('.accordeon-container').slideUp(300);
+			var radio = $(editEventBlock).find('input');
+			$(radio).removeAttr('checked');
+			$(editEventBlock).find('.radio.container').removeClass('checked');
 		});
-		$(editEventBlock).on('click', 'input.section-handler', function(){
-			section = $(this).closest('.section');
-			var siblings = $(section).siblings('.section');
-			if($(this).prop('checked')){
-				$(section)
-					.find('.accordeon-container').slideDown(300).end()
-					.find('input[name="begin"]').val(tmpEvent.time[0]).end()
-					.find('input[name="end"]').val(tmpEvent.time[1]).end()
-
-				tmpEvent.type = $(section).attr('data-type');
-				section = $(section);
-				$.each($(siblings), function(key, item){
-					$(item)
-						.find('input[type="checkbox"]').removeAttr('checked').end()
-						.find('.checkbox.container').removeClass('checked').end()
-						.find('.times').slideUp(300).end()
-						.find('input.timepicker').val('').end()
-						.find('.accordeon-container').slideUp(300);
-				});
-			}else{
-				$(section).find('.accordeon-container').slideUp(300);
-			}
-		});
+		
 		$(editEventBlock).on('change', 'input.timepicker-light[name="begin"]', function(){
 			if(!$(this).closest('.times').length){
 				tmpEvent.time[0] = $(this).val();
@@ -105,85 +80,43 @@
 		// });
 		$(editEventBlock).find('form').on('submit', function(e){
 			e.preventDefault();
-			if($(section).find('input[name="free-time"]').prop('checked')){
-				//tmpEvent = {};
-				tmpEvent.title = 'free-time';
-				tmpEvent.types = [];
-				var types = $(section).find('.type .field');
-				//tmpEvent.times = [];
-				$.each(types, function(key, type){
-					if($(type).find('input[type="checkbox"]').prop('checked')){
-						tmpEvent.types.push($(type).find('input[type="checkbox"]').val());
-					}
-				});
-				tmpEvent.office = $(section).find('select[name="office"]').val();
-				$('.free-time-container').find('.line').css({
-					height: 0,
-					top: 0
-				});
-				$.each(tmpEvent.types, function(key, type){
-					tmpEvent.timeRange = [
-						$(section).find('.times.' + type + ' input[name="free-begin"]').val(),
-						$(section).find('.times.' + type + ' input[name="free-end"]').val()
-					];
-					tmpEvent.type = tmpEvent.types[key];
-					tmpEvent.time = [];
-					timeArray = timesToRows(tmpEvent.timeRange);
-					var marker = $('.free-time-container').find('.line.' + type);
-					placeFreetimeMarker(marker, timeArray);
-					ajaxEvent(tmpEvent, function(data){
-						
-					});
-				});
-				$(editEventBlock).fadeOut(300);
-				$(editEventBlock)
-					.find('input.section-handler').removeAttr('checked').end()
-					.find('.checkbox.container').removeClass('checked').end()
-					.find('.accordeon-container').slideUp(300);
-				$(editEventBlock).fadeOut(300);
-				
-			}else{
-				tmpEvent.title = $(section).find('input[name="title"]').val();
-				tmpEvent.participiant = $(section).find('input[name="participiant"]').val();
-				tmpEvent.comment = $(section).find('textarea[name="comment"]').val();
-				tmpEvent.type = $(section).find('input[type="radio"]:checked').val();
-				if(typeof(tmpEvent.type) == 'undefined') tmpEvent.type = 'unwork';
-				tmpEvent.office = $(section).find('select#office').val();
-				var timeArray = getEventRows(marker, grid);
-				reservedHoursArray = _.difference(reservedHoursArray, _.range(_.min(timeArray), _.max(timeArray)));
+			tmpEvent.title = $(section).find('input[name="title"]').val();
+			tmpEvent.participiant = $(section).find('input[name="participiant"]').val();
+			tmpEvent.comment = $(section).find('textarea[name="comment"]').val();
+			tmpEvent.type = $(section).find('input[type="radio"]:checked').val();
+			console.log($(section));
+			if(typeof(tmpEvent.type) == 'undefined') tmpEvent.type = 'unwork';
+			tmpEvent.office = $(section).find('select#office').val();
+			var timeArray = getEventRows(marker, grid);
+			reservedHoursArray = _.difference(reservedHoursArray, _.range(_.min(timeArray), _.max(timeArray)));
 
-				ajaxEvent(tmpEvent, function(data){
-					if(data.action == 'edit'){
-						var marker = $(grid).find('.reserved-marker[data-id="' + tmpEvent.id + '"]').detach();
-						$(taskList).find('.event[data-id="' + tmpEvent.id + '"]').remove();
-						var timeArray = getEventRows(marker, grid);
-						reservedHoursArray = _.difference(reservedHoursArray, _.range(_.min(timeArray), _.max(timeArray)));
-					}
-					var evnt = data;
-					if(typeof(evnt.title) == 'undefined' || !evnt.title.length) evnt.title = eventNames[evnt.type];
-					timeArray = timesToRows(data.time);
-					var marker = $('<div class="reserved-marker ' + evnt.type + '" data-id="' + evnt.id + '" data-type="' + evnt.type + '" data-begin="' + evnt.time[0] + '" data-end="' + evnt.time[1] + '"  data-participiant="' + evnt.participiant + '"  data-end="' + evnt.time[1] + '" data-title="' + evnt.title + '"><div class="slider-top slider"></div><div class="slider-bottom slider"></div><i class="fa fa-cog edit-event"></i><p class="title">' + evnt.title + '</p></div>').prependTo(grid);	//Формирование области
-					reservedHoursArray = _.union(_.range(timeArray[0], timeArray[1]), reservedHoursArray);
-					placeSelector(marker, timeArray);
-					$(grid).find('.marker').css('display', 'none');
-					
-					if(data.type != 'unwork'){
-						addTask(evnt);
-						var tasks = $(taskList).find('.event');
-						tasks = _.sortBy(tasks, function(num){
-							return parseInt($(num).attr('data-begin'))
-						});
-						$(taskList).prepend(tasks);
-					}
-					tmpEvent = {};
-					$(editEventBlock).fadeOut(300);
-					$(editEventBlock)
-						.find('input.section-handler').removeAttr('checked').end()
-						.find('.checkbox.container').removeClass('checked').end()
-						.find('.accordeon-container').slideUp(300);
-					$(editEventBlock).fadeOut(300);
+			ajaxEvent(tmpEvent, function(data){
+				if(data.action == 'edit'){
+					var marker = $(grid).find('.reserved-marker[data-id="' + tmpEvent.id + '"]').detach();
+					$(taskList).find('.event[data-id="' + tmpEvent.id + '"]').remove();
+					var timeArray = getEventRows(marker, grid);
+					reservedHoursArray = _.difference(reservedHoursArray, _.range(_.min(timeArray), _.max(timeArray)));
+				}
+				var evnt = data;
+				if(typeof(evnt.title) == 'undefined' || !evnt.title.length) evnt.title = eventNames[evnt.type];
+				timeArray = timesToRows(data.time);
+				var marker = $('<div class="reserved-marker ' + evnt.type + '" data-id="' + evnt.id + '" data-type="' + evnt.type + '" data-begin="' + evnt.time[0] + '" data-end="' + evnt.time[1] + '"  data-participiant="' + evnt.participiant + '"  data-end="' + evnt.time[1] + '" data-title="' + evnt.title + '"><div class="slider-top slider"></div><div class="slider-bottom slider"></div><i class="fa fa-cog edit-event"></i><p class="title">' + evnt.title + '</p></div>').prependTo(grid);	//Формирование области
+				reservedHoursArray = _.union(_.range(timeArray[0], timeArray[1]), reservedHoursArray);
+				placeSelector(marker, timeArray);
+				$(grid).find('.marker').css('display', 'none');
+				
+				addTask(evnt);
+				var tasks = $(taskList).find('.event');
+				tasks = _.sortBy(tasks, function(num){
+					return parseInt($(num).attr('data-begin'))
 				});
-			}
+				$(taskList).prepend(tasks);
+
+				tmpEvent = {};
+				$(editEventBlock)
+					.find('.container').removeClass('checked').end()
+					.fadeOut(300);
+			});
 		});
 		//Если есть расписание, то спрашиваем евенты на эту дату, ждем JSON, строим зарезервированные области
 		if($(grid).length){
@@ -256,6 +189,32 @@
 					.siblings('.reserved-marker').removeClass('selected');
 			}
 					
+		});
+		//Выделение распорядка дня
+		$(planer).on('mousedown', function(e){
+			$(planer).find('.row').removeClass('selected');
+			$(e.target).closest('.row').addClass('selected');
+			cursorPosition = e.pageY;
+			planerPressed = true;
+		});
+		$('body').on('mousemove', function(e){
+			if(planerPressed && $(e.target).closest('.freetime-grid').length && $(e.target).closest('.row').length){
+				$(e.target).closest('.row').addClass('selected');
+				console.log('3');
+			}
+			//cursorPosition = e.pageY;
+		});
+		$('body').on('mouseup', function(e){
+			if(planerPressed){
+				var selectedElements = $(planer).find('.row.selected');
+				var selectedArray = [];
+				$.each($(selectedElements), function(key, element){
+					selectedArray.push($(element).attr('data-time'));
+				});
+				var timesArray = [rowToTime(_.min(selectedArray) - 1), rowToTime(_.max(selectedArray))];
+				alert('Выбран отрезок рабочего времени: ' + timesArray[0] + ' - ' + timesArray[1]);
+			}
+			planerPressed = false;
 		});
 		//Выделение существующих евентов
 		$(grid).on('mousedown', function(e){	//При нажатии мыши на сетке
@@ -401,6 +360,9 @@
 			}
 			if(pressed){
 				tmpEvent.time = [rowToTime(_.min(timeArray) - 1), rowToTime(_.max(timeArray) - 1)];
+				var radio = $(editEventBlock).find('input[value="skype"]');
+				$(radio).prop('checked', true);
+				$(editEventBlock).find('.radio.container[data-id="' + $(radio).attr('data-id') + '"]').addClass('checked');
 				$(editEventBlock).fadeIn(300);
 			}
 			$('.timepicker-light').timepickerLight({

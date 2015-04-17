@@ -101,6 +101,14 @@ var loadInterface = function(){
     });
     //Чекбоксы
     var toggles = $('input[type="checkbox"]');
+    // $(toggles).on('change', function(){
+    //     var target = $('.container[data-id="' + $(this).attr('data-id') + '"]');
+    //     if($(this).prop('checked')){
+    //         $(target).addClass('checked');
+    //     }else{
+    //         $(target).removeClass('checked');
+    //     }
+    // });
     $.each(toggles, function (key, toggle) {
         var id = Math.floor(Math.random() * 1000000);
         var ifChecked = '';
@@ -120,8 +128,6 @@ var loadInterface = function(){
         $(toggleContainer).on('click', function () {
             $(this).toggleClass('checked');
             $(toggle).trigger('click');
-            console.log('РАЗ');
-            console.log($(toggle).prop('checked'));
         });
     });
     //Радио-кнопки

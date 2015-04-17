@@ -12,6 +12,7 @@
 <!--        <script src="js/less.min.js"></script>-->
 <script src="js/select2.min.js"></script>
 <script src="js/jquery.mousewheel.min.js"></script>
+<script src="js/attrchange.js"></script>
 <script src="js/scrolling.js"></script>
 <script src="js/underscore-min.js"></script>
 <script src="js/schedule.js"></script>

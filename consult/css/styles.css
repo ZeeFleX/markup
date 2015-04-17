@@ -2852,10 +2852,6 @@ body.page-profile-schedule .edit-schedule .content-block form .consult {
   padding: 30px 20px;
   border-top: solid 1px #8aa4a2;
 }
-/* line 80, schedule.less */
-body.page-profile-schedule .edit-schedule .content-block form .consult .type {
-  margin-left: 30px;
-}
 /* line 82, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block form .consult .type .field {
   overflow: hidden;
@@ -3174,67 +3170,108 @@ body.page-profile-schedule > .wrapper .content .today-events .events a.btn {
   width: 480px;
   padding: 15px;
   float: left;
+  -webkit-user-select: none;
+  -moz-user-select: none;
 }
-/* line 354, schedule.less */
+/* line 356, schedule.less */
+.schedule-container .freetime-grid {
+  position: static;
+  float: left;
+  width: 40px;
+}
+/* line 360, schedule.less */
+.schedule-container .freetime-grid p.label {
+  position: absolute;
+  width: 200px;
+  -webkit-transform: rotate(-90deg);
+  left: -65px;
+  top: 50%;
+  text-align: center;
+}
+/* line 368, schedule.less */
+.schedule-container .freetime-grid .row {
+  border-bottom: solid 1px #b9d4cc;
+  height: 15px;
+  background: #e5e5e5;
+}
+/* line 372, schedule.less */
+.schedule-container .freetime-grid .row.meeting,
+.schedule-container .freetime-grid .row.online {
+  background: #ffffff;
+}
+/* line 375, schedule.less */
+.schedule-container .freetime-grid .row.meeting .marker.meeting {
+  display: block;
+}
+/* line 378, schedule.less */
+.schedule-container .freetime-grid .row.online .marker.online {
+  display: block;
+}
+/* line 381, schedule.less */
+.schedule-container .freetime-grid .row.selected .marker.selector {
+  display: block;
+}
+/* line 384, schedule.less */
+.schedule-container .freetime-grid .row .marker {
+  width: 50%;
+  height: 100%;
+  display: none;
+}
+/* line 388, schedule.less */
+.schedule-container .freetime-grid .row .marker.selector {
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+/* line 395, schedule.less */
+.schedule-container .freetime-grid .row .marker.online {
+  float: right;
+  background: rgba(51, 152, 121, 0.4);
+}
+/* line 399, schedule.less */
+.schedule-container .freetime-grid .row .marker.meeting {
+  float: left;
+  background: rgba(250, 201, 68, 0.4);
+}
+/* line 406, schedule.less */
 .schedule-container .hours {
   position: relative;
   float: left;
   text-align: left;
   width: 55px;
 }
-/* line 359, schedule.less */
+/* line 411, schedule.less */
 .schedule-container .hours .hour {
   height: 32px;
   text-align: center;
 }
-/* line 362, schedule.less */
+/* line 414, schedule.less */
 .schedule-container .hours .hour span {
   position: relative;
   font-size: 1.2rem;
   top: -1px;
 }
-/* line 369, schedule.less */
+/* line 421, schedule.less */
 .schedule-container .grid {
   position: relative;
-  float: right;
-  width: 420px;
+  float: left;
+  width: 220px;
+  margin-right: 20px;
   -webkit-user-select: none;
   -moz-user-select: none;
 }
-/* line 375, schedule.less */
-.schedule-container .grid .free-time-container {
-  position: absolute;
-  left: -65px;
-  top: 0;
-  width: 20px;
-  height: 100%;
-}
-/* line 381, schedule.less */
-.schedule-container .grid .free-time-container .line {
-  border-radius: 5px;
-  width: 5px;
-  margin-right: 4px;
-  float: left;
-  position: relative;
-}
-/* line 387, schedule.less */
-.schedule-container .grid .free-time-container .line.meet-time {
-  background: #ffaa3e;
-}
-/* line 390, schedule.less */
-.schedule-container .grid .free-time-container .line.online-time {
-  background: #0f9b58;
-}
-/* line 395, schedule.less */
+/* line 428, schedule.less */
 .schedule-container .grid .row {
   border-bottom: solid 1px #b9d4cc;
   height: 15px;
 }
-/* line 398, schedule.less */
+/* line 431, schedule.less */
 .schedule-container .grid .row.selected {
   background: #ddd;
 }
-/* line 402, schedule.less */
+/* line 435, schedule.less */
 .schedule-container .grid .marker {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -3248,7 +3285,7 @@ body.page-profile-schedule > .wrapper .content .today-events .events a.btn {
   background: rgba(0, 0, 0, 0.1);
   display: none;
 }
-/* line 415, schedule.less */
+/* line 448, schedule.less */
 .schedule-container .grid .weekend-marker {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -3264,7 +3301,7 @@ body.page-profile-schedule > .wrapper .content .today-events .events a.btn {
   border-color: rgba(0, 0, 0, 0.4);
   background: rgba(0, 0, 0, 0.1);
 }
-/* line 429, schedule.less */
+/* line 462, schedule.less */
 .schedule-container .grid .weekend-marker p {
   font-size: 1.3rem;
   display: block;
@@ -3272,7 +3309,7 @@ body.page-profile-schedule > .wrapper .content .today-events .events a.btn {
   margin-top: 6px;
   color: #333;
 }
-/* line 437, schedule.less */
+/* line 470, schedule.less */
 .schedule-container .grid .reserved-marker {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -3286,7 +3323,7 @@ body.page-profile-schedule > .wrapper .content .today-events .events a.btn {
   display: none;
   cursor: hand;
 }
-/* line 449, schedule.less */
+/* line 482, schedule.less */
 .schedule-container .grid .reserved-marker i.fa.fa-cog {
   cursor: pointer;
   position: absolute;
@@ -3295,86 +3332,86 @@ body.page-profile-schedule > .wrapper .content .today-events .events a.btn {
   top: 2px;
   z-index: 1;
 }
-/* line 457, schedule.less */
+/* line 490, schedule.less */
 .schedule-container .grid .reserved-marker p {
   font-size: 1.3rem;
   display: block;
   margin-left: 20px;
   margin-top: 6px;
 }
-/* line 463, schedule.less */
+/* line 496, schedule.less */
 .schedule-container .grid .reserved-marker.unwork {
   border-color: rgba(0, 0, 0, 0.4);
   background: rgba(0, 0, 0, 0.1);
 }
-/* line 466, schedule.less */
+/* line 499, schedule.less */
 .schedule-container .grid .reserved-marker.unwork i.fa.fa-cog {
   color: rgba(0, 0, 0, 0.4);
 }
-/* line 469, schedule.less */
+/* line 502, schedule.less */
 .schedule-container .grid .reserved-marker.unwork p {
   color: #666;
 }
-/* line 472, schedule.less */
+/* line 505, schedule.less */
 .schedule-container .grid .reserved-marker.unwork.selected {
   border-color: rgba(0, 0, 0, 0.5);
 }
-/* line 476, schedule.less */
+/* line 509, schedule.less */
 .schedule-container .grid .reserved-marker.skype,
 .schedule-container .grid .reserved-marker.cards {
   border-color: #33b679;
   background: rgba(51, 152, 121, 0.4);
 }
-/* line 479, schedule.less */
+/* line 512, schedule.less */
 .schedule-container .grid .reserved-marker.skype i.fa.fa-cog,
 .schedule-container .grid .reserved-marker.cards i.fa.fa-cog {
   color: #33b679;
 }
-/* line 482, schedule.less */
+/* line 515, schedule.less */
 .schedule-container .grid .reserved-marker.skype p,
 .schedule-container .grid .reserved-marker.cards p {
   color: #119457;
 }
-/* line 485, schedule.less */
+/* line 518, schedule.less */
 .schedule-container .grid .reserved-marker.skype.selected,
 .schedule-container .grid .reserved-marker.cards.selected {
   border-color: #119457;
 }
-/* line 489, schedule.less */
+/* line 522, schedule.less */
 .schedule-container .grid .reserved-marker.consult {
   border-color: #41b6ad;
   background: rgba(74, 208, 197, 0.2);
 }
-/* line 492, schedule.less */
+/* line 525, schedule.less */
 .schedule-container .grid .reserved-marker.consult i.fa.fa-cog {
   color: #41b6ad;
 }
-/* line 495, schedule.less */
+/* line 528, schedule.less */
 .schedule-container .grid .reserved-marker.consult p {
   color: #35504e;
 }
-/* line 498, schedule.less */
+/* line 531, schedule.less */
 .schedule-container .grid .reserved-marker.consult.selected {
   border-color: #1f948b;
 }
-/* line 502, schedule.less */
+/* line 535, schedule.less */
 .schedule-container .grid .reserved-marker.private {
   border-color: #fac944;
   background: rgba(250, 201, 68, 0.4);
 }
-/* line 505, schedule.less */
+/* line 538, schedule.less */
 .schedule-container .grid .reserved-marker.private i.fa.fa-cog {
   color: #d8a722;
 }
-/* line 508, schedule.less */
+/* line 541, schedule.less */
 .schedule-container .grid .reserved-marker.private p {
   color: #d39a00;
 }
-/* line 511, schedule.less */
+/* line 544, schedule.less */
 .schedule-container .grid .reserved-marker.private.selected {
   border-color: #d8a722;
 }
-/* line 515, schedule.less */
+/* line 548, schedule.less */
 .schedule-container .grid .reserved-marker .slider-top {
   left: 50%;
   margin-left: -2px;
@@ -3387,7 +3424,7 @@ body.page-profile-schedule > .wrapper .content .today-events .events a.btn {
   cursor: s-resize;
   z-index: 1;
 }
-/* line 527, schedule.less */
+/* line 560, schedule.less */
 .schedule-container .grid .reserved-marker .slider-bottom {
   left: 50%;
   margin-left: -2px;
@@ -3399,6 +3436,37 @@ body.page-profile-schedule > .wrapper .content .today-events .events a.btn {
   background: #fff;
   cursor: s-resize;
   z-index: 1;
+}
+/* line 574, schedule.less */
+.schedule-container .legend {
+  overflow: hidden;
+  font-size: 1.2rem;
+}
+/* line 577, schedule.less */
+.schedule-container .legend h5 {
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+/* line 582, schedule.less */
+.schedule-container .legend span {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  top: 3px;
+  margin-right: 3px;
+}
+/* line 588, schedule.less */
+.schedule-container .legend span.meeting {
+  background: #fac944;
+}
+/* line 591, schedule.less */
+.schedule-container .legend span.online {
+  background: #33b679;
+}
+/* line 594, schedule.less */
+.schedule-container .legend span.unwork {
+  background: #d4d4d4;
 }
 /* line 2, page_notifications.less */
 body.page-notifications section.content {

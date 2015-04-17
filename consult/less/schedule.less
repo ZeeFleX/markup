@@ -78,7 +78,7 @@ body.page-profile-schedule{
 					padding:30px 20px;
 					border-top:solid 1px @sea_light;
 					.type{
-						margin-left: 30px;
+						//margin-left: 30px;
 						.field{
 							overflow: hidden;
 							.checkbox.container{
@@ -351,6 +351,58 @@ body.page-profile-schedule{
 	width: 480px;
 	padding:15px;
 	float: left;
+	-webkit-user-select: none;
+	-moz-user-select:none;
+	.freetime-grid{
+		position: static;
+		float: left;
+		width: 40px;
+		p.label{
+			position: absolute;
+			width:200px;
+			-webkit-transform:rotate(-90deg);
+			left:-65px;
+			top:50%;
+			text-align: center;
+		}
+		.row{
+			border-bottom:solid 1px #b9d4cc;
+			height:15px;
+			background: #e5e5e5;
+			&.meeting, &.online{
+				background: @white;
+			}
+			&.meeting .marker.meeting{
+				display: block;
+			}
+			&.online .marker.online{
+				display: block;
+			}
+			&.selected .marker.selector{
+				display: block;
+			}
+			.marker{
+				width:50%;
+				height:100%;
+				display: none;
+				&.selector{
+					position: absolute;
+					display: none;
+					width: 100%;
+					height: 100%;
+					background: rgba(0,0,0,0.2);
+				}
+				&.online{
+					float: right;
+					background: rgba(51,152,121,.4);
+				}
+				&.meeting{
+					float:left;
+					background: rgba(250,201,68,.4);
+				}
+			}
+		}
+	}
 	.hours{
 		position: relative;
 		float: left;
@@ -368,30 +420,11 @@ body.page-profile-schedule{
 	}
 	.grid{
 		position: relative;
-		float: right;
-		width: 420px;
+		float: left;
+		width: 220px;
+		margin-right: 20px;
 		-webkit-user-select:none;
 		-moz-user-select:none;
-		.free-time-container{
-			position: absolute;
-			left:-65px;
-			top:0;
-			width: 20px;
-			height: 100%;
-			.line{
-				border-radius:5px;
-				width: 5px;
-				margin-right: 4px;
-				float: left;
-				position: relative;
-				&.meet-time{
-					background: @yellow_dark;
-				}
-				&.online-time{
-					background: @green;
-				}
-			}
-		}
 		.row{
 			border-bottom:solid 1px #b9d4cc;
 			height:15px;
@@ -535,6 +568,31 @@ body.page-profile-schedule{
 				background: #fff;
 				cursor: s-resize;
 				z-index: 1;
+			}
+		}
+	}
+	.legend{
+		overflow: hidden;
+		font-size:1.2rem;
+		h5{
+			margin-top: 0;
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+		span{
+			display:inline-block;
+			width:13px;
+			height:13px;
+			top:3px;
+			margin-right: 3px;
+			&.meeting{
+				background: #fac944;
+			}
+			&.online{
+				background: #33b679;
+			}
+			&.unwork{
+				background: #d4d4d4;
 			}
 		}
 	}

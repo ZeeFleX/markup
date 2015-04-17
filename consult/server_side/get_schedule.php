@@ -25,11 +25,6 @@
 			'type' => 'cards',
 			'participiant' => 'Чичваркин Евгений',
 			'participiantProfile' => '#'
-		),
-		Array(
-			'id' => 15,
-			'time' => Array('00:00', '4:00'),
-			'type' => 'unwork'
 		)
 	);
 	echo json_encode($schedule);
