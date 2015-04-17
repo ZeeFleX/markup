@@ -3195,29 +3195,33 @@ body.page-profile-schedule > .wrapper .content .today-events .events a.btn {
   background: #e5e5e5;
 }
 /* line 372, schedule.less */
+.schedule-container .freetime-grid .row:nth-child(even) {
+  border-bottom: dotted 1px #b9d4cc;
+}
+/* line 375, schedule.less */
 .schedule-container .freetime-grid .row.meeting,
 .schedule-container .freetime-grid .row.online {
   background: #ffffff;
 }
-/* line 375, schedule.less */
+/* line 378, schedule.less */
 .schedule-container .freetime-grid .row.meeting .marker.meeting {
   display: block;
 }
-/* line 378, schedule.less */
+/* line 381, schedule.less */
 .schedule-container .freetime-grid .row.online .marker.online {
   display: block;
 }
-/* line 381, schedule.less */
+/* line 384, schedule.less */
 .schedule-container .freetime-grid .row.selected .marker.selector {
   display: block;
 }
-/* line 384, schedule.less */
+/* line 387, schedule.less */
 .schedule-container .freetime-grid .row .marker {
   width: 50%;
   height: 100%;
   display: none;
 }
-/* line 388, schedule.less */
+/* line 391, schedule.less */
 .schedule-container .freetime-grid .row .marker.selector {
   position: absolute;
   display: none;
@@ -3225,35 +3229,37 @@ body.page-profile-schedule > .wrapper .content .today-events .events a.btn {
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
 }
-/* line 395, schedule.less */
+/* line 398, schedule.less */
 .schedule-container .freetime-grid .row .marker.online {
   float: right;
   background: rgba(51, 152, 121, 0.4);
 }
-/* line 399, schedule.less */
+/* line 402, schedule.less */
 .schedule-container .freetime-grid .row .marker.meeting {
   float: left;
   background: rgba(250, 201, 68, 0.4);
 }
-/* line 406, schedule.less */
+/* line 409, schedule.less */
 .schedule-container .hours {
   position: relative;
   float: left;
   text-align: left;
   width: 55px;
 }
-/* line 411, schedule.less */
+/* line 414, schedule.less */
 .schedule-container .hours .hour {
   height: 32px;
   text-align: center;
+  border-bottom: solid 1px #b9d4cc;
+  box-sizing: border-box;
 }
-/* line 414, schedule.less */
+/* line 419, schedule.less */
 .schedule-container .hours .hour span {
   position: relative;
   font-size: 1.2rem;
   top: -1px;
 }
-/* line 421, schedule.less */
+/* line 426, schedule.less */
 .schedule-container .grid {
   position: relative;
   float: left;
@@ -3262,16 +3268,20 @@ body.page-profile-schedule > .wrapper .content .today-events .events a.btn {
   -webkit-user-select: none;
   -moz-user-select: none;
 }
-/* line 428, schedule.less */
+/* line 433, schedule.less */
 .schedule-container .grid .row {
   border-bottom: solid 1px #b9d4cc;
   height: 15px;
 }
-/* line 431, schedule.less */
+/* line 436, schedule.less */
 .schedule-container .grid .row.selected {
   background: #ddd;
 }
-/* line 435, schedule.less */
+/* line 439, schedule.less */
+.schedule-container .grid .row:nth-child(odd) {
+  border-bottom: dotted 1px #b9d4cc;
+}
+/* line 443, schedule.less */
 .schedule-container .grid .marker {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -3285,7 +3295,7 @@ body.page-profile-schedule > .wrapper .content .today-events .events a.btn {
   background: rgba(0, 0, 0, 0.1);
   display: none;
 }
-/* line 448, schedule.less */
+/* line 456, schedule.less */
 .schedule-container .grid .weekend-marker {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -3301,7 +3311,7 @@ body.page-profile-schedule > .wrapper .content .today-events .events a.btn {
   border-color: rgba(0, 0, 0, 0.4);
   background: rgba(0, 0, 0, 0.1);
 }
-/* line 462, schedule.less */
+/* line 470, schedule.less */
 .schedule-container .grid .weekend-marker p {
   font-size: 1.3rem;
   display: block;
@@ -3309,7 +3319,7 @@ body.page-profile-schedule > .wrapper .content .today-events .events a.btn {
   margin-top: 6px;
   color: #333;
 }
-/* line 470, schedule.less */
+/* line 478, schedule.less */
 .schedule-container .grid .reserved-marker {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -3323,7 +3333,7 @@ body.page-profile-schedule > .wrapper .content .today-events .events a.btn {
   display: none;
   cursor: hand;
 }
-/* line 482, schedule.less */
+/* line 490, schedule.less */
 .schedule-container .grid .reserved-marker i.fa.fa-cog {
   cursor: pointer;
   position: absolute;
@@ -3332,86 +3342,86 @@ body.page-profile-schedule > .wrapper .content .today-events .events a.btn {
   top: 2px;
   z-index: 1;
 }
-/* line 490, schedule.less */
+/* line 498, schedule.less */
 .schedule-container .grid .reserved-marker p {
   font-size: 1.3rem;
   display: block;
   margin-left: 20px;
   margin-top: 6px;
 }
-/* line 496, schedule.less */
+/* line 504, schedule.less */
 .schedule-container .grid .reserved-marker.unwork {
   border-color: rgba(0, 0, 0, 0.4);
   background: rgba(0, 0, 0, 0.1);
 }
-/* line 499, schedule.less */
+/* line 507, schedule.less */
 .schedule-container .grid .reserved-marker.unwork i.fa.fa-cog {
   color: rgba(0, 0, 0, 0.4);
 }
-/* line 502, schedule.less */
+/* line 510, schedule.less */
 .schedule-container .grid .reserved-marker.unwork p {
   color: #666;
 }
-/* line 505, schedule.less */
+/* line 513, schedule.less */
 .schedule-container .grid .reserved-marker.unwork.selected {
   border-color: rgba(0, 0, 0, 0.5);
 }
-/* line 509, schedule.less */
+/* line 517, schedule.less */
 .schedule-container .grid .reserved-marker.skype,
 .schedule-container .grid .reserved-marker.cards {
   border-color: #33b679;
   background: rgba(51, 152, 121, 0.4);
 }
-/* line 512, schedule.less */
+/* line 520, schedule.less */
 .schedule-container .grid .reserved-marker.skype i.fa.fa-cog,
 .schedule-container .grid .reserved-marker.cards i.fa.fa-cog {
   color: #33b679;
 }
-/* line 515, schedule.less */
+/* line 523, schedule.less */
 .schedule-container .grid .reserved-marker.skype p,
 .schedule-container .grid .reserved-marker.cards p {
   color: #119457;
 }
-/* line 518, schedule.less */
+/* line 526, schedule.less */
 .schedule-container .grid .reserved-marker.skype.selected,
 .schedule-container .grid .reserved-marker.cards.selected {
   border-color: #119457;
 }
-/* line 522, schedule.less */
+/* line 530, schedule.less */
 .schedule-container .grid .reserved-marker.consult {
   border-color: #41b6ad;
   background: rgba(74, 208, 197, 0.2);
 }
-/* line 525, schedule.less */
+/* line 533, schedule.less */
 .schedule-container .grid .reserved-marker.consult i.fa.fa-cog {
   color: #41b6ad;
 }
-/* line 528, schedule.less */
+/* line 536, schedule.less */
 .schedule-container .grid .reserved-marker.consult p {
   color: #35504e;
 }
-/* line 531, schedule.less */
+/* line 539, schedule.less */
 .schedule-container .grid .reserved-marker.consult.selected {
   border-color: #1f948b;
 }
-/* line 535, schedule.less */
+/* line 543, schedule.less */
 .schedule-container .grid .reserved-marker.private {
   border-color: #fac944;
   background: rgba(250, 201, 68, 0.4);
 }
-/* line 538, schedule.less */
+/* line 546, schedule.less */
 .schedule-container .grid .reserved-marker.private i.fa.fa-cog {
   color: #d8a722;
 }
-/* line 541, schedule.less */
+/* line 549, schedule.less */
 .schedule-container .grid .reserved-marker.private p {
   color: #d39a00;
 }
-/* line 544, schedule.less */
+/* line 552, schedule.less */
 .schedule-container .grid .reserved-marker.private.selected {
   border-color: #d8a722;
 }
-/* line 548, schedule.less */
+/* line 556, schedule.less */
 .schedule-container .grid .reserved-marker .slider-top {
   left: 50%;
   margin-left: -2px;
@@ -3424,7 +3434,7 @@ body.page-profile-schedule > .wrapper .content .today-events .events a.btn {
   cursor: s-resize;
   z-index: 1;
 }
-/* line 560, schedule.less */
+/* line 568, schedule.less */
 .schedule-container .grid .reserved-marker .slider-bottom {
   left: 50%;
   margin-left: -2px;
@@ -3437,18 +3447,18 @@ body.page-profile-schedule > .wrapper .content .today-events .events a.btn {
   cursor: s-resize;
   z-index: 1;
 }
-/* line 574, schedule.less */
+/* line 582, schedule.less */
 .schedule-container .legend {
   overflow: hidden;
   font-size: 1.2rem;
 }
-/* line 577, schedule.less */
+/* line 585, schedule.less */
 .schedule-container .legend h5 {
   margin-top: 0;
   padding-top: 0;
   padding-bottom: 0;
 }
-/* line 582, schedule.less */
+/* line 590, schedule.less */
 .schedule-container .legend span {
   display: inline-block;
   width: 13px;
@@ -3456,15 +3466,15 @@ body.page-profile-schedule > .wrapper .content .today-events .events a.btn {
   top: 3px;
   margin-right: 3px;
 }
-/* line 588, schedule.less */
+/* line 596, schedule.less */
 .schedule-container .legend span.meeting {
   background: #fac944;
 }
-/* line 591, schedule.less */
+/* line 599, schedule.less */
 .schedule-container .legend span.online {
   background: #33b679;
 }
-/* line 594, schedule.less */
+/* line 602, schedule.less */
 .schedule-container .legend span.unwork {
   background: #d4d4d4;
 }

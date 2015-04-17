@@ -369,6 +369,9 @@ body.page-profile-schedule{
 			border-bottom:solid 1px #b9d4cc;
 			height:15px;
 			background: #e5e5e5;
+			&:nth-child(even){
+				border-bottom:dotted 1px #b9d4cc;
+			}
 			&.meeting, &.online{
 				background: @white;
 			}
@@ -411,6 +414,8 @@ body.page-profile-schedule{
 		.hour{
 			height: 32px;
 			text-align: center;
+			border-bottom: solid 1px #b9d4cc;
+			box-sizing: border-box;
 			span{
 				position: relative;
 				font-size:1.2rem;
@@ -430,6 +435,9 @@ body.page-profile-schedule{
 			height:15px;
 			&.selected{
 				background: #ddd;
+			}
+			&:nth-child(odd){
+				border-bottom:dotted 1px #b9d4cc;
 			}
 		}
 		.marker{
