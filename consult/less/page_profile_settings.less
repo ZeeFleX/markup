@@ -371,4 +371,39 @@ body.page-profile-settings{
             margin-right: 20px;
         }
     }
+    &.worktime{
+        form{
+            .day{
+                overflow: hidden;
+                h3{
+                    color: @sea_light;
+                    font-size: 1.4rem;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    margin-top: 15px;
+                }
+                .field{
+                    float: left;
+                    width: 48%;
+                    label{
+                        color: @sea;
+                        font-size: 1.4rem;
+                        font-weight: 500;
+                        margin-top: 0;
+                    }
+                    &.begin{
+                        margin-right: 4%;
+                    }
+                    .select2-container{
+                        width: 100% !important;
+                    }
+                }
+            }
+            input[type="submit"]{
+                margin-top: 30px;
+                margin-right: 20px;
+                padding: 9px 17px 6px 17px;
+            }
+        }
+    }
 }
