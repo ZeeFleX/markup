@@ -1092,7 +1092,7 @@ body.page-mainpage > .content section.statistic .item i {
 }
 /* line 160, mainpage.less */
 body.page-mainpage > .content section.statistic .item .text {
-  overflow: hidden;
+  float: left;
 }
 /* line 162, mainpage.less */
 body.page-mainpage > .content section.statistic .item .text p {
