@@ -2795,21 +2795,21 @@ body.page-profile-settings.worktime form input[type="submit"] {
   border-color: rgba(138, 164, 162, 0.9);
 }
 /* line 3, schedule.less */
-body.page-profile-schedule .edit-schedule {
-  position: absolute;
+body.page-profile-schedule .edit-worktime {
+  position: fixed;
   z-index: 2;
   width: 100%;
   display: none;
 }
 /* line 8, schedule.less */
-body.page-profile-schedule .edit-schedule .fader {
+body.page-profile-schedule .edit-worktime .fader {
   position: fixed;
   width: 100%;
   height: 100%;
   background: rgba(255, 255, 255, 0.5);
 }
 /* line 14, schedule.less */
-body.page-profile-schedule .edit-schedule .content-block {
+body.page-profile-schedule .edit-worktime .content-block {
   position: relative;
   width: 465px;
   left: 50%;
@@ -2819,6 +2819,106 @@ body.page-profile-schedule .edit-schedule .content-block {
   padding: 0;
 }
 /* line 22, schedule.less */
+body.page-profile-schedule .edit-worktime .content-block i.close {
+  font-size: 1.4rem;
+  position: absolute;
+  right: 20px;
+  top: 23px;
+  cursor: pointer;
+  z-index: 1;
+}
+/* line 29, schedule.less */
+body.page-profile-schedule .edit-worktime .content-block i.close:hover {
+  color: #35504e;
+}
+/* line 33, schedule.less */
+body.page-profile-schedule .edit-worktime .content-block h4 {
+  padding-top: 0;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+/* line 38, schedule.less */
+body.page-profile-schedule .edit-worktime .content-block form {
+  padding: 20px;
+  overflow: hidden;
+}
+/* line 42, schedule.less */
+body.page-profile-schedule .edit-worktime .content-block form .field.times .timeselect {
+  float: right;
+  margin-left: 15px;
+}
+/* line 45, schedule.less */
+body.page-profile-schedule .edit-worktime .content-block form .field.times .timeselect span {
+  display: block;
+  float: left;
+  margin-right: 10px;
+  margin-top: 8px;
+}
+/* line 51, schedule.less */
+body.page-profile-schedule .edit-worktime .content-block form .field.times .timeselect input {
+  float: right;
+  width: 100px;
+}
+/* line 56, schedule.less */
+body.page-profile-schedule .edit-worktime .content-block form .field.times label.date {
+  overflow: hidden;
+  margin: 0;
+  top: 9px;
+}
+/* line 62, schedule.less */
+body.page-profile-schedule .edit-worktime .content-block form .field.type {
+  overflow: hidden;
+}
+/* line 64, schedule.less */
+body.page-profile-schedule .edit-worktime .content-block form .field.type .radio.container,
+body.page-profile-schedule .edit-worktime .content-block form .field.type .checkbox.container {
+  float: left;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+/* line 70, schedule.less */
+body.page-profile-schedule .edit-worktime .content-block form .field.type label {
+  display: block;
+  float: left;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+/* line 76, schedule.less */
+body.page-profile-schedule .edit-worktime .content-block form .field.type .worktype {
+  margin-left: 30px;
+  display: none;
+}
+/* line 81, schedule.less */
+body.page-profile-schedule .edit-worktime .content-block form input.btn {
+  margin-top: 20px;
+  float: right;
+}
+/* line 88, schedule.less */
+body.page-profile-schedule .edit-schedule {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  display: none;
+}
+/* line 93, schedule.less */
+body.page-profile-schedule .edit-schedule .fader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+}
+/* line 99, schedule.less */
+body.page-profile-schedule .edit-schedule .content-block {
+  position: relative;
+  width: 465px;
+  left: 50%;
+  margin-left: -232px;
+  border: solid 1px #8aa4a2;
+  top: 150px;
+  padding: 0;
+}
+/* line 107, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block i.close {
   font-size: 1.4rem;
   position: absolute;
@@ -2827,102 +2927,102 @@ body.page-profile-schedule .edit-schedule .content-block i.close {
   cursor: pointer;
   z-index: 1;
 }
-/* line 30, schedule.less */
+/* line 115, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block i.close:hover {
   color: #35504e;
 }
-/* line 34, schedule.less */
+/* line 119, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block h4 {
   padding-top: 0;
   margin-left: 20px;
   margin-top: 20px;
 }
-/* line 40, schedule.less */
+/* line 125, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block form .accordeon-container {
   display: none;
 }
-/* line 43, schedule.less */
+/* line 128, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block form .field.begin,
 body.page-profile-schedule .edit-schedule .content-block form .field.end {
   float: left;
   width: 45%;
   margin-right: 5%;
 }
-/* line 48, schedule.less */
+/* line 133, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block form .unwork {
   padding: 30px 20px;
 }
-/* line 51, schedule.less */
+/* line 136, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block form .free-time {
   padding: 30px 20px;
   border-top: solid 1px #8aa4a2;
 }
-/* line 54, schedule.less */
+/* line 139, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block form .free-time .type {
   margin-left: 30px;
 }
-/* line 56, schedule.less */
+/* line 141, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block form .free-time .type > .field {
   overflow: hidden;
   margin: 5px 0;
 }
-/* line 60, schedule.less */
+/* line 145, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block form .free-time .type .times {
   margin-bottom: 30px;
   display: none;
 }
-/* line 63, schedule.less */
+/* line 148, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block form .free-time .type .times label {
   margin-top: 0;
 }
-/* line 66, schedule.less */
+/* line 151, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block form .free-time .type .times .field {
   float: left;
   width: 44%;
 }
-/* line 72, schedule.less */
+/* line 157, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block form .free-time .select2-container {
   width: 100% !important;
   margin-top: 10px;
 }
-/* line 77, schedule.less */
+/* line 162, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block form .consult {
   padding: 30px 20px;
   border-top: solid 1px #8aa4a2;
 }
-/* line 82, schedule.less */
+/* line 167, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block form .consult .type .field {
   overflow: hidden;
 }
-/* line 84, schedule.less */
+/* line 169, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block form .consult .type .field .checkbox.container {
   float: left;
   margin-right: 10px;
 }
-/* line 87, schedule.less */
+/* line 172, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block form .consult .type .field .checkbox.container + label {
   margin-top: 4px;
 }
-/* line 93, schedule.less */
+/* line 178, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block form .consult .field.begin,
 body.page-profile-schedule .edit-schedule .content-block form .consult .field.end {
   margin-top: 0px;
 }
-/* line 96, schedule.less */
+/* line 181, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block form .consult .field.comment {
   margin-top: 10px;
 }
-/* line 98, schedule.less */
+/* line 183, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block form .consult .field.comment textarea {
   height: 80px;
 }
-/* line 103, schedule.less */
+/* line 188, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block form .checkbox.container,
 body.page-profile-schedule .edit-schedule .content-block form .radio.container {
   float: left;
   margin-right: 10px;
 }
-/* line 106, schedule.less */
+/* line 191, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block form .checkbox.container + label,
 body.page-profile-schedule .edit-schedule .content-block form .radio.container + label {
   float: left;
@@ -2932,42 +3032,42 @@ body.page-profile-schedule .edit-schedule .content-block form .radio.container +
   font-weight: 500;
   text-align: left;
 }
-/* line 115, schedule.less */
+/* line 200, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block form input[type="submit"] {
   float: right;
   margin-right: 20px;
   margin-left: 20px;
   margin-bottom: 20px;
 }
-/* line 121, schedule.less */
+/* line 206, schedule.less */
 body.page-profile-schedule .edit-schedule .content-block form input[type="button"] {
   float: right;
 }
-/* line 128, schedule.less */
+/* line 213, schedule.less */
 body.page-profile-schedule > .wrapper .content {
   margin-top: 20px;
 }
-/* line 130, schedule.less */
+/* line 215, schedule.less */
 body.page-profile-schedule > .wrapper .content .day {
   padding: 5px 0;
 }
-/* line 132, schedule.less */
+/* line 217, schedule.less */
 body.page-profile-schedule > .wrapper .content .day .day-container {
   float: left;
   left: 50%;
 }
-/* line 135, schedule.less */
+/* line 220, schedule.less */
 body.page-profile-schedule > .wrapper .content .day .day-container .day-choose {
   float: right;
   right: 50%;
   padding-left: 50px;
   padding-right: 50px;
 }
-/* line 140, schedule.less */
+/* line 225, schedule.less */
 body.page-profile-schedule > .wrapper .content .day .day-container .day-choose p {
   text-align: center;
 }
-/* line 142, schedule.less */
+/* line 227, schedule.less */
 body.page-profile-schedule > .wrapper .content .day .day-container .day-choose p a {
   color: #35504e;
   font-size: 1.4rem;
@@ -2975,25 +3075,25 @@ body.page-profile-schedule > .wrapper .content .day .day-container .day-choose p
   text-align: center;
   text-decoration: none;
 }
-/* line 148, schedule.less */
+/* line 233, schedule.less */
 body.page-profile-schedule > .wrapper .content .day .day-container .day-choose p a:hover {
   text-decoration: underline;
 }
-/* line 153, schedule.less */
+/* line 238, schedule.less */
 body.page-profile-schedule > .wrapper .content .day .day-container .day-choose a.arrow {
   position: absolute;
   display: block;
   top: 11px;
 }
-/* line 157, schedule.less */
+/* line 242, schedule.less */
 body.page-profile-schedule > .wrapper .content .day .day-container .day-choose a.arrow.left {
   left: 0;
 }
-/* line 160, schedule.less */
+/* line 245, schedule.less */
 body.page-profile-schedule > .wrapper .content .day .day-container .day-choose a.arrow.right {
   right: 0;
 }
-/* line 167, schedule.less */
+/* line 252, schedule.less */
 body.page-profile-schedule > .wrapper .content .calendars {
   display: none;
   position: absolute;
@@ -3005,7 +3105,7 @@ body.page-profile-schedule > .wrapper .content .calendars {
   margin-top: 10px;
   border: solid 1px #dbefe5;
 }
-/* line 178, schedule.less */
+/* line 263, schedule.less */
 body.page-profile-schedule > .wrapper .content .calendars i.close {
   cursor: pointer;
   float: right;
@@ -3013,83 +3113,83 @@ body.page-profile-schedule > .wrapper .content .calendars i.close {
   margin-right: 22px;
   font-size: 1.8rem;
 }
-/* line 184, schedule.less */
+/* line 269, schedule.less */
 body.page-profile-schedule > .wrapper .content .calendars i.close:hover {
   color: #35504e;
 }
-/* line 188, schedule.less */
+/* line 273, schedule.less */
 body.page-profile-schedule > .wrapper .content .calendars a#today {
   margin-left: 20px;
 }
-/* line 191, schedule.less */
+/* line 276, schedule.less */
 body.page-profile-schedule > .wrapper .content .calendars .months {
   overflow: hidden;
 }
-/* line 193, schedule.less */
+/* line 278, schedule.less */
 body.page-profile-schedule > .wrapper .content .calendars .months div.month {
   margin: 20px;
   float: left;
   overflow: hidden;
 }
-/* line 199, schedule.less */
+/* line 284, schedule.less */
 body.page-profile-schedule > .wrapper .content .calendars .controls {
   width: 95px;
   margin: auto;
 }
-/* line 202, schedule.less */
+/* line 287, schedule.less */
 body.page-profile-schedule > .wrapper .content .calendars .controls a {
   display: block;
   color: #8aa4a2;
   font-size: 1.8rem;
   text-decoration: none;
 }
-/* line 207, schedule.less */
+/* line 292, schedule.less */
 body.page-profile-schedule > .wrapper .content .calendars .controls a:hover {
   color: #35504e;
 }
-/* line 210, schedule.less */
+/* line 295, schedule.less */
 body.page-profile-schedule > .wrapper .content .calendars .controls a.left {
   float: left;
 }
-/* line 213, schedule.less */
+/* line 298, schedule.less */
 body.page-profile-schedule > .wrapper .content .calendars .controls a.right {
   float: right;
 }
-/* line 219, schedule.less */
+/* line 304, schedule.less */
 body.page-profile-schedule > .wrapper .content .schedule {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   float: left;
   width: 58%;
 }
-/* line 224, schedule.less */
+/* line 309, schedule.less */
 body.page-profile-schedule > .wrapper .content .schedule .schedule-container {
   width: 100%;
   padding: 30px 30px 30px 50px;
 }
-/* line 227, schedule.less */
+/* line 312, schedule.less */
 body.page-profile-schedule > .wrapper .content .schedule .schedule-container .elements {
   overflow: hidden;
   margin-bottom: 20px;
   padding-left: 10px;
 }
-/* line 231, schedule.less */
+/* line 316, schedule.less */
 body.page-profile-schedule > .wrapper .content .schedule .schedule-container .elements .field {
   overflow: hidden;
 }
-/* line 233, schedule.less */
+/* line 318, schedule.less */
 body.page-profile-schedule > .wrapper .content .schedule .schedule-container .elements .field.full-day {
   float: left;
 }
-/* line 236, schedule.less */
+/* line 321, schedule.less */
 body.page-profile-schedule > .wrapper .content .schedule .schedule-container .elements .field.weekend {
   float: right;
 }
-/* line 239, schedule.less */
+/* line 324, schedule.less */
 body.page-profile-schedule > .wrapper .content .schedule .schedule-container .elements .field .checkbox.container {
   float: left;
 }
-/* line 242, schedule.less */
+/* line 327, schedule.less */
 body.page-profile-schedule > .wrapper .content .schedule .schedule-container .elements .field label {
   display: block;
   float: left;
@@ -3097,21 +3197,21 @@ body.page-profile-schedule > .wrapper .content .schedule .schedule-container .el
   color: #35504e;
   font-size: 1.2rem;
 }
-/* line 253, schedule.less */
+/* line 338, schedule.less */
 body.page-profile-schedule > .wrapper .content .today-events {
   float: right;
   width: 40%;
 }
-/* line 257, schedule.less */
+/* line 342, schedule.less */
 body.page-profile-schedule > .wrapper .content .today-events .events .event {
   margin-bottom: 15px;
   padding-left: 15px;
 }
-/* line 260, schedule.less */
+/* line 345, schedule.less */
 body.page-profile-schedule > .wrapper .content .today-events .events .event.active {
   background: #dbefe5;
 }
-/* line 263, schedule.less */
+/* line 348, schedule.less */
 body.page-profile-schedule > .wrapper .content .today-events .events .event .border {
   position: absolute;
   width: 5px;
@@ -3124,32 +3224,32 @@ body.page-profile-schedule > .wrapper .content .today-events .events .event .bor
   -o-border-radius: 5px;
   -webkit-border-radius: 5px;
 }
-/* line 276, schedule.less */
+/* line 361, schedule.less */
 body.page-profile-schedule > .wrapper .content .today-events .events .event.skype .border,
 body.page-profile-schedule > .wrapper .content .today-events .events .event.cards .border {
   background: #0f9b58;
 }
-/* line 281, schedule.less */
+/* line 366, schedule.less */
 body.page-profile-schedule > .wrapper .content .today-events .events .event.consult .border {
   background: #4ad0c5;
 }
-/* line 286, schedule.less */
+/* line 371, schedule.less */
 body.page-profile-schedule > .wrapper .content .today-events .events .event.private .border {
   background: #ffaa3e;
 }
-/* line 289, schedule.less */
+/* line 374, schedule.less */
 body.page-profile-schedule > .wrapper .content .today-events .events .event.private h5.title {
   color: #35504e;
 }
-/* line 293, schedule.less */
+/* line 378, schedule.less */
 body.page-profile-schedule > .wrapper .content .today-events .events .event.unwork {
   display: none;
 }
-/* line 295, schedule.less */
+/* line 380, schedule.less */
 body.page-profile-schedule > .wrapper .content .today-events .events .event.unwork .border {
   background: #aaa;
 }
-/* line 299, schedule.less */
+/* line 384, schedule.less */
 body.page-profile-schedule > .wrapper .content .today-events .events .event h5.title {
   margin-top: 2px;
   margin-bottom: 0;
@@ -3160,31 +3260,31 @@ body.page-profile-schedule > .wrapper .content .today-events .events .event h5.t
   font-size: 1.4rem;
   font-weight: 500;
 }
-/* line 309, schedule.less */
+/* line 394, schedule.less */
 body.page-profile-schedule > .wrapper .content .today-events .events .event p.participiant {
   margin-bottom: 2px;
   padding-bottom: 0;
 }
-/* line 313, schedule.less */
+/* line 398, schedule.less */
 body.page-profile-schedule > .wrapper .content .today-events .events .event p {
   margin: 4px 0;
   font-size: 1.4rem;
   font-weight: 500;
   color: #8aa4a2;
 }
-/* line 318, schedule.less */
+/* line 403, schedule.less */
 body.page-profile-schedule > .wrapper .content .today-events .events .event p span.value {
   color: #35504e;
 }
-/* line 321, schedule.less */
+/* line 406, schedule.less */
 body.page-profile-schedule > .wrapper .content .today-events .events .event p a {
   color: #4ad0c5;
 }
-/* line 323, schedule.less */
+/* line 408, schedule.less */
 body.page-profile-schedule > .wrapper .content .today-events .events .event p a:hover {
   text-decoration: none;
 }
-/* line 328, schedule.less */
+/* line 413, schedule.less */
 body.page-profile-schedule > .wrapper .content .today-events .events .event a.removeEvent {
   position: absolute;
   right: 5px;
@@ -3193,16 +3293,16 @@ body.page-profile-schedule > .wrapper .content .today-events .events .event a.re
   font-size: 1.4rem;
   color: #8aa4a2;
 }
-/* line 335, schedule.less */
+/* line 420, schedule.less */
 body.page-profile-schedule > .wrapper .content .today-events .events .event a.removeEvent:hover {
   color: #eb5245;
 }
-/* line 340, schedule.less */
+/* line 425, schedule.less */
 body.page-profile-schedule > .wrapper .content .today-events .events a.btn {
   display: block;
   text-align: center;
 }
-/* line 349, schedule.less */
+/* line 434, schedule.less */
 .schedule-container {
   position: relative;
   width: 480px;
@@ -3211,13 +3311,13 @@ body.page-profile-schedule > .wrapper .content .today-events .events a.btn {
   -webkit-user-select: none;
   -moz-user-select: none;
 }
-/* line 356, schedule.less */
+/* line 441, schedule.less */
 .schedule-container .freetime-grid {
   position: static;
   float: left;
   width: 40px;
 }
-/* line 360, schedule.less */
+/* line 445, schedule.less */
 .schedule-container .freetime-grid p.label {
   position: absolute;
   width: 200px;
@@ -3226,40 +3326,40 @@ body.page-profile-schedule > .wrapper .content .today-events .events a.btn {
   top: 50%;
   text-align: center;
 }
-/* line 368, schedule.less */
+/* line 453, schedule.less */
 .schedule-container .freetime-grid .row {
   border-bottom: solid 1px #b9d4cc;
   height: 15px;
   background: #e5e5e5;
 }
-/* line 372, schedule.less */
+/* line 457, schedule.less */
 .schedule-container .freetime-grid .row:nth-child(even) {
   border-bottom: dotted 1px #b9d4cc;
 }
-/* line 375, schedule.less */
+/* line 460, schedule.less */
 .schedule-container .freetime-grid .row.meeting,
 .schedule-container .freetime-grid .row.online {
   background: #ffffff;
 }
-/* line 378, schedule.less */
+/* line 463, schedule.less */
 .schedule-container .freetime-grid .row.meeting .marker.meeting {
   display: block;
 }
-/* line 381, schedule.less */
+/* line 466, schedule.less */
 .schedule-container .freetime-grid .row.online .marker.online {
   display: block;
 }
-/* line 384, schedule.less */
+/* line 469, schedule.less */
 .schedule-container .freetime-grid .row.selected .marker.selector {
   display: block;
 }
-/* line 387, schedule.less */
+/* line 472, schedule.less */
 .schedule-container .freetime-grid .row .marker {
   width: 50%;
   height: 100%;
   display: none;
 }
-/* line 391, schedule.less */
+/* line 476, schedule.less */
 .schedule-container .freetime-grid .row .marker.selector {
   position: absolute;
   display: none;
@@ -3267,37 +3367,37 @@ body.page-profile-schedule > .wrapper .content .today-events .events a.btn {
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
 }
-/* line 398, schedule.less */
+/* line 483, schedule.less */
 .schedule-container .freetime-grid .row .marker.online {
   float: right;
   background: rgba(51, 152, 121, 0.4);
 }
-/* line 402, schedule.less */
+/* line 487, schedule.less */
 .schedule-container .freetime-grid .row .marker.meeting {
   float: left;
   background: rgba(250, 201, 68, 0.4);
 }
-/* line 409, schedule.less */
+/* line 494, schedule.less */
 .schedule-container .hours {
   position: relative;
   float: left;
   text-align: left;
   width: 55px;
 }
-/* line 414, schedule.less */
+/* line 499, schedule.less */
 .schedule-container .hours .hour {
   height: 32px;
   text-align: center;
   border-bottom: solid 1px #b9d4cc;
   box-sizing: border-box;
 }
-/* line 419, schedule.less */
+/* line 504, schedule.less */
 .schedule-container .hours .hour span {
   position: relative;
   font-size: 1.2rem;
   top: -1px;
 }
-/* line 426, schedule.less */
+/* line 511, schedule.less */
 .schedule-container .grid {
   position: relative;
   float: left;
@@ -3306,20 +3406,20 @@ body.page-profile-schedule > .wrapper .content .today-events .events a.btn {
   -webkit-user-select: none;
   -moz-user-select: none;
 }
-/* line 433, schedule.less */
+/* line 518, schedule.less */
 .schedule-container .grid .row {
   border-bottom: solid 1px #b9d4cc;
   height: 15px;
 }
-/* line 436, schedule.less */
+/* line 521, schedule.less */
 .schedule-container .grid .row.selected {
   background: #ddd;
 }
-/* line 439, schedule.less */
+/* line 524, schedule.less */
 .schedule-container .grid .row:nth-child(odd) {
   border-bottom: dotted 1px #b9d4cc;
 }
-/* line 443, schedule.less */
+/* line 528, schedule.less */
 .schedule-container .grid .marker {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -3333,7 +3433,7 @@ body.page-profile-schedule > .wrapper .content .today-events .events a.btn {
   background: rgba(0, 0, 0, 0.1);
   display: none;
 }
-/* line 456, schedule.less */
+/* line 541, schedule.less */
 .schedule-container .grid .weekend-marker {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -3349,7 +3449,7 @@ body.page-profile-schedule > .wrapper .content .today-events .events a.btn {
   border-color: rgba(0, 0, 0, 0.4);
   background: rgba(0, 0, 0, 0.1);
 }
-/* line 470, schedule.less */
+/* line 555, schedule.less */
 .schedule-container .grid .weekend-marker p {
   font-size: 1.3rem;
   display: block;
@@ -3357,7 +3457,7 @@ body.page-profile-schedule > .wrapper .content .today-events .events a.btn {
   margin-top: 6px;
   color: #333;
 }
-/* line 478, schedule.less */
+/* line 563, schedule.less */
 .schedule-container .grid .reserved-marker {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -3371,7 +3471,7 @@ body.page-profile-schedule > .wrapper .content .today-events .events a.btn {
   display: none;
   cursor: hand;
 }
-/* line 490, schedule.less */
+/* line 575, schedule.less */
 .schedule-container .grid .reserved-marker i.fa.fa-cog {
   cursor: pointer;
   position: absolute;
@@ -3380,86 +3480,86 @@ body.page-profile-schedule > .wrapper .content .today-events .events a.btn {
   top: 2px;
   z-index: 1;
 }
-/* line 498, schedule.less */
+/* line 583, schedule.less */
 .schedule-container .grid .reserved-marker p {
   font-size: 1.3rem;
   display: block;
   margin-left: 20px;
   margin-top: 6px;
 }
-/* line 504, schedule.less */
+/* line 589, schedule.less */
 .schedule-container .grid .reserved-marker.unwork {
   border-color: rgba(0, 0, 0, 0.4);
   background: rgba(0, 0, 0, 0.1);
 }
-/* line 507, schedule.less */
+/* line 592, schedule.less */
 .schedule-container .grid .reserved-marker.unwork i.fa.fa-cog {
   color: rgba(0, 0, 0, 0.4);
 }
-/* line 510, schedule.less */
+/* line 595, schedule.less */
 .schedule-container .grid .reserved-marker.unwork p {
   color: #666;
 }
-/* line 513, schedule.less */
+/* line 598, schedule.less */
 .schedule-container .grid .reserved-marker.unwork.selected {
   border-color: rgba(0, 0, 0, 0.5);
 }
-/* line 517, schedule.less */
+/* line 602, schedule.less */
 .schedule-container .grid .reserved-marker.skype,
 .schedule-container .grid .reserved-marker.cards {
   border-color: #33b679;
   background: rgba(51, 152, 121, 0.4);
 }
-/* line 520, schedule.less */
+/* line 605, schedule.less */
 .schedule-container .grid .reserved-marker.skype i.fa.fa-cog,
 .schedule-container .grid .reserved-marker.cards i.fa.fa-cog {
   color: #33b679;
 }
-/* line 523, schedule.less */
+/* line 608, schedule.less */
 .schedule-container .grid .reserved-marker.skype p,
 .schedule-container .grid .reserved-marker.cards p {
   color: #119457;
 }
-/* line 526, schedule.less */
+/* line 611, schedule.less */
 .schedule-container .grid .reserved-marker.skype.selected,
 .schedule-container .grid .reserved-marker.cards.selected {
   border-color: #119457;
 }
-/* line 530, schedule.less */
+/* line 615, schedule.less */
 .schedule-container .grid .reserved-marker.consult {
   border-color: #41b6ad;
   background: rgba(74, 208, 197, 0.2);
 }
-/* line 533, schedule.less */
+/* line 618, schedule.less */
 .schedule-container .grid .reserved-marker.consult i.fa.fa-cog {
   color: #41b6ad;
 }
-/* line 536, schedule.less */
+/* line 621, schedule.less */
 .schedule-container .grid .reserved-marker.consult p {
   color: #35504e;
 }
-/* line 539, schedule.less */
+/* line 624, schedule.less */
 .schedule-container .grid .reserved-marker.consult.selected {
   border-color: #1f948b;
 }
-/* line 543, schedule.less */
+/* line 628, schedule.less */
 .schedule-container .grid .reserved-marker.private {
   border-color: #fac944;
   background: rgba(250, 201, 68, 0.4);
 }
-/* line 546, schedule.less */
+/* line 631, schedule.less */
 .schedule-container .grid .reserved-marker.private i.fa.fa-cog {
   color: #d8a722;
 }
-/* line 549, schedule.less */
+/* line 634, schedule.less */
 .schedule-container .grid .reserved-marker.private p {
   color: #d39a00;
 }
-/* line 552, schedule.less */
+/* line 637, schedule.less */
 .schedule-container .grid .reserved-marker.private.selected {
   border-color: #d8a722;
 }
-/* line 556, schedule.less */
+/* line 641, schedule.less */
 .schedule-container .grid .reserved-marker .slider-top {
   left: 50%;
   margin-left: -2px;
@@ -3472,7 +3572,7 @@ body.page-profile-schedule > .wrapper .content .today-events .events a.btn {
   cursor: s-resize;
   z-index: 1;
 }
-/* line 568, schedule.less */
+/* line 653, schedule.less */
 .schedule-container .grid .reserved-marker .slider-bottom {
   left: 50%;
   margin-left: -2px;
@@ -3485,18 +3585,18 @@ body.page-profile-schedule > .wrapper .content .today-events .events a.btn {
   cursor: s-resize;
   z-index: 1;
 }
-/* line 582, schedule.less */
+/* line 667, schedule.less */
 .schedule-container .legend {
   overflow: hidden;
   font-size: 1.2rem;
 }
-/* line 585, schedule.less */
+/* line 670, schedule.less */
 .schedule-container .legend h5 {
   margin-top: 0;
   padding-top: 0;
   padding-bottom: 0;
 }
-/* line 590, schedule.less */
+/* line 675, schedule.less */
 .schedule-container .legend span {
   display: inline-block;
   width: 13px;
@@ -3504,15 +3604,15 @@ body.page-profile-schedule > .wrapper .content .today-events .events a.btn {
   top: 3px;
   margin-right: 3px;
 }
-/* line 596, schedule.less */
+/* line 681, schedule.less */
 .schedule-container .legend span.meeting {
   background: #fac944;
 }
-/* line 599, schedule.less */
+/* line 684, schedule.less */
 .schedule-container .legend span.online {
   background: #33b679;
 }
-/* line 602, schedule.less */
+/* line 687, schedule.less */
 .schedule-container .legend span.unwork {
   background: #d4d4d4;
 }

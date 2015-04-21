@@ -5,6 +5,43 @@
 		<?php include_once('_head.php'); ?>
 </head>
 <body class="default-template page-profile-schedule">
+    <div class="edit-worktime">
+        <div class="fader"></div>
+        <div class="content-block">
+            <i class="close fa fa-close"></i>
+            <h4>Настройка рабочего времени</h4>
+            <form action="#" method="POST">
+                <div class="field times">
+                    <div class="end timeselect">
+                        <span>по</span>
+                        <input type="text" class="timepicker-light" name="end" placeholder="Выберите время" />
+                    </div>
+                    <div class="begin timeselect">
+                        <span>с</span>
+                        <input type="text" class="timepicker-light" name="begin" placeholder="Выберите время" />
+                    </div>
+                    <label for="times" class="date">9 января 2015 года</label>
+                    <div class="clr"></div>
+                </div>
+                <div class="field type">
+                    <input type="radio" name="type" value="unwork" checked="checked">
+                    <label for="type">Нерабочее время</label>
+                    <div class="clr"></div>
+                    <input type="radio" name="type" value="work">
+                    <label for="type">Рабочее время</label>
+                    <div class="clr"></div>
+                    <div class="worktype">
+                        <input type="checkbox" name="online">
+                        <label for="online">Skype, Метафорические карты</label>
+                        <div class="clr"></div>
+                        <input type="checkbox" name="meeting">
+                        <label for="meeting">Личные встречи</label>
+                    </div>
+                </div>
+                <input type="submit" value="Сохранить" class="btn">
+            </form>
+        </div>
+    </div>
     <div class="edit-schedule">
         <div class="fader"></div>
         <div class="content-block">

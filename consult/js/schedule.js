@@ -9,7 +9,7 @@
 	var timeArray = []; //Массив времени из двух элементов: начало периода, конец периода
 	var tmpArr = []; //Временный массив для промежуотчных рассчётов
 	var reservedHoursArray = []; //Массив забронированных часов
-	var cursorPosition;
+	var cursorPosition, startRowIndex;
 	var eventNames = { //Типы и перевод событий
 		'private' : 'Личная консультация',
 		'skype' : 'Skype-консультация',
@@ -17,6 +17,7 @@
 	};
 	var events = {};
 	var tmpEvent = {};
+	var editWorkTime;
 	var editEvent;
 	var taskList;
 	var grid, planer;
@@ -28,6 +29,7 @@
 		planer = $('.schedule-container .freetime-grid'); //Контейнер с распорядком дня
 		taskList = $('.today-events .events');
 		var section = $('.consult.section');
+		$('.timepicker-light').timepickerLight();
 		
 		//Вызов календаря
 		$('.day-choose a#select-date').on('click', function(e){
@@ -36,6 +38,11 @@
 		});
 		$('.calendars').on('click', '.close', function(){
 			$(this).closest('.calendars').fadeOut(300);
+		});
+		//Редактирование рабочего времени
+		editWorkTime = $('.edit-worktime');
+		$(editWorkTime).on('click', '.close', function(e){
+			$(editWorkTime).fadeOut(300);
 		});
 		//Добавление события
 		editEventBlock = $('.edit-schedule');
@@ -187,34 +194,89 @@
 				$(marker)
 					.addClass('selected')
 					.siblings('.reserved-marker').removeClass('selected');
+			}		
+		});
+		//Форма редактирования распорядка дня
+		$(editWorkTime).on('click', '.radio.container', function(){
+			var input = $(editWorkTime).find('input[data-id="' + $(this).attr('data-id') + '"]');
+			var typesContainer = $(editWorkTime).find('.worktype');
+			if($(input).val() == 'unwork'){
+				$(typesContainer).slideUp(300, function(){
+					$(this)
+						.find('input[type="checkbox"]').prop('checked', false).end()
+						.find('.checkbox.container').removeClass('checked');
+				});
+			} else if($(input).val() == 'work'){
+				$(typesContainer).find('input[type="checkbox"]').first().prop('checked', true);
+				$(typesContainer).find('.checkbox.container').first().addClass('checked');
+				$(typesContainer).slideDown(300);
 			}
-					
+		});
+		$(editWorkTime).on('click', 'input[type="submit"]', function(e){
+			e.preventDefault();
+			timeArray[0] = $(editWorkTime).find('input[name="begin"]').val();
+			timeArray[1] = $(editWorkTime).find('input[name="end"]').val();
+			if($(editWorkTime).find('input[value="unwork"]').prop('checked')){
+				setWorkTime(timeArray, ['unwork']);
+			}else if($(editWorkTime).find('input[value="work"]').prop('checked')){
+				var tmpArr = [];
+				var inputs = $(editWorkTime).find('.worktype').find('input[type="checkbox"]');
+				$.each($(inputs), function(key, input){
+					if($(input).prop('checked')){
+						tmpArr.push($(this).attr('name'));
+					}
+				});
+				console.log(tmpArr);
+				setWorkTime(timeArray, tmpArr);
+			}
+			$(planer).find('.row.selected').removeClass('selected');
+			$(editWorkTime).fadeOut(300);
 		});
 		//Выделение распорядка дня
 		$(planer).on('mousedown', function(e){
 			$(planer).find('.row').removeClass('selected');
 			$(e.target).closest('.row').addClass('selected');
-			cursorPosition = e.pageY;
+			startRowIndex = parseInt((e.pageY - $(planer).offset().top) / 16) + 1;
 			planerPressed = true;
 		});
 		$('body').on('mousemove', function(e){
-			if(planerPressed && $(e.target).closest('.freetime-grid').length && $(e.target).closest('.row').length){
-				$(e.target).closest('.row').addClass('selected');
-				console.log('3');
+			if(planerPressed){
+				//var
+				//$(e.target).closest('.row').addClass('selected');
+				var currentRowIndex = parseInt((e.pageY - $(planer).offset().top) / 16) + 2;
+				var targetRange = [];
+				if(startRowIndex < currentRowIndex){
+					targetRange = _.range(startRowIndex, currentRowIndex, 1);
+				}else if(startRowIndex > currentRowIndex){
+					targetRange = _.range(startRowIndex, currentRowIndex - 1, -1);
+				}else if(startRowIndex == currentRowIndex){
+					targetRange = [startRowIndex, currentRowIndex];
+				}
+				
+				$.each(_.range(1, 48), function(key, val){
+					if(_.indexOf(targetRange, val) != -1){
+						$(planer).find('.row[data-time="' + val + '"]').addClass('selected');
+					}else{
+						$(planer).find('.row[data-time="' + val + '"]').removeClass('selected');
+					}
+					
+				});
 			}
-			//cursorPosition = e.pageY;
 		});
 		$('body').on('mouseup', function(e){
 			if(planerPressed){
 				var selectedElements = $(planer).find('.row.selected');
 				var selectedArray = [];
 				$.each($(selectedElements), function(key, element){
-					selectedArray.push($(element).attr('data-time'));
+					selectedArray.push(parseInt($(element).attr('data-time')));
 				});
-				var timesArray = [rowToTime(_.min(selectedArray) - 1), rowToTime(_.max(selectedArray))];
-				alert('Выбран отрезок рабочего времени: ' + timesArray[0] + ' - ' + timesArray[1]);
+				timeArray = [rowToTime(_.min(selectedArray) - 1), rowToTime(_.max(selectedArray))];
+				$(editWorkTime)
+					.find('.timepicker-light[name="begin"]').val(timeArray[0]).end()
+					.find('.timepicker-light[name="end"]').val(timeArray[1]).end()
+					.fadeIn(300);
+				planerPressed = false;
 			}
-			planerPressed = false;
 		});
 		//Выделение существующих евентов
 		$(grid).on('mousedown', function(e){	//При нажатии мыши на сетке
@@ -517,6 +579,23 @@
 		var evnt = $(taskList).find('.event[data-id="' + eventId + '"]');
 		$(evnt).find('p.time span.value').html(rowToTime(_.min(timeArray) - 1) + ' - ' + rowToTime(_.max(timeArray) - 1));
 		$(evnt).attr('data-begin', _.min(timeArray) - 1);
+	}
+
+	//Установка рабочего времени
+	var setWorkTime = function(timesArray, typesArray){
+		console.log();
+		var rows = timesToRows(timesArray);
+		$.each(_.range(rows[0], rows[1]), function(key, row){
+			$(planer).find('.row[data-time="' + row + '"]')
+					.removeClass('meeting')
+					.removeClass('online');
+			if(_.indexOf(typesArray, 'meeting') >= 0 || _.indexOf(typesArray, 'online') >= 0){
+				$.each(typesArray, function(key, type){
+					$(planer).find('.row[data-time="' + row + '"]').addClass(type);
+				});
+			}
+			
+		});
 	}
 
 	//Функция добавления нового евента
