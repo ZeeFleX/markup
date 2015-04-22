@@ -21,13 +21,17 @@
              <p class="title">Психолог для Вас</p>
              <p class="author">Проект Константина Довлатова</p>
         </div>
-       
+        
         <a class="sign-in btn" id="sign-in" href="/">Войти</a>
         <ul class="mainmenu">
             <li><a href="#">Публичные вопросы</a></li>
             <li><a href="#">Консультанты</a></li>
             <li><a href="#">Библиотека</a></li>
         </ul>
+        <div class="time">
+            <p>Мы работаем по московскому времени</p>
+            <div class="clock"></div>
+        </div>
     </header>
     <div class="content" >
         <div class="wrapper">

@@ -588,12 +588,28 @@ header.header .logo {
   float: left;
 }
 /* line 55, global.less */
+header.header .time {
+  float: right;
+  margin-right: 40px;
+}
+/* line 58, global.less */
+header.header .time p {
+  display: block;
+  float: left;
+  margin-right: 20px;
+  margin-top: 11px;
+}
+/* line 64, global.less */
+header.header .time .clock {
+  float: right;
+}
+/* line 68, global.less */
 header.header .project-name {
   float: left;
   margin-left: 10px;
   margin-top: 5px;
 }
-/* line 59, global.less */
+/* line 72, global.less */
 header.header .project-name .title {
   color: #4ad0c5;
   font-size: 1.2rem;
@@ -601,23 +617,23 @@ header.header .project-name .title {
   text-transform: uppercase;
   margin: 0;
 }
-/* line 66, global.less */
+/* line 79, global.less */
 header.header .project-name .author {
   color: #8aa4a2;
   font-size: 1.0rem;
   font-weight: 300;
   margin: 0;
 }
-/* line 73, global.less */
+/* line 86, global.less */
 header.header .sign-in {
   float: right;
   margin-top: 3px;
 }
-/* line 81, global.less */
+/* line 94, global.less */
 header.header .profile-snippet {
   float: right;
 }
-/* line 83, global.less */
+/* line 96, global.less */
 header.header .profile-snippet .photo-container {
   border-radius: 50px;
   -o-border-radius: 50px;
@@ -629,60 +645,60 @@ header.header .profile-snippet .photo-container {
   overflow: hidden;
   border: solid 1px #8aa4a2;
 }
-/* line 93, global.less */
+/* line 106, global.less */
 header.header .profile-snippet .photo-container img {
   display: block;
   width: 100%;
 }
-/* line 98, global.less */
+/* line 111, global.less */
 header.header .profile-snippet .info {
   float: left;
   margin-left: 10px;
   margin-top: 5px;
 }
-/* line 102, global.less */
+/* line 115, global.less */
 header.header .profile-snippet .info .name {
   color: #35504e;
   font: 500 1.4rem Roboto;
 }
-/* line 106, global.less */
+/* line 119, global.less */
 header.header .profile-snippet .info .job {
   color: #4ad0c5;
   font: 400 1.2rem Roboto;
 }
-/* line 111, global.less */
+/* line 124, global.less */
 header.header .profile-snippet .more-container {
   float: left;
   margin-left: 10px;
   margin-top: 10px;
 }
-/* line 115, global.less */
+/* line 128, global.less */
 header.header .profile-snippet .more-container i {
   color: #35504e;
   font-size: 1.8rem;
   cursor: pointer;
 }
-/* line 120, global.less */
+/* line 133, global.less */
 header.header .profile-snippet .more-container .dropdown-menu {
   display: none;
 }
-/* line 126, global.less */
+/* line 139, global.less */
 header.header .profile-notifications {
   float: right;
   margin-right: 10px;
   margin-top: 10px;
 }
-/* line 130, global.less */
+/* line 143, global.less */
 header.header .profile-notifications > div {
   float: left;
   margin: 0 15px;
   cursor: pointer;
 }
-/* line 134, global.less */
+/* line 147, global.less */
 header.header .profile-notifications > div.active i.fa {
   color: #eb5245;
 }
-/* line 137, global.less */
+/* line 150, global.less */
 header.header .profile-notifications > div .count {
   position: absolute;
   border-radius: 50px;
@@ -697,29 +713,29 @@ header.header .profile-notifications > div .count {
   z-index: 1;
   font: 500 1.1rem / 17px Roboto;
 }
-/* line 151, global.less */
+/* line 164, global.less */
 header.header .profile-notifications > div i.fa {
   color: #8aa4a2;
   font-size: 2.0rem;
 }
-/* line 157, global.less */
+/* line 170, global.less */
 header.header .mainmenu {
   float: right;
   margin: 13px 0;
 }
-/* line 160, global.less */
+/* line 173, global.less */
 header.header .mainmenu li {
   float: left;
   text-transform: uppercase;
   font: 500 1.2rem Roboto;
   margin-right: 30px;
 }
-/* line 165, global.less */
+/* line 178, global.less */
 header.header .mainmenu li a {
   color: #35504e;
   text-decoration: none;
 }
-/* line 172, global.less */
+/* line 185, global.less */
 .user-menu-section {
   background: #f8f8f8;
   overflow: hidden;
@@ -729,70 +745,70 @@ header.header .mainmenu li a {
   -moz-box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.1);
 }
-/* line 181, global.less */
+/* line 194, global.less */
 .user-menu-section .wrapper .user-menu-container {
   right: 50%;
   float: right;
 }
-/* line 185, global.less */
+/* line 198, global.less */
 .user-menu-section .wrapper .user-menu {
   left: 50%;
   float: left;
 }
-/* line 188, global.less */
+/* line 201, global.less */
 .user-menu-section .wrapper .user-menu li {
   margin: 0 10px;
   float: left;
 }
-/* line 192, global.less */
+/* line 205, global.less */
 .user-menu-section .wrapper .user-menu a {
   color: #35504e;
   font: 400 1.4rem  Roboto;
   text-decoration: none;
 }
-/* line 196, global.less */
+/* line 209, global.less */
 .user-menu-section .wrapper .user-menu a:hover {
   text-decoration: underline;
 }
-/* line 205, global.less */
+/* line 218, global.less */
 .footer {
   width: 100%;
   margin-top: 20px;
 }
-/* line 208, global.less */
+/* line 221, global.less */
 .footer a {
   text-decoration: none;
   color: #ffffff;
 }
-/* line 212, global.less */
+/* line 225, global.less */
 .footer section.library {
   background: #4ad0c5;
   padding: 10px 0 20px 0;
 }
-/* line 215, global.less */
+/* line 228, global.less */
 .footer section.library .title {
   float: left;
   width: 25%;
 }
-/* line 218, global.less */
+/* line 231, global.less */
 .footer section.library .title h3 {
   color: #ffffff;
 }
-/* line 222, global.less */
+/* line 235, global.less */
 .footer section.library .library-list {
   float: right;
   width: 75%;
   margin-top: 8px;
 }
-/* line 226, global.less */
+/* line 239, global.less */
 .footer section.library .library-list h4 {
   color: #ffffff;
 }
-/* line 229, global.less */
+/* line 242, global.less */
 .footer section.library .library-list .items-container {
   width: 100%;
 }
-/* line 231, global.less */
+/* line 244, global.less */
 .footer section.library .library-list .items-container .item {
   float: left;
   width: 33%;
@@ -800,17 +816,17 @@ header.header .mainmenu li a {
   font: 400 1.6rem Roboto;
   margin: 5px 0;
 }
-/* line 237, global.less */
+/* line 250, global.less */
 .footer section.library .library-list .items-container .item:hover {
   text-decoration: underline;
 }
-/* line 244, global.less */
+/* line 257, global.less */
 .footer section.bottom {
   background: #41b6ad;
   padding: 15px 0;
   overflow: hidden;
 }
-/* line 248, global.less */
+/* line 261, global.less */
 .footer section.bottom p.copyright {
   display: block;
   float: left;
@@ -818,21 +834,21 @@ header.header .mainmenu li a {
   font: 500 1.4rem Roboto;
   margin-left: 30px;
 }
-/* line 255, global.less */
+/* line 268, global.less */
 .footer section.bottom ul.footer-menu {
   float: right;
   margin-top: 13px;
 }
-/* line 258, global.less */
+/* line 271, global.less */
 .footer section.bottom ul.footer-menu li {
   float: left;
   margin-right: 30px;
 }
-/* line 261, global.less */
+/* line 274, global.less */
 .footer section.bottom ul.footer-menu li a {
   font: 400 14px Roboto;
 }
-/* line 263, global.less */
+/* line 276, global.less */
 .footer section.bottom ul.footer-menu li a:hover {
   text-decoration: underline;
 }
