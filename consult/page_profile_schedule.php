@@ -324,7 +324,7 @@
                     <div class="freetime-grid">
                         <p class="label">Планирование дня</p>
                         <?php for($i = 1; $i <= 48; $i++) { ?>
-                            <div class="row <?php if($i > 4 && $i < 16) echo 'meeting'; ?> <?php if($i > 12 && $i < 35) echo 'online'; ?>" data-time="<?php echo $i; ?>">
+                            <div class="row <?php if($i > 4 && $i < 46) echo 'meeting'; ?> <?php if($i > 1 && $i < 42) echo 'online'; ?>" data-time="<?php echo $i; ?>">
                                 <div class="marker meeting"></div>
                                 <div class="marker online"></div>
                                 <div class="marker selector"></div>

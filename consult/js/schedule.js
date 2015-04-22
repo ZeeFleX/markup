@@ -91,39 +91,42 @@
 			tmpEvent.participiant = $(section).find('input[name="participiant"]').val();
 			tmpEvent.comment = $(section).find('textarea[name="comment"]').val();
 			tmpEvent.type = $(section).find('input[type="radio"]:checked').val();
-			console.log($(section));
 			if(typeof(tmpEvent.type) == 'undefined') tmpEvent.type = 'unwork';
 			tmpEvent.office = $(section).find('select#office').val();
 			var timeArray = getEventRows(marker, grid);
 			reservedHoursArray = _.difference(reservedHoursArray, _.range(_.min(timeArray), _.max(timeArray)));
 
-			ajaxEvent(tmpEvent, function(data){
-				if(data.action == 'edit'){
-					var marker = $(grid).find('.reserved-marker[data-id="' + tmpEvent.id + '"]').detach();
-					$(taskList).find('.event[data-id="' + tmpEvent.id + '"]').remove();
-					var timeArray = getEventRows(marker, grid);
-					reservedHoursArray = _.difference(reservedHoursArray, _.range(_.min(timeArray), _.max(timeArray)));
-				}
-				var evnt = data;
-				if(typeof(evnt.title) == 'undefined' || !evnt.title.length) evnt.title = eventNames[evnt.type];
-				timeArray = timesToRows(data.time);
-				var marker = $('<div class="reserved-marker ' + evnt.type + '" data-id="' + evnt.id + '" data-type="' + evnt.type + '" data-begin="' + evnt.time[0] + '" data-end="' + evnt.time[1] + '"  data-participiant="' + evnt.participiant + '"  data-end="' + evnt.time[1] + '" data-title="' + evnt.title + '"><div class="slider-top slider"></div><div class="slider-bottom slider"></div><i class="fa fa-cog edit-event"></i><p class="title">' + evnt.title + '</p></div>').prependTo(grid);	//Формирование области
-				reservedHoursArray = _.union(_.range(timeArray[0], timeArray[1]), reservedHoursArray);
-				placeSelector(marker, timeArray);
-				$(grid).find('.marker').css('display', 'none');
-				
-				addTask(evnt);
-				var tasks = $(taskList).find('.event');
-				tasks = _.sortBy(tasks, function(num){
-					return parseInt($(num).attr('data-begin'))
-				});
-				$(taskList).prepend(tasks);
+			if(matchEventPlan(timeArray, [tmpEvent.type], 'event')){
+				ajaxEvent(tmpEvent, function(data){
+					if(data.action == 'edit'){
+						var marker = $(grid).find('.reserved-marker[data-id="' + tmpEvent.id + '"]').detach();
+						$(taskList).find('.event[data-id="' + tmpEvent.id + '"]').remove();
+						var timeArray = getEventRows(marker, grid);
+						reservedHoursArray = _.difference(reservedHoursArray, _.range(_.min(timeArray), _.max(timeArray)));
+					}
+					var evnt = data;
+					if(typeof(evnt.title) == 'undefined' || !evnt.title.length) evnt.title = eventNames[evnt.type];
+					timeArray = timesToRows(data.time);
+					var marker = $('<div class="reserved-marker ' + evnt.type + '" data-id="' + evnt.id + '" data-type="' + evnt.type + '" data-begin="' + evnt.time[0] + '" data-end="' + evnt.time[1] + '"  data-participiant="' + evnt.participiant + '"  data-end="' + evnt.time[1] + '" data-title="' + evnt.title + '"><div class="slider-top slider"></div><div class="slider-bottom slider"></div><i class="fa fa-cog edit-event"></i><p class="title">' + evnt.title + '</p></div>').prependTo(grid);	//Формирование области
+					reservedHoursArray = _.union(_.range(timeArray[0], timeArray[1]), reservedHoursArray);
+					
+					placeSelector(marker, timeArray);
+					$(grid).find('.marker').css('display', 'none');
+					addTask(evnt);
+					var tasks = $(taskList).find('.event');
+					tasks = _.sortBy(tasks, function(num){
+						return parseInt($(num).attr('data-begin'))
+					});
+					$(taskList).prepend(tasks);
 
-				tmpEvent = {};
-				$(editEventBlock)
-					.find('.container').removeClass('checked').end()
-					.fadeOut(300);
-			});
+					tmpEvent = {};
+					$(editEventBlock)
+						.find('.container').removeClass('checked').end()
+						.fadeOut(300);
+				});
+			}else{
+				alert('На это время есть события, несоотвествующие типу');
+			}
 		});
 		//Если есть расписание, то спрашиваем евенты на эту дату, ждем JSON, строим зарезервированные области
 		if($(grid).length){
@@ -217,7 +220,13 @@
 			timeArray[0] = $(editWorkTime).find('input[name="begin"]').val();
 			timeArray[1] = $(editWorkTime).find('input[name="end"]').val();
 			if($(editWorkTime).find('input[value="unwork"]').prop('checked')){
-				setWorkTime(timeArray, ['unwork']);
+				if(matchEventPlan(timeArray, tmpArr, 'plan')){
+					setWorkTime(timeArray, tmpArr);
+					$(planer).find('.row.selected').removeClass('selected');
+					$(editWorkTime).fadeOut(300);
+				}else{
+					alert('На это время есть события, несоотвествующие типу');
+				}
 			}else if($(editWorkTime).find('input[value="work"]').prop('checked')){
 				var tmpArr = [];
 				var inputs = $(editWorkTime).find('.worktype').find('input[type="checkbox"]');
@@ -226,11 +235,14 @@
 						tmpArr.push($(this).attr('name'));
 					}
 				});
-				console.log(tmpArr);
-				setWorkTime(timeArray, tmpArr);
+				if(matchEventPlan(timeArray, tmpArr, 'plan')){
+					setWorkTime(timeArray, tmpArr);
+					$(planer).find('.row.selected').removeClass('selected');
+					$(editWorkTime).fadeOut(300);
+				}else{
+					alert('На это время есть события, несоотвествующие типу');
+				}
 			}
-			$(planer).find('.row.selected').removeClass('selected');
-			$(editWorkTime).fadeOut(300);
 		});
 		//Выделение распорядка дня
 		$(planer).on('mousedown', function(e){
@@ -364,6 +376,7 @@
 		});
 		//Выделение ячеек
 		$(grid).on('mousedown', '.row, .marker', function(e){	//При клике по строке или по маркеру выделения
+			console.log(matchEventPlan());
 			marker = $(grid).find('.marker')	//Переменная с маркером
 			pressed = true;	//Флаг, что началось выделение области
 			timeArray = [];	//Обнуляем массив
@@ -376,7 +389,7 @@
 				placeSelector(marker, timeArray);	//Если не попадает, то устанавливаем селектор нового выделения в позицию с начальным временем
 			}
 		});
-		$(grid).on('mousemove', function(e){	//При движени мыши по сетке
+		$(grid).on('mousemove', function(e){	//При движении мыши по сетке
 			if(pressed || changePressed){	//Если есть флаги нового выделения или изменения
 				if(changePressed){	//Если флаг изменения
 					if(currentChange == 'bottom' || pressed){	//Если изменение вниз
@@ -398,12 +411,15 @@
 					}
 					$(marker).attr('data-begin', rowToTime(_.min(timeArray) - 1));
 					$(marker).attr('data-end', rowToTime(_.max(timeArray) - 1));
+					if(!isReserved(timeArray,reservedHoursArray) && matchEventPlan()){	//Если рассчитанный выше массив времени не пересекается с резервным временем
+						placeSelector(marker, timeArray);	//Устанавливаем селектор в это положение
+					}
 				}
 				if(pressed){	//Если флаг нового выделения
 					timeArray[1] = Math.floor((e.pageY - $(grid).offset().top) / 16) + 2;	//Меняем конечное значение области выделения
-				}
-				if(!isReserved(timeArray,reservedHoursArray)){	//Если рассчитанный выше массив времени не пересекается с резервным временем
-					placeSelector(marker, timeArray);	//Устанавливаем селектор в это положение
+					if(!isReserved(timeArray,reservedHoursArray)){	//Если рассчитанный выше массив времени не пересекается с резервным временем
+						placeSelector(marker, timeArray);	//Устанавливаем селектор в это положение
+					}
 				}
 			}
 		});
@@ -524,6 +540,94 @@
 		timeArray[1] = Math.floor(($(marker).offset().top - $(grid).offset().top + $(marker).outerHeight()) / 16) + 1;	//Считаем время окончания от позиции области
 		return timeArray
 	}
+	//Функция получения полного массива строк и типов всех событий
+	var getEvents = function(){
+		var eventsArray = $(grid).find('.reserved-marker');
+		var events = {
+			'online': [],
+			'meeting': []
+		};
+		$.each($(eventsArray), function(key, evnt){
+			var rows = timesToRows([$(evnt).attr('data-begin'), $(evnt).attr('data-end')]);
+			var eventTimeArray = _.range(rows[0], rows[1]);
+			if($(evnt).hasClass('cards') || $(evnt).hasClass('skype')){
+				events.online.push(eventTimeArray);
+			}else if($(evnt).hasClass('private')){
+				events.meeting.push(eventTimeArray);
+			}
+		});
+		return events
+	}
+
+	//Функция получения плана дня
+	var getWorkTime = function(){
+		var rows = $(planer).find('.row');
+		var hoursArray = {
+			'online': [],
+			'meeting': [],
+			'unwork': []
+		};
+		$.each($(rows), function(key, row){
+			if($(row).hasClass('online')) hoursArray['online'].push(parseInt($(row).attr('data-time')));
+			if($(row).hasClass('meeting')) hoursArray['meeting'].push(parseInt($(row).attr('data-time')));
+			if(!$(row).hasClass('online') && !$(row).hasClass('meeting')) hoursArray['unwork'].push(parseInt($(row).attr('data-time')));
+		});
+	
+		return hoursArray
+	}
+	//Функция проверки на несоответсвие рабочего времени и евентов
+	var matchEventPlan = function(timeArr, typeArray, target){
+		//return false
+		var evnts = getEvents();
+		var plan = getWorkTime();
+		var result = true;
+		if(typeof(timeArr) != 'undefined'){
+			if(target == 'plan'){
+				if(_.indexOf(typeArray,'online') != -1){
+					plan.online = _.union(plan.online, _.range(timesToRows(timeArr)[0], timesToRows(timeArr)[1]));
+				}else{
+					plan.online = _.difference(plan.online,  _.range(timesToRows(timeArr)[0], timesToRows(timeArr)[1]));
+				}
+				
+				if(_.indexOf(typeArray,'meeting') != -1){
+					plan.meeting = _.union(plan.meeting,  _.range(timesToRows(timeArr)[0], timesToRows(timeArr)[1]));
+				}else{
+					plan.meeting = _.difference(plan.meeting,  _.range(timesToRows(timeArr)[0], timesToRows(timeArr)[1]));
+				}
+				if(_.indexOf(typeArray,'meeting') == -1 && _.indexOf(typeArray,'online') == -1){
+
+					plan.meeting = _.difference(plan.meeting,  _.range(timesToRows(timeArr)[0], timesToRows(timeArr)[1]));
+					plan.online = _.difference(plan.online,  _.range(timesToRows(timeArr)[0], timesToRows(timeArr)[1]));
+				}
+			} else if(target == 'event'){
+				var type;
+				switch(typeArray[0]){
+					case 'private':
+						type = 'meeting';
+					break;
+					case 'skype':
+						type = 'online';
+					break;
+					case 'cards':
+						type = 'online';
+					break;
+				}
+				evnts[type].push(timeArr);
+			}
+		}
+		
+		
+
+		$.each(evnts.meeting, function(key, evntTime){
+			//console.log(evntTime);
+			if(_.intersection(evntTime, plan.meeting).length < evntTime.length) result = false;
+		});
+		$.each(evnts.online, function(key, evntTime){
+			//console.log(_.intersection(evntTime, plan.online).length < evntTime.length);
+			if(_.intersection(evntTime, plan.online).length < evntTime.length) result = false;
+		});
+		return result
+	}
 	//Функция проверки пересечения массива текущего времени и массива зарезервированного времени
 	var isReserved = function(timeArray, reservedHoursArray){
 		return _.intersection(_.range(_.min(timeArray) - 1,_.max(timeArray) + 1), reservedHoursArray).length
@@ -583,7 +687,6 @@
 
 	//Установка рабочего времени
 	var setWorkTime = function(timesArray, typesArray){
-		console.log();
 		var rows = timesToRows(timesArray);
 		$.each(_.range(rows[0], rows[1]), function(key, row){
 			$(planer).find('.row[data-time="' + row + '"]')
