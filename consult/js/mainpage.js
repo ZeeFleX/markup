@@ -1,4 +1,15 @@
 $(document).ready(function(){
+    //Форма задать вопрос
+    $('.ask-question a#ask-question').on('click', function(e){
+        e.preventDefault();
+        $(this).closest('.ask-question').css('display', 'none');
+        $('form.ask-question-form').css('display', 'block');
+    });
+    $('form.ask-question-form i.fa-close').on('click', function(){
+        $(this).closest('form.ask-question-form').css('display', 'none');
+        $('section.ask-question').css('display', 'block');
+    });
+    //регистрация
     $('a#sign-in').on('click', function(e){
         e.preventDefault();
         $('#authorization-window').dialog('open');

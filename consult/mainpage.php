@@ -129,9 +129,23 @@
                 </div>
             </section>
             <section class="ask-question content-block">
-                <a href="#" class="btn with-shadow">Задать вопрос</a>
+                <a href="#" class="btn with-shadow" id="ask-question">Задать вопрос</a>
                 <h2>Хотите задать вопрос консультантам?</h2>
             </section>
+            <form action="#" method="POST" class="ask-question-form content-block">
+                <i class="fa fa-close"></i>
+                <h4>Задать публичный вопрос консультантам</h4>
+                <div class="field question">
+                    <textarea name="question" placeholder="Напишите Ваш вопрос" class="allow-clear"></textarea>
+                    <div class="field category">
+                        <select name="category" class="select2" >
+                            <option value="0">Растеневодство</option>
+                            <option value="1">Животноводство</option>
+                        </select>
+                    </div>
+                    <input type="submit" class="btn" value="Задать вопрос">
+                </div>
+            </form>
             <section class="questions">
                 <?php for($i = 0; $i <= 3; $i++) { ?>
                 <?php //if($i % 2 == 0) echo '<div class="clr"></div>'; ?>
