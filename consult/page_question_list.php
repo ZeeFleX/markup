@@ -131,6 +131,14 @@
                 </div>
                 <?php } ?>
             </div>
+            <div class="write-answer">
+                <form action="#" method="POST">
+                    <div class="field answer">
+                        <textarea name="answer" placeholder="Написать ответ" class="allow-clear"></textarea>
+                    </div>
+                    <input type="submit" value="Ответить" class="btn">
+                </form>
+            </div>
         </div>
     </section>
     <footer class="footer">

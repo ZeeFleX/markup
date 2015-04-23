@@ -4293,6 +4293,27 @@ body.page-question-list .wrapper .dialogue .messages .message .content .date {
   color: #8aa4a2;
   margin: 0;
 }
+/* line 169, page_question_list.less */
+body.page-question-list .wrapper .dialogue .write-answer {
+  background: #f8f8f8;
+  box-sizing: border-box;
+  overflow: hidden;
+  -moz-box-sizing: border-box;
+  padding: 20px 20px 10px 20px;
+  border: solid 1px #d2ded9;
+  border-radius: 0 0 5px 5px;
+  -o-border-radius: 0 0 5px 5px;
+  -moz-border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
+}
+/* line 180, page_question_list.less */
+body.page-question-list .wrapper .dialogue .write-answer textarea {
+  height: 60px;
+}
+/* line 183, page_question_list.less */
+body.page-question-list .wrapper .dialogue .write-answer input[type="submit"] {
+  float: right;
+}
 /* line 3, page_public_question_list.less */
 body.page-public-question-list .wrapper section.ask-question {
   overflow: hidden;
