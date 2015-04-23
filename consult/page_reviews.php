@@ -69,12 +69,22 @@
                             <div class="clr"></div>
                         </div>
                         <div class="toolbar">
-                            <div class="review-menu">
+                            <div class="review-menu popup-menu">
                                 <a href="#" class="dotts">
                                     <i class="fa fa-circle"></i>
                                     <i class="fa fa-circle"></i>
                                     <i class="fa fa-circle"></i>
                                 </a>
+                                <div class="menu-container">
+                                    <div class="menu">
+                                        <div class="siding"></div>
+                                        <a href="#"><i class="fa fa-pencil"></i></a>
+                                        <a href="#"><i class="fa fa-trash-o"></i></a>
+                                        <a href="#"><i class="fa fa-comment-o"></i></a>
+                                        <a href="#"><i class="fa fa-thumbs-up"></i></a>
+                                        <a href="#"><i class="fa fa-thumbs-down"></i></a>
+                                    </div>
+                                </div>
                             </div>
                             <p class="review-date">три дня назад</p>
                             <a href="#" class="readmore">Читать весь отзыв</a>
@@ -99,12 +109,22 @@
                             </div>
                         </div>
                         <div class="toolbar">
-                            <div class="review-menu">
+                            <div class="review-menu popup-menu">
                                 <a href="#" class="dotts">
                                     <i class="fa fa-circle"></i>
                                     <i class="fa fa-circle"></i>
                                     <i class="fa fa-circle"></i>
                                 </a>
+                                <div class="menu-container">
+                                    <div class="menu">
+                                        <div class="siding"></div>
+                                        <a href="#"><i class="fa fa-pencil"></i></a>
+                                        <a href="#"><i class="fa fa-trash-o"></i></a>
+                                        <a href="#"><i class="fa fa-comment-o"></i></a>
+                                        <a href="#"><i class="fa fa-thumbs-up"></i></a>
+                                        <a href="#"><i class="fa fa-thumbs-down"></i></a>
+                                    </div>
+                                </div>
                             </div>
                             <p class="review-date">три дня назад</p>
                             <a href="#" class="readmore">Читать весь отзыв</a>

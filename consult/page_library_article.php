@@ -52,13 +52,23 @@
                 <img src="images/interface/image-placeholder-big.png" alt="">
             </div>
             <div class="article-content">
-                <div class="article-menu">
+                <div class="article-menu popup-menu">
                     <a href="#" class="dotts">
                         <i class="fa fa-circle"></i>
                         <i class="fa fa-circle"></i>
                         <i class="fa fa-circle"></i>
                         <span class="clr"></span>
                     </a>
+                    <div class="menu-container">
+                        <div class="menu">
+                            <div class="siding"></div>
+                            <a href="#"><i class="fa fa-pencil"></i></a>
+                            <a href="#"><i class="fa fa-trash-o"></i></a>
+                            <a href="#"><i class="fa fa-comment-o"></i></a>
+                            <a href="#"><i class="fa fa-thumbs-up"></i></a>
+                            <a href="#"><i class="fa fa-thumbs-down"></i></a>
+                        </div>
+                    </div>
                 </div>
                 <h1 class="article-title">Название статьи</h1>
                 <h3 class="category"><span>Категория статьи</span></h3>
@@ -90,13 +100,23 @@
                 <div class="all-comments">
                     <div class="comment">
                         <div class="author">
-                            <div class="author-menu">
+                            <div class="author-menu popup-menu">
                                 <a href="#" class="dotts">
                                     <i class="fa fa-circle"></i>
                                     <i class="fa fa-circle"></i>
                                     <i class="fa fa-circle"></i>
                                     <span class="clr"></span>
                                 </a>
+                                <div class="menu-container">
+                                    <div class="menu">
+                                        <div class="siding"></div>
+                                        <a href="#"><i class="fa fa-pencil"></i></a>
+                                        <a href="#"><i class="fa fa-trash-o"></i></a>
+                                        <a href="#"><i class="fa fa-comment-o"></i></a>
+                                        <a href="#"><i class="fa fa-thumbs-up"></i></a>
+                                        <a href="#"><i class="fa fa-thumbs-down"></i></a>
+                                    </div>
+                                </div>
                             </div>
                             <div class="photo-container">
                                 <img src="images/photos/02.jpg" >
@@ -115,13 +135,23 @@
                     </div>
                     <div class="comment">
                         <div class="author">
-                            <div class="author-menu">
+                            <div class="author-menu popup-menu">
                                 <a href="#" class="dotts">
                                     <i class="fa fa-circle"></i>
                                     <i class="fa fa-circle"></i>
                                     <i class="fa fa-circle"></i>
                                     <span class="clr"></span>
                                 </a>
+                                <div class="menu-container">
+                                    <div class="menu">
+                                        <div class="siding"></div>
+                                        <a href="#"><i class="fa fa-pencil"></i></a>
+                                        <a href="#"><i class="fa fa-trash-o"></i></a>
+                                        <a href="#"><i class="fa fa-comment-o"></i></a>
+                                        <a href="#"><i class="fa fa-thumbs-up"></i></a>
+                                        <a href="#"><i class="fa fa-thumbs-down"></i></a>
+                                    </div>
+                                </div>
                             </div>
                             <div class="photo-container">
                                 <img src="images/photos/02.jpg" >
