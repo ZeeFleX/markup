@@ -37,6 +37,61 @@ a{
     color:@sea;
 }
 
+.popup-menu{
+    z-index: 10;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    a.dotts{
+        margin-top: 5px;
+    }
+    &:hover .menu-container{
+        display: block;
+    }
+    .menu-container{
+        display: none;
+        position: absolute;
+        left: -205px;
+        width: 200px;
+        top: 0;
+        .menu{
+            position: relative;
+            float: right;
+            height:23px;
+            box-sizing:border-box;
+            -moz-box-sizing:border-box;
+            border-radius:6px 0 0 6px;
+            border:dashed 1px #8aa4a2;
+            border-right:none;
+            background: @white;
+            padding:0 2px 0 8px;
+            cursor: pointer;
+            a{
+                display: inline-block;
+                margin:0 2px;
+                i{
+                    line-height:23px;
+                    font-size:1.2rem;
+                    &:hover{
+                        color:@sky;
+                    }
+                    &.fa-trash-o{
+                        color:@red;
+                    }
+                }
+                //float: left;
+            }
+            .siding{
+                position: absolute;
+                width: 15px;
+                height: 23px;
+                left:100%;
+                top:-1px;
+                background: url('../images/popup-menu-siding.png');
+            }
+        }
+    }
+}
+
 //HEADER
 header.header {
     width: 100%;

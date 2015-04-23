@@ -70,13 +70,23 @@
         <div class="content-block dialogue">
             <div class="head">
                 <h3 class="contact-name">Иван Иванов</h3>
-                <div class="contact-menu">
+                <div class="contact-menu popup-menu">
                     <a href="#" class="dotts">
                         <i class="fa fa-circle"></i>
                         <i class="fa fa-circle"></i>
                         <i class="fa fa-circle"></i>
                         <span class="clr"></span>
                     </a>
+                    <div class="menu-container">
+                        <div class="menu">
+                            <div class="siding"></div>
+                            <a href="#"><i class="fa fa-pencil"></i></a>
+                            <a href="#"><i class="fa fa-trash-o"></i></a>
+                            <a href="#"><i class="fa fa-comment-o"></i></a>
+                            <a href="#"><i class="fa fa-thumbs-up"></i></a>
+                            <a href="#"><i class="fa fa-thumbs-down"></i></a>
+                        </div>
+                    </div>
                 </div>
                 <div class="clr"></div>
             </div>
@@ -89,13 +99,23 @@
                     </div>
                     <div class="content">
                         <p class="author">Иван Иванов</p>
-                        <div class="message-menu">
+                        <div class="message-menu popup-menu">
                             <a href="#" class="dotts">
                                 <i class="fa fa-circle"></i>
                                 <i class="fa fa-circle"></i>
                                 <i class="fa fa-circle"></i>
                                 <span class="clr"></span>
                             </a>
+                            <div class="menu-container">
+                                <div class="menu">
+                                    <div class="siding"></div>
+                                    <a href="#"><i class="fa fa-pencil"></i></a>
+                                    <a href="#"><i class="fa fa-trash-o"></i></a>
+                                    <a href="#"><i class="fa fa-comment-o"></i></a>
+                                    <a href="#"><i class="fa fa-thumbs-up"></i></a>
+                                    <a href="#"><i class="fa fa-thumbs-down"></i></a>
+                                </div>
+                            </div>
                         </div>
                         <div class="clr"></div>
                         <p class="text">
@@ -112,13 +132,23 @@
                     </div>
                     <div class="content">
                         <p class="author">Анька Говядина</p>
-                        <div class="message-menu">
+                        <div class="message-menu popup-menu">
                             <a href="#" class="dotts">
                                 <i class="fa fa-circle"></i>
                                 <i class="fa fa-circle"></i>
                                 <i class="fa fa-circle"></i>
                                 <span class="clr"></span>
                             </a>
+                            <div class="menu-container">
+                                <div class="menu">
+                                    <div class="siding"></div>
+                                    <a href="#"><i class="fa fa-pencil"></i></a>
+                                    <a href="#"><i class="fa fa-trash-o"></i></a>
+                                    <a href="#"><i class="fa fa-comment-o"></i></a>
+                                    <a href="#"><i class="fa fa-thumbs-up"></i></a>
+                                    <a href="#"><i class="fa fa-thumbs-down"></i></a>
+                                </div>
+                            </div>
                         </div>
                         <div class="clr"></div>
                         <p class="text">
