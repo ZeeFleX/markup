@@ -5166,7 +5166,7 @@ body.page-consultation section.reviews .write-review textarea {
 /* line 9, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container {
   position: relative;
-  width: 520px;
+  width: 550px;
   height: auto;
   margin: 100px auto;
   background: #ffffff;
@@ -5255,7 +5255,7 @@ body.page-consultation section.reviews .write-review textarea {
 }
 /* line 85, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container form {
-  width: 480px;
+  width: 510px;
   position: relative;
 }
 /* line 89, modal_sign_up_consultation.less */
