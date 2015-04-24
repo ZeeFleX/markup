@@ -15,15 +15,15 @@
                     <img src="images/photos/01.jpg" alt="">
                 </div>
                 <div class="about">
-                    <div class="rating-block">
-                        <p class="value"><span class="current-value">8</span>/10</p>
-                        <p class="title"><span>Рейтинг</span></p>
-                    </div>
                     <p class="name">
                         <span class="lastname">Братанова</span><br />
                         <span class="firstname">Мария Петровна</span>
                     </p>
                     <p class="job">Консультант <span class="age">35 лет</span></p>
+                    <div class="rating-block">
+                        <p class="value"><span class="current-value">8</span>/10</p>
+                        <p class="title"><span>Рейтинг</span></p>
+                    </div>
                 </div>
             </div>
             <form action="#" method="POST">
@@ -88,26 +88,56 @@
 
                 </div>
                 <div class="right">
-                    <h5>Время</h5>
                     <div class="time-container">
                         <div class="grid">
-                            <div class="row">00:00 - 00:30</div>
-                            <div class="row">00:30 - 01:00</div>
-                            <div class="row">01:00 - 01:30</div>
-                            <div class="row">02:00 - 02:30</div>
-                            <div class="row">03:00 - 03:30</div>
-                            <div class="row">04:00 - 04:30</div>
-                            <div class="row">05:00 - 05:30</div>
-                            <div class="row">06:00 - 06:30</div>
-                            <div class="row">07:00 - 07:30</div>
-                            <div class="row">08:00 - 08:30</div>
-                            <div class="row">00:30 - 01:00</div>
-                            <div class="row">00:30 - 01:00</div>
-                            <div class="row">00:30 - 01:00</div>
-                            <div class="row">00:30 - 01:00</div>
-                            <div class="row">00:30 - 01:00</div>
-                            <div class="row">00:30 - 01:00</div>
-                            <div class="row">00:30 - 01:00</div>
+                            <div class="row unwork" data-time="1">00:00 - 00:30</div>
+                            <div class="row unwork" data-time="2">00:30 - 01:00</div>
+                            <div class="row unwork" data-time="3">01:00 - 01:30</div>
+                            <div class="row unwork" data-time="4">01:30 - 02:00</div>
+                            <div class="row unwork" data-time="5">02:00 - 02:30</div>
+                            <div class="row unwork" data-time="6">02:30 - 03:00</div>
+                            <div class="row unwork" data-time="7">03:00 - 03:30</div>
+                            <div class="row unwork" data-time="8">03:30 - 04:00</div>
+                            <div class="row unwork" data-time="9">04:00 - 04:30</div>
+                            <div class="row unwork" data-time="10">04:30 - 05:00</div>
+                            <div class="row" data-time="11">05:00 - 05:30</div>
+                            <div class="row" data-time="12">05:30 - 06:00</div>
+                            <div class="row" data-time="13">06:00 - 06:30</div>
+                            <div class="row" data-time="14">06:30 - 07:00</div>
+                            <div class="row" data-time="15">07:30 - 07:30</div>
+                            <div class="row reserved" data-time="16">07:30 - 08:00</div>
+                            <div class="row reserved" data-time="17">08:00 - 08:30</div>
+                            <div class="row reserved" data-time="18">08:30 - 09:00</div>
+                            <div class="row reserved" data-time="19">09:00 - 09:30</div>
+                            <div class="row reserved" data-time="20">09:30 - 10:00</div>
+                            <div class="row reserved" data-time="21">10:00 - 10:30</div>
+                            <div class="row reserved" data-time="22">10:30 - 11:00</div>
+                            <div class="row reserved" data-time="23">11:00 - 11:30</div>
+                            <div class="row reserved" data-time="24">11:30 - 12:00</div>
+                            <div class="row" data-time="25">12:00 - 12:30</div>
+                            <div class="row" data-time="26">12:30 - 13:00</div>
+                            <div class="row" data-time="27">13:00 - 13:30</div>
+                            <div class="row" data-time="28">13:30 - 14:00</div>
+                            <div class="row" data-time="29">14:00 - 14:30</div>
+                            <div class="row" data-time="30">14:30 - 15:00</div>
+                            <div class="row" data-time="31">15:00 - 15:30</div>
+                            <div class="row reserved" data-time="32">15:30 - 16:00</div>
+                            <div class="row reserved" data-time="33">16:00 - 16:30</div>
+                            <div class="row reserved" data-time="34">16:30 - 17:00</div>
+                            <div class="row reserved" data-time="35">17:00 - 17:30</div>
+                            <div class="row" data-time="36">17:30 - 18:00</div>
+                            <div class="row" data-time="37">18:00 - 18:30</div>
+                            <div class="row" data-time="38">18:30 - 19:00</div>
+                            <div class="row" data-time="39">19:00 - 19:30</div>
+                            <div class="row" data-time="40">19:30 - 20:00</div>
+                            <div class="row" data-time="41">20:00 - 20:30</div>
+                            <div class="row" data-time="42">20:30 - 21:00</div>
+                            <div class="row" data-time="43">21:00 - 21:30</div>
+                            <div class="row" data-time="44">21:30 - 22:00</div>
+                            <div class="row" data-time="45">22:00 - 22:30</div>
+                            <div class="row" data-time="46">22:30 - 23:00</div>
+                            <div class="row" data-time="47">23:00 - 23:30</div>
+                            <div class="row" data-time="48">23:30 - 00:00</div>
                         </div>
                     </div>
                 </div>

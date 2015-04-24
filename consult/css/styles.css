@@ -5166,7 +5166,7 @@ body.page-consultation section.reviews .write-review textarea {
 /* line 9, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container {
   position: relative;
-  width: 480px;
+  width: 520px;
   height: auto;
   margin: 100px auto;
   background: #ffffff;
@@ -5222,48 +5222,156 @@ body.page-consultation section.reviews .write-review textarea {
 }
 /* line 55, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container .profile .about .rating-block {
-  float: right;
   width: 50px;
+  margin-bottom: 10px;
 }
-/* line 59, modal_sign_up_consultation.less */
+/* line 60, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container .profile .about p.name {
   display: block;
   overflow: hidden;
   color: #35504e;
 }
-/* line 63, modal_sign_up_consultation.less */
+/* line 64, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container .profile .about p.name .lastname {
   font-size: 1.8rem;
   text-transform: uppercase;
   font-weight: 700;
 }
-/* line 68, modal_sign_up_consultation.less */
+/* line 69, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container .profile .about p.name .firstname {
   font-size: 1.6rem;
   font-weight: 700;
 }
-/* line 73, modal_sign_up_consultation.less */
+/* line 74, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container .profile .about p.job {
   font-size: 1.4rem;
   font-weight: 500;
   color: #4ad0c5;
 }
-/* line 77, modal_sign_up_consultation.less */
+/* line 78, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container .profile .about p.job span.age {
   margin-left: 20px;
   color: #8aa4a2;
 }
-/* line 84, modal_sign_up_consultation.less */
+/* line 85, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container form {
-  overflow: hidden;
+  width: 480px;
+  position: relative;
 }
-/* line 86, modal_sign_up_consultation.less */
+/* line 89, modal_sign_up_consultation.less */
+.window.sign-up-consultation > .container form h5 {
+  margin-top: 20px;
+}
+/* line 92, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container form .calendar {
   margin: 0;
 }
-/* line 89, modal_sign_up_consultation.less */
+/* line 95, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container form .calendar header a {
   color: #35504e;
+}
+/* line 100, modal_sign_up_consultation.less */
+.window.sign-up-consultation > .container form .left {
+  width: 300px;
+}
+/* line 103, modal_sign_up_consultation.less */
+.window.sign-up-consultation > .container form .left .time-slider {
+  width: 290px;
+  webkit-user-select: none;
+  -moz-user-select: none;
+}
+/* line 107, modal_sign_up_consultation.less */
+.window.sign-up-consultation > .container form .left .time-slider .bar {
+  margin-top: 20px;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -o-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  width: 100%;
+  height: 2px;
+  background: url('../images/sliderbar-bg.png') right center repeat-y;
+  background-position: -290px 0;
+}
+/* line 117, modal_sign_up_consultation.less */
+.window.sign-up-consultation > .container form .left .time-slider .bar .handler {
+  position: relative;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  border: solid 2px #ffffff;
+  background: #4ad0c5;
+  margin-left: -10px;
+  top: -11px;
+  left: 60px;
+  border-radius: 20px;
+  -o-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+}
+/* line 133, modal_sign_up_consultation.less */
+.window.sign-up-consultation > .container form .left .time-slider .labels {
+  width: 115%;
+  margin-top: 10px;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+/* line 139, modal_sign_up_consultation.less */
+.window.sign-up-consultation > .container form .left .time-slider .labels .label {
+  float: left;
+  width: 25%;
+  font-size: 1.2rem;
+}
+/* line 146, modal_sign_up_consultation.less */
+.window.sign-up-consultation > .container form .left p.price {
+  color: #4ad0c5;
+  font-size: 3.0rem;
+  margin-top: -10px;
+  margin-bottom: 35px;
+}
+/* line 151, modal_sign_up_consultation.less */
+.window.sign-up-consultation > .container form .left p.price i {
+  font-size: 2.6rem;
+}
+/* line 156, modal_sign_up_consultation.less */
+.window.sign-up-consultation > .container form .right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 124px;
+}
+/* line 161, modal_sign_up_consultation.less */
+.window.sign-up-consultation > .container form .right .time-container {
+  padding: 20px;
+  border: solid 1px #35504e;
+  border-radius: 5px;
+  -o-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+/* line 168, modal_sign_up_consultation.less */
+.window.sign-up-consultation > .container form .right .time-container .grid {
+  line-height: 100%;
+  font-size: 1.2rem;
+}
+/* line 172, modal_sign_up_consultation.less */
+.window.sign-up-consultation > .container form .right .time-container .grid .row {
+  text-align: center;
+  padding: 2.4px 0;
+}
+/* line 175, modal_sign_up_consultation.less */
+.window.sign-up-consultation > .container form .right .time-container .grid .row.unwork {
+  background: #aabdbb;
+  color: #ffffff;
+}
+/* line 179, modal_sign_up_consultation.less */
+.window.sign-up-consultation > .container form .right .time-container .grid .row.reserved {
+  background: #33b679;
+  color: #ffffff;
+}
+/* line 187, modal_sign_up_consultation.less */
+.window.sign-up-consultation > .container form input[type="submit"] {
+  margin-right: 20px;
 }
 /* line 4, page_library.less */
 body.page-library .wrapper section.search-article {
