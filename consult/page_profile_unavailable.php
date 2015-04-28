@@ -54,11 +54,11 @@
                     <div class="photo">
                         <img src="images/photos/01.jpg" alt="" />
                     </div>
-                    <p class="place"><i class="fa fa-map-marker"></i> Россия, Москва</p>
+                    <!-- <p class="place"><i class="fa fa-map-marker"></i> Россия, Москва</p>
                     <div class="expirience">
                         <i class="fa fa-suitcase"></i>
                         <p>Стаж: <span class="value">6 лет</span></p>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="right">
                     <header>
@@ -68,11 +68,11 @@
                             <p class="job">Консультант</p>
                         </div>
                         <div class="toolbar">
-                            <div class="rating-block">
+                            <!-- <div class="rating-block">
                                 <p class="value"><span class="current-value">8</span>/10</p>
                                 <p class="title"><span>Рейтинг</span></p>
                             </div>
-                            <a href="#" class="envelope"><i class="fa fa-envelope-o"></i></a>
+                            <a href="#" class="envelope"><i class="fa fa-envelope-o"></i></a> -->
                             <div class="profile-menu">
                                 <a href="#" class="dotts">
                                     <i class="fa fa-circle"></i>
@@ -83,7 +83,8 @@
                             </div>
                         </div>
                     </header>
-                    <div class="contacts">
+                    <p class="endnote">Информация скрыта</p>
+                   <!--  <div class="contacts">
                         <h5>Контакты</h5>
                         <p>Skype: <span class="value">bratanova</span></p>
                         <p>Телефон: <span class="value">+7 999 99 99</span></p>
@@ -94,13 +95,14 @@
                             Идейные активности позволяет выполнять важные задания по разработке модели развития. позволяет выполнять важные задания по разработке по разработке  модели развития...
                         </p>
                         <a href="#" class="readmore">подробнее</a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <div class="price">
                 <h4>Стоимость консультаций</h4>
                 <div class="content-block">
-                    <table>
+                    <p class="endnote">Информация скрыта</p>
+                    <!-- <table>
                         <tr>
                             <td class="key">Консультация по Skype</td>
                             <td class="value">1 000 руб.</td>
@@ -113,37 +115,37 @@
                             <td class="key">Сессия «Метафорические карты»</td>
                             <td class="value">2 000 руб.</td>
                         </tr>
-                    </table>
+                    </table> -->
                 </div>
             </div>
-            <div class="sign-up">
+            <!-- <div class="sign-up">
                 <h4>Нужна консультация?</h4>
                 <div class="content-block">
                     <a href="#" class="btn yellow">Записаться на консультацию</a>
                 </div>
-            </div>
+            </div> -->
             <div class="clr"></div>
         </div>
     </section>
-    <section class="partners-section">
+    <!-- <section class="partners-section">
         <div class="wrapper">
             <h4>Партнеры</h4>
             <div class="content-block">
                 <div class="partner dashed b-radius">
-<!--                    <img src="images/placeholder.png" />-->
+                    <img src="images/placeholder.png" />
                 </div>
                 <div class="partner dashed b-radius">
-<!--                    <img src="images/placeholder.png" />-->
+                    <img src="images/placeholder.png" />
                 </div>
                 <div class="partner dashed b-radius">
-<!--                    <img src="images/placeholder.png" />-->
+                    <img src="images/placeholder.png" />
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <section class="information-section">
         <div class="wrapper">
-            <div class="reviews">
+            <!-- <div class="reviews">
                 <h4>Отзывы о консультанте</h4>
                 <div class="content-block reviews-list">
                     <div class="review dashed b-radius">
@@ -240,11 +242,12 @@
                         <input type="submit" class="btn" value="Добавить отзыв" />
                     </form>
                 </div>
-            </div>
+            </div> -->
             <div class="information">
                 <h4>Информация о консультанте</h4>
                 <div class="content-block education-list">
-                    <div class="specialization">
+                    <p class="endnote">Информация скрыта</p>
+                    <!-- <div class="specialization">
                         <h5>Специализация</h5>
                         <ul class="badge-marked">
                             <li>Развитие способностей</li>
@@ -289,7 +292,7 @@
                                 <div class="clr"></div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <h4 class="only-available">Публичные ответы консультанта</h4>
                 <div class="content-block answers-list">

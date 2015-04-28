@@ -216,13 +216,14 @@ var loadForms = function(){
                 borderStyle: $(input).css('borderStyle'),
                 borderWidth: $(input).css('borderWidth')
             });
-            $(input).css({
-                position: 'relative',
-                width: width - 60 + 'px',
-                height: '100%',
-                float: 'left',
-                border: 'none'
-            });
+            console.log($(input).css('border'));
+            // $(input).css({
+            //     position: 'relative',
+            //     width: width - 60 + 'px',
+            //     height: '100%',
+            //     float: 'left',
+            //     border: 'none'
+            // });
             $(submit).css({
                 position: 'relative',
                 width: '60px',
