@@ -1712,22 +1712,33 @@ body.page-mainpage > .content .professional-consults #show-all-users {
   width: 960px;
 }
 /* line 6, page_profile.less */
+body.page-profile .unavailable-message {
+  text-align: center;
+  background: #ffaa3e;
+  margin-top: 20px;
+  color: #b28000;
+}
+/* line 12, page_profile.less */
+body.page-profile .only-unuavailable {
+  display: none;
+}
+/* line 15, page_profile.less */
 body.page-profile .resume-section {
   overflow: hidden;
 }
-/* line 8, page_profile.less */
+/* line 17, page_profile.less */
 body.page-profile .resume-section .profile {
   float: left;
   width: 57%;
   margin-top: 20px;
 }
-/* line 12, page_profile.less */
+/* line 21, page_profile.less */
 body.page-profile .resume-section .profile .left {
   float: left;
   width: 28%;
   margin-top: 10px;
 }
-/* line 16, page_profile.less */
+/* line 25, page_profile.less */
 body.page-profile .resume-section .profile .left .photo {
   overflow: hidden;
   border-radius: 7px;
@@ -1735,85 +1746,85 @@ body.page-profile .resume-section .profile .left .photo {
   -moz-border-radius: 7px;
   -webkit-border-radius: 7px;
 }
-/* line 22, page_profile.less */
+/* line 31, page_profile.less */
 body.page-profile .resume-section .profile .left .photo img {
   display: block;
   width: 100%;
 }
-/* line 27, page_profile.less */
+/* line 36, page_profile.less */
 body.page-profile .resume-section .profile .left .place {
   margin-top: 17px;
   text-align: center;
   color: #8aa4a2;
   font: 400 1.2rem Roboto;
 }
-/* line 32, page_profile.less */
+/* line 41, page_profile.less */
 body.page-profile .resume-section .profile .left .place .fa {
   color: #4ad0c5;
 }
-/* line 38, page_profile.less */
+/* line 47, page_profile.less */
 body.page-profile .resume-section .profile .left .expirience {
   text-align: center;
   margin-top: 13px;
 }
-/* line 41, page_profile.less */
+/* line 50, page_profile.less */
 body.page-profile .resume-section .profile .left .expirience .fa {
   display: block;
   width: 100%;
   font-size: 18px;
 }
-/* line 46, page_profile.less */
+/* line 55, page_profile.less */
 body.page-profile .resume-section .profile .left .expirience p {
   font: 400 1.4rem Roboto;
 }
-/* line 48, page_profile.less */
+/* line 57, page_profile.less */
 body.page-profile .resume-section .profile .left .expirience p .value {
   color: #35504e;
   font-weight: 700;
 }
-/* line 55, page_profile.less */
+/* line 64, page_profile.less */
 body.page-profile .resume-section .profile .right {
   float: right;
   width: 68%;
   overflow: hidden;
 }
-/* line 59, page_profile.less */
+/* line 68, page_profile.less */
 body.page-profile .resume-section .profile .right header {
   overflow: hidden;
 }
-/* line 61, page_profile.less */
+/* line 70, page_profile.less */
 body.page-profile .resume-section .profile .right header .name {
   color: #35504e;
   font: 700 1.8rem Roboto;
   float: left;
 }
-/* line 65, page_profile.less */
+/* line 74, page_profile.less */
 body.page-profile .resume-section .profile .right header .name .lastname {
   text-transform: uppercase;
 }
-/* line 68, page_profile.less */
+/* line 77, page_profile.less */
 body.page-profile .resume-section .profile .right header .name .firstname {
   text-transform: none;
 }
-/* line 71, page_profile.less */
+/* line 80, page_profile.less */
 body.page-profile .resume-section .profile .right header .name .job {
   color: #4ad0c5;
   font: 500 1.4rem Roboto;
   margin-top: 5px;
 }
-/* line 76, page_profile.less */
+/* line 85, page_profile.less */
 body.page-profile .resume-section .profile .right header .name p {
   margin: 0;
 }
-/* line 80, page_profile.less */
+/* line 89, page_profile.less */
 body.page-profile .resume-section .profile .right header .toolbar {
   float: right;
 }
-/* line 82, page_profile.less */
+/* line 91, page_profile.less */
 body.page-profile .resume-section .profile .right header .toolbar .rating-block {
   float: right;
 }
-/* line 85, page_profile.less */
+/* line 94, page_profile.less */
 body.page-profile .resume-section .profile .right header .toolbar a.envelope {
   float: right;
   color: #4ad0c5;
@@ -1821,56 +1832,56 @@ body.page-profile .resume-section .profile .right header .toolbar a.envelope {
   margin-top: 6px;
   margin-right: 15px;
 }
-/* line 91, page_profile.less */
+/* line 100, page_profile.less */
 body.page-profile .resume-section .profile .right header .toolbar a.envelope .fa {
   font-size: 2.0rem;
 }
-/* line 95, page_profile.less */
+/* line 104, page_profile.less */
 body.page-profile .resume-section .profile .right header .toolbar .profile-menu {
   float: right;
   margin-top: 9px;
   margin-right: 15px;
 }
-/* line 107, page_profile.less */
+/* line 116, page_profile.less */
 body.page-profile .resume-section .profile .right .contacts h5 {
   padding-bottom: 0;
 }
-/* line 110, page_profile.less */
+/* line 119, page_profile.less */
 body.page-profile .resume-section .profile .right .contacts p {
   margin: 2px 0;
   font-weight: 500;
 }
-/* line 113, page_profile.less */
+/* line 122, page_profile.less */
 body.page-profile .resume-section .profile .right .contacts p span.value {
   color: #4ad0c5;
 }
-/* line 119, page_profile.less */
+/* line 128, page_profile.less */
 body.page-profile .resume-section .profile .right .introtext a.readmore {
   color: #4ad0c5;
   font: italic 1.4rem Roboto;
 }
-/* line 126, page_profile.less */
+/* line 135, page_profile.less */
 body.page-profile .resume-section .price {
   float: right;
   width: 41%;
   margin-top: 7px;
 }
-/* line 133, page_profile.less */
+/* line 142, page_profile.less */
 body.page-profile .resume-section .price .content-block table {
   font: 500 1.4rem Roboto;
   width: 100%;
 }
-/* line 140, page_profile.less */
+/* line 149, page_profile.less */
 body.page-profile .resume-section .price .content-block table tbody tr td.value {
   text-align: right;
 }
-/* line 148, page_profile.less */
+/* line 157, page_profile.less */
 body.page-profile .resume-section .sign-up {
   float: right;
   width: 41%;
   margin-top: 10px;
 }
-/* line 152, page_profile.less */
+/* line 161, page_profile.less */
 body.page-profile .resume-section .sign-up .btn {
   padding: 17px 0;
   text-align: center;
@@ -1879,34 +1890,34 @@ body.page-profile .resume-section .sign-up .btn {
   font: 700 1.8rem Roboto;
   text-shadow: 1px 1px 0 #da8820;
 }
-/* line 163, page_profile.less */
+/* line 172, page_profile.less */
 body.page-profile .partners-section .content-block {
   overflow: hidden;
 }
-/* line 165, page_profile.less */
+/* line 174, page_profile.less */
 body.page-profile .partners-section .content-block .partner {
   float: left;
   width: 31.7%;
   margin-left: 2%;
   min-height: 120px;
 }
-/* line 170, page_profile.less */
+/* line 179, page_profile.less */
 body.page-profile .partners-section .content-block .partner:first-child {
   margin-left: 0;
 }
-/* line 178, page_profile.less */
+/* line 187, page_profile.less */
 body.page-profile .reviews {
   float: left;
   width: 57%;
 }
-/* line 182, page_profile.less */
+/* line 191, page_profile.less */
 body.page-profile .reviews .content-block .review {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   padding: 10px 20px 30px 20px;
   margin-bottom: 60px;
 }
-/* line 187, page_profile.less */
+/* line 196, page_profile.less */
 body.page-profile .reviews .content-block .review .quote-arrow {
   position: absolute;
   width: 43px;
@@ -1915,12 +1926,12 @@ body.page-profile .reviews .content-block .review .quote-arrow {
   bottom: -25px;
   left: 60px;
 }
-/* line 200, page_profile.less */
+/* line 209, page_profile.less */
 body.page-profile .reviews .content-block .review .author {
   overflow: hidden;
   margin-top: 25px;
 }
-/* line 203, page_profile.less */
+/* line 212, page_profile.less */
 body.page-profile .reviews .content-block .review .author .photo {
   border-radius: 50px;
   -moz-border-radius: 50px;
@@ -1931,46 +1942,46 @@ body.page-profile .reviews .content-block .review .author .photo {
   height: 50px;
   float: left;
 }
-/* line 212, page_profile.less */
+/* line 221, page_profile.less */
 body.page-profile .reviews .content-block .review .author .photo img {
   display: block;
   min-width: 100%;
   min-height: 100%;
 }
-/* line 218, page_profile.less */
+/* line 227, page_profile.less */
 body.page-profile .reviews .content-block .review .author .text {
   overflow: hidden;
 }
-/* line 220, page_profile.less */
+/* line 229, page_profile.less */
 body.page-profile .reviews .content-block .review .author .text p {
   margin-left: 10px;
   font-size: 1.2rem;
 }
-/* line 223, page_profile.less */
+/* line 232, page_profile.less */
 body.page-profile .reviews .content-block .review .author .text p .author-name,
 body.page-profile .reviews .content-block .review .author .text p .user-name {
   color: #4ad0c5;
   font: 700 1.2rem Roboto;
 }
-/* line 230, page_profile.less */
+/* line 239, page_profile.less */
 body.page-profile .reviews .content-block .review .toolbar {
   position: absolute;
   right: 0;
   bottom: 0;
 }
-/* line 234, page_profile.less */
+/* line 243, page_profile.less */
 body.page-profile .reviews .content-block .review .toolbar .review-menu {
   float: left;
   margin-right: 20px;
   margin-top: 11px;
 }
-/* line 239, page_profile.less */
+/* line 248, page_profile.less */
 body.page-profile .reviews .content-block .review .toolbar .review-date {
   float: left;
   margin-right: 20px;
   font-size: 1.2rem;
 }
-/* line 244, page_profile.less */
+/* line 253, page_profile.less */
 body.page-profile .reviews .content-block .review .toolbar .readmore {
   border-top-left-radius: 5px;
   -o-border-top-left-radius: 5px;
@@ -1985,74 +1996,74 @@ body.page-profile .reviews .content-block .review .toolbar .readmore {
   border-top: dashed 1px #b9d4cc;
   padding: 8px 20px;
 }
-/* line 257, page_profile.less */
+/* line 266, page_profile.less */
 body.page-profile .reviews .content-block .review .toolbar .readmore:hover {
   text-decoration: underline;
 }
-/* line 263, page_profile.less */
+/* line 272, page_profile.less */
 body.page-profile .reviews .content-block #load-more-reviews {
   width: 200px;
   text-align: center;
   margin: auto;
   display: block;
 }
-/* line 275, page_profile.less */
+/* line 284, page_profile.less */
 body.page-profile .information-section .content-block form {
   overflow: hidden;
 }
-/* line 278, page_profile.less */
+/* line 287, page_profile.less */
 body.page-profile .information-section .content-block form .field textarea {
   height: 98px;
 }
-/* line 281, page_profile.less */
+/* line 290, page_profile.less */
 body.page-profile .information-section .content-block form .field label {
   color: #35504e;
   font: 500 1.4rem Roboto;
   margin-bottom: 0;
 }
-/* line 286, page_profile.less */
+/* line 295, page_profile.less */
 body.page-profile .information-section .content-block form .field .raiting-block.vote {
   float: left;
   margin-top: 6px;
 }
-/* line 291, page_profile.less */
+/* line 300, page_profile.less */
 body.page-profile .information-section .content-block form .btn {
   display: block;
   float: right;
 }
-/* line 297, page_profile.less */
+/* line 306, page_profile.less */
 body.page-profile .information-section .information {
   float: right;
   width: 41%;
 }
-/* line 307, page_profile.less */
+/* line 316, page_profile.less */
 body.page-profile .information-section .information .content-block.education-list .item,
 body.page-profile .information-section .information .content-block.proffessions-list .item {
   margin-bottom: 20px;
 }
-/* line 309, page_profile.less */
+/* line 318, page_profile.less */
 body.page-profile .information-section .information .content-block.education-list .item .scan,
 body.page-profile .information-section .information .content-block.proffessions-list .item .scan {
   float: left;
   width: 50px;
   margin-right: 15px;
 }
-/* line 313, page_profile.less */
+/* line 322, page_profile.less */
 body.page-profile .information-section .information .content-block.education-list .item .scan img,
 body.page-profile .information-section .information .content-block.proffessions-list .item .scan img {
   display: block;
   width: 100%;
 }
-/* line 318, page_profile.less */
+/* line 327, page_profile.less */
 body.page-profile .information-section .information .content-block.education-list .item p,
 body.page-profile .information-section .information .content-block.proffessions-list .item p {
   overflow: hidden;
 }
-/* line 324, page_profile.less */
+/* line 333, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .item {
   margin-bottom: 30px;
 }
-/* line 328, page_profile.less */
+/* line 337, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .author .photo {
   float: left;
   overflow: hidden;
@@ -2064,48 +2075,48 @@ body.page-profile .information-section .information .content-block.answers-list 
   height: 50px;
   margin-right: 15px;
 }
-/* line 338, page_profile.less */
+/* line 347, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .author .photo img {
   display: block;
 }
-/* line 342, page_profile.less */
+/* line 351, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .author .about {
   overflow: hidden;
 }
-/* line 344, page_profile.less */
+/* line 353, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .author .about p {
   margin: 0;
 }
-/* line 346, page_profile.less */
+/* line 355, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .author .about p.name {
   font-size: 1.2rem;
   color: #4ad0c5;
   font-weight: 700;
 }
-/* line 351, page_profile.less */
+/* line 360, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .author .about p.job {
   font-size: 1.2rem;
   font-weight: 700;
 }
-/* line 355, page_profile.less */
+/* line 364, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .author .about p.category {
   font-size: 1.2rem;
   font-weight: 700;
   margin-top: 30px;
 }
-/* line 359, page_profile.less */
+/* line 368, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .author .about p.category .value {
   color: #35504e;
 }
-/* line 366, page_profile.less */
+/* line 375, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .item > h5 {
   padding-bottom: 0;
 }
-/* line 370, page_profile.less */
+/* line 379, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .content p {
   margin: 5px 0 0 0;
 }
-/* line 373, page_profile.less */
+/* line 382, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list .content .fader {
   position: absolute;
   width: 100%;
@@ -2118,45 +2129,45 @@ body.page-profile .information-section .information .content-block.answers-list 
   background: linear-gradient(0deg, #fefefe 0%, #fefefe 16%, rgba(255, 255, 255, 0) 100%);
   z-index: 1;
 }
-/* line 386, page_profile.less */
+/* line 395, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list a.readmore {
   color: #4ad0c5;
   font: 400 1.2rem Roboto;
   text-decoration: none;
 }
-/* line 390, page_profile.less */
+/* line 399, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list a.readmore:hover {
   text-decoration: underline;
 }
-/* line 394, page_profile.less */
+/* line 403, page_profile.less */
 body.page-profile .information-section .information .content-block.answers-list a#load-all-answers {
   display: block;
   width: 80%;
   margin: auto;
 }
-/* line 402, page_profile.less */
+/* line 411, page_profile.less */
 body.page-profile .information-section .ask-question {
   margin-top: 20px;
   overflow: hidden;
 }
-/* line 405, page_profile.less */
+/* line 414, page_profile.less */
 body.page-profile .information-section .ask-question .ask-text {
   float: left;
 }
-/* line 407, page_profile.less */
+/* line 416, page_profile.less */
 body.page-profile .information-section .ask-question .ask-text h3 {
   padding: 0;
 }
-/* line 411, page_profile.less */
+/* line 420, page_profile.less */
 body.page-profile .information-section .ask-question a {
   display: block;
   float: right;
 }
-/* line 419, page_profile.less */
+/* line 428, page_profile.less */
 body.page-profile .same-users-section .content-block.same-users-list {
   overflow: hidden;
 }
-/* line 421, page_profile.less */
+/* line 430, page_profile.less */
 body.page-profile .same-users-section .content-block.same-users-list .same-user {
   overflow: hidden;
   float: left;
@@ -2164,40 +2175,74 @@ body.page-profile .same-users-section .content-block.same-users-list .same-user 
   margin-left: 3%;
   padding-bottom: 20px;
 }
-/* line 426, page_profile.less */
+/* line 435, page_profile.less */
 body.page-profile .same-users-section .content-block.same-users-list .same-user:first-child {
   margin-left: 0;
 }
-/* line 430, page_profile.less */
+/* line 439, page_profile.less */
 body.page-profile .same-users-section .content-block.same-users-list .same-user .photo {
   width: 100%;
   overflow: hidden;
 }
-/* line 433, page_profile.less */
+/* line 442, page_profile.less */
 body.page-profile .same-users-section .content-block.same-users-list .same-user .photo img {
   width: 100%;
 }
-/* line 437, page_profile.less */
+/* line 446, page_profile.less */
 body.page-profile .same-users-section .content-block.same-users-list .same-user p {
   text-align: center;
 }
-/* line 440, page_profile.less */
+/* line 449, page_profile.less */
 body.page-profile .same-users-section .content-block.same-users-list .same-user p.lastname {
   margin: 0;
   margin-top: 5px;
   color: #4ad0c5;
   font: 500 1.4rem Roboto;
 }
-/* line 446, page_profile.less */
+/* line 455, page_profile.less */
 body.page-profile .same-users-section .content-block.same-users-list .same-user p.firstname {
   margin: 0;
   color: #4ad0c5;
   font: 700 1.2rem Roboto;
 }
-/* line 452, page_profile.less */
+/* line 461, page_profile.less */
 body.page-profile .same-users-section .content-block.same-users-list .same-user .rating-block {
   width: 60px;
   margin: 10px auto 0 auto;
+}
+/* line 470, page_profile.less */
+body.page-profile.unavailable .only-available {
+  display: none;
+}
+/* line 473, page_profile.less */
+body.page-profile.unavailable .only-unuavailable {
+  display: block;
+}
+/* line 477, page_profile.less */
+body.page-profile.unavailable .resume-section .sign-up {
+  display: none;
+}
+/* line 481, page_profile.less */
+body.page-profile.unavailable .partners-section,
+body.page-profile.unavailable .reviews,
+body.page-profile.unavailable .same-users-section {
+  display: none;
+}
+/* line 485, page_profile.less */
+body.page-profile.unavailable .information-section .wrapper {
+  overflow: visible;
+}
+/* line 488, page_profile.less */
+body.page-profile.unavailable .information-section .information {
+  margin-top: -170px;
+}
+/* line 491, page_profile.less */
+body.page-profile.unavailable .information-section .answers-list {
+  display: none;
+}
+/* line 494, page_profile.less */
+body.page-profile.unavailable .information-section .ask-question {
+  display: none;
 }
 /* line 2, page_profile_settings.less */
 body.page-profile-settings section.content {
@@ -2272,14 +2317,12 @@ body.page-profile-settings.common section.content form#profile-settings-form lab
 }
 /* line 67, page_profile_settings.less */
 body.page-profile-settings.common section.content form#profile-settings-form input {
-  margin-bottom: 5px;
+  margin-bottom: 0;
 }
 /* line 71, page_profile_settings.less */
 body.page-profile-settings.common section.content form#profile-settings-form .field.firstname,
 body.page-profile-settings.common section.content form#profile-settings-form .field.lastname,
-body.page-profile-settings.common section.content form#profile-settings-form .field.middlename,
-body.page-profile-settings.common section.content form#profile-settings-form .field.city,
-body.page-profile-settings.common section.content form#profile-settings-form .field.country {
+body.page-profile-settings.common section.content form#profile-settings-form .field.middlename {
   float: left;
   width: 48%;
   margin-right: 4%;
@@ -2287,51 +2330,101 @@ body.page-profile-settings.common section.content form#profile-settings-form .fi
 /* line 75, page_profile_settings.less */
 body.page-profile-settings.common section.content form#profile-settings-form .field.firstname.lastname,
 body.page-profile-settings.common section.content form#profile-settings-form .field.lastname.lastname,
-body.page-profile-settings.common section.content form#profile-settings-form .field.middlename.lastname,
-body.page-profile-settings.common section.content form#profile-settings-form .field.city.lastname,
-body.page-profile-settings.common section.content form#profile-settings-form .field.country.lastname,
-body.page-profile-settings.common section.content form#profile-settings-form .field.firstname.city,
-body.page-profile-settings.common section.content form#profile-settings-form .field.lastname.city,
-body.page-profile-settings.common section.content form#profile-settings-form .field.middlename.city,
-body.page-profile-settings.common section.content form#profile-settings-form .field.city.city,
-body.page-profile-settings.common section.content form#profile-settings-form .field.country.city {
+body.page-profile-settings.common section.content form#profile-settings-form .field.middlename.lastname {
   margin-right: 0;
 }
-/* line 78, page_profile_settings.less */
-body.page-profile-settings.common section.content form#profile-settings-form .field.firstname .select2-container,
-body.page-profile-settings.common section.content form#profile-settings-form .field.lastname .select2-container,
-body.page-profile-settings.common section.content form#profile-settings-form .field.middlename .select2-container,
-body.page-profile-settings.common section.content form#profile-settings-form .field.city .select2-container,
-body.page-profile-settings.common section.content form#profile-settings-form .field.country .select2-container {
-  width: 100% !important;
-  margin-bottom: 5px;
-}
-/* line 83, page_profile_settings.less */
-body.page-profile-settings.common section.content form#profile-settings-form .field textarea {
-  width: 100%;
-  height: 100px;
-  margin-bottom: 40px;
-}
-/* line 89, page_profile_settings.less */
+/* line 80, page_profile_settings.less */
 body.page-profile-settings.common section.content form#profile-settings-form input[type="submit"] {
   margin-right: 20px;
+  margin-top: 20px;
 }
-/* line 97, page_profile_settings.less */
+/* line 84, page_profile_settings.less */
+body.page-profile-settings.common section.content form#profile-settings-form .field {
+  margin-bottom: 10px;
+}
+/* line 86, page_profile_settings.less */
+body.page-profile-settings.common section.content form#profile-settings-form .field.gender {
+  width: 48%;
+}
+/* line 88, page_profile_settings.less */
+body.page-profile-settings.common section.content form#profile-settings-form .field.gender .select2-container {
+  width: 100% !important;
+}
+/* line 93, page_profile_settings.less */
+body.page-profile-settings.common section.content form#profile-settings-form .field.birthdate .day {
+  float: left;
+  width: 25%;
+  margin-right: 3%;
+}
+/* line 98, page_profile_settings.less */
+body.page-profile-settings.common section.content form#profile-settings-form .field.birthdate .month {
+  float: left;
+  width: 44%;
+  margin-right: 3%;
+}
+/* line 103, page_profile_settings.less */
+body.page-profile-settings.common section.content form#profile-settings-form .field.birthdate .year {
+  float: left;
+  width: 25%;
+}
+/* line 107, page_profile_settings.less */
+body.page-profile-settings.common section.content form#profile-settings-form .field.birthdate .select2-container {
+  width: 100% !important;
+}
+/* line 111, page_profile_settings.less */
+body.page-profile-settings.common section.content form#profile-settings-form .field.country,
+body.page-profile-settings.common section.content form#profile-settings-form .field.city {
+  float: left;
+  width: 48% !important;
+  margin-right: 4%;
+}
+/* line 115, page_profile_settings.less */
+body.page-profile-settings.common section.content form#profile-settings-form .field.country .select2-container,
+body.page-profile-settings.common section.content form#profile-settings-form .field.city .select2-container {
+  width: 100% !important;
+}
+/* line 118, page_profile_settings.less */
+body.page-profile-settings.common section.content form#profile-settings-form .field.country.city,
+body.page-profile-settings.common section.content form#profile-settings-form .field.city.city {
+  margin-right: 0;
+}
+/* line 123, page_profile_settings.less */
+body.page-profile-settings.common section.content form#profile-settings-form .field.visibility div.radio {
+  overflow: hidden;
+  margin: 2px 0;
+}
+/* line 126, page_profile_settings.less */
+body.page-profile-settings.common section.content form#profile-settings-form .field.visibility div.radio .radio.container {
+  float: left;
+  margin-right: 10px;
+}
+/* line 130, page_profile_settings.less */
+body.page-profile-settings.common section.content form#profile-settings-form .field.visibility div.radio label {
+  overflow: hidden;
+  font-weight: normal;
+  color: #8aa4a2;
+  margin-top: 4px;
+}
+/* line 139, page_profile_settings.less */
+body.page-profile-settings.common section.content form#profile-settings-form .field.information textarea {
+  height: 100px;
+}
+/* line 149, page_profile_settings.less */
 body.page-profile-settings.security form .field {
   float: left;
   width: 48%;
   margin-right: 4%;
 }
-/* line 101, page_profile_settings.less */
+/* line 153, page_profile_settings.less */
 body.page-profile-settings.security form .field.confirm-password {
   margin-right: 0;
 }
-/* line 105, page_profile_settings.less */
+/* line 157, page_profile_settings.less */
 body.page-profile-settings.security form input[type="submit"] {
   margin-right: 20px;
   margin-top: 30px;
 }
-/* line 114, page_profile_settings.less */
+/* line 166, page_profile_settings.less */
 body.page-profile-settings.about-me form .field.upload .preview {
   float: left;
   width: 80px;
@@ -2342,21 +2435,21 @@ body.page-profile-settings.about-me form .field.upload .preview {
   -webkit-border-radius: 4px;
   overflow: hidden;
 }
-/* line 123, page_profile_settings.less */
+/* line 175, page_profile_settings.less */
 body.page-profile-settings.about-me form .field.upload .preview img {
   display: block;
   width: 100%;
 }
-/* line 128, page_profile_settings.less */
+/* line 180, page_profile_settings.less */
 body.page-profile-settings.about-me form .field.upload .buttons {
   float: left;
   width: 38%;
 }
-/* line 131, page_profile_settings.less */
+/* line 183, page_profile_settings.less */
 body.page-profile-settings.about-me form .field.upload .buttons .btn {
   margin-bottom: 10px;
 }
-/* line 135, page_profile_settings.less */
+/* line 187, page_profile_settings.less */
 body.page-profile-settings.about-me form .field.upload p {
   display: block;
   overflow: hidden;
@@ -2365,7 +2458,7 @@ body.page-profile-settings.about-me form .field.upload p {
   margin-top: 10px;
   top: 7px;
 }
-/* line 144, page_profile_settings.less */
+/* line 196, page_profile_settings.less */
 body.page-profile-settings.about-me form a.add-document-button {
   margin-top: 15px;
   text-align: center;
@@ -2378,51 +2471,51 @@ body.page-profile-settings.about-me form a.add-document-button {
   text-decoration: none;
   margin-bottom: 30px;
 }
-/* line 155, page_profile_settings.less */
+/* line 207, page_profile_settings.less */
 body.page-profile-settings.about-me form a.add-document-button:hover {
   background: #d8e6e0;
   color: #35504e;
 }
-/* line 160, page_profile_settings.less */
+/* line 212, page_profile_settings.less */
 body.page-profile-settings.about-me form .select2-container {
   width: 40% !important;
   margin-right: 4%;
 }
-/* line 165, page_profile_settings.less */
+/* line 217, page_profile_settings.less */
 body.page-profile-settings.about-me form section.specialization .field {
   float: left;
   width: 48%;
   margin: 5px 0;
 }
-/* line 169, page_profile_settings.less */
+/* line 221, page_profile_settings.less */
 body.page-profile-settings.about-me form section.specialization .field:nth-child(even) {
   margin-right: 0;
 }
-/* line 172, page_profile_settings.less */
+/* line 224, page_profile_settings.less */
 body.page-profile-settings.about-me form section.specialization .field .checkbox {
   float: left;
   margin-right: 10px;
 }
-/* line 175, page_profile_settings.less */
+/* line 227, page_profile_settings.less */
 body.page-profile-settings.about-me form section.specialization .field .checkbox.checked + label {
   color: #4ad0c5;
 }
-/* line 179, page_profile_settings.less */
+/* line 231, page_profile_settings.less */
 body.page-profile-settings.about-me form section.specialization .field label {
   display: block;
   overflow: hidden;
   margin: 2px 0;
   font-size: 500;
 }
-/* line 186, page_profile_settings.less */
+/* line 238, page_profile_settings.less */
 body.page-profile-settings.about-me form section.specialization input[type="text"] {
   margin-top: 20px;
 }
-/* line 192, page_profile_settings.less */
+/* line 244, page_profile_settings.less */
 body.page-profile-settings.about-me form section.education .university .input-container {
   overflow: hidden;
 }
-/* line 195, page_profile_settings.less */
+/* line 247, page_profile_settings.less */
 body.page-profile-settings.about-me form section.education .university a#remove-university {
   display: block;
   float: right;
@@ -2438,23 +2531,23 @@ body.page-profile-settings.about-me form section.education .university a#remove-
   margin-left: 15px;
   margin-top: 7px;
 }
-/* line 209, page_profile_settings.less */
+/* line 261, page_profile_settings.less */
 body.page-profile-settings.about-me form section.education .university a#remove-university i {
   color: #8aa4a2;
 }
-/* line 212, page_profile_settings.less */
+/* line 264, page_profile_settings.less */
 body.page-profile-settings.about-me form section.education .university a#remove-university:hover {
   border-color: #35504e;
 }
-/* line 214, page_profile_settings.less */
+/* line 266, page_profile_settings.less */
 body.page-profile-settings.about-me form section.education .university a#remove-university:hover i {
   color: #35504e;
 }
-/* line 223, page_profile_settings.less */
+/* line 275, page_profile_settings.less */
 body.page-profile-settings.about-me form section.professional .certificate .input-container {
   overflow: hidden;
 }
-/* line 226, page_profile_settings.less */
+/* line 278, page_profile_settings.less */
 body.page-profile-settings.about-me form section.professional .certificate a#remove-certificate {
   display: block;
   float: right;
@@ -2470,47 +2563,47 @@ body.page-profile-settings.about-me form section.professional .certificate a#rem
   margin-left: 15px;
   margin-top: 7px;
 }
-/* line 240, page_profile_settings.less */
+/* line 292, page_profile_settings.less */
 body.page-profile-settings.about-me form section.professional .certificate a#remove-certificate i {
   color: #8aa4a2;
 }
-/* line 243, page_profile_settings.less */
+/* line 295, page_profile_settings.less */
 body.page-profile-settings.about-me form section.professional .certificate a#remove-certificate:hover {
   border-color: #35504e;
 }
-/* line 245, page_profile_settings.less */
+/* line 297, page_profile_settings.less */
 body.page-profile-settings.about-me form section.professional .certificate a#remove-certificate:hover i {
   color: #35504e;
 }
-/* line 252, page_profile_settings.less */
+/* line 304, page_profile_settings.less */
 body.page-profile-settings.about-me form input[type="submit"] {
   margin-right: 20px;
   margin-top: 30px;
 }
-/* line 260, page_profile_settings.less */
+/* line 312, page_profile_settings.less */
 body.page-profile-settings.contacts form .field {
   float: left;
   width: 48%;
   margin-right: 4%;
 }
-/* line 264, page_profile_settings.less */
+/* line 316, page_profile_settings.less */
 body.page-profile-settings.contacts form .field.phone {
   margin-right: 0;
 }
-/* line 268, page_profile_settings.less */
+/* line 320, page_profile_settings.less */
 body.page-profile-settings.contacts form input[type="submit"] {
   margin-right: 20px;
   margin-top: 30px;
 }
-/* line 275, page_profile_settings.less */
+/* line 327, page_profile_settings.less */
 body.page-profile-settings.consults .prices {
   margin-bottom: 20px;
 }
-/* line 277, page_profile_settings.less */
+/* line 329, page_profile_settings.less */
 body.page-profile-settings.consults .prices .item {
   margin-bottom: 0px;
 }
-/* line 280, page_profile_settings.less */
+/* line 332, page_profile_settings.less */
 body.page-profile-settings.consults .prices .item label.name {
   text-transform: uppercase;
   font-size: 1.4rem;
@@ -2518,56 +2611,56 @@ body.page-profile-settings.consults .prices .item label.name {
   display: block;
   float: left;
 }
-/* line 287, page_profile_settings.less */
+/* line 339, page_profile_settings.less */
 body.page-profile-settings.consults .prices .item .toggle.container {
   margin-top: 7px;
   margin-left: 15px;
   float: left;
 }
-/* line 291, page_profile_settings.less */
+/* line 343, page_profile_settings.less */
 body.page-profile-settings.consults .prices .item .toggle.container + p:after {
   content: 'активировать';
 }
-/* line 294, page_profile_settings.less */
+/* line 346, page_profile_settings.less */
 body.page-profile-settings.consults .prices .item .toggle.container.checked + p:after {
   content: 'активно';
   color: #4ad0c5;
 }
-/* line 299, page_profile_settings.less */
+/* line 351, page_profile_settings.less */
 body.page-profile-settings.consults .prices .item p {
   display: block;
   float: left;
   margin-left: 10px;
   font-size: 1.2rem;
 }
-/* line 305, page_profile_settings.less */
+/* line 357, page_profile_settings.less */
 body.page-profile-settings.consults .prices .item .price {
   height: 0;
   transition: all 0.2s ease;
   overflow: hidden;
 }
-/* line 309, page_profile_settings.less */
+/* line 361, page_profile_settings.less */
 body.page-profile-settings.consults .prices .item .price input {
   width: 120px;
   display: inline-block;
   margin-right: 10px;
 }
-/* line 316, page_profile_settings.less */
+/* line 368, page_profile_settings.less */
 body.page-profile-settings.consults .prices .item.active .price {
   height: 50px;
 }
-/* line 322, page_profile_settings.less */
+/* line 374, page_profile_settings.less */
 body.page-profile-settings.consults .prices .pay-notice .date {
   color: #35504e;
   font-weight: bold;
   margin-bottom: 15px;
 }
-/* line 330, page_profile_settings.less */
+/* line 382, page_profile_settings.less */
 body.page-profile-settings.consults .places .item {
   overflow: hidden;
   margin-bottom: 8px;
 }
-/* line 333, page_profile_settings.less */
+/* line 385, page_profile_settings.less */
 body.page-profile-settings.consults .places .item a.remove-place {
   border-radius: 13px;
   -o-border-radius: 13px;
@@ -2583,37 +2676,37 @@ body.page-profile-settings.consults .places .item a.remove-place {
   margin-right: 8px;
   top: 2px;
 }
-/* line 347, page_profile_settings.less */
+/* line 399, page_profile_settings.less */
 body.page-profile-settings.consults .places .item a.remove-place i {
   color: #f85649;
   font-size: 1.1rem;
 }
-/* line 352, page_profile_settings.less */
+/* line 404, page_profile_settings.less */
 body.page-profile-settings.consults .places .item span.address {
   margin-right: 20px;
 }
-/* line 358, page_profile_settings.less */
+/* line 410, page_profile_settings.less */
 body.page-profile-settings.consults .places .item .radio.container {
   top: 4px;
   margin-right: 4px;
 }
-/* line 362, page_profile_settings.less */
+/* line 414, page_profile_settings.less */
 body.page-profile-settings.consults .places .item label {
   display: inline;
 }
-/* line 366, page_profile_settings.less */
+/* line 418, page_profile_settings.less */
 body.page-profile-settings.consults .places input.plus {
   margin: 20px 0 30px 0;
 }
-/* line 370, page_profile_settings.less */
+/* line 422, page_profile_settings.less */
 body.page-profile-settings.consults input[type="submit"] {
   margin-right: 20px;
 }
-/* line 376, page_profile_settings.less */
+/* line 428, page_profile_settings.less */
 body.page-profile-settings.worktime form .day {
   overflow: hidden;
 }
-/* line 378, page_profile_settings.less */
+/* line 430, page_profile_settings.less */
 body.page-profile-settings.worktime form .day h3 {
   color: #8aa4a2;
   font-size: 1.4rem;
@@ -2621,27 +2714,27 @@ body.page-profile-settings.worktime form .day h3 {
   text-transform: uppercase;
   margin-top: 15px;
 }
-/* line 385, page_profile_settings.less */
+/* line 437, page_profile_settings.less */
 body.page-profile-settings.worktime form .day .field {
   float: left;
   width: 48%;
 }
-/* line 388, page_profile_settings.less */
+/* line 440, page_profile_settings.less */
 body.page-profile-settings.worktime form .day .field label {
   color: #35504e;
   font-size: 1.4rem;
   font-weight: 500;
   margin-top: 0;
 }
-/* line 394, page_profile_settings.less */
+/* line 446, page_profile_settings.less */
 body.page-profile-settings.worktime form .day .field.begin {
   margin-right: 4%;
 }
-/* line 397, page_profile_settings.less */
+/* line 449, page_profile_settings.less */
 body.page-profile-settings.worktime form .day .field .select2-container {
   width: 100% !important;
 }
-/* line 402, page_profile_settings.less */
+/* line 454, page_profile_settings.less */
 body.page-profile-settings.worktime form input[type="submit"] {
   margin-top: 30px;
   margin-right: 20px;
