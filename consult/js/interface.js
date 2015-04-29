@@ -211,19 +211,30 @@ var loadForms = function(){
                 width: width + 'px',
                 height: height + 'px',
                 overflow: 'hidden',
-                borderRadius: $(input).css('borderRadius'),
-                borderColor: $(input).css('borderColor'),
-                borderStyle: $(input).css('borderStyle'),
-                borderWidth: $(input).css('borderWidth')
+                'border-top-left-radius': $(input).css('border-top-left-radius'),
+                'border-top-right-radius': $(input).css('border-top-right-radius'),
+                'border-bottom-left-radius': $(input).css('border-bottom-left-radius'),
+                'border-bottom-right-radius': $(input).css('border-bottom-right-radius'),
+                'border-top-color': $(input).css('border-top-color'),
+                'border-right-color': $(input).css('border-right-color'),
+                'border-bottom-color': $(input).css('border-bottom-color'),
+                'border-left-color': $(input).css('border-left-color'),
+                'border-top-style': $(input).css('border-top-style'),
+                'border-right-style': $(input).css('border-right-style'),
+                'border-bottom-style': $(input).css('border-bottom-style'),
+                'border-left-style': $(input).css('border-left-style'),
+                'border-top-width': $(input).css('border-top-width'),
+                'border-right-width': $(input).css('border-right-width'),
+                'border-bottom-width': $(input).css('border-bottom-width'),
+                'border-left-width': $(input).css('border-left-width')
             });
-            console.log($(input).css('border'));
-            // $(input).css({
-            //     position: 'relative',
-            //     width: width - 60 + 'px',
-            //     height: '100%',
-            //     float: 'left',
-            //     border: 'none'
-            // });
+            $(input).css({
+                 position: 'relative',
+                 width: width - 60 + 'px',
+                 height: '100%',
+                 float: 'left',
+                 border: 'none'
+            });
             $(submit).css({
                 position: 'relative',
                 width: '60px',
@@ -246,10 +257,22 @@ var loadForms = function(){
                 width: width + 'px',
                 height: height + 'px',
                 overflow: 'hidden',
-                borderRadius: $(input).css('borderRadius'),
-                borderColor: $(input).css('borderColor'),
-                borderStyle: $(input).css('borderStyle'),
-                borderWidth: $(input).css('borderWidth'),
+                 'border-top-left-radius': $(input).css('border-top-left-radius'),
+                'border-top-right-radius': $(input).css('border-top-right-radius'),
+                'border-bottom-left-radius': $(input).css('border-bottom-left-radius'),
+                'border-bottom-right-radius': $(input).css('border-bottom-right-radius'),
+                'border-top-color': $(input).css('border-top-color'),
+                'border-right-color': $(input).css('border-right-color'),
+                'border-bottom-color': $(input).css('border-bottom-color'),
+                'border-left-color': $(input).css('border-left-color'),
+                'border-top-style': $(input).css('border-top-style'),
+                'border-right-style': $(input).css('border-right-style'),
+                'border-bottom-style': $(input).css('border-bottom-style'),
+                'border-left-style': $(input).css('border-left-style'),
+                'border-top-width': $(input).css('border-top-width'),
+                'border-right-width': $(input).css('border-right-width'),
+                'border-bottom-width': $(input).css('border-bottom-width'),
+                'border-left-width': $(input).css('border-left-width'),
                 margin: $(input).css('margin')
             });
             $(input).css({

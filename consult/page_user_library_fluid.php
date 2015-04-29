@@ -3,7 +3,7 @@
 <html>
     <head>
 		<?php include_once('_head.php'); ?>
-        <script src="js/mosaic.js"></script>
+        <!-- <script src="js/mosaic.js"></script> -->
 </head>
 <body class="default-template page-library">
     <NOSCRIPT>
@@ -53,7 +53,6 @@
                 <div class="photo">
                     <img src="images/photos/01.jpg" alt="" />
                 </div>
-                <p class="place"><i class="fa fa-map-marker"></i> Россия, Москва</p>
             </div>
             <div class="right">
                 <header>
@@ -91,12 +90,8 @@
             </form>
         </section>
         <div class="clr"></div>
-        <section class="articles-flow" data-columns="<?php if(isset($_GET['columns'])) {echo $_GET['columns'] ;} else{echo '4';}?>">
-            <?php for($i = 20; $i >= 10; $i--) { ?>
+        <section class="articles-flow four-columns">
             <?php 
-                $rand = rand(200, 500);
-                $img = $rand % 2 == 0;
-                $height = $rand . 'px';
                 $names = Array(
                     'Короткое название',
                     'Название чуть-чуть длиннее',
@@ -105,24 +100,28 @@
                 );
                 $contents = Array(
                     'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, nostrum.',
-                    'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate explicabo temporibus natus praesentium adipisci, eaque aspernatur hic. Et quis, accusantium.',
-                    'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, nostrum. Obcaecati assumenda velit excepturi sit rerum, suscipit. Dolores, in atque eveniet necessitatibus animi ad voluptas?'
+                    'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate explicabo temporibus natus praesentium adipisci, eaque aspernatur hic. Et quis, accusantium. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate explicabo temporibus natus praesentium adipisci, eaque aspernatur hic. Et quis, accusantium. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate explicabo temporibus natus praesentium adipisci, eaque aspernatur hic. Et quis, accusantium.',
+                    'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, nostrum. Obcaecati assumenda velit excepturi sit rerum, suscipit. Dolores, in atque eveniet necessitatibus animi ad voluptas? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, nostrum. Obcaecati assumenda velit excepturi sit rerum, suscipit. Dolores, in atque eveniet necessitatibus animi ad voluptas?'
                 );
+                for($i = 0; $i <= 10; $i++) {
+                    $img = rand(0,1);
             ?>
             <div class="article flow-item content-block">
-                <?php if($img) { ?>
+                <?php if($img) {?>
                 <div class="image">
-                    <img src="<?php echo 'images/articles/' . rand(1,7) . '.jpg';?>" alt="" />
+                    <img src="images/interface/image-placeholder.png" alt="" />
                 </div>
                 <?php } ?>
                 <div class="content">
-                    <h4 class="article-name"><?php echo $names[rand(0, count($names) - 1)];?></h4>
-                    <p class="category">Категория: <span class="value">Проблемные адаптации</span></p>
-                    <p class="author">Иван Иванов</p>
-                    <p class="introtext">
-                        <?php echo $contents[rand(0, count($contents) - 1)];?>
-                    </p>
-                    <p class="date"><?php echo $i . '.04.2015'; ?></p>
+                    <div class="fader-container <?php if(!$img) echo 'full-height'; ?>">
+                        <h4 class="article-name"><?php echo $names[rand(0,3)]; ?></h4>
+                        <p class="category">Категория: <span class="value">Проблемные адаптации</span></p>
+                        <p class="author">Иван Иванов</p>
+                        <p class="introtext">
+                            <?php echo $contents[rand(0,2)]; ?>
+                        </p>
+                    </div>
+                    <p class="date">Месяц назад</p>
                     <a href="#" class="btn ghost">Посмотреть</a>
                 </div>
             </div>
