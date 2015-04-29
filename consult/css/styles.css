@@ -6172,4 +6172,78 @@ body.page-library-add-article form.article-form a.btn.ghost {
   float: right;
   margin-left: 20px;
 }
+/* line 3, page_clients.less */
+body.page-clients .wrapper .client-list {
+  margin-top: 20px;
+  overflow: hidden;
+}
+/* line 6, page_clients.less */
+body.page-clients .wrapper .client-list .result {
+  float: left;
+  width: 23%;
+  margin-left: 2.65%;
+  margin-bottom: 20px;
+}
+/* line 11, page_clients.less */
+body.page-clients .wrapper .client-list .result.first-of-row {
+  margin-left: 0;
+}
+/* line 14, page_clients.less */
+body.page-clients .wrapper .client-list .result a.message {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 1.6rem;
+  color: #4ad0c5;
+}
+/* line 20, page_clients.less */
+body.page-clients .wrapper .client-list .result a.message:hover {
+  color: #28aea3;
+}
+/* line 24, page_clients.less */
+body.page-clients .wrapper .client-list .result .photo-container {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 500px;
+  -o-border-radius: 500px;
+  -moz-border-radius: 500px;
+  -webkit-border-radius: 500px;
+}
+/* line 31, page_clients.less */
+body.page-clients .wrapper .client-list .result .photo-container a {
+  display: block;
+  text-decoration: none;
+}
+/* line 34, page_clients.less */
+body.page-clients .wrapper .client-list .result .photo-container a img {
+  display: block;
+  width: 100%;
+}
+/* line 40, page_clients.less */
+body.page-clients .wrapper .client-list .result a.username {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  color: #4ad0c5;
+  font-size: 1.4rem;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+}
+/* line 47, page_clients.less */
+body.page-clients .wrapper .client-list .result a.username span.lastname {
+  font-weight: 700;
+}
+/* line 50, page_clients.less */
+body.page-clients .wrapper .client-list .result a.username:hover {
+  color: #4ad0c5;
+}
+/* line 54, page_clients.less */
+body.page-clients .wrapper .client-list .result .all-consultation {
+  margin-top: 20px;
+}
+/* line 57, page_clients.less */
+body.page-clients .wrapper .client-list .result .nearest-consultation {
+  margin-top: 10px;
+  text-align: center;
+}
 /*# sourceMappingURL=styles.css.map */
