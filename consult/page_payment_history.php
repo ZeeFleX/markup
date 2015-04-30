@@ -50,23 +50,42 @@
         <section class="history">
             <h4>История оплат</h4>
             <div class="content-block">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Номер счета</th>
-                            <th>Дата оплаты</th>
-                            <th>Статус оплаты</th>
-                            <th>Тарифный план</th>
-                            <th>Сумма платежа</th>
-                            <th>Период оплаты</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php for($i = 0; $i <= 6; $i++) {?>
+                <?php
+                    if(isset($_GET['nopayments'])) {
+                ?>
+                    <div class="no-payments-placeholder">
+                        
+                    </div>
+                <?php } else {?>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Номер счета</th>
+                                <th>Дата оплаты</th>
+                                <th>Статус оплаты</th>
+                                <th>Тарифный план</th>
+                                <th>Сумма платежа</th>
+                                <th>Период оплаты</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php for($i = 0; $i <= 6; $i++) {?>
+                                <tr>
+                                    <td class="id">5618</td>
+                                    <td class="date">12.02.2015</td>
+                                    <td class="status"><i class="fa fa-check"></i></td>
+                                    <td class="cls">Базовый</td>
+                                    <td class="summ">2000 <i class="fa fa-ruble"></i></td>
+                                    <td class="peroid">
+                                        <span class="begin">17.02.2015</span><br />
+                                        <span class="end">15.03.2015</span>
+                                    </td>
+                                </tr>
+                            <?php } ?>
                             <tr>
                                 <td class="id">5618</td>
                                 <td class="date">12.02.2015</td>
-                                <td class="status"><i class="fa fa-check"></i></td>
+                                <td class="status"><i class="fa fa-coffee"></i></td>
                                 <td class="cls">Базовый</td>
                                 <td class="summ">2000 <i class="fa fa-ruble"></i></td>
                                 <td class="peroid">
@@ -74,20 +93,9 @@
                                     <span class="end">15.03.2015</span>
                                 </td>
                             </tr>
-                        <?php } ?>
-                        <tr>
-                            <td class="id">5618</td>
-                            <td class="date">12.02.2015</td>
-                            <td class="status"><i class="fa fa-coffee"></i></td>
-                            <td class="cls">Базовый</td>
-                            <td class="summ">2000 <i class="fa fa-ruble"></i></td>
-                            <td class="peroid">
-                                <span class="begin">17.02.2015</span><br />
-                                <span class="end">15.03.2015</span>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                        </tbody>
+                    </table>
+                <?php } ?>
             </div>
         </section>
         <aside class="additional-menu">

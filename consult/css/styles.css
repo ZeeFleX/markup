@@ -6276,49 +6276,55 @@ body.page-payment-history .wrapper .history {
   width: 62%;
 }
 /* line 6, page_payment_history.less */
+body.page-payment-history .wrapper .history .no-payments-placeholder {
+  width: 100%;
+  height: 480px;
+  background: url('../images/no-payments.png') center center no-repeat;
+}
+/* line 11, page_payment_history.less */
 body.page-payment-history .wrapper .history .content-block {
   padding: 0;
   border: solid 1px #b9d4cc;
 }
-/* line 9, page_payment_history.less */
+/* line 14, page_payment_history.less */
 body.page-payment-history .wrapper .history .content-block table {
   border-collapse: collapse;
 }
-/* line 11, page_payment_history.less */
+/* line 16, page_payment_history.less */
 body.page-payment-history .wrapper .history .content-block table td,
 body.page-payment-history .wrapper .history .content-block table th {
   padding: 15px 15px;
 }
-/* line 16, page_payment_history.less */
+/* line 21, page_payment_history.less */
 body.page-payment-history .wrapper .history .content-block table thead tr th {
   color: #8aa4a2;
   font-weight: 500;
   text-align: left;
 }
-/* line 25, page_payment_history.less */
+/* line 30, page_payment_history.less */
 body.page-payment-history .wrapper .history .content-block table tbody tr td {
   border-top: solid 1px #b9d4cc;
   color: #35504e;
   font-weight: 400;
   vertical-align: top;
 }
-/* line 30, page_payment_history.less */
+/* line 35, page_payment_history.less */
 body.page-payment-history .wrapper .history .content-block table tbody tr td.summ {
   font-weight: 500;
 }
-/* line 34, page_payment_history.less */
+/* line 39, page_payment_history.less */
 body.page-payment-history .wrapper .history .content-block table tbody tr td.status i.fa {
   font-size: 1.8rem;
 }
-/* line 36, page_payment_history.less */
+/* line 41, page_payment_history.less */
 body.page-payment-history .wrapper .history .content-block table tbody tr td.status i.fa.fa-check {
   color: #33b679;
 }
-/* line 39, page_payment_history.less */
+/* line 44, page_payment_history.less */
 body.page-payment-history .wrapper .history .content-block table tbody tr td.status i.fa.fa-coffee {
   color: #8aa4a2;
 }
-/* line 50, page_payment_history.less */
+/* line 55, page_payment_history.less */
 body.page-payment-history .wrapper aside {
   float: left;
   width: 36%;

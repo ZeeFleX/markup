@@ -42,6 +42,7 @@
             <li><a href="page_library_add_article.php">Библиотека. Добавление статьи</a></li>
             <li><a href="page_clients.php">Консультант. Мои клиенты</a></li>
             <li><a href="page_payment_history.php">История оплат</a></li>
+            <li><a href="page_payment_history.php?nopayments=1">История оплат (нет платежей)</a></li>
         </ol>
         <h1>Полезные ссылки</h1>
         <ol>
