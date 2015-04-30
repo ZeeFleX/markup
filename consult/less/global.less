@@ -37,6 +37,45 @@ a{
     color:@sea;
 }
 
+aside.additional-menu{
+    .content-block{
+        padding: 0;
+        overflow: hidden;
+        ul{
+            width: 100%;
+            li{
+                background: #f6fffb;
+                border-top:solid 1px #e7f3ee;
+                &:first-child{
+                    border-top: none;
+                }
+                a{
+                    box-sizing:border-box;
+                    -moz-box-sizing:border-box;
+                    padding:15px 25px;
+                    display: block;
+                    color: @sea_light;
+                    font-weight: 500;
+                    text-align: left;
+                    text-decoration: none;
+                    &:hover{
+                        color:@sea;
+                    }
+                }
+                &.active{
+                    box-shadow:1px 2px 0px 0px rgba(0, 0, 0, 0.1);
+                    z-index: 1;
+                    a{
+                        background: @white;
+                        color:@sea;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
 .popup-menu{
     z-index: 10;
     padding-bottom: 10px;

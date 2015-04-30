@@ -570,21 +570,64 @@ ul {
 a {
   color: #35504e;
 }
-/* line 40, global.less */
+/* line 41, global.less */
+aside.additional-menu .content-block {
+  padding: 0;
+  overflow: hidden;
+}
+/* line 44, global.less */
+aside.additional-menu .content-block ul {
+  width: 100%;
+}
+/* line 46, global.less */
+aside.additional-menu .content-block ul li {
+  background: #f6fffb;
+  border-top: solid 1px #e7f3ee;
+}
+/* line 49, global.less */
+aside.additional-menu .content-block ul li:first-child {
+  border-top: none;
+}
+/* line 52, global.less */
+aside.additional-menu .content-block ul li a {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 15px 25px;
+  display: block;
+  color: #8aa4a2;
+  font-weight: 500;
+  text-align: left;
+  text-decoration: none;
+}
+/* line 61, global.less */
+aside.additional-menu .content-block ul li a:hover {
+  color: #35504e;
+}
+/* line 65, global.less */
+aside.additional-menu .content-block ul li.active {
+  box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+/* line 68, global.less */
+aside.additional-menu .content-block ul li.active a {
+  background: #ffffff;
+  color: #35504e;
+}
+/* line 79, global.less */
 .popup-menu {
   z-index: 10;
   padding-bottom: 10px;
   padding-left: 15px;
 }
-/* line 44, global.less */
+/* line 83, global.less */
 .popup-menu a.dotts {
   margin-top: 5px;
 }
-/* line 47, global.less */
+/* line 86, global.less */
 .popup-menu:hover .menu-container {
   display: block !important;
 }
-/* line 50, global.less */
+/* line 89, global.less */
 .popup-menu .menu-container {
   display: none;
   position: absolute;
@@ -592,7 +635,7 @@ a {
   width: 200px;
   top: 0;
 }
-/* line 56, global.less */
+/* line 95, global.less */
 .popup-menu .menu-container .menu {
   position: relative;
   float: right;
@@ -609,25 +652,25 @@ a {
   padding: 0 2px 0 8px;
   cursor: pointer;
 }
-/* line 71, global.less */
+/* line 110, global.less */
 .popup-menu .menu-container .menu a {
   display: inline-block;
   margin: 0 2px;
 }
-/* line 74, global.less */
+/* line 113, global.less */
 .popup-menu .menu-container .menu a i {
   line-height: 23px;
   font-size: 1.2rem;
 }
-/* line 77, global.less */
+/* line 116, global.less */
 .popup-menu .menu-container .menu a i:hover {
   color: #4ad0c5;
 }
-/* line 80, global.less */
+/* line 119, global.less */
 .popup-menu .menu-container .menu a i.fa-trash-o {
   color: #eb5245;
 }
-/* line 86, global.less */
+/* line 125, global.less */
 .popup-menu .menu-container .menu .siding {
   position: absolute;
   width: 15px;
@@ -636,12 +679,12 @@ a {
   top: -1px;
   background: url('../images/popup-menu-siding.png');
 }
-/* line 96, global.less */
+/* line 135, global.less */
 .popup-menu.right-side {
   padding-left: 0;
   padding-right: 15px;
 }
-/* line 99, global.less */
+/* line 138, global.less */
 .popup-menu.right-side .menu-container {
   display: none;
   position: absolute;
@@ -650,7 +693,7 @@ a {
   width: 200px;
   top: 0;
 }
-/* line 106, global.less */
+/* line 145, global.less */
 .popup-menu.right-side .menu-container .menu {
   float: left;
   border-radius: 0 6px 6px 0;
@@ -661,14 +704,14 @@ a {
   border: dashed 1px #8aa4a2;
   border-left: none;
 }
-/* line 115, global.less */
+/* line 154, global.less */
 .popup-menu.right-side .menu-container .menu .siding {
   right: 100%;
   left: auto;
   top: -1px;
   background: url('../images/popup-menu-siding-right.png');
 }
-/* line 127, global.less */
+/* line 166, global.less */
 header.header {
   width: 100%;
   padding: 10px 30px;
@@ -677,7 +720,7 @@ header.header {
   -moz-box-sizing: border-box;
   overflow: hidden;
 }
-/* line 134, global.less */
+/* line 173, global.less */
 header.header .logo {
   border-radius: 100%;
   -moz-border-radius: 100%;
@@ -685,29 +728,29 @@ header.header .logo {
   -webkit-border-radius: 100%;
   float: left;
 }
-/* line 141, global.less */
+/* line 180, global.less */
 header.header .time {
   float: right;
   margin-right: 40px;
 }
-/* line 144, global.less */
+/* line 183, global.less */
 header.header .time p {
   display: block;
   float: left;
   margin-right: 20px;
   margin-top: 11px;
 }
-/* line 150, global.less */
+/* line 189, global.less */
 header.header .time .clock {
   float: right;
 }
-/* line 154, global.less */
+/* line 193, global.less */
 header.header .project-name {
   float: left;
   margin-left: 10px;
   margin-top: 5px;
 }
-/* line 158, global.less */
+/* line 197, global.less */
 header.header .project-name .title {
   color: #4ad0c5;
   font-size: 1.2rem;
@@ -715,23 +758,23 @@ header.header .project-name .title {
   text-transform: uppercase;
   margin: 0;
 }
-/* line 165, global.less */
+/* line 204, global.less */
 header.header .project-name .author {
   color: #8aa4a2;
   font-size: 1.0rem;
   font-weight: 300;
   margin: 0;
 }
-/* line 172, global.less */
+/* line 211, global.less */
 header.header .sign-in {
   float: right;
   margin-top: 3px;
 }
-/* line 180, global.less */
+/* line 219, global.less */
 header.header .profile-snippet {
   float: right;
 }
-/* line 182, global.less */
+/* line 221, global.less */
 header.header .profile-snippet .photo-container {
   border-radius: 50px;
   -o-border-radius: 50px;
@@ -743,60 +786,60 @@ header.header .profile-snippet .photo-container {
   overflow: hidden;
   border: solid 1px #8aa4a2;
 }
-/* line 192, global.less */
+/* line 231, global.less */
 header.header .profile-snippet .photo-container img {
   display: block;
   width: 100%;
 }
-/* line 197, global.less */
+/* line 236, global.less */
 header.header .profile-snippet .info {
   float: left;
   margin-left: 10px;
   margin-top: 5px;
 }
-/* line 201, global.less */
+/* line 240, global.less */
 header.header .profile-snippet .info .name {
   color: #35504e;
   font: 500 1.4rem Roboto;
 }
-/* line 205, global.less */
+/* line 244, global.less */
 header.header .profile-snippet .info .job {
   color: #4ad0c5;
   font: 400 1.2rem Roboto;
 }
-/* line 210, global.less */
+/* line 249, global.less */
 header.header .profile-snippet .more-container {
   float: left;
   margin-left: 10px;
   margin-top: 10px;
 }
-/* line 214, global.less */
+/* line 253, global.less */
 header.header .profile-snippet .more-container i {
   color: #35504e;
   font-size: 1.8rem;
   cursor: pointer;
 }
-/* line 219, global.less */
+/* line 258, global.less */
 header.header .profile-snippet .more-container .dropdown-menu {
   display: none;
 }
-/* line 225, global.less */
+/* line 264, global.less */
 header.header .profile-notifications {
   float: right;
   margin-right: 10px;
   margin-top: 10px;
 }
-/* line 229, global.less */
+/* line 268, global.less */
 header.header .profile-notifications > div {
   float: left;
   margin: 0 15px;
   cursor: pointer;
 }
-/* line 233, global.less */
+/* line 272, global.less */
 header.header .profile-notifications > div.active i.fa {
   color: #eb5245;
 }
-/* line 236, global.less */
+/* line 275, global.less */
 header.header .profile-notifications > div .count {
   position: absolute;
   border-radius: 50px;
@@ -811,29 +854,29 @@ header.header .profile-notifications > div .count {
   z-index: 1;
   font: 500 1.1rem / 17px Roboto;
 }
-/* line 250, global.less */
+/* line 289, global.less */
 header.header .profile-notifications > div i.fa {
   color: #8aa4a2;
   font-size: 2.0rem;
 }
-/* line 256, global.less */
+/* line 295, global.less */
 header.header .mainmenu {
   float: right;
   margin: 13px 0;
 }
-/* line 259, global.less */
+/* line 298, global.less */
 header.header .mainmenu li {
   float: left;
   text-transform: uppercase;
   font: 500 1.2rem Roboto;
   margin-right: 30px;
 }
-/* line 264, global.less */
+/* line 303, global.less */
 header.header .mainmenu li a {
   color: #35504e;
   text-decoration: none;
 }
-/* line 271, global.less */
+/* line 310, global.less */
 .user-menu-section {
   background: #f8f8f8;
   overflow: hidden;
@@ -843,70 +886,70 @@ header.header .mainmenu li a {
   -moz-box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.1);
 }
-/* line 280, global.less */
+/* line 319, global.less */
 .user-menu-section .wrapper .user-menu-container {
   right: 50%;
   float: right;
 }
-/* line 284, global.less */
+/* line 323, global.less */
 .user-menu-section .wrapper .user-menu {
   left: 50%;
   float: left;
 }
-/* line 287, global.less */
+/* line 326, global.less */
 .user-menu-section .wrapper .user-menu li {
   margin: 0 10px;
   float: left;
 }
-/* line 291, global.less */
+/* line 330, global.less */
 .user-menu-section .wrapper .user-menu a {
   color: #35504e;
   font: 400 1.4rem  Roboto;
   text-decoration: none;
 }
-/* line 295, global.less */
+/* line 334, global.less */
 .user-menu-section .wrapper .user-menu a:hover {
   text-decoration: underline;
 }
-/* line 304, global.less */
+/* line 343, global.less */
 .footer {
   width: 100%;
   margin-top: 20px;
 }
-/* line 307, global.less */
+/* line 346, global.less */
 .footer a {
   text-decoration: none;
   color: #ffffff;
 }
-/* line 311, global.less */
+/* line 350, global.less */
 .footer section.library {
   background: #4ad0c5;
   padding: 10px 0 20px 0;
 }
-/* line 314, global.less */
+/* line 353, global.less */
 .footer section.library .title {
   float: left;
   width: 25%;
 }
-/* line 317, global.less */
+/* line 356, global.less */
 .footer section.library .title h3 {
   color: #ffffff;
 }
-/* line 321, global.less */
+/* line 360, global.less */
 .footer section.library .library-list {
   float: right;
   width: 75%;
   margin-top: 8px;
 }
-/* line 325, global.less */
+/* line 364, global.less */
 .footer section.library .library-list h4 {
   color: #ffffff;
 }
-/* line 328, global.less */
+/* line 367, global.less */
 .footer section.library .library-list .items-container {
   width: 100%;
 }
-/* line 330, global.less */
+/* line 369, global.less */
 .footer section.library .library-list .items-container .item {
   float: left;
   width: 33%;
@@ -914,17 +957,17 @@ header.header .mainmenu li a {
   font: 400 1.6rem Roboto;
   margin: 5px 0;
 }
-/* line 336, global.less */
+/* line 375, global.less */
 .footer section.library .library-list .items-container .item:hover {
   text-decoration: underline;
 }
-/* line 343, global.less */
+/* line 382, global.less */
 .footer section.bottom {
   background: #41b6ad;
   padding: 15px 0;
   overflow: hidden;
 }
-/* line 347, global.less */
+/* line 386, global.less */
 .footer section.bottom p.copyright {
   display: block;
   float: left;
@@ -932,21 +975,21 @@ header.header .mainmenu li a {
   font: 500 1.4rem Roboto;
   margin-left: 30px;
 }
-/* line 354, global.less */
+/* line 393, global.less */
 .footer section.bottom ul.footer-menu {
   float: right;
   margin-top: 13px;
 }
-/* line 357, global.less */
+/* line 396, global.less */
 .footer section.bottom ul.footer-menu li {
   float: left;
   margin-right: 30px;
 }
-/* line 360, global.less */
+/* line 399, global.less */
 .footer section.bottom ul.footer-menu li a {
   font: 400 14px Roboto;
 }
-/* line 362, global.less */
+/* line 401, global.less */
 .footer section.bottom ul.footer-menu li a:hover {
   text-decoration: underline;
 }
@@ -2255,26 +2298,7 @@ body.page-profile-settings aside.additional-menu {
   margin-left: 2%;
   width: 36%;
 }
-/* line 11, page_profile_settings.less */
-body.page-profile-settings aside.additional-menu ul li {
-  margin: 3px 0;
-}
-/* line 13, page_profile_settings.less */
-body.page-profile-settings aside.additional-menu ul li a {
-  color: #8aa4a2;
-  font: 500 1.4rem Roboto;
-  text-decoration: none;
-}
-/* line 17, page_profile_settings.less */
-body.page-profile-settings aside.additional-menu ul li a:hover {
-  text-decoration: underline;
-}
-/* line 21, page_profile_settings.less */
-body.page-profile-settings aside.additional-menu ul li.active a {
-  font-weight: bold;
-  color: #35504e;
-}
-/* line 32, page_profile_settings.less */
+/* line 16, page_profile_settings.less */
 body.page-profile-settings.common section.content .upload-photo form .photo-container {
   overflow: hidden;
   float: left;
@@ -2286,40 +2310,40 @@ body.page-profile-settings.common section.content .upload-photo form .photo-cont
   height: 150px;
   margin-right: 15px;
 }
-/* line 42, page_profile_settings.less */
+/* line 26, page_profile_settings.less */
 body.page-profile-settings.common section.content .upload-photo form .photo-container img {
   display: block;
   width: 100%;
   height: 100%;
 }
-/* line 50, page_profile_settings.less */
+/* line 34, page_profile_settings.less */
 body.page-profile-settings.common section.content .control {
   overflow: hidden;
 }
-/* line 52, page_profile_settings.less */
+/* line 36, page_profile_settings.less */
 body.page-profile-settings.common section.content .control input {
   margin-bottom: 10px;
 }
-/* line 55, page_profile_settings.less */
+/* line 39, page_profile_settings.less */
 body.page-profile-settings.common section.content .control p {
   color: #8aa4a2;
   font: 400 1.2rem Roboto;
 }
-/* line 60, page_profile_settings.less */
+/* line 44, page_profile_settings.less */
 body.page-profile-settings.common section.content form#profile-settings-form {
   margin-top: 20px;
 }
-/* line 62, page_profile_settings.less */
+/* line 46, page_profile_settings.less */
 body.page-profile-settings.common section.content form#profile-settings-form label {
   color: #35504e;
   font: 500 1.4rem Roboto;
   margin-bottom: 5px;
 }
-/* line 67, page_profile_settings.less */
+/* line 51, page_profile_settings.less */
 body.page-profile-settings.common section.content form#profile-settings-form input {
   margin-bottom: 0;
 }
-/* line 71, page_profile_settings.less */
+/* line 55, page_profile_settings.less */
 body.page-profile-settings.common section.content form#profile-settings-form .field.firstname,
 body.page-profile-settings.common section.content form#profile-settings-form .field.lastname,
 body.page-profile-settings.common section.content form#profile-settings-form .field.middlename {
@@ -2327,104 +2351,104 @@ body.page-profile-settings.common section.content form#profile-settings-form .fi
   width: 48%;
   margin-right: 4%;
 }
-/* line 75, page_profile_settings.less */
+/* line 59, page_profile_settings.less */
 body.page-profile-settings.common section.content form#profile-settings-form .field.firstname.lastname,
 body.page-profile-settings.common section.content form#profile-settings-form .field.lastname.lastname,
 body.page-profile-settings.common section.content form#profile-settings-form .field.middlename.lastname {
   margin-right: 0;
 }
-/* line 80, page_profile_settings.less */
+/* line 64, page_profile_settings.less */
 body.page-profile-settings.common section.content form#profile-settings-form input[type="submit"] {
   margin-right: 20px;
   margin-top: 20px;
 }
-/* line 84, page_profile_settings.less */
+/* line 68, page_profile_settings.less */
 body.page-profile-settings.common section.content form#profile-settings-form .field {
   margin-bottom: 10px;
 }
-/* line 86, page_profile_settings.less */
+/* line 70, page_profile_settings.less */
 body.page-profile-settings.common section.content form#profile-settings-form .field.gender {
   width: 48%;
 }
-/* line 88, page_profile_settings.less */
+/* line 72, page_profile_settings.less */
 body.page-profile-settings.common section.content form#profile-settings-form .field.gender .select2-container {
   width: 100% !important;
 }
-/* line 93, page_profile_settings.less */
+/* line 77, page_profile_settings.less */
 body.page-profile-settings.common section.content form#profile-settings-form .field.birthdate .day {
   float: left;
   width: 25%;
   margin-right: 3%;
 }
-/* line 98, page_profile_settings.less */
+/* line 82, page_profile_settings.less */
 body.page-profile-settings.common section.content form#profile-settings-form .field.birthdate .month {
   float: left;
   width: 44%;
   margin-right: 3%;
 }
-/* line 103, page_profile_settings.less */
+/* line 87, page_profile_settings.less */
 body.page-profile-settings.common section.content form#profile-settings-form .field.birthdate .year {
   float: left;
   width: 25%;
 }
-/* line 107, page_profile_settings.less */
+/* line 91, page_profile_settings.less */
 body.page-profile-settings.common section.content form#profile-settings-form .field.birthdate .select2-container {
   width: 100% !important;
 }
-/* line 111, page_profile_settings.less */
+/* line 95, page_profile_settings.less */
 body.page-profile-settings.common section.content form#profile-settings-form .field.country,
 body.page-profile-settings.common section.content form#profile-settings-form .field.city {
   float: left;
   width: 48% !important;
   margin-right: 4%;
 }
-/* line 115, page_profile_settings.less */
+/* line 99, page_profile_settings.less */
 body.page-profile-settings.common section.content form#profile-settings-form .field.country .select2-container,
 body.page-profile-settings.common section.content form#profile-settings-form .field.city .select2-container {
   width: 100% !important;
 }
-/* line 118, page_profile_settings.less */
+/* line 102, page_profile_settings.less */
 body.page-profile-settings.common section.content form#profile-settings-form .field.country.city,
 body.page-profile-settings.common section.content form#profile-settings-form .field.city.city {
   margin-right: 0;
 }
-/* line 123, page_profile_settings.less */
+/* line 107, page_profile_settings.less */
 body.page-profile-settings.common section.content form#profile-settings-form .field.visibility div.radio {
   overflow: hidden;
   margin: 2px 0;
 }
-/* line 126, page_profile_settings.less */
+/* line 110, page_profile_settings.less */
 body.page-profile-settings.common section.content form#profile-settings-form .field.visibility div.radio .radio.container {
   float: left;
   margin-right: 10px;
 }
-/* line 130, page_profile_settings.less */
+/* line 114, page_profile_settings.less */
 body.page-profile-settings.common section.content form#profile-settings-form .field.visibility div.radio label {
   overflow: hidden;
   font-weight: normal;
   color: #8aa4a2;
   margin-top: 4px;
 }
-/* line 139, page_profile_settings.less */
+/* line 123, page_profile_settings.less */
 body.page-profile-settings.common section.content form#profile-settings-form .field.information textarea {
   height: 100px;
 }
-/* line 149, page_profile_settings.less */
+/* line 133, page_profile_settings.less */
 body.page-profile-settings.security form .field {
   float: left;
   width: 48%;
   margin-right: 4%;
 }
-/* line 153, page_profile_settings.less */
+/* line 137, page_profile_settings.less */
 body.page-profile-settings.security form .field.confirm-password {
   margin-right: 0;
 }
-/* line 157, page_profile_settings.less */
+/* line 141, page_profile_settings.less */
 body.page-profile-settings.security form input[type="submit"] {
   margin-right: 20px;
   margin-top: 30px;
 }
-/* line 166, page_profile_settings.less */
+/* line 150, page_profile_settings.less */
 body.page-profile-settings.about-me form .field.upload .preview {
   float: left;
   width: 80px;
@@ -2435,21 +2459,21 @@ body.page-profile-settings.about-me form .field.upload .preview {
   -webkit-border-radius: 4px;
   overflow: hidden;
 }
-/* line 175, page_profile_settings.less */
+/* line 159, page_profile_settings.less */
 body.page-profile-settings.about-me form .field.upload .preview img {
   display: block;
   width: 100%;
 }
-/* line 180, page_profile_settings.less */
+/* line 164, page_profile_settings.less */
 body.page-profile-settings.about-me form .field.upload .buttons {
   float: left;
   width: 38%;
 }
-/* line 183, page_profile_settings.less */
+/* line 167, page_profile_settings.less */
 body.page-profile-settings.about-me form .field.upload .buttons .btn {
   margin-bottom: 10px;
 }
-/* line 187, page_profile_settings.less */
+/* line 171, page_profile_settings.less */
 body.page-profile-settings.about-me form .field.upload p {
   display: block;
   overflow: hidden;
@@ -2458,7 +2482,7 @@ body.page-profile-settings.about-me form .field.upload p {
   margin-top: 10px;
   top: 7px;
 }
-/* line 196, page_profile_settings.less */
+/* line 180, page_profile_settings.less */
 body.page-profile-settings.about-me form a.add-document-button {
   margin-top: 15px;
   text-align: center;
@@ -2471,51 +2495,51 @@ body.page-profile-settings.about-me form a.add-document-button {
   text-decoration: none;
   margin-bottom: 30px;
 }
-/* line 207, page_profile_settings.less */
+/* line 191, page_profile_settings.less */
 body.page-profile-settings.about-me form a.add-document-button:hover {
   background: #d8e6e0;
   color: #35504e;
 }
-/* line 212, page_profile_settings.less */
+/* line 196, page_profile_settings.less */
 body.page-profile-settings.about-me form .select2-container {
   width: 40% !important;
   margin-right: 4%;
 }
-/* line 217, page_profile_settings.less */
+/* line 201, page_profile_settings.less */
 body.page-profile-settings.about-me form section.specialization .field {
   float: left;
   width: 48%;
   margin: 5px 0;
 }
-/* line 221, page_profile_settings.less */
+/* line 205, page_profile_settings.less */
 body.page-profile-settings.about-me form section.specialization .field:nth-child(even) {
   margin-right: 0;
 }
-/* line 224, page_profile_settings.less */
+/* line 208, page_profile_settings.less */
 body.page-profile-settings.about-me form section.specialization .field .checkbox {
   float: left;
   margin-right: 10px;
 }
-/* line 227, page_profile_settings.less */
+/* line 211, page_profile_settings.less */
 body.page-profile-settings.about-me form section.specialization .field .checkbox.checked + label {
   color: #4ad0c5;
 }
-/* line 231, page_profile_settings.less */
+/* line 215, page_profile_settings.less */
 body.page-profile-settings.about-me form section.specialization .field label {
   display: block;
   overflow: hidden;
   margin: 2px 0;
   font-size: 500;
 }
-/* line 238, page_profile_settings.less */
+/* line 222, page_profile_settings.less */
 body.page-profile-settings.about-me form section.specialization input[type="text"] {
   margin-top: 20px;
 }
-/* line 244, page_profile_settings.less */
+/* line 228, page_profile_settings.less */
 body.page-profile-settings.about-me form section.education .university .input-container {
   overflow: hidden;
 }
-/* line 247, page_profile_settings.less */
+/* line 231, page_profile_settings.less */
 body.page-profile-settings.about-me form section.education .university a#remove-university {
   display: block;
   float: right;
@@ -2531,23 +2555,23 @@ body.page-profile-settings.about-me form section.education .university a#remove-
   margin-left: 15px;
   margin-top: 7px;
 }
-/* line 261, page_profile_settings.less */
+/* line 245, page_profile_settings.less */
 body.page-profile-settings.about-me form section.education .university a#remove-university i {
   color: #8aa4a2;
 }
-/* line 264, page_profile_settings.less */
+/* line 248, page_profile_settings.less */
 body.page-profile-settings.about-me form section.education .university a#remove-university:hover {
   border-color: #35504e;
 }
-/* line 266, page_profile_settings.less */
+/* line 250, page_profile_settings.less */
 body.page-profile-settings.about-me form section.education .university a#remove-university:hover i {
   color: #35504e;
 }
-/* line 275, page_profile_settings.less */
+/* line 259, page_profile_settings.less */
 body.page-profile-settings.about-me form section.professional .certificate .input-container {
   overflow: hidden;
 }
-/* line 278, page_profile_settings.less */
+/* line 262, page_profile_settings.less */
 body.page-profile-settings.about-me form section.professional .certificate a#remove-certificate {
   display: block;
   float: right;
@@ -2563,47 +2587,47 @@ body.page-profile-settings.about-me form section.professional .certificate a#rem
   margin-left: 15px;
   margin-top: 7px;
 }
-/* line 292, page_profile_settings.less */
+/* line 276, page_profile_settings.less */
 body.page-profile-settings.about-me form section.professional .certificate a#remove-certificate i {
   color: #8aa4a2;
 }
-/* line 295, page_profile_settings.less */
+/* line 279, page_profile_settings.less */
 body.page-profile-settings.about-me form section.professional .certificate a#remove-certificate:hover {
   border-color: #35504e;
 }
-/* line 297, page_profile_settings.less */
+/* line 281, page_profile_settings.less */
 body.page-profile-settings.about-me form section.professional .certificate a#remove-certificate:hover i {
   color: #35504e;
 }
-/* line 304, page_profile_settings.less */
+/* line 288, page_profile_settings.less */
 body.page-profile-settings.about-me form input[type="submit"] {
   margin-right: 20px;
   margin-top: 30px;
 }
-/* line 312, page_profile_settings.less */
+/* line 296, page_profile_settings.less */
 body.page-profile-settings.contacts form .field {
   float: left;
   width: 48%;
   margin-right: 4%;
 }
-/* line 316, page_profile_settings.less */
+/* line 300, page_profile_settings.less */
 body.page-profile-settings.contacts form .field.phone {
   margin-right: 0;
 }
-/* line 320, page_profile_settings.less */
+/* line 304, page_profile_settings.less */
 body.page-profile-settings.contacts form input[type="submit"] {
   margin-right: 20px;
   margin-top: 30px;
 }
-/* line 327, page_profile_settings.less */
+/* line 311, page_profile_settings.less */
 body.page-profile-settings.consults .prices {
   margin-bottom: 20px;
 }
-/* line 329, page_profile_settings.less */
+/* line 313, page_profile_settings.less */
 body.page-profile-settings.consults .prices .item {
   margin-bottom: 0px;
 }
-/* line 332, page_profile_settings.less */
+/* line 316, page_profile_settings.less */
 body.page-profile-settings.consults .prices .item label.name {
   text-transform: uppercase;
   font-size: 1.4rem;
@@ -2611,56 +2635,56 @@ body.page-profile-settings.consults .prices .item label.name {
   display: block;
   float: left;
 }
-/* line 339, page_profile_settings.less */
+/* line 323, page_profile_settings.less */
 body.page-profile-settings.consults .prices .item .toggle.container {
   margin-top: 7px;
   margin-left: 15px;
   float: left;
 }
-/* line 343, page_profile_settings.less */
+/* line 327, page_profile_settings.less */
 body.page-profile-settings.consults .prices .item .toggle.container + p:after {
   content: 'активировать';
 }
-/* line 346, page_profile_settings.less */
+/* line 330, page_profile_settings.less */
 body.page-profile-settings.consults .prices .item .toggle.container.checked + p:after {
   content: 'активно';
   color: #4ad0c5;
 }
-/* line 351, page_profile_settings.less */
+/* line 335, page_profile_settings.less */
 body.page-profile-settings.consults .prices .item p {
   display: block;
   float: left;
   margin-left: 10px;
   font-size: 1.2rem;
 }
-/* line 357, page_profile_settings.less */
+/* line 341, page_profile_settings.less */
 body.page-profile-settings.consults .prices .item .price {
   height: 0;
   transition: all 0.2s ease;
   overflow: hidden;
 }
-/* line 361, page_profile_settings.less */
+/* line 345, page_profile_settings.less */
 body.page-profile-settings.consults .prices .item .price input {
   width: 120px;
   display: inline-block;
   margin-right: 10px;
 }
-/* line 368, page_profile_settings.less */
+/* line 352, page_profile_settings.less */
 body.page-profile-settings.consults .prices .item.active .price {
   height: 50px;
 }
-/* line 374, page_profile_settings.less */
+/* line 358, page_profile_settings.less */
 body.page-profile-settings.consults .prices .pay-notice .date {
   color: #35504e;
   font-weight: bold;
   margin-bottom: 15px;
 }
-/* line 382, page_profile_settings.less */
+/* line 366, page_profile_settings.less */
 body.page-profile-settings.consults .places .item {
   overflow: hidden;
   margin-bottom: 8px;
 }
-/* line 385, page_profile_settings.less */
+/* line 369, page_profile_settings.less */
 body.page-profile-settings.consults .places .item a.remove-place {
   border-radius: 13px;
   -o-border-radius: 13px;
@@ -2676,37 +2700,37 @@ body.page-profile-settings.consults .places .item a.remove-place {
   margin-right: 8px;
   top: 2px;
 }
-/* line 399, page_profile_settings.less */
+/* line 383, page_profile_settings.less */
 body.page-profile-settings.consults .places .item a.remove-place i {
   color: #f85649;
   font-size: 1.1rem;
 }
-/* line 404, page_profile_settings.less */
+/* line 388, page_profile_settings.less */
 body.page-profile-settings.consults .places .item span.address {
   margin-right: 20px;
 }
-/* line 410, page_profile_settings.less */
+/* line 394, page_profile_settings.less */
 body.page-profile-settings.consults .places .item .radio.container {
   top: 4px;
   margin-right: 4px;
 }
-/* line 414, page_profile_settings.less */
+/* line 398, page_profile_settings.less */
 body.page-profile-settings.consults .places .item label {
   display: inline;
 }
-/* line 418, page_profile_settings.less */
+/* line 402, page_profile_settings.less */
 body.page-profile-settings.consults .places input.plus {
   margin: 20px 0 30px 0;
 }
-/* line 422, page_profile_settings.less */
+/* line 406, page_profile_settings.less */
 body.page-profile-settings.consults input[type="submit"] {
   margin-right: 20px;
 }
-/* line 428, page_profile_settings.less */
+/* line 412, page_profile_settings.less */
 body.page-profile-settings.worktime form .day {
   overflow: hidden;
 }
-/* line 430, page_profile_settings.less */
+/* line 414, page_profile_settings.less */
 body.page-profile-settings.worktime form .day h3 {
   color: #8aa4a2;
   font-size: 1.4rem;
@@ -2714,27 +2738,27 @@ body.page-profile-settings.worktime form .day h3 {
   text-transform: uppercase;
   margin-top: 15px;
 }
-/* line 437, page_profile_settings.less */
+/* line 421, page_profile_settings.less */
 body.page-profile-settings.worktime form .day .field {
   float: left;
   width: 48%;
 }
-/* line 440, page_profile_settings.less */
+/* line 424, page_profile_settings.less */
 body.page-profile-settings.worktime form .day .field label {
   color: #35504e;
   font-size: 1.4rem;
   font-weight: 500;
   margin-top: 0;
 }
-/* line 446, page_profile_settings.less */
+/* line 430, page_profile_settings.less */
 body.page-profile-settings.worktime form .day .field.begin {
   margin-right: 4%;
 }
-/* line 449, page_profile_settings.less */
+/* line 433, page_profile_settings.less */
 body.page-profile-settings.worktime form .day .field .select2-container {
   width: 100% !important;
 }
-/* line 454, page_profile_settings.less */
+/* line 438, page_profile_settings.less */
 body.page-profile-settings.worktime form input[type="submit"] {
   margin-top: 30px;
   margin-right: 20px;
@@ -6245,5 +6269,59 @@ body.page-clients .wrapper .client-list .result .all-consultation {
 body.page-clients .wrapper .client-list .result .nearest-consultation {
   margin-top: 10px;
   text-align: center;
+}
+/* line 3, page_payment_history.less */
+body.page-payment-history .wrapper .history {
+  float: left;
+  width: 62%;
+}
+/* line 6, page_payment_history.less */
+body.page-payment-history .wrapper .history .content-block {
+  padding: 0;
+  border: solid 1px #b9d4cc;
+}
+/* line 9, page_payment_history.less */
+body.page-payment-history .wrapper .history .content-block table {
+  border-collapse: collapse;
+}
+/* line 11, page_payment_history.less */
+body.page-payment-history .wrapper .history .content-block table td,
+body.page-payment-history .wrapper .history .content-block table th {
+  padding: 15px 15px;
+}
+/* line 16, page_payment_history.less */
+body.page-payment-history .wrapper .history .content-block table thead tr th {
+  color: #8aa4a2;
+  font-weight: 500;
+  text-align: left;
+}
+/* line 25, page_payment_history.less */
+body.page-payment-history .wrapper .history .content-block table tbody tr td {
+  border-top: solid 1px #b9d4cc;
+  color: #35504e;
+  font-weight: 400;
+  vertical-align: top;
+}
+/* line 30, page_payment_history.less */
+body.page-payment-history .wrapper .history .content-block table tbody tr td.summ {
+  font-weight: 500;
+}
+/* line 34, page_payment_history.less */
+body.page-payment-history .wrapper .history .content-block table tbody tr td.status i.fa {
+  font-size: 1.8rem;
+}
+/* line 36, page_payment_history.less */
+body.page-payment-history .wrapper .history .content-block table tbody tr td.status i.fa.fa-check {
+  color: #33b679;
+}
+/* line 39, page_payment_history.less */
+body.page-payment-history .wrapper .history .content-block table tbody tr td.status i.fa.fa-coffee {
+  color: #8aa4a2;
+}
+/* line 50, page_payment_history.less */
+body.page-payment-history .wrapper aside {
+  float: left;
+  width: 36%;
+  margin-left: 2%;
 }
 /*# sourceMappingURL=styles.css.map */
