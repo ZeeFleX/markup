@@ -13,7 +13,7 @@
 	var eventNames = { //Типы и перевод событий
 		'private' : 'Личная консультация',
 		'skype' : 'Skype-консультация',
-		'cards' : 'Метафорические карты'
+		'cards' : 'Онлайн-кабинет'
 	};
 	var events = {};
 	var tmpEvent = {};
@@ -24,6 +24,9 @@
 	var markers;
 	var tasks;
 	var date = '19-02-2015'; //Дата для примера
+	var dictionary = {
+		'editFormHeader': 'Добавить событие'
+	}
 	$(document).ready(function(){
 		grid = $('.schedule-container .grid'); //Контейнер с расписанием
 		planer = $('.schedule-container .freetime-grid'); //Контейнер с распорядком дня
@@ -64,6 +67,18 @@
 				'maxTime': rowToTime(range[1])
 			});
 		});
+		$(editEventBlock).on('keyup', 'input[name="participiant"]', function(){
+			var $this = $(this);
+			var $field = $this.closest('.field');
+			if($(editEventBlock).find('input[value="cards"]').prop('checked') && $this.val().length){
+				if(!$(editEventBlock).find('input[name="email"]').length){
+					var $emailField = $("<label for='email'>Email участника</label><input type='text' placeholder='Введите email участника' name='email' />").appendTo($field);
+				}
+			}else{
+				$field.find('label[for="email"]').remove();
+				$field.find('input[name="email"]').remove();
+			}
+		});
 		$(editEventBlock).on('change', 'input.timepicker-light[name="end"]', function(){
 			if(!$(this).closest('.times').length){
 				tmpEvent.time[1] = $(this).val();
@@ -91,6 +106,7 @@
 			tmpEvent.participiant = $(section).find('input[name="participiant"]').val();
 			tmpEvent.comment = $(section).find('textarea[name="comment"]').val();
 			tmpEvent.type = $(section).find('input[type="radio"]:checked').val();
+			tmpEvent.email = $(section).find('input[name="email"]').val();
 			if(typeof(tmpEvent.type) == 'undefined') tmpEvent.type = 'unwork';
 			tmpEvent.office = $(section).find('select#office').val();
 			var timeArray = getEventRows(marker, grid);
@@ -125,7 +141,7 @@
 						.fadeOut(300);
 				});
 			}else{
-				alert('На это время есть события, несоотвествующие типу');
+				alert('На это время назначены события, не соотвествующие типу');
 			}
 		});
 		//Если есть расписание, то спрашиваем евенты на эту дату, ждем JSON, строим зарезервированные области
@@ -291,6 +307,9 @@
 			}
 		});
 		//Выделение существующих евентов
+		$(grid).on('dblclick', '.reserved-marker', function(){
+			editEventForm();
+		});	
 		$(grid).on('mousedown', function(e){	//При нажатии мыши на сетке
 			if(!$(e.target).closest('.reserved-marker').length){	//Если элемент не относится к зарезервированной области
 				$(grid).find('.reserved-marker.selected').removeClass('selected');	//Снимаем выделение со всех областей
@@ -320,42 +339,7 @@
 					cursorPosition = Math.floor((e.pageY - $(grid).offset().top) / 16) + 1;
 				}	
 				if($(e.target).closest('.edit-event').length){
-					tmpEvent.action = 'edit';
-					var tmpTimeRange = getTimeRanges();
-					tmpTimeRange.splice($(marker).index('.reserved-marker'),1);
-					
-					$('.timepicker-light').timepickerLight({
-						'disableTimeRanges': tmpTimeRange
-					});
-					if(_.indexOf(['skype', 'private', 'cards'], tmpEvent.type) == -1){
-						section = $(editEventBlock).find('.section.' + tmpEvent.type);
-						$(section).find('input[type="checkbox"].section-handler').trigger('click');
-						$(section).find('.checkbox.container').addClass('checked');
-						$(editEventBlock).fadeIn(300);
-					}else{
-						section = $(editEventBlock).find('.section.consult');
-						$(section).find('input[type="checkbox"].section-handler').trigger('click');
-						$(section).find('.checkbox.container').addClass('checked');
-						$.each(tmpEvent, function(key, value){
-							switch(key){
-								case 'time':
-									$(section).find('input[name="begin"]').val(value[0]);
-									$(section).find('input[name="end"]').val(value[1]);
-								break;
-								case 'type':
-									tmpEvent.type = $(marker).attr('data-type');
-									$(section).find('.radio.container').removeClass('checked');
-									var radioInput = $(section).find('input[value="' + tmpEvent.type + '"]');
-									$(radioInput).attr('checked', 'checked');
-									$(section).find('.radio.container[data-id="' + $(radioInput).attr('data-id') + '"]').addClass('checked');
-								break;
-								default:
-									$(section).find('input[name="' + key + '"]').val(value);
-								break;
-							}
-						});
-						$(editEventBlock).fadeIn(300);
-					}
+					editEventForm();
 				}else{
 
 				}
@@ -376,7 +360,6 @@
 		});
 		//Выделение ячеек
 		$(grid).on('mousedown', '.row, .marker', function(e){	//При клике по строке или по маркеру выделения
-			console.log(matchEventPlan());
 			marker = $(grid).find('.marker')	//Переменная с маркером
 			pressed = true;	//Флаг, что началось выделение области
 			timeArray = [];	//Обнуляем массив
@@ -411,13 +394,13 @@
 					}
 					$(marker).attr('data-begin', rowToTime(_.min(timeArray) - 1));
 					$(marker).attr('data-end', rowToTime(_.max(timeArray) - 1));
-					if(!isReserved(timeArray,reservedHoursArray) && matchEventPlan()){	//Если рассчитанный выше массив времени не пересекается с резервным временем
+					if(!isReserved(timeArray,reservedHoursArray) && matchEventPlan() && checkLongConsult(timeArray)){	//Если рассчитанный выше массив времени не пересекается с резервным временем
 						placeSelector(marker, timeArray);	//Устанавливаем селектор в это положение
 					}
 				}
 				if(pressed){	//Если флаг нового выделения
 					timeArray[1] = Math.floor((e.pageY - $(grid).offset().top) / 16) + 2;	//Меняем конечное значение области выделения
-					if(!isReserved(timeArray,reservedHoursArray)){	//Если рассчитанный выше массив времени не пересекается с резервным временем
+					if(!isReserved(timeArray,reservedHoursArray) && checkLongConsult(timeArray) && timeArray[1] > timeArray[0]){	//Если рассчитанный выше массив времени не пересекается с резервным временем
 						placeSelector(marker, timeArray);	//Устанавливаем селектор в это положение
 					}
 				}
@@ -437,15 +420,18 @@
 				changePressed = false;	//Флаг редактирования области снимаем
 			}
 			if(pressed){
-				tmpEvent.time = [rowToTime(_.min(timeArray) - 1), rowToTime(_.max(timeArray) - 1)];
+				tmpEvent.time = [rowToTime(getEventRows(marker, grid)[0] - 1), rowToTime(getEventRows(marker, grid)[1] - 1)];
+				$(editEventBlock).find('h4').html('Добавить событие');
 				var radio = $(editEventBlock).find('input[value="skype"]');
 				$(radio).prop('checked', true);
 				$(editEventBlock).find('.radio.container[data-id="' + $(radio).attr('data-id') + '"]').addClass('checked');
+				$(editEventBlock).find('input[name="begin"]').val(tmpEvent.time[0]);
+				$(editEventBlock).find('input[name="end"]').val(tmpEvent.time[1]);
 				$(editEventBlock).fadeIn(300);
 			}
-			$('.timepicker-light').timepickerLight({
-				'disableTimeRanges':getTimeRanges()
-			});
+			// $('.timepicker-light').timepickerLight({
+			// 	'disableTimeRanges':getTimeRanges()
+			// });
 			pressed = false;	//Флаг нового выделения снимаем
 			//loadTimePickers();	//Подгружаем ползунки для выбора времени
 		});
@@ -453,7 +439,53 @@
 			pressed = false;	//Снимаем флаг нового выделения
 			changePressed = false;	//Снимаем флаг редактирования области
 		});
+		var editEventForm = function(){
+			tmpEvent.action = 'edit';
+			var tmpTimeRange = getTimeRanges();
+			tmpTimeRange.splice($(marker).index('.reserved-marker'),1);
+			
+			$('.timepicker-light').timepickerLight({
+				'disableTimeRanges': tmpTimeRange
+			});
+			$(editEventBlock).find('h4').html('Редактировать событие');
+			if(_.indexOf(['skype', 'private', 'cards'], tmpEvent.type) == -1){
+				section = $(editEventBlock).find('.section.' + tmpEvent.type);
+				$(section).find('input[type="checkbox"].section-handler').trigger('click');
+				$(section).find('.checkbox.container').addClass('checked');
+				$(editEventBlock).fadeIn(300);
+			}else{
+				section = $(editEventBlock).find('.section.consult');
+				$(section).find('input[type="checkbox"].section-handler').trigger('click');
+				$(section).find('.checkbox.container').addClass('checked');
+				$.each(tmpEvent, function(key, value){
+					switch(key){
+						case 'time':
+							$(section).find('input[name="begin"]').val(value[0]);
+							$(section).find('input[name="end"]').val(value[1]);
+						break;
+						case 'type':
+							tmpEvent.type = $(marker).attr('data-type');
+							$(section).find('.radio.container').removeClass('checked');
+							var radioInput = $(section).find('input[value="' + tmpEvent.type + '"]');
+							$(radioInput).attr('checked', 'checked');
+							$(section).find('.radio.container[data-id="' + $(radioInput).attr('data-id') + '"]').addClass('checked');
+						break;
+						default:
+							$(section).find('input[name="' + key + '"]').val(value);
+						break;
+					}
+				});
+				$(editEventBlock).fadeIn(300);
+			}
+		}
 	});
+	var checkLongConsult = function(timeArray){
+		if(_.max(timeArray) - _.min(timeArray) <= 5 && _.max(timeArray) - _.min(timeArray) >= 1){
+			return true
+		} else{
+			return false
+		}
+	}
 	var getTimeRanges = function(){
 		var timeRanges = [];
 		
@@ -509,7 +541,7 @@
 	}
 	//Функция добавления таска в столбец
 	var addTask = function(evnt){
-		var task = $('<div class="event ' + evnt.type + '" data-id="' + evnt.id + '" data-begin="' + timesToRows(evnt.time)[0] + '"><div class="border"></div><h5 class="title">' + evnt.title + '</h5><p class="time">Время: <span class="value">' + rowToTime(timeArray[0] - 1) + ' - ' + rowToTime(timeArray[1] - 1) + '</span></p><p class="method">Способ: <span class="value">' + eventNames[evnt.type] + '</span></p><a class="fa fa-close removeEvent" href="" title="Удалить событие"></a></div>').prependTo(taskList);
+		var task = $('<div class="event ' + evnt.type + '" data-id="' + evnt.id + '" data-begin="' + timesToRows(evnt.time)[0] + '"><div class="border"></div><h5 class="title">' + eventNames[evnt.type] + '</h5><p class="time">Время: <span class="value">' + evnt.time[0] + ' - ' + evnt.time[1] + '</span></p><p class="method"></p><a class="fa fa-close removeEvent" href="" title="Удалить событие"></a></div>').prependTo(taskList);
 		if(typeof(evnt.participiant) != 'undefined'){
 			$(task).find('p.method').after('<p class="participiant">Участник: <a href="' + evnt.participiantProfile + '" class="value">' +evnt.participiant + '</a></p>');
 		}
@@ -517,20 +549,24 @@
 
 	//Функция удаления события
 	var removeEvent = function(evnt, reservedHoursArray){
-		var id = $(evnt).attr('data-id');
-		var grid = $('.schedule-container .grid');
-		var marker = $(grid).find('.reserved-marker[data-id="' + id + '"]');
-		var timeArray = getEventRows(marker, grid);
-		//Скрываем с виду и удаляем блоки
-		$(evnt).slideUp(300, function(){
-			$(this).remove();
-		});
-		$(marker).fadeOut(300, function(){
-			$(this).remove();
-		});
-		ajaxRemoveEvent(id);
-		//Возвращаем массив строк удалённого события
-		return timeArray;
+		if(confirm('Вы уверены, что хотите удалить событие?')){
+			var id = $(evnt).attr('data-id');
+			var grid = $('.schedule-container .grid');
+			var marker = $(grid).find('.reserved-marker[data-id="' + id + '"]');
+			var timeArray = getEventRows(marker, grid);
+			//Скрываем с виду и удаляем блоки
+			$(evnt).slideUp(300, function(){
+				$(this).remove();
+			});
+			$(marker).fadeOut(300, function(){
+				$(this).remove();
+			});
+			ajaxRemoveEvent(id);
+			//Возвращаем массив строк удалённого события
+			return timeArray;
+		} else{
+			return false
+		}
 	}
 
 	//Функция получения строк у события (зарезервированного маркера)

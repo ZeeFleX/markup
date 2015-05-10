@@ -445,7 +445,10 @@ body.page-profile-schedule{
 		p.label{
 			position: absolute;
 			width:200px;
+			transform:rotate(-90deg);
 			-webkit-transform:rotate(-90deg);
+			-moz-transform:rotate(-90deg);
+			-o-transform:rotate(-90deg);
 			left:-65px;
 			top:50%;
 			text-align: center;
@@ -553,10 +556,10 @@ body.page-profile-schedule{
 			border-color: rgba(0,0,0,.4);
 			background: rgba(0,0,0,.1);
 			p{
-				font-size:1.3rem;
+				font-size:1.2rem;
 				display: block;
-				margin-left: 20px;
-				margin-top: 6px;
+				margin-left: 10px;
+				margin-top: 0px;
 				color:#333;
 			}
 		}
@@ -581,10 +584,10 @@ body.page-profile-schedule{
 				z-index: 1;
 			}
 			p{
-				font-size:1.3rem;
+				font-size:1.2rem;
 				display: block;
-				margin-left: 20px;
-				margin-top: 6px;
+				margin-left: 10px;
+				margin-top: 0px;
 			}
 			&.unwork{
 				border-color: rgba(0,0,0,.4);
@@ -679,13 +682,13 @@ body.page-profile-schedule{
 			top:3px;
 			margin-right: 3px;
 			&.meeting{
-				background: #fac944;
+				background: rgba(250, 201, 68, 0.4);;
 			}
 			&.online{
-				background: #33b679;
+				background: rgba(51, 152, 121, 0.4);;
 			}
 			&.unwork{
-				background: #d4d4d4;
+				background: #e5e5e5;
 			}
 		}
 	}

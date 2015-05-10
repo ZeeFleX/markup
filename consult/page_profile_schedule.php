@@ -32,7 +32,7 @@
                     <div class="clr"></div>
                     <div class="worktype">
                         <input type="checkbox" name="online">
-                        <label for="online">Skype, Метафорические карты</label>
+                        <label for="online">Skype, Онлайн-кабинет</label>
                         <div class="clr"></div>
                         <input type="checkbox" name="meeting">
                         <label for="meeting">Личные встречи</label>
@@ -72,7 +72,7 @@
                         <div class="type">
                             <div class="field">
                                 <input type="checkbox" name="type" value="online-time" />
-                                <label for="type">Онлайн (Skype, Метафорические карты)</label>
+                                <label for="type">Онлайн (Skype, Онлайн-кабинет)</label>
                             </div>
                             <div class="times online-time">
                                 <div class="field begin">
@@ -121,36 +121,36 @@
                         <div class="clr"></div>
                         <div class="field">
                             <input type="radio" name="type" value="cards" />
-                            <label for="type">Метафорические карты</label>
+                            <label for="type">Онлайн-кабинет</label>
                         </div>
                     </div>
                     <div class="clr"></div>
-                    <div class="field title">
+                    <!-- <div class="field title">
                         <label for="title">Название мероприятия</label>
                         <input type="text" name="title" placeholder="Введите заголовок для мероприятия" class="allow-clear"/>
-                    </div>
+                    </div> -->
                     <div class="field participiant">
                         <label for="participiant">Участник</label>
-                        <input type="text" name="participiant" placeholder="Введите имя участника консультации" class="allow-clear"/>
+                        <input type="text" name="participiant" placeholder="Введите ФИО участника консультации" class="allow-clear"/>
                     </div>
                     <div class="field begin">
                         <label for="consult-begin">Начало</label>
-                        <input type="text" class="timepicker-light" name="begin" placeholder="Выберите время"/>
+                        <input type="text" class="" disabled="disabled" name="begin" placeholder="Выберите время"/>
                     </div>
                     <div class="field end">
                         <label for="consult-end">Окончание</label>
-                        <input type="text" class="timepicker-light" name="end" placeholder="Выберите время" />
+                        <input type="text" class=""  disabled="disabled" name="end" placeholder="Выберите время" />
                     </div>
                     <div class="clr"></div>
                     <div class="field comment">
                         <label for="comment">Комментарий</label>
-                        <textarea name="comment" id="comment" placeholder="Добавьте комментарий к событию" ></textarea>
+                        <textarea name="comment" id="comment" placeholder="Добавьте комментарий к событию" class="allow-clear"></textarea>
                     </div>
                     <!-- <a href="#" id="cancel">Отменить консультацию</a> -->
                     <div class="clr"></div>
                 </div>
                 <input type="submit" class="btn" value="Сохранить" />
-                <input type="button" class="btn ghost" value="Отменить" />
+                <input type="button" class="close btn ghost" id="cancel-form" value="Отменить" />
                 <div class="clr"></div>
             </form>
         </div>
@@ -392,7 +392,7 @@
                         <p class="method">Способ: <span class="value">Личная встреча</span></p>
                         <p class="participiant">Участник: <a href="#" class="value">Владимиров Владимир</a></p>
                     </div> -->
-                    <a href="#" class="btn">Посмотреть все консультации</a>
+                    <!-- <a href="#" class="btn">Посмотреть все консультации</a> -->
                 </div>
                 <h4>Офис проведения консультации</h4>
                 <select name="office" class="select2">
