@@ -23,6 +23,7 @@
 	var grid, planer;
 	var markers;
 	var tasks;
+	var currentAbsCursorPosition, startAbsCursorPosition;
 	var date = '19-02-2015'; //Дата для примера
 	var dictionary = {
 		'editFormHeader': 'Добавить событие'
@@ -165,7 +166,7 @@
 						//Добавление события на сетку
 						
 						if(typeof(evnt.title) == 'undefined' || !evnt.title.length) evnt.title = eventNames[evnt.type];
-						$(grid).prepend('<div class="reserved-marker ' + evnt.type + '" data-id="' + evnt.id + '" data-type="' + evnt.type + '" data-begin="' + evnt.time[0] + '" data-end="' + evnt.time[1] + '"  data-participiant="' + evnt.participiant + '"  data-end="' + evnt.time[1] + '" data-title="' + evnt.title + '"><div class="slider-top slider"></div><div class="slider-bottom slider"></div><i class="fa fa-cog edit-event"></i><p class="title">' + evnt.title + '</p></div>');	//Формаирование областей
+						$(grid).prepend('<div class="reserved-marker ' + evnt.type + '" data-id="' + evnt.id + '" data-type="' + evnt.type + '" data-begin="' + evnt.time[0] + '" data-end="' + evnt.time[1] + '"  data-participiant="' + evnt.participiant + '"  data-end="' + evnt.time[1] + '" data-title="' + evnt.title + '"><div class="slider-top slider"></div><div class="slider-bottom slider"></div><i class="fa fa-cog edit-event"></i><p class="title">' + eventNames[evnt.type] + '</p></div>');	//Формаирование областей
 						var reservedMarker = $(grid).find('div[data-id="' + evnt.id + '"]');	//Переменная с областью для этого прохода
 						timeArray = timesToRows(evnt.time);	//Конвертация времени с исходных данных в номера строк
 						placeSelector(reservedMarker, timeArray);	//Размещение теущего селектора
@@ -311,6 +312,7 @@
 			editEventForm();
 		});	
 		$(grid).on('mousedown', function(e){	//При нажатии мыши на сетке
+			startAbsCursorPosition = e.pageY;
 			if(!$(e.target).closest('.reserved-marker').length){	//Если элемент не относится к зарезервированной области
 				$(grid).find('.reserved-marker.selected').removeClass('selected');	//Снимаем выделение со всех областей
 				$(taskList).find('.event.active').removeClass('active');
@@ -373,37 +375,43 @@
 			}
 		});
 		$(grid).on('mousemove', function(e){	//При движении мыши по сетке
-			if(pressed || changePressed){	//Если есть флаги нового выделения или изменения
-				if(changePressed){	//Если флаг изменения
-					if(currentChange == 'bottom' || pressed){	//Если изменение вниз
-						timeArray[1] = Math.floor((e.pageY - $(grid).offset().top) / 16) + 2;	//Меняем конечное значение области
-					}else if(currentChange == 'top'){	//Если изменение вверх
-						timeArray[0] = Math.floor((e.pageY - $(grid).offset().top) / 16) + 1;	//Меняем начальное значение области
-					}else if(currentChange == 'drag'){
-						timeArray = getEventRows(marker, grid);
-						tmpArr = _.range(timeArray[0], timeArray[1]);	//Временный массив для сдвига
-						reservedHoursArray = _.difference(reservedHoursArray, tmpArr); //Удаляем из зарезервированных часов текущую область, чтобы была возможность редактировать область
-						var currentCursorPosition = Math.floor((e.pageY - $(grid).offset().top) / 16) + 1;
-						timeArray[0] = timeArray[0] + (currentCursorPosition - cursorPosition);
-						timeArray[1] = timeArray[1] + (currentCursorPosition - cursorPosition);
-						if(!isReserved(timeArray,reservedHoursArray)){
-							cursorPosition = currentCursorPosition;
+			currentAbsCursorPosition = e.pageY;
+			if(Math.abs(currentAbsCursorPosition - startAbsCursorPosition) > 16){
+				console.log(currentAbsCursorPosition);
+				if(pressed || changePressed){	//Если есть флаги нового выделения или изменения
+					if(changePressed){	//Если флаг изменения
+						if(currentChange == 'bottom' || pressed){	//Если изменение вниз
+							timeArray[1] = Math.floor((e.pageY - $(grid).offset().top) / 16) + 2;	//Меняем конечное значение области
+						}else if(currentChange == 'top'){	//Если изменение вверх
+							timeArray[0] = Math.floor((e.pageY - $(grid).offset().top) / 16) + 1;	//Меняем начальное значение области
+						}else if(currentChange == 'drag'){
+							timeArray = getEventRows(marker, grid);
+							tmpArr = _.range(timeArray[0], timeArray[1]);	//Временный массив для сдвига
+							reservedHoursArray = _.difference(reservedHoursArray, tmpArr); //Удаляем из зарезервированных часов текущую область, чтобы была возможность редактировать область
+							var currentCursorPosition = Math.floor((e.pageY - $(grid).offset().top) / 16) + 1;
+							timeArray[0] = timeArray[0] + (currentCursorPosition - cursorPosition);
+							timeArray[1] = timeArray[1] + (currentCursorPosition - cursorPosition);
+							if(!isReserved(timeArray,reservedHoursArray)){
+								cursorPosition = currentCursorPosition;
+							}
+							if(timeArray[1] > 49) timeArray[1] = 49;
+							if(timeArray[0] <= 1) timeArray[0] = 1;
+							
 						}
-						if(timeArray[1] > 49) timeArray[1] = 49;
-						if(timeArray[0] <= 1) timeArray[0] = 1;
+						$(marker).attr('data-begin', rowToTime(_.min(timeArray) - 1));
+						$(marker).attr('data-end', rowToTime(_.max(timeArray) - 1));
+						if(!isReserved(timeArray,reservedHoursArray) && matchEventPlan() && checkLongConsult(timeArray)){	//Если рассчитанный выше массив времени не пересекается с резервным временем
+							placeSelector(marker, timeArray);	//Устанавливаем селектор в это положение
+						}
 					}
-					$(marker).attr('data-begin', rowToTime(_.min(timeArray) - 1));
-					$(marker).attr('data-end', rowToTime(_.max(timeArray) - 1));
-					if(!isReserved(timeArray,reservedHoursArray) && matchEventPlan() && checkLongConsult(timeArray)){	//Если рассчитанный выше массив времени не пересекается с резервным временем
-						placeSelector(marker, timeArray);	//Устанавливаем селектор в это положение
-					}
-				}
-				if(pressed){	//Если флаг нового выделения
-					timeArray[1] = Math.floor((e.pageY - $(grid).offset().top) / 16) + 2;	//Меняем конечное значение области выделения
-					if(!isReserved(timeArray,reservedHoursArray) && checkLongConsult(timeArray) && timeArray[1] > timeArray[0]){	//Если рассчитанный выше массив времени не пересекается с резервным временем
-						placeSelector(marker, timeArray);	//Устанавливаем селектор в это положение
+					if(pressed){	//Если флаг нового выделения
+						timeArray[1] = Math.floor((e.pageY - $(grid).offset().top) / 16) + 2;	//Меняем конечное значение области выделения
+						if(!isReserved(timeArray,reservedHoursArray) && checkLongConsult(timeArray) && timeArray[1] > timeArray[0]){	//Если рассчитанный выше массив времени не пересекается с резервным временем
+							placeSelector(marker, timeArray);	//Устанавливаем селектор в это положение
+						}
 					}
 				}
+				startAbsCursorPosition = e.pageY;
 			}
 		});
 		$(grid).on('mouseup', function(){	//При отпускании мыши
