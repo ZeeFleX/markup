@@ -339,6 +339,14 @@
 					currentChange = 'drag';
 					marker = $(e.target).closest('.reserved-marker');
 					cursorPosition = Math.floor((e.pageY - $(grid).offset().top) / 16) + 1;
+
+
+
+					timeArray = getEventRows(marker, grid);
+					tmpArr = _.range(timeArray[0], timeArray[1] + 1);	//Временный массив для сдвига
+					reservedHoursArray = _.difference(reservedHoursArray, tmpArr); //Удаляем из зарезервированных часов текущую область, чтобы была возможность редактировать область
+
+
 				}	
 				if($(e.target).closest('.edit-event').length){
 					editEventForm();
@@ -358,6 +366,7 @@
 			changePressed = true;	//Переменная со статусом редактирования
 			timeArray = getEventRows(marker, grid);	//Массив времени для текущей области
 			tmpArr = _.range(timeArray[0], timeArray[1]);	//Временный массив для сдвига
+
 			reservedHoursArray = _.difference(reservedHoursArray, tmpArr); //Удаляем из зарезервированных часов текущую область, чтобы была возможность редактировать область
 		});
 		//Выделение ячеек
@@ -377,7 +386,8 @@
 		$(grid).on('mousemove', function(e){	//При движении мыши по сетке
 			currentAbsCursorPosition = e.pageY;
 			if(Math.abs(currentAbsCursorPosition - startAbsCursorPosition) > 16){
-				console.log(currentAbsCursorPosition);
+				//console.log(currentAbsCursorPosition);
+
 				if(pressed || changePressed){	//Если есть флаги нового выделения или изменения
 					if(changePressed){	//Если флаг изменения
 						if(currentChange == 'bottom' || pressed){	//Если изменение вниз
@@ -385,22 +395,17 @@
 						}else if(currentChange == 'top'){	//Если изменение вверх
 							timeArray[0] = Math.floor((e.pageY - $(grid).offset().top) / 16) + 1;	//Меняем начальное значение области
 						}else if(currentChange == 'drag'){
-							timeArray = getEventRows(marker, grid);
-							tmpArr = _.range(timeArray[0], timeArray[1]);	//Временный массив для сдвига
-							reservedHoursArray = _.difference(reservedHoursArray, tmpArr); //Удаляем из зарезервированных часов текущую область, чтобы была возможность редактировать область
 							var currentCursorPosition = Math.floor((e.pageY - $(grid).offset().top) / 16) + 1;
 							timeArray[0] = timeArray[0] + (currentCursorPosition - cursorPosition);
 							timeArray[1] = timeArray[1] + (currentCursorPosition - cursorPosition);
-							if(!isReserved(timeArray,reservedHoursArray)){
+							//if(!isReserved(timeArray,reservedHoursArray)){
 								cursorPosition = currentCursorPosition;
-							}
-							if(timeArray[1] > 49) timeArray[1] = 49;
-							if(timeArray[0] <= 1) timeArray[0] = 1;
-							
+							//}
 						}
 						$(marker).attr('data-begin', rowToTime(_.min(timeArray) - 1));
 						$(marker).attr('data-end', rowToTime(_.max(timeArray) - 1));
-						if(!isReserved(timeArray,reservedHoursArray) && matchEventPlan() && checkLongConsult(timeArray)){	//Если рассчитанный выше массив времени не пересекается с резервным временем
+						
+						if(!isReserved(timeArray,reservedHoursArray) && matchEventPlan() && checkLongConsult(timeArray) && checkScheduleRange(timeArray)){	//Если рассчитанный выше массив времени не пересекается с резервным временем
 							placeSelector(marker, timeArray);	//Устанавливаем селектор в это положение
 						}
 					}
@@ -487,6 +492,10 @@
 			}
 		}
 	});
+	var checkScheduleRange = function(timeArray){
+		if(timeArray[1] > 49 || timeArray[0] <= 1) return false;
+		return true
+	}
 	var checkLongConsult = function(timeArray){
 		if(_.max(timeArray) - _.min(timeArray) <= 5 && _.max(timeArray) - _.min(timeArray) >= 1){
 			return true
@@ -582,6 +591,7 @@
 		var timeArray = []; //объявляем локальный массив времени
 		timeArray[0] = Math.floor(($(marker).offset().top - $(grid).offset().top) / 16 + 1) + 1;	//Считаем время начала от позиции области
 		timeArray[1] = Math.floor(($(marker).offset().top - $(grid).offset().top + $(marker).outerHeight()) / 16) + 1;	//Считаем время окончания от позиции области
+		//console.log(timeArray);
 		return timeArray
 	}
 	//Функция получения полного массива строк и типов всех событий
@@ -661,13 +671,10 @@
 		}
 		
 		
-
 		$.each(evnts.meeting, function(key, evntTime){
-			//console.log(evntTime);
 			if(_.intersection(evntTime, plan.meeting).length < evntTime.length) result = false;
 		});
 		$.each(evnts.online, function(key, evntTime){
-			//console.log(_.intersection(evntTime, plan.online).length < evntTime.length);
 			if(_.intersection(evntTime, plan.online).length < evntTime.length) result = false;
 		});
 		return result
@@ -714,6 +721,7 @@
 			var hour = parseInt(time.split(':')[0]);	//Считаем час
 			var minute = parseInt(time.split(':')[1]);	//Считаем минуты
 			var row = (hour + (minute / 60)) * 2 + 1;	//Считаем строку для этого времени
+			if(key && row == 1) row = 48;
 			rows.push(row);	//Пушим строку в локальный массив
 
 		});
