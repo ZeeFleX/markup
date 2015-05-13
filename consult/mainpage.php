@@ -134,7 +134,7 @@
             </section>
             <form action="#" method="POST" class="ask-question-form content-block">
                 <i class="fa fa-close"></i>
-                <h4>Задать публичный вопрос консультантам</h4>
+                <h4>Задать вопрос консультантам</h4>
                 <div class="field question">
                     <textarea name="question" placeholder="Напишите Ваш вопрос" class="allow-clear"></textarea>
                     <div class="field category">
@@ -278,8 +278,8 @@
     <footer class="footer">
         <section class="library">
             <div class="wrapper">
-                <div class="title">
-                    <h3>Консультации</h3>
+                <div class="logo">
+                    <img src="images/footer-logo.png" alt="">
                 </div>
                 <div class="library-list">
                     <h4>Библиотека</h4>
