@@ -1,4 +1,35 @@
 $(document).ready(function(){
+
+    //Установка конца рабочего дня не меньшего, чем начало
+    if($('.page-profile-settings.worktime').length){
+        var $dayContainers = $('.day');
+        $.each($dayContainers, function(key, day){
+            var $day = $(day);
+            var $beginContainer = $day.find('select[name="begin[]"]');
+            var $endContainer = $day.find('select[name="end[]"]');
+            for(var i = 0; i <= 48; i++){
+                $beginContainer.append('<option data-row="' + i + '" value="' + rowToTime(i) + '">' + rowToTime(i) + '</option>');
+                $endContainer.append('<option data-row="' + i + '" value="' + rowToTime(i) + '">' + rowToTime(i) + '</option>');
+            }
+            $beginContainer.select2();
+            $endContainer.select2();
+            $beginContainer.on('change', function(){
+                var row = $(this).find('option:selected').attr('data-row');
+                $.each($endContainer.find('option'), function(key, option){
+                    if($(option).attr('data-row') < row){
+                        $(option).prop('disabled', true);
+                    }
+                    if($(option).attr('data-row') >= row){
+                        $(option).prop('disabled', false);
+                    }
+                });
+                if($endContainer.find('option:selected').attr('data-row') < $beginContainer.find('option:selected').attr('data-row')){
+                    $endContainer.val($beginContainer.val());
+                }
+                $endContainer.select2();
+            });
+        });
+    }
     //Добавление дипломов
     var uploaderEventObject;
     $('#uploader-form-simple').ajaxForm({

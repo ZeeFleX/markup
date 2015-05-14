@@ -2745,28 +2745,29 @@ body.page-profile-settings.worktime form .day h3 {
   font-weight: 500;
   text-transform: uppercase;
   margin-top: 15px;
+  margin-top: 0;
 }
-/* line 421, page_profile_settings.less */
+/* line 422, page_profile_settings.less */
 body.page-profile-settings.worktime form .day .field {
   float: left;
   width: 48%;
 }
-/* line 424, page_profile_settings.less */
+/* line 425, page_profile_settings.less */
 body.page-profile-settings.worktime form .day .field label {
   color: #35504e;
   font-size: 1.4rem;
   font-weight: 500;
   margin-top: 0;
 }
-/* line 430, page_profile_settings.less */
+/* line 431, page_profile_settings.less */
 body.page-profile-settings.worktime form .day .field.begin {
   margin-right: 4%;
 }
-/* line 433, page_profile_settings.less */
+/* line 434, page_profile_settings.less */
 body.page-profile-settings.worktime form .day .field .select2-container {
   width: 100% !important;
 }
-/* line 438, page_profile_settings.less */
+/* line 439, page_profile_settings.less */
 body.page-profile-settings.worktime form input[type="submit"] {
   margin-top: 30px;
   margin-right: 20px;

@@ -705,30 +705,6 @@
 		}
 	}
 
-	//Функция конвертации строк в соответствующее время (1 строка в 1 время)
-	var rowToTime = function(row){
-		var hour = Math.floor(row / 2);	//Считаем час от номера строки
-		var minute = (row / 2) % 1 * 60;	//Считаем минуты от номера строки
-		if(hour.toString().length == 1) hour = '0' + hour; //Если час единичной цифрой, то дописываем 0
-		if(hour == 24) hour = '00';	//Если час 24, то час 00
-		if(minute.toString().length == 1) minute = '0' + minute;	//Если минуты единичной цифрой, то дописываем 0
-		return hour + ':' + minute	//Возвращаем строку времени
-	}
-	//Функция конвартации начального и конечного времени в начальную и конечно строку сетки
-	var timesToRows = function(times){
-		var rows = [];	//Локальный массив строк
-		$.each(times, function(key, time){	//Приходит 2 времени - начало и конец, считаем для каждого
-			var hour = parseInt(time.split(':')[0]);	//Считаем час
-			var minute = parseInt(time.split(':')[1]);	//Считаем минуты
-			var row = (hour + (minute / 60)) * 2 + 1;	//Считаем строку для этого времени
-			if(key && row == 1) row = 48;
-			rows.push(row);	//Пушим строку в локальный массив
-
-		});
-		//rows[1]--;	//Строку окончания декрементируем
-		return rows
-	}
-
 	//Установка времени для события справа
 	var setEventTime = function(eventId, timeArray){
 		var taskList = $('.today-events .events');
@@ -825,3 +801,26 @@
 		});
 	}
 })();
+//Функция конвертации строк в соответствующее время (1 строка в 1 время)
+var rowToTime = function(row){
+	var hour = Math.floor(row / 2);	//Считаем час от номера строки
+	var minute = (row / 2) % 1 * 60;	//Считаем минуты от номера строки
+	if(hour.toString().length == 1) hour = '0' + hour; //Если час единичной цифрой, то дописываем 0
+	if(hour == 24) hour = '00';	//Если час 24, то час 00
+	if(minute.toString().length == 1) minute = '0' + minute;	//Если минуты единичной цифрой, то дописываем 0
+	return hour + ':' + minute	//Возвращаем строку времени
+}
+//Функция конвартации начального и конечного времени в начальную и конечно строку сетки
+var timesToRows = function(times){
+	var rows = [];	//Локальный массив строк
+	$.each(times, function(key, time){	//Приходит 2 времени - начало и конец, считаем для каждого
+		var hour = parseInt(time.split(':')[0]);	//Считаем час
+		var minute = parseInt(time.split(':')[1]);	//Считаем минуты
+		var row = (hour + (minute / 60)) * 2 + 1;	//Считаем строку для этого времени
+		if(key && row == 1) row = 48;
+		rows.push(row);	//Пушим строку в локальный массив
+
+	});
+	//rows[1]--;	//Строку окончания декрементируем
+	return rows
+}
