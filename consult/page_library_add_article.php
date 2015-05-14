@@ -64,7 +64,7 @@
             </div>
             <div class="field preview image">
                 <input type="hidden" name="preview">
-                <label for="preview">Миниатюра статьи <span class="italic">(Отображается на странице просмотра статьи)</span></label>
+                <label for="preview">Миниатюра статьи <span class="italic">(Отображается на странице библиотеки)</span></label>
                 <div class="clr"></div>
                 <div>
                     <div class="preview-container image-container" id="preview-container"></div>
