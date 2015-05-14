@@ -18,7 +18,7 @@
         <p class="title">Консультации</p>
         <a class="sign-in btn" href="/">Войти</a>
         <ul class="mainmenu">
-            <li><a href="#">Публичные вопросы</a></li>
+            <li><a href="#">Вопросы и ответы</a></li>
             <li><a href="#">Консультанты</a></li>
             <li><a href="#">Библиотека</a></li>
         </ul>
@@ -48,12 +48,26 @@
     </section>
     <section class="wrapper">
         <section class="ask-question content-block">
-            <a href="#" class="btn">Задать публичный вопрос</a>
+            <a href="#" class="btn" id="ask-question">Задать публичный вопрос</a>
             <h2>Хотите задать публичный вопрос консультантам?</h2>
         </section>
+        <form action="#" method="POST" class="ask-question-form content-block">
+            <i class="fa fa-close"></i>
+            <h4>Задать вопрос консультантам</h4>
+            <div class="field question">
+                <textarea name="question" placeholder="Напишите Ваш вопрос" class="allow-clear"></textarea>
+                <div class="field category">
+                    <select name="category" class="select2" >
+                        <option value="0">Растеневодство</option>
+                        <option value="1">Животноводство</option>
+                    </select>
+                </div>
+                <input type="submit" class="btn" value="Задать вопрос">
+            </div>
+        </form>
         <section class="search-questions">
             <div class="left">
-                <h4>Поиск публичных вопросов</h4>
+                <!-- <h4>Поиск публичных вопросов</h4> -->
                 <div class="content-block">
                     <select name="category" class="select2">
                         <option value="0">Выберите категорию вопроса</option>
@@ -62,13 +76,40 @@
                 </div>
             </div>
             <div class="right my-questions">
-                <h4>Мои публичные вопросы</h4>
+                <!-- <h4>Мои публичные вопросы</h4> -->
                 <div class="content-block">
-                    <a href="#" class="btn ghost">Показать мои публичные вопросы</a>
+                    <a href="#" class="btn ghost">Показать мои вопросы</a>
                 </div>
             </div>
         </section>
         <section class="questions">
+            <div class="question content-block">
+                <div class="author">
+                    <!-- <div class="photo-container">
+                        <img src="images/photos/02.jpg" alt="">
+                    </div> -->
+                    <div class="container">
+                        <!-- <p class="name">Иван Иванов</p> -->
+                        <p class="job">Гость</p>
+                        <p class="category">Категория: <span>Разрешение конфликтов</span></p>
+                    </div>
+                </div>
+                <h4>Вопрос:</h4>
+                <div class="question-content">
+                    <div class="fader"></div>
+                    <p>
+                        Равным образом укрепление и развитие структуры позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным потребностям. Идейные соображения выс...
+                    </p>
+                </div>
+                <h4>Ответил: <span>Владимиров Владимир</span></h4>
+                <div class="answer-content">
+                    <div class="fader"></div>
+                    <p>
+                        Разнообразный и богатый опыт сложившаяся структура организации играет важную роль в формировании соответствующий условий активизации. Идейные соображения высшего порядка, а также сложившаяся структура организации обеспечивает широкому кругу (специалистов) участие в формировании позиций.
+                    </p>
+                </div>
+                <a href="#" id="read-more">Посмотреть ответ полностью</a>
+            </div>
             <?php for($i = 0; $i <= 3; $i++) { ?>
             <?php //if($i % 2 == 0) echo '<div class="clr"></div>'; ?>
             <div class="question content-block">

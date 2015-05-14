@@ -68,7 +68,7 @@
                     <div class="clr"></div>
                 </div>
                 <div class="right">
-                    <input type="submit" class="btn yellow">
+                    <input type="submit" class="btn yellow" value="Найти">
                 </div>
             </form>
         </section>
@@ -76,7 +76,7 @@
             <div class="align-container">
                 <div class="align-wrapper">
                     <h1>Внесите свой вклад в библиотеку!</h1>
-                    <a href="#" class="btn">Добавить статью</a>
+                    <a href="#" class="btn">Написать статью</a>
                 </div>
             </div>
         </section>

@@ -24,6 +24,7 @@
 <script src="js/interface.js"></script>
 <script src="js/mainpage.js"></script>
 <script src="js/page_profile.js"></script>
+<script src="js/page_consultation.js"></script>
 <script src="js/jquery.form.min.js"></script>
 <script src="js/uploader.js"></script>
 <script src="js/jquery.jcrop.min.js"></script>

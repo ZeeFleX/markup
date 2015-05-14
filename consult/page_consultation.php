@@ -100,16 +100,16 @@
             <div class="content-block">
                 <div class="info">
                     <div class="head">
-                        <h5>Информация о консультации</h5>
+                        <h5>Личная встреча</h5>
                         <i class="fa fa-calendar"></i>
                     </div>
                     <div class="content">
                         <p class="date">
-                            <span class="key">Дата и время:</span> <span class="value">9 февраля, 2015 - 14:00-16:00</span>
+                            <span class="key">Дата и время:</span> <span class="value">9 февраля, 2015 14:00-16:00</span>
                         </p>
-                        <p class="method">
+                        <!-- <p class="method">
                             <span class="key">Способ:</span> <span class="value">Личная встреча</span>
-                        </p>
+                        </p> -->
                         <p class="pricing">
                             <span class="key">Стоимость:</span> <span class="value">3000 рублей</span> <!--<span class="paid"><i class="fa fa-times-circle-o"></i> Не оплачено</span> --><span class="paid"><i class="fa fa-check-circle-o"></i> Оплачено</span>
                         </p>
@@ -141,9 +141,9 @@
                                 <div class="siding"></div>
                                 <a href="#"><i class="fa fa-pencil"></i></a>
                                 <a href="#"><i class="fa fa-trash-o"></i></a>
-                                <a href="#"><i class="fa fa-comment-o"></i></a>
+                                <!-- <a href="#"><i class="fa fa-comment-o"></i></a>
                                 <a href="#"><i class="fa fa-thumbs-up"></i></a>
-                                <a href="#"><i class="fa fa-thumbs-down"></i></a>
+                                <a href="#"><i class="fa fa-thumbs-down"></i></a> -->
                             </div>
                         </div>
                     </div>
@@ -191,9 +191,9 @@
                                     <div class="siding"></div>
                                     <a href="#"><i class="fa fa-pencil"></i></a>
                                     <a href="#"><i class="fa fa-trash-o"></i></a>
-                                    <a href="#"><i class="fa fa-comment-o"></i></a>
+                                    <!-- <a href="#"><i class="fa fa-comment-o"></i></a>
                                     <a href="#"><i class="fa fa-thumbs-up"></i></a>
-                                    <a href="#"><i class="fa fa-thumbs-down"></i></a>
+                                    <a href="#"><i class="fa fa-thumbs-down"></i></a> -->
                                 </div>
                             </div>
                         </div>
@@ -215,9 +215,9 @@
                                     <div class="siding"></div>
                                     <a href="#"><i class="fa fa-pencil"></i></a>
                                     <a href="#"><i class="fa fa-trash-o"></i></a>
-                                    <a href="#"><i class="fa fa-comment-o"></i></a>
+                                    <!-- <a href="#"><i class="fa fa-comment-o"></i></a>
                                     <a href="#"><i class="fa fa-thumbs-up"></i></a>
-                                    <a href="#"><i class="fa fa-thumbs-down"></i></a>
+                                    <a href="#"><i class="fa fa-thumbs-down"></i></a> -->
                                 </div>
                             </div>
                         </div>
