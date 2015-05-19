@@ -4749,6 +4749,546 @@ body.page-public-question-list .wrapper section.questions .question a#read-more 
 body.page-public-question-list .wrapper section.questions .question a#read-more:hover {
   text-decoration: underline;
 }
+/* line 3, page_public_question.less */
+body.page-public-question .wrapper .question {
+  margin-top: 20px;
+}
+/* line 5, page_public_question.less */
+body.page-public-question .wrapper .question p.like-it {
+  position: absolute;
+  right: 20px;
+  text-align: right;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-bottom: 0;
+  z-index: 1;
+}
+/* line 13, page_public_question.less */
+body.page-public-question .wrapper .question p.like-it:hover {
+  color: #35504e;
+}
+/* line 16, page_public_question.less */
+body.page-public-question .wrapper .question p.like-it i.fa {
+  margin: 0 5px;
+  font-size: 1.4rem;
+}
+/* line 20, page_public_question.less */
+body.page-public-question .wrapper .question p.like-it span.count {
+  color: #ffffff;
+  background: #fac944;
+  border-radius: 4px;
+  -o-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  padding: 3px 7px;
+}
+/* line 30, page_public_question.less */
+body.page-public-question .wrapper .question .question-menu.popup-menu {
+  position: absolute;
+  right: 22px;
+  top: 65px;
+}
+/* line 36, page_public_question.less */
+body.page-public-question .wrapper .question .author .photo {
+  float: left;
+  overflow: hidden;
+  border-radius: 50px;
+  -o-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+/* line 46, page_public_question.less */
+body.page-public-question .wrapper .question .author .photo img {
+  display: block;
+}
+/* line 50, page_public_question.less */
+body.page-public-question .wrapper .question .author .about {
+  overflow: hidden;
+}
+/* line 52, page_public_question.less */
+body.page-public-question .wrapper .question .author .about p {
+  margin: 0;
+}
+/* line 54, page_public_question.less */
+body.page-public-question .wrapper .question .author .about p.name {
+  font-size: 1.2rem;
+  color: #4ad0c5;
+  font-weight: 700;
+}
+/* line 59, page_public_question.less */
+body.page-public-question .wrapper .question .author .about p.job {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+/* line 63, page_public_question.less */
+body.page-public-question .wrapper .question .author .about p.category {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 30px;
+}
+/* line 67, page_public_question.less */
+body.page-public-question .wrapper .question .author .about p.category .value {
+  color: #35504e;
+}
+/* line 74, page_public_question.less */
+body.page-public-question .wrapper .question h5 {
+  padding-bottom: 0;
+}
+/* line 78, page_public_question.less */
+body.page-public-question .wrapper .question .content p {
+  margin: 5px 0 0 0;
+}
+/* line 81, page_public_question.less */
+body.page-public-question .wrapper .question .content .fader {
+  position: absolute;
+  width: 100%;
+  height: 44px;
+  bottom: 0;
+  background: -webkit-linear-gradient(90deg, #fefefe 0%, #fefefe 16%, rgba(255, 255, 255, 0) 100%);
+  background: -moz-linear-gradient(90deg, #fefefe 0%, #fefefe 16%, rgba(255, 255, 255, 0) 100%);
+  background: -o-linear-gradient(90deg, #fefefe 0%, #fefefe 16%, rgba(255, 255, 255, 0) 100%);
+  background: -ms-linear-gradient(90deg, #fefefe 0%, #fefefe 16%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(0deg, #fefefe 0%, #fefefe 16%, rgba(255, 255, 255, 0) 100%);
+  z-index: 1;
+}
+/* line 94, page_public_question.less */
+body.page-public-question .wrapper .question a.add-answer {
+  margin-top: 20px;
+}
+/* line 98, page_public_question.less */
+body.page-public-question .wrapper > .left {
+  overflow: hidden;
+  float: left;
+  width: 44%;
+}
+/* line 103, page_public_question.less */
+body.page-public-question .wrapper > .left .answer-author .profile {
+  overflow: hidden;
+}
+/* line 105, page_public_question.less */
+body.page-public-question .wrapper > .left .answer-author .profile .left {
+  float: left;
+  width: 35%;
+}
+/* line 108, page_public_question.less */
+body.page-public-question .wrapper > .left .answer-author .profile .left .photo {
+  overflow: hidden;
+  border-radius: 7px;
+  -o-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+}
+/* line 114, page_public_question.less */
+body.page-public-question .wrapper > .left .answer-author .profile .left .photo img {
+  display: block;
+  width: 100%;
+}
+/* line 119, page_public_question.less */
+body.page-public-question .wrapper > .left .answer-author .profile .left .place {
+  margin-top: 17px;
+  text-align: center;
+  color: #8aa4a2;
+  font: 400 1.2rem Roboto;
+}
+/* line 124, page_public_question.less */
+body.page-public-question .wrapper > .left .answer-author .profile .left .place .fa {
+  color: #4ad0c5;
+}
+/* line 131, page_public_question.less */
+body.page-public-question .wrapper > .left .answer-author .profile .right {
+  float: right;
+  width: 59%;
+  overflow: hidden;
+}
+/* line 135, page_public_question.less */
+body.page-public-question .wrapper > .left .answer-author .profile .right header {
+  overflow: hidden;
+}
+/* line 137, page_public_question.less */
+body.page-public-question .wrapper > .left .answer-author .profile .right header .name {
+  font: 700 1.8rem Roboto;
+}
+/* line 139, page_public_question.less */
+body.page-public-question .wrapper > .left .answer-author .profile .right header .name a {
+  color: #4ad0c5;
+}
+/* line 142, page_public_question.less */
+body.page-public-question .wrapper > .left .answer-author .profile .right header .name .lastname {
+  text-transform: uppercase;
+}
+/* line 145, page_public_question.less */
+body.page-public-question .wrapper > .left .answer-author .profile .right header .name .firstname {
+  text-transform: none;
+}
+/* line 148, page_public_question.less */
+body.page-public-question .wrapper > .left .answer-author .profile .right header .name .job {
+  color: #35504e;
+  font: 500 1.4rem Roboto;
+  margin-top: 3px;
+}
+/* line 152, page_public_question.less */
+body.page-public-question .wrapper > .left .answer-author .profile .right header .name .job span.age {
+  margin-left: 15px;
+  color: #8aa4a2;
+}
+/* line 157, page_public_question.less */
+body.page-public-question .wrapper > .left .answer-author .profile .right header .name p {
+  margin: 0;
+}
+/* line 162, page_public_question.less */
+body.page-public-question .wrapper > .left .answer-author .profile .right .rating-block {
+  width: 50px;
+  margin-top: 14px;
+  margin-bottom: 11px;
+}
+/* line 168, page_public_question.less */
+body.page-public-question .wrapper > .left .answer-author .profile .right .published p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #35504e;
+}
+/* line 172, page_public_question.less */
+body.page-public-question .wrapper > .left .answer-author .profile .right .published p .date {
+  color: #8aa4a2;
+}
+/* line 178, page_public_question.less */
+body.page-public-question .wrapper > .left .answer-author .profile a.btn {
+  margin-top: 10px;
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+/* line 185, page_public_question.less */
+body.page-public-question .wrapper > .left .repost-answer {
+  overflow: hidden;
+}
+/* line 188, page_public_question.less */
+body.page-public-question .wrapper > .left .repost-answer .social .social-item {
+  float: left;
+  width: 100px;
+  height: 83px;
+  cursor: pointer;
+  margin-right: 25px;
+}
+/* line 194, page_public_question.less */
+body.page-public-question .wrapper > .left .repost-answer .social .social-item p.value {
+  margin: 0;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-top: 10px;
+}
+/* line 201, page_public_question.less */
+body.page-public-question .wrapper > .left .repost-answer .social .social-item.fb {
+  background: url('../images/fb-sprite.png');
+  color: #3b5998;
+}
+/* line 205, page_public_question.less */
+body.page-public-question .wrapper > .left .repost-answer .social .social-item.vk {
+  background: url('../images/vk-sprite.png');
+  color: #4c75a3;
+}
+/* line 209, page_public_question.less */
+body.page-public-question .wrapper > .left .repost-answer .social .social-item.ok {
+  background: url('../images/ok-sprite.png');
+  color: #fa9616;
+  margin-right: 0;
+}
+/* line 214, page_public_question.less */
+body.page-public-question .wrapper > .left .repost-answer .social .social-item:hover {
+  background-position: -100px 0;
+}
+/* line 218, page_public_question.less */
+body.page-public-question .wrapper > .left .repost-answer .social h5 {
+  margin-top: 20px;
+}
+/* line 221, page_public_question.less */
+body.page-public-question .wrapper > .left .repost-answer .social .copy-link-container {
+  height: 38px;
+  border: solid 1px #8aa4a2;
+  border-radius: 4px;
+  -o-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  overflow: hidden;
+}
+/* line 229, page_public_question.less */
+body.page-public-question .wrapper > .left .repost-answer .social .copy-link-container input[type="text"] {
+  display: block;
+  overflow: hidden;
+  width: 85%;
+  border: none;
+  font-size: 1.4rem;
+}
+/* line 236, page_public_question.less */
+body.page-public-question .wrapper > .left .repost-answer .social .copy-link-container span.copy-link-button {
+  display: block;
+  cursor: pointer;
+  float: right;
+  width: 15%;
+  height: 100%;
+  text-align: center;
+  color: #ffffff;
+  line-height: 38px;
+  background: #4ad0c5;
+}
+/* line 246, page_public_question.less */
+body.page-public-question .wrapper > .left .repost-answer .social .copy-link-container span.copy-link-button:hover {
+  background: #41b6ad;
+}
+/* line 255, page_public_question.less */
+body.page-public-question .wrapper > .left .same-answers .answers .item {
+  margin-bottom: 30px;
+}
+/* line 259, page_public_question.less */
+body.page-public-question .wrapper > .left .same-answers .answers .author .photo {
+  float: left;
+  overflow: hidden;
+  border-radius: 50px;
+  -o-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+/* line 269, page_public_question.less */
+body.page-public-question .wrapper > .left .same-answers .answers .author .photo img {
+  display: block;
+}
+/* line 273, page_public_question.less */
+body.page-public-question .wrapper > .left .same-answers .answers .author .about {
+  overflow: hidden;
+}
+/* line 275, page_public_question.less */
+body.page-public-question .wrapper > .left .same-answers .answers .author .about p {
+  margin: 0;
+}
+/* line 277, page_public_question.less */
+body.page-public-question .wrapper > .left .same-answers .answers .author .about p.name {
+  font-size: 1.2rem;
+  color: #4ad0c5;
+  font-weight: 700;
+}
+/* line 282, page_public_question.less */
+body.page-public-question .wrapper > .left .same-answers .answers .author .about p.job {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+/* line 286, page_public_question.less */
+body.page-public-question .wrapper > .left .same-answers .answers .author .about p.category {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 30px;
+}
+/* line 290, page_public_question.less */
+body.page-public-question .wrapper > .left .same-answers .answers .author .about p.category .value {
+  color: #35504e;
+}
+/* line 297, page_public_question.less */
+body.page-public-question .wrapper > .left .same-answers .answers .item > h5 {
+  padding-bottom: 0;
+}
+/* line 301, page_public_question.less */
+body.page-public-question .wrapper > .left .same-answers .answers .content p {
+  margin: 5px 0 0 0;
+}
+/* line 304, page_public_question.less */
+body.page-public-question .wrapper > .left .same-answers .answers .content .fader {
+  position: absolute;
+  width: 100%;
+  height: 44px;
+  bottom: 0;
+  background: -webkit-linear-gradient(90deg, #fefefe 0%, #fefefe 16%, rgba(255, 255, 255, 0) 100%);
+  background: -moz-linear-gradient(90deg, #fefefe 0%, #fefefe 16%, rgba(255, 255, 255, 0) 100%);
+  background: -o-linear-gradient(90deg, #fefefe 0%, #fefefe 16%, rgba(255, 255, 255, 0) 100%);
+  background: -ms-linear-gradient(90deg, #fefefe 0%, #fefefe 16%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(0deg, #fefefe 0%, #fefefe 16%, rgba(255, 255, 255, 0) 100%);
+  z-index: 1;
+}
+/* line 317, page_public_question.less */
+body.page-public-question .wrapper > .left .same-answers .answers a.readmore {
+  color: #4ad0c5;
+  font: 400 1.2rem Roboto;
+  text-decoration: none;
+}
+/* line 321, page_public_question.less */
+body.page-public-question .wrapper > .left .same-answers .answers a.readmore:hover {
+  text-decoration: underline;
+}
+/* line 325, page_public_question.less */
+body.page-public-question .wrapper > .left .same-answers .answers a#load-all-answers {
+  display: block;
+  width: 80%;
+  margin: auto;
+}
+/* line 333, page_public_question.less */
+body.page-public-question .wrapper > .right {
+  overflow: hidden;
+  float: right;
+  width: 54%;
+}
+/* line 338, page_public_question.less */
+body.page-public-question .wrapper > .right .answer .answer-menu.popup-menu {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+/* line 343, page_public_question.less */
+body.page-public-question .wrapper > .right .answer .answer-content {
+  margin-top: 20px;
+}
+/* line 346, page_public_question.less */
+body.page-public-question .wrapper > .right .answer p.like-it {
+  text-align: right;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-bottom: 0;
+}
+/* line 352, page_public_question.less */
+body.page-public-question .wrapper > .right .answer p.like-it:hover {
+  color: #35504e;
+}
+/* line 355, page_public_question.less */
+body.page-public-question .wrapper > .right .answer p.like-it i.fa {
+  margin: 0 5px;
+  font-size: 1.4rem;
+}
+/* line 359, page_public_question.less */
+body.page-public-question .wrapper > .right .answer p.like-it span.count {
+  color: #ffffff;
+  background: #fac944;
+  border-radius: 4px;
+  -o-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  padding: 3px 7px;
+}
+/* line 371, page_public_question.less */
+body.page-public-question .wrapper > .right .all-comments form.write-comment {
+  overflow: hidden;
+}
+/* line 373, page_public_question.less */
+body.page-public-question .wrapper > .right .all-comments form.write-comment .photo-container {
+  float: left;
+  overflow: hidden;
+  width: 50px;
+  border-radius: 50px;
+  -o-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  margin-right: 20px;
+  border: solid 1px #8aa4a2;
+}
+/* line 383, page_public_question.less */
+body.page-public-question .wrapper > .right .all-comments form.write-comment .photo-container img {
+  display: block;
+}
+/* line 387, page_public_question.less */
+body.page-public-question .wrapper > .right .all-comments form.write-comment .field.comment {
+  overflow: hidden;
+}
+/* line 390, page_public_question.less */
+body.page-public-question .wrapper > .right .all-comments form.write-comment input[type="submit"] {
+  float: right;
+  margin-top: 10px;
+}
+/* line 396, page_public_question.less */
+body.page-public-question .wrapper > .right .all-comments .all-comments .comment {
+  margin-top: 20px;
+}
+/* line 399, page_public_question.less */
+body.page-public-question .wrapper > .right .all-comments .all-comments .comment .author .author-menu {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  z-index: 1;
+}
+/* line 405, page_public_question.less */
+body.page-public-question .wrapper > .right .all-comments .all-comments .comment .author .photo-container {
+  overflow: hidden;
+  float: left;
+  width: 50px;
+  border-radius: 50px;
+  -o-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  margin-right: 20px;
+  border: solid 1px #8aa4a2;
+}
+/* line 415, page_public_question.less */
+body.page-public-question .wrapper > .right .all-comments .all-comments .comment .author .photo-container img {
+  display: block;
+}
+/* line 419, page_public_question.less */
+body.page-public-question .wrapper > .right .all-comments .all-comments .comment .author .about {
+  overflow: hidden;
+}
+/* line 421, page_public_question.less */
+body.page-public-question .wrapper > .right .all-comments .all-comments .comment .author .about p.name {
+  color: #4ad0c5;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 4px 0;
+}
+/* line 426, page_public_question.less */
+body.page-public-question .wrapper > .right .all-comments .all-comments .comment .author .about p.name span {
+  color: #8aa4a2;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+/* line 431, page_public_question.less */
+body.page-public-question .wrapper > .right .all-comments .all-comments .comment .author .about p.name i.fa {
+  margin-left: 5px;
+  margin-right: 10px;
+}
+/* line 435, page_public_question.less */
+body.page-public-question .wrapper > .right .all-comments .all-comments .comment .author .about p.name .online {
+  color: #fac944;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+/* line 440, page_public_question.less */
+body.page-public-question .wrapper > .right .all-comments .all-comments .comment .author .about p.name .offline {
+  color: #b9d4cc;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+/* line 446, page_public_question.less */
+body.page-public-question .wrapper > .right .all-comments .all-comments .comment .author .about p.job {
+  color: #8aa4a2;
+  font-weight: 700;
+  margin: 4px 0;
+}
+/* line 451, page_public_question.less */
+body.page-public-question .wrapper > .right .all-comments .all-comments .comment .author .about p.like-it {
+  text-align: right;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+/* line 456, page_public_question.less */
+body.page-public-question .wrapper > .right .all-comments .all-comments .comment .author .about p.like-it:hover {
+  color: #35504e;
+}
+/* line 459, page_public_question.less */
+body.page-public-question .wrapper > .right .all-comments .all-comments .comment .author .about p.like-it i.fa {
+  margin: 0 5px;
+  font-size: 1.4rem;
+}
+/* line 463, page_public_question.less */
+body.page-public-question .wrapper > .right .all-comments .all-comments .comment .author .about p.like-it span.count {
+  color: #ffffff;
+  background: #fac944;
+  border-radius: 4px;
+  -o-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  padding: 3px 7px;
+}
 /* line 3, page_reviews.less */
 body.page-reviews .wrapper section.reviews {
   float: left;

@@ -31,6 +31,7 @@
             <li><a href="page_consultant_list.php">Список консультантов.</a></li>
             <li><a href="page_question_list.php">Список личных вопросов.</a></li>
             <li><a href="page_public_question_list.php">Список публичных вопросов.</a></li>
+            <li><a href="page_public_question.php">Публичный вопрос.</a></li>
             <li><a href="page_reviews.php">Список отзывов о консультантах.</a></li>
             <li><a href="page_consultation.php">Страница консультации.</a></li>
             <li><a href="modal_signup_to_consultation.php">Окно записи на консультацию.</a></li>
