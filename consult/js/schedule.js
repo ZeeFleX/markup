@@ -148,6 +148,21 @@
 		//Если есть расписание, то спрашиваем евенты на эту дату, ждем JSON, строим зарезервированные области
 		if($(grid).length){
 			$.ajax({	//AJAX-запрос на события определенной даты
+				url: 'server_side/get_worktime.php',
+				type: 'POST',
+				dataType: 'JSON',
+				data: {
+					date: date
+				},
+				success: function(data){
+					console.log(data);
+					$.each(data, function(key, val){
+						var classes = val.join(' ');
+						$(planer).append('<div class="row ' + classes + '" data-time="' + (key + 1) + '"><div class="marker meeting"></div><div class="marker online"></div><div class="marker selector"></div></div>');
+					});
+				}
+			});
+			$.ajax({	//AJAX-запрос на события определенной даты
 				url: 'server_side/get_schedule.php',
 				type: 'POST',
 				dataType: 'JSON',
@@ -635,6 +650,8 @@
 		var evnts = getEvents();
 		var plan = getWorkTime();
 		var result = true;
+		console.log(evnts);
+		console.log(plan);
 		if(typeof(timeArr) != 'undefined'){
 			if(target == 'plan'){
 				if(_.indexOf(typeArray,'online') != -1){
@@ -725,7 +742,32 @@
 					$(planer).find('.row[data-time="' + row + '"]').addClass(type);
 				});
 			}
-			
+		});
+		ajaxWorktime();
+	}
+	//Функция установки рабочего времени
+	var ajaxWorktime = function(){
+		var rows = $(planer).find('.row');
+
+		var worktimeArray = [];
+		$.each($(rows), function(key, row){
+			worktimeArray[key] = [];
+			if(!$(row).hasClass('meeting') && !$(row).hasClass('online')) worktimeArray[key].push('unwork');
+			if($(row).hasClass('meeting')) worktimeArray[key].push('meeting');
+			if($(row).hasClass('online')) worktimeArray[key].push('online');
+		});
+		$.ajax({
+			url: 'server_side/events.php',
+			type: 'POST',
+			dataType: 'JSON',
+			data: {
+				action: 'setWorkTime',
+				worktime: JSON.stringify(worktimeArray)
+			},
+			success: function(data){
+				//колбек на успешный ответ от сервера
+				callback(data);
+			}
 		});
 	}
 

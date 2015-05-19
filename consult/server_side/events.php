@@ -30,5 +30,9 @@
 			$event->id = rand(100,1000);
 			echo json_encode($event);
 		break;
+		case 'setWorkTime':
+			$worktime = json_decode($_POST['worktime']);
+			echo json_encode($worktime);
+		break;
 	}
 ?>
