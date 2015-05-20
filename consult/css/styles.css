@@ -157,7 +157,7 @@ p {
   box-shadow: none;
   border: solid 1px #35504e;
   color: #35504e;
-  padding: 7px 17px 6px 17px;
+  padding: 8px 17px 8px 17px;
 }
 /* line 152, interface.less */
 .btn.ghost:hover {
@@ -6930,5 +6930,178 @@ body.page-payment-history .wrapper aside {
   float: left;
   width: 36%;
   margin-left: 2%;
+}
+/* line 3, page_user_consults.less */
+body.page-user-consults > .wrapper .consults {
+  margin-top: 20px;
+  overflow: hidden;
+}
+/* line 6, page_user_consults.less */
+body.page-user-consults > .wrapper .consults .column {
+  float: left;
+  width: 49%;
+  margin-right: 2%;
+}
+/* line 10, page_user_consults.less */
+body.page-user-consults > .wrapper .consults .column:nth-child(even) {
+  margin-right: 0;
+}
+/* line 13, page_user_consults.less */
+body.page-user-consults > .wrapper .consults .column .consult {
+  margin-bottom: 20px;
+}
+/* line 15, page_user_consults.less */
+body.page-user-consults > .wrapper .consults .column .consult .btn {
+  font-size: 1.2rem;
+}
+/* line 19, page_user_consults.less */
+body.page-user-consults > .wrapper .consults .column .consult .info i.fa-calendar {
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  font-size: 1.8rem;
+  color: #eb5245;
+  z-index: 1;
+}
+/* line 28, page_user_consults.less */
+body.page-user-consults > .wrapper .consults .column .consult .info h5 {
+  padding-top: 0;
+}
+/* line 31, page_user_consults.less */
+body.page-user-consults > .wrapper .consults .column .consult .info p {
+  margin: 5px 0;
+  font-weight: 500;
+  color: #35504e;
+}
+/* line 35, page_user_consults.less */
+body.page-user-consults > .wrapper .consults .column .consult .info p span.key {
+  color: #8aa4a2;
+}
+/* line 38, page_user_consults.less */
+body.page-user-consults > .wrapper .consults .column .consult .info p a {
+  color: #4ad0c5;
+}
+/* line 40, page_user_consults.less */
+body.page-user-consults > .wrapper .consults .column .consult .info p a:hover {
+  text-decoration: none;
+}
+/* line 45, page_user_consults.less */
+body.page-user-consults > .wrapper .consults .column .consult .info p.price span.paided {
+  margin-left: 30px;
+  color: #0f9b58;
+}
+/* line 49, page_user_consults.less */
+body.page-user-consults > .wrapper .consults .column .consult .info p.price span.not-paided {
+  margin-left: 30px;
+  color: #eb5245;
+}
+/* line 56, page_user_consults.less */
+body.page-user-consults > .wrapper .consults .column .consult .invitation {
+  margin: 20px 0;
+}
+/* line 59, page_user_consults.less */
+body.page-user-consults > .wrapper .consults .column .consult .go-to-session {
+  margin: 10px 0;
+  font-weight: 500;
+}
+/* line 62, page_user_consults.less */
+body.page-user-consults > .wrapper .consults .column .consult .go-to-session .time-remaining {
+  color: #4ad0c5;
+}
+/* line 66, page_user_consults.less */
+body.page-user-consults > .wrapper .consults .column .consult .consult-actions {
+  margin: 20px 0;
+}
+/* line 68, page_user_consults.less */
+body.page-user-consults > .wrapper .consults .column .consult .consult-actions a {
+  display: block;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+/* line 76, page_user_consults.less */
+body.page-user-consults > .wrapper .consults .column .consult .questions .question {
+  margin-bottom: 20px;
+}
+/* line 78, page_user_consults.less */
+body.page-user-consults > .wrapper .consults .column .consult .questions .question .question-menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+/* line 83, page_user_consults.less */
+body.page-user-consults > .wrapper .consults .column .consult .questions .question .author {
+  overflow: hidden;
+}
+/* line 85, page_user_consults.less */
+body.page-user-consults > .wrapper .consults .column .consult .questions .question .author .photo-container {
+  float: left;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  -o-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  overflow: hidden;
+  border: solid 1px #8aa4a2;
+  margin-right: 20px;
+}
+/* line 97, page_user_consults.less */
+body.page-user-consults > .wrapper .consults .column .consult .questions .question .author .container {
+  overflow: hidden;
+}
+/* line 99, page_user_consults.less */
+body.page-user-consults > .wrapper .consults .column .consult .questions .question .author .container p {
+  margin: 2px 0;
+}
+/* line 101, page_user_consults.less */
+body.page-user-consults > .wrapper .consults .column .consult .questions .question .author .container p.name {
+  color: #4ad0c5;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+/* line 106, page_user_consults.less */
+body.page-user-consults > .wrapper .consults .column .consult .questions .question .author .container p.job {
+  color: #8aa4a2;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+/* line 114, page_user_consults.less */
+body.page-user-consults > .wrapper .consults .column .consult .questions .question p.text {
+  margin-left: 70px;
+}
+/* line 117, page_user_consults.less */
+body.page-user-consults > .wrapper .consults .column .consult .questions .question p.date {
+  margin-left: 70px;
+  color: #b9d4cc;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 10px;
+}
+/* line 125, page_user_consults.less */
+body.page-user-consults > .wrapper .consults .column .consult .questions a#read-more {
+  color: #4ad0c5;
+  font-size: 1.2rem;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+}
+/* line 131, page_user_consults.less */
+body.page-user-consults > .wrapper .consults .column .consult .questions a#read-more:hover {
+  text-decoration: underline;
+}
+/* line 135, page_user_consults.less */
+body.page-user-consults > .wrapper .consults .column .consult .questions form.ask-question {
+  overflow: hidden;
+  margin-top: 20px;
+}
+/* line 138, page_user_consults.less */
+body.page-user-consults > .wrapper .consults .column .consult .questions form.ask-question textarea {
+  height: 98px;
+}
+/* line 141, page_user_consults.less */
+body.page-user-consults > .wrapper .consults .column .consult .questions form.ask-question input.btn {
+  float: right;
 }
 /*# sourceMappingURL=styles.css.map */

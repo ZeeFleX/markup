@@ -44,6 +44,7 @@
             <li><a href="page_clients.php">Консультант. Мои клиенты</a></li>
             <li><a href="page_payment_history.php">История оплат</a></li>
             <li><a href="page_payment_history.php?nopayments=1">История оплат (нет платежей)</a></li>
+            <li><a href="page_user_consults.php">Мои консультации</a></li>
         </ol>
         <h1>Полезные ссылки</h1>
         <ol>
