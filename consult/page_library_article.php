@@ -201,6 +201,20 @@
                 <a href="#" class="btn ghost">Посмотреть все статьи автора</a>
             </section>
         </section>
+        <section class="article-author moderator">
+            <h4>Автор статьи (модератор)</h4>
+            <section class="resume content-block">
+                <header>
+                    <p class="author">Модератор</p>
+                    <div class="published">
+                        <p>Статья опубликована</p>
+                        <p class="date">12 декабря 2015</p>
+                    </div>
+                </header>
+                <div class="clr"></div>
+                <a href="#" class="btn ghost">Посмотреть все статьи автора</a>
+            </section>
+        </section>
         <section class="repost-article">
             <h4>Поделиться статьей</h4>
             <div class="social content-block">
