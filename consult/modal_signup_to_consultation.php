@@ -81,6 +81,8 @@
                             <div class="label">2 часа</div>
                         </div>
                     </div>
+                    <h5>Офис проведения консультации</h5>
+                    <p class="place"><i class="fa fa-map-marker"></i> Москва, пер. Святошинский, 32</p>
                     <h5>Стоимость консультации</h5>
                     <p class="price">
                         <span class="value">3000</span> <i class="fa fa-ruble"></i>
@@ -144,7 +146,11 @@
                 <div class="clr"></div>
                 <input type="submit" value="Записаться на консультацию"  class="btn"/>
                 <a href="#" class="btn ghost">Отменить</a>
+                
             </form>
+            <p class="endnote">
+                Не удалось выбрать удобное время? <a href="#">Оставьте заявку.</a> Консультант свяжется с вами в ближайшее время.
+            </p>
         </div>
     </div>
     <NOSCRIPT>

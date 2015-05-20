@@ -4652,10 +4652,20 @@ body.page-public-question-list .wrapper section.questions .question:nth-child(2n
   clear: left;
 }
 /* line 90, page_public_question_list.less */
+body.page-public-question-list .wrapper section.questions .question a.answer-author-link {
+  color: #4ad0c5;
+  text-decoration: none;
+}
+/* line 93, page_public_question_list.less */
+body.page-public-question-list .wrapper section.questions .question a.answer-author-link:hover {
+  color: #4ad0c5;
+  text-decoration: underline;
+}
+/* line 98, page_public_question_list.less */
 body.page-public-question-list .wrapper section.questions .question .author {
   overflow: hidden;
 }
-/* line 92, page_public_question_list.less */
+/* line 100, page_public_question_list.less */
 body.page-public-question-list .wrapper section.questions .question .author .photo-container {
   float: left;
   width: 50px;
@@ -4668,55 +4678,55 @@ body.page-public-question-list .wrapper section.questions .question .author .pho
   border: solid 1px #8aa4a2;
   margin-right: 20px;
 }
-/* line 104, page_public_question_list.less */
+/* line 112, page_public_question_list.less */
 body.page-public-question-list .wrapper section.questions .question .author .container {
   overflow: hidden;
 }
-/* line 106, page_public_question_list.less */
+/* line 114, page_public_question_list.less */
 body.page-public-question-list .wrapper section.questions .question .author .container p {
   margin: 2px 0;
 }
-/* line 108, page_public_question_list.less */
+/* line 116, page_public_question_list.less */
 body.page-public-question-list .wrapper section.questions .question .author .container p.name {
   color: #4ad0c5;
   font-size: 1.2rem;
   font-weight: 700;
 }
-/* line 113, page_public_question_list.less */
+/* line 121, page_public_question_list.less */
 body.page-public-question-list .wrapper section.questions .question .author .container p.job {
   color: #8aa4a2;
   font-size: 1.2rem;
   font-weight: 700;
 }
-/* line 118, page_public_question_list.less */
+/* line 126, page_public_question_list.less */
 body.page-public-question-list .wrapper section.questions .question .author .container p.category {
   font-size: 1.0rem;
   color: #8aa4a2;
   margin-top: 10px;
   font-weight: 700;
 }
-/* line 123, page_public_question_list.less */
+/* line 131, page_public_question_list.less */
 body.page-public-question-list .wrapper section.questions .question .author .container p.category span {
   color: #35504e;
 }
-/* line 130, page_public_question_list.less */
+/* line 138, page_public_question_list.less */
 body.page-public-question-list .wrapper section.questions .question h4 {
   color: #35504e;
   font-size: 1.4rem;
   font-weight: 500;
 }
-/* line 134, page_public_question_list.less */
+/* line 142, page_public_question_list.less */
 body.page-public-question-list .wrapper section.questions .question h4 span {
   color: #4ad0c5;
 }
-/* line 138, page_public_question_list.less */
+/* line 146, page_public_question_list.less */
 body.page-public-question-list .wrapper section.questions .question .answer-content,
 body.page-public-question-list .wrapper section.questions .question .question-content {
   min-height: 100px;
   max-height: 300px;
   overflow: hidden;
 }
-/* line 142, page_public_question_list.less */
+/* line 150, page_public_question_list.less */
 body.page-public-question-list .wrapper section.questions .question .answer-content .fader,
 body.page-public-question-list .wrapper section.questions .question .question-content .fader {
   position: absolute;
@@ -4739,13 +4749,13 @@ body.page-public-question-list .wrapper section.questions .question .question-co
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#ffffff', GradientType=0);
   /* IE6-9 */
 }
-/* line 158, page_public_question_list.less */
+/* line 166, page_public_question_list.less */
 body.page-public-question-list .wrapper section.questions .question a#read-more {
   color: #4ad0c5;
   font-size: 1.2rem;
   text-decoration: none;
 }
-/* line 162, page_public_question_list.less */
+/* line 170, page_public_question_list.less */
 body.page-public-question-list .wrapper section.questions .question a#read-more:hover {
   text-decoration: underline;
 }
@@ -5886,15 +5896,16 @@ body.page-consultation section.reviews .write-review textarea {
   position: relative;
   width: 550px;
   height: auto;
-  margin: 100px auto;
+  margin: 30px auto;
   background: #ffffff;
   border-radius: 5px;
   -o-border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   padding: 30px;
+  padding-bottom: 100px;
 }
-/* line 20, modal_sign_up_consultation.less */
+/* line 21, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container i.fa-close {
   position: absolute;
   right: 30px;
@@ -5902,22 +5913,22 @@ body.page-consultation section.reviews .write-review textarea {
   cursor: pointer;
   font-size: 1.8rem;
 }
-/* line 26, modal_sign_up_consultation.less */
+/* line 27, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container i.fa-close:hover {
   color: #35504e;
 }
-/* line 30, modal_sign_up_consultation.less */
+/* line 31, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container h1 {
   font-size: 2.4rem;
   font-weight: 500;
   padding-top: 0;
   margin-top: -7px;
 }
-/* line 36, modal_sign_up_consultation.less */
+/* line 37, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container .profile {
   overflow: hidden;
 }
-/* line 38, modal_sign_up_consultation.less */
+/* line 39, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container .profile .photo-container {
   float: left;
   margin-right: 20px;
@@ -5929,76 +5940,76 @@ body.page-consultation section.reviews .write-review textarea {
   -moz-border-radius: 120px;
   overflow: hidden;
 }
-/* line 48, modal_sign_up_consultation.less */
+/* line 49, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container .profile .photo-container img {
   width: 100%;
   display: block;
 }
-/* line 53, modal_sign_up_consultation.less */
+/* line 54, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container .profile .about {
   overflow: hidden;
 }
-/* line 55, modal_sign_up_consultation.less */
+/* line 56, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container .profile .about .rating-block {
   width: 50px;
   margin-bottom: 10px;
 }
-/* line 60, modal_sign_up_consultation.less */
+/* line 61, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container .profile .about p.name {
   display: block;
   overflow: hidden;
   color: #35504e;
 }
-/* line 64, modal_sign_up_consultation.less */
+/* line 65, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container .profile .about p.name .lastname {
   font-size: 1.8rem;
   text-transform: uppercase;
   font-weight: 700;
 }
-/* line 69, modal_sign_up_consultation.less */
+/* line 70, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container .profile .about p.name .firstname {
   font-size: 1.6rem;
   font-weight: 700;
 }
-/* line 74, modal_sign_up_consultation.less */
+/* line 75, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container .profile .about p.job {
   font-size: 1.4rem;
   font-weight: 500;
   color: #4ad0c5;
 }
-/* line 78, modal_sign_up_consultation.less */
+/* line 79, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container .profile .about p.job span.age {
   margin-left: 20px;
   color: #8aa4a2;
 }
-/* line 85, modal_sign_up_consultation.less */
+/* line 86, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container form {
   width: 510px;
   position: relative;
 }
-/* line 89, modal_sign_up_consultation.less */
+/* line 90, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container form h5 {
   margin-top: 20px;
 }
-/* line 92, modal_sign_up_consultation.less */
+/* line 93, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container form .calendar {
   margin: 0;
 }
-/* line 95, modal_sign_up_consultation.less */
+/* line 96, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container form .calendar header a {
   color: #35504e;
 }
-/* line 100, modal_sign_up_consultation.less */
+/* line 101, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container form .left {
   width: 300px;
 }
-/* line 103, modal_sign_up_consultation.less */
+/* line 104, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container form .left .time-slider {
   width: 290px;
   webkit-user-select: none;
   -moz-user-select: none;
 }
-/* line 107, modal_sign_up_consultation.less */
+/* line 108, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container form .left .time-slider .bar {
   margin-top: 20px;
   border-radius: 2px;
@@ -6010,7 +6021,7 @@ body.page-consultation section.reviews .write-review textarea {
   background: url('../images/sliderbar-bg.png') right center repeat-y;
   background-position: -290px 0;
 }
-/* line 117, modal_sign_up_consultation.less */
+/* line 118, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container form .left .time-slider .bar .handler {
   position: relative;
   cursor: pointer;
@@ -6026,7 +6037,7 @@ body.page-consultation section.reviews .write-review textarea {
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
 }
-/* line 133, modal_sign_up_consultation.less */
+/* line 134, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container form .left .time-slider .labels {
   width: 115%;
   margin-top: 10px;
@@ -6034,62 +6045,93 @@ body.page-consultation section.reviews .write-review textarea {
   -webkit-user-select: none;
   -moz-user-select: none;
 }
-/* line 139, modal_sign_up_consultation.less */
+/* line 140, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container form .left .time-slider .labels .label {
   float: left;
   width: 25%;
   font-size: 1.2rem;
 }
-/* line 146, modal_sign_up_consultation.less */
+/* line 147, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container form .left p.price {
   color: #4ad0c5;
   font-size: 3.0rem;
   margin-top: -10px;
   margin-bottom: 35px;
 }
-/* line 151, modal_sign_up_consultation.less */
+/* line 152, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container form .left p.price i {
   font-size: 2.6rem;
 }
 /* line 156, modal_sign_up_consultation.less */
+.window.sign-up-consultation > .container form .left p.place {
+  font-size: 1.4rem;
+  margin-top: 0;
+}
+/* line 159, modal_sign_up_consultation.less */
+.window.sign-up-consultation > .container form .left p.place i.fa-map-marker {
+  color: #4ad0c5;
+  font-size: 1.6rem;
+}
+/* line 165, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container form .right {
   position: absolute;
   bottom: 0;
   right: 0;
   width: 124px;
 }
-/* line 161, modal_sign_up_consultation.less */
+/* line 170, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container form .right .time-container {
   padding: 20px;
-  border: solid 1px #35504e;
+  border: solid 1px #8aa4a2;
   border-radius: 5px;
   -o-border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
+  box-shadow: 0 0 7px #ccc;
+  -moz-box-shadow: 0 0 7px #ccc;
+  -o-box-shadow: 0 0 7px #ccc;
+  -webkit-box-shadow: 0 0 7px #ccc;
 }
-/* line 168, modal_sign_up_consultation.less */
+/* line 181, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container form .right .time-container .grid {
   line-height: 100%;
   font-size: 1.2rem;
 }
-/* line 172, modal_sign_up_consultation.less */
+/* line 185, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container form .right .time-container .grid .row {
   text-align: center;
   padding: 2.4px 0;
 }
-/* line 175, modal_sign_up_consultation.less */
+/* line 188, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container form .right .time-container .grid .row.unwork {
   background: #aabdbb;
   color: #ffffff;
 }
-/* line 179, modal_sign_up_consultation.less */
+/* line 192, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container form .right .time-container .grid .row.reserved {
   background: #33b679;
   color: #ffffff;
 }
-/* line 187, modal_sign_up_consultation.less */
+/* line 200, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container form input[type="submit"] {
   margin-right: 20px;
+}
+/* line 204, modal_sign_up_consultation.less */
+.window.sign-up-consultation > .container p.endnote {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  left: 0;
+  background: #f2f2f2;
+  border-top: solid 1px #e7e7e7;
+  margin: 0;
+  padding: 20px;
+  border-radius: 0 0 5px 5px;
+  -o-border-radius: 0 0 5px 5px;
+  -moz-border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
 }
 /* line 4, page_library.less */
 body.page-library .wrapper section.search-article {
@@ -6618,7 +6660,7 @@ body.page-library-article section.article-author .right header .name .firstname 
 /* line 202, page_library_article.less */
 body.page-library-article section.article-author .right header .name .job {
   color: #35504e;
-  font: 500 1.4rem Roboto;
+  font: 700 1.4rem Roboto;
   margin-top: 5px;
 }
 /* line 206, page_library_article.less */
@@ -6638,7 +6680,7 @@ body.page-library-article section.article-author .right header .published {
 body.page-library-article section.article-author .right header .published p {
   color: #35504e;
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 700;
   margin: 3px 0;
 }
 /* line 222, page_library_article.less */
