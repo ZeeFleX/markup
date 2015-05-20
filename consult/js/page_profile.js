@@ -14,7 +14,7 @@ $(document).ready(function(){
             $beginContainer.select2();
             $endContainer.select2();
             $beginContainer.on('change', function(){
-                var row = $(this).find('option:selected').attr('data-row');
+                var row = parseInt($(this).find('option:selected').attr('data-row'));
                 $.each($endContainer.find('option'), function(key, option){
                     if($(option).attr('data-row') < row){
                         $(option).prop('disabled', true);
@@ -23,7 +23,7 @@ $(document).ready(function(){
                         $(option).prop('disabled', false);
                     }
                 });
-                if($endContainer.find('option:selected').attr('data-row') < $beginContainer.find('option:selected').attr('data-row')){
+                if(parseInt($endContainer.find('option:selected').attr('data-row')) < parseInt($beginContainer.find('option:selected').attr('data-row'))){
                     $endContainer.val($beginContainer.val());
                 }
                 $endContainer.select2();
