@@ -15,6 +15,10 @@
 			var $consult = $(consult);
 			$consult.appendTo($columns[key % 2]);
 		});
+		$consults.find('a#read-more').on('click', function(e){
+			e.preventDefault();
+			$(this).siblings('.question-container').append($(this).siblings('.question-container').find('.question').last().clone());
+		});
 	}
 
 	var readMoreProfile = function(){

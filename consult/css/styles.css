@@ -7084,7 +7084,7 @@ body.page-user-consults > .wrapper .consults .column .consult .questions a#read-
   color: #4ad0c5;
   font-size: 1.2rem;
   text-decoration: none;
-  text-align: center;
+  margin-left: 70px;
   display: block;
 }
 /* line 131, page_user_consults.less */

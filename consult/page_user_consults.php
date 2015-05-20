@@ -74,42 +74,44 @@
                 <div class="clr"></div>
                 <div class="questions">
                     <h5>Вопросы по консультации</h5>
-                    <?php for($i = 0; $i <= 1; $i++) {?>
-                    <div class="question">
-                        <div class="question-menu popup-menu">
-                            <a href="#" class="dotts">
-                                <i class="fa fa-circle"></i>
-                                <i class="fa fa-circle"></i>
-                                <i class="fa fa-circle"></i>
-                                <span class="clr"></span>
-                            </a>
-                            <div class="menu-container">
-                                <div class="menu">
-                                    <div class="siding"></div>
-                                    <a href="#"><i class="fa fa-pencil"></i></a>
-                                    <a href="#"><i class="fa fa-trash-o"></i></a>
-                                    <!-- <a href="#"><i class="fa fa-comment-o"></i></a>
-                                    <a href="#"><i class="fa fa-thumbs-up"></i></a>
-                                    <a href="#"><i class="fa fa-thumbs-down"></i></a> -->
+                    <div class="question-container">
+                        <?php for($i = 0; $i <= 1; $i++) {?>
+                        <div class="question">
+                            <div class="question-menu popup-menu">
+                                <a href="#" class="dotts">
+                                    <i class="fa fa-circle"></i>
+                                    <i class="fa fa-circle"></i>
+                                    <i class="fa fa-circle"></i>
+                                    <span class="clr"></span>
+                                </a>
+                                <div class="menu-container">
+                                    <div class="menu">
+                                        <div class="siding"></div>
+                                        <a href="#"><i class="fa fa-pencil"></i></a>
+                                        <a href="#"><i class="fa fa-trash-o"></i></a>
+                                        <!-- <a href="#"><i class="fa fa-comment-o"></i></a>
+                                        <a href="#"><i class="fa fa-thumbs-up"></i></a>
+                                        <a href="#"><i class="fa fa-thumbs-down"></i></a> -->
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="author">
-                            <div class="photo-container">
-                                <img src="images/photos/02.jpg" alt="">
+                            <div class="author">
+                                <div class="photo-container">
+                                    <img src="images/photos/02.jpg" alt="">
+                                </div>
+                                <div class="container">
+                                    <p class="name">Иван Иванов</p>
+                                    <p class="job">Участник</p>
+                                </div>
                             </div>
-                            <div class="container">
-                                <p class="name">Иван Иванов</p>
-                                <p class="job">Участник</p>
-                            </div>
-                        </div>
-                        <p class="text">
-                            Равным образом укрепление и развитие структуры позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным потребностям. Идейные соображения выс...                  
+                            <p class="text">
+                                Равным образом укрепление и развитие структуры позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным потребностям. Идейные соображения выс...                  
 
-                        </p>
-                        <p class="date">20 минут назад</p>
+                            </p>
+                            <p class="date">20 минут назад</p>
+                        </div>
+                        <?php } ?>
                     </div>
-                    <?php } ?>
                     <a href="#" id="read-more">Показать всю переписку</a>
                     <form action="#" class="ask-question">
                         <textarea name="question" placeholder="Задайте вопрос по консультации" class="allow-clear"></textarea>
