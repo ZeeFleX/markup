@@ -110,6 +110,13 @@ body.page-consultation{
                 }
             }
             .introtext {
+                .introtext-container{
+                    height:85px;
+                    overflow: hidden;
+                    &.opened{
+                        height:auto;
+                    }
+                }
                 a.readmore{
                     color: @sky;
                     font: italic 1.4rem Roboto;
@@ -331,6 +338,13 @@ body.page-consultation{
                         }
                     }
                 }
+                .content-container{
+                    overflow: hidden;
+                    height: 100px;
+                    &.opened{
+                        height: auto;
+                    }
+                }
                 .toolbar {
                     position: absolute;
                     right:0;
@@ -338,7 +352,7 @@ body.page-consultation{
                     .review-menu {
                         float: left;
                         margin-right: 20px;
-                        margin-top: 11px;
+                        margin-top: 6px;
                     }
                     .review-date {
                         float: left;

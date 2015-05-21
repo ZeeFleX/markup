@@ -443,4 +443,191 @@ body.page-profile-settings{
             }
         }
     }
+    &.payment{
+        & > .wrapper{
+            section.content{
+                .payment-block{
+                    .content-block{
+                        padding: 0;
+                        overflow: hidden;
+                        .plan{
+                            float: left;
+                            margin-top: 20px;
+                            margin-left: 4%;
+                            width: 43%;
+                            overflow: hidden;
+                            border-radius:10px;
+                            -o-border-radius:10px;
+                            -webkit-border-radius:10px;
+                            -moz-border-radius:10px;
+                            padding-bottom: 30px;
+                            &.basic{
+                                background: @sea_light;
+                                color:@white;
+                                h4{
+                                    color:#b9d4cc;
+                                }
+                                h4 span{
+                                    background: @sea_light;
+                                }
+                                p.price{
+                                    color:#b9d4cc;
+                                    .value{
+                                        color:@white;
+                                    }
+                                }
+                            }
+                            &.expert{
+                                background: #f2f2f2;
+                                color:@sea_light;
+                                h4{
+                                    color:@sea_light;
+                                }
+                                h4 span{
+                                    background: #f2f2f2;
+                                }
+                                p.price{
+                                    color:#b9d4cc;
+                                    .value{
+                                        color:@sea_light;
+                                    }
+                                }
+                            }
+                            h4{
+                                border-bottom:solid 1px #b9d4cc;
+                                line-height:0;
+                                text-align: center;
+                                width: 100%;
+                                padding: 0;
+                                margin:20px auto;
+                                font-size: 1.1rem; 
+                                font-weight: 500;
+                                text-transform: uppercase;
+                                span{
+                                    padding-left: 10px;
+                                    padding-right: 10px;
+                                }
+                            }
+                            p{
+                                text-align: center;
+                            }
+                            p.title{
+                                font-size:2.4rem;
+                                font-weight:500;
+                                margin-top: 0;
+                                margin-bottom: 0;
+                            }
+                            p.price{
+                                font-size:1.6rem;
+                                margin-bottom: 20px;
+                            }
+                            p.status{
+                                font-size:1.2rem;
+                                i{
+                                    font-size:1.4rem;
+                                }
+                            }
+                            a.payment-button{
+                                width:100px;
+                                display: block;
+                                margin:auto;
+                                text-align: center;
+                                margin-top:-4px;
+                            }
+                        }
+                        .info{
+                            border-top:solid 1px #b9d4cc;
+                            background: #f8f8f8;
+                            box-sizing:border-box;
+                            -moz-box-sizing:border-box;
+                            padding:15px 20px;
+                            margin-top: 30px;
+                            i{
+                                display: block;
+                                float: left;
+                                font-size:4rem;
+                                margin-right: 20px;
+                            }
+                            .text{
+                                overflow: hidden;
+                                p{
+                                    margin: 2px 0;
+                                    font-weight:500;
+                                    .date{
+                                        font-weight:700;
+                                        color:@sea;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .tarification-block{
+                    .content-block{
+                        padding: 0;
+                        table{
+                            border-collapse:collapse;
+                            width: 100%;
+                            tr{
+                                td,th{
+                                    border-bottom:solid 1px #b9d4cc;
+                                }
+                            }
+                            th, td{
+                                padding:15px 20px;
+                            }
+                            thead{
+                                th{
+                                    padding: 25px 20px;
+                                    color:@sea_light;
+                                    font-weight:400;
+                                    text-align: left;
+                                }
+                            }
+                            tbody{
+                                td{
+                                    &.func{
+                                        color:@sea;
+                                        font-weight:700;
+                                    }
+                                    &:not(.func){
+                                        text-align: center;
+                                        width:80px;
+                                    }
+                                    i.fa{
+                                        font-size:2.4rem;
+                                        &.fa-check{
+                                            color:@green;
+                                        }
+                                        &.fa-times{
+                                            color:@red;
+                                        }
+                                    }
+                                    span.endnote{
+                                        font-size:1.0rem;
+                                        color:@sea_light;
+                                        line-height:100%;
+                                        display: block;
+                                        margin-top: 5px;
+                                    }
+                                }
+                                tr:last-child{
+                                    td{
+                                        vertical-align: top;
+                                        color:@sea_light;
+                                        font-size:1.0rem;
+                                        font-weight:500;
+                                        span{
+                                            color:@sea;
+                                            font-size:1.4rem
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

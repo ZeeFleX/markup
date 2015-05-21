@@ -2773,6 +2773,213 @@ body.page-profile-settings.worktime form input[type="submit"] {
   margin-right: 20px;
   padding: 9px 17px 6px 17px;
 }
+/* line 450, page_profile_settings.less */
+body.page-profile-settings.payment > .wrapper section.content .payment-block .content-block {
+  padding: 0;
+  overflow: hidden;
+}
+/* line 453, page_profile_settings.less */
+body.page-profile-settings.payment > .wrapper section.content .payment-block .content-block .plan {
+  float: left;
+  margin-top: 20px;
+  margin-left: 4%;
+  width: 43%;
+  overflow: hidden;
+  border-radius: 10px;
+  -o-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  padding-bottom: 30px;
+}
+/* line 464, page_profile_settings.less */
+body.page-profile-settings.payment > .wrapper section.content .payment-block .content-block .plan.basic {
+  background: #8aa4a2;
+  color: #ffffff;
+}
+/* line 467, page_profile_settings.less */
+body.page-profile-settings.payment > .wrapper section.content .payment-block .content-block .plan.basic h4 {
+  color: #b9d4cc;
+}
+/* line 470, page_profile_settings.less */
+body.page-profile-settings.payment > .wrapper section.content .payment-block .content-block .plan.basic h4 span {
+  background: #8aa4a2;
+}
+/* line 473, page_profile_settings.less */
+body.page-profile-settings.payment > .wrapper section.content .payment-block .content-block .plan.basic p.price {
+  color: #b9d4cc;
+}
+/* line 475, page_profile_settings.less */
+body.page-profile-settings.payment > .wrapper section.content .payment-block .content-block .plan.basic p.price .value {
+  color: #ffffff;
+}
+/* line 480, page_profile_settings.less */
+body.page-profile-settings.payment > .wrapper section.content .payment-block .content-block .plan.expert {
+  background: #f2f2f2;
+  color: #8aa4a2;
+}
+/* line 483, page_profile_settings.less */
+body.page-profile-settings.payment > .wrapper section.content .payment-block .content-block .plan.expert h4 {
+  color: #8aa4a2;
+}
+/* line 486, page_profile_settings.less */
+body.page-profile-settings.payment > .wrapper section.content .payment-block .content-block .plan.expert h4 span {
+  background: #f2f2f2;
+}
+/* line 489, page_profile_settings.less */
+body.page-profile-settings.payment > .wrapper section.content .payment-block .content-block .plan.expert p.price {
+  color: #b9d4cc;
+}
+/* line 491, page_profile_settings.less */
+body.page-profile-settings.payment > .wrapper section.content .payment-block .content-block .plan.expert p.price .value {
+  color: #8aa4a2;
+}
+/* line 496, page_profile_settings.less */
+body.page-profile-settings.payment > .wrapper section.content .payment-block .content-block .plan h4 {
+  border-bottom: solid 1px #b9d4cc;
+  line-height: 0;
+  text-align: center;
+  width: 100%;
+  padding: 0;
+  margin: 20px auto;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+/* line 506, page_profile_settings.less */
+body.page-profile-settings.payment > .wrapper section.content .payment-block .content-block .plan h4 span {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* line 511, page_profile_settings.less */
+body.page-profile-settings.payment > .wrapper section.content .payment-block .content-block .plan p {
+  text-align: center;
+}
+/* line 514, page_profile_settings.less */
+body.page-profile-settings.payment > .wrapper section.content .payment-block .content-block .plan p.title {
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* line 520, page_profile_settings.less */
+body.page-profile-settings.payment > .wrapper section.content .payment-block .content-block .plan p.price {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+/* line 524, page_profile_settings.less */
+body.page-profile-settings.payment > .wrapper section.content .payment-block .content-block .plan p.status {
+  font-size: 1.2rem;
+}
+/* line 526, page_profile_settings.less */
+body.page-profile-settings.payment > .wrapper section.content .payment-block .content-block .plan p.status i {
+  font-size: 1.4rem;
+}
+/* line 530, page_profile_settings.less */
+body.page-profile-settings.payment > .wrapper section.content .payment-block .content-block .plan a.payment-button {
+  width: 100px;
+  display: block;
+  margin: auto;
+  text-align: center;
+  margin-top: -4px;
+}
+/* line 538, page_profile_settings.less */
+body.page-profile-settings.payment > .wrapper section.content .payment-block .content-block .info {
+  border-top: solid 1px #b9d4cc;
+  background: #f8f8f8;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 15px 20px;
+  margin-top: 30px;
+}
+/* line 545, page_profile_settings.less */
+body.page-profile-settings.payment > .wrapper section.content .payment-block .content-block .info i {
+  display: block;
+  float: left;
+  font-size: 4rem;
+  margin-right: 20px;
+}
+/* line 551, page_profile_settings.less */
+body.page-profile-settings.payment > .wrapper section.content .payment-block .content-block .info .text {
+  overflow: hidden;
+}
+/* line 553, page_profile_settings.less */
+body.page-profile-settings.payment > .wrapper section.content .payment-block .content-block .info .text p {
+  margin: 2px 0;
+  font-weight: 500;
+}
+/* line 556, page_profile_settings.less */
+body.page-profile-settings.payment > .wrapper section.content .payment-block .content-block .info .text p .date {
+  font-weight: 700;
+  color: #35504e;
+}
+/* line 566, page_profile_settings.less */
+body.page-profile-settings.payment > .wrapper section.content .tarification-block .content-block {
+  padding: 0;
+}
+/* line 568, page_profile_settings.less */
+body.page-profile-settings.payment > .wrapper section.content .tarification-block .content-block table {
+  border-collapse: collapse;
+  width: 100%;
+}
+/* line 572, page_profile_settings.less */
+body.page-profile-settings.payment > .wrapper section.content .tarification-block .content-block table tr td,
+body.page-profile-settings.payment > .wrapper section.content .tarification-block .content-block table tr th {
+  border-bottom: solid 1px #b9d4cc;
+}
+/* line 576, page_profile_settings.less */
+body.page-profile-settings.payment > .wrapper section.content .tarification-block .content-block table th,
+body.page-profile-settings.payment > .wrapper section.content .tarification-block .content-block table td {
+  padding: 15px 20px;
+}
+/* line 580, page_profile_settings.less */
+body.page-profile-settings.payment > .wrapper section.content .tarification-block .content-block table thead th {
+  padding: 25px 20px;
+  color: #8aa4a2;
+  font-weight: 400;
+  text-align: left;
+}
+/* line 589, page_profile_settings.less */
+body.page-profile-settings.payment > .wrapper section.content .tarification-block .content-block table tbody td.func {
+  color: #35504e;
+  font-weight: 700;
+}
+/* line 593, page_profile_settings.less */
+body.page-profile-settings.payment > .wrapper section.content .tarification-block .content-block table tbody td:not(.func) {
+  text-align: center;
+  width: 80px;
+}
+/* line 597, page_profile_settings.less */
+body.page-profile-settings.payment > .wrapper section.content .tarification-block .content-block table tbody td i.fa {
+  font-size: 2.4rem;
+}
+/* line 599, page_profile_settings.less */
+body.page-profile-settings.payment > .wrapper section.content .tarification-block .content-block table tbody td i.fa.fa-check {
+  color: #0f9b58;
+}
+/* line 602, page_profile_settings.less */
+body.page-profile-settings.payment > .wrapper section.content .tarification-block .content-block table tbody td i.fa.fa-times {
+  color: #eb5245;
+}
+/* line 606, page_profile_settings.less */
+body.page-profile-settings.payment > .wrapper section.content .tarification-block .content-block table tbody td span.endnote {
+  font-size: 1.0rem;
+  color: #8aa4a2;
+  line-height: 100%;
+  display: block;
+  margin-top: 5px;
+}
+/* line 615, page_profile_settings.less */
+body.page-profile-settings.payment > .wrapper section.content .tarification-block .content-block table tbody tr:last-child td {
+  vertical-align: top;
+  color: #8aa4a2;
+  font-size: 1.0rem;
+  font-weight: 500;
+}
+/* line 620, page_profile_settings.less */
+body.page-profile-settings.payment > .wrapper section.content .tarification-block .content-block table tbody tr:last-child td span {
+  color: #35504e;
+  font-size: 1.4rem;
+}
 /* line 1, cheat-sheet.less */
 .wrapper {
   position: relative;
@@ -5572,11 +5779,20 @@ body.page-consultation .profile .right .contacts p span.value {
   color: #4ad0c5;
 }
 /* line 113, page_consultation.less */
+body.page-consultation .profile .right .introtext .introtext-container {
+  height: 85px;
+  overflow: hidden;
+}
+/* line 116, page_consultation.less */
+body.page-consultation .profile .right .introtext .introtext-container.opened {
+  height: auto;
+}
+/* line 120, page_consultation.less */
 body.page-consultation .profile .right .introtext a.readmore {
   color: #4ad0c5;
   font: italic 1.4rem Roboto;
 }
-/* line 120, page_consultation.less */
+/* line 127, page_consultation.less */
 body.page-consultation section.consultation-info {
   float: left;
   width: 41%;
@@ -5584,19 +5800,19 @@ body.page-consultation section.consultation-info {
   margin-top: 7px;
   margin-bottom: 0;
 }
-/* line 126, page_consultation.less */
+/* line 133, page_consultation.less */
 body.page-consultation section.consultation-info .content-block {
   padding: 0;
 }
-/* line 128, page_consultation.less */
+/* line 135, page_consultation.less */
 body.page-consultation section.consultation-info .content-block .info {
   padding: 20px;
 }
-/* line 130, page_consultation.less */
+/* line 137, page_consultation.less */
 body.page-consultation section.consultation-info .content-block .info .head {
   position: relative;
 }
-/* line 132, page_consultation.less */
+/* line 139, page_consultation.less */
 body.page-consultation section.consultation-info .content-block .info .head i.fa.fa-calendar {
   color: #eb5245;
   font-size: 1.8rem;
@@ -5605,7 +5821,7 @@ body.page-consultation section.consultation-info .content-block .info .head i.fa
   top: 10px;
   right: 10px;
 }
-/* line 142, page_consultation.less */
+/* line 149, page_consultation.less */
 body.page-consultation section.consultation-info .content-block .info .content p {
   margin: 5px 0;
   color: #8aa4a2;
@@ -5613,37 +5829,37 @@ body.page-consultation section.consultation-info .content-block .info .content p
   /* Приближение из-за подстановки шрифтов */
   font-weight: 500;
 }
-/* line 147, page_consultation.less */
+/* line 154, page_consultation.less */
 body.page-consultation section.consultation-info .content-block .info .content p span.value {
   color: #35504e;
 }
-/* line 150, page_consultation.less */
+/* line 157, page_consultation.less */
 body.page-consultation section.consultation-info .content-block .info .content p span.not-paid {
   margin-left: 15px;
   color: #eb5245;
 }
-/* line 154, page_consultation.less */
+/* line 161, page_consultation.less */
 body.page-consultation section.consultation-info .content-block .info .content p span.paid {
   margin-left: 15px;
   color: #0f9b58;
 }
-/* line 158, page_consultation.less */
+/* line 165, page_consultation.less */
 body.page-consultation section.consultation-info .content-block .info .content p.remaining {
   margin: 15px 0;
 }
-/* line 160, page_consultation.less */
+/* line 167, page_consultation.less */
 body.page-consultation section.consultation-info .content-block .info .content p.remaining span {
   color: #4ad0c5;
 }
-/* line 165, page_consultation.less */
+/* line 172, page_consultation.less */
 body.page-consultation section.consultation-info .content-block .info .content a#pay {
   margin-top: 10px;
 }
-/* line 168, page_consultation.less */
+/* line 175, page_consultation.less */
 body.page-consultation section.consultation-info .content-block .info .content a.btn.ghost {
   margin: 5px 0;
 }
-/* line 175, page_consultation.less */
+/* line 182, page_consultation.less */
 body.page-consultation section.questions {
   overflow: hidden;
   float: left;
@@ -5651,21 +5867,21 @@ body.page-consultation section.questions {
   width: 57%;
   margin-bottom: 0;
 }
-/* line 182, page_consultation.less */
+/* line 189, page_consultation.less */
 body.page-consultation section.questions .messages .message {
   margin-bottom: 20px;
 }
-/* line 184, page_consultation.less */
+/* line 191, page_consultation.less */
 body.page-consultation section.questions .messages .message .question-menu {
   position: absolute;
   right: 0;
   top: 0;
 }
-/* line 189, page_consultation.less */
+/* line 196, page_consultation.less */
 body.page-consultation section.questions .messages .message .author {
   overflow: hidden;
 }
-/* line 191, page_consultation.less */
+/* line 198, page_consultation.less */
 body.page-consultation section.questions .messages .message .author .photo-container {
   float: left;
   width: 50px;
@@ -5678,31 +5894,31 @@ body.page-consultation section.questions .messages .message .author .photo-conta
   border: solid 1px #8aa4a2;
   margin-right: 20px;
 }
-/* line 203, page_consultation.less */
+/* line 210, page_consultation.less */
 body.page-consultation section.questions .messages .message .author .container {
   overflow: hidden;
 }
-/* line 205, page_consultation.less */
+/* line 212, page_consultation.less */
 body.page-consultation section.questions .messages .message .author .container p {
   margin: 2px 0;
 }
-/* line 207, page_consultation.less */
+/* line 214, page_consultation.less */
 body.page-consultation section.questions .messages .message .author .container p.name {
   color: #4ad0c5;
   font-size: 1.2rem;
   font-weight: 700;
 }
-/* line 212, page_consultation.less */
+/* line 219, page_consultation.less */
 body.page-consultation section.questions .messages .message .author .container p.job {
   color: #8aa4a2;
   font-size: 1.2rem;
   font-weight: 700;
 }
-/* line 220, page_consultation.less */
+/* line 227, page_consultation.less */
 body.page-consultation section.questions .messages .message p.text {
   margin-left: 70px;
 }
-/* line 223, page_consultation.less */
+/* line 230, page_consultation.less */
 body.page-consultation section.questions .messages .message p.date {
   margin-left: 70px;
   color: #b9d4cc;
@@ -5710,7 +5926,7 @@ body.page-consultation section.questions .messages .message p.date {
   font-weight: 400;
   margin-top: 10px;
 }
-/* line 231, page_consultation.less */
+/* line 238, page_consultation.less */
 body.page-consultation section.questions .messages a#read-more {
   color: #4ad0c5;
   font-size: 1.2rem;
@@ -5718,33 +5934,33 @@ body.page-consultation section.questions .messages a#read-more {
   text-align: center;
   display: block;
 }
-/* line 237, page_consultation.less */
+/* line 244, page_consultation.less */
 body.page-consultation section.questions .messages a#read-more:hover {
   text-decoration: underline;
 }
-/* line 241, page_consultation.less */
+/* line 248, page_consultation.less */
 body.page-consultation section.questions .messages form.ask-question {
   overflow: hidden;
   margin-top: 20px;
 }
-/* line 244, page_consultation.less */
+/* line 251, page_consultation.less */
 body.page-consultation section.questions .messages form.ask-question textarea {
   height: 98px;
 }
-/* line 247, page_consultation.less */
+/* line 254, page_consultation.less */
 body.page-consultation section.questions .messages form.ask-question input.btn {
   float: right;
 }
-/* line 253, page_consultation.less */
+/* line 260, page_consultation.less */
 body.page-consultation section.my-notes {
   overflow: hidden;
 }
-/* line 256, page_consultation.less */
+/* line 263, page_consultation.less */
 body.page-consultation section.my-notes .notes .note {
   overflow: hidden;
   margin-bottom: 20px;
 }
-/* line 259, page_consultation.less */
+/* line 266, page_consultation.less */
 body.page-consultation section.my-notes .notes .note span.date {
   color: #b9d4cc;
   font-size: 1.2rem;
@@ -5752,42 +5968,42 @@ body.page-consultation section.my-notes .notes .note span.date {
   display: block;
   float: left;
 }
-/* line 266, page_consultation.less */
+/* line 273, page_consultation.less */
 body.page-consultation section.my-notes .notes .note .note-menu {
   float: left;
   margin-left: 20px;
   margin-top: 2px;
 }
-/* line 270, page_consultation.less */
+/* line 277, page_consultation.less */
 body.page-consultation section.my-notes .notes .note .note-menu .fa-circle {
   color: #b9d4cc;
   font-size: 0.5rem;
 }
-/* line 277, page_consultation.less */
+/* line 284, page_consultation.less */
 body.page-consultation section.my-notes form {
   overflow: hidden;
 }
-/* line 279, page_consultation.less */
+/* line 286, page_consultation.less */
 body.page-consultation section.my-notes form textarea {
   height: 98px;
 }
-/* line 282, page_consultation.less */
+/* line 289, page_consultation.less */
 body.page-consultation section.my-notes form input.btn {
   float: right;
 }
-/* line 287, page_consultation.less */
+/* line 294, page_consultation.less */
 body.page-consultation section.reviews {
   float: left;
   width: 57%;
 }
-/* line 291, page_consultation.less */
+/* line 298, page_consultation.less */
 body.page-consultation section.reviews .content-block .review {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   padding: 10px 20px 30px 20px;
   margin-bottom: 60px;
 }
-/* line 296, page_consultation.less */
+/* line 303, page_consultation.less */
 body.page-consultation section.reviews .content-block .review .quote-arrow {
   position: absolute;
   width: 43px;
@@ -5796,12 +6012,12 @@ body.page-consultation section.reviews .content-block .review .quote-arrow {
   bottom: -25px;
   left: 60px;
 }
-/* line 304, page_consultation.less */
+/* line 311, page_consultation.less */
 body.page-consultation section.reviews .content-block .review .author {
   overflow: hidden;
   margin-top: 25px;
 }
-/* line 307, page_consultation.less */
+/* line 314, page_consultation.less */
 body.page-consultation section.reviews .content-block .review .author .photo {
   border-radius: 50px;
   -moz-border-radius: 50px;
@@ -5812,46 +6028,55 @@ body.page-consultation section.reviews .content-block .review .author .photo {
   height: 50px;
   float: left;
 }
-/* line 316, page_consultation.less */
+/* line 323, page_consultation.less */
 body.page-consultation section.reviews .content-block .review .author .photo img {
   display: block;
   min-width: 100%;
   min-height: 100%;
 }
-/* line 322, page_consultation.less */
+/* line 329, page_consultation.less */
 body.page-consultation section.reviews .content-block .review .author .text {
   overflow: hidden;
 }
-/* line 324, page_consultation.less */
+/* line 331, page_consultation.less */
 body.page-consultation section.reviews .content-block .review .author .text p {
   margin-left: 10px;
   font-size: 1.2rem;
 }
-/* line 327, page_consultation.less */
+/* line 334, page_consultation.less */
 body.page-consultation section.reviews .content-block .review .author .text p .author-name,
 body.page-consultation section.reviews .content-block .review .author .text p .user-name {
   color: #4ad0c5;
   font: 700 1.2rem Roboto;
 }
-/* line 334, page_consultation.less */
+/* line 341, page_consultation.less */
+body.page-consultation section.reviews .content-block .review .content-container {
+  overflow: hidden;
+  height: 100px;
+}
+/* line 344, page_consultation.less */
+body.page-consultation section.reviews .content-block .review .content-container.opened {
+  height: auto;
+}
+/* line 348, page_consultation.less */
 body.page-consultation section.reviews .content-block .review .toolbar {
   position: absolute;
   right: 0;
   bottom: 0;
 }
-/* line 338, page_consultation.less */
+/* line 352, page_consultation.less */
 body.page-consultation section.reviews .content-block .review .toolbar .review-menu {
   float: left;
   margin-right: 20px;
-  margin-top: 11px;
+  margin-top: 6px;
 }
-/* line 343, page_consultation.less */
+/* line 357, page_consultation.less */
 body.page-consultation section.reviews .content-block .review .toolbar .review-date {
   float: left;
   margin-right: 20px;
   font-size: 1.2rem;
 }
-/* line 348, page_consultation.less */
+/* line 362, page_consultation.less */
 body.page-consultation section.reviews .content-block .review .toolbar .readmore {
   border-top-left-radius: 5px;
   -o-border-top-left-radius: 5px;
@@ -5866,18 +6091,18 @@ body.page-consultation section.reviews .content-block .review .toolbar .readmore
   border-top: dashed 1px #b9d4cc;
   padding: 8px 20px;
 }
-/* line 361, page_consultation.less */
+/* line 375, page_consultation.less */
 body.page-consultation section.reviews .content-block .review .toolbar .readmore:hover {
   text-decoration: underline;
 }
-/* line 367, page_consultation.less */
+/* line 381, page_consultation.less */
 body.page-consultation section.reviews .content-block #load-more-reviews {
   width: 200px;
   text-align: center;
   margin: auto;
   display: block;
 }
-/* line 375, page_consultation.less */
+/* line 389, page_consultation.less */
 body.page-consultation section.reviews .write-review textarea {
   height: 98px;
 }
