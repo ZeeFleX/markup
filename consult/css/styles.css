@@ -7421,4 +7421,16 @@ body.page-user-consults > .wrapper .consults .column .consult .questions form.as
 body.page-user-consults > .wrapper .consults .column .consult .questions form.ask-question input.btn {
   float: right;
 }
+/* line 6, page_faq.less */
+body.page-faq > .wrapper .questions-container {
+  overflow: hidden;
+  float: left;
+  width: 62%;
+}
+/* line 11, page_faq.less */
+body.page-faq > .wrapper aside {
+  float: right;
+  margin-left: 2%;
+  width: 36%;
+}
 /*# sourceMappingURL=styles.css.map */

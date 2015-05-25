@@ -48,6 +48,7 @@
             <li><a href="page_user_consults.php">Мои консультации (консультант)</a></li>
             <li><a href="page_user_consults_participiant.php">Мои консультации (участник)</a></li>
             <li><a href="page_profile_settings_payment.php">Страница настроек. Оплата</a></li>
+            <li><a href="page_faq.php">Страница FAQ.</a></li>
         </ol>
         <h1>Полезные ссылки</h1>
         <ol>
