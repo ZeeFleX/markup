@@ -139,14 +139,14 @@
                             <tr>
                                 <td class="func">Назначение консультаций для посторонних клиентов</td>
                                 <td><i class="fa fa-times"></td>
-                                <td><i class="fa fa-check"></i></td>
-                                <td><i class="fa fa-check"></i></td>
+                                <td><i class="fa fa-check"></i><br /><span class="endnote">Только онлайн-кабинет</span></td>
+                                <td><i class="fa fa-check"></i><br /><span class="endnote">Все типы консультаций</span></td>
                             </tr>
                             <tr>
                                 <td class="func">Назначение консультаций для пользователей сайта</td>
                                 <td><i class="fa fa-times"></i></td>
-                                <td><i class="fa fa-times"></i><br /><span class="endnote">Только онлайн-кабинет</span></td>
-                                <td><i class="fa fa-check"></i><br /><span class="endnote">Все типы консультаций</span></td>
+                                <td><i class="fa fa-times"></i></td>
+                                <td><i class="fa fa-check"></i></td>
                             </tr>
                             <tr>
                                 <td class="func">Уведомления о новых записях на консультацию</td>
