@@ -615,21 +615,29 @@ aside.additional-menu .content-block ul li.active a {
   background: #ffffff;
   color: #35504e;
 }
-/* line 79, global.less */
+/* line 74, global.less */
+aside.additional-menu .content-block ul li > ul li {
+  padding-left: 20px;
+}
+/* line 76, global.less */
+aside.additional-menu .content-block ul li > ul li:first-child {
+  border-top: solid 1px #e7f3ee;
+}
+/* line 85, global.less */
 .popup-menu {
   z-index: 10;
   padding-bottom: 10px;
   padding-left: 15px;
 }
-/* line 83, global.less */
+/* line 89, global.less */
 .popup-menu a.dotts {
   margin-top: 5px;
 }
-/* line 86, global.less */
+/* line 92, global.less */
 .popup-menu:hover .menu-container {
   display: block !important;
 }
-/* line 89, global.less */
+/* line 95, global.less */
 .popup-menu .menu-container {
   display: none;
   position: absolute;
@@ -637,7 +645,7 @@ aside.additional-menu .content-block ul li.active a {
   width: 200px;
   top: 0;
 }
-/* line 95, global.less */
+/* line 101, global.less */
 .popup-menu .menu-container .menu {
   position: relative;
   float: right;
@@ -654,25 +662,25 @@ aside.additional-menu .content-block ul li.active a {
   padding: 0 2px 0 8px;
   cursor: pointer;
 }
-/* line 110, global.less */
+/* line 116, global.less */
 .popup-menu .menu-container .menu a {
   display: inline-block;
   margin: 0 2px;
 }
-/* line 113, global.less */
+/* line 119, global.less */
 .popup-menu .menu-container .menu a i {
   line-height: 23px;
   font-size: 1.4rem;
 }
-/* line 116, global.less */
+/* line 122, global.less */
 .popup-menu .menu-container .menu a i:hover {
   color: #4ad0c5;
 }
-/* line 119, global.less */
+/* line 125, global.less */
 .popup-menu .menu-container .menu a i.fa-trash-o {
   color: #eb5245;
 }
-/* line 125, global.less */
+/* line 131, global.less */
 .popup-menu .menu-container .menu .siding {
   position: absolute;
   width: 15px;
@@ -681,12 +689,12 @@ aside.additional-menu .content-block ul li.active a {
   top: -1px;
   background: url('../images/popup-menu-siding.png');
 }
-/* line 135, global.less */
+/* line 141, global.less */
 .popup-menu.right-side {
   padding-left: 0;
   padding-right: 15px;
 }
-/* line 138, global.less */
+/* line 144, global.less */
 .popup-menu.right-side .menu-container {
   display: none;
   position: absolute;
@@ -695,7 +703,7 @@ aside.additional-menu .content-block ul li.active a {
   width: 200px;
   top: 0;
 }
-/* line 145, global.less */
+/* line 151, global.less */
 .popup-menu.right-side .menu-container .menu {
   float: left;
   border-radius: 0 6px 6px 0;
@@ -706,14 +714,14 @@ aside.additional-menu .content-block ul li.active a {
   border: dashed 1px #8aa4a2;
   border-left: none;
 }
-/* line 154, global.less */
+/* line 160, global.less */
 .popup-menu.right-side .menu-container .menu .siding {
   right: 100%;
   left: auto;
   top: -1px;
   background: url('../images/popup-menu-siding-right.png');
 }
-/* line 166, global.less */
+/* line 172, global.less */
 header.header {
   width: 100%;
   padding: 10px 30px;
@@ -722,7 +730,7 @@ header.header {
   -moz-box-sizing: border-box;
   overflow: hidden;
 }
-/* line 173, global.less */
+/* line 179, global.less */
 header.header .logo {
   border-radius: 100%;
   -moz-border-radius: 100%;
@@ -730,29 +738,29 @@ header.header .logo {
   -webkit-border-radius: 100%;
   float: left;
 }
-/* line 180, global.less */
+/* line 186, global.less */
 header.header .time {
   float: right;
   margin-right: 40px;
 }
-/* line 183, global.less */
+/* line 189, global.less */
 header.header .time p {
   display: block;
   float: left;
   margin-right: 20px;
   margin-top: 11px;
 }
-/* line 189, global.less */
+/* line 195, global.less */
 header.header .time .clock {
   float: right;
 }
-/* line 193, global.less */
+/* line 199, global.less */
 header.header .project-name {
   float: left;
   margin-left: 10px;
   margin-top: 5px;
 }
-/* line 197, global.less */
+/* line 203, global.less */
 header.header .project-name .title {
   color: #4ad0c5;
   font-size: 1.2rem;
@@ -760,23 +768,23 @@ header.header .project-name .title {
   text-transform: uppercase;
   margin: 0;
 }
-/* line 204, global.less */
+/* line 210, global.less */
 header.header .project-name .author {
   color: #8aa4a2;
   font-size: 1.0rem;
   font-weight: 300;
   margin: 0;
 }
-/* line 211, global.less */
+/* line 217, global.less */
 header.header .sign-in {
   float: right;
   margin-top: 3px;
 }
-/* line 219, global.less */
+/* line 225, global.less */
 header.header .profile-snippet {
   float: right;
 }
-/* line 221, global.less */
+/* line 227, global.less */
 header.header .profile-snippet .photo-container {
   border-radius: 50px;
   -o-border-radius: 50px;
@@ -788,60 +796,60 @@ header.header .profile-snippet .photo-container {
   overflow: hidden;
   border: solid 1px #8aa4a2;
 }
-/* line 231, global.less */
+/* line 237, global.less */
 header.header .profile-snippet .photo-container img {
   display: block;
   width: 100%;
 }
-/* line 236, global.less */
+/* line 242, global.less */
 header.header .profile-snippet .info {
   float: left;
   margin-left: 10px;
   margin-top: 5px;
 }
-/* line 240, global.less */
+/* line 246, global.less */
 header.header .profile-snippet .info .name {
   color: #35504e;
   font: 500 1.4rem Roboto;
 }
-/* line 244, global.less */
+/* line 250, global.less */
 header.header .profile-snippet .info .job {
   color: #4ad0c5;
   font: 400 1.2rem Roboto;
 }
-/* line 249, global.less */
+/* line 255, global.less */
 header.header .profile-snippet .more-container {
   float: left;
   margin-left: 10px;
   margin-top: 10px;
 }
-/* line 253, global.less */
+/* line 259, global.less */
 header.header .profile-snippet .more-container i {
   color: #35504e;
   font-size: 1.8rem;
   cursor: pointer;
 }
-/* line 258, global.less */
+/* line 264, global.less */
 header.header .profile-snippet .more-container .dropdown-menu {
   display: none;
 }
-/* line 264, global.less */
+/* line 270, global.less */
 header.header .profile-notifications {
   float: right;
   margin-right: 10px;
   margin-top: 10px;
 }
-/* line 268, global.less */
+/* line 274, global.less */
 header.header .profile-notifications > div {
   float: left;
   margin: 0 15px;
   cursor: pointer;
 }
-/* line 272, global.less */
+/* line 278, global.less */
 header.header .profile-notifications > div.active i.fa {
   color: #eb5245;
 }
-/* line 275, global.less */
+/* line 281, global.less */
 header.header .profile-notifications > div .count {
   position: absolute;
   border-radius: 50px;
@@ -856,29 +864,29 @@ header.header .profile-notifications > div .count {
   z-index: 1;
   font: 500 1.1rem / 17px Roboto;
 }
-/* line 289, global.less */
+/* line 295, global.less */
 header.header .profile-notifications > div i.fa {
   color: #8aa4a2;
   font-size: 2.0rem;
 }
-/* line 295, global.less */
+/* line 301, global.less */
 header.header .mainmenu {
   float: right;
   margin: 13px 0;
 }
-/* line 298, global.less */
+/* line 304, global.less */
 header.header .mainmenu li {
   float: left;
   text-transform: uppercase;
   font: 500 1.2rem Roboto;
   margin-right: 30px;
 }
-/* line 303, global.less */
+/* line 309, global.less */
 header.header .mainmenu li a {
   color: #35504e;
   text-decoration: none;
 }
-/* line 310, global.less */
+/* line 316, global.less */
 .user-menu-section {
   background: #f8f8f8;
   overflow: hidden;
@@ -888,76 +896,76 @@ header.header .mainmenu li a {
   -moz-box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.1);
 }
-/* line 319, global.less */
+/* line 325, global.less */
 .user-menu-section .wrapper .user-menu-container {
   right: 50%;
   float: right;
 }
-/* line 323, global.less */
+/* line 329, global.less */
 .user-menu-section .wrapper .user-menu {
   left: 50%;
   float: left;
 }
-/* line 326, global.less */
+/* line 332, global.less */
 .user-menu-section .wrapper .user-menu li {
   margin: 0 10px;
   float: left;
 }
-/* line 330, global.less */
+/* line 336, global.less */
 .user-menu-section .wrapper .user-menu a {
   color: #35504e;
   font: 400 1.4rem  Roboto;
   text-decoration: none;
 }
-/* line 334, global.less */
+/* line 340, global.less */
 .user-menu-section .wrapper .user-menu a:hover {
   text-decoration: underline;
 }
-/* line 343, global.less */
+/* line 349, global.less */
 .footer {
   width: 100%;
   margin-top: 20px;
 }
-/* line 346, global.less */
+/* line 352, global.less */
 .footer a {
   text-decoration: none;
   color: #ffffff;
 }
-/* line 350, global.less */
+/* line 356, global.less */
 .footer section.library {
   background: #4ad0c5;
   padding: 10px 0 20px 0;
 }
-/* line 353, global.less */
+/* line 359, global.less */
 .footer section.library .logo {
   float: left;
   width: 25%;
   margin-top: 16px;
 }
-/* line 358, global.less */
+/* line 364, global.less */
 .footer section.library .title {
   float: left;
   width: 25%;
 }
-/* line 361, global.less */
+/* line 367, global.less */
 .footer section.library .title h3 {
   color: #ffffff;
 }
-/* line 365, global.less */
+/* line 371, global.less */
 .footer section.library .library-list {
   float: right;
   width: 75%;
   margin-top: 8px;
 }
-/* line 369, global.less */
+/* line 375, global.less */
 .footer section.library .library-list h4 {
   color: #ffffff;
 }
-/* line 372, global.less */
+/* line 378, global.less */
 .footer section.library .library-list .items-container {
   width: 100%;
 }
-/* line 374, global.less */
+/* line 380, global.less */
 .footer section.library .library-list .items-container .item {
   float: left;
   width: 33%;
@@ -965,17 +973,17 @@ header.header .mainmenu li a {
   font: 400 1.6rem Roboto;
   margin: 5px 0;
 }
-/* line 380, global.less */
+/* line 386, global.less */
 .footer section.library .library-list .items-container .item:hover {
   text-decoration: underline;
 }
-/* line 387, global.less */
+/* line 393, global.less */
 .footer section.bottom {
   background: #41b6ad;
   padding: 15px 0;
   overflow: hidden;
 }
-/* line 391, global.less */
+/* line 397, global.less */
 .footer section.bottom p.copyright {
   display: block;
   float: left;
@@ -983,21 +991,21 @@ header.header .mainmenu li a {
   font: 500 1.4rem Roboto;
   margin-left: 30px;
 }
-/* line 398, global.less */
+/* line 404, global.less */
 .footer section.bottom ul.footer-menu {
   float: right;
   margin-top: 13px;
 }
-/* line 401, global.less */
+/* line 407, global.less */
 .footer section.bottom ul.footer-menu li {
   float: left;
   margin-right: 30px;
 }
-/* line 404, global.less */
+/* line 410, global.less */
 .footer section.bottom ul.footer-menu li a {
   font: 400 14px Roboto;
 }
-/* line 406, global.less */
+/* line 412, global.less */
 .footer section.bottom ul.footer-menu li a:hover {
   text-decoration: underline;
 }
@@ -7421,16 +7429,178 @@ body.page-user-consults > .wrapper .consults .column .consult .questions form.as
 body.page-user-consults > .wrapper .consults .column .consult .questions form.ask-question input.btn {
   float: right;
 }
-/* line 6, page_faq.less */
+/* line 3, page_faq.less */
+body.page-faq > .wrapper .search-answer {
+  margin-top: 20px;
+  margin-bottom: 0;
+  background: url('../images/safety-bg.jpg') right bottom no-repeat #ffffff;
+}
+/* line 7, page_faq.less */
+body.page-faq > .wrapper .search-answer h1 {
+  padding-top: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+}
+/* line 12, page_faq.less */
+body.page-faq > .wrapper .search-answer p {
+  margin-top: 5px;
+}
+/* line 15, page_faq.less */
+body.page-faq > .wrapper .search-answer form {
+  margin-top: 18px;
+}
+/* line 17, page_faq.less */
+body.page-faq > .wrapper .search-answer form input[type="text"] {
+  border-radius: 5px 0 0 5px;
+  -o-border-radius: 5px 0 0 5px;
+  -webkit-border-radius: 5px 0 0 5px;
+  -moz-border-radius: 5px 0 0 5px;
+}
+/* line 25, page_faq.less */
 body.page-faq > .wrapper .questions-container {
   overflow: hidden;
   float: left;
   width: 62%;
+  padding-right: 2px;
 }
-/* line 11, page_faq.less */
+/* line 30, page_faq.less */
+body.page-faq > .wrapper .questions-container .question {
+  margin-bottom: 20px;
+  padding: 0;
+}
+/* line 33, page_faq.less */
+body.page-faq > .wrapper .questions-container .question .show-answer-arrow {
+  float: right;
+  margin-left: 20px;
+  width: 17px;
+  height: 11px;
+  background: url('../images/interface/faq-arrows-sprite.png');
+  margin-top: 45px;
+  margin-right: 30px;
+  cursor: pointer;
+}
+/* line 43, page_faq.less */
+body.page-faq > .wrapper .questions-container .question .question-text {
+  padding: 20px 30px;
+  overflow: hidden;
+}
+/* line 47, page_faq.less */
+body.page-faq > .wrapper .questions-container .question .answer {
+  padding: 20px 30px;
+  border-top: solid 1px #ddeae5;
+  background: #f6fffb;
+  display: none;
+}
+/* line 54, page_faq.less */
+body.page-faq > .wrapper .questions-container .question.active .show-answer-arrow {
+  background-position: 0 -11px;
+}
+/* line 57, page_faq.less */
+body.page-faq > .wrapper .questions-container .question.active .answer {
+  display: block;
+}
+/* line 63, page_faq.less */
 body.page-faq > .wrapper aside {
   float: right;
-  margin-left: 2%;
   width: 36%;
+}
+/* line 67, page_faq.less */
+body.page-faq > .wrapper form.ask {
+  float: left;
+  width: 62%;
+}
+/* line 70, page_faq.less */
+body.page-faq > .wrapper form.ask h2 {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 35px;
+  background: url('../images/interface/envelope-icon.png') left center no-repeat;
+}
+/* line 76, page_faq.less */
+body.page-faq > .wrapper form.ask p {
+  margin-top: 3px;
+}
+/* line 79, page_faq.less */
+body.page-faq > .wrapper form.ask .field {
+  margin-bottom: 20px;
+}
+/* line 81, page_faq.less */
+body.page-faq > .wrapper form.ask .field input,
+body.page-faq > .wrapper form.ask .field textarea {
+  margin-bottom: 0;
+}
+/* line 84, page_faq.less */
+body.page-faq > .wrapper form.ask .field label {
+  margin-bottom: 4px;
+  font-weight: 500;
+  color: #35504e;
+}
+/* line 89, page_faq.less */
+body.page-faq > .wrapper form.ask .field.name {
+  float: left;
+  width: 35%;
+  margin-right: 3%;
+}
+/* line 94, page_faq.less */
+body.page-faq > .wrapper form.ask .field.email {
+  float: left;
+  width: 62%;
+}
+/* line 98, page_faq.less */
+body.page-faq > .wrapper form.ask .field.theme {
+  margin-top: -20px;
+}
+/* line 102, page_faq.less */
+body.page-faq > .wrapper form.ask .field.file a {
+  display: block;
+  float: left;
+  width: 150px;
+  text-align: center;
+  margin-right: 20px;
+  z-index: 1;
+}
+/* line 110, page_faq.less */
+body.page-faq > .wrapper form.ask .field.file p {
+  top: 8px;
+}
+/* line 115, page_faq.less */
+body.page-faq > .wrapper form.ask input[type="submit"] {
+  margin-top: 25px;
+  padding: 9px 17px 8px 17px;
+  margin-right: 20px;
+}
+/* line 121, page_faq.less */
+body.page-faq > .wrapper .right {
+  float: right;
+  width: 36%;
+}
+/* line 124, page_faq.less */
+body.page-faq > .wrapper .right .content-block {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+/* line 129, page_faq.less */
+body.page-faq > .wrapper .right .instruction ol {
+  padding-left: 20px;
+}
+/* line 131, page_faq.less */
+body.page-faq > .wrapper .right .instruction ol li {
+  margin-bottom: 10px;
+}
+/* line 137, page_faq.less */
+body.page-faq > .wrapper .right .support i.fa {
+  font-size: 1.8rem;
+  color: #4ad0c5;
+  margin-right: 10px;
+}
+/* line 142, page_faq.less */
+body.page-faq > .wrapper .right .support a {
+  text-decoration: none;
+  color: #4ad0c5;
+  top: -2px;
+}
+/* line 146, page_faq.less */
+body.page-faq > .wrapper .right .support a:hover {
+  text-decoration: underline;
 }
 /*# sourceMappingURL=styles.css.map */

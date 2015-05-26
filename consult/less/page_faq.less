@@ -1,17 +1,153 @@
 body.page-faq{
 	& > .wrapper{
-		.search-question{
-			
+		.search-answer{
+			margin-top: 20px;
+			margin-bottom: 0;
+			background: url('../images/safety-bg.jpg') right bottom no-repeat @white;
+			h1{
+				padding-top: 0;
+				margin-top: 0;
+				padding-bottom: 0;
+			}
+			p{
+				margin-top: 5px;
+			}
+			form{
+				margin-top: 18px;
+				input[type="text"]{
+					border-radius:5px 0 0 5px;
+					-o-border-radius:5px 0 0 5px;
+					-webkit-border-radius:5px 0 0 5px;
+					-moz-border-radius:5px 0 0 5px;
+				}
+			}
 		}
 		.questions-container{
 			overflow: hidden;
 			float: left;
 			width: 62%;
+			padding-right: 2px;
+			.question{
+				margin-bottom: 20px;
+				padding: 0;
+				.show-answer-arrow{
+					float: right;
+					margin-left: 20px;
+					width: 17px;
+					height: 11px;
+					background: url('../images/interface/faq-arrows-sprite.png');
+					margin-top: 45px;
+					margin-right: 30px;
+					cursor: pointer;
+				}
+				.question-text{
+					padding:20px 30px;
+					overflow: hidden;
+				}
+				.answer{
+					padding:20px 30px;
+					border-top:solid 1px #ddeae5;
+					background: #f6fffb;
+					display: none;
+				}
+				&.active{
+					.show-answer-arrow{
+						background-position:0 -11px;
+					}
+					.answer{
+						display: block;
+					}
+				}
+			}
 		}
 		aside{
 			float: right;
-			margin-left: 2%;
 			width: 36%;
+		}
+		form.ask{
+			float: left;
+			width: 62%;
+			h2{
+				padding-top: 0;
+				padding-bottom: 0;
+				padding-left: 35px;
+				background:url('../images/interface/envelope-icon.png') left center no-repeat;
+			}
+			p{
+				margin-top: 3px;
+			}
+			.field{
+				margin-bottom: 20px;
+				input, textarea{
+					margin-bottom: 0;
+				}
+				label{
+					margin-bottom: 4px;
+					font-weight:500;
+					color:@sea;
+				}
+				&.name{
+					float: left;
+					width: 35%;
+					margin-right: 3%;
+				}
+				&.email{
+					float: left;
+					width: 62%;
+				}
+				&.theme{
+					margin-top: -20px;
+				}
+				&.file{
+					a{
+						display: block;
+						float: left;
+						width: 150px;
+						text-align: center;
+						margin-right: 20px;
+						z-index: 1;
+					}
+					p{
+						top: 8px;
+					}
+				}
+			}
+			input[type="submit"]{
+				margin-top: 25px;
+				padding: 9px 17px 8px 17px;
+				margin-right: 20px;
+			}
+		}
+		.right{
+			float: right;
+			width: 36%;
+			.content-block{
+				padding-top: 15px;
+				padding-bottom: 15px;
+			}
+			.instruction{
+				ol{
+					padding-left: 20px;
+					li{
+						margin-bottom: 10px;
+					}
+				}
+			}
+			.support{
+				i.fa{
+					font-size:1.8rem;
+					color:@sky;
+					margin-right: 10px;
+				}
+				a{
+					text-decoration: none;
+					color:@sky;
+					top:-2px;
+					&:hover{
+						text-decoration: underline;
+					}
+				}
+			}
 		}
 	}
 }

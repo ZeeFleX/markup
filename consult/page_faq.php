@@ -50,18 +50,19 @@
         <section class="search-answer content-block">
             <h1>Часто задаваемые вопросы</h1>
             <p>Нужна помощь? Найдите ответ.</p>
-            <input type="text" class="search" data-method="POST" data-action="#" placeholder="Введите вопрос для поиска" />
+            <div class="">
+                <input type="text" class="search" data-method="POST" data-action="#" placeholder="Введите вопрос для поиска" />
+            </div>
         </section>
         <div class="clr"></div>
         <div class="questions-container">
-            <h4>Общие вопросы</h4>
             <div class="questions">
                 <div class="group">
-                    <h4>Гость</h4>
+                    <h4>Общие вопросы</h4>
                     <?php for($i = 0; $i <= 2; $i++) { ?>
-                    <div class="question content-block">
+                    <div class="question content-block active">
                         <div class="show-answer-arrow"></div>
-                        <div class="question-text">
+                        <div class="question-text with">
                             <p>Задача организации, в особенности же консультация с широким активом играет важную роль?</p>
                         </div>
                         <div class="clr"></div>
@@ -87,7 +88,7 @@
                     <?php } ?>
                 </div>
                 <div class="group">
-                    <h4>Общие вопросы</h4>
+                    <h4>Гость</h4>
                     <?php for($i = 0; $i <= 2; $i++) { ?>
                     <div class="question content-block">
                         <div class="show-answer-arrow"></div>
@@ -103,54 +104,7 @@
                 </div>
             </div>
             <div class="clr"></div>
-            <form action="#" method="POST" class="ask content-block">
-                <input type="file" class="hidden" name="question-file">
-                <h2>Не нашли ответ?</h2>
-                <p>Напишите нам Ваш вопрос! Мы ответим в течение 24 часов.</p>
-                <div class="field name">
-                    <label for="name">Ваше имя</label>
-                    <input type="text" name="name" placeholder="Введите ваше имя">
-                </div>
-                <div class="field email">
-                    <label for="email">Email</label>
-                    <input type="text" name="email" placeholder="Введите ваш email">
-                </div>
-                <div class="clr"></div>
-                <div class="field theme">
-                    <label for="theme">Вопрос (кратко)</label>
-                    <input type="text" name="theme" placeholder="Напишите кратко о чем Ваш вопрос">
-                </div>
-                <div class="field question-content">
-                    <label for="question-content">Вопрос (подробно)</label>
-                    <input type="text" name="question-content" placeholder="Опишите Вашу проблему">
-                </div>
-                <div class="field file">
-                    <a href="#" id="attach-file" class="btn ghost">Прикрепить файл</a>
-                    <p>Макс. размер файла 5Mb.</p>
-                </div>
-                <div class="clr"></div>
-                <input type="submit" class="btn" value="Задать вопрос">
-                <a href="#" class="btn ghost" id="support">Обратиться в техподдержку</a>
-            </form>
-            <div class="right">
-                <div class="instruction content-block">
-                    <h4>Как задать вопрос</h4>
-                    <ol>
-                        <li>Внимательно заполните поля «email» и «раздел».</li>
-                        <li>В поле «Описание проблемы» максимально четко и подробно изложите суть Вашего вопроса. Опишите свои дейтсвия по шагам.</li>
-                        <li>При необходимости загрузите к вопросу скриншот экрана или другую дополнительную информацию.</li>
-                        <li>Стандартный срок ответа 24 часа.</li>
-                    </ol>
-                </div>
-                <div class="support">
-                    <h4>Служба поддержки</h4>
-                    <div class="content-block">
-                        <p class="email"><a href="#">support@dowlatow.ru</a></p>
-                        <p class="skype"><a href="#">support.dowlatow</a></p>
-                        <p class="worktime">Время работы поддержки: 10.00-24.00 мск</p>
-                    </div>
-                </div>
-            </div>
+            
         </div>
         <aside class="additional-menu">
             <h4>FAQ навигатор</h4>
@@ -179,6 +133,57 @@
                 </ul>
             </div>
         </aside>
+    </div>
+    <div class="clr"></div>
+    <div class="wrapper">
+        <form action="#" method="POST" class="ask content-block">
+            <input type="file" class="hidden" name="question-file">
+            <h2>Не нашли ответ?</h2>
+            <p>Напишите нам Ваш вопрос! Мы ответим в течение 24 часов.</p>
+            <div class="field name">
+                <label for="name">Ваше имя</label>
+                <input type="text" name="name" placeholder="Введите ваше имя">
+            </div>
+            <div class="field email">
+                <label for="email">Email</label>
+                <input type="text" name="email" placeholder="Введите ваш email">
+            </div>
+            <div class="clr"></div>
+            <div class="field theme">
+                <label for="theme">Вопрос (кратко)</label>
+                <input type="text" name="theme" placeholder="Напишите кратко о чем Ваш вопрос">
+            </div>
+            <div class="field question-content">
+                <label for="question-content">Вопрос (подробно)</label>
+                <input type="text" name="question-content" placeholder="Опишите Вашу проблему">
+            </div>
+            <div class="field file">
+                <a href="#" id="attach-file" class="btn ghost">Прикрепить файл</a>
+                <p>Макс. размер файла 5Mb.</p>
+            </div>
+            <div class="clr"></div>
+            <input type="submit" class="btn" value="Задать вопрос">
+            <a href="#" class="btn ghost" id="support">Обратиться в техподдержку</a>
+        </form>
+        <div class="right">
+            <div class="instruction content-block">
+                <h4>Как задать вопрос</h4>
+                <ol>
+                    <li>Внимательно заполните поля «email» и «раздел».</li>
+                    <li>В поле «Описание проблемы» максимально четко и подробно изложите суть Вашего вопроса. Опишите свои дейтсвия по шагам.</li>
+                    <li>При необходимости загрузите к вопросу скриншот экрана или другую дополнительную информацию.</li>
+                    <li>Стандартный срок ответа 24 часа.</li>
+                </ol>
+            </div>
+            <div class="support">
+                <h4>Служба поддержки</h4>
+                <div class="content-block">
+                    <p class="email"><i class="fa fa-envelope-o"></i><a href="#">support@dowlatow.ru</a></p>
+                    <p class="skype"><i class="fa fa-skype"></i><a href="#">support.dowlatow</a></p>
+                    <p class="worktime">Время работы поддержки:<br /> 10.00-24.00 мск</p>
+                </div>
+            </div>
+        </div>
     </div>
     <footer class="footer">
         <section class="library">
