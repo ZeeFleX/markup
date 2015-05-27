@@ -17,7 +17,7 @@
 			$handler.on('click', function(){
 				if(!$block.find('.editable-form').length){
 					var $form = $('<form class="editable-form" action="' + $block.attr('data-url') + '" style="top:0; left:0; position:absolute; background: #fff; z-index:1; height:' + $block.outerHeight() + 'px; width: ' + ($block.outerWidth() - 20) + 'px;"></form>').prependTo($block).show(300);
-					var $input = $('<textarea name="content" style="width:100%; height:100%; font-size:1.4rem; padding:0; border:none; line-height:135%;" class="allow-clear"></textarea>').prependTo($form);
+					var $input = $('<textarea name="content" style="width:100%; height:100%; font-size:1.4rem; line-height:135%;" class="allow-clear"></textarea>').prependTo($form);
 					$input.html($.trim(strip_tags($container.html())));
 					var $cancel = $('<i class="fa fa-times" style="position:absolute; top:20px; right:0px; font-size:1.4rem; cursor:pointer; z-index:1; color:#f85649"></i>').prependTo($block);
 					var $submit = $('<i class="fa fa-check" style="position:absolute; top:40px; right:0px; font-size:1.4rem; cursor:pointer; z-index:1; color:#0f9b58"></i>').prependTo($block);	
