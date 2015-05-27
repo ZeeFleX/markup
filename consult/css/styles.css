@@ -7525,32 +7525,36 @@ body.page-faq > .wrapper form.ask .field {
   margin-bottom: 20px;
 }
 /* line 81, page_faq.less */
+body.page-faq > .wrapper form.ask .field textarea {
+  height: 80px;
+}
+/* line 84, page_faq.less */
 body.page-faq > .wrapper form.ask .field input,
 body.page-faq > .wrapper form.ask .field textarea {
   margin-bottom: 0;
 }
-/* line 84, page_faq.less */
+/* line 87, page_faq.less */
 body.page-faq > .wrapper form.ask .field label {
   margin-bottom: 4px;
   font-weight: 500;
   color: #35504e;
 }
-/* line 89, page_faq.less */
+/* line 92, page_faq.less */
 body.page-faq > .wrapper form.ask .field.name {
   float: left;
   width: 35%;
   margin-right: 3%;
 }
-/* line 94, page_faq.less */
+/* line 97, page_faq.less */
 body.page-faq > .wrapper form.ask .field.email {
   float: left;
   width: 62%;
 }
-/* line 98, page_faq.less */
+/* line 101, page_faq.less */
 body.page-faq > .wrapper form.ask .field.theme {
   margin-top: -20px;
 }
-/* line 102, page_faq.less */
+/* line 105, page_faq.less */
 body.page-faq > .wrapper form.ask .field.file a {
   display: block;
   float: left;
@@ -7559,47 +7563,47 @@ body.page-faq > .wrapper form.ask .field.file a {
   margin-right: 20px;
   z-index: 1;
 }
-/* line 110, page_faq.less */
+/* line 113, page_faq.less */
 body.page-faq > .wrapper form.ask .field.file p {
   top: 8px;
 }
-/* line 115, page_faq.less */
+/* line 118, page_faq.less */
 body.page-faq > .wrapper form.ask input[type="submit"] {
   margin-top: 25px;
   padding: 9px 17px 8px 17px;
   margin-right: 20px;
 }
-/* line 121, page_faq.less */
+/* line 124, page_faq.less */
 body.page-faq > .wrapper .right {
   float: right;
   width: 36%;
 }
-/* line 124, page_faq.less */
+/* line 127, page_faq.less */
 body.page-faq > .wrapper .right .content-block {
   padding-top: 15px;
   padding-bottom: 15px;
 }
-/* line 129, page_faq.less */
+/* line 132, page_faq.less */
 body.page-faq > .wrapper .right .instruction ol {
   padding-left: 20px;
 }
-/* line 131, page_faq.less */
+/* line 134, page_faq.less */
 body.page-faq > .wrapper .right .instruction ol li {
   margin-bottom: 10px;
 }
-/* line 137, page_faq.less */
+/* line 140, page_faq.less */
 body.page-faq > .wrapper .right .support i.fa {
   font-size: 1.8rem;
   color: #4ad0c5;
   margin-right: 10px;
 }
-/* line 142, page_faq.less */
+/* line 145, page_faq.less */
 body.page-faq > .wrapper .right .support a {
   text-decoration: none;
   color: #4ad0c5;
   top: -2px;
 }
-/* line 146, page_faq.less */
+/* line 149, page_faq.less */
 body.page-faq > .wrapper .right .support a:hover {
   text-decoration: underline;
 }

@@ -151,11 +151,11 @@
             <div class="clr"></div>
             <div class="field theme">
                 <label for="theme">Вопрос (кратко)</label>
-                <input type="text" name="theme" placeholder="Напишите кратко о чем Ваш вопрос">
+                <input type="text" name="theme" placeholder="Напишите кратко о чем Ваш вопрос" class="allow-clear">
             </div>
             <div class="field question-content">
                 <label for="question-content">Вопрос (подробно)</label>
-                <input type="text" name="question-content" placeholder="Опишите Вашу проблему">
+                <textarea name="question-content" class="allow-clear" placeholder="Опишите Вашу проблему"></textarea>
             </div>
             <div class="field file">
                 <a href="#" id="attach-file" class="btn ghost">Прикрепить файл</a>
@@ -178,7 +178,7 @@
             <div class="support">
                 <h4>Служба поддержки</h4>
                 <div class="content-block">
-                    <p class="email"><i class="fa fa-envelope-o"></i><a href="#">support@dowlatow.ru</a></p>
+                    <p class="email"><i class="fa fa-envelope-o"></i><a href="#">support@consult4me.ru</a></p>
                     <p class="skype"><i class="fa fa-skype"></i><a href="#">support.dowlatow</a></p>
                     <p class="worktime">Время работы поддержки:<br /> 10.00-24.00 мск</p>
                 </div>
