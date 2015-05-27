@@ -4938,8 +4938,6 @@ body.page-public-question-list .wrapper section.questions .question h4 span {
 body.page-public-question-list .wrapper section.questions .question .answer-content,
 body.page-public-question-list .wrapper section.questions .question .question-content {
   min-height: 100px;
-  max-height: 300px;
-  overflow: hidden;
 }
 /* line 150, page_public_question_list.less */
 body.page-public-question-list .wrapper section.questions .question .answer-content .fader,
