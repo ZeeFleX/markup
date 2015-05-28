@@ -145,7 +145,7 @@
                 </div>
                 <div class="clr"></div>
                 <input type="submit" value="Записаться на консультацию"  class="btn"/>
-                <a href="#" class="btn ghost">Отменить</a>
+                <a href="#" class="btn ghost" id="cancel">Отменить</a>
                 
             </form>
             <p class="endnote">

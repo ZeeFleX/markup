@@ -57,7 +57,7 @@
                 
                 <div class="clr"></div>
                 <input type="submit" value="Оплатить"  class="btn"/>
-                <a href="#" class="btn ghost">Отменить</a>
+                <a href="#" class="btn ghost" id="cancel">Отменить</a>
             </form>
             <p class="endnote">
                 Тарифный план начнет действовать либо с указанной Вами даты, либо с даты, следующей за днем получения нами оплаты.
