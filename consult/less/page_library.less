@@ -1,9 +1,28 @@
 body.page-library{
 	.wrapper{
 		section{
+			&.sign-up-mail{
+				float: right;
+	            width: 300px;
+	            height:220px;
+	            margin-left: 20px;
+	            margin-top: 30px;
+	            p{
+	                text-align: center;
+	                margin-top: 0;
+	            }
+	            form{
+	                width: 100%;
+	                margin-top:20px;
+	                input{
+	                    width: 100%;
+	                }
+	            }
+			}
 			&.search-article{
 				background: @sky;
 				margin-top: 30px;
+				overflow: hidden;
 				.select2-container{
 					width: 100% !important;
 					margin-top: 10px;
@@ -22,23 +41,23 @@ body.page-library{
 						width: 80%;
 						float: left;
 						margin-right: 20px;
-						.field{
-							&.category{
-								float: left;
-								width: 48%;
-								margin-right: 4%;
-							}
-							&.author{
-								overflow: hidden;
-
-							}
-						}
 					}
 					.right{
 						overflow: hidden;
 						input[type="submit"]{
 							width: 100%;
 							padding: 9px 17px 8px 17px;
+						}
+					}
+					.field{
+						&.category{
+							float: left;
+							width: 48%;
+							margin-right: 4%;
+						}
+						&.author{
+							width: 48%;
+							float: left;
 						}
 					}
 				}

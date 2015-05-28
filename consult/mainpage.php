@@ -128,24 +128,33 @@
                     <?php } ?>
                 </div>
             </section>
-            <section class="ask-question content-block">
-                <a href="#" class="btn with-shadow" id="ask-question">Задать вопрос</a>
-                <h2>Хотите задать вопрос консультантам?</h2>
+            <div class="clr"></div>
+            <section class="sign-up-mail content-block">
+                <p>Подпишитесь на нашу рассылку и всегда будьте в курсе новостей проекта.</p>
+                <form action="#" method="POST">
+                    <input type="text" class="allow-clear" placeholder="Ваш email" />
+                    <input type="submit" class="btn" value="Подписаться">
+                </form>
             </section>
-            <form action="#" method="POST" class="ask-question-form content-block">
-                <i class="fa fa-close"></i>
-                <h4>Задать вопрос консультантам</h4>
-                <div class="field question">
-                    <textarea name="question" placeholder="Напишите Ваш вопрос" class="allow-clear"></textarea>
-                    <div class="field category">
-                        <select name="category" class="select2" >
-                            <option value="0">Растеневодство</option>
-                            <option value="1">Животноводство</option>
-                        </select>
+            <section class="ask-question content-block">
+                <h2>Хотите задать<br />вопрос консультантам?</h2>
+                <a href="#" class="btn ghost" id="ask-question">Задать вопрос</a>
+                <form action="#" method="POST" class="ask-question-form content-block">
+                    <i class="fa fa-close"></i>
+                    <h4>Задать вопрос консультантам</h4>
+                    <div class="field question">
+                        <textarea name="question" placeholder="Напишите Ваш вопрос" class="allow-clear"></textarea>
+                        <div class="field category">
+                            <select name="category" class="select2" >
+                                <option value="0">Растеневодство</option>
+                                <option value="1">Животноводство</option>
+                            </select>
+                        </div>
+                        <input type="submit" class="btn" value="Задать вопрос">
                     </div>
-                    <input type="submit" class="btn" value="Задать вопрос">
-                </div>
-            </form>
+                </form>
+            </section>
+            <div class="clr"></div>
             <section class="questions">
                 <?php for($i = 0; $i <= 3; $i++) { ?>
                 <?php //if($i % 2 == 0) echo '<div class="clr"></div>'; ?>
