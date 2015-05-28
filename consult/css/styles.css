@@ -2891,6 +2891,24 @@ body.page-profile-settings.payment > .wrapper section.content .payment-block .co
   margin-top: -4px;
 }
 /* line 538, page_profile_settings.less */
+body.page-profile-settings.payment > .wrapper section.content .payment-block .content-block p.agreement {
+  color: #8aa4a2;
+  font-size: 1.2rem;
+  font-style: italic;
+  padding: 15px 20px 0 20px;
+  display: block;
+}
+/* line 544, page_profile_settings.less */
+body.page-profile-settings.payment > .wrapper section.content .payment-block .content-block p.agreement a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #4ad0c5;
+}
+/* line 548, page_profile_settings.less */
+body.page-profile-settings.payment > .wrapper section.content .payment-block .content-block p.agreement a:hover {
+  text-decoration: underline;
+}
+/* line 553, page_profile_settings.less */
 body.page-profile-settings.payment > .wrapper section.content .payment-block .content-block .info {
   border-top: solid 1px #b9d4cc;
   background: #f8f8f8;
@@ -2899,76 +2917,76 @@ body.page-profile-settings.payment > .wrapper section.content .payment-block .co
   padding: 15px 20px;
   margin-top: 30px;
 }
-/* line 545, page_profile_settings.less */
+/* line 560, page_profile_settings.less */
 body.page-profile-settings.payment > .wrapper section.content .payment-block .content-block .info i {
   display: block;
   float: left;
   font-size: 4rem;
   margin-right: 20px;
 }
-/* line 551, page_profile_settings.less */
+/* line 566, page_profile_settings.less */
 body.page-profile-settings.payment > .wrapper section.content .payment-block .content-block .info .text {
   overflow: hidden;
 }
-/* line 553, page_profile_settings.less */
+/* line 568, page_profile_settings.less */
 body.page-profile-settings.payment > .wrapper section.content .payment-block .content-block .info .text p {
   margin: 2px 0;
   font-weight: 500;
 }
-/* line 556, page_profile_settings.less */
+/* line 571, page_profile_settings.less */
 body.page-profile-settings.payment > .wrapper section.content .payment-block .content-block .info .text p .date {
   font-weight: 700;
   color: #35504e;
 }
-/* line 566, page_profile_settings.less */
+/* line 581, page_profile_settings.less */
 body.page-profile-settings.payment > .wrapper section.content .tarification-block .content-block {
   padding: 0;
 }
-/* line 568, page_profile_settings.less */
+/* line 583, page_profile_settings.less */
 body.page-profile-settings.payment > .wrapper section.content .tarification-block .content-block table {
   border-collapse: collapse;
   width: 100%;
 }
-/* line 572, page_profile_settings.less */
+/* line 587, page_profile_settings.less */
 body.page-profile-settings.payment > .wrapper section.content .tarification-block .content-block table tr td,
 body.page-profile-settings.payment > .wrapper section.content .tarification-block .content-block table tr th {
   border-bottom: solid 1px #b9d4cc;
 }
-/* line 576, page_profile_settings.less */
+/* line 591, page_profile_settings.less */
 body.page-profile-settings.payment > .wrapper section.content .tarification-block .content-block table th,
 body.page-profile-settings.payment > .wrapper section.content .tarification-block .content-block table td {
   padding: 15px 20px;
 }
-/* line 580, page_profile_settings.less */
+/* line 595, page_profile_settings.less */
 body.page-profile-settings.payment > .wrapper section.content .tarification-block .content-block table thead th {
   padding: 25px 20px;
   color: #8aa4a2;
   font-weight: 400;
   text-align: left;
 }
-/* line 589, page_profile_settings.less */
+/* line 604, page_profile_settings.less */
 body.page-profile-settings.payment > .wrapper section.content .tarification-block .content-block table tbody td.func {
   color: #35504e;
   font-weight: 700;
 }
-/* line 593, page_profile_settings.less */
+/* line 608, page_profile_settings.less */
 body.page-profile-settings.payment > .wrapper section.content .tarification-block .content-block table tbody td:not(.func) {
   text-align: center;
   width: 80px;
 }
-/* line 597, page_profile_settings.less */
+/* line 612, page_profile_settings.less */
 body.page-profile-settings.payment > .wrapper section.content .tarification-block .content-block table tbody td i.fa {
   font-size: 2.4rem;
 }
-/* line 599, page_profile_settings.less */
+/* line 614, page_profile_settings.less */
 body.page-profile-settings.payment > .wrapper section.content .tarification-block .content-block table tbody td i.fa.fa-check {
   color: #0f9b58;
 }
-/* line 602, page_profile_settings.less */
+/* line 617, page_profile_settings.less */
 body.page-profile-settings.payment > .wrapper section.content .tarification-block .content-block table tbody td i.fa.fa-times {
   color: #eb5245;
 }
-/* line 606, page_profile_settings.less */
+/* line 621, page_profile_settings.less */
 body.page-profile-settings.payment > .wrapper section.content .tarification-block .content-block table tbody td span.endnote {
   font-size: 1.0rem;
   color: #8aa4a2;
@@ -2976,14 +2994,14 @@ body.page-profile-settings.payment > .wrapper section.content .tarification-bloc
   display: block;
   margin-top: 5px;
 }
-/* line 615, page_profile_settings.less */
+/* line 630, page_profile_settings.less */
 body.page-profile-settings.payment > .wrapper section.content .tarification-block .content-block table tbody tr:last-child td {
   vertical-align: top;
   color: #8aa4a2;
   font-size: 1.0rem;
   font-weight: 500;
 }
-/* line 620, page_profile_settings.less */
+/* line 635, page_profile_settings.less */
 body.page-profile-settings.payment > .wrapper section.content .tarification-block .content-block table tbody tr:last-child td span {
   color: #35504e;
   font-size: 1.4rem;
