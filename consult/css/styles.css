@@ -7739,4 +7739,114 @@ body.page-faq > .wrapper .right .support a:hover {
     display: block !important;
   }
 }
+/* line 1, modal_payment.less */
+.window.payment {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+/* line 9, modal_payment.less */
+.window.payment > .container {
+  position: relative;
+  width: 500px;
+  height: auto;
+  margin: 30px auto;
+  background: #ffffff;
+  border-radius: 5px;
+  -o-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  padding: 30px;
+  padding-bottom: 100px;
+}
+/* line 21, modal_payment.less */
+.window.payment > .container i.fa-close {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  cursor: pointer;
+  font-size: 1.8rem;
+  z-index: 1;
+}
+/* line 28, modal_payment.less */
+.window.payment > .container i.fa-close:hover {
+  color: #35504e;
+}
+/* line 32, modal_payment.less */
+.window.payment > .container h1 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  padding-top: 0;
+  margin-top: -7px;
+}
+/* line 38, modal_payment.less */
+.window.payment > .container form {
+  width: 510px;
+  position: relative;
+  width: 100%;
+}
+/* line 42, modal_payment.less */
+.window.payment > .container form h5 {
+  padding-bottom: 0;
+  margin-bottom: -5px;
+}
+/* line 46, modal_payment.less */
+.window.payment > .container form .calendar {
+  margin: 0;
+  margin-top: 15px;
+}
+/* line 50, modal_payment.less */
+.window.payment > .container form .calendar header a {
+  color: #35504e;
+}
+/* line 54, modal_payment.less */
+.window.payment > .container form .calendar .item.selected {
+  background: #4ad0c5;
+  color: #ffffff;
+}
+/* line 60, modal_payment.less */
+.window.payment > .container form p.price {
+  color: #4ad0c5;
+  font-size: 3.0rem;
+}
+/* line 63, modal_payment.less */
+.window.payment > .container form p.price i {
+  font-size: 2.6rem;
+}
+/* line 67, modal_payment.less */
+.window.payment > .container form input[type="submit"] {
+  margin-top: 20px;
+  margin-right: 20px;
+}
+/* line 72, modal_payment.less */
+.window.payment > .container p.endnote {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  left: 0;
+  background: #f2f2f2;
+  border-top: solid 1px #e7e7e7;
+  margin: 0;
+  padding: 20px;
+  border-radius: 0 0 5px 5px;
+  -o-border-radius: 0 0 5px 5px;
+  -moz-border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
+}
+/* line 87, modal_payment.less */
+.window.payment > .container p.endnote a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #4ad0c5;
+}
+/* line 91, modal_payment.less */
+.window.payment > .container p.endnote a:hover {
+  text-decoration: underline;
+}
 /*# sourceMappingURL=styles.css.map */
