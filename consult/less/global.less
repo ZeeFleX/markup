@@ -191,6 +191,14 @@ header.header {
             float: left;
             margin-right: 20px;
             margin-top: 11px;
+            font-size:1.0rem;
+            border-radius:10px;
+            -o-border-radius:10px;
+            -moz-border-radius:10px;
+            -webkit-border-radius:10px;
+            color:#aeaeae;
+            background: #f5f5f5;
+            padding:3px 10px;
         }
         .clock{
             float: right;
@@ -301,6 +309,9 @@ header.header {
     .mainmenu {
         float: right;
         margin: 13px 0;
+        &.icons{
+            display: none;
+        }
         li {
             float: left;
             text-transform: uppercase;
@@ -309,6 +320,13 @@ header.header {
             a{
                 color: @sea;
                 text-decoration: none;
+            }
+            i.fa{
+                color:  #8aa4a2;
+                font-size: 1.8rem;
+            }
+            &:hover i, &.active i{
+                color:@sea;
             }
         }
     }

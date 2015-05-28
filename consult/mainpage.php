@@ -17,19 +17,53 @@
         <div class="logo">
             <img src="images/logo.png" alt="">
         </div>
-        <div class="project-name">
-             <p class="title">Психолог для Вас</p>
-             <p class="author">Проект Константина Довлатова</p>
+        <!-- <a class="sign-in btn" id="sign-in" href="/">Войти</a> -->
+        <div class="profile-snippet">
+            <div class="photo-container">
+                <img src="images/photos/01.jpg" />
+            </div>
+            <div class="info">
+                <div class="name">Иванов Иван</div>
+                <div class="job">Консультант</div>
+            </div>
+            <div class="more-container">
+                <i class="fa fa-caret-down"></i>
+                <div class="dropdown-menu">
+                    <ul>
+                        <a href="#">Выйти</a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="profile-notifications">
+            <div class="events active">
+                <div class="count">3</div>
+                <i class="fa fa-calendar"></i>
+            </div>
+            <div class="new-messages">
+                <div class="count">2</div>
+                <i class="fa fa-envelope"></i>
+            </div>
+            <div class="new-notifications">
+                <div class="count">2</div>
+                <i class="fa fa-bell"></i>
+            </div>
         </div>
         
-        <a class="sign-in btn" id="sign-in" href="/">Войти</a>
-        <ul class="mainmenu">
+        <ul class="mainmenu text">
             <li><a href="#">Публичные вопросы</a></li>
             <li><a href="#">Консультанты</a></li>
             <li><a href="#">Библиотека</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+        <ul class="mainmenu icons">
+            <li><a href="#"><i class="fa fa-comments"></i></a></li>
+            <li><a href="#"><i class="fa fa-suitcase"></i></a></li>
+            <li><a href="#"><i class="fa fa-book"></i></a></li>
+            <li><a href="#"><i class="fa fa-question-circle"></i></a></li>
         </ul>
         <div class="time">
-            <p>Мы работаем по московскому времени</p>
+            <p>МЫ РАБОТАЕМ ПО МСК</p>
             <div class="clock"></div>
         </div>
     </header>

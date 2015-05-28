@@ -749,18 +749,26 @@ header.header .time p {
   float: left;
   margin-right: 20px;
   margin-top: 11px;
+  font-size: 1.0rem;
+  border-radius: 10px;
+  -o-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  color: #aeaeae;
+  background: #f5f5f5;
+  padding: 3px 10px;
 }
-/* line 195, global.less */
+/* line 203, global.less */
 header.header .time .clock {
   float: right;
 }
-/* line 199, global.less */
+/* line 207, global.less */
 header.header .project-name {
   float: left;
   margin-left: 10px;
   margin-top: 5px;
 }
-/* line 203, global.less */
+/* line 211, global.less */
 header.header .project-name .title {
   color: #4ad0c5;
   font-size: 1.2rem;
@@ -768,23 +776,23 @@ header.header .project-name .title {
   text-transform: uppercase;
   margin: 0;
 }
-/* line 210, global.less */
+/* line 218, global.less */
 header.header .project-name .author {
   color: #8aa4a2;
   font-size: 1.0rem;
   font-weight: 300;
   margin: 0;
 }
-/* line 217, global.less */
+/* line 225, global.less */
 header.header .sign-in {
   float: right;
   margin-top: 3px;
 }
-/* line 225, global.less */
+/* line 233, global.less */
 header.header .profile-snippet {
   float: right;
 }
-/* line 227, global.less */
+/* line 235, global.less */
 header.header .profile-snippet .photo-container {
   border-radius: 50px;
   -o-border-radius: 50px;
@@ -796,60 +804,60 @@ header.header .profile-snippet .photo-container {
   overflow: hidden;
   border: solid 1px #8aa4a2;
 }
-/* line 237, global.less */
+/* line 245, global.less */
 header.header .profile-snippet .photo-container img {
   display: block;
   width: 100%;
 }
-/* line 242, global.less */
+/* line 250, global.less */
 header.header .profile-snippet .info {
   float: left;
   margin-left: 10px;
   margin-top: 5px;
 }
-/* line 246, global.less */
+/* line 254, global.less */
 header.header .profile-snippet .info .name {
   color: #35504e;
   font: 500 1.4rem Roboto;
 }
-/* line 250, global.less */
+/* line 258, global.less */
 header.header .profile-snippet .info .job {
   color: #4ad0c5;
   font: 400 1.2rem Roboto;
 }
-/* line 255, global.less */
+/* line 263, global.less */
 header.header .profile-snippet .more-container {
   float: left;
   margin-left: 10px;
   margin-top: 10px;
 }
-/* line 259, global.less */
+/* line 267, global.less */
 header.header .profile-snippet .more-container i {
   color: #35504e;
   font-size: 1.8rem;
   cursor: pointer;
 }
-/* line 264, global.less */
+/* line 272, global.less */
 header.header .profile-snippet .more-container .dropdown-menu {
   display: none;
 }
-/* line 270, global.less */
+/* line 278, global.less */
 header.header .profile-notifications {
   float: right;
   margin-right: 10px;
   margin-top: 10px;
 }
-/* line 274, global.less */
+/* line 282, global.less */
 header.header .profile-notifications > div {
   float: left;
   margin: 0 15px;
   cursor: pointer;
 }
-/* line 278, global.less */
+/* line 286, global.less */
 header.header .profile-notifications > div.active i.fa {
   color: #eb5245;
 }
-/* line 281, global.less */
+/* line 289, global.less */
 header.header .profile-notifications > div .count {
   position: absolute;
   border-radius: 50px;
@@ -864,29 +872,43 @@ header.header .profile-notifications > div .count {
   z-index: 1;
   font: 500 1.1rem / 17px Roboto;
 }
-/* line 295, global.less */
+/* line 303, global.less */
 header.header .profile-notifications > div i.fa {
   color: #8aa4a2;
   font-size: 2.0rem;
 }
-/* line 301, global.less */
+/* line 309, global.less */
 header.header .mainmenu {
   float: right;
   margin: 13px 0;
 }
-/* line 304, global.less */
+/* line 312, global.less */
+header.header .mainmenu.icons {
+  display: none;
+}
+/* line 315, global.less */
 header.header .mainmenu li {
   float: left;
   text-transform: uppercase;
   font: 500 1.2rem Roboto;
   margin-right: 30px;
 }
-/* line 309, global.less */
+/* line 320, global.less */
 header.header .mainmenu li a {
   color: #35504e;
   text-decoration: none;
 }
-/* line 316, global.less */
+/* line 324, global.less */
+header.header .mainmenu li i.fa {
+  color: #8aa4a2;
+  font-size: 1.8rem;
+}
+/* line 328, global.less */
+header.header .mainmenu li:hover i,
+header.header .mainmenu li.active i {
+  color: #35504e;
+}
+/* line 334, global.less */
 .user-menu-section {
   background: #f8f8f8;
   overflow: hidden;
@@ -896,76 +918,76 @@ header.header .mainmenu li a {
   -moz-box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.1);
 }
-/* line 325, global.less */
+/* line 343, global.less */
 .user-menu-section .wrapper .user-menu-container {
   right: 50%;
   float: right;
 }
-/* line 329, global.less */
+/* line 347, global.less */
 .user-menu-section .wrapper .user-menu {
   left: 50%;
   float: left;
 }
-/* line 332, global.less */
+/* line 350, global.less */
 .user-menu-section .wrapper .user-menu li {
   margin: 0 10px;
   float: left;
 }
-/* line 336, global.less */
+/* line 354, global.less */
 .user-menu-section .wrapper .user-menu a {
   color: #35504e;
   font: 400 1.4rem  Roboto;
   text-decoration: none;
 }
-/* line 340, global.less */
+/* line 358, global.less */
 .user-menu-section .wrapper .user-menu a:hover {
   text-decoration: underline;
 }
-/* line 349, global.less */
+/* line 367, global.less */
 .footer {
   width: 100%;
   margin-top: 20px;
 }
-/* line 352, global.less */
+/* line 370, global.less */
 .footer a {
   text-decoration: none;
   color: #ffffff;
 }
-/* line 356, global.less */
+/* line 374, global.less */
 .footer section.library {
   background: #4ad0c5;
   padding: 10px 0 20px 0;
 }
-/* line 359, global.less */
+/* line 377, global.less */
 .footer section.library .logo {
   float: left;
   width: 25%;
   margin-top: 16px;
 }
-/* line 364, global.less */
+/* line 382, global.less */
 .footer section.library .title {
   float: left;
   width: 25%;
 }
-/* line 367, global.less */
+/* line 385, global.less */
 .footer section.library .title h3 {
   color: #ffffff;
 }
-/* line 371, global.less */
+/* line 389, global.less */
 .footer section.library .library-list {
   float: right;
   width: 75%;
   margin-top: 8px;
 }
-/* line 375, global.less */
+/* line 393, global.less */
 .footer section.library .library-list h4 {
   color: #ffffff;
 }
-/* line 378, global.less */
+/* line 396, global.less */
 .footer section.library .library-list .items-container {
   width: 100%;
 }
-/* line 380, global.less */
+/* line 398, global.less */
 .footer section.library .library-list .items-container .item {
   float: left;
   width: 33%;
@@ -973,17 +995,17 @@ header.header .mainmenu li a {
   font: 400 1.6rem Roboto;
   margin: 5px 0;
 }
-/* line 386, global.less */
+/* line 404, global.less */
 .footer section.library .library-list .items-container .item:hover {
   text-decoration: underline;
 }
-/* line 393, global.less */
+/* line 411, global.less */
 .footer section.bottom {
   background: #41b6ad;
   padding: 15px 0;
   overflow: hidden;
 }
-/* line 397, global.less */
+/* line 415, global.less */
 .footer section.bottom p.copyright {
   display: block;
   float: left;
@@ -991,21 +1013,21 @@ header.header .mainmenu li a {
   font: 500 1.4rem Roboto;
   margin-left: 30px;
 }
-/* line 404, global.less */
+/* line 422, global.less */
 .footer section.bottom ul.footer-menu {
   float: right;
   margin-top: 13px;
 }
-/* line 407, global.less */
+/* line 425, global.less */
 .footer section.bottom ul.footer-menu li {
   float: left;
   margin-right: 30px;
 }
-/* line 410, global.less */
+/* line 428, global.less */
 .footer section.bottom ul.footer-menu li a {
   font: 400 14px Roboto;
 }
-/* line 412, global.less */
+/* line 430, global.less */
 .footer section.bottom ul.footer-menu li a:hover {
   text-decoration: underline;
 }
@@ -7703,5 +7725,15 @@ body.page-faq > .wrapper .right .support a {
 /* line 149, page_faq.less */
 body.page-faq > .wrapper .right .support a:hover {
   text-decoration: underline;
+}
+@media screen and (max-width: 1360px) {
+  /* line 5, media.less */
+  body header .mainmenu.text {
+    display: none;
+  }
+  /* line 8, media.less */
+  body header .mainmenu.icons {
+    display: block !important;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
