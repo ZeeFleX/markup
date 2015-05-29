@@ -526,7 +526,16 @@ ul.badge-marked li {
   padding: 5px !important;
   color: #35504e;
 }
-/* line 1, global.less */
+/* line 2, global.less */
+body.page-text h1:first-child {
+  margin: 30px 0;
+  text-align: center;
+}
+/* line 8, global.less */
+body.page-text > .wrapper > .content-block p {
+  line-height: 160%;
+}
+/* line 13, global.less */
 .no-script-layout {
   position: fixed;
   width: 100%;
@@ -534,63 +543,63 @@ ul.badge-marked li {
   background: #dbefe5;
   z-index: 1000;
 }
-/* line 7, global.less */
+/* line 19, global.less */
 .no-script-layout .wrapper {
   text-align: center;
 }
-/* line 9, global.less */
+/* line 21, global.less */
 .no-script-layout .wrapper h1 {
   margin-top: 100px;
 }
-/* line 15, global.less */
+/* line 27, global.less */
 body > .wrapper {
   min-height: 600px;
 }
-/* line 19, global.less */
+/* line 31, global.less */
 .clr {
   clear: both;
 }
-/* line 22, global.less */
+/* line 34, global.less */
 * {
   position: relative;
 }
-/* line 24, global.less */
+/* line 36, global.less */
 *:focus {
   outline: none;
 }
-/* line 28, global.less */
+/* line 40, global.less */
 ul {
   padding: 0;
   margin: 0;
   list-style: none;
 }
-/* line 33, global.less */
+/* line 45, global.less */
 .hidden {
   display: none;
 }
-/* line 36, global.less */
+/* line 48, global.less */
 a {
   color: #35504e;
 }
-/* line 41, global.less */
+/* line 53, global.less */
 aside.additional-menu .content-block {
   padding: 0;
   overflow: hidden;
 }
-/* line 44, global.less */
+/* line 56, global.less */
 aside.additional-menu .content-block ul {
   width: 100%;
 }
-/* line 46, global.less */
+/* line 58, global.less */
 aside.additional-menu .content-block ul li {
   background: #f6fffb;
   border-top: solid 1px #e7f3ee;
 }
-/* line 49, global.less */
+/* line 61, global.less */
 aside.additional-menu .content-block ul li:first-child {
   border-top: none;
 }
-/* line 52, global.less */
+/* line 64, global.less */
 aside.additional-menu .content-block ul li a {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -601,43 +610,43 @@ aside.additional-menu .content-block ul li a {
   text-align: left;
   text-decoration: none;
 }
-/* line 61, global.less */
+/* line 73, global.less */
 aside.additional-menu .content-block ul li a:hover {
   color: #35504e;
 }
-/* line 65, global.less */
+/* line 77, global.less */
 aside.additional-menu .content-block ul li.active {
   box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.1);
   z-index: 1;
 }
-/* line 68, global.less */
+/* line 80, global.less */
 aside.additional-menu .content-block ul li.active a {
   background: #ffffff;
   color: #35504e;
 }
-/* line 74, global.less */
+/* line 86, global.less */
 aside.additional-menu .content-block ul li > ul li {
   padding-left: 20px;
 }
-/* line 76, global.less */
+/* line 88, global.less */
 aside.additional-menu .content-block ul li > ul li:first-child {
   border-top: solid 1px #e7f3ee;
 }
-/* line 85, global.less */
+/* line 97, global.less */
 .popup-menu {
   z-index: 10;
   padding-bottom: 10px;
   padding-left: 15px;
 }
-/* line 89, global.less */
+/* line 101, global.less */
 .popup-menu a.dotts {
   margin-top: 5px;
 }
-/* line 92, global.less */
+/* line 104, global.less */
 .popup-menu:hover .menu-container {
   display: block !important;
 }
-/* line 95, global.less */
+/* line 107, global.less */
 .popup-menu .menu-container {
   display: none;
   position: absolute;
@@ -645,7 +654,7 @@ aside.additional-menu .content-block ul li > ul li:first-child {
   width: 200px;
   top: 0;
 }
-/* line 101, global.less */
+/* line 113, global.less */
 .popup-menu .menu-container .menu {
   position: relative;
   float: right;
@@ -662,25 +671,25 @@ aside.additional-menu .content-block ul li > ul li:first-child {
   padding: 0 2px 0 8px;
   cursor: pointer;
 }
-/* line 116, global.less */
+/* line 128, global.less */
 .popup-menu .menu-container .menu a {
   display: inline-block;
   margin: 0 2px;
 }
-/* line 119, global.less */
+/* line 131, global.less */
 .popup-menu .menu-container .menu a i {
   line-height: 23px;
   font-size: 1.4rem;
 }
-/* line 122, global.less */
+/* line 134, global.less */
 .popup-menu .menu-container .menu a i:hover {
   color: #4ad0c5;
 }
-/* line 125, global.less */
+/* line 137, global.less */
 .popup-menu .menu-container .menu a i.fa-trash-o {
   color: #eb5245;
 }
-/* line 131, global.less */
+/* line 143, global.less */
 .popup-menu .menu-container .menu .siding {
   position: absolute;
   width: 15px;
@@ -689,12 +698,12 @@ aside.additional-menu .content-block ul li > ul li:first-child {
   top: -1px;
   background: url('../images/popup-menu-siding.png');
 }
-/* line 141, global.less */
+/* line 153, global.less */
 .popup-menu.right-side {
   padding-left: 0;
   padding-right: 15px;
 }
-/* line 144, global.less */
+/* line 156, global.less */
 .popup-menu.right-side .menu-container {
   display: none;
   position: absolute;
@@ -703,7 +712,7 @@ aside.additional-menu .content-block ul li > ul li:first-child {
   width: 200px;
   top: 0;
 }
-/* line 151, global.less */
+/* line 163, global.less */
 .popup-menu.right-side .menu-container .menu {
   float: left;
   border-radius: 0 6px 6px 0;
@@ -714,14 +723,14 @@ aside.additional-menu .content-block ul li > ul li:first-child {
   border: dashed 1px #8aa4a2;
   border-left: none;
 }
-/* line 160, global.less */
+/* line 172, global.less */
 .popup-menu.right-side .menu-container .menu .siding {
   right: 100%;
   left: auto;
   top: -1px;
   background: url('../images/popup-menu-siding-right.png');
 }
-/* line 172, global.less */
+/* line 184, global.less */
 header.header {
   width: 100%;
   padding: 10px 30px;
@@ -730,7 +739,7 @@ header.header {
   -moz-box-sizing: border-box;
   overflow: hidden;
 }
-/* line 179, global.less */
+/* line 191, global.less */
 header.header .logo {
   border-radius: 100%;
   -moz-border-radius: 100%;
@@ -738,12 +747,12 @@ header.header .logo {
   -webkit-border-radius: 100%;
   float: left;
 }
-/* line 186, global.less */
+/* line 198, global.less */
 header.header .time {
   float: right;
   margin-right: 40px;
 }
-/* line 189, global.less */
+/* line 201, global.less */
 header.header .time p {
   display: block;
   float: left;
@@ -758,17 +767,17 @@ header.header .time p {
   background: #f5f5f5;
   padding: 3px 10px;
 }
-/* line 203, global.less */
+/* line 215, global.less */
 header.header .time .clock {
   float: right;
 }
-/* line 207, global.less */
+/* line 219, global.less */
 header.header .project-name {
   float: left;
   margin-left: 10px;
   margin-top: 5px;
 }
-/* line 211, global.less */
+/* line 223, global.less */
 header.header .project-name .title {
   color: #4ad0c5;
   font-size: 1.2rem;
@@ -776,23 +785,23 @@ header.header .project-name .title {
   text-transform: uppercase;
   margin: 0;
 }
-/* line 218, global.less */
+/* line 230, global.less */
 header.header .project-name .author {
   color: #8aa4a2;
   font-size: 1.0rem;
   font-weight: 300;
   margin: 0;
 }
-/* line 225, global.less */
+/* line 237, global.less */
 header.header .sign-in {
   float: right;
   margin-top: 3px;
 }
-/* line 233, global.less */
+/* line 245, global.less */
 header.header .profile-snippet {
   float: right;
 }
-/* line 235, global.less */
+/* line 247, global.less */
 header.header .profile-snippet .photo-container {
   border-radius: 50px;
   -o-border-radius: 50px;
@@ -804,60 +813,60 @@ header.header .profile-snippet .photo-container {
   overflow: hidden;
   border: solid 1px #8aa4a2;
 }
-/* line 245, global.less */
+/* line 257, global.less */
 header.header .profile-snippet .photo-container img {
   display: block;
   width: 100%;
 }
-/* line 250, global.less */
+/* line 262, global.less */
 header.header .profile-snippet .info {
   float: left;
   margin-left: 10px;
   margin-top: 5px;
 }
-/* line 254, global.less */
+/* line 266, global.less */
 header.header .profile-snippet .info .name {
   color: #35504e;
   font: 500 1.4rem Roboto;
 }
-/* line 258, global.less */
+/* line 270, global.less */
 header.header .profile-snippet .info .job {
   color: #4ad0c5;
   font: 400 1.2rem Roboto;
 }
-/* line 263, global.less */
+/* line 275, global.less */
 header.header .profile-snippet .more-container {
   float: left;
   margin-left: 10px;
   margin-top: 10px;
 }
-/* line 267, global.less */
+/* line 279, global.less */
 header.header .profile-snippet .more-container i {
   color: #35504e;
   font-size: 1.8rem;
   cursor: pointer;
 }
-/* line 272, global.less */
+/* line 284, global.less */
 header.header .profile-snippet .more-container .dropdown-menu {
   display: none;
 }
-/* line 278, global.less */
+/* line 290, global.less */
 header.header .profile-notifications {
   float: right;
   margin-right: 10px;
   margin-top: 10px;
 }
-/* line 282, global.less */
+/* line 294, global.less */
 header.header .profile-notifications > div {
   float: left;
   margin: 0 15px;
   cursor: pointer;
 }
-/* line 286, global.less */
+/* line 298, global.less */
 header.header .profile-notifications > div.active i.fa {
   color: #eb5245;
 }
-/* line 289, global.less */
+/* line 301, global.less */
 header.header .profile-notifications > div .count {
   position: absolute;
   border-radius: 50px;
@@ -872,43 +881,43 @@ header.header .profile-notifications > div .count {
   z-index: 1;
   font: 500 1.1rem / 17px Roboto;
 }
-/* line 303, global.less */
+/* line 315, global.less */
 header.header .profile-notifications > div i.fa {
   color: #8aa4a2;
   font-size: 2.0rem;
 }
-/* line 309, global.less */
+/* line 321, global.less */
 header.header .mainmenu {
   float: right;
   margin: 13px 0;
 }
-/* line 312, global.less */
+/* line 324, global.less */
 header.header .mainmenu.icons {
   display: none;
 }
-/* line 315, global.less */
+/* line 327, global.less */
 header.header .mainmenu li {
   float: left;
   text-transform: uppercase;
   font: 500 1.2rem Roboto;
   margin-right: 30px;
 }
-/* line 320, global.less */
+/* line 332, global.less */
 header.header .mainmenu li a {
   color: #35504e;
   text-decoration: none;
 }
-/* line 324, global.less */
+/* line 336, global.less */
 header.header .mainmenu li i.fa {
   color: #8aa4a2;
   font-size: 1.8rem;
 }
-/* line 328, global.less */
+/* line 340, global.less */
 header.header .mainmenu li:hover i,
 header.header .mainmenu li.active i {
   color: #35504e;
 }
-/* line 334, global.less */
+/* line 346, global.less */
 .user-menu-section {
   background: #f8f8f8;
   overflow: hidden;
@@ -918,76 +927,76 @@ header.header .mainmenu li.active i {
   -moz-box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.1);
 }
-/* line 343, global.less */
+/* line 355, global.less */
 .user-menu-section .wrapper .user-menu-container {
   right: 50%;
   float: right;
 }
-/* line 347, global.less */
+/* line 359, global.less */
 .user-menu-section .wrapper .user-menu {
   left: 50%;
   float: left;
 }
-/* line 350, global.less */
+/* line 362, global.less */
 .user-menu-section .wrapper .user-menu li {
   margin: 0 10px;
   float: left;
 }
-/* line 354, global.less */
+/* line 366, global.less */
 .user-menu-section .wrapper .user-menu a {
   color: #35504e;
   font: 400 1.4rem  Roboto;
   text-decoration: none;
 }
-/* line 358, global.less */
+/* line 370, global.less */
 .user-menu-section .wrapper .user-menu a:hover {
   text-decoration: underline;
 }
-/* line 367, global.less */
+/* line 379, global.less */
 .footer {
   width: 100%;
   margin-top: 20px;
 }
-/* line 370, global.less */
+/* line 382, global.less */
 .footer a {
   text-decoration: none;
   color: #ffffff;
 }
-/* line 374, global.less */
+/* line 386, global.less */
 .footer section.library {
   background: #4ad0c5;
   padding: 10px 0 20px 0;
 }
-/* line 377, global.less */
+/* line 389, global.less */
 .footer section.library .logo {
   float: left;
   width: 25%;
   margin-top: 16px;
 }
-/* line 382, global.less */
+/* line 394, global.less */
 .footer section.library .title {
   float: left;
   width: 25%;
 }
-/* line 385, global.less */
+/* line 397, global.less */
 .footer section.library .title h3 {
   color: #ffffff;
 }
-/* line 389, global.less */
+/* line 401, global.less */
 .footer section.library .library-list {
   float: right;
   width: 75%;
   margin-top: 8px;
 }
-/* line 393, global.less */
+/* line 405, global.less */
 .footer section.library .library-list h4 {
   color: #ffffff;
 }
-/* line 396, global.less */
+/* line 408, global.less */
 .footer section.library .library-list .items-container {
   width: 100%;
 }
-/* line 398, global.less */
+/* line 410, global.less */
 .footer section.library .library-list .items-container .item {
   float: left;
   width: 33%;
@@ -995,17 +1004,17 @@ header.header .mainmenu li.active i {
   font: 400 1.6rem Roboto;
   margin: 5px 0;
 }
-/* line 404, global.less */
+/* line 416, global.less */
 .footer section.library .library-list .items-container .item:hover {
   text-decoration: underline;
 }
-/* line 411, global.less */
+/* line 423, global.less */
 .footer section.bottom {
   background: #41b6ad;
   padding: 15px 0;
   overflow: hidden;
 }
-/* line 415, global.less */
+/* line 427, global.less */
 .footer section.bottom p.copyright {
   display: block;
   float: left;
@@ -1013,21 +1022,21 @@ header.header .mainmenu li.active i {
   font: 500 1.4rem Roboto;
   margin-left: 30px;
 }
-/* line 422, global.less */
+/* line 434, global.less */
 .footer section.bottom ul.footer-menu {
   float: right;
   margin-top: 13px;
 }
-/* line 425, global.less */
+/* line 437, global.less */
 .footer section.bottom ul.footer-menu li {
   float: left;
   margin-right: 30px;
 }
-/* line 428, global.less */
+/* line 440, global.less */
 .footer section.bottom ul.footer-menu li a {
   font: 400 14px Roboto;
 }
-/* line 430, global.less */
+/* line 442, global.less */
 .footer section.bottom ul.footer-menu li a:hover {
   text-decoration: underline;
 }
