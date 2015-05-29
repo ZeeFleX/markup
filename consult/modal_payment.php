@@ -18,7 +18,7 @@
                     <span class="value">3000</span> <i class="fa fa-ruble"></i>
                 </p>
                 <h5>Описание заказа</h5>
-                <p>Оплата доступа к системе «Онлайн-консультации выпускников школы Довалтова». Тарифный план: <span class="plan">Hide»</span>.</p>
+                <p>Оплата доступа к системе «Онлайн-консультации выпускников школы Довалтова». Тарифный план: <span class="plan">Hide</span>.</p>
                 <h5>Консультант</h5>
                 <p>Иванов Иван Иванович</p>
                 <h5>Желаемая дата начала действия тарифного плана</h5>
@@ -26,7 +26,7 @@
                     <header>
                         <a href="#"><i class="fa fa-angle-double-left"></i></a>
                         <a href="#"><i class="fa fa-angle-double-right"></i></a>
-                        <p class="month">Январь</p>
+                        <p class="month">Январь, 2015</p>
                         <div class="clr"></div>
                     </header>
                     <div class="container">

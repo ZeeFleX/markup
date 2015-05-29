@@ -7972,45 +7972,50 @@ body.page-faq > .wrapper .right .support a:hover {
   margin-top: -7px;
 }
 /* line 38, modal_payment.less */
+.window.payment > .container span.plan {
+  color: #35504e;
+  font-weight: 500;
+}
+/* line 42, modal_payment.less */
 .window.payment > .container form {
   width: 510px;
   position: relative;
   width: 100%;
 }
-/* line 42, modal_payment.less */
+/* line 46, modal_payment.less */
 .window.payment > .container form h5 {
   padding-bottom: 0;
   margin-bottom: -5px;
 }
-/* line 46, modal_payment.less */
+/* line 50, modal_payment.less */
 .window.payment > .container form .calendar {
   margin: 0;
   margin-top: 15px;
 }
-/* line 50, modal_payment.less */
+/* line 54, modal_payment.less */
 .window.payment > .container form .calendar header a {
   color: #35504e;
 }
-/* line 54, modal_payment.less */
+/* line 58, modal_payment.less */
 .window.payment > .container form .calendar .item.selected {
   background: #4ad0c5;
   color: #ffffff;
 }
-/* line 60, modal_payment.less */
+/* line 64, modal_payment.less */
 .window.payment > .container form p.price {
   color: #4ad0c5;
   font-size: 3.0rem;
 }
-/* line 63, modal_payment.less */
+/* line 67, modal_payment.less */
 .window.payment > .container form p.price i {
   font-size: 2.6rem;
 }
-/* line 67, modal_payment.less */
+/* line 71, modal_payment.less */
 .window.payment > .container form input[type="submit"] {
   margin-top: 20px;
   margin-right: 20px;
 }
-/* line 72, modal_payment.less */
+/* line 76, modal_payment.less */
 .window.payment > .container p.endnote {
   position: absolute;
   bottom: 0;
@@ -8027,13 +8032,13 @@ body.page-faq > .wrapper .right .support a:hover {
   -moz-border-radius: 0 0 5px 5px;
   -webkit-border-radius: 0 0 5px 5px;
 }
-/* line 87, modal_payment.less */
+/* line 91, modal_payment.less */
 .window.payment > .container p.endnote a {
   text-decoration: none;
   font-weight: 700;
   color: #4ad0c5;
 }
-/* line 91, modal_payment.less */
+/* line 95, modal_payment.less */
 .window.payment > .container p.endnote a:hover {
   text-decoration: underline;
 }
