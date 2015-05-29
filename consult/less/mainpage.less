@@ -283,61 +283,101 @@ body.page-mainpage{
             }
             .last-articles{
                 overflow: hidden;
-                h4{
+                & > h4{
                     margin-left: 3%;
                 }
-                .article{
-                    float: left;
+                .articles-flow{
                     overflow: hidden;
-                    padding: 0;
-                    margin-left: 3%;
-                    width: 30.3%;
-                    .teaser-container{
-                        img{
-                            display: block;
-                            width: 100%;
-                        }
-                    }
-                    .content{
-                        padding: 20px;
-                        h4{
-                            padding: 0;
-                            margin: 0;
-                            color: @sea;
-                            font-size: 1.4rem;
-                            font-weight: 500;
-                        }
-                        p.category{
-                            color: @sea;
-                            font-size:1.1rem;
-                            font-weight: 500;
-                            span{
-                                color:@sea_light;
+                    margin-left: 20px;
+                    //width: 100%;
+                    &.three-columns{
+                        .article{
+                            width: 32%;
+                            margin-right: 2%;
+                            &:nth-child(3n){
+                                margin-right: 0;
                             }
                         }
-                        p.author{
-                            color: @sky;
-                            font-size: 1.2rem;
-                            font-weight: 400;
-                        }
-                        p.introtext{
-                            color: @sea_light;
-                            font-size: 11px;
-                            line-height:155%;
-                        }
-                        p.date{
-                            color:@sea_light;
-                            font-size:1.1rem;
+                    }
+                    &.four-columns{
+                        .article{
+                            &:nth-child(4n){
+                                margin-right: 0;
+                            }
                         }
                     }
-                    a.btn{
-                        display: block;
-                        box-sizing:border-box;
-                        -moz-box-sizing:border-box;
-                        margin:0 auto 20px auto;
-                        width: 80%;
-                        text-align: center;
-                        font-size:1.2rem;
+                    .column{
+                        float: left;
+                        width: 23%;
+                        margin-right: 2.66%;
+                    }
+                    .article{
+                        float: left;
+                        width: 23%;
+                        margin-right: 2.66%;
+                        padding: 0;
+                        overflow: hidden;
+                        margin-bottom: 20px;
+                        height:580px;
+                        .image{
+                            width: 100%;
+                            overflow: hidden;
+                            height:215px;
+                            img{
+                                display: block;
+                                min-width: 100%;
+                                min-height: 100%;
+                            }
+                        }
+                        .content{
+                            width: 100%;
+                            box-sizing:border-box;
+                            -moz-box-sizing:border-box;
+                            padding: 20px 30px;
+                            .fader-container{
+                                overflow:hidden;
+                                height:250px;
+                                &.full-height{
+                                    height: 465px;
+                                }
+                            }
+                            h4.article-name{
+                                padding-top: 0;
+                                font-size: 1.4rem;
+                                font-weight: 500;
+                                padding-top: 0;
+                            }
+                            p{
+                                font-size:1.1rem;
+                                margin:5px 0;
+                                &.category{
+                                    color:@sea;
+                                    margin-top: 0;
+                                    font-weight: 500;
+                                    span.value{
+                                        color:@sea_light;
+                                    }
+                                }
+                                &.author{
+                                    font-size:1.2rem;
+                                    color:@sky;
+                                }
+                                &.introtext{
+                                    line-height:155%;
+                                }
+                                &.date{
+                                    margin-top: 10px;
+                                    color:#b9d4cc;
+                                    font-size:1.0rem;
+                                }
+                            }
+                            a.btn{
+                                display: block;
+                                text-align: center;
+                                font-size:1.2.rem;
+                                margin-top: 15px;
+                            }
+                        }
                     }
                 }
             }

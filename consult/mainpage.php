@@ -145,21 +145,43 @@
                 <div class="last-articles">
                     <h4>Новые статьи</h4>
                     <div class="clr"></div>
-                    <?php for($i = 0; $i <= 2; $i++) {?>
-                    <div class="article content-block">
-                        <div class="teaser-container">
-                            <img src="images/interface/image-placeholder.png" alt="">
+                    <section class="articles-flow three-columns">
+                        <?php 
+                            for($i = 0; $i <= 10; $i++) {
+                            $img = rand(0,1);
+                            $names = Array(
+                                'Короткое название',
+                                'Название чуть-чуть длиннее',
+                                'Название статьи очень длинное в несколько строк',
+                                'Экстремально длиннющее название очередной статьи в несколько строк'
+                            );
+                            $contents = Array(
+                                'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, nostrum.',
+                                'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate explicabo temporibus natus praesentium adipisci, eaque aspernatur hic. Et quis, accusantium. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate explicabo temporibus natus praesentium adipisci, eaque aspernatur hic. Et quis, accusantium. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate explicabo temporibus natus praesentium adipisci, eaque aspernatur hic. Et quis, accusantium.',
+                                'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, nostrum. Obcaecati assumenda velit excepturi sit rerum, suscipit. Dolores, in atque eveniet necessitatibus animi ad voluptas? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, nostrum. Obcaecati assumenda velit excepturi sit rerum, suscipit. Dolores, in atque eveniet necessitatibus animi ad voluptas?'
+                            );
+                        ?>
+                        <div class="article flow-item content-block">
+                            <?php if($img) {?>
+                            <div class="image">
+                                <img src="images/interface/image-placeholder.png" alt="" />
+                            </div>
+                            <?php } ?>
+                            <div class="content">
+                                <div class="fader-container <?php if(!$img) echo 'full-height'; ?>">
+                                    <h4 class="article-name"><?php echo $names[rand(0,3)]; ?></h4>
+                                    <p class="category">Категория: <span class="value">Проблемные адаптации</span></p>
+                                    <p class="author">Иван Иванов</p>
+                                    <p class="introtext">
+                                        <?php echo $contents[rand(0,2)]; ?>
+                                    </p>
+                                </div>
+                                <p class="date">Месяц назад</p>
+                                <a href="#" class="btn ghost">Посмотреть</a>
+                            </div>
                         </div>
-                        <div class="content">
-                            <h4>Название статьи</h4>
-                            <p class="category">Категория: <span>Проблемные адаптации</span></p>
-                            <p class="author">Иван Иванов</p>
-                            <p class="introtext">Равным образом укрепление и развитие структуры позволяет выполнять важные задания по разработке системы обучения кадров...</p>
-                            <p class="date">Месяц назад</p>
-                        </div>
-                        <a href="#" class="btn ghost">Посмотреть</a>
-                    </div>
-                    <?php } ?>
+                        <?php } ?>
+                    </section>
                 </div>
             </section>
             <div class="clr"></div>
