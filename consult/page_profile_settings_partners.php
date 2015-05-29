@@ -77,12 +77,12 @@
             <form action="server_side/get_preview.php" method="POST" multipart-data="true" id="uploader" class="hidden">
                 <input type="file" name="preview" />
             </form>
-            <form action="#" method="POST" class="partners-form content-block">
+            <form action="server_side/set_partners.php" method="POST" class="partners-form content-block">
                 <div class="partners">
                     <div class="partner">
                         <i class="fa fa-times-circle-o"></i>
                         <div class="field type">
-                            <input type="hidden" name="type">
+                            <input type="hidden" name="type[]">
                             <ul>
                                 <li class="active" data-type="code">Код баннера</li>
                                 <li data-type="text">Текстовый баннер</li>
@@ -91,19 +91,19 @@
                         <div class="clr"></div>
                         <div class="field code group-code">
                             <label for="code">Вставка кода баннера</label>
-                            <textarea class="allow-clear" name="code" placeholder="Вставьте код баннера"></textarea>
+                            <textarea class="allow-clear" name="bannercode[]" placeholder="Вставьте код баннера"></textarea>
                         </div>
                         <div class="field name group-text">
                             <label for="name">Название партнера</label>
-                            <input type="text" name="name" placeholder="Введите название партнера">
+                            <input type="text" name="name[]" placeholder="Введите название партнера">
                         </div>
                         <div class="field link group-text">
                             <label for="link">Ссылка на сайт партнера</label>
-                            <input type="text" name="link" placeholder="Вставьте ссылку">
+                            <input type="text" name="link[]" placeholder="Вставьте ссылку">
                         </div>
                         <div class="clr"></div>
                         <div class="field image group-text">
-                            <input type="hidden" name="image">
+                            <input type="hidden" name="image[]">
                             <div>
                                 <div class="image-container" id="image-container"></div>
                                 <div class="float-wrapper">
