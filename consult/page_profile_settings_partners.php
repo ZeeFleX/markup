@@ -74,7 +74,7 @@
     <div class="wrapper">
         <section class="content">
             <h4>Партнеры</h4>
-            <form action="#" method="POST" multipart-data="true" id="uploader" class="hidden">
+            <form action="server_side/get_preview.php" method="POST" multipart-data="true" id="uploader" class="hidden">
                 <input type="file" name="preview" />
             </form>
             <form action="#" method="POST" class="partners-form content-block">
@@ -84,8 +84,8 @@
                         <div class="field type">
                             <input type="hidden" name="type">
                             <ul>
-                                <li class="active">Код баннера</li>
-                                <li>Текстовый баннер</li>
+                                <li class="active" data-type="code">Код баннера</li>
+                                <li data-type="text">Текстовый баннер</li>
                             </ul>
                         </div>
                         <div class="clr"></div>
@@ -107,8 +107,8 @@
                             <div>
                                 <div class="image-container" id="image-container"></div>
                                 <div class="float-wrapper">
-                                    <input type="button" class="btn ghost" value="Загрузить изображение">
-                                    <input type="button" class="btn ghost red" value="Удалить">
+                                    <input type="button" class="btn ghost" id="upload-image" value="Загрузить изображение">
+                                    <input type="button" class="btn ghost red" id="remove-image" value="Удалить">
                                     <!-- <p class="max-size">Макс. размер файла 5Mb (.jpeg, .png)</p> -->
                                 </div>
                             </div>
