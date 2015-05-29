@@ -3067,6 +3067,132 @@ body.page-profile-settings.payment > .wrapper section.content .tarification-bloc
   color: #35504e;
   font-size: 1.4rem;
 }
+/* line 649, page_profile_settings.less */
+body.page-profile-settings.partners form.partners-form {
+  overflow: hidden;
+}
+/* line 651, page_profile_settings.less */
+body.page-profile-settings.partners form.partners-form i.fa-times-circle-o {
+  display: block;
+  font-size: 1.8rem;
+  float: right;
+  margin-left: 20px;
+  color: #eb5245;
+  margin-top: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+/* line 660, page_profile_settings.less */
+body.page-profile-settings.partners form.partners-form i.fa-times-circle-o:hover {
+  color: #c93023;
+}
+/* line 664, page_profile_settings.less */
+body.page-profile-settings.partners form.partners-form ul {
+  overflow: hidden;
+  border-radius: 5px;
+  -o-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border: solid 1px #b9d4cc;
+}
+/* line 673, page_profile_settings.less */
+body.page-profile-settings.partners form.partners-form ul li {
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  text-align: center;
+  color: #35504e;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 10px 0;
+  cursor: pointer;
+}
+/* line 684, page_profile_settings.less */
+body.page-profile-settings.partners form.partners-form ul li.active {
+  background: #b9d4cc;
+}
+/* line 690, page_profile_settings.less */
+body.page-profile-settings.partners form.partners-form .field label {
+  color: #35504e;
+  font-weight: 500;
+  margin-bottom: 4px;
+  margin-top: 15px;
+}
+/* line 696, page_profile_settings.less */
+body.page-profile-settings.partners form.partners-form .field textarea {
+  height: 80px;
+}
+/* line 699, page_profile_settings.less */
+body.page-profile-settings.partners form.partners-form .field.name {
+  float: left;
+  width: 48%;
+  margin-right: 4%;
+}
+/* line 704, page_profile_settings.less */
+body.page-profile-settings.partners form.partners-form .field.link {
+  float: right;
+  width: 48%;
+}
+/* line 708, page_profile_settings.less */
+body.page-profile-settings.partners form.partners-form .field.image {
+  overflow: hidden;
+  margin-top: 20px;
+}
+/* line 711, page_profile_settings.less */
+body.page-profile-settings.partners form.partners-form .field.image .image-container {
+  width: 325px;
+  height: 150px;
+  border-radius: 5px;
+  -o-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background: url('../images/interface/image-placeholder.png') center center no-repeat #b9d4cc;
+  float: left;
+  margin-right: 20px;
+}
+/* line 722, page_profile_settings.less */
+body.page-profile-settings.partners form.partners-form .field.image .float-wrapper {
+  float: right;
+  width: 187px;
+}
+/* line 725, page_profile_settings.less */
+body.page-profile-settings.partners form.partners-form .field.image .float-wrapper input[type="button"] {
+  display: block;
+  margin-bottom: 10px;
+}
+/* line 730, page_profile_settings.less */
+body.page-profile-settings.partners form.partners-form .field.image.teaser .image-container {
+  width: 330px;
+}
+/* line 735, page_profile_settings.less */
+body.page-profile-settings.partners form.partners-form a#add-partner {
+  display: block;
+  text-align: center;
+  border-radius: 3px;
+  -o-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  padding: 5px 0;
+  background: #e9f7f1;
+  color: #8aa4a2;
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-decoration: none;
+  margin-top: 20px;
+}
+/* line 749, page_profile_settings.less */
+body.page-profile-settings.partners form.partners-form a#add-partner:hover {
+  background: #c7d5cf;
+  text-decoration: none;
+}
+/* line 754, page_profile_settings.less */
+body.page-profile-settings.partners form.partners-form input[type="submit"] {
+  margin-top: 30px;
+  margin-right: 10px;
+}
 /* line 1, cheat-sheet.less */
 .wrapper {
   position: relative;

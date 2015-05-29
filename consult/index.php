@@ -51,6 +51,7 @@
             <li><a href="page_faq.php">Страница FAQ.</a></li>
             <li><a href="modal_payment.php">Окно оплаты.</a></li>
             <li><a href="page_text.php">Текстовая страница (политика конфиденциальности).</a></li>
+            <li><a href="page_profile_settings_partners.php">Страница настроек. Партнеры (консультант).</a></li>
         </ol>
         <h1>Полезные ссылки</h1>
         <ol>
