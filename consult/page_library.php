@@ -47,41 +47,31 @@
         </div>
     </section>
     <div class="wrapper">
-        <section class="sign-up-mail content-block">
-            <p>Подпишитесь на нашу рассылку и всегда будьте в курсе новостей проекта.</p>
-            <form action="#" method="POST">
-                <input type="text" class="allow-clear" placeholder="Ваш email" />
-                <input type="submit" class="btn" value="Подписаться">
-            </form>
-        </section>
         <section class="search-article content-block">
             <form action="#" method="POST">
                 <div class="left">
                     <div class="field string">
                         <input type="text" name="string" placeholder="Поиск..." class="allow-clear">
                     </div>
-                    
+                    <div class="field category">
+                        <select name="category" id="" class="select2">
+                            <option value="0">Выберите категорию</option>
+                            <option value="1">Растеневодство</option>
+                        </select>
+                    </div>
+                    <div class="field author">
+                        <select name="author" id="" class="select2">
+                            <option value="0">Братанова Мария</option>
+                            <option value="1">Евстигнеева Дарья</option>
+                        </select>
+                    </div>
                     <div class="clr"></div>
                 </div>
                 <div class="right">
                     <input type="submit" class="btn yellow" value="Найти">
                 </div>
-                <div class="clr"></div>
-                <div class="field category">
-                    <select name="category" id="" class="select2">
-                        <option value="0">Выберите категорию</option>
-                        <option value="1">Растеневодство</option>
-                    </select>
-                </div>
-                <div class="field author">
-                    <select name="author" id="" class="select2">
-                        <option value="0">Братанова Мария</option>
-                        <option value="1">Евстигнеева Дарья</option>
-                    </select>
-                </div>
             </form>
         </section>
-        <div class="clr"></div>
         <section class="write-article content-block">
             <div class="align-container">
                 <div class="align-wrapper">
@@ -90,7 +80,7 @@
                 </div>
             </div>
         </section>
-        <section class="articles-flow three-columns">
+        <section class="articles-flow four-columns">
             <?php 
                 for($i = 0; $i <= 10; $i++) {
                 $img = rand(0,1);

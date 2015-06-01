@@ -17,53 +17,19 @@
         <div class="logo">
             <img src="images/logo.png" alt="">
         </div>
-        <!-- <a class="sign-in btn" id="sign-in" href="/">Войти</a> -->
-        <div class="profile-snippet">
-            <div class="photo-container">
-                <img src="images/photos/01.jpg" />
-            </div>
-            <div class="info">
-                <div class="name">Иванов Иван</div>
-                <div class="job">Консультант</div>
-            </div>
-            <div class="more-container">
-                <i class="fa fa-caret-down"></i>
-                <div class="dropdown-menu">
-                    <ul>
-                        <a href="#">Выйти</a>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="profile-notifications">
-            <div class="events active">
-                <div class="count">3</div>
-                <i class="fa fa-calendar"></i>
-            </div>
-            <div class="new-messages">
-                <div class="count">2</div>
-                <i class="fa fa-envelope"></i>
-            </div>
-            <div class="new-notifications">
-                <div class="count">2</div>
-                <i class="fa fa-bell"></i>
-            </div>
+        <div class="project-name">
+             <p class="title">Психолог для Вас</p>
+             <p class="author">Проект Константина Довлатова</p>
         </div>
         
-        <ul class="mainmenu text">
+        <a class="sign-in btn" id="sign-in" href="/">Войти</a>
+        <ul class="mainmenu">
             <li><a href="#">Публичные вопросы</a></li>
             <li><a href="#">Консультанты</a></li>
             <li><a href="#">Библиотека</a></li>
-            <li><a href="#">FAQ</a></li>
-        </ul>
-        <ul class="mainmenu icons">
-            <li><a href="#"><i class="fa fa-comments"></i></a></li>
-            <li><a href="#"><i class="fa fa-suitcase"></i></a></li>
-            <li><a href="#"><i class="fa fa-book"></i></a></li>
-            <li><a href="#"><i class="fa fa-question-circle"></i></a></li>
         </ul>
         <div class="time">
-            <p>МЫ РАБОТАЕМ ПО МСК</p>
+            <p>Мы работаем по московскому времени</p>
             <div class="clock"></div>
         </div>
     </header>
@@ -145,72 +111,41 @@
                 <div class="last-articles">
                     <h4>Новые статьи</h4>
                     <div class="clr"></div>
-                    <section class="articles-flow three-columns">
-                        <?php 
-                            for($i = 0; $i <= 10; $i++) {
-                            $img = rand(0,1);
-                            $names = Array(
-                                'Короткое название',
-                                'Название чуть-чуть длиннее',
-                                'Название статьи очень длинное в несколько строк',
-                                'Экстремально длиннющее название очередной статьи в несколько строк'
-                            );
-                            $contents = Array(
-                                'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, nostrum.',
-                                'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate explicabo temporibus natus praesentium adipisci, eaque aspernatur hic. Et quis, accusantium. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate explicabo temporibus natus praesentium adipisci, eaque aspernatur hic. Et quis, accusantium. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate explicabo temporibus natus praesentium adipisci, eaque aspernatur hic. Et quis, accusantium.',
-                                'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, nostrum. Obcaecati assumenda velit excepturi sit rerum, suscipit. Dolores, in atque eveniet necessitatibus animi ad voluptas? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, nostrum. Obcaecati assumenda velit excepturi sit rerum, suscipit. Dolores, in atque eveniet necessitatibus animi ad voluptas?'
-                            );
-                        ?>
-                        <div class="article flow-item content-block">
-                            <?php if($img) {?>
-                            <div class="image">
-                                <img src="images/interface/image-placeholder.png" alt="" />
-                            </div>
-                            <?php } ?>
-                            <div class="content">
-                                <div class="fader-container <?php if(!$img) echo 'full-height'; ?>">
-                                    <h4 class="article-name"><?php echo $names[rand(0,3)]; ?></h4>
-                                    <p class="category">Категория: <span class="value">Проблемные адаптации</span></p>
-                                    <p class="author">Иван Иванов</p>
-                                    <p class="introtext">
-                                        <?php echo $contents[rand(0,2)]; ?>
-                                    </p>
-                                </div>
-                                <p class="date">Месяц назад</p>
-                                <a href="#" class="btn ghost">Посмотреть</a>
-                            </div>
+                    <?php for($i = 0; $i <= 2; $i++) {?>
+                    <div class="article content-block">
+                        <div class="teaser-container">
+                            <img src="images/interface/image-placeholder.png" alt="">
                         </div>
-                        <?php } ?>
-                    </section>
+                        <div class="content">
+                            <h4>Название статьи</h4>
+                            <p class="category">Категория: <span>Проблемные адаптации</span></p>
+                            <p class="author">Иван Иванов</p>
+                            <p class="introtext">Равным образом укрепление и развитие структуры позволяет выполнять важные задания по разработке системы обучения кадров...</p>
+                            <p class="date">Месяц назад</p>
+                        </div>
+                        <a href="#" class="btn ghost">Посмотреть</a>
+                    </div>
+                    <?php } ?>
                 </div>
             </section>
-            <div class="clr"></div>
-            <section class="sign-up-mail content-block">
-                <p>Подпишитесь на нашу рассылку и всегда будьте в курсе новостей проекта.</p>
-                <form action="#" method="POST">
-                    <input type="text" class="allow-clear" placeholder="Ваш email" />
-                    <input type="submit" class="btn" value="Подписаться">
-                </form>
-            </section>
             <section class="ask-question content-block">
-                <h2>Хотите задать<br />вопрос консультантам?</h2>
-                <a href="#" class="btn ghost" id="ask-question">Задать вопрос</a>
-                <form action="#" method="POST" class="ask-question-form content-block">
-                    <i class="fa fa-close"></i>
-                    <h4>Задать вопрос консультантам</h4>
-                    <div class="field question">
-                        <textarea name="question" placeholder="Напишите Ваш вопрос" class="allow-clear"></textarea>
-                        <div class="field category">
-                            <select name="category" class="select2" >
-                                <option value="0">Растеневодство</option>
-                                <option value="1">Животноводство</option>
-                            </select>
-                        </div>
-                        <input type="submit" class="btn" value="Задать вопрос">
-                    </div>
-                </form>
+                <a href="#" class="btn with-shadow" id="ask-question">Задать вопрос</a>
+                <h2>Хотите задать вопрос консультантам?</h2>
             </section>
-            <div class="clr"></div>
+            <form action="#" method="POST" class="ask-question-form content-block">
+                <i class="fa fa-close"></i>
+                <h4>Задать вопрос консультантам</h4>
+                <div class="field question">
+                    <textarea name="question" placeholder="Напишите Ваш вопрос" class="allow-clear"></textarea>
+                    <div class="field category">
+                        <select name="category" class="select2" >
+                            <option value="0">Растеневодство</option>
+                            <option value="1">Животноводство</option>
+                        </select>
+                    </div>
+                    <input type="submit" class="btn" value="Задать вопрос">
+                </div>
+            </form>
             <section class="questions">
                 <?php for($i = 0; $i <= 3; $i++) { ?>
                 <?php //if($i % 2 == 0) echo '<div class="clr"></div>'; ?>
