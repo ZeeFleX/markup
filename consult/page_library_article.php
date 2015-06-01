@@ -235,14 +235,6 @@
                 </div>
             </div>
         </section>
-        <section class="sign-up-mail content-block">
-            <p>Подпишитесь на нашу рассылку и всегда будьте в курсе новостей проекта.</p>
-            <a href="#" id="sign-up-email-link" class="btn">Подписаться</a>
-            <!-- <form action="#" method="POST">
-                <input type="text" class="allow-clear" placeholder="Ваш email" />
-                <input type="submit" class="btn" value="Подписаться">
-            </form> -->
-        </section>
     </div>
     <footer class="footer">
         <section class="library">

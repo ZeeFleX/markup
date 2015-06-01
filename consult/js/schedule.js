@@ -766,7 +766,7 @@
 			},
 			success: function(data){
 				//колбек на успешный ответ от сервера
-				console.log(data);
+				callback(data);
 			}
 		});
 	}

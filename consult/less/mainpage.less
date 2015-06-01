@@ -283,190 +283,115 @@ body.page-mainpage{
             }
             .last-articles{
                 overflow: hidden;
-                & > h4{
+                h4{
                     margin-left: 3%;
                 }
-                .articles-flow{
+                .article{
+                    float: left;
                     overflow: hidden;
-                    margin-left: 20px;
-                    //width: 100%;
-                    &.three-columns{
-                        .article{
-                            width: 32%;
-                            margin-right: 2%;
-                            &:nth-child(3n){
-                                margin-right: 0;
-                            }
-                        }
-                    }
-                    &.four-columns{
-                        .article{
-                            &:nth-child(4n){
-                                margin-right: 0;
-                            }
-                        }
-                    }
-                    .column{
-                        float: left;
-                        width: 23%;
-                        margin-right: 2.66%;
-                    }
-                    .article{
-                        float: left;
-                        width: 23%;
-                        margin-right: 2.66%;
-                        padding: 0;
-                        overflow: hidden;
-                        margin-bottom: 20px;
-                        height:580px;
-                        .image{
+                    padding: 0;
+                    margin-left: 3%;
+                    width: 30.3%;
+                    .teaser-container{
+                        img{
+                            display: block;
                             width: 100%;
-                            overflow: hidden;
-                            height:215px;
-                            img{
-                                display: block;
-                                min-width: 100%;
-                                min-height: 100%;
-                            }
-                        }
-                        .content{
-                            width: 100%;
-                            box-sizing:border-box;
-                            -moz-box-sizing:border-box;
-                            padding: 20px 30px;
-                            .fader-container{
-                                overflow:hidden;
-                                height:250px;
-                                &.full-height{
-                                    height: 465px;
-                                }
-                            }
-                            h4.article-name{
-                                padding-top: 0;
-                                font-size: 1.4rem;
-                                font-weight: 500;
-                                padding-top: 0;
-                            }
-                            p{
-                                font-size:1.1rem;
-                                margin:5px 0;
-                                &.category{
-                                    color:@sea;
-                                    margin-top: 0;
-                                    font-weight: 500;
-                                    span.value{
-                                        color:@sea_light;
-                                    }
-                                }
-                                &.author{
-                                    font-size:1.2rem;
-                                    color:@sky;
-                                }
-                                &.introtext{
-                                    line-height:155%;
-                                }
-                                &.date{
-                                    margin-top: 10px;
-                                    color:#b9d4cc;
-                                    font-size:1.0rem;
-                                }
-                            }
-                            a.btn{
-                                display: block;
-                                text-align: center;
-                                font-size:1.2.rem;
-                                margin-top: 15px;
-                            }
                         }
                     }
-                }
-            }
-        }
-        section.sign-up-mail{
-            float: right;
-            width: 300px;
-            height:220px;
-            margin-left: 20px;
-            p{
-                text-align: center;
-                margin-top: 0;
-            }
-            form{
-                width: 100%;
-                margin-top:20px;
-                input{
-                    width: 100%;
+                    .content{
+                        padding: 20px;
+                        h4{
+                            padding: 0;
+                            margin: 0;
+                            color: @sea;
+                            font-size: 1.4rem;
+                            font-weight: 500;
+                        }
+                        p.category{
+                            color: @sea;
+                            font-size:1.1rem;
+                            font-weight: 500;
+                            span{
+                                color:@sea_light;
+                            }
+                        }
+                        p.author{
+                            color: @sky;
+                            font-size: 1.2rem;
+                            font-weight: 400;
+                        }
+                        p.introtext{
+                            color: @sea_light;
+                            font-size: 11px;
+                            line-height:155%;
+                        }
+                        p.date{
+                            color:@sea_light;
+                            font-size:1.1rem;
+                        }
+                    }
+                    a.btn{
+                        display: block;
+                        box-sizing:border-box;
+                        -moz-box-sizing:border-box;
+                        margin:0 auto 20px auto;
+                        width: 80%;
+                        text-align: center;
+                        font-size:1.2rem;
+                    }
                 }
             }
         }
         section.ask-question{
             overflow: hidden;
-            background:url('../images/ask-question-bg.jpg') center center;
-            background-size:cover;
-            height:220px;
             a.btn{
                 display: block;
-                text-align: center;
-                color:@white;
-                border-color:@white;
-                width:200px;
-                margin:20px auto;
-                &:hover{
-                    background: rgba(255,255,255,0.2);
-                }
+                float: right;
             }
             h2{
                 display: block;
                 overflow: hidden;
                 font-size: 2.4rem;
-                text-align: center;
-                color:@white;
                 font-weight: 500;
                 padding: 0;
-                margin-top: 20px;
             }
-            form.ask-question-form{
-                //margin-bottom: 20px;
-                overflow: hidden;
-                display:block;
+        }
+        form.ask-question-form{
+            margin-bottom: 20px;
+            overflow: hidden;
+            display:none;
+            i.fa-close{
                 position: absolute;
-                top:0;
-                left:0;
+                right:30px;
+                top: 30px;
+                z-index: 1;
+                cursor: pointer;
+                &:hover{
+                    color:@sea;
+                }
+            }
+            h4{
+                margin-top: 0;
+                padding-top: 0;
+            }
+            .field.question{
                 width: 100%;
-                display: none;
-                i.fa-close{
-                    position: absolute;
-                    right:30px;
-                    top: 30px;
-                    z-index: 1;
-                    cursor: pointer;
-                    &:hover{
-                        color:@sea;
-                    }
+                textarea{
+                    height:100px;
                 }
-                h4{
-                    margin-top: 0;
-                    padding-top: 0;
+            }
+            .field.category{
+                width: 50%;
+                float: left;
+                margin-top: 10px;
+                .select2-container{
+                    width: 100% !important;
                 }
-                .field.question{
-                    width: 100%;
-                    textarea{
-                        height:75px;
-                    }
-                }
-                .field.category{
-                    width: 50%;
-                    float: left;
-                    margin-top: 10px;
-                    .select2-container{
-                        width: 100% !important;
-                    }
-                }
-                input[type="submit"]{
-                    float: right;
-                    margin-top: 10px;
-                    padding: 9px 40px 7px 40px;
-                }
+            }
+            input[type="submit"]{
+                float: right;
+                margin-top: 10px;
+                padding: 9px 40px 7px 40px;
             }
         }
         section.questions{
