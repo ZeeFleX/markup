@@ -26,18 +26,14 @@
                     </div>
                 </div>
             </div>
-            <form action="server_side/events.php" method="POST" id="signup-to-consult">
-                <input type="hidden" name="action" value="signupToConsult">
-                <input type="hidden" name="begin">
-                <input type="hidden" name="end">
-                <input type="hidden" name="date">
+            <form action="#" method="POST">
                 <div class="left">
                     <h5>Выберите способ</h5>
                     <div class="field method">
                         <select name="method" class="select2">
-                            <option value="meeting">Личная консультация</option>
-                            <option value="online">Онлайн консультация (Skype)</option>
-                            <option value="online">Метафорические карты</option>
+                            <option value="private">Личная консультация</option>
+                            <option value="skype">Онлайн консультация (Skype)</option>
+                            <option value="cards">Метафорические карты</option>
                         </select>
                     </div>
                     <h5>Выберите дату консультации</h5>
@@ -67,7 +63,7 @@
                                     <span class="item <?php echo 'empty'; ?> <?php if($offset % 7 == 6 || $offset % 7 == 0) echo 'weekend'; ?> "></span>
                                 <?php } ?>
                                 <?php for($i = 1; $i <= 31; $i++) {?>
-                                    <a href="#" class="item <?php if(($i + $offset) % 7 == 6 || ($i + $offset) % 7 == 0) echo 'weekend'; ?> <?php if($i == $today) echo 'today'; ?>" data-date="2015-05-<?php echo $i; ?>"><?php echo $i; ?></a>
+                                    <a href="#" class="item <?php if(($i + $offset) % 7 == 6 || ($i + $offset) % 7 == 0) echo 'weekend'; ?> <?php if($i == $today) echo 'today'; ?>"><?php echo $i; ?></a>
                                 <?php } ?>
                                 <div class="clr"></div>
                             </section>
@@ -96,55 +92,54 @@
                 <div class="right">
                     <div class="time-container">
                         <div class="grid">
-                            <div class="selector" data-begin="0" data-end="0"></div>
-                            <div class="row" data-time="0">00:00 - 00:30</div>
-                            <div class="row" data-time="1">00:30 - 01:00</div>
-                            <div class="row" data-time="2">01:00 - 01:30</div>
-                            <div class="row" data-time="3">01:30 - 02:00</div>
-                            <div class="row" data-time="4">02:00 - 02:30</div>
-                            <div class="row" data-time="5">02:30 - 03:00</div>
-                            <div class="row" data-time="6">03:00 - 03:30</div>
-                            <div class="row" data-time="7">03:30 - 04:00</div>
-                            <div class="row" data-time="8">04:00 - 04:30</div>
-                            <div class="row" data-time="9">04:30 - 05:00</div>
-                            <div class="row" data-time="10">05:00 - 05:30</div>
-                            <div class="row" data-time="11">05:30 - 06:00</div>
-                            <div class="row" data-time="12">06:00 - 06:30</div>
-                            <div class="row" data-time="13">06:30 - 07:00</div>
-                            <div class="row" data-time="14">07:30 - 07:30</div>
-                            <div class="row" data-time="15">07:30 - 08:00</div>
-                            <div class="row" data-time="16">08:00 - 08:30</div>
-                            <div class="row" data-time="17">08:30 - 09:00</div>
-                            <div class="row" data-time="18">09:00 - 09:30</div>
-                            <div class="row" data-time="19">09:30 - 10:00</div>
-                            <div class="row" data-time="20">10:00 - 10:30</div>
-                            <div class="row" data-time="21">10:30 - 11:00</div>
-                            <div class="row" data-time="22">11:00 - 11:30</div>
-                            <div class="row" data-time="23">11:30 - 12:00</div>
-                            <div class="row" data-time="24">12:00 - 12:30</div>
-                            <div class="row" data-time="25">12:30 - 13:00</div>
-                            <div class="row" data-time="26">13:00 - 13:30</div>
-                            <div class="row" data-time="27">13:30 - 14:00</div>
-                            <div class="row" data-time="28">14:00 - 14:30</div>
-                            <div class="row" data-time="29">14:30 - 15:00</div>
-                            <div class="row" data-time="30">15:00 - 15:30</div>
-                            <div class="row" data-time="31">15:30 - 16:00</div>
-                            <div class="row" data-time="32">16:00 - 16:30</div>
-                            <div class="row" data-time="33">16:30 - 17:00</div>
-                            <div class="row" data-time="34">17:00 - 17:30</div>
-                            <div class="row" data-time="35">17:30 - 18:00</div>
-                            <div class="row" data-time="36">18:00 - 18:30</div>
-                            <div class="row" data-time="37">18:30 - 19:00</div>
-                            <div class="row" data-time="38">19:00 - 19:30</div>
-                            <div class="row" data-time="39">19:30 - 20:00</div>
-                            <div class="row" data-time="40">20:00 - 20:30</div>
-                            <div class="row" data-time="41">20:30 - 21:00</div>
-                            <div class="row" data-time="42">21:00 - 21:30</div>
-                            <div class="row" data-time="43">21:30 - 22:00</div>
-                            <div class="row" data-time="44">22:00 - 22:30</div>
-                            <div class="row" data-time="45">22:30 - 23:00</div>
-                            <div class="row" data-time="46">23:00 - 23:30</div>
-                            <div class="row" data-time="47">23:30 - 00:00</div>
+                            <div class="row unwork" data-time="1">00:00 - 00:30</div>
+                            <div class="row unwork" data-time="2">00:30 - 01:00</div>
+                            <div class="row unwork" data-time="3">01:00 - 01:30</div>
+                            <div class="row unwork" data-time="4">01:30 - 02:00</div>
+                            <div class="row unwork" data-time="5">02:00 - 02:30</div>
+                            <div class="row unwork" data-time="6">02:30 - 03:00</div>
+                            <div class="row unwork" data-time="7">03:00 - 03:30</div>
+                            <div class="row unwork" data-time="8">03:30 - 04:00</div>
+                            <div class="row unwork" data-time="9">04:00 - 04:30</div>
+                            <div class="row unwork" data-time="10">04:30 - 05:00</div>
+                            <div class="row" data-time="11">05:00 - 05:30</div>
+                            <div class="row" data-time="12">05:30 - 06:00</div>
+                            <div class="row" data-time="13">06:00 - 06:30</div>
+                            <div class="row" data-time="14">06:30 - 07:00</div>
+                            <div class="row" data-time="15">07:30 - 07:30</div>
+                            <div class="row reserved" data-time="16">07:30 - 08:00</div>
+                            <div class="row reserved" data-time="17">08:00 - 08:30</div>
+                            <div class="row reserved" data-time="18">08:30 - 09:00</div>
+                            <div class="row reserved" data-time="19">09:00 - 09:30</div>
+                            <div class="row reserved" data-time="20">09:30 - 10:00</div>
+                            <div class="row reserved" data-time="21">10:00 - 10:30</div>
+                            <div class="row reserved" data-time="22">10:30 - 11:00</div>
+                            <div class="row reserved" data-time="23">11:00 - 11:30</div>
+                            <div class="row reserved" data-time="24">11:30 - 12:00</div>
+                            <div class="row" data-time="25">12:00 - 12:30</div>
+                            <div class="row" data-time="26">12:30 - 13:00</div>
+                            <div class="row" data-time="27">13:00 - 13:30</div>
+                            <div class="row" data-time="28">13:30 - 14:00</div>
+                            <div class="row" data-time="29">14:00 - 14:30</div>
+                            <div class="row" data-time="30">14:30 - 15:00</div>
+                            <div class="row" data-time="31">15:00 - 15:30</div>
+                            <div class="row reserved" data-time="32">15:30 - 16:00</div>
+                            <div class="row reserved" data-time="33">16:00 - 16:30</div>
+                            <div class="row reserved" data-time="34">16:30 - 17:00</div>
+                            <div class="row reserved" data-time="35">17:00 - 17:30</div>
+                            <div class="row" data-time="36">17:30 - 18:00</div>
+                            <div class="row" data-time="37">18:00 - 18:30</div>
+                            <div class="row" data-time="38">18:30 - 19:00</div>
+                            <div class="row" data-time="39">19:00 - 19:30</div>
+                            <div class="row" data-time="40">19:30 - 20:00</div>
+                            <div class="row" data-time="41">20:00 - 20:30</div>
+                            <div class="row" data-time="42">20:30 - 21:00</div>
+                            <div class="row" data-time="43">21:00 - 21:30</div>
+                            <div class="row" data-time="44">21:30 - 22:00</div>
+                            <div class="row" data-time="45">22:00 - 22:30</div>
+                            <div class="row" data-time="46">22:30 - 23:00</div>
+                            <div class="row" data-time="47">23:00 - 23:30</div>
+                            <div class="row" data-time="48">23:30 - 00:00</div>
                         </div>
                     </div>
                 </div>
