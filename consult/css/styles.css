@@ -6498,17 +6498,28 @@ body.page-consultation section.reviews .write-review textarea {
 .window.sign-up-consultation > .container form .calendar header a {
   color: #35504e;
 }
-/* line 102, modal_sign_up_consultation.less */
+/* line 101, modal_sign_up_consultation.less */
+.window.sign-up-consultation > .container form .calendar a.item.selected {
+  background: #ffaa3e;
+  box-shadow: inset 0 0 2px #666;
+  -o-box-shadow: inset 0 0 2px #666;
+  -moz-box-shadow: inset 0 0 2px #666;
+  -webkit-box-shadow: inset 0 0 2px #666;
+  color: #ffffff;
+}
+/* line 110, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container form .left {
   width: 300px;
 }
-/* line 105, modal_sign_up_consultation.less */
+/* line 113, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container form .left .time-slider {
   width: 290px;
-  webkit-user-select: none;
+  padding-top: 30px;
+  margin-top: -30px;
+  -webkit-user-select: none;
   -moz-user-select: none;
 }
-/* line 109, modal_sign_up_consultation.less */
+/* line 119, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container form .left .time-slider .bar {
   margin-top: 20px;
   border-radius: 2px;
@@ -6520,7 +6531,7 @@ body.page-consultation section.reviews .write-review textarea {
   background: url('../images/sliderbar-bg.png') right center repeat-y;
   background-position: -290px 0;
 }
-/* line 119, modal_sign_up_consultation.less */
+/* line 129, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container form .left .time-slider .bar .handler {
   position: relative;
   cursor: pointer;
@@ -6530,55 +6541,60 @@ body.page-consultation section.reviews .write-review textarea {
   background: #4ad0c5;
   margin-left: -10px;
   top: -11px;
-  left: 60px;
+  left: 0;
   border-radius: 20px;
   -o-border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
 }
-/* line 135, modal_sign_up_consultation.less */
+/* line 145, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container form .left .time-slider .labels {
-  width: 115%;
+  width: 118%;
   margin-top: 10px;
   overflow: hidden;
   -webkit-user-select: none;
   -moz-user-select: none;
 }
-/* line 141, modal_sign_up_consultation.less */
+/* line 151, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container form .left .time-slider .labels .label {
   float: left;
   width: 25%;
   font-size: 1.2rem;
 }
-/* line 148, modal_sign_up_consultation.less */
+/* line 155, modal_sign_up_consultation.less */
+.window.sign-up-consultation > .container form .left .time-slider .labels .label.selected {
+  font-weight: 700;
+  color: #35504e;
+}
+/* line 162, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container form .left p.price {
   color: #4ad0c5;
   font-size: 3.0rem;
   margin-top: -10px;
   margin-bottom: 35px;
 }
-/* line 153, modal_sign_up_consultation.less */
+/* line 167, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container form .left p.price i {
   font-size: 2.6rem;
 }
-/* line 157, modal_sign_up_consultation.less */
+/* line 171, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container form .left p.place {
   font-size: 1.4rem;
   margin-top: 0;
 }
-/* line 160, modal_sign_up_consultation.less */
+/* line 174, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container form .left p.place i.fa-map-marker {
   color: #4ad0c5;
   font-size: 1.6rem;
 }
-/* line 166, modal_sign_up_consultation.less */
+/* line 180, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container form .right {
   position: absolute;
   bottom: 0;
   right: 0;
   width: 124px;
 }
-/* line 171, modal_sign_up_consultation.less */
+/* line 185, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container form .right .time-container {
   padding: 20px;
   border: solid 1px #8aa4a2;
@@ -6590,32 +6606,51 @@ body.page-consultation section.reviews .write-review textarea {
   -moz-box-shadow: 0 0 7px #ccc;
   -o-box-shadow: 0 0 7px #ccc;
   -webkit-box-shadow: 0 0 7px #ccc;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
 }
-/* line 182, modal_sign_up_consultation.less */
+/* line 199, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container form .right .time-container .grid {
   line-height: 100%;
   font-size: 1.2rem;
 }
-/* line 186, modal_sign_up_consultation.less */
+/* line 203, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container form .right .time-container .grid .row {
   text-align: center;
   padding: 2.4px 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  height: 17px;
 }
-/* line 189, modal_sign_up_consultation.less */
+/* line 209, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container form .right .time-container .grid .row.unwork {
   background: #aabdbb;
   color: #ffffff;
 }
-/* line 193, modal_sign_up_consultation.less */
+/* line 213, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container form .right .time-container .grid .row.reserved {
   background: #33b679;
   color: #ffffff;
 }
-/* line 201, modal_sign_up_consultation.less */
+/* line 218, modal_sign_up_consultation.less */
+.window.sign-up-consultation > .container form .right .time-container .grid .selector {
+  position: absolute;
+  border: solid 1px #19935a;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  width: 100%;
+  top: 0;
+  height: 0;
+  background: rgba(121, 232, 180, 0.3);
+  z-index: 1;
+  cursor: pointer;
+}
+/* line 233, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container form input[type="submit"] {
   margin-right: 20px;
 }
-/* line 205, modal_sign_up_consultation.less */
+/* line 237, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container p.endnote {
   position: absolute;
   bottom: 0;
@@ -6632,29 +6667,29 @@ body.page-consultation section.reviews .write-review textarea {
   -moz-border-radius: 0 0 5px 5px;
   -webkit-border-radius: 0 0 5px 5px;
 }
-/* line 220, modal_sign_up_consultation.less */
+/* line 252, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container p.endnote a {
   text-decoration: none;
   font-weight: 700;
   color: #4ad0c5;
 }
-/* line 224, modal_sign_up_consultation.less */
+/* line 256, modal_sign_up_consultation.less */
 .window.sign-up-consultation > .container p.endnote a:hover {
   text-decoration: underline;
 }
-/* line 230, modal_sign_up_consultation.less */
+/* line 262, modal_sign_up_consultation.less */
 .window.sign-up-consultation.light .container {
   width: 500px;
 }
-/* line 233, modal_sign_up_consultation.less */
+/* line 265, modal_sign_up_consultation.less */
 .window.sign-up-consultation.light .container form h5 {
   margin-top: 5px;
 }
-/* line 236, modal_sign_up_consultation.less */
+/* line 268, modal_sign_up_consultation.less */
 .window.sign-up-consultation.light .container form textarea {
   height: 80px;
 }
-/* line 239, modal_sign_up_consultation.less */
+/* line 271, modal_sign_up_consultation.less */
 .window.sign-up-consultation.light .container form input[type="submit"] {
   padding: 9px 17px 8px 17px;
   margin-top: 20px;

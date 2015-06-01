@@ -34,5 +34,8 @@
 			$worktime = json_decode($_POST['worktime']);
 			echo json_encode($worktime);
 		break;
+		case 'signupToConsult':
+			die(print_r($_POST));
+		break;
 	}
 ?>
