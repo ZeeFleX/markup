@@ -90,7 +90,7 @@
         </div>
         <div class="left">
             <div class="answer-author">
-                <h4>На вопрос ответила</h4>
+                <h4>Автор ответа:</h4>
                 <div class="content-block profile">
                     <div class="left">
                         <div class="photo">
@@ -122,7 +122,7 @@
                 </div>
             </div>
             <div class="repost-answer">
-                <h4>Поделиться ответом</h4>
+                <h4>Поделиться</h4>
                 <div class="social content-block">
                     <div class="social-item fb">
                         <p class="value">786</p>

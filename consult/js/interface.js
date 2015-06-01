@@ -41,6 +41,9 @@ var loadInterface = function(){
     $('.phone-mask').mask('8 (000) 000-00-00', {placeholder: '8 (___) ___-__-__'});
     //Модальные окна
     $('.modal').dialog({width: 'auto', autoOpen: false, modal: true });
+    $('.window').on('click', '.fa-close, a#cancel', function(){
+        $(this).closest('.window').fadeOut(300);
+    });
     //Поле отображения рейтинга
     var ratingFields = $('div.rating-field');
     $.each(ratingFields, function(){

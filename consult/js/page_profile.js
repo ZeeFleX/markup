@@ -1,5 +1,108 @@
 $(document).ready(function(){
+    //Добавление партнеров
+    if($('body.partners').length){
+        var $form = $('form.partners-form');
+        var $container = $form.find('.partners');
+        var $newPartner = $container.find('.partner').first().clone();
+        $newPartner.find('input[type="text"], textarea, input[type="hidden"]').val('');
+        var $partners = $container.find('.partner');
+        var $uploader = $('form#uploader');
+        var currentPartner;
 
+        $uploader.ajaxForm({
+            dataType: 'json',
+            success: function(data) {
+                var $partner = $form.find('.partner').eq(currentPartner);
+                $uploader.find('input[type="file"]').val('');
+                $partner.find('input[name="image[]"]').val(data);
+                $partner.find('#image-container').css({
+                    backgroundImage: 'url(' + data + ')',
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center center'
+                });
+            },
+            complete: function(data) {
+                
+            }
+        });
+        $uploader.on('change', 'input[type="file"]', function(){
+            $uploader.submit();
+        }); 
+
+        $.each($partners, function(key, partner){
+            partnerInitialize(partner);
+        });
+        $container.on('click', 'li', function(){
+            var $partner = $(this).closest('.partner');
+            $partner.find('input[name="type[]"]').val($(this).attr('data-type'));
+            if($(this).attr('data-type') == 'code'){
+                $partner.find('.group-text').hide(0);
+                $partner.find('.group-code').show(0);
+                $partner.find('.group-code').find('input, textarea').prop('required', true);
+                $partner.find('.group-text').find('input, textarea').prop('required', false);
+            }else if($(this).attr('data-type') == 'text'){
+                $partner.find('.group-text').show(0);
+                $partner.find('.group-code').hide(0);
+                $partner.find('.group-code').find('input, textarea').prop('required', false);
+                $partner.find('.group-text').find('input, textarea').prop('required', true);
+            }
+            $(this)
+                .addClass('active')
+                .siblings('li').removeClass('active');
+        });
+        $form.on('click', 'input#upload-image', function(e){
+            e.preventDefault();
+            currentPartner = $(this).closest('.partner').index('.partner');
+            $uploader.find('input[type="file"]').trigger('click');
+        });
+        $form.on('click', 'input#remove-image', function(e){
+            e.preventDefault();
+            var $partner = $(this).closest('.partner');
+            $partner.find('input[name="image[]"]').val('');
+            currentPartner = $(this).closest('.partner').index('.partner');
+            $partner.find('#image-container').css({
+                backgroundImage: 'url(images/interface/image-placeholder.png)'
+            });
+        });
+        $form.on('click', 'a#add-partner', function(e){
+            e.preventDefault();
+            newPartner($newPartner.clone());
+        });
+        $form.on('click', 'i.fa-times-circle-o', function(){
+            $(this).closest('.partner').slideUp(300, function(){$(this).remove()});
+        });
+    }
+    function newPartner(sourcePartner){
+        var $partner = $(sourcePartner).appendTo($container).css('display', 'none');
+        $partner.slideDown(300);
+        partnerInitialize($partner);
+    }
+    function partnerInitialize(partner){
+        var $partner = $(partner);
+        var $typeMenu = $partner.find('ul');
+        var type = $typeMenu.find('li.active').attr('data-type');
+        $partner.find('input[name="type[]"]').val(type);
+        if(type == 'code'){
+            $partner.find('.group-text').hide(0)
+            $partner.find('.group-code').show(0)
+            $partner.find('.group-code').find('input, textarea').prop('required', true);
+            $partner.find('.group-text').find('input, textarea').prop('required', false);
+        }else if(type == 'text'){
+            $partner.find('.group-text').show(0)
+            $partner.find('.group-code').hide(0)
+            $partner.find('.group-code').find('input, textarea').prop('required', false);
+            $partner.find('.group-text').find('input, textarea').prop('required', true);
+        }
+        loadInterface();
+        // var $inputs = $partner.find('input[type="text"], input[type="file"], input[type="hidden"], textarea');
+        // var uniqueId = Math.floor(Math.random() * 1000000);
+        // $.each($inputs, function(key, input){
+        //     var $input = $(input);
+        //     var name = $input.attr('name');
+        //     $input.attr('name', name + '[]');
+        // });
+        
+    }
     //Установка конца рабочего дня не меньшего, чем начало
     if($('.page-profile-settings.worktime').length){
         var $dayContainers = $('.day');

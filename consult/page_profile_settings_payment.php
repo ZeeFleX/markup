@@ -78,19 +78,20 @@
                 <div class="content-block">
                     <div class="plan basic">
                         <h4><span>Действующий план</span></h4>
-                        <p class="title">Базовый</p>
+                        <p class="title">Hide</p>
                         <p class="price"><span class="value">2000 руб.</span> / месяц</p>
                         <p class="status"><i class="fa fa-check"></i> Подписка оформлена</p>
                         <!-- <a href="#" class="btn payment-button">Оплатить</a> -->
                     </div>
                     <div class="plan expert">
                         <h4><span>Перейдите на экспертный план</span></h4>
-                        <p class="title">Экспертный</p>
+                        <p class="title">Premium</p>
                         <p class="price"><span class="value">5000 руб.</span> / месяц</p>
                         <!-- <p class="status"><i class="fa fa-check"></i> Подписка оформлена</p> -->
                         <a href="#" class="btn payment-button">Оплатить</a>
                     </div>
                     <div class="clr"></div>
+                    <p class="agreement">Оплачивая пользование сайтом по какому-либо тарифу, Вы подтверждаете факт ознакомления и согласия с условиями договора <a href="#">Публичной оферты.</a></p>
                     <div class="info">
                         <i class="fa fa-info-circle"></i>
                         <div class="text">
@@ -106,9 +107,9 @@
                         <thead>
                             <tr>
                                 <th class="func">Функционал</th>
-                                <th>Бесплатный</th>
-                                <th>Базовый</th>
-                                <th>Экспертный</th>
+                                <th style="text-align: center;">Free</th>
+                                <th style="text-align: center;">Hide</th>
+                                <th style="text-align: center;">Premium</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -139,14 +140,14 @@
                             <tr>
                                 <td class="func">Назначение консультаций для посторонних клиентов</td>
                                 <td><i class="fa fa-times"></td>
-                                <td><i class="fa fa-check"></i></td>
-                                <td><i class="fa fa-check"></i></td>
+                                <td><i class="fa fa-check"></i><br /><span class="endnote">Только онлайн-кабинет</span></td>
+                                <td><i class="fa fa-check"></i><br /><span class="endnote">Все типы консультаций</span></td>
                             </tr>
                             <tr>
                                 <td class="func">Назначение консультаций для пользователей сайта</td>
                                 <td><i class="fa fa-times"></i></td>
-                                <td><i class="fa fa-times"></i><br /><span class="endnote">Только онлайн-кабинет</span></td>
-                                <td><i class="fa fa-check"></i><br /><span class="endnote">Все типы консультаций</span></td>
+                                <td><i class="fa fa-times"></i></td>
+                                <td><i class="fa fa-check"></i></td>
                             </tr>
                             <tr>
                                 <td class="func">Уведомления о новых записях на консультацию</td>
