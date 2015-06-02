@@ -202,7 +202,7 @@
         <div class="wrapper">
             <div class="user-menu-container">
                 <ul class="user-menu">
-                    <li>
+                    <li class="active">
                         <a href="#">Мое расписание</a>
                     </li>
                     <li>

@@ -346,7 +346,6 @@ header.header {
 .user-menu-section {
     background: #f8f8f8;
     overflow: hidden;
-    padding: 20px 0;
     box-shadow: 1px 2px 0px 0.00px rgba(0, 0, 0, 0.1);
     -o-box-shadow: 1px 2px 0px 0.00px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 1px 2px 0px 0.00px rgba(0, 0, 0, 0.1);
@@ -362,11 +361,25 @@ header.header {
             li {
                 margin:0 10px;
                 float: left;
+                &.active{
+                    a{
+                        color:@sky;
+                        padding-bottom: 17px;
+                        border-bottom:solid 3px @sky;
+                        &:hover{
+                            text-decoration: none;
+                        }
+                    }
+                }
             }
             a {
                 color: @sea;
                 font: 400 1.4rem  Roboto;
                 text-decoration: none;
+                display: block;
+                padding: 20px 0;
+                box-sizing:border-box;
+                -moz-box-sizing:border-box;
                 &:hover{
                     text-decoration: underline;
                 }
