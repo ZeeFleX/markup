@@ -526,6 +526,29 @@ ul.badge-marked li {
   padding: 5px !important;
   color: #35504e;
 }
+/* line 477, interface.less */
+.message {
+  border-radius: 10px;
+  -o-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 15px 20px;
+  border: solid 1px #333;
+  background: #fafafa;
+}
+/* line 487, interface.less */
+.message p {
+  margin: 0;
+  font-weight: 500;
+}
+/* line 491, interface.less */
+.message.yellow {
+  color: #f49721;
+  background: #fce4a1;
+  border-color: #ffaa3e;
+}
 /* line 2, global.less */
 body.page-text h1:first-child {
   margin: 30px 0;

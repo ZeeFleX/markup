@@ -78,6 +78,10 @@
         <section class="content">
             <h4>Информация о себе</h4>
             <div class="content-block">
+                <div class="message yellow">
+                    <p>Данная информация не будет отображаться при просмотре Вашего профиля другими пользователями.</p>
+                    <p>Эти данные необходимы, только если вы собираетесь зарегистрироваться на данном сайте как Консультант.</p>
+                </div>
                 <form action="server_side/save_education.php" method="POST">
                     <section class="specialization">
                         <h4>Специализация</h4>
