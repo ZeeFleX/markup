@@ -122,10 +122,74 @@
                     </section>
                     <section class="education">
                         <h4>Образование</h4>
+                        <div class="items">
+                            <div class="item" data-id="0">
+                                <div class="controls">
+                                    <i class="fa fa-times-circle-o"></i>
+                                    <i class="fa fa-pencil"></i>
+                                </div>
+                                <div class="scan-container data" data-key="scan-link" data-value="images/scan/scan01.jpg">
+                                    <img src="images/scan/scan01.jpg" alt="" />
+                                </div>
+                                <div class="info">
+                                    <p class="name data" data-key="name" data-value="ВГМА (Воронежская Государственная Медицинская Академия) им. Н.Н. Бурденко"><span class="bold key">Учебное заведение:</span> <span class="value">ВГМА (Воронежская Государственная Медицинская Академия) им. Н.Н. Бурденко</span></p>
+                                    <p class="special data" data-key="special" data-value="Психология"><span class="bold key">Специальность:</span> <span class="value">Психология</span></p>
+                                    <p class="quality data" data-key="quality" data-value="Психолог"><span class="bold key">Квалификация:</span> <span class="value">Психолог</span></p>
+                                    <p class="period"><span class="bold key">Период обучения:</span> <span class="value begin data" data-key="begin" data-value="2008">2008</span> - <span class="value end data" data-key="end" data-value="2011">2011</span></p>
+                                </div>
+                            </div>
+                            <div class="item" data-id="1">
+                                <div class="controls">
+                                    <i class="fa fa-times-circle-o"></i>
+                                    <i class="fa fa-pencil"></i>
+                                </div>
+                                <div class="scan-container data" data-key="scan-link" data-value="images/scan/scan01.jpg">
+                                    <img src="images/scan/scan01.jpg" alt="" />
+                                </div>
+                                <div class="info">
+                                    <p class="name data" data-key="name" data-value="ВГМА (Воронежская Государственная Медицинская Академия) им. Н.Н. Бурденко"><span class="bold key">Учебное заведение:</span> <span class="value">ВГМА (Воронежская Государственная Медицинская Академия) им. Н.Н. Бурденко</span></p>
+                                    <p class="special data" data-key="special" data-value="Психология"><span class="bold key">Специальность:</span> <span class="value">Психология</span></p>
+                                    <p class="quality data" data-key="quality" data-value="Психолог"><span class="bold key">Квалификация:</span> <span class="value">Психолог</span></p>
+                                    <p class="period"><span class="bold key">Период обучения:</span> <span class="value begin data" data-key="begin" data-value="2008">2008</span> - <span class="value end data" data-key="end" data-value="2011">2011</span></p>
+                                </div>
+                            </div>
+                        </div>
                         <a href="#" class="add-document-button" id="add-edu-diplom">Добавить диплом</a>
                     </section>
                     <section class="professional">
                         <h4>Профессионализм</h4>
+                        <div class="items">
+                            <div class="item" data-id="0">
+                                <div class="controls">
+                                    <i class="fa fa-times-circle-o"></i>
+                                    <i class="fa fa-pencil"></i>
+                                </div>
+                                <div class="scan-container data" data-key="scan-link" data-value="images/scan/scan01.jpg">
+                                    <img src="images/scan/scan01.jpg" alt="" />
+                                </div>
+                                <div class="info">
+                                    <p class="name data" data-key="name" data-value="ВГМА (Воронежская Государственная Медицинская Академия) им. Н.Н. Бурденко"><span class="bold key">Учебное заведение:</span> <span class="value">ВГМА (Воронежская Государственная Медицинская Академия) им. Н.Н. Бурденко</span></p>
+                                    <p class="special data" data-key="special" data-value="Психология"><span class="bold key">Специальность:</span> <span class="value">Психология</span></p>
+                                    <p class="quality data" data-key="quality" data-value="Психолог"><span class="bold key">Квалификация:</span> <span class="value">Психолог</span></p>
+                                    <p class="period"><span class="bold key">Период обучения:</span> <span class="value begin data" data-key="begin" data-value="2008">2008</span> - <span class="value end data" data-key="end" data-value="2011">2011</span></p>
+                                </div>
+                            </div>
+                            <div class="item" data-id="1">
+                                <div class="controls">
+                                    <i class="fa fa-times-circle-o"></i>
+                                    <i class="fa fa-pencil"></i>
+                                </div>
+                                <div class="scan-container data" data-key="scan-link" data-value="images/scan/scan01.jpg">
+                                    <img src="images/scan/scan01.jpg" alt="" />
+                                </div>
+                                <div class="info">
+                                    <p class="name data" data-key="name" data-value="ВГМА (Воронежская Государственная Медицинская Академия) им. Н.Н. Бурденко"><span class="bold key">Учебное заведение:</span> <span class="value">ВГМА (Воронежская Государственная Медицинская Академия) им. Н.Н. Бурденко</span></p>
+                                    <p class="special data" data-key="special" data-value="Психология"><span class="bold key">Специальность:</span> <span class="value">Психология</span></p>
+                                    <p class="quality data" data-key="quality" data-value="Психолог"><span class="bold key">Квалификация:</span> <span class="value">Психолог</span></p>
+                                    <p class="period"><span class="bold key">Период обучения:</span> <span class="value begin data" data-key="begin" data-value="2008">2008</span> - <span class="value end data" data-key="end" data-value="2011">2011</span></p>
+                                </div>
+                            </div>
+                        </div>
                         <a href="#" class="add-document-button" id="add-edu-diplom">Добавить Сертификат</a>
                     </section>
                     <section class="begin-date">

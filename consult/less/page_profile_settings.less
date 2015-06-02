@@ -223,6 +223,46 @@ body.page-profile-settings{
                     margin-top: 20px;
                 }
             }
+            .items{
+                overflow: hidden;
+                .item{
+                    overflow: hidden;
+                    margin-bottom: 30px;
+                    .controls{
+                        float: left;
+                        i{
+                            font-size:1.8rem;
+                            display: block;
+                            margin-right: 10px;
+                            margin-bottom: 5px;
+                            cursor:pointer;
+                            &.fa-times-circle-o{
+                                color:red;
+                            }
+                        }
+                    }
+                    .scan-container{
+                        float: left;
+                        width: 60px;
+                        margin-right: 15px;
+                        img{
+                            display: block;
+                            width: 100%;
+                        }
+                    }
+                    .info{
+                        overflow: hidden;
+                        p{
+                            margin-top: 0;
+                            margin-bottom: 5px;
+                            span.key{
+                                font-weight: bold;
+                                color:@sea;
+                            }
+                        }
+                    }
+                }
+            }
             section.education{
                 .university{
                     .input-container{
