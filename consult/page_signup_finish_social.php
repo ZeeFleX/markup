@@ -20,7 +20,7 @@
         <div class="window content-block social">
             <h1>Завершение регистрации</h1>
             <form action="#" methos="POST">
-                <p>Пожалуйста, введите Ваш электронные адрес, чтобы завершить регистрацию</p>
+                <p>Пожалуйста, введите Ваш электронный адрес, чтобы завершить регистрацию</p>
                 <div class="field email">
                     <input type="text" name="email" placeholder="Ваш email *" required />
                 </div>
@@ -30,7 +30,7 @@
     </section>
     <footer class="footer">
         <section class="bottom">
-            <p class="copyright">Copyright 2015 Консультации</p>
+            <p class="copyright">Copyright 2015 Онлайн-консультации выпускников школы Довлатова</p>
             <ul class="footer-menu">
                 <li>
                     <a href="#">О сервисе</a>

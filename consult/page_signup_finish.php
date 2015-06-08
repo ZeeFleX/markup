@@ -42,7 +42,7 @@
     </section>
     <footer class="footer">
         <section class="bottom">
-            <p class="copyright">Copyright 2015 Консультации</p>
+            <p class="copyright">Copyright 2015 Онлайн-консультации выпускников школы Довлатова</p>
             <ul class="footer-menu">
                 <li>
                     <a href="#">О сервисе</a>
