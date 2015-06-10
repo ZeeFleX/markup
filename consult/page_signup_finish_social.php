@@ -11,9 +11,11 @@
             <img src="images/logo-register.png" alt="">
         </div>
         <ul class="mainmenu">
-            <li><a href="#">Публичные вопросы</a></li>
+            <li><a href="#">Вопросы и ответа</a></li>
             <li><a href="#">Консультанты</a></li>
             <li><a href="#">Библиотека</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">FAQ</a></li>
         </ul>
     </header>
     <section class="content">
