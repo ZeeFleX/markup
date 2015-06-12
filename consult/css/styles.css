@@ -2787,11 +2787,10 @@ body.page-profile-settings.partners form.partners-form .partner:first-child {
 }
 .wrapper {
   position: relative;
-  width: 95% !important;
+  width: 90%;
   margin: auto;
   overflow: hidden;
   max-width: 960px;
-  max-width: 95% !important;
 }
 .wrapper > section {
   margin-bottom: 30px;
