@@ -13,7 +13,7 @@
     <header class="panel">
         <p class="white">
             <i class="fa fa-exclamation-triangle"></i>
-            <span>Открыт секрет массовых неудач в личной жизни, карьере и бизнесе</span>
+            <span>Открыт секрет массовых неудач в карьере и бизнесе</span>
             <i class="fa fa-exclamation-triangle"></i>
         </p>
     </header>
