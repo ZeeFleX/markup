@@ -8163,4 +8163,69 @@ body.page-faq > .wrapper .right .support a:hover {
 .window.payment > .container p.endnote a:hover {
   text-decoration: underline;
 }
+/* line 2, page_text.less */
+body.page-text .content-block {
+  color: #93aba9;
+}
+/* line 3, page_text.less */
+body.page-text .content-block h1 {
+  color: #35504e;
+  font-size: 3.0rem;
+  font-weight: 500;
+  line-height: 48px;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 11, page_text.less */
+body.page-text .content-block h2 {
+  color: #35504e;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 22px;
+}
+/* line 20, page_text.less */
+body.page-text .content-block ul {
+  padding: 0;
+}
+/* line 23, page_text.less */
+body.page-text .content-block ol {
+  padding: 0;
+}
+/* line 27, page_text.less */
+body.page-text .content-block .sea {
+  color: #35504e;
+}
+/* line 30, page_text.less */
+body.page-text .content-block .yellow {
+  color: #ffaa3e;
+}
+/* line 33, page_text.less */
+body.page-text .content-block .bold {
+  font-weight: 500;
+}
+/* line 36, page_text.less */
+body.page-text .content-block .italic {
+  font-style: italic;
+}
+/* line 39, page_text.less */
+body.page-text .content-block .fll {
+  display: block;
+  float: left;
+  margin-right: 20px;
+}
+/* line 44, page_text.less */
+body.page-text .content-block .flr {
+  display: block;
+  float: right;
+  margin-left: 20px;
+}
+/* line 49, page_text.less */
+body.page-text .content-block .ovh {
+  overflow: hidden;
+}
+/* line 52, page_text.less */
+body.page-text .content-block p {
+  margin: 10px 0;
+  line-height: 150%;
+}
 /*# sourceMappingURL=styles.css.map */
