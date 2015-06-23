@@ -30,3 +30,4 @@
 <script src="js/jquery.jcrop.min.js"></script>
 <script src="js/time.js"></script>
 <script src="js/signupToConsult.js"></script>
+<script src="js/edit.js"></script>

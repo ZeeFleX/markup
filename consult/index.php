@@ -55,6 +55,9 @@
             <li><a href="page_signup_finish.php">Страница завершения регистрации (локальная регистрация).</a></li>
             <li><a href="page_signup_finish_social.php">Страница завершения регистрации (социальные сети).</a></li>
             <li><a href="page_text_codex.php">Этический кодекс.</a></li>
+            <li><a href="page_text_rules.php">Правила пользования сайтом.</a></li>
+            <li><a href="page_text_oferta.php">Публичная оферта.</a></li>
+            <li><a href="page_text_confidencial.php">Политика конфиденциальности.</a></li>
         </ol>
         <h1>Полезные ссылки</h1>
         <ol>

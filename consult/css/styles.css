@@ -526,29 +526,6 @@ ul.badge-marked li {
   padding: 5px !important;
   color: #35504e;
 }
-/* line 477, interface.less */
-.message {
-  border-radius: 10px;
-  -o-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  padding: 15px 20px;
-  border: solid 1px #333;
-  background: #fafafa;
-}
-/* line 487, interface.less */
-.message p {
-  margin: 0;
-  font-weight: 500;
-}
-/* line 491, interface.less */
-.message.yellow {
-  color: #f49721;
-  background: #fce4a1;
-  border-color: #ffaa3e;
-}
 /* line 2, global.less */
 body.page-text h1:first-child {
   margin: 30px 0;
@@ -8168,6 +8145,15 @@ body.page-text .content-block {
   color: #93aba9;
 }
 /* line 3, page_text.less */
+body.page-text .content-block a {
+  color: #4ad0c5;
+  text-decoration: underline;
+}
+/* line 6, page_text.less */
+body.page-text .content-block a:hover {
+  color: #35504e;
+}
+/* line 10, page_text.less */
 body.page-text .content-block h1 {
   color: #35504e;
   font-size: 3.0rem;
@@ -8176,54 +8162,86 @@ body.page-text .content-block h1 {
   text-align: center;
   text-transform: uppercase;
 }
-/* line 11, page_text.less */
+/* line 18, page_text.less */
 body.page-text .content-block h2 {
   color: #35504e;
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 22px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
-/* line 20, page_text.less */
+/* line 25, page_text.less */
+body.page-text .content-block h2 a {
+  color: #4ad0c5;
+}
+/* line 32, page_text.less */
 body.page-text .content-block ul {
   padding: 0;
 }
-/* line 23, page_text.less */
+/* line 34, page_text.less */
+body.page-text .content-block ul li {
+  margin: 10px 0;
+}
+/* line 38, page_text.less */
+body.page-text .content-block ul.arrow-marked li {
+  background: url('../images/interface/li-arrow.png') left 3px no-repeat;
+  padding-left: 25px;
+}
+/* line 44, page_text.less */
+body.page-text .content-block ul.close-marked li {
+  background: url('../images/interface/li-close.png') left 3px no-repeat;
+  padding-left: 25px;
+}
+/* line 49, page_text.less */
+body.page-text .content-block ul ul {
+  margin-left: 30px;
+}
+/* line 53, page_text.less */
 body.page-text .content-block ol {
   padding: 0;
 }
-/* line 27, page_text.less */
+/* line 57, page_text.less */
 body.page-text .content-block .sea {
   color: #35504e;
 }
-/* line 30, page_text.less */
+/* line 60, page_text.less */
 body.page-text .content-block .yellow {
   color: #ffaa3e;
 }
-/* line 33, page_text.less */
+/* line 63, page_text.less */
+body.page-text .content-block .red {
+  color: #eb5245;
+}
+/* line 66, page_text.less */
 body.page-text .content-block .bold {
   font-weight: 500;
 }
-/* line 36, page_text.less */
+/* line 69, page_text.less */
 body.page-text .content-block .italic {
   font-style: italic;
 }
-/* line 39, page_text.less */
+/* line 72, page_text.less */
+body.page-text .content-block .upper {
+  text-transform: uppercase;
+}
+/* line 75, page_text.less */
 body.page-text .content-block .fll {
   display: block;
   float: left;
   margin-right: 20px;
 }
-/* line 44, page_text.less */
+/* line 80, page_text.less */
 body.page-text .content-block .flr {
   display: block;
   float: right;
   margin-left: 20px;
 }
-/* line 49, page_text.less */
+/* line 85, page_text.less */
 body.page-text .content-block .ovh {
   overflow: hidden;
 }
-/* line 52, page_text.less */
+/* line 88, page_text.less */
 body.page-text .content-block p {
   margin: 10px 0;
   line-height: 150%;

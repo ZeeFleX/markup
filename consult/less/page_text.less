@@ -1,5 +1,12 @@
 body.page-text{
 	.content-block{
+		a{
+			color:@sky;
+			text-decoration: underline;
+			&:hover{
+				color:@sea;
+			}
+		}
 		h1{
 			color:  #35504e;
 			font-size: 3.0rem; 
@@ -13,12 +20,35 @@ body.page-text{
 			font-size: 1.8rem;
 			font-weight: 400;
 			line-height: 22px;
+			margin-top: 20px;
+			margin-bottom: 10px;
+			a{
+				color:@sky;
+			}
 		}
 		h3{
 
 		}
 		ul{
 			padding: 0;
+			li{
+				margin:10px 0;
+			}
+			&.arrow-marked{
+				li{
+					background: url('../images/interface/li-arrow.png') left 3px no-repeat;
+					padding-left: 25px;
+				}
+			}
+			&.close-marked{
+				li{
+					background: url('../images/interface/li-close.png') left 3px no-repeat;
+					padding-left: 25px;
+				}
+			}
+			ul{
+				margin-left: 30px;
+			}
 		}
 		ol{
 			padding: 0;
@@ -30,11 +60,17 @@ body.page-text{
 		.yellow{
 			color:#ffaa3e;
 		}
+		.red{
+			color:@red;
+		}
 		.bold{
 			font-weight: 500;
 		}
 		.italic{
 			font-style:italic;
+		}
+		.upper{
+			text-transform: uppercase;
 		}
 		.fll{
 			display: block;
