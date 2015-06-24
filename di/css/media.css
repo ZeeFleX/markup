@@ -30,12 +30,12 @@
 @media screen and (max-width: 1366px) {
   /* line 28, media.less */
   div.header .block-left .text {
-    width: 60%;
-    padding-right: 50px;
+    width: 70%;
+    padding-right: 0px;
   }
   /* line 32, media.less */
   div.header .block-right .text {
-    padding-top: 90px;
+    padding-top: 110px;
     padding-left: 80px;
   }
   /* line 36, media.less */
@@ -44,7 +44,7 @@
   }
   /* line 39, media.less */
   div.header .block-right .text .icon {
-    padding-top: 40px;
+    padding-top: 20px;
   }
   /* line 42, media.less */
   div.header .block-left .text ul li {
@@ -108,12 +108,12 @@
     width: 360px;
   }
   /* line 104, media.less */
-  section.block14 .wrapper .photo-container {
+  section.block15 .wrapper .photo-container {
     width: 420px;
   }
   /* line 107, media.less */
   section.block16 .wrapper .photo-container {
-    width: 450px;
+    width: 350px;
   }
 }
 @media screen and (max-height: 800px) {
@@ -146,7 +146,7 @@
   }
   /* line 137, media.less */
   div.header .block-right .text .icon {
-    padding-top: 40px;
+    padding-top: 20px;
   }
   /* line 140, media.less */
   div.header .block-left .text ul li {
@@ -173,22 +173,19 @@
   /* line 160, media.less */
   div.header .block-left .text {
     padding-top: 90px;
+    width: 70%;
+    padding-right: 0px;
   }
-  /* line 163, media.less */
-  div.header .block-left .text {
-    width: 60%;
-    padding-right: 120px;
-  }
-  /* line 167, media.less */
+  /* line 165, media.less */
   div.header .block-right .text {
-    padding-top: 90px;
+    padding-top: 110px;
     padding-left: 80px;
   }
-  /* line 171, media.less */
+  /* line 169, media.less */
   div.header .block-right .text .icon {
-    padding-top: 0;
+    padding-top: 20;
   }
-  /* line 174, media.less */
+  /* line 172, media.less */
   div.header .block-right .text .icon-bottom {
     padding-top: 15px;
   }

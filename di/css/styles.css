@@ -181,20 +181,21 @@ div.header .block-left {
   border-right: solid 4px #fff;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
+  padding-right: 90px;
 }
-/* line 163, styles.less */
+/* line 164, styles.less */
 div.header .block-left .text {
   float: right;
   width: 60%;
-  padding-top: 75px;
+  padding-top: 120px;
   padding-bottom: 147px;
 }
-/* line 168, styles.less */
+/* line 169, styles.less */
 div.header .block-left .text .logo {
   float: left;
   margin-right: 15px;
 }
-/* line 172, styles.less */
+/* line 173, styles.less */
 div.header .block-left .text h2 {
   color: #ffffff;
   font-size: 44px;
@@ -203,7 +204,7 @@ div.header .block-left .text h2 {
   text-align: left;
   margin: 0;
 }
-/* line 180, styles.less */
+/* line 181, styles.less */
 div.header .block-left .text p {
   color: rgba(255, 255, 255, 0.7);
   font-size: 18px;
@@ -213,13 +214,13 @@ div.header .block-left .text p {
   margin-top: 40px;
   margin-bottom: 40px;
 }
-/* line 189, styles.less */
+/* line 190, styles.less */
 div.header .block-left .text ul {
   float: left;
   padding: 0;
   margin: 0;
 }
-/* line 193, styles.less */
+/* line 194, styles.less */
 div.header .block-left .text ul li {
   color: rgba(255, 255, 255, 0.7);
   font-size: 18px;
@@ -232,22 +233,22 @@ div.header .block-left .text ul li {
   min-height: 61px;
   margin-bottom: 20px;
 }
-/* line 208, styles.less */
+/* line 209, styles.less */
 div.header .block-right {
   background: #a550a2;
   width: 39%;
   float: right;
   height: 100%;
 }
-/* line 213, styles.less */
+/* line 214, styles.less */
 div.header .block-right .text {
   float: left;
   width: 40%;
-  padding-top: 75px;
+  padding-top: 120px;
   padding-bottom: 60px;
   padding-left: 140px;
 }
-/* line 219, styles.less */
+/* line 220, styles.less */
 div.header .block-right .text h5 {
   color: #ffffff;
   font-size: 20px;
@@ -258,7 +259,7 @@ div.header .block-right .text h5 {
   margin: 0;
   padding-bottom: 30px;
 }
-/* line 229, styles.less */
+/* line 230, styles.less */
 div.header .block-right .text .icon {
   font-family: Font Awesome;
   color: #653163;
@@ -269,21 +270,21 @@ div.header .block-right .text .icon {
   padding-top: 30px;
   padding-bottom: 15px;
 }
-/* line 242, styles.less */
+/* line 243, styles.less */
 div.header .block-right .text p {
   padding: 5px 0 5px 0;
   margin: 0;
 }
-/* line 245, styles.less */
+/* line 246, styles.less */
 div.header .block-right .text p a {
   text-decoration: underline;
   color: #fff;
 }
-/* line 248, styles.less */
+/* line 249, styles.less */
 div.header .block-right .text p a:hover {
   text-decoration: none;
 }
-/* line 252, styles.less */
+/* line 253, styles.less */
 div.header .block-right .text p.city {
   color: #ffffff;
   font-size: 18px;
@@ -292,7 +293,7 @@ div.header .block-right .text p.city {
   text-align: center;
   display: block;
 }
-/* line 260, styles.less */
+/* line 261, styles.less */
 div.header .block-right .text p.data {
   color: #f1bef0;
   font-size: 16px;
@@ -300,7 +301,7 @@ div.header .block-right .text p.data {
   line-height: 17px;
   text-align: center;
 }
-/* line 267, styles.less */
+/* line 268, styles.less */
 div.header .block-right .text p.name {
   color: #f1bef0;
   font-size: 16px;
@@ -308,20 +309,20 @@ div.header .block-right .text p.name {
   line-height: 17px;
   text-align: center;
 }
-/* line 275, styles.less */
+/* line 276, styles.less */
 div.header .block-right .text .icon-bottom {
   margin: auto;
   width: 55px;
   padding-top: 40px;
 }
-/* line 284, styles.less */
+/* line 285, styles.less */
 section.block1 {
   width: 960px;
   margin: auto;
   padding-top: 100px;
   padding-bottom: 100px;
 }
-/* line 290, styles.less */
+/* line 291, styles.less */
 section.block1 h2 {
   color: #582257;
   font-size: 37px;
@@ -330,7 +331,7 @@ section.block1 h2 {
   text-align: center;
   margin: 0;
 }
-/* line 298, styles.less */
+/* line 299, styles.less */
 section.block1 div {
   color: #8b7f8d;
   font-size: 18px;
@@ -340,7 +341,7 @@ section.block1 div {
   padding-top: 80px;
   margin: 0;
 }
-/* line 306, styles.less */
+/* line 307, styles.less */
 section.block1 div span {
   color: #582257;
   font-size: 18px;
@@ -348,28 +349,28 @@ section.block1 div span {
   line-height: 30px;
   text-align: left;
 }
-/* line 313, styles.less */
+/* line 314, styles.less */
 section.block1 div.column-left {
   width: 48%;
   float: left;
   padding-right: 4%;
 }
-/* line 318, styles.less */
+/* line 319, styles.less */
 section.block1 div.column-right {
   width: 48%;
   float: right;
 }
-/* line 322, styles.less */
+/* line 323, styles.less */
 section.block1 div.clr {
   padding: 0;
 }
-/* line 327, styles.less */
+/* line 328, styles.less */
 section.block2 {
   background: #1e051d;
   padding-top: 200px;
   padding-bottom: 200px;
 }
-/* line 331, styles.less */
+/* line 332, styles.less */
 section.block2 h1 {
   color: #ffffff;
   font-size: 46px;
@@ -379,7 +380,7 @@ section.block2 h1 {
   padding-bottom: 70px;
   margin: 0;
 }
-/* line 340, styles.less */
+/* line 341, styles.less */
 section.block2 .selection-trainer {
   display: block;
   background: #a550a2;
@@ -389,7 +390,7 @@ section.block2 .selection-trainer {
   margin: auto;
   border-radius: 5px;
 }
-/* line 348, styles.less */
+/* line 349, styles.less */
 section.block2 .selection-trainer p {
   color: #ffffff;
   font-size: 22px;
@@ -399,23 +400,23 @@ section.block2 .selection-trainer p {
   padding-bottom: 10px;
   margin: 0;
 }
-/* line 359, styles.less */
+/* line 360, styles.less */
 section.block3 {
   background: url('../images/bg-block3.jpg') no-repeat;
   background-position: 90% bottom;
   padding-top: 100px;
   padding-bottom: 80px;
 }
-/* line 364, styles.less */
+/* line 365, styles.less */
 section.block3 .wrapper {
   width: 960px;
   margin: auto;
 }
-/* line 367, styles.less */
+/* line 368, styles.less */
 section.block3 .wrapper .text {
   width: 50%;
 }
-/* line 369, styles.less */
+/* line 370, styles.less */
 section.block3 .wrapper .text h4 {
   color: #582257;
   font-size: 30px;
@@ -424,7 +425,7 @@ section.block3 .wrapper .text h4 {
   text-align: left;
   margin: 0;
 }
-/* line 377, styles.less */
+/* line 378, styles.less */
 section.block3 .wrapper .text p {
   color: #8b7f8d;
   font-size: 16px;
@@ -432,18 +433,18 @@ section.block3 .wrapper .text p {
   line-height: 30px;
   text-align: left;
 }
-/* line 387, styles.less */
+/* line 388, styles.less */
 section.block4 {
   background: #f6f4f6;
 }
-/* line 389, styles.less */
+/* line 390, styles.less */
 section.block4 .wrapper {
   width: 960px;
   margin: auto;
   padding-top: 120px;
   padding-bottom: 50px;
 }
-/* line 394, styles.less */
+/* line 395, styles.less */
 section.block4 .wrapper h3 {
   color: #582257;
   font-size: 35px;
@@ -454,7 +455,7 @@ section.block4 .wrapper h3 {
   padding-bottom: 50px;
   margin: 0;
 }
-/* line 404, styles.less */
+/* line 405, styles.less */
 section.block4 .wrapper p {
   color: #8b7f8d;
   font-size: 16px;
@@ -464,24 +465,24 @@ section.block4 .wrapper p {
   padding: 15px 0 15px 0;
   margin: 0;
 }
-/* line 412, styles.less */
+/* line 413, styles.less */
 section.block4 .wrapper p.left {
   width: 48%;
   float: left;
   padding-right: 4%;
 }
-/* line 417, styles.less */
+/* line 418, styles.less */
 section.block4 .wrapper p.right {
   width: 48%;
   float: right;
 }
-/* line 425, styles.less */
+/* line 426, styles.less */
 section.block5 .wrapper {
   width: 960px;
   margin: auto;
   padding-top: 100px;
 }
-/* line 429, styles.less */
+/* line 430, styles.less */
 section.block5 .wrapper h4 {
   color: #582257;
   font-size: 30px;
@@ -491,28 +492,28 @@ section.block5 .wrapper h4 {
   margin: 0;
   margin-bottom: 30px;
 }
-/* line 438, styles.less */
+/* line 439, styles.less */
 section.block5 .wrapper .video {
   width: 620px;
   margin: auto;
   height: 430px;
 }
-/* line 446, styles.less */
+/* line 447, styles.less */
 section.block6 .wrapper {
   width: 960px;
   margin: auto;
 }
-/* line 449, styles.less */
+/* line 450, styles.less */
 section.block6 .wrapper.with-icon {
   background: url('../images/icon-block6.jpg') center right no-repeat;
   padding-top: 100px;
 }
-/* line 453, styles.less */
+/* line 454, styles.less */
 section.block6 .wrapper .left {
   float: left;
   width: 50%;
 }
-/* line 457, styles.less */
+/* line 458, styles.less */
 section.block6 .wrapper h4 {
   color: #582257;
   font-size: 30px;
@@ -522,7 +523,7 @@ section.block6 .wrapper h4 {
   margin: 0;
   padding-bottom: 30px;
 }
-/* line 466, styles.less */
+/* line 467, styles.less */
 section.block6 .wrapper p {
   color: #8b7f8d;
   font-size: 16px;
@@ -532,18 +533,18 @@ section.block6 .wrapper p {
   padding-bottom: 30px;
   margin: 0;
 }
-/* line 476, styles.less */
+/* line 477, styles.less */
 section.block6 .DI-1 {
   background: #1e051d;
 }
-/* line 478, styles.less */
+/* line 479, styles.less */
 section.block6 .DI-1 .wrapper {
   width: 960px;
   margin: auto;
   overflow: hidden;
   padding: 50px 0;
 }
-/* line 483, styles.less */
+/* line 484, styles.less */
 section.block6 .DI-1 .wrapper h6 {
   color: #ffffff;
   font-size: 18px;
@@ -554,7 +555,7 @@ section.block6 .DI-1 .wrapper h6 {
   float: left;
   width: 70%;
 }
-/* line 493, styles.less */
+/* line 494, styles.less */
 section.block6 .DI-1 .wrapper a.btn {
   float: right;
   display: block;
@@ -570,22 +571,22 @@ section.block6 .DI-1 .wrapper a.btn {
   padding: 10px 10px;
   margin-top: 10px;
 }
-/* line 512, styles.less */
+/* line 513, styles.less */
 section.block7 .wrapper {
   width: 960px;
   margin: auto;
 }
-/* line 515, styles.less */
+/* line 516, styles.less */
 section.block7 .wrapper.with-icon {
   background: url('../images/icon-block7.jpg') center right no-repeat;
   padding-top: 100px;
 }
-/* line 519, styles.less */
+/* line 520, styles.less */
 section.block7 .wrapper .left {
   float: left;
   width: 50%;
 }
-/* line 522, styles.less */
+/* line 523, styles.less */
 section.block7 .wrapper .left h4 {
   color: #582257;
   font-size: 30px;
@@ -595,7 +596,7 @@ section.block7 .wrapper .left h4 {
   padding-bottom: 30px;
   margin: 0;
 }
-/* line 531, styles.less */
+/* line 532, styles.less */
 section.block7 .wrapper .left p {
   color: #8b7f8d;
   font-size: 16px;
@@ -605,18 +606,18 @@ section.block7 .wrapper .left p {
   padding-bottom: 30px;
   margin: 0;
 }
-/* line 542, styles.less */
+/* line 543, styles.less */
 section.block7 .course-DI1 {
   background: #1e051d;
 }
-/* line 544, styles.less */
+/* line 545, styles.less */
 section.block7 .course-DI1 .wrapper {
   width: 960px;
   margin: auto;
   overflow: hidden;
   padding: 50px 0;
 }
-/* line 549, styles.less */
+/* line 550, styles.less */
 section.block7 .course-DI1 .wrapper h6 {
   color: #ffffff;
   font-size: 18px;
@@ -627,7 +628,7 @@ section.block7 .course-DI1 .wrapper h6 {
   float: left;
   width: 70%;
 }
-/* line 559, styles.less */
+/* line 560, styles.less */
 section.block7 .course-DI1 .wrapper a.btn {
   float: right;
   display: block;
@@ -643,13 +644,13 @@ section.block7 .course-DI1 .wrapper a.btn {
   padding: 10px 10px;
   margin-top: 10px;
 }
-/* line 578, styles.less */
+/* line 579, styles.less */
 section.block8 .wrapper {
   width: 515px;
   margin: auto;
   padding-top: 100px;
 }
-/* line 582, styles.less */
+/* line 583, styles.less */
 section.block8 .wrapper h4 {
   color: #582257;
   font-size: 30px;
@@ -659,7 +660,7 @@ section.block8 .wrapper h4 {
   text-align: center;
   margin: 0;
 }
-/* line 591, styles.less */
+/* line 592, styles.less */
 section.block8 .wrapper p {
   color: #8b7f8d;
   font-size: 18px;
@@ -667,20 +668,20 @@ section.block8 .wrapper p {
   line-height: 30px;
   text-align: center;
 }
-/* line 598, styles.less */
+/* line 599, styles.less */
 section.block8 .wrapper .icon {
   margin: auto;
   width: 55px;
   padding-top: 40px;
 }
-/* line 607, styles.less */
+/* line 608, styles.less */
 section.block9 .wrapper {
   width: 960px;
   margin: auto;
   padding-top: 100px;
   padding-bottom: 80px;
 }
-/* line 612, styles.less */
+/* line 613, styles.less */
 section.block9 .wrapper h2 {
   color: #582257;
   font-size: 37px;
@@ -690,18 +691,18 @@ section.block9 .wrapper h2 {
   margin: 0;
   padding-bottom: 90px;
 }
-/* line 621, styles.less */
+/* line 622, styles.less */
 section.block9 .wrapper .left {
   width: 48%;
   float: left;
   padding-right: 4%;
 }
-/* line 626, styles.less */
+/* line 627, styles.less */
 section.block9 .wrapper .right {
   width: 48%;
   float: right;
 }
-/* line 630, styles.less */
+/* line 631, styles.less */
 section.block9 .wrapper p {
   color: #8b7f8d;
   font-size: 18px;
@@ -711,19 +712,19 @@ section.block9 .wrapper p {
   margin: 0;
   padding-bottom: 30px;
 }
-/* line 641, styles.less */
+/* line 642, styles.less */
 section.block10 {
   background: url('../images/bg-block10.jpg') no-repeat center center;
   background-size: cover;
 }
-/* line 644, styles.less */
+/* line 645, styles.less */
 section.block10 .wrapper {
   width: 960px;
   margin: auto;
   padding-top: 380px;
   padding-bottom: 90px;
 }
-/* line 649, styles.less */
+/* line 650, styles.less */
 section.block10 .wrapper h1 {
   color: #ffffff;
   font-size: 45px;
@@ -733,7 +734,7 @@ section.block10 .wrapper h1 {
   margin: 0;
   padding-bottom: 30px;
 }
-/* line 658, styles.less */
+/* line 659, styles.less */
 section.block10 .wrapper p {
   color: #bdc3c7;
   font-size: 25px;
@@ -742,19 +743,19 @@ section.block10 .wrapper p {
   text-align: center;
   margin: 0;
 }
-/* line 666, styles.less */
+/* line 667, styles.less */
 section.block10 .wrapper .icon {
   margin: auto;
   width: 55px;
   padding-top: 220px;
 }
-/* line 674, styles.less */
+/* line 675, styles.less */
 section.block11 .wrapper {
   width: 630px;
   margin: auto;
   padding-top: 100px;
 }
-/* line 678, styles.less */
+/* line 679, styles.less */
 section.block11 .wrapper p {
   color: #8b7f8d;
   font-size: 18px;
@@ -762,13 +763,13 @@ section.block11 .wrapper p {
   line-height: 30px;
   text-align: left;
 }
-/* line 689, styles.less */
+/* line 690, styles.less */
 section.block12 .wrapper {
   width: 960px;
   margin: auto;
   overflow: hidden;
 }
-/* line 693, styles.less */
+/* line 694, styles.less */
 section.block12 .wrapper h3 {
   color: #582257;
   font-size: 30px;
@@ -779,7 +780,7 @@ section.block12 .wrapper h3 {
   padding-bottom: 30px;
   margin: 0;
 }
-/* line 703, styles.less */
+/* line 704, styles.less */
 section.block12 .wrapper .item {
   float: left;
   width: 300px;
@@ -791,7 +792,7 @@ section.block12 .wrapper .item {
   color: #8b7f8d;
   height: 250px;
 }
-/* line 713, styles.less */
+/* line 714, styles.less */
 section.block12 .wrapper .item .photo-container {
   width: 300px;
   height: 180px;
@@ -801,7 +802,7 @@ section.block12 .wrapper .item .photo-container {
   -webkit-border-radius: 10px;
   overflow: hidden;
 }
-/* line 721, styles.less */
+/* line 722, styles.less */
 section.block12 .wrapper .item .photo-container p.name {
   position: absolute;
   width: 100%;
@@ -816,7 +817,7 @@ section.block12 .wrapper .item .photo-container p.name {
   margin: 0;
   padding-left: 15px;
 }
-/* line 736, styles.less */
+/* line 737, styles.less */
 section.block12 .wrapper .item .photo-container .fader {
   position: absolute;
   width: 100%;
@@ -825,13 +826,13 @@ section.block12 .wrapper .item .photo-container .fader {
   z-index: 1;
   display: none;
 }
-/* line 744, styles.less */
+/* line 745, styles.less */
 section.block12 .wrapper .item .photo-container img {
   position: absolute;
   width: 100%;
   height: 100%;
 }
-/* line 750, styles.less */
+/* line 751, styles.less */
 section.block12 .wrapper .item p.slogan {
   color: #8b7f8d;
   font-size: 14px;
@@ -839,22 +840,22 @@ section.block12 .wrapper .item p.slogan {
   line-height: 21px;
   text-align: center;
 }
-/* line 757, styles.less */
+/* line 758, styles.less */
 section.block12 .wrapper .item:hover {
   border-color: #a550a2;
 }
-/* line 759, styles.less */
+/* line 760, styles.less */
 section.block12 .wrapper .item:hover .fader {
   display: block;
 }
-/* line 767, styles.less */
+/* line 768, styles.less */
 section.block13 .wrapper {
   width: 95%;
   margin: auto;
   max-width: 1300px;
   padding-bottom: 50px;
 }
-/* line 772, styles.less */
+/* line 773, styles.less */
 section.block13 .wrapper h3 {
   margin-top: 70px;
   color: #582257;
@@ -862,56 +863,56 @@ section.block13 .wrapper h3 {
   /* Приближение из-за подстановки шрифтов */
   font-weight: 300;
 }
-/* line 778, styles.less */
+/* line 779, styles.less */
 section.block13 .wrapper .photo-container {
   width: 475px;
   float: left;
   margin-right: 90px;
 }
-/* line 782, styles.less */
+/* line 783, styles.less */
 section.block13 .wrapper .photo-container img {
   width: 100%;
   display: block;
 }
-/* line 787, styles.less */
+/* line 788, styles.less */
 section.block13 .wrapper .about {
   overflow: hidden;
 }
-/* line 790, styles.less */
+/* line 791, styles.less */
 section.block13 .wrapper .about ul {
   font-size: 20px;
   color: #8b7f8d;
   line-height: 180%;
 }
-/* line 794, styles.less */
+/* line 795, styles.less */
 section.block13 .wrapper .about ul li {
   margin: 20px 0;
   background-position: left 9px;
 }
-/* line 800, styles.less */
+/* line 801, styles.less */
 section.block13 .wrapper .results {
   width: 80%;
   margin: 100px auto 20px auto;
 }
-/* line 804, styles.less */
+/* line 805, styles.less */
 section.block13 .wrapper .results ul li {
   margin: 20px 0;
   color: #8b7f8d;
   font-size: 16px;
   background-position: left 7px;
 }
-/* line 813, styles.less */
+/* line 814, styles.less */
 section.block13 .schedule {
   background: #f6f4f6;
   padding-top: 50px;
 }
-/* line 816, styles.less */
+/* line 817, styles.less */
 section.block13 .schedule .wrapper {
   width: 95%;
   max-width: 930px;
   margin: auto;
 }
-/* line 820, styles.less */
+/* line 821, styles.less */
 section.block13 .schedule .wrapper h3 {
   display: block;
   width: 100%;
@@ -923,27 +924,27 @@ section.block13 .schedule .wrapper h3 {
   padding-top: 30px;
   margin: 0;
 }
-/* line 831, styles.less */
+/* line 832, styles.less */
 section.block13 .schedule .wrapper table {
   width: 100%;
   margin-top: 30px;
 }
-/* line 834, styles.less */
+/* line 835, styles.less */
 section.block13 .schedule .wrapper table td {
   width: 33%;
 }
-/* line 838, styles.less */
+/* line 839, styles.less */
 section.block13 .schedule .wrapper a.sign-up {
   margin-top: 40px;
 }
-/* line 845, styles.less */
+/* line 846, styles.less */
 section.block14 .wrapper {
   width: 95%;
   margin: auto;
   max-width: 1300px;
   padding-bottom: 50px;
 }
-/* line 850, styles.less */
+/* line 851, styles.less */
 section.block14 .wrapper h3 {
   margin-top: 70px;
   color: #582257;
@@ -951,43 +952,43 @@ section.block14 .wrapper h3 {
   /* Приближение из-за подстановки шрифтов */
   font-weight: 300;
 }
-/* line 856, styles.less */
+/* line 857, styles.less */
 section.block14 .wrapper .photo-container {
   width: 475px;
   float: left;
   margin-right: 90px;
 }
-/* line 860, styles.less */
+/* line 861, styles.less */
 section.block14 .wrapper .photo-container img {
   width: 100%;
   display: block;
 }
-/* line 865, styles.less */
+/* line 866, styles.less */
 section.block14 .wrapper .about {
   overflow: hidden;
 }
-/* line 868, styles.less */
+/* line 869, styles.less */
 section.block14 .wrapper .about ul {
   font-size: 20px;
   color: #8b7f8d;
   line-height: 180%;
 }
-/* line 872, styles.less */
+/* line 873, styles.less */
 section.block14 .wrapper .about ul li {
   margin: 20px 0;
   background-position: left 9px;
 }
-/* line 881, styles.less */
+/* line 882, styles.less */
 section.block14 .wrapper .reviews {
   margin: 0;
 }
-/* line 883, styles.less */
+/* line 884, styles.less */
 section.block14 .wrapper .reviews .wrapper {
   width: 960px;
   margin: auto;
   padding: 0;
 }
-/* line 887, styles.less */
+/* line 888, styles.less */
 section.block14 .wrapper .reviews .wrapper h4 {
   color: #582257;
   font-size: 30px;
@@ -995,38 +996,38 @@ section.block14 .wrapper .reviews .wrapper h4 {
   line-height: 40px;
   text-align: center;
 }
-/* line 894, styles.less */
+/* line 895, styles.less */
 section.block14 .wrapper .reviews .wrapper .left {
   float: left;
   width: 48%;
   margin-right: 4%;
 }
-/* line 899, styles.less */
+/* line 900, styles.less */
 section.block14 .wrapper .reviews .wrapper .right {
   float: right;
   width: 48%;
 }
-/* line 903, styles.less */
+/* line 904, styles.less */
 section.block14 .wrapper .reviews .wrapper .marked {
   color: #582257;
   font-weight: 600;
 }
-/* line 907, styles.less */
+/* line 908, styles.less */
 section.block14 .wrapper .reviews .wrapper .review {
   margin: 0;
 }
-/* line 913, styles.less */
+/* line 914, styles.less */
 section.block14 .schedule {
   background: #f6f4f6;
   padding-top: 40px;
 }
-/* line 916, styles.less */
+/* line 917, styles.less */
 section.block14 .schedule .wrapper {
   width: 95%;
   max-width: 930px;
   margin: auto;
 }
-/* line 920, styles.less */
+/* line 921, styles.less */
 section.block14 .schedule .wrapper h3 {
   display: block;
   width: 100%;
@@ -1038,27 +1039,27 @@ section.block14 .schedule .wrapper h3 {
   padding-top: 30px;
   margin: 0;
 }
-/* line 931, styles.less */
+/* line 932, styles.less */
 section.block14 .schedule .wrapper table {
   width: 100%;
   margin-top: 30px;
 }
-/* line 934, styles.less */
+/* line 935, styles.less */
 section.block14 .schedule .wrapper table td {
   width: 33%;
 }
-/* line 938, styles.less */
+/* line 939, styles.less */
 section.block14 .schedule .wrapper a.sign-up {
   margin-top: 40px;
 }
-/* line 946, styles.less */
+/* line 947, styles.less */
 section.block15 .wrapper {
   width: 95%;
   margin: auto;
   max-width: 1300px;
   padding-bottom: 20px;
 }
-/* line 951, styles.less */
+/* line 952, styles.less */
 section.block15 .wrapper h3 {
   margin-top: 70px;
   color: #582257;
@@ -1066,40 +1067,40 @@ section.block15 .wrapper h3 {
   /* Приближение из-за подстановки шрифтов */
   font-weight: 300;
 }
-/* line 957, styles.less */
+/* line 958, styles.less */
 section.block15 .wrapper .photo-container {
   width: 475px;
   float: left;
   margin-right: 90px;
 }
-/* line 961, styles.less */
+/* line 962, styles.less */
 section.block15 .wrapper .photo-container img {
   width: 100%;
   display: block;
 }
-/* line 966, styles.less */
+/* line 967, styles.less */
 section.block15 .wrapper .about {
   overflow: hidden;
 }
-/* line 969, styles.less */
+/* line 970, styles.less */
 section.block15 .wrapper .about ul {
   font-size: 20px;
   color: #8b7f8d;
   line-height: 180%;
 }
-/* line 973, styles.less */
+/* line 974, styles.less */
 section.block15 .wrapper .about ul li {
   margin: 20px 0;
   background-position: left 9px;
 }
-/* line 979, styles.less */
+/* line 980, styles.less */
 section.block15 .wrapper .video {
   width: 940px;
   margin: auto;
   margin-top: 100px;
   margin-bottom: 100px;
 }
-/* line 984, styles.less */
+/* line 985, styles.less */
 section.block15 .wrapper .video h3 {
   display: block;
   width: 95%;
@@ -1107,36 +1108,36 @@ section.block15 .wrapper .video h3 {
   text-align: center;
   margin-bottom: 30px;
 }
-/* line 991, styles.less */
+/* line 992, styles.less */
 section.block15 .wrapper .video .container {
   width: 940px;
   height: 355px;
   background: #a550a2;
 }
-/* line 997, styles.less */
+/* line 998, styles.less */
 section.block15 .wrapper .specialization {
   width: 940px;
   margin: auto;
   margin-top: 30px;
 }
-/* line 1001, styles.less */
+/* line 1002, styles.less */
 section.block15 .wrapper .specialization ul {
   font-size: 18px;
   color: #8b7f8d;
 }
-/* line 1007, styles.less */
+/* line 1008, styles.less */
 section.block15 .schedule {
   background: #f6f4f6;
   padding-top: 40px;
   padding-bottom: 50px;
 }
-/* line 1011, styles.less */
+/* line 1012, styles.less */
 section.block15 .schedule .wrapper {
   width: 95%;
   max-width: 930px;
   margin: auto;
 }
-/* line 1015, styles.less */
+/* line 1016, styles.less */
 section.block15 .schedule .wrapper h3 {
   display: block;
   width: 100%;
@@ -1148,27 +1149,27 @@ section.block15 .schedule .wrapper h3 {
   padding-top: 30px;
   margin: 0;
 }
-/* line 1026, styles.less */
+/* line 1027, styles.less */
 section.block15 .schedule .wrapper table {
   width: 100%;
   margin-top: 30px;
 }
-/* line 1029, styles.less */
+/* line 1030, styles.less */
 section.block15 .schedule .wrapper table td {
   width: 33%;
 }
-/* line 1033, styles.less */
+/* line 1034, styles.less */
 section.block15 .schedule .wrapper a.sign-up {
   margin-top: 40px;
 }
-/* line 1040, styles.less */
+/* line 1041, styles.less */
 section.block16 .wrapper {
   width: 95%;
   margin: auto;
   max-width: 1300px;
   padding-bottom: 40px;
 }
-/* line 1045, styles.less */
+/* line 1046, styles.less */
 section.block16 .wrapper h3 {
   margin-top: 70px;
   color: #582257;
@@ -1176,39 +1177,39 @@ section.block16 .wrapper h3 {
   /* Приближение из-за подстановки шрифтов */
   font-weight: 300;
 }
-/* line 1051, styles.less */
+/* line 1052, styles.less */
 section.block16 .wrapper .photo-container {
   width: 475px;
   float: left;
   margin-right: 90px;
 }
-/* line 1055, styles.less */
+/* line 1056, styles.less */
 section.block16 .wrapper .photo-container img {
   width: 100%;
   display: block;
 }
-/* line 1060, styles.less */
+/* line 1061, styles.less */
 section.block16 .wrapper .about {
   overflow: hidden;
 }
-/* line 1063, styles.less */
+/* line 1064, styles.less */
 section.block16 .wrapper .about ul {
   font-size: 20px;
   color: #8b7f8d;
   line-height: 180%;
 }
-/* line 1067, styles.less */
+/* line 1068, styles.less */
 section.block16 .wrapper .about ul li {
   margin: 20px 0;
   background-position: left 9px;
 }
-/* line 1073, styles.less */
+/* line 1074, styles.less */
 section.block16 .wrapper .case {
   background: url('../images/smoke.jpg') center right no-repeat;
   padding-top: 150px;
   padding-left: 50px;
 }
-/* line 1077, styles.less */
+/* line 1078, styles.less */
 section.block16 .wrapper .case h3 {
   color: #582257;
   font-size: 34px;
@@ -1218,7 +1219,7 @@ section.block16 .wrapper .case h3 {
   margin: 0;
   padding-bottom: 20px;
 }
-/* line 1086, styles.less */
+/* line 1087, styles.less */
 section.block16 .wrapper .case p {
   color: #8b7f8d;
   font-size: 16.62px;
@@ -1229,13 +1230,13 @@ section.block16 .wrapper .case p {
   padding-bottom: 150px;
   margin: 0;
 }
-/* line 1099, styles.less */
+/* line 1100, styles.less */
 section.block16 .reviews .wrapper {
   width: 960px;
   margin: auto;
   margin-top: 90px;
 }
-/* line 1103, styles.less */
+/* line 1104, styles.less */
 section.block16 .reviews .wrapper h4 {
   color: #582257;
   font-size: 30px;
@@ -1243,34 +1244,34 @@ section.block16 .reviews .wrapper h4 {
   line-height: 40px;
   text-align: center;
 }
-/* line 1110, styles.less */
+/* line 1111, styles.less */
 section.block16 .reviews .wrapper .left {
   float: left;
   width: 48%;
   margin-right: 4%;
 }
-/* line 1115, styles.less */
+/* line 1116, styles.less */
 section.block16 .reviews .wrapper .right {
   float: right;
   width: 48%;
 }
-/* line 1119, styles.less */
+/* line 1120, styles.less */
 section.block16 .reviews .wrapper .marked {
   color: #582257;
   font-weight: 600;
 }
-/* line 1125, styles.less */
+/* line 1126, styles.less */
 section.block16 .schedule {
   background: #f6f4f6;
   padding-top: 40px;
 }
-/* line 1128, styles.less */
+/* line 1129, styles.less */
 section.block16 .schedule .wrapper {
   width: 95%;
   max-width: 930px;
   margin: auto;
 }
-/* line 1132, styles.less */
+/* line 1133, styles.less */
 section.block16 .schedule .wrapper h3 {
   display: block;
   width: 100%;
@@ -1282,36 +1283,36 @@ section.block16 .schedule .wrapper h3 {
   padding-top: 30px;
   margin: 0;
 }
-/* line 1143, styles.less */
+/* line 1144, styles.less */
 section.block16 .schedule .wrapper table {
   width: 100%;
   margin-top: 30px;
 }
-/* line 1146, styles.less */
+/* line 1147, styles.less */
 section.block16 .schedule .wrapper table td {
   width: 33%;
 }
-/* line 1150, styles.less */
+/* line 1151, styles.less */
 section.block16 .schedule .wrapper a.sign-up {
   margin-top: 40px;
 }
-/* line 1157, styles.less */
+/* line 1158, styles.less */
 section.footer {
   padding: 100px 0 50px 0;
 }
-/* line 1159, styles.less */
+/* line 1160, styles.less */
 section.footer .menu-container {
   float: right;
   right: 50%;
 }
-/* line 1162, styles.less */
+/* line 1163, styles.less */
 section.footer .menu-container ul.menu {
   left: 50%;
   float: left;
   padding: 0;
   list-style: none;
 }
-/* line 1167, styles.less */
+/* line 1168, styles.less */
 section.footer .menu-container ul.menu li {
   float: left;
   font-size: 16px;
@@ -1320,45 +1321,45 @@ section.footer .menu-container ul.menu li {
   font-weight: 700;
   margin: 0 30px;
 }
-/* line 1174, styles.less */
+/* line 1175, styles.less */
 section.footer .menu-container ul.menu li a {
   color: #8b7f8d;
   text-decoration: none;
 }
-/* line 1177, styles.less */
+/* line 1178, styles.less */
 section.footer .menu-container ul.menu li a:hover {
   text-decoration: underline;
 }
-/* line 1181, styles.less */
+/* line 1182, styles.less */
 section.footer .menu-container ul.menu li.up {
   top: -20px;
 }
-/* line 1183, styles.less */
+/* line 1184, styles.less */
 section.footer .menu-container ul.menu li.up a {
   display: block;
   width: 55px;
   padding-top: 65px;
   background: url('../images/icon-up.png') top center no-repeat;
 }
-/* line 1193, styles.less */
+/* line 1194, styles.less */
 section.footer .contacts {
   text-align: center;
 }
-/* line 1195, styles.less */
+/* line 1196, styles.less */
 section.footer .contacts a,
 section.footer .contacts p {
   color: #8b7f8d;
   text-decoration: none;
 }
-/* line 1199, styles.less */
+/* line 1200, styles.less */
 section.footer .contacts a:hover {
   text-decoration: underline;
 }
-/* line 1202, styles.less */
+/* line 1203, styles.less */
 section.footer .contacts p {
   font-size: 14px;
 }
-/* line 1204, styles.less */
+/* line 1205, styles.less */
 section.footer .contacts p.support {
   font-weight: bold;
   font-size: 16px;
