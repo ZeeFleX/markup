@@ -226,5 +226,26 @@
   div.header .block-right .text .icon-bottom {
     padding-top: 15px;
   }
+  /* line 208, media.less */
+  section.block12 .wrapper .item p.slogan {
+    margin: 5px;
+  }
+  /* line 211, media.less */
+  section.block12 .wrapper .item {
+    margin-bottom: 15px;
+    padding-bottom: 25px;
+  }
+  /* line 215, media.less */
+  section.block12 .wrapper h3 {
+    padding-top: 60px;
+  }
+  /* line 218, media.less */
+  section.block15 .wrapper .photo-container {
+    width: 315px;
+  }
+  /* line 221, media.less */
+  section.block16 .wrapper .photo-container {
+    width: 320px;
+  }
 }
 /*# sourceMappingURL=media.css.map */
