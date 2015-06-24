@@ -103,10 +103,6 @@
   }
 }
 @media screen and (max-height: 1024px) {
-  /* line 100, media.less */
-  div.header .block-left .text {
-    width: 80%;
-  }
   /* line 103, media.less */
   div.header .block-left .text ul li {
     margin-bottom: 30px;
