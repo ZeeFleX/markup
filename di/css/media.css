@@ -247,5 +247,14 @@
   section.block16 .wrapper .photo-container {
     width: 320px;
   }
+  /* line 224, media.less */
+  div.header .block-right .text .icon {
+    font-size: 38px;
+  }
+  /* line 227, media.less */
+  div.header .block-left .text p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
 /*# sourceMappingURL=media.css.map */
