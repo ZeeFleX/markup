@@ -81,7 +81,6 @@ table {
 table thead tr th {
   color: #582257;
   font-size: 18px;
-  /* Приближение из-за подстановки шрифтов */
   font-weight: 600;
   text-align: center;
   text-transform: uppercase;
@@ -90,13 +89,13 @@ table thead tr th {
 /* line 79, styles.less */
 table tbody tr td {
   color: #8b7f8d;
-  font-size: 18px;
+  font-size: 17px;
   text-align: center;
   padding: 10px 0;
 }
 /* line 88, styles.less */
 a.sign-up {
-  width: 250px;
+  width: 200px;
   margin: 20px auto;
   background: #a550a2;
   text-decoration: none;
@@ -933,21 +932,25 @@ section.block13 .schedule .wrapper table {
   margin-top: 30px;
 }
 /* line 838, styles.less */
+section.block13 .schedule .wrapper table th {
+  width: 25%;
+}
+/* line 841, styles.less */
 section.block13 .schedule .wrapper table td {
-  width: 33%;
+  width: 25%;
 }
-/* line 842, styles.less */
-section.block13 .schedule .wrapper a.sign-up {
-  margin-top: 40px;
+/* line 843, styles.less */
+section.block13 .schedule .wrapper table td a.sign-up {
+  margin-top: 10px;
 }
-/* line 849, styles.less */
+/* line 853, styles.less */
 section.block14 .wrapper {
   width: 95%;
   margin: auto;
   max-width: 1300px;
   padding-bottom: 50px;
 }
-/* line 854, styles.less */
+/* line 858, styles.less */
 section.block14 .wrapper h3 {
   margin-top: 70px;
   color: #582257;
@@ -955,43 +958,43 @@ section.block14 .wrapper h3 {
   /* Приближение из-за подстановки шрифтов */
   font-weight: 300;
 }
-/* line 860, styles.less */
+/* line 864, styles.less */
 section.block14 .wrapper .photo-container {
   width: 475px;
   float: left;
   margin-right: 90px;
 }
-/* line 864, styles.less */
+/* line 868, styles.less */
 section.block14 .wrapper .photo-container img {
   width: 100%;
   display: block;
 }
-/* line 869, styles.less */
+/* line 873, styles.less */
 section.block14 .wrapper .about {
   overflow: hidden;
 }
-/* line 872, styles.less */
+/* line 876, styles.less */
 section.block14 .wrapper .about ul {
   font-size: 20px;
   color: #8b7f8d;
   line-height: 180%;
 }
-/* line 876, styles.less */
+/* line 880, styles.less */
 section.block14 .wrapper .about ul li {
   margin: 20px 0;
   background-position: left 9px;
 }
-/* line 885, styles.less */
+/* line 889, styles.less */
 section.block14 .wrapper .reviews {
   margin: 0;
 }
-/* line 887, styles.less */
+/* line 891, styles.less */
 section.block14 .wrapper .reviews .wrapper {
   width: 960px;
   margin: auto;
   padding: 0;
 }
-/* line 891, styles.less */
+/* line 895, styles.less */
 section.block14 .wrapper .reviews .wrapper h4 {
   color: #582257;
   font-size: 30px;
@@ -999,38 +1002,38 @@ section.block14 .wrapper .reviews .wrapper h4 {
   line-height: 40px;
   text-align: center;
 }
-/* line 898, styles.less */
+/* line 902, styles.less */
 section.block14 .wrapper .reviews .wrapper .left {
   float: left;
   width: 48%;
   margin-right: 4%;
 }
-/* line 903, styles.less */
+/* line 907, styles.less */
 section.block14 .wrapper .reviews .wrapper .right {
   float: right;
   width: 48%;
 }
-/* line 907, styles.less */
+/* line 911, styles.less */
 section.block14 .wrapper .reviews .wrapper .marked {
   color: #582257;
   font-weight: 600;
 }
-/* line 911, styles.less */
+/* line 915, styles.less */
 section.block14 .wrapper .reviews .wrapper .review {
   margin: 0;
 }
-/* line 917, styles.less */
+/* line 921, styles.less */
 section.block14 .schedule {
   background: #f6f4f6;
   padding-top: 40px;
 }
-/* line 920, styles.less */
+/* line 924, styles.less */
 section.block14 .schedule .wrapper {
   width: 95%;
   max-width: 930px;
   margin: auto;
 }
-/* line 924, styles.less */
+/* line 928, styles.less */
 section.block14 .schedule .wrapper h3 {
   display: block;
   width: 100%;
@@ -1042,27 +1045,32 @@ section.block14 .schedule .wrapper h3 {
   padding-top: 30px;
   margin: 0;
 }
-/* line 935, styles.less */
+/* line 939, styles.less */
 section.block14 .schedule .wrapper table {
   width: 100%;
   margin-top: 30px;
 }
-/* line 938, styles.less */
-section.block14 .schedule .wrapper table td {
-  width: 33%;
-}
 /* line 942, styles.less */
-section.block14 .schedule .wrapper a.sign-up {
-  margin-top: 40px;
+section.block14 .schedule .wrapper table th {
+  width: 25%;
 }
-/* line 950, styles.less */
+/* line 945, styles.less */
+section.block14 .schedule .wrapper table td {
+  width: 25%;
+  line-height: 150%;
+}
+/* line 948, styles.less */
+section.block14 .schedule .wrapper table td a.sign-up {
+  margin-top: 10px;
+}
+/* line 959, styles.less */
 section.block15 .wrapper {
   width: 95%;
   margin: auto;
   max-width: 1300px;
   padding-bottom: 20px;
 }
-/* line 955, styles.less */
+/* line 964, styles.less */
 section.block15 .wrapper h3 {
   margin-top: 70px;
   color: #582257;
@@ -1070,40 +1078,40 @@ section.block15 .wrapper h3 {
   /* Приближение из-за подстановки шрифтов */
   font-weight: 300;
 }
-/* line 961, styles.less */
+/* line 970, styles.less */
 section.block15 .wrapper .photo-container {
   width: 475px;
   float: left;
   margin-right: 90px;
 }
-/* line 965, styles.less */
+/* line 974, styles.less */
 section.block15 .wrapper .photo-container img {
   width: 100%;
   display: block;
 }
-/* line 970, styles.less */
+/* line 979, styles.less */
 section.block15 .wrapper .about {
   overflow: hidden;
 }
-/* line 973, styles.less */
+/* line 982, styles.less */
 section.block15 .wrapper .about ul {
   font-size: 20px;
   color: #8b7f8d;
   line-height: 180%;
 }
-/* line 977, styles.less */
+/* line 986, styles.less */
 section.block15 .wrapper .about ul li {
   margin: 20px 0;
   background-position: left 9px;
 }
-/* line 983, styles.less */
+/* line 992, styles.less */
 section.block15 .wrapper .video {
   width: 940px;
   margin: auto;
   margin-top: 100px;
   margin-bottom: 100px;
 }
-/* line 988, styles.less */
+/* line 997, styles.less */
 section.block15 .wrapper .video h3 {
   display: block;
   width: 95%;
@@ -1111,36 +1119,36 @@ section.block15 .wrapper .video h3 {
   text-align: center;
   margin-bottom: 30px;
 }
-/* line 995, styles.less */
+/* line 1004, styles.less */
 section.block15 .wrapper .video .container {
   width: 940px;
   height: 355px;
   background: #a550a2;
 }
-/* line 1001, styles.less */
+/* line 1010, styles.less */
 section.block15 .wrapper .specialization {
   width: 940px;
   margin: auto;
   margin-top: 30px;
 }
-/* line 1005, styles.less */
+/* line 1014, styles.less */
 section.block15 .wrapper .specialization ul {
   font-size: 18px;
   color: #8b7f8d;
 }
-/* line 1011, styles.less */
+/* line 1020, styles.less */
 section.block15 .schedule {
   background: #f6f4f6;
   padding-top: 40px;
   padding-bottom: 50px;
 }
-/* line 1015, styles.less */
+/* line 1024, styles.less */
 section.block15 .schedule .wrapper {
   width: 95%;
   max-width: 930px;
   margin: auto;
 }
-/* line 1019, styles.less */
+/* line 1028, styles.less */
 section.block15 .schedule .wrapper h3 {
   display: block;
   width: 100%;
@@ -1152,27 +1160,32 @@ section.block15 .schedule .wrapper h3 {
   padding-top: 30px;
   margin: 0;
 }
-/* line 1030, styles.less */
+/* line 1039, styles.less */
 section.block15 .schedule .wrapper table {
   width: 100%;
   margin-top: 30px;
 }
-/* line 1033, styles.less */
+/* line 1042, styles.less */
+section.block15 .schedule .wrapper table th {
+  width: 25%;
+}
+/* line 1045, styles.less */
 section.block15 .schedule .wrapper table td {
-  width: 33%;
+  width: 25%;
+  line-height: 150%;
 }
-/* line 1037, styles.less */
-section.block15 .schedule .wrapper a.sign-up {
-  margin-top: 40px;
+/* line 1048, styles.less */
+section.block15 .schedule .wrapper table td a.sign-up {
+  margin-top: 10px;
 }
-/* line 1044, styles.less */
+/* line 1058, styles.less */
 section.block16 .wrapper {
   width: 95%;
   margin: auto;
   max-width: 1300px;
   padding-bottom: 40px;
 }
-/* line 1049, styles.less */
+/* line 1063, styles.less */
 section.block16 .wrapper h3 {
   margin-top: 70px;
   color: #582257;
@@ -1180,39 +1193,39 @@ section.block16 .wrapper h3 {
   /* Приближение из-за подстановки шрифтов */
   font-weight: 300;
 }
-/* line 1055, styles.less */
+/* line 1069, styles.less */
 section.block16 .wrapper .photo-container {
   width: 475px;
   float: left;
   margin-right: 90px;
 }
-/* line 1059, styles.less */
+/* line 1073, styles.less */
 section.block16 .wrapper .photo-container img {
   width: 100%;
   display: block;
 }
-/* line 1064, styles.less */
+/* line 1078, styles.less */
 section.block16 .wrapper .about {
   overflow: hidden;
 }
-/* line 1067, styles.less */
+/* line 1081, styles.less */
 section.block16 .wrapper .about ul {
   font-size: 20px;
   color: #8b7f8d;
   line-height: 180%;
 }
-/* line 1071, styles.less */
+/* line 1085, styles.less */
 section.block16 .wrapper .about ul li {
   margin: 20px 0;
   background-position: left 9px;
 }
-/* line 1077, styles.less */
+/* line 1091, styles.less */
 section.block16 .wrapper .case {
   background: url('../images/smoke.jpg') center right no-repeat;
   padding-top: 150px;
   padding-left: 50px;
 }
-/* line 1081, styles.less */
+/* line 1095, styles.less */
 section.block16 .wrapper .case h3 {
   color: #582257;
   font-size: 34px;
@@ -1222,7 +1235,7 @@ section.block16 .wrapper .case h3 {
   margin: 0;
   padding-bottom: 20px;
 }
-/* line 1090, styles.less */
+/* line 1104, styles.less */
 section.block16 .wrapper .case p {
   color: #8b7f8d;
   font-size: 16.62px;
@@ -1233,13 +1246,13 @@ section.block16 .wrapper .case p {
   padding-bottom: 150px;
   margin: 0;
 }
-/* line 1103, styles.less */
+/* line 1117, styles.less */
 section.block16 .reviews .wrapper {
   width: 960px;
   margin: auto;
   margin-top: 90px;
 }
-/* line 1107, styles.less */
+/* line 1121, styles.less */
 section.block16 .reviews .wrapper h4 {
   color: #582257;
   font-size: 30px;
@@ -1247,34 +1260,34 @@ section.block16 .reviews .wrapper h4 {
   line-height: 40px;
   text-align: center;
 }
-/* line 1114, styles.less */
+/* line 1128, styles.less */
 section.block16 .reviews .wrapper .left {
   float: left;
   width: 48%;
   margin-right: 4%;
 }
-/* line 1119, styles.less */
+/* line 1133, styles.less */
 section.block16 .reviews .wrapper .right {
   float: right;
   width: 48%;
 }
-/* line 1123, styles.less */
+/* line 1137, styles.less */
 section.block16 .reviews .wrapper .marked {
   color: #582257;
   font-weight: 600;
 }
-/* line 1129, styles.less */
+/* line 1143, styles.less */
 section.block16 .schedule {
   background: #f6f4f6;
   padding-top: 40px;
 }
-/* line 1132, styles.less */
+/* line 1146, styles.less */
 section.block16 .schedule .wrapper {
   width: 95%;
   max-width: 930px;
   margin: auto;
 }
-/* line 1136, styles.less */
+/* line 1150, styles.less */
 section.block16 .schedule .wrapper h3 {
   display: block;
   width: 100%;
@@ -1286,36 +1299,41 @@ section.block16 .schedule .wrapper h3 {
   padding-top: 30px;
   margin: 0;
 }
-/* line 1147, styles.less */
+/* line 1161, styles.less */
 section.block16 .schedule .wrapper table {
   width: 100%;
   margin-top: 30px;
 }
-/* line 1150, styles.less */
+/* line 1164, styles.less */
+section.block16 .schedule .wrapper table th {
+  width: 25%;
+}
+/* line 1167, styles.less */
 section.block16 .schedule .wrapper table td {
-  width: 33%;
+  width: 25%;
+  line-height: 150%;
 }
-/* line 1154, styles.less */
-section.block16 .schedule .wrapper a.sign-up {
-  margin-top: 40px;
+/* line 1170, styles.less */
+section.block16 .schedule .wrapper table td a.sign-up {
+  margin-top: 10px;
 }
-/* line 1161, styles.less */
+/* line 1180, styles.less */
 section.footer {
   padding: 100px 0 50px 0;
 }
-/* line 1163, styles.less */
+/* line 1182, styles.less */
 section.footer .menu-container {
   float: right;
   right: 50%;
 }
-/* line 1166, styles.less */
+/* line 1185, styles.less */
 section.footer .menu-container ul.menu {
   left: 50%;
   float: left;
   padding: 0;
   list-style: none;
 }
-/* line 1171, styles.less */
+/* line 1190, styles.less */
 section.footer .menu-container ul.menu li {
   float: left;
   font-size: 16px;
@@ -1324,45 +1342,45 @@ section.footer .menu-container ul.menu li {
   font-weight: 700;
   margin: 0 30px;
 }
-/* line 1178, styles.less */
+/* line 1197, styles.less */
 section.footer .menu-container ul.menu li a {
   color: #8b7f8d;
   text-decoration: none;
 }
-/* line 1181, styles.less */
+/* line 1200, styles.less */
 section.footer .menu-container ul.menu li a:hover {
   text-decoration: underline;
 }
-/* line 1185, styles.less */
+/* line 1204, styles.less */
 section.footer .menu-container ul.menu li.up {
   top: -20px;
 }
-/* line 1187, styles.less */
+/* line 1206, styles.less */
 section.footer .menu-container ul.menu li.up a {
   display: block;
   width: 55px;
   padding-top: 65px;
   background: url('../images/icon-up.png') top center no-repeat;
 }
-/* line 1197, styles.less */
+/* line 1216, styles.less */
 section.footer .contacts {
   text-align: center;
 }
-/* line 1199, styles.less */
+/* line 1218, styles.less */
 section.footer .contacts a,
 section.footer .contacts p {
   color: #8b7f8d;
   text-decoration: none;
 }
-/* line 1203, styles.less */
+/* line 1222, styles.less */
 section.footer .contacts a:hover {
   text-decoration: underline;
 }
-/* line 1206, styles.less */
+/* line 1225, styles.less */
 section.footer .contacts p {
   font-size: 14px;
 }
-/* line 1208, styles.less */
+/* line 1227, styles.less */
 section.footer .contacts p.support {
   font-weight: bold;
   font-size: 16px;
