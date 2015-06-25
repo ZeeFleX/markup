@@ -1311,29 +1311,28 @@ section.block16 .schedule .wrapper table th {
 /* line 1167, styles.less */
 section.block16 .schedule .wrapper table td {
   width: 25%;
-  line-height: 150%;
 }
-/* line 1170, styles.less */
+/* line 1169, styles.less */
 section.block16 .schedule .wrapper table td a.sign-up {
   margin-top: 10px;
 }
-/* line 1180, styles.less */
+/* line 1179, styles.less */
 section.footer {
   padding: 100px 0 50px 0;
 }
-/* line 1182, styles.less */
+/* line 1181, styles.less */
 section.footer .menu-container {
   float: right;
   right: 50%;
 }
-/* line 1185, styles.less */
+/* line 1184, styles.less */
 section.footer .menu-container ul.menu {
   left: 50%;
   float: left;
   padding: 0;
   list-style: none;
 }
-/* line 1190, styles.less */
+/* line 1189, styles.less */
 section.footer .menu-container ul.menu li {
   float: left;
   font-size: 16px;
@@ -1342,45 +1341,45 @@ section.footer .menu-container ul.menu li {
   font-weight: 700;
   margin: 0 30px;
 }
-/* line 1197, styles.less */
+/* line 1196, styles.less */
 section.footer .menu-container ul.menu li a {
   color: #8b7f8d;
   text-decoration: none;
 }
-/* line 1200, styles.less */
+/* line 1199, styles.less */
 section.footer .menu-container ul.menu li a:hover {
   text-decoration: underline;
 }
-/* line 1204, styles.less */
+/* line 1203, styles.less */
 section.footer .menu-container ul.menu li.up {
   top: -20px;
 }
-/* line 1206, styles.less */
+/* line 1205, styles.less */
 section.footer .menu-container ul.menu li.up a {
   display: block;
   width: 55px;
   padding-top: 65px;
   background: url('../images/icon-up.png') top center no-repeat;
 }
-/* line 1216, styles.less */
+/* line 1215, styles.less */
 section.footer .contacts {
   text-align: center;
 }
-/* line 1218, styles.less */
+/* line 1217, styles.less */
 section.footer .contacts a,
 section.footer .contacts p {
   color: #8b7f8d;
   text-decoration: none;
 }
-/* line 1222, styles.less */
+/* line 1221, styles.less */
 section.footer .contacts a:hover {
   text-decoration: underline;
 }
-/* line 1225, styles.less */
+/* line 1224, styles.less */
 section.footer .contacts p {
   font-size: 14px;
 }
-/* line 1227, styles.less */
+/* line 1226, styles.less */
 section.footer .contacts p.support {
   font-weight: bold;
   font-size: 16px;
