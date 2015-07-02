@@ -66,7 +66,7 @@ table{
 		tr{
 			th{
 				color:  #582257;
-				font-size: 18px; /* Приближение из-за подстановки шрифтов */
+				font-size: 18px;
 				font-weight: 600;
 				text-align: center;
 				text-transform: uppercase;
@@ -78,7 +78,7 @@ table{
 		tr{
 			td{
 				color:  #8b7f8d;
-				font-size: 18px;
+				font-size: 17px;
 				text-align: center;
 				padding: 10px 0;
 			}
@@ -86,7 +86,7 @@ table{
 	}
 }
 a.sign-up{
-	width: 250px;
+	width: 200px;
 	margin:20px auto;
 	background: #a550a2;
 	text-decoration: none;
@@ -105,6 +105,50 @@ a.sign-up{
 		background: #a550a2 - #222;
 	}
 }
+.fixed-menu-container{
+	overflow: hidden;
+	background: #fff;
+	position: fixed;
+	top:0;
+	width:100%;
+	height:10%;
+	z-index: 1;
+	.fixed-menu{
+		float: right;
+		right: 50%;
+		ul.menu{
+			left: 50%;
+			float: left;
+			padding: 0;
+			list-style:none;
+			li{
+				float: left;
+				font-size:16px;
+				text-align: center;
+				text-transform: uppercase;
+				font-weight:700;
+				margin:0 30px;
+				a{
+					color:#8b7f8d;
+					text-decoration: none;
+					&:hover{
+						text-decoration: underline;
+					}
+				}
+				&.up{
+					top:-20px;
+					a{
+						display: block;
+						width:55px;
+						padding-top: 65px;
+						background: url('../images/icon-up.png') top center no-repeat;
+					}
+				}
+			}
+		}
+	}
+}
+
 div.header{
 	background: #a550a2;
 	.block-left {
@@ -116,10 +160,11 @@ div.header{
 		border-right:solid 4px #fff;
 		box-sizing:border-box;
 		-moz-box-sizing:border-box;
+		padding-right: 90px;
 		.text{
 			float: right;
 			width: 60%;
-			padding-top: 75px;
+			padding-top: 120px;
 			padding-bottom: 147px;
 			.logo{
 				float: left;
@@ -169,7 +214,7 @@ div.header{
 		.text{
 			float: left;
 			width: 40%;
-			padding-top: 75px;
+			padding-top: 120px;
 			padding-bottom: 60px;
 			padding-left: 140px;
 			h5{
@@ -181,6 +226,7 @@ div.header{
 				text-transform: uppercase;
 				margin: 0;
 				padding-bottom: 30px;
+				line-height: 150%;
 			}
 			.icon{
 				font-family: Font Awesome;
@@ -240,13 +286,16 @@ div.header{
 section.block1{
 	width: 960px;
 	margin:auto;
+	padding-top: 100px;
+	padding-bottom: 100px;
+
 	h2{
 		color: #582257;
 		font-size: 37px;
 		font-weight: 300;
 		line-height: 50px;
 		text-align: center;
-		padding-top: 150px;
+		margin: 0;
 	}
 	div{
 		color:  #8b7f8d;
@@ -255,7 +304,6 @@ section.block1{
 		line-height: 30px;
 		text-align: left;
 		padding-top: 80px;
-		padding-bottom: 160px;
 		margin: 0;
 		span{
 			color:  #582257;
@@ -265,11 +313,12 @@ section.block1{
 			text-align: left;
 		}
 		&.column-left{
-			width: 50%;
+			width: 48%;
 			float: left;
+			padding-right: 4%;
 		}
 		&.column-right{
-			width: 50%;
+			width: 48%;
 			float: right;
 		}
 		&.clr{
@@ -312,7 +361,7 @@ section.block2{
 section.block3{
 	background: url('../images/bg-block3.jpg') no-repeat;
 	background-position:90% bottom;
-	padding-top: 195px;
+	padding-top: 100px;
 	padding-bottom: 80px;
 	.wrapper{
 		width: 960px;
@@ -325,6 +374,7 @@ section.block3{
 				font-weight: 300;
 				line-height: 40px;
 				text-align: left;
+				margin: 0;
 			}
 			p{
 				color: #8b7f8d;
@@ -341,15 +391,16 @@ section.block4{
 	.wrapper{
 		width: 960px;
 		margin:auto;
-		padding-bottom: 165px;
+		padding-top: 120px;
+		padding-bottom: 50px;
 		h3{
 		color: #582257;
 		font-size: 35px;
 		font-weight: 400;
 		line-height: 50px;
 		text-align: center;
-		padding-top: 150px;
-		padding-bottom: 100px;
+		padding: 0;
+		padding-bottom: 50px;
 		margin: 0;
 		}
 		p{
@@ -361,30 +412,41 @@ section.block4{
 			padding: 15px 0 15px 0;
 			margin: 0;
 			&.left{
-				width: 50%;
+				width: 48%;
 				float: left;
+				padding-right: 4%;
 			}
 			&.right{
-				width: 50%;
+				width: 48%;
 				float: right;
 			}
 		}
 	}
 }
 section.block5{
-	padding-top: 150px;
-	h4{
-		color: #582257;
-		font-size: 30px;
-		font-weight: 300;
-		line-height: 46px;
-		text-align: center;
-	}
-	.video{
-		width: 620px;
+	.wrapper{	
+		width: 960px;
 		margin: auto;
-		height: 430px;
-	}
+		padding-top: 100px;
+		h4{
+			color: #582257;
+			font-size: 30px;
+			font-weight: 300;
+			line-height: 46px;
+			text-align: center;
+			margin: 0;
+			margin-bottom: 30px;
+		}
+		span.bold{
+			font-weight: 600;
+			font-size: 40px;
+		}
+		.video{
+			width: 620px;
+			margin: auto;
+			height: 430px;
+		}
+	}	
 }
 section.block6{
 	.wrapper{
@@ -392,7 +454,7 @@ section.block6{
 		margin:auto;
 		&.with-icon{
 			background: url('../images/icon-block6.jpg') center right no-repeat;
-			padding-top: 150px;
+			padding-top: 100px;
 		}
 		.left{
 			float: left;
@@ -458,7 +520,7 @@ section.block7{
 		margin:auto;
 		&.with-icon{
 			background: url('../images/icon-block7.jpg') center right no-repeat;
-			padding-top: 150px;
+			padding-top: 100px;
 		}
 		.left{
 			float: left;
@@ -520,9 +582,9 @@ section.block7{
 }
 section.block8{
 	.wrapper{
-		width: 960px;
+		width: 515px;
 		margin:auto;
-		padding-top: 150px;
+		padding-top: 100px;
 		h4{
 			color: #582257;
 			font-size: 30px;
@@ -530,6 +592,7 @@ section.block8{
 			letter-spacing: -0.6px;
 			line-height: 42px;
 			text-align: center;
+			margin: 0;
 		}
 		p{
 			color: #8b7f8d;
@@ -550,8 +613,8 @@ section.block9{
 	.wrapper{
 		width: 960px;
 		margin: auto;
-		padding-top: 150px;
-		padding-bottom: 160px;
+		padding-top: 100px;
+		padding-bottom: 80px;
 		h2{
 			color: #582257;
 			font-size: 37px;
@@ -562,11 +625,12 @@ section.block9{
 			padding-bottom: 90px;
 		}
 		.left{
-			width: 50%;
+			width: 48%;
 			float: left;
+			padding-right: 4%;
 		}
 		.right{
-			wight: 50%;
+			width: 48%;
 			float: right;
 		}
 		p{
@@ -583,11 +647,14 @@ section.block9{
 section.block10{
 	background: url('../images/bg-block10.jpg') no-repeat center center;
 	background-size:cover;
+	padding-top: 1px;
 	.wrapper{
 		width: 960px;
 		margin: auto;
-		padding-top: 380px;
-		padding-bottom: 90px;
+		height: 170px;
+		top: 50%;
+		margin-top: -85px;
+		position: relative;
 		h1{
 			color: #ffffff;
 			font-size: 45px;
@@ -604,19 +671,14 @@ section.block10{
 			line-height: 37px;
 			text-align: center;
 			margin: 0;
-		}
-		.icon{
-			margin:auto;
-			width: 55px;
-			padding-top: 220px;
-		}
+		}		
 	}
 }
 section.block11{
 	.wrapper{
 		width: 630px;
 		margin: auto;
-		padding-top: 150px;
+		padding-top: 100px;
 		p{
 			color: #8b7f8d;
 			font-size: 18px;
@@ -638,8 +700,9 @@ section.block12{
 			font-weight: 300;
 			line-height: 40px;
 			text-align: center;
-			padding-top: 150px;
-			padding-bottom: 80px;
+			padding-top: 100px;
+			padding-bottom: 30px;
+			margin: 0;
 		}
 		.item{
 			float:left;
@@ -709,7 +772,7 @@ section.block13{
 		width:95%;
 		margin: auto;
 		max-width:1300px;
-		padding-bottom: 140px;
+		padding-bottom: 50px;
 		h3{
 			margin-top: 70px;
 			color:  #582257;
@@ -740,7 +803,7 @@ section.block13{
 		}
 		.results{
 			width: 80%;
-			margin:125px auto 20px auto;
+			margin:100px auto 20px auto;
 			ul{
 				li{
 					margin:20px 0;
@@ -753,7 +816,7 @@ section.block13{
 	}
 	.schedule{
 		background: #f6f4f6;
-		padding-top: 40px;
+		padding-top: 50px;
 		.wrapper{
 			width: 95%;
 			max-width:930px;
@@ -767,16 +830,21 @@ section.block13{
 				-moz-box-sizing:border-box;
 				padding-left: 40%;
 				padding-top: 30px;
+				margin: 0;
 			}
 			table{
 				width: 100%;
-				margin-top: 80px;
-				td{
-					width: 33%;
+				margin-top: 30px;
+				th{
+					width: 25%;
 				}
-			}
-			a.sign-up{
-				margin-top: 40px;
+				td{
+					width: 25%;
+					a.sign-up{
+						margin-top: 10px;
+
+					}
+				}
 			}
 		}
 	}
@@ -786,7 +854,7 @@ section.block14{
 		width:95%;
 		margin: auto;
 		max-width:1300px;
-		padding-bottom: 140px;
+		padding-bottom: 50px;
 		h3{
 			margin-top: 70px;
 			color:  #582257;
@@ -819,25 +887,34 @@ section.block14{
 			
 		}
 		.reviews{
-			h4{
-				color: #582257;
-				font-size: 30px;
-				font-weight: 300;
-				line-height: 40px;
-				text-align: center;
-			}
-			.left{
-				float: left;
-				width: 48%;
-				margin-right: 4%;
-			}
-			.right{
-				float: right;
-				width: 48%;
-			}
-			.marked{
-				color:#582257;
-				font-weight:600;
+			margin: 0;
+			.wrapper{
+				width: 960px;
+				margin: auto;
+				padding: 0;
+				h4{
+					color: #582257;
+					font-size: 30px;
+					font-weight: 300;
+					line-height: 40px;
+					text-align: center;
+				}
+				.left{
+					float: left;
+					width: 48%;
+					margin-right: 4%;
+				}
+				.right{
+					float: right;
+					width: 48%;
+				}
+				.marked{
+					color:#582257;
+					font-weight:600;
+				}
+				.review{
+					margin: 0;
+				}
 			}
 		}
 	}
@@ -857,16 +934,22 @@ section.block14{
 				-moz-box-sizing:border-box;
 				padding-left: 40%;
 				padding-top: 30px;
+				margin: 0;
 			}
 			table{
 				width: 100%;
-				margin-top: 80px;
-				td{
-					width: 33%;
+				margin-top: 30px;
+				th{
+					width: 25%;
 				}
-			}
-			a.sign-up{
-				margin-top: 40px;
+				td{
+					width: 25%;
+					line-height: 150%;
+					a.sign-up{
+						margin-top: 10px;
+
+					}
+				}
 			}
 		}
 	}
@@ -909,8 +992,8 @@ section.block15{
 		.video{
 			width: 940px;
 			margin:auto;
-			margin-top: 140px;
-			margin-bottom: 150px;
+			margin-top: 100px;
+			margin-bottom: 100px;
 			h3{
 				display: block;
 				width: 95%;
@@ -937,7 +1020,7 @@ section.block15{
 	.schedule{
 		background: #f6f4f6;
 		padding-top: 40px;
-		padding-bottom: 130px;
+		padding-bottom: 50px;
 		.wrapper{
 			width: 95%;
 			max-width:930px;
@@ -951,16 +1034,22 @@ section.block15{
 				-moz-box-sizing:border-box;
 				padding-left: 40%;
 				padding-top: 30px;
+				margin: 0;
 			}
 			table{
 				width: 100%;
-				margin-top: 80px;
-				td{
-					width: 33%;
+				margin-top: 30px;
+				th{
+					width: 25%;
 				}
-			}
-			a.sign-up{
-				margin-top: 40px;
+				td{
+					width: 25%;
+					line-height: 150%;
+					a.sign-up{
+						margin-top: 10px;
+
+					}
+				}
 			}
 		}
 	}
@@ -1001,13 +1090,16 @@ section.block16{
 		}
 		.case{
 			background: url('../images/smoke.jpg') center right no-repeat;
-			padding-top: 140px;
+			padding-top: 150px;
+			padding-left: 50px;
 			h3{
 				color: #582257;
 				font-size: 34px;
 				font-weight: 300;
 				line-height: 42px;
 				text-align: left;
+				margin: 0;
+				padding-bottom: 20px;
 			}
 			p{
 				color: #8b7f8d;
@@ -1016,31 +1108,36 @@ section.block16{
 				line-height: 30px;
 				text-align: left;
 				transform: scaleY(1.0833);
-				padding-bottom: 300px;
+				padding-bottom: 150px;
+				margin: 0;
 			}
 		}
 	}
 	.reviews{
-		margin-top: 90px;
-		h4{
-			color: #582257;
-			font-size: 30px;
-			font-weight: 300;
-			line-height: 40px;
-			text-align: center;
-		}
-		.left{
-			float: left;
-			width: 48%;
-			margin-right: 4%;
-		}
-		.right{
-			float: right;
-			width: 48%;
-		}
-		.marked{
-			color:#582257;
-			font-weight:600;
+		.wrapper{
+			width: 960px;
+			margin: auto;
+			margin-top: 90px;
+			h4{
+				color: #582257;
+				font-size: 30px;
+				font-weight: 300;
+				line-height: 40px;
+				text-align: center;
+			}
+			.left{
+				float: left;
+				width: 48%;
+				margin-right: 4%;
+			}
+			.right{
+				float: right;
+				width: 48%;
+			}
+			.marked{
+				color:#582257;
+				font-weight:600;
+			}
 		}
 	}
 	.schedule{
@@ -1059,23 +1156,28 @@ section.block16{
 				-moz-box-sizing:border-box;
 				padding-left: 40%;
 				padding-top: 30px;
+				margin: 0;
 			}
 			table{
 				width: 100%;
-				margin-top: 80px;
-				td{
-					width: 33%;
+				margin-top: 30px;
+				th{
+					width: 25%;
 				}
-			}
-			a.sign-up{
-				margin-top: 40px;
+				td{
+					width: 25%;
+					a.sign-up{
+						margin-top: 10px;
+
+					}
+				}
 			}
 		}
 	}
 
 }
 section.footer{
-	padding:120px 0 50px 0;
+	padding:100px 0 50px 0;
 	.menu-container{
 		float: right;
 		right: 50%;

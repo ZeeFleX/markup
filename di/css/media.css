@@ -1,11 +1,260 @@
-@media screen and (max-height: 800px) {
-  div.header .block-left .text ul li {
-    margin-bottom: 0px;
+@media screen and (max-width: 1440px) {
+  /* line 2, media.less */
+  div.header .block-left .text {
+    width: 70%;
+    padding-top: 120px;
+    padding-right: 80px;
   }
+  /* line 7, media.less */
   div.header .block-right .text {
-    padding-top: 35px;
+    padding-top: 120px;
+    padding-left: 120px;
   }
+  /* line 11, media.less */
+  section.block13 .wrapper .photo-container {
+    width: 440px;
+  }
+  /* line 14, media.less */
+  section.block14 .wrapper .photo-container {
+    width: 360px;
+  }
+  /* line 17, media.less */
+  section.block15 .wrapper .photo-container {
+    width: 420px;
+  }
+  /* line 20, media.less */
+  section.block16 .wrapper .photo-container {
+    width: 390px;
+  }
+}
+@media screen and (max-width: 1366px) {
+  /* line 28, media.less */
+  div.header .block-left .text {
+    width: 70%;
+    padding-right: 0px;
+  }
+  /* line 32, media.less */
+  div.header .block-right .text {
+    padding-top: 110px;
+    padding-left: 80px;
+  }
+  /* line 36, media.less */
+  div.header .block-left .text {
+    background: url('../images/icons.png') left 0px no-repeat;
+  }
+  /* line 39, media.less */
   div.header .block-right .text .icon {
     padding-top: 20px;
   }
+  /* line 42, media.less */
+  div.header .block-left .text ul li {
+    margin-bottom: 10px;
+  }
+  /* line 45, media.less */
+  section.block12 .wrapper .item {
+    margin-bottom: 30px;
+  }
+  /* line 48, media.less */
+  section.block12 .wrapper h3 {
+    padding-bottom: 20px;
+  }
+  /* line 51, media.less */
+  section.block13 .wrapper .photo-container {
+    width: 340px;
+  }
+  /* line 54, media.less */
+  section.block14 .wrapper .photo-container {
+    width: 290px;
+  }
+  /* line 57, media.less */
+  section.block15 .wrapper .photo-container {
+    width: 350px;
+  }
+  /* line 60, media.less */
+  section.block16 .wrapper .photo-container {
+    width: 340px;
+  }
 }
+@media screen and (max-width: 1280px) {
+  /* line 69, media.less */
+  div.header .block-left .text {
+    width: 80%;
+  }
+  /* line 72, media.less */
+  div.header .block-left .text ul li {
+    margin-bottom: 30px;
+  }
+  /* line 75, media.less */
+  section.block13 .wrapper .photo-container {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 1144px) {
+  /* line 83, media.less */
+  div.header .block-left .text {
+    width: 80%;
+    padding-right: 0px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  /* line 92, media.less */
+  div.header .block-left .text {
+    width: 90%;
+  }
+}
+@media screen and (max-height: 1024px) {
+  /* line 103, media.less */
+  div.header .block-left .text ul li {
+    margin-bottom: 30px;
+  }
+  /* line 106, media.less */
+  div.header .block-right .text .icon {
+    padding-top: 40px;
+  }
+  /* line 109, media.less */
+  div.header .block-right .text .icon-bottom {
+    padding-top: 80px;
+  }
+}
+@media screen and (max-height: 900px) {
+  /* line 116, media.less */
+  div.header .block-left .text {
+    width: 70%;
+    padding-top: 120px;
+    padding-right: 80px;
+  }
+  /* line 121, media.less */
+  div.header .block-right .text {
+    padding-top: 120px;
+    padding-left: 120px;
+  }
+  /* line 125, media.less */
+  section.block13 .wrapper .photo-container {
+    width: 440px;
+  }
+  /* line 128, media.less */
+  section.block14 .wrapper .photo-container {
+    width: 360px;
+  }
+  /* line 131, media.less */
+  section.block15 .wrapper .photo-container {
+    width: 420px;
+  }
+  /* line 134, media.less */
+  section.block16 .wrapper .photo-container {
+    width: 390px;
+  }
+}
+@media screen and (max-height: 800px) {
+  /* line 141, media.less */
+  div.header .block-right .text h5 {
+    padding-bottom: 15px;
+  }
+  /* line 144, media.less */
+  div.header .block-left .text ul li {
+    margin-bottom: 0px;
+  }
+  /* line 148, media.less */
+  div.header .block-right .text .icon {
+    padding: 5px 0;
+  }
+  /* line 152, media.less */
+  section.block12 .wrapper h3 {
+    padding-bottom: 0;
+  }
+  /* line 155, media.less */
+  section.block12 .wrapper .item {
+    height: 200px;
+    margin-bottom: 40px;
+  }
+  /* line 159, media.less */
+  div.header .block-left .text {
+    width: 60%;
+    padding-right: 50px;
+  }
+  /* line 163, media.less */
+  div.header .block-right .text {
+    padding-top: 90px;
+    padding-left: 80px;
+  }
+  /* line 167, media.less */
+  div.header .block-left .text ul li {
+    margin-bottom: 10px;
+  }
+  /* line 170, media.less */
+  section.block12 .wrapper .item {
+    margin-bottom: 30px;
+  }
+  /* line 173, media.less */
+  section.block12 .wrapper h3 {
+    padding-bottom: 20px;
+  }
+  /* line 176, media.less */
+  section.block13 .wrapper .photo-container {
+    width: 340px;
+  }
+  /* line 179, media.less */
+  section.block14 .wrapper .photo-container {
+    width: 290px;
+  }
+  /* line 182, media.less */
+  section.block15 .wrapper .photo-container {
+    width: 420px;
+  }
+  /* line 185, media.less */
+  section.block16 .wrapper .photo-container {
+    width: 390px;
+  }
+}
+@media screen and (max-height: 760px) {
+  /* line 193, media.less */
+  div.header .block-left .text {
+    padding-top: 75px;
+    width: 70%;
+    padding-right: 0px;
+  }
+  /* line 198, media.less */
+  div.header .block-right .text {
+    padding-top: 80px;
+    padding-left: 80px;
+  }
+  /* line 202, media.less */
+  div.header .block-right .text .icon {
+    padding-top: 20;
+  }
+  /* line 205, media.less */
+  div.header .block-right .text .icon-bottom {
+    padding-top: 15px;
+  }
+  /* line 208, media.less */
+  section.block12 .wrapper .item p.slogan {
+    margin: 5px;
+  }
+  /* line 211, media.less */
+  section.block12 .wrapper .item {
+    margin-bottom: 15px;
+    padding-bottom: 25px;
+  }
+  /* line 215, media.less */
+  section.block12 .wrapper h3 {
+    padding-top: 60px;
+  }
+  /* line 218, media.less */
+  section.block15 .wrapper .photo-container {
+    width: 315px;
+  }
+  /* line 221, media.less */
+  section.block16 .wrapper .photo-container {
+    width: 320px;
+  }
+  /* line 224, media.less */
+  div.header .block-right .text .icon {
+    font-size: 38px;
+  }
+  /* line 227, media.less */
+  div.header .block-left .text p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+/*# sourceMappingURL=media.css.map */

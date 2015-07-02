@@ -14,8 +14,10 @@
 
 	function calculateHeader(){
 		var $header = $('.header');
+		var $puzzle = $('.block10');
 		var height = $(window).height();
 		$header.css('height', height + 'px');
+		$puzzle.css('height', height + 'px');
 		console.log(height);
 	}
 })()
