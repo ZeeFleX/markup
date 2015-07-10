@@ -1053,6 +1053,15 @@ header.header .mainmenu li.active i {
 .footer section.bottom ul.footer-menu li a:hover {
   text-decoration: underline;
 }
+/* line 464, global.less */
+.new .indicator {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: url('../images/interface/new-message-icon.png') center center no-repeat;
+  display: block;
+  z-index: 1;
+}
 /* line 2, mainpage.less */
 body.page-mainpage .ui-button-icon-primary {
   margin-left: -16px !important;
@@ -4896,6 +4905,11 @@ body.page-question-list .wrapper .dialogues .contacts .contact {
   cursor: pointer;
 }
 /* line 20, page_question_list.less */
+body.page-question-list .wrapper .dialogues .contacts .contact .indicator {
+  top: 22px;
+  left: 5px;
+}
+/* line 24, page_question_list.less */
 body.page-question-list .wrapper .dialogues .contacts .contact .photo-container {
   float: left;
   width: 35px;
@@ -4907,16 +4921,16 @@ body.page-question-list .wrapper .dialogues .contacts .contact .photo-container 
   overflow: hidden;
   margin-right: 10px;
 }
-/* line 30, page_question_list.less */
+/* line 34, page_question_list.less */
 body.page-question-list .wrapper .dialogues .contacts .contact .photo-container img {
   width: 100%;
   display: block;
 }
-/* line 35, page_question_list.less */
+/* line 39, page_question_list.less */
 body.page-question-list .wrapper .dialogues .contacts .contact .content {
   overflow: hidden;
 }
-/* line 37, page_question_list.less */
+/* line 41, page_question_list.less */
 body.page-question-list .wrapper .dialogues .contacts .contact .content .name {
   color: #ffffff;
   font-size: 1.2rem;
@@ -4926,7 +4940,7 @@ body.page-question-list .wrapper .dialogues .contacts .contact .content .name {
   color: #4ad0c5;
   margin: 0;
 }
-/* line 46, page_question_list.less */
+/* line 50, page_question_list.less */
 body.page-question-list .wrapper .dialogues .contacts .contact .content .date {
   color: #ffffff;
   font-size: 1.0rem;
@@ -4936,32 +4950,32 @@ body.page-question-list .wrapper .dialogues .contacts .contact .content .date {
   color: #8aa4a2;
   margin: 0;
 }
-/* line 55, page_question_list.less */
+/* line 59, page_question_list.less */
 body.page-question-list .wrapper .dialogues .contacts .contact .content .text {
   margin: 0;
   color: #8aa4a2;
   font-size: 1.2rem;
 }
-/* line 61, page_question_list.less */
+/* line 65, page_question_list.less */
 body.page-question-list .wrapper .dialogues .contacts .contact:hover {
   background: #ecfff6;
 }
-/* line 64, page_question_list.less */
+/* line 68, page_question_list.less */
 body.page-question-list .wrapper .dialogues .contacts .contact.active {
   background: #4ad0c5;
 }
-/* line 66, page_question_list.less */
+/* line 70, page_question_list.less */
 body.page-question-list .wrapper .dialogues .contacts .contact.active .content p {
   color: #ffffff;
 }
-/* line 73, page_question_list.less */
+/* line 77, page_question_list.less */
 body.page-question-list .wrapper .dialogue {
   float: right;
   width: 58%;
   margin-top: 20px;
   padding: 0;
 }
-/* line 78, page_question_list.less */
+/* line 82, page_question_list.less */
 body.page-question-list .wrapper .dialogue .head {
   background: #f8f8f8;
   box-sizing: border-box;
@@ -4973,7 +4987,7 @@ body.page-question-list .wrapper .dialogue .head {
   -moz-border-radius: 5px 5px 0 0;
   -webkit-border-radius: 5px 5px 0 0;
 }
-/* line 88, page_question_list.less */
+/* line 92, page_question_list.less */
 body.page-question-list .wrapper .dialogue .head h3.contact-name {
   color: #35504e;
   font-size: 1.4rem;
@@ -4981,12 +4995,12 @@ body.page-question-list .wrapper .dialogue .head h3.contact-name {
   display: block;
   float: left;
 }
-/* line 95, page_question_list.less */
+/* line 99, page_question_list.less */
 body.page-question-list .wrapper .dialogue .head .contact-menu {
   float: right;
   margin-top: 10px;
 }
-/* line 100, page_question_list.less */
+/* line 104, page_question_list.less */
 body.page-question-list .wrapper .dialogue .messages {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -4994,7 +5008,7 @@ body.page-question-list .wrapper .dialogue .messages {
   border: solid 1px #d2ded9;
   max-height: 630px;
 }
-/* line 106, page_question_list.less */
+/* line 110, page_question_list.less */
 body.page-question-list .wrapper .dialogue .messages p.day {
   text-align: center;
   display: block;
@@ -5002,13 +5016,13 @@ body.page-question-list .wrapper .dialogue .messages p.day {
   margin: 10px 0;
   border-top: solid 1px #8aa4a2;
 }
-/* line 112, page_question_list.less */
+/* line 116, page_question_list.less */
 body.page-question-list .wrapper .dialogue .messages p.day span {
   padding: 0 10px;
   background: #ffffff;
   font-size: 1.1rem;
 }
-/* line 118, page_question_list.less */
+/* line 122, page_question_list.less */
 body.page-question-list .wrapper .dialogue .messages .message {
   width: 100%;
   overflow: hidden;
@@ -5016,7 +5030,12 @@ body.page-question-list .wrapper .dialogue .messages .message {
   -moz-box-sizing: border-box;
   padding: 10px 0;
 }
-/* line 124, page_question_list.less */
+/* line 128, page_question_list.less */
+body.page-question-list .wrapper .dialogue .messages .message .indicator {
+  top: 54px;
+  left: 13px;
+}
+/* line 132, page_question_list.less */
 body.page-question-list .wrapper .dialogue .messages .message .photo-container {
   float: left;
   width: 35px;
@@ -5028,16 +5047,16 @@ body.page-question-list .wrapper .dialogue .messages .message .photo-container {
   overflow: hidden;
   margin-right: 10px;
 }
-/* line 134, page_question_list.less */
+/* line 142, page_question_list.less */
 body.page-question-list .wrapper .dialogue .messages .message .photo-container img {
   width: 100%;
   display: block;
 }
-/* line 139, page_question_list.less */
+/* line 147, page_question_list.less */
 body.page-question-list .wrapper .dialogue .messages .message .content {
   overflow: hidden;
 }
-/* line 141, page_question_list.less */
+/* line 149, page_question_list.less */
 body.page-question-list .wrapper .dialogue .messages .message .content .author {
   color: #ffffff;
   font-size: 1.2rem;
@@ -5047,17 +5066,17 @@ body.page-question-list .wrapper .dialogue .messages .message .content .author {
   color: #4ad0c5;
   margin: 0;
 }
-/* line 150, page_question_list.less */
+/* line 158, page_question_list.less */
 body.page-question-list .wrapper .dialogue .messages .message .content .message-menu {
   float: right;
 }
-/* line 153, page_question_list.less */
+/* line 161, page_question_list.less */
 body.page-question-list .wrapper .dialogue .messages .message .content .text {
   margin: 5px 0 10px 0;
   color: #8aa4a2;
   font-size: 1.2rem;
 }
-/* line 158, page_question_list.less */
+/* line 166, page_question_list.less */
 body.page-question-list .wrapper .dialogue .messages .message .content .date {
   color: #ffffff;
   font-size: 1.0rem;
@@ -5066,7 +5085,7 @@ body.page-question-list .wrapper .dialogue .messages .message .content .date {
   color: #8aa4a2;
   margin: 0;
 }
-/* line 169, page_question_list.less */
+/* line 177, page_question_list.less */
 body.page-question-list .wrapper .dialogue .write-answer {
   background: #f8f8f8;
   box-sizing: border-box;
@@ -5079,11 +5098,11 @@ body.page-question-list .wrapper .dialogue .write-answer {
   -moz-border-radius: 0 0 5px 5px;
   -webkit-border-radius: 0 0 5px 5px;
 }
-/* line 180, page_question_list.less */
+/* line 188, page_question_list.less */
 body.page-question-list .wrapper .dialogue .write-answer textarea {
   height: 60px;
 }
-/* line 183, page_question_list.less */
+/* line 191, page_question_list.less */
 body.page-question-list .wrapper .dialogue .write-answer input[type="submit"] {
   float: right;
 }

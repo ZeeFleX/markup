@@ -58,6 +58,9 @@
             <li><a href="page_text_rules.php">Правила пользования сайтом.</a></li>
             <li><a href="page_text_oferta.php">Публичная оферта.</a></li>
             <li><a href="page_text_confidencial.php">Политика конфиденциальности.</a></li>
+            <li><a href="page_text_about.php">О сервисе.</a></li>
+            <li><a href="landing1.php">Лендинг для клиентов.</a></li>
+            <li><a href="landing2.php">Лендинг для консультантов.</a></li>
         </ol>
         <h1>Полезные ссылки</h1>
         <ol>

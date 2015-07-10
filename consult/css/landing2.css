@@ -1,0 +1,303 @@
+@font-face {
+  font-family: 'Proxima Bold';
+  src: url('../fonts/proximanova-bold-webfont.eot');
+  src: url('../fonts/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/proximanova-bold-webfont.woff2') format('woff2'), url('../fonts/proximanova-bold-webfont.woff') format('woff'), url('../fonts/proximanova-bold-webfont.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+/* line 9, landing2.less */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  position: relative;
+}
+/* line 15, landing2.less */
+body {
+  font-family: "Roboto", sans-serif;
+  padding-top: 1px;
+}
+/* line 20, landing2.less */
+h1 {
+  font-family: "Proxima Bold", sans-serif;
+  color: #fac944;
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 3px 5px 0px rgba(4, 6, 6, 0.75);
+  margin-top: 100px;
+}
+/* line 30, landing2.less */
+h1 span {
+  font-size: 36px;
+}
+/* line 34, landing2.less */
+p.intro {
+  color: #ffffff;
+  font-size: 24px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 40px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: center;
+  margin-top: 125px;
+}
+/* line 43, landing2.less */
+.mainpage {
+  position: relative;
+  padding-top: 1px;
+  background: url('../images/landing2/main-bg.jpg') center center no-repeat;
+  background-size: cover;
+}
+/* line 49, landing2.less */
+.bottom-container {
+  position: absolute;
+  background: url('../images/landing1/texture.png');
+  width: 100%;
+  bottom: 1px;
+  padding: 20px 0 40px 0;
+}
+/* line 55, landing2.less */
+.bottom-container p.endnote {
+  color: #ffffff;
+  font-size: 18px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 500;
+  line-height: 28px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: center;
+  text-shadow: 0px 2px 3px rgba(4, 6, 6, 0.75);
+  margin: 20px 0 40px 0;
+}
+/* line 66, landing2.less */
+.button-container {
+  position: relative;
+  right: 50%;
+  float: right;
+}
+/* line 70, landing2.less */
+.button-container .button-wrapper {
+  position: relative;
+  left: 50%;
+  float: left;
+}
+/* line 74, landing2.less */
+.button-container .button-wrapper .right-arrows {
+  margin-top: 20px;
+  margin-right: 25px;
+  position: relative;
+  float: left;
+  width: 48px;
+  height: 19px;
+  background: url('../images/landing2/right-arrows.png') no-repeat center center;
+}
+/* line 83, landing2.less */
+.button-container .button-wrapper .left-arrows {
+  margin-top: 20px;
+  margin-left: 25px;
+  position: relative;
+  float: left;
+  width: 48px;
+  height: 19px;
+  background: url('../images/landing2/left-arrows.png') no-repeat center center;
+}
+/* line 92, landing2.less */
+.button-container .button-wrapper a.btn {
+  display: block;
+  float: left;
+  border-radius: 5px;
+  border-width: 2px;
+  border-color: #d6c009;
+  border-style: solid;
+  background-color: #fac944;
+  padding: 20px 35px;
+  color: #000000;
+  font-size: 16px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/* line 106, landing2.less */
+.button-container .button-wrapper a.btn:hover {
+  background-color: #e9b833;
+}
+/* line 112, landing2.less */
+h2 {
+  color: #35504e;
+  font-size: 30px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 90px;
+}
+/* line 120, landing2.less */
+table {
+  width: 95%;
+  max-width: 900px;
+  margin: auto;
+}
+/* line 124, landing2.less */
+table td,
+table th {
+  text-align: center;
+}
+/* line 126, landing2.less */
+table td.key,
+table th.key {
+  text-align: left;
+  color: #8aa4a2;
+  font-size: 14px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 500;
+  line-height: 22px;
+  width: 40%;
+}
+/* line 137, landing2.less */
+table thead th {
+  color: #8aa4a2;
+  font-size: 30px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 30px 0;
+}
+/* line 143, landing2.less */
+table thead th .gold {
+  color: #ffaa3e;
+}
+/* line 149, landing2.less */
+table tbody td {
+  padding: 7px 0;
+}
+/* line 151, landing2.less */
+table tbody td i.fa-minus-circle {
+  color: #f85649;
+  font-size: 18px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+}
+/* line 156, landing2.less */
+table tbody td i.fa-plus-circle {
+  color: #33b679;
+  font-size: 18px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+}
+/* line 164, landing2.less */
+.footer {
+  background: #dbefe5;
+  color: #8aa4a2;
+  overflow: hidden;
+  padding: 70px 0 140px 0;
+  margin-top: 70px;
+}
+/* line 170, landing2.less */
+.footer p {
+  color: #8aa4a2;
+  font-size: 18px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 500;
+  line-height: 30px;
+  text-align: center;
+}
+/* line 177, landing2.less */
+.footer .button-container {
+  margin-top: 40px;
+}
+/* line 179, landing2.less */
+.footer .button-container a {
+  position: relative;
+}
+/* line 182, landing2.less */
+.footer .button-container .shadow {
+  width: 100%;
+  left: 0;
+  position: absolute;
+  height: 22px;
+  bottom: -24px;
+  background: url('../images/landing2/shadow.png') center center no-repeat;
+  background-size: contain;
+}
+/* line 193, landing2.less */
+.bottom {
+  background: #41b6ad;
+  padding: 10px 0 5px 0;
+  overflow: hidden;
+  border-top: solid 1px #3ba49c;
+}
+/* line 198, landing2.less */
+.bottom p.copyright {
+  display: block;
+  float: left;
+  color: #35504e;
+  font: 500 14px Roboto;
+  margin-left: 30px;
+}
+/* line 205, landing2.less */
+.bottom ul.footer-menu {
+  float: right;
+  margin-top: 13px;
+  list-style: none;
+  padding: 0;
+}
+/* line 210, landing2.less */
+.bottom ul.footer-menu li {
+  float: left;
+  margin-right: 30px;
+}
+/* line 213, landing2.less */
+.bottom ul.footer-menu li a {
+  font: 400 14px Roboto;
+  color: #fff;
+  text-decoration: none;
+}
+/* line 217, landing2.less */
+.bottom ul.footer-menu li a:hover {
+  text-decoration: underline;
+}
+@media screen and (max-height: 850px) {
+  /* line 226, landing2.less */
+  h1 {
+    margin-top: 75px;
+  }
+  /* line 229, landing2.less */
+  p.intro {
+    margin-top: 105px;
+  }
+}
+@media screen and (max-height: 800px) {
+  /* line 234, landing2.less */
+  h1 {
+    margin-top: 65px;
+  }
+  /* line 237, landing2.less */
+  p.intro {
+    margin-top: 80px;
+  }
+}
+@media screen and (max-height: 750px) {
+  /* line 242, landing2.less */
+  h1 {
+    margin-top: 65px;
+  }
+  /* line 245, landing2.less */
+  p.intro {
+    margin-top: 55px;
+  }
+}
+@media screen and (max-height: 700px) {
+  /* line 250, landing2.less */
+  h1 {
+    margin-top: 50px;
+  }
+  /* line 253, landing2.less */
+  p.intro {
+    margin-top: 35px;
+  }
+}
+/*# sourceMappingURL=landing2.css.map */

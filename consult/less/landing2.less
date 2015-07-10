@@ -1,0 +1,256 @@
+@font-face {
+  font-family: 'Proxima Bold';
+  src: url('../fonts/proximanova-bold-webfont.eot');
+  src: url('../fonts/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/proximanova-bold-webfont.woff2') format('woff2'), url('../fonts/proximanova-bold-webfont.woff') format('woff'), url('../fonts/proximanova-bold-webfont.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+body, html{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	position: relative;
+}
+body{
+	
+	font-family:"Roboto", sans-serif;
+	padding-top: 1px;
+}
+h1{
+	font-family: "Proxima Bold", sans-serif;
+	color:  #fac944;
+	font-size: 60px;
+	font-weight: 900;
+	line-height: 60px;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 3px 5px 0px rgba(4, 6, 6, 0.75);
+	margin-top: 100px;
+	span{
+		font-size:36px;
+	}
+}
+p.intro{
+	color:  #ffffff;
+	font-size: 24px; /* Приближение из-за подстановки шрифтов */
+	font-weight: 400;
+	line-height: 40px; /* Приближение из-за подстановки шрифтов */
+	text-align: center;
+	//text-shadow: 0px 2px 3px rgba(4, 6, 6, 0.75);
+	margin-top: 125px;
+}
+.mainpage{
+	position: relative;
+	padding-top: 1px;
+	background: url('../images/landing2/main-bg.jpg') center center no-repeat;
+	background-size: cover;
+}
+.bottom-container{
+	position: absolute;
+	background: url('../images/landing1/texture.png');
+	width: 100%;
+	bottom:1px;
+	padding:20px 0 40px 0;
+	p.endnote{
+		color:  #ffffff;
+		font-size: 18px; /* Приближение из-за подстановки шрифтов */
+		font-weight: 500;
+		line-height: 28px; /* Приближение из-за подстановки шрифтов */
+		text-align: center;
+		text-shadow: 0px 2px 3px rgba(4, 6, 6, 0.75);
+		margin:20px 0 40px 0;
+	}
+	
+}
+.button-container{
+	position: relative;
+	right: 50%;
+	float: right;
+	.button-wrapper{
+		position: relative;
+		left: 50%;
+		float: left;
+		.right-arrows{
+			margin-top: 20px;
+			margin-right: 25px;
+			position: relative;
+			float: left;
+			width: 48px;
+			height: 19px;
+			background: url('../images/landing2/right-arrows.png') no-repeat center center;
+		}
+		.left-arrows{
+			margin-top: 20px;
+			margin-left: 25px;
+			position: relative;
+			float: left;
+			width: 48px;
+			height: 19px;
+			background: url('../images/landing2/left-arrows.png') no-repeat center center;
+		}
+		a.btn{
+			display: block;
+			float: left;
+			border-radius: 5px;
+			border-width: 2px;
+			border-color:  #d6c009;
+			border-style: solid;
+			background-color:  #fac944;
+			padding: 20px 35px;
+			color:  #000000;
+			font-size: 16px; /* Приближение из-за подстановки шрифтов */
+			font-weight: 700;
+			text-decoration: none;
+			text-transform: uppercase;
+			&:hover{
+				background-color:  #fac944 - #111;
+			}
+		}
+	}
+}
+h2{
+	color:  #35504e;
+	font-size: 30px; /* Приближение из-за подстановки шрифтов */
+	font-weight: 500;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 90px;
+}
+table{
+	width: 95%;
+	max-width:900px;
+	margin:auto;
+	td, th{
+		text-align: center;
+		&.key{
+			text-align: left;
+			color:  #8aa4a2;
+			font-size: 14px; /* Приближение из-за подстановки шрифтов */
+			font-weight: 500;
+			line-height: 22px;
+			width:40%;
+		}
+	}
+	thead{
+
+		th{
+			color:  #8aa4a2;
+			font-size: 30px; /* Приближение из-за подстановки шрифтов */
+			font-weight: 500;
+			text-transform: uppercase;
+			padding:30px 0;
+			.gold{
+				color:#ffaa3e;
+			}
+		}
+	}
+	tbody{
+		td{
+			padding:7px 0;
+			i.fa-minus-circle{
+				color:  #f85649;
+				font-size: 18px; /* Приближение из-за подстановки шрифтов */
+				font-weight: 400;
+			}
+			i.fa-plus-circle{
+				color:  #33b679;
+				font-size: 18px; /* Приближение из-за подстановки шрифтов */
+				font-weight: 400;
+			}
+		}
+	}
+}
+.footer{
+	background: #dbefe5;
+	color:#8aa4a2;
+	overflow: hidden;
+	padding:70px 0 140px 0;
+	margin-top: 70px;
+	p{
+		color:  #8aa4a2;
+		font-size: 18px; /* Приближение из-за подстановки шрифтов */
+		font-weight: 500;
+		line-height: 30px;
+		text-align: center;
+	}
+	.button-container{
+		margin-top: 40px;
+		a{
+			position: relative;
+		}
+		.shadow{
+			width: 100%;
+			left: 0;
+			position: absolute;
+			height: 22px;
+			bottom:-24px;
+			background: url('../images/landing2/shadow.png') center center no-repeat;
+			background-size:contain;
+		}
+	}
+}
+.bottom{
+	background: #41b6ad;
+    padding: 10px 0 5px 0;
+    overflow: hidden;
+    border-top: solid 1px #3ba49c;
+    p.copyright {
+        display: block;
+        float: left;
+        color: #35504e;
+        font: 500 14px Roboto;
+        margin-left: 30px;
+    }
+    ul.footer-menu {
+        float: right;
+        margin-top: 13px;
+        list-style:none;
+        padding: 0;
+        li {
+            float: left;
+            margin-right:30px;
+            a {
+                font: 400 14px Roboto;
+                color:#fff;
+                text-decoration: none;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-height: 850px){
+	h1{
+		margin-top: 75px;
+	}
+	p.intro{
+		margin-top: 105px;
+	}
+}
+@media screen and (max-height: 800px){
+	h1{
+		margin-top: 65px;
+	}
+	p.intro{
+		margin-top: 80px;
+	}
+}
+@media screen and (max-height: 750px){
+	h1{
+		margin-top: 65px;
+	}
+	p.intro{
+		margin-top: 55px;
+	}
+}
+@media screen and (max-height: 700px){
+	h1{
+		margin-top: 50px;
+	}
+	p.intro{
+		margin-top: 35px;
+	}
+}

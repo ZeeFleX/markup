@@ -53,7 +53,8 @@
             </div>
             <div class="contacts scrolltarget mouseover scrollbar">
                 <?php for($i = 0; $i <= 10; $i++) { ?>
-                <div class="contact <?php if($i == 1) echo 'active'; ?>">
+                <div class="contact new <?php if($i == 1) echo 'active'; ?>">
+                    <div class="indicator"></div>
                     <div class="photo-container">
                         <img src="images/photos/02.jpg" alt="">
                     </div>
@@ -93,7 +94,8 @@
             <div class="messages scrolltarget mouseover scrollbar">
                 <?php for($i = 25; $i >= 18; $i--) {?>
                 <p class="day"><span><?php echo $i; ?> февраля</span></p>
-                <div class="message question" data-id="0">
+                <div class="message question new" data-id="0">
+                    <div class="indicator"></div>
                     <div class="photo-container">
                         <img src="images/photos/02.jpg" alt="" />
                     </div>
