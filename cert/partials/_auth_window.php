@@ -6,7 +6,7 @@
 	</div>
 	<div class="container">
 		<h1>Авторизация</h1>
-		<form action="/my_certs.php" method="POST">
+		<form action="my_certs.php" method="POST">
 			<div class="field email">
 				<label for="email">Ваш Email:</label>
 				<input type="text" name="email" placeholder="Введите адрес вашей электронной почты" />

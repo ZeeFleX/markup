@@ -19,7 +19,7 @@
 	                <img src="images/photos/placeholder.png" />
 	            </div>
 	            <div class="info">
-	                <div class="name"><a href="/profile_trainer.php">Иванов Иван</a></div>
+	                <div class="name"><a href="profile_trainer.php">Иванов Иван</a></div>
 	                <div class="job">Консультант</div>
 	            </div>
 	            <!-- <div class="more-container">
