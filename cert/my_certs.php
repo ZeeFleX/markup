@@ -19,7 +19,7 @@
 	                <img src="images/photos/placeholder.png" />
 	            </div>
 	            <div class="info">
-	                <div class="name"><a href="/profile_trainer.php">Иванов Иван</a></div>
+	                <div class="name"><a href="profile_trainer.php">Иванов Иван</a></div>
 	                <div class="job">Консультант</div>
 	            </div>
 	            <!-- <div class="more-container">
@@ -35,9 +35,9 @@
 	            </a>
 	        </div>
 	        <ul class="menu">
-				<li><a href="/generate_certs.php">Генерация сертификатов</a></li>
-				<li><a href="/my_certs.php">Мои сертификаты</a></li>
-				<li><a href="/trainers.php">Тренеры</a></li>
+				<li><a href="generate_certs.php">Генерация сертификатов</a></li>
+				<li><a href="my_certs.php">Мои сертификаты</a></li>
+				<li><a href="trainers.php">Тренеры</a></li>
 			</ul>
 		</header>
 		<div class="clr"></div>

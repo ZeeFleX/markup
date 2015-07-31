@@ -35,9 +35,9 @@
 	            </a>
 	        </div>
 	        <ul class="menu">
-				<li><a href="/generate_certs.php">Генерация сертификатов</a></li>
-				<li><a href="/my_certs.php">Мои сертификаты</a></li>
-				<li><a href="/trainers.php">Тренеры</a></li>
+				<li><a href="generate_certs.php">Генерация сертификатов</a></li>
+				<li><a href="my_certs.php">Мои сертификаты</a></li>
+				<li><a href="trainers.php">Тренеры</a></li>
 			</ul>
 		</header>
 		<div class="clr"></div>
