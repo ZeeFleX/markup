@@ -1,0 +1,90 @@
+@import 'mixins.less';
+@import 'variables.less';
+
+.generate-certs{
+	overflow: hidden;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	padding: 30px;
+	form.cert-type{
+		overflow: hidden;
+		.field{
+			float: left;
+			margin-bottom: 20px;
+			width: 20%;
+			margin-right: 3%;
+			label{
+				margin-bottom: 5px;
+			}
+			&.training{
+				width: 45%;
+			}
+		}
+	}
+	.file-upload{
+		a.btn{
+			float: left;
+			width: 220px;
+			i{
+				margin-right: 10px;
+			}
+		}
+		p.format{
+			color:#666;
+			font-size:1.4rem;
+			font-weight:500;
+		}
+	}
+	form.participiant-list{
+		margin-top: 40px;
+		.row{
+			overflow: hidden;
+			.field{
+				float: left;
+				width: 22%;
+				margin-bottom: 10px;
+				margin-right: 2%;
+				label{
+					margin-bottom: 5px;
+				}
+			}
+			a#remove-participiant{
+				display: block;
+				float: left;
+				margin-top: 27px;
+				i{
+					font-size:2.0rem;
+				}
+			}
+		}
+		a#add-participiant{
+			.border_radius(4px);
+			display: block;
+			width: 94%;
+			color:#181818;
+			font-size:1.2rem;
+			text-align: center;
+			background: #dedede;
+			margin:10px 0;
+			padding: 12px 0;
+			text-transform: uppercase;
+			i{
+				margin-right: 10px;
+			}
+		}
+		input[type="submit"]{
+			float: left;
+			margin-top: 30px;
+			width: 40%;
+			min-width:340px;
+		}
+		p.endnote{
+			font-size:1.4rem;
+			color:#666;
+			i.fa{
+				color:#fcaf32;
+				margin-right: 5px;
+			}
+		}
+	}
+}
