@@ -1,0 +1,67 @@
+@import 'mixins.less';
+@import 'variables.less';
+
+.issued-certs{
+	overflow: hidden;
+	margin-bottom: 40px;
+	h2{
+		padding: 0 30px;
+	}
+	form.filter{
+		overflow: hidden;
+		margin: 20px 0 0 0;
+		padding: 30px 30px 0 30px;
+		box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		background: #eeeeee;
+		.field{
+			float: left;
+			width: 23%;
+			margin-right: 2%;
+			margin-bottom: 30px;
+			label{
+				margin-bottom: 5px;
+			}
+		}
+	}
+	.table-container{
+		box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		width: 100%;
+		padding: 0 15px;
+		table.certs-list{
+			border-collapse: collapse;
+			width: 100%;
+			thead{
+				th{
+					color:#666;
+					text-align: left;
+					font-size:1.2rem;
+					font-weight:500;
+					padding: 20px 15px;
+				}
+			}
+			tbody{
+				border:dashed 1px #cccccc;
+				td{
+					color:#181818;
+					text-align: left;
+					font-size:1.2rem;
+					font-weight:500;
+					padding: 15px;
+					a{
+						color:@green;
+						margin: 0 5px;
+						i{
+							font-size:1.6rem;
+							line-height:20px;
+						}
+						&:hover{
+							color:@green - #222;
+						}
+					}
+				}
+			}
+		}
+	}
+}

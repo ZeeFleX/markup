@@ -1,0 +1,92 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,300,300italic&subset=latin,cyrillic);
+/* line 4, auth_window.less */
+.window {
+  width: 95%;
+  max-width: 390px;
+  margin: auto;
+}
+/* line 8, auth_window.less */
+.window .top-cap,
+.window .bottom-cap {
+  width: 100%;
+}
+/* line 10, auth_window.less */
+.window .top-cap img,
+.window .bottom-cap img {
+  display: block;
+  width: 100%;
+}
+/* line 15, auth_window.less */
+.window .container {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding-left: 10%;
+  padding-right: 10%;
+  background: #2f302f;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #2f302f 0%, #151415 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2f302f), color-stop(100%, #151415));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #2f302f 0%, #151415 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #2f302f 0%, #151415 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #2f302f 0%, #151415 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #2f302f 0%, #151415 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@color1', endColorstr='@color2', GradientType=0);
+}
+/* line 24, auth_window.less */
+.window form {
+  width: 100%;
+  overflow: hidden;
+}
+/* line 27, auth_window.less */
+.window form label {
+  color: #3dcd8c;
+  margin-bottom: 10px;
+}
+/* line 31, auth_window.less */
+.window form .field {
+  width: 100%;
+  margin-bottom: 20px;
+}
+/* line 34, auth_window.less */
+.window form .field input[type="text"],
+.window form .field input[type="password"] {
+  width: 100%;
+  font-size: 1.2rem;
+}
+/* line 38, auth_window.less */
+.window form .field.remember-me {
+  float: left;
+  width: 50%;
+}
+/* line 41, auth_window.less */
+.window form .field.remember-me label {
+  color: #ffffff;
+}
+/* line 46, auth_window.less */
+.window form a#forgot-password {
+  display: block;
+  float: right;
+  width: 50%;
+  text-align: right;
+  color: #3dcd8c;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+/* line 54, auth_window.less */
+.window form a#forgot-password:hover {
+  text-decoration: underline;
+}
+/* line 58, auth_window.less */
+.window form input[type="submit"] {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+/*# sourceMappingURL=auth_window.css.map */

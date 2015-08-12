@@ -1,0 +1,109 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,300,300italic&subset=latin,cyrillic);
+/* line 4, generate_certs.less */
+.generate-certs {
+  overflow: hidden;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 30px;
+}
+/* line 9, generate_certs.less */
+.generate-certs form.cert-type {
+  overflow: hidden;
+}
+/* line 11, generate_certs.less */
+.generate-certs form.cert-type .field {
+  float: left;
+  margin-bottom: 20px;
+  width: 20%;
+  margin-right: 3%;
+}
+/* line 16, generate_certs.less */
+.generate-certs form.cert-type .field label {
+  margin-bottom: 5px;
+}
+/* line 19, generate_certs.less */
+.generate-certs form.cert-type .field.training {
+  width: 45%;
+}
+/* line 25, generate_certs.less */
+.generate-certs .file-upload a.btn {
+  float: left;
+  width: 220px;
+}
+/* line 28, generate_certs.less */
+.generate-certs .file-upload a.btn i {
+  margin-right: 10px;
+}
+/* line 32, generate_certs.less */
+.generate-certs .file-upload p.format {
+  color: #666;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+/* line 38, generate_certs.less */
+.generate-certs form.participiant-list {
+  margin-top: 40px;
+}
+/* line 40, generate_certs.less */
+.generate-certs form.participiant-list .row {
+  overflow: hidden;
+}
+/* line 42, generate_certs.less */
+.generate-certs form.participiant-list .row .field {
+  float: left;
+  width: 22%;
+  margin-bottom: 10px;
+  margin-right: 2%;
+}
+/* line 47, generate_certs.less */
+.generate-certs form.participiant-list .row .field label {
+  margin-bottom: 5px;
+}
+/* line 51, generate_certs.less */
+.generate-certs form.participiant-list .row a#remove-participiant {
+  display: block;
+  float: left;
+  margin-top: 27px;
+}
+/* line 55, generate_certs.less */
+.generate-certs form.participiant-list .row a#remove-participiant i {
+  font-size: 2.0rem;
+}
+/* line 60, generate_certs.less */
+.generate-certs form.participiant-list a#add-participiant {
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  display: block;
+  width: 94%;
+  color: #181818;
+  font-size: 1.2rem;
+  text-align: center;
+  background: #dedede;
+  margin: 10px 0;
+  padding: 12px 0;
+  text-transform: uppercase;
+}
+/* line 71, generate_certs.less */
+.generate-certs form.participiant-list a#add-participiant i {
+  margin-right: 10px;
+}
+/* line 75, generate_certs.less */
+.generate-certs form.participiant-list input[type="submit"] {
+  float: left;
+  margin-top: 30px;
+  width: 40%;
+  min-width: 340px;
+}
+/* line 81, generate_certs.less */
+.generate-certs form.participiant-list p.endnote {
+  font-size: 1.4rem;
+  color: #666;
+}
+/* line 84, generate_certs.less */
+.generate-certs form.participiant-list p.endnote i.fa {
+  color: #fcaf32;
+  margin-right: 5px;
+}
+/*# sourceMappingURL=generate_certs.css.map */

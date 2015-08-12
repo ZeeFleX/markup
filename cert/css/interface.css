@@ -1,0 +1,230 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,300,300italic&subset=latin,cyrillic);
+/* line 4, interface.less */
+h1 {
+  color: #3dcd8c;
+  font-size: 3.0rem;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+/* line 9, interface.less */
+h1.background {
+  background: url('../images/h1-bg.png') right center no-repeat;
+  min-height: 65px;
+  padding: 0;
+  margin: 0;
+  line-height: 60px;
+  font-size: 1.4rem;
+  color: #ffffff;
+  font-weight: 500;
+  display: inline-block;
+  padding-right: 40px;
+  padding-left: 30px;
+}
+/* line 23, interface.less */
+h2 {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  color: #181818;
+  font-weight: 500;
+}
+/* line 42, interface.less */
+a {
+  color: #3dcd8c;
+  text-decoration: none;
+  font-weight: 500;
+}
+/* line 46, interface.less */
+a:hover {
+  text-decoration: underline;
+}
+/* line 51, interface.less */
+* {
+  position: relative;
+}
+/* line 54, interface.less */
+html {
+  font-size: 62.5%;
+}
+/* line 58, interface.less */
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  min-height: 100%;
+}
+/* line 64, interface.less */
+body {
+  background: url('../images/texture.jpg');
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+}
+/* line 71, interface.less */
+form label {
+  display: block;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+/* line 77, interface.less */
+form input[type="text"],
+form input[type="password"],
+form textarea {
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  transition: border-color 0.3s ease;
+  -o-transition: border-color 0.3s ease;
+  -webkit-transition: border-color 0.3s ease;
+  -moz-transition: border-color 0.3s ease;
+  box-sizing: border-box;
+  padding: 10px;
+  border: solid 2px #666666;
+  background: #ffffff;
+  max-width: 100%;
+}
+/* line 85, interface.less */
+form input[type="text"]:focus,
+form input[type="password"]:focus,
+form textarea:focus {
+  border-color: #3dcd8c;
+}
+/* line 88, interface.less */
+form input[type="text"].calendar,
+form input[type="password"].calendar,
+form textarea.calendar {
+  background: url('../images/icons/calendar.png') 95% center no-repeat #ffffff;
+}
+/* line 91, interface.less */
+form input[type="text"]:required,
+form input[type="password"]:required,
+form textarea:required {
+  background: url('../images/interface/required-badge.png') 96% 11px no-repeat #ffffff;
+}
+/* line 95, interface.less */
+form input:focus {
+  outline: none;
+}
+/* line 100, interface.less */
+input[type="checkbox"] {
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  -moz-opacity: 0;
+  filter: alpha(opacity=100);
+  cursor: pointer;
+}
+/* line 108, interface.less */
+input[type="checkbox"] + label {
+  background: url('../images/interface/checkbox-sprite-black.png') 0 0 no-repeat;
+  padding-left: 25px;
+  height: 16px;
+  text-transform: none;
+  color: #ffffff;
+}
+/* line 115, interface.less */
+input[type="checkbox"]:checked + label {
+  background-position: 0 -16px;
+}
+/* line 119, interface.less */
+.v-center {
+  display: none;
+}
+/* line 123, interface.less */
+.content-block {
+  box-shadow: 0 0 10px #000000;
+  -o-box-shadow: 0 0 10px #000000;
+  -webkit-box-shadow: 0 0 10px #000000;
+  -moz-box-shadow: 0 0 10px #000000;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  background: #f6f6f6;
+  width: 95%;
+  max-width: 940px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 20px 0;
+}
+/* line 134, interface.less */
+.clr {
+  clear: both;
+}
+/* line 137, interface.less */
+.hidden {
+  display: none;
+}
+/* line 141, interface.less */
+.btn {
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  background: #3dcd8c;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #3dcd8c 0%, #278158 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3dcd8c), color-stop(100%, #278158));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #3dcd8c 0%, #278158 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #3dcd8c 0%, #278158 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #3dcd8c 0%, #278158 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #3dcd8c 0%, #278158 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@color1', endColorstr='@color2', GradientType=0);
+  display: block;
+  width: 100%;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.4rem;
+  border: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+/* line 156, interface.less */
+.btn:hover {
+  background: #1bab6a;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #1bab6a 0%, #278158 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1bab6a), color-stop(100%, #278158));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #1bab6a 0%, #278158 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #1bab6a 0%, #278158 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #1bab6a 0%, #278158 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #1bab6a 0%, #278158 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@color1', endColorstr='@color2', GradientType=0);
+  text-decoration: none;
+}
+/* line 160, interface.less */
+.btn.active {
+  background: #0a9a59;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #0a9a59 0%, #167047 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0a9a59), color-stop(100%, #167047));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #0a9a59 0%, #167047 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #0a9a59 0%, #167047 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #0a9a59 0%, #167047 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #0a9a59 0%, #167047 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@color1', endColorstr='@color2', GradientType=0);
+}
+/*# sourceMappingURL=interface.css.map */

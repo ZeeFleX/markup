@@ -1,0 +1,63 @@
+@import 'mixins.less';
+@import 'variables.less';
+
+.window{
+	width: 95%;
+	max-width:390px;
+	margin:auto;
+	.top-cap, .bottom-cap{
+		width: 100%;
+		img{
+			display: block;
+			width: 100%;
+		}
+	}
+	.container{
+		padding-top: 5px;
+		padding-bottom: 5px;
+		box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		padding-left: 10%;
+		padding-right: 10%;
+		.v_gradient(#2f302f, #151415);
+	}
+	form{
+		width: 100%;
+		overflow: hidden;
+		label{
+			color:@green;
+			margin-bottom: 10px;
+		}
+		.field{
+			width: 100%;
+			margin-bottom: 20px;
+			input[type="text"], input[type="password"]{
+				width: 100%;
+				font-size:1.2rem;
+			}
+			&.remember-me{
+				float: left;
+				width: 50%;
+				label{
+					color:@white;
+				}
+			}
+		}
+		a#forgot-password{
+			display: block;
+			float: right;
+			width: 50%;
+			text-align: right;
+			color:@green;
+			font-size: 1.2rem;
+			text-decoration: none;
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+		input[type="submit"]{
+			margin-bottom: 20px;
+			margin-top: 20px;
+		}
+	}
+}
