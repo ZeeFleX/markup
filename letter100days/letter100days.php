@@ -29,7 +29,7 @@
 					<div class="ps" style="color:  #030917; font-size: 14px; font-style: italic; letter-spacing: 0.35px; line-height: 22px; text-align: center; margin-top: 35px;">P.S. <span style="color:  #5c6770;">Чтобы получить скидку, <a href="http://club.dowlatow.ru/wp-login.php" style="color: #70bb02;">авторизуйтесь</a> на сайте “100 дней”</span></div>
 					<p style="font-family: sans-serif; color: #030917; font-size: 18px; font-weight: 400; line-height: 48px; text-align: center; margin-bottom:0;">«<span style="font-size: 22px;">100</span> дней»</p>
 				</div>
-				<div class="bottom" style="width:680px; position: relative; margin-left: 3px; height: 10px; background: url(http://markup.beta.software-dowlatow.ru/letter100days/bottom.png); margin-bottom:20px"></div>
+				<div class="bottom" style="width:680px; position: relative; margin-left: 3px; height: 10px; background: url(http://markup.beta.software-dowlatow.ru/letter100days/bottom.png); margin-bottom:20px"><img src="http://markup.beta.software-dowlatow.ru/letter100days//blank.png" /></div>
 			</div>
 		</div>	
 	</body>
