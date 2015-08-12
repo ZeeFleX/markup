@@ -6,7 +6,7 @@
 	<body>
 		<div class="bg" style="padding:0; margin:0; font-family:Arial, sans-serif; width: 100%; background: url(http://markup.beta.software-dowlatow.ru/letter100days/bg.png)">
 			<div class="container" style="width: 684px; margin:auto;">
-				<div class="top" style="background: url(http://markup.beta.software-dowlatow.ru/letter100days/bg-top.jpg) no-repeat; height: 505px;">
+				<div class="top" style="background: url(http://markup.beta.software-dowlatow.ru/letter100days/bg-top2.jpg) no-repeat; height: 505px;">
 					<div class="title" style="font-family: sans-serif; color: #ffffff; font-size: 16px; font-weight: 400; text-align: center; line-height: 48px; padding-top: 20px;">
 						Проект «100 трансформаций»
 					</div>
