@@ -1,0 +1,101 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,300,300italic&subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,700,700italic,600italic&subset=latin,cyrillic);
+/* Внутреняя тень */
+/* Внешняя тень */
+/* Упрощенный вариант использования внейшей тени */
+/* Скругление верхних углов */
+/* Скругление нижних левого углов */
+/* Скругление левых углов */
+/* Скругление правых углов */
+/* Скругление верхнего левого угла */
+/* Скругление верхнего правого угла */
+/* Скругление нижнего левого угла */
+/* Скругление нижнего правого угла */
+/* Упрощенный вариант использования скругления углов */
+/* line 5, interface.less */
+h1 {
+  font-family: "Open Sans", sans-serif;
+  color: #131329;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 130%;
+  text-align: center;
+}
+/* line 13, interface.less */
+h2 {
+  font-family: "Open Sans", sans-serif;
+  color: #131329;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 110%;
+  text-align: center;
+}
+/* line 34, interface.less */
+a {
+  color: #7eb12f;
+  text-decoration: none;
+  font-weight: 500;
+}
+/* line 38, interface.less */
+a:hover {
+  text-decoration: underline;
+}
+/* line 43, interface.less */
+* {
+  position: relative;
+}
+/* line 47, interface.less */
+html {
+  font-size: 62.5%;
+}
+/* line 51, interface.less */
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  min-height: 100%;
+}
+/* line 57, interface.less */
+body {
+  background: url('../images/bg.jpg') top center no-repeat #d2e0da;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+}
+/* line 63, interface.less */
+.clr {
+  clear: both;
+}
+/* line 67, interface.less */
+.y-btn {
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: block;
+  padding: 7px 10px 6px 10px;
+  text-align: center;
+}
+/* line 76, interface.less */
+.y-btn.green {
+  background-color: #7eb12f;
+  border-color: #b5de76;
+  box-shadow: 0px 1px 0px 0px #567a1f;
+}
+/* line 80, interface.less */
+.y-btn.green:hover {
+  background-color: #6da01e;
+  text-decoration: none;
+}
+/* line 88, interface.less */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* line 93, interface.less */
+.flr {
+  float: right !important;
+}
+/*# sourceMappingURL=interface.css.map */

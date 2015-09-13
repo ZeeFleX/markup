@@ -1,0 +1,518 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,300,300italic&subset=latin,cyrillic);
+/* Внутреняя тень */
+/* Внешняя тень */
+/* Упрощенный вариант использования внейшей тени */
+/* Скругление верхних углов */
+/* Скругление нижних левого углов */
+/* Скругление левых углов */
+/* Скругление правых углов */
+/* Скругление верхнего левого угла */
+/* Скругление верхнего правого угла */
+/* Скругление нижнего левого угла */
+/* Скругление нижнего правого угла */
+/* Упрощенный вариант использования скругления углов */
+/* line 3, styles.less */
+.y-main-wrapper {
+  width: 98%;
+  max-width: 1100px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin: 0 auto;
+  background: url('../images/wrapper-bg.png');
+  padding: 0 20px;
+  min-height: 100%;
+}
+/* line 12, styles.less */
+.y-main-wrapper > .y-container {
+  width: 100%;
+  min-height: 100%;
+  border-left: solid 1px #cdcdcd;
+  border-right: solid 1px #cdcdcd;
+  background: #ffffff;
+}
+/* line 18, styles.less */
+.y-main-wrapper > .y-container .y-header {
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  background: url('../images/header-bg.jpg') center right no-repeat;
+  background-size: cover;
+  padding: 35px;
+  z-index: 1;
+}
+/* line 26, styles.less */
+.y-main-wrapper > .y-container .y-header .y-logo {
+  float: left;
+}
+/* line 29, styles.less */
+.y-main-wrapper > .y-container .y-header .y-rates {
+  float: left;
+  margin-left: 7%;
+  margin-top: 20px;
+}
+/* line 33, styles.less */
+.y-main-wrapper > .y-container .y-header .y-rates .y-rate {
+  float: left;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border-left: solid 1px #cdcdcd;
+  padding: 0 10px;
+  line-height: 100%;
+  height: 40px;
+}
+/* line 41, styles.less */
+.y-main-wrapper > .y-container .y-header .y-rates .y-rate .y-container {
+  padding: 15px 15px 15px 15px;
+  top: -15px;
+}
+/* line 44, styles.less */
+.y-main-wrapper > .y-container .y-header .y-rates .y-rate .y-container:hover,
+.y-main-wrapper > .y-container .y-header .y-rates .y-rate .y-container.active {
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: 0px 3px 5px #cccccc;
+  -o-box-shadow: 0px 3px 5px #cccccc;
+  -webkit-box-shadow: 0px 3px 5px #cccccc;
+  -moz-box-shadow: 0px 3px 5px #cccccc;
+  background: #ffffff;
+}
+/* line 48, styles.less */
+.y-main-wrapper > .y-container .y-header .y-rates .y-rate .y-container:hover .y-btn,
+.y-main-wrapper > .y-container .y-header .y-rates .y-rate .y-container.active .y-btn {
+  display: block;
+}
+/* line 51, styles.less */
+.y-main-wrapper > .y-container .y-header .y-rates .y-rate .y-container:hover p.y-status,
+.y-main-wrapper > .y-container .y-header .y-rates .y-rate .y-container.active p.y-status {
+  margin-bottom: 20px;
+}
+/* line 56, styles.less */
+.y-main-wrapper > .y-container .y-header .y-rates .y-rate p {
+  margin: 0;
+}
+/* line 58, styles.less */
+.y-main-wrapper > .y-container .y-header .y-rates .y-rate p.y-name {
+  margin-bottom: 15px;
+}
+/* line 61, styles.less */
+.y-main-wrapper > .y-container .y-header .y-rates .y-rate p.y-status {
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: 600;
+}
+/* line 67, styles.less */
+.y-main-wrapper > .y-container .y-header .y-rates .y-rate .y-btn {
+  display: none;
+}
+/* line 70, styles.less */
+.y-main-wrapper > .y-container .y-header .y-rates .y-rate i.fa {
+  color: #7eb12f;
+  font-size: 1.8rem;
+  line-height: 0;
+  margin-left: 7px;
+}
+/* line 76, styles.less */
+.y-main-wrapper > .y-container .y-header .y-rates .y-rate .y-name {
+  font-size: 1.4rem;
+  color: #7e7e7e;
+  font-weight: 700;
+}
+/* line 81, styles.less */
+.y-main-wrapper > .y-container .y-header .y-rates .y-rate:first-child {
+  border: none;
+}
+/* line 86, styles.less */
+.y-main-wrapper > .y-container .y-header .y-profile-snippet {
+  float: right;
+  margin-top: 8px;
+}
+/* line 89, styles.less */
+.y-main-wrapper > .y-container .y-header .y-profile-snippet .y-photo-container {
+  width: 62px;
+  height: 61px;
+  background: url('../images/sun-bg.png') center center no-repeat;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 7px;
+  float: left;
+}
+/* line 97, styles.less */
+.y-main-wrapper > .y-container .y-header .y-profile-snippet .y-photo-container .y-photo-radius {
+  border-radius: 100px;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -o-border-radius: 100px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+/* line 102, styles.less */
+.y-main-wrapper > .y-container .y-header .y-profile-snippet .y-photo-container .y-photo-radius img {
+  display: block;
+  width: 100%;
+}
+/* line 108, styles.less */
+.y-main-wrapper > .y-container .y-header .y-profile-snippet .y-text {
+  float: left;
+  font-size: 1.2rem;
+  color: #333;
+  margin-left: 10px;
+}
+/* line 113, styles.less */
+.y-main-wrapper > .y-container .y-header .y-profile-snippet .y-text .y-name {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+/* line 120, styles.less */
+.y-main-wrapper > .y-container ul.y-mainmenu {
+  border-top: solid 1px #cdcdcd;
+  border-bottom: solid 1px #cdcdcd;
+  width: 100%;
+  overflow: hidden;
+}
+/* line 125, styles.less */
+.y-main-wrapper > .y-container ul.y-mainmenu li:not(.flr) {
+  float: left;
+}
+/* line 127, styles.less */
+.y-main-wrapper > .y-container ul.y-mainmenu li:not(.flr) a {
+  display: block;
+  color: #333333;
+  font-size: 1.5rem;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  margin: 10px 38px;
+  text-transform: uppercase;
+}
+/* line 136, styles.less */
+.y-main-wrapper > .y-container ul.y-mainmenu li:not(.flr):hover a {
+  color: #ff9100;
+  text-decoration: none;
+}
+/* line 142, styles.less */
+.y-main-wrapper > .y-container ul.y-mainmenu li:not(.flr).active a {
+  color: #ff9100;
+  border-bottom: solid 4px #ff9100;
+  margin: 10px 15px 0px 15px;
+  padding-bottom: 6px;
+}
+/* line 150, styles.less */
+.y-main-wrapper > .y-container ul.y-mainmenu li.flr {
+  font-size: 1.4rem;
+  text-transform: none;
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+/* line 156, styles.less */
+.y-main-wrapper > .y-container ul.y-mainmenu li.flr a {
+  padding: 4px 15px;
+  display: block;
+}
+/* line 159, styles.less */
+.y-main-wrapper > .y-container ul.y-mainmenu li.flr a:hover {
+  text-decoration: none;
+}
+/* line 163, styles.less */
+.y-main-wrapper > .y-container ul.y-mainmenu li.flr.y-plans a {
+  color: #333;
+  font-weight: 600;
+}
+/* line 166, styles.less */
+.y-main-wrapper > .y-container ul.y-mainmenu li.flr.y-plans a:hover {
+  color: #ff9100;
+}
+/* line 170, styles.less */
+.y-main-wrapper > .y-container ul.y-mainmenu li.flr.y-help {
+  margin-right: 20px;
+}
+/* line 175, styles.less */
+.y-main-wrapper > .y-container ul.y-submenu {
+  overflow: hidden;
+  padding: 10px 15px;
+  border-bottom: solid 1px #cdcdcd;
+  box-shadow: 0 1px  2px #ddd inset;
+}
+/* line 180, styles.less */
+.y-main-wrapper > .y-container ul.y-submenu li {
+  float: left;
+  max-width: 16.666%;
+  margin-left: 105px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+/* line 186, styles.less */
+.y-main-wrapper > .y-container ul.y-submenu li:first-child {
+  margin-left: 0;
+}
+/* line 189, styles.less */
+.y-main-wrapper > .y-container ul.y-submenu li a {
+  color: #333333;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+/* line 193, styles.less */
+.y-main-wrapper > .y-container ul.y-submenu li a:hover {
+  text-decoration: none;
+  color: #ff9100;
+}
+/* line 198, styles.less */
+.y-main-wrapper > .y-container ul.y-submenu li.active a {
+  color: #ff9100;
+}
+/* line 203, styles.less */
+.y-main-wrapper > .y-container .y-sidebar {
+  width: 300px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border-left: solid 1px #cdcdcd;
+  background: #f4f4f4;
+  height: 2000px;
+  float: right;
+}
+/* line 212, styles.less */
+.y-main-wrapper > .y-container .y-content-container {
+  overflow: hidden;
+  height: 2000px;
+  background: #ffffff;
+}
+/* line 216, styles.less */
+.y-main-wrapper > .y-container .y-content-container h1 {
+  padding: 1% 5%;
+  margin: 5% auto;
+}
+/* line 219, styles.less */
+.y-main-wrapper > .y-container .y-content-container h1 span {
+  color: #009bcd;
+}
+/* line 223, styles.less */
+.y-main-wrapper > .y-container .y-content-container .y-left {
+  float: left;
+  width: 41%;
+  padding: 1% 1% 2% 5%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+/* line 229, styles.less */
+.y-main-wrapper > .y-container .y-content-container .y-left img {
+  border-radius: 50%;
+}
+/* line 232, styles.less */
+.y-main-wrapper > .y-container .y-content-container .y-left h2 {
+  margin: 5% auto;
+}
+/* line 235, styles.less */
+.y-main-wrapper > .y-container .y-content-container .y-left p {
+  font-family: "Open Sans", sans-serif;
+  color: #687c8a;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 155%;
+  text-align: left;
+  margin: 2% 0;
+}
+/* line 245, styles.less */
+.y-main-wrapper > .y-container .y-content-container .y-right {
+  float: right;
+  width: 41%;
+  padding: 1% 5% 2% 1%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+/* line 251, styles.less */
+.y-main-wrapper > .y-container .y-content-container .y-right img {
+  border-radius: 50%;
+}
+/* line 254, styles.less */
+.y-main-wrapper > .y-container .y-content-container .y-right h2 {
+  margin: 5% auto;
+}
+/* line 257, styles.less */
+.y-main-wrapper > .y-container .y-content-container .y-right p {
+  font-family: "Open Sans", sans-serif;
+  color: #687c8a;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 155%;
+  text-align: left;
+}
+/* line 266, styles.less */
+.y-main-wrapper > .y-container .y-content-container .y-reviews {
+  background: #fff8e8;
+  padding: 3%;
+}
+/* line 269, styles.less */
+.y-main-wrapper > .y-container .y-content-container .y-reviews h1 {
+  margin: 2% auto;
+}
+/* line 272, styles.less */
+.y-main-wrapper > .y-container .y-content-container .y-reviews .y-review {
+  background: #ffffff;
+  border: solid 2px #efc45e;
+  border-radius: 10px;
+  padding: 3%;
+  font-family: "Open Sans", sans-serif;
+  color: #404c53;
+  font-size: 1.5rem;
+  font-style: italic;
+  text-align: left;
+}
+/* line 287, styles.less */
+.y-main-wrapper > .y-container .y-content-container .y-statistics {
+  margin: 30px;
+}
+/* line 289, styles.less */
+.y-main-wrapper > .y-container .y-content-container .y-statistics h1 {
+  margin: 0;
+  margin-bottom: 30px;
+}
+/* line 293, styles.less */
+.y-main-wrapper > .y-container .y-content-container .y-statistics .y-students {
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+/* line 297, styles.less */
+.y-main-wrapper > .y-container .y-content-container .y-statistics .y-students p.y-number {
+  font-family: "Open Sans", sans-serif;
+  color: #131329;
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 120%;
+  text-align: center;
+  margin: 5% auto;
+}
+/* line 306, styles.less */
+.y-main-wrapper > .y-container .y-content-container .y-statistics .y-students p.y-name {
+  font-family: "Open Sans", sans-serif;
+  color: #131329;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 120%;
+  text-align: center;
+  margin: 1% auto;
+}
+/* line 316, styles.less */
+.y-main-wrapper > .y-container .y-content-container .y-statistics .y-courses {
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+/* line 320, styles.less */
+.y-main-wrapper > .y-container .y-content-container .y-statistics .y-courses p.y-number {
+  font-family: "Open Sans", sans-serif;
+  color: #131329;
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 120%;
+  text-align: center;
+  margin: 5% auto;
+}
+/* line 329, styles.less */
+.y-main-wrapper > .y-container .y-content-container .y-statistics .y-courses p.y-name {
+  font-family: "Open Sans", sans-serif;
+  color: #131329;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 120%;
+  text-align: center;
+  margin: 1% auto;
+}
+/* line 339, styles.less */
+.y-main-wrapper > .y-container .y-content-container .y-statistics .y-city {
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+/* line 343, styles.less */
+.y-main-wrapper > .y-container .y-content-container .y-statistics .y-city p.y-number {
+  font-family: "Open Sans", sans-serif;
+  color: #131329;
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 120%;
+  text-align: center;
+  margin: 5% auto;
+}
+/* line 352, styles.less */
+.y-main-wrapper > .y-container .y-content-container .y-statistics .y-city p.y-name {
+  font-family: "Open Sans", sans-serif;
+  color: #131329;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 120%;
+  text-align: center;
+  margin: 1% auto;
+}
+/* line 362, styles.less */
+.y-main-wrapper > .y-container .y-content-container .y-statistics .y-people {
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+/* line 366, styles.less */
+.y-main-wrapper > .y-container .y-content-container .y-statistics .y-people p.y-number {
+  font-family: "Open Sans", sans-serif;
+  color: #131329;
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 120%;
+  text-align: center;
+  margin: 5% auto;
+}
+/* line 375, styles.less */
+.y-main-wrapper > .y-container .y-content-container .y-statistics .y-people p.y-name {
+  font-family: "Open Sans", sans-serif;
+  color: #131329;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 120%;
+  text-align: center;
+  margin: 1% auto;
+}
+/* line 386, styles.less */
+.y-main-wrapper > .y-container .y-content-container .y-button {
+  background: -webkit-linear-gradient(162deg, #ffaf00 31%, #ff9100 69%);
+  background: -moz-linear-gradient(162deg, #ffaf00 31%, #ff9100 69%);
+  background: -o-linear-gradient(162deg, #ffaf00 31%, #ff9100 69%);
+  background: -ms-linear-gradient(162deg, #ffaf00 31%, #ff9100 69%);
+  background: linear-gradient(-72deg, #ffaf00 31%, #ff9100 69%);
+  text-align: center;
+}
+/* line 393, styles.less */
+.y-main-wrapper > .y-container .y-content-container .y-button img {
+  float: left;
+  margin: 0;
+  padding: 3% 6%;
+}
+/* line 398, styles.less */
+.y-main-wrapper > .y-container .y-content-container .y-button p {
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: left;
+  width: 50%;
+  float: left;
+  margin: 0;
+  padding: 4% 1%;
+}
+/* line 409, styles.less */
+.y-main-wrapper > .y-container .y-content-container .y-button a.y-buttonn {
+  background: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0px 1px 0px 0px #4c760c;
+  font-family: "Open Sans", sans-serif;
+  color: #333333;
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-align: left;
+  text-decoration: none;
+  padding: 1% 2%;
+  width: 15%;
+  float: left;
+  margin: 5% 1%;
+}
+/*# sourceMappingURL=styles.css.map */
