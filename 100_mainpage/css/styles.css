@@ -515,4 +515,100 @@
   float: left;
   margin: 5% 1%;
 }
+/* line 429, styles.less */
+.y-intro-slider {
+  width: 100%;
+  height: 300px;
+}
+/* line 432, styles.less */
+.y-intro-slider .y-controls {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  height: 27px;
+  margin-top: -13px;
+}
+/* line 439, styles.less */
+.y-intro-slider .y-controls .y-arrow {
+  width: 15px;
+  height: 27px;
+  background: url('../images/arrows-sprite.png') no-repeat;
+}
+/* line 443, styles.less */
+.y-intro-slider .y-controls .y-arrow.left {
+  float: left;
+  margin-left: 20px;
+  cursor: pointer;
+  background-position: 0 -27px;
+}
+/* line 448, styles.less */
+.y-intro-slider .y-controls .y-arrow.left:hover {
+  background-position: 0 0;
+}
+/* line 452, styles.less */
+.y-intro-slider .y-controls .y-arrow.right {
+  float: right;
+  margin-right: 20px;
+  cursor: pointer;
+  background-position: -15px -27px;
+}
+/* line 457, styles.less */
+.y-intro-slider .y-controls .y-arrow.right:hover {
+  background-position: -15px 0;
+}
+/* line 463, styles.less */
+.y-intro-slider .y-nav {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  height: 12px;
+  z-index: 1;
+}
+/* line 469, styles.less */
+.y-intro-slider .y-nav .y-wrapper {
+  float: left;
+  left: 50%;
+}
+/* line 472, styles.less */
+.y-intro-slider .y-nav .y-wrapper .y-circles {
+  float: right;
+  right: 50%;
+}
+/* line 475, styles.less */
+.y-intro-slider .y-nav .y-wrapper .y-circles .y-circle {
+  border-radius: 12px;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -o-border-radius: 12px;
+  float: left;
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  cursor: pointer;
+  border: solid 1px #ff9100;
+}
+/* line 483, styles.less */
+.y-intro-slider .y-nav .y-wrapper .y-circles .y-circle.active {
+  background: #ff9100;
+}
+/* line 490, styles.less */
+.y-intro-slider .y-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+/* line 494, styles.less */
+.y-intro-slider .y-container .y-wrapper {
+  height: 100%;
+  left: 0;
+}
+/* line 497, styles.less */
+.y-intro-slider .y-container .y-wrapper .y-slide {
+  width: 760px;
+  height: 100%;
+  float: left;
+  background-size: cover;
+  background-position: center center;
+}
 /*# sourceMappingURL=styles.css.map */

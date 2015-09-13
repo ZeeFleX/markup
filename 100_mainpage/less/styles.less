@@ -425,3 +425,82 @@
 		}
 	}
 }
+
+.y-intro-slider{
+	width: 100%;
+	height: 300px;
+	.y-controls{
+		width: 100%;
+		position: absolute;
+		z-index: 1;
+		top:50%;
+		height: 27px;
+		margin-top: -13px;
+		.y-arrow{
+			width: 15px;
+			height: 27px;
+			background: url('../images/arrows-sprite.png') no-repeat;
+			&.left{
+				float: left;
+				margin-left: 20px;
+				cursor: pointer;
+				background-position:0 -27px;
+				&:hover{
+					background-position:0 0;
+				}
+			}
+			&.right{
+				float: right;
+				margin-right: 20px;
+				cursor: pointer;
+				background-position:-15px -27px;
+				&:hover{
+					background-position:-15px 0;
+				}
+			}
+		}
+	}
+	.y-nav{
+		position: absolute;
+		bottom:20px;
+		width: 100%;
+		height: 12px;
+		z-index: 1;
+		.y-wrapper{
+			float: left;
+			left: 50%;
+			.y-circles{
+				float: right;
+				right: 50%;
+				.y-circle{
+					.border_radius(12px);
+					float: left;
+					width: 12px;
+					height: 12px;
+					margin:0 5px;
+					cursor: pointer;
+					border:solid 1px @yellow;
+					&.active{
+						background: @yellow;
+					}
+				}
+			}
+		}
+	}
+	.y-container{
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		.y-wrapper{
+			height: 100%;
+			left:0;
+			.y-slide{
+				width: 760px;
+				height: 100%;
+				float: left;
+				background-size:cover;
+				background-position:center center;
+			}
+		}
+	}
+}
