@@ -1,0 +1,398 @@
+*{
+	position: relative;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,300,700,600&subset=latin,cyrillic);
+
+@font-face {
+    font-family: 'Days';
+    src: url('../fonts/7fonts.ru_days-webfont.eot');
+    src: url('../fonts/7fonts.ru_days-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/7fonts.ru_days-webfont.woff2') format('woff2'),
+         url('../fonts/7fonts.ru_days-webfont.woff') format('woff'),
+         url('../fonts/7fonts.ru_days-webfont.ttf') format('truetype'),
+         url('../fonts/7fonts.ru_days-webfont.svg#daysregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.clr{
+	clear:both;
+}
+
+h1{
+	font-family: "Days", sans-serif;
+	color:  #ffa800;
+	font-size: 55px;
+	font-weight: 400;
+	line-height: 75%;
+	text-align: center;
+}
+
+h2{
+	font-family: "Days", sans-serif;
+	font-size: 51px;
+	font-weight: 400;
+	line-height: 130%;
+	text-align: left;
+	text-shadow: 0px 2px 0px #291407;
+}
+
+h3{
+	font-family: "Days", sans-serif;
+	font-size: 45px;
+	font-weight: 400;
+	line-height: 150%;
+	text-align: center;
+}
+
+h4{
+	font-family: "Days", sans-serif;
+	font-size: 35px;
+	font-weight: 400;
+	line-height: 120%;
+	text-align: center;
+}
+
+h5{
+	font-family: "Days", sans-serif;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 120%;
+	text-align: left;
+}
+
+p.opensans{
+	font-family: "Open Sans", sans-serif;
+	font-size: 19px;
+	font-weight: 300;
+	line-height: 130%;
+	text-align: left;
+}
+
+p.days{
+	font-family: "Days", sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 110%;
+	text-align: left;
+}
+
+body{
+	padding: 0;
+	margin: 0;
+}
+
+.wrapper{
+	//width: 95%;
+	max-width:1100px;
+	height: 100%;
+	margin: auto;
+}
+
+div.header{
+	background: url('../images/bg-header.jpg') center center no-repeat; 
+	.wrapper{
+		padding-bottom: 40px;
+		h2{
+			color:  #ffffff;
+			margin: 0;
+			padding: 30px 20px;
+		}
+		.left{
+			float: left;
+			width: 55%;
+			h5{
+				color:  #ffffff;
+				text-shadow: 0px 1px 0px #0c3145;
+				text-transform: uppercase;
+				margin: 30px 20px;
+			}
+			p.opensans{
+				color:  #ffffff;
+				text-shadow: 0px 1px 0px #0c3145;
+				margin: 30px 20px;
+			}
+			p.days{
+				color:  #ffffff;
+				text-shadow: 0px 1px 0px #0c3145;
+				margin: 30px 20px;
+				text-align: center;
+			}
+		}
+		.right{
+			float: right;
+			width: 45%;
+			margin-top: 240px;
+			a.button{
+				background: -webkit-linear-gradient(90deg, #ff7e00 0%, #ffd200 100%);
+				background: -moz-linear-gradient(90deg, #ff7e00 0%, #ffd200 100%);
+				background: -o-linear-gradient(90deg, #ff7e00 0%, #ffd200 100%);
+				background: -ms-linear-gradient(90deg, #ff7e00 0%, #ffd200 100%);
+				background: linear-gradient(0deg, #ff7e00 0%, #ffd200 100%);
+				border-radius: 50px;
+				border: solid 1px #ffd200;
+				font-family: "Days", sans-serif;
+				color: #ffffff;
+				font-size: 30px;
+				font-weight: 400;
+				line-height: 110%;
+				text-align: center;
+				text-decoration: none;
+				margin: 0;
+				width: 315px;
+				display: block;
+				padding: 20px 0;
+				&:hover{
+					background: -webkit-linear-gradient(90deg, #ff7e00-#111 0%, #ffd200-#111 100%);
+					background: -moz-linear-gradient(90deg, #ff7e00-#111 0%, #ffd200-#111 100%);
+					background: -o-linear-gradient(90deg, #ff7e00-#111 0%, #ffd200-#111 100%);
+					background: -ms-linear-gradient(90deg, #ff7e00-#111 0%, #ffd200-#111 100%);
+					background: linear-gradient(0deg, #ff7e00-#111 0%, #ffd200-#111 100%);
+				}
+			}
+		}
+	}
+}
+
+div.angle{
+	background: #efefef;
+	.container{
+		background: url('../images/angle.png') center center no-repeat;
+		padding-top: 50px;
+		padding-bottom: 100px;
+		.wrapper{
+			p.days{
+				color: #ffd200;
+				margin: 20px 0;
+				font-size: 25px;
+				text-align: center;
+				line-height: 150%;
+				span{
+					text-transform: uppercase;
+				}
+			}
+			p.opensans{
+				color:  #ffffff;
+				margin: 20px 0;
+				font-size: 16px;
+				text-align: center;
+			}
+			p.days-white{
+				font-family: "Days", sans-serif;
+				color:  #ffffff;
+				margin: 20px 0;
+				font-size: 25px;
+				text-align: center;
+			}
+		}
+	}
+}
+
+div.video{
+	background: #efefef;
+	.container{
+		background: url('../images/angle-2.png') center bottom no-repeat;
+		.wrapper{
+			padding-top: 60px;
+			padding-bottom: 70px;
+			h4{
+				color: #ffa800;
+				margin: 0;
+			}
+			p.opensans-center{
+				font-family: "Open Sans", sans-serif;
+				font-size: 19px;
+				font-weight: 300;
+				line-height: 130%;
+				margin: 20px 0;
+				text-align: center;
+			}
+			p.days{
+				color:  #3d2f6b;
+				font-size: 20px;
+				text-align: center;
+				span{
+					font-size: 25px;
+				}
+			}
+			.video-container{
+				text-align: center;
+			}
+			p.opensans{
+
+			}
+		}
+	}
+}
+
+div.content{
+	.wrapper{
+		padding-bottom: 30px;
+		h4{
+			color: #ffa800;
+		}
+		p.opensans{
+			margin: 20px 0;
+		}
+		a{
+			background: -webkit-linear-gradient(90deg, #a90000 0%, #ff0000 100%);
+			background: -moz-linear-gradient(90deg, #a90000 0%, #ff0000 100%);
+			background: -o-linear-gradient(90deg, #a90000 0%, #ff0000 100%);
+			background: -ms-linear-gradient(90deg, #a90000 0%, #ff0000 100%);
+			background: linear-gradient(0deg, #a90000 0%, #ff0000 100%);
+			border: solid 1px #ff0000;
+			border-radius: 50px;
+			display: block;
+			font-family: "Days", sans-serif;
+			color: #ffffff;
+			font-size: 45px;
+			font-weight: 400;
+			line-height: 130%;
+			text-align: center;
+			text-decoration: none;
+			width: 60%;
+			padding: 20px 0;
+			margin: 50px auto;
+			&:hover{
+				background: -webkit-linear-gradient(90deg, #a90000-#111 0%, #ff0000-#111 100%);
+				background: -moz-linear-gradient(90deg, #a90000-#111 0%, #ff0000-#111 100%);
+				background: -o-linear-gradient(90deg, #a90000-#111 0%, #ff0000-#111 100%);
+				background: -ms-linear-gradient(90deg, #a90000-#111 0%, #ff0000-#111 100%);
+				background: linear-gradient(0deg, #a90000-#111 0%, #ff0000-#111 100%);
+			}
+		}
+		p.days{
+			color: #3d2f6b;
+			font-size: 25px;
+		}
+	}
+}
+
+div.payment{
+	background: url('../images/bg-payment.jpg') center center no-repeat;
+	.wrapper{
+		padding-top: 100px;
+		h3{
+			color: #ffd200;
+			margin: 0;
+			line-height: 110%;
+		}
+		h4{
+			color: #ffffff;
+			margin: 20px 0;
+		}
+		p.opensans{
+			color: #ffffff;
+			text-align: center;
+			margin: 30px 0;
+			span{
+				font-family: "Days", sans-serif;
+				text-transform: uppercase;
+			}
+		}
+		a.red{
+			float: left;
+			width: 45%;
+			background: -webkit-linear-gradient(90deg, #810000 0%, #ff0000 100%);
+			background: -moz-linear-gradient(90deg, #810000 0%, #ff0000 100%);
+			background: -o-linear-gradient(90deg, #810000 0%, #ff0000 100%);
+			background: -ms-linear-gradient(90deg, #810000 0%, #ff0000 100%);
+			background: linear-gradient(0deg, #810000 0%, #ff0000 100%);
+			border: solid 1px #ff0000;
+			border-radius: 50px;
+			display: block;
+			font-family: "Days", sans-serif;
+			color: #ffffff;
+			font-size: 45px;
+			font-weight: 400;
+			line-height: 100%;
+			text-align: center;
+			text-decoration: none;
+			padding: 40px 0;
+			margin: 100px auto;
+			p.opensans{
+				font-family: "Open Sans", sans-serif;
+				font-size: 20px;
+				color: #ffffff;
+			}
+			&:hover{
+				background: -webkit-linear-gradient(90deg, #810000-#111 0%, #ff0000-#111 100%);
+				background: -moz-linear-gradient(90deg, #810000-#111 0%, #ff0000-#111 100%);
+				background: -o-linear-gradient(90deg, #810000-#111 0%, #ff0000-#111 100%);
+				background: -ms-linear-gradient(90deg, #810000-#111 0%, #ff0000-#111 100%);
+				background: linear-gradient(0deg, #810000-#111 0%, #ff0000-#111 100%);
+			}
+		}
+		a.green{
+			float: right;
+			width: 45%;
+			background: -webkit-linear-gradient(90deg, #215e00 0%, #43c000 100%);
+			background: -moz-linear-gradient(90deg, #215e00 0%, #43c000 100%);
+			background: -o-linear-gradient(90deg, #215e00 0%, #43c000 100%);
+			background: -ms-linear-gradient(90deg, #215e00 0%, #43c000 100%);
+			background: linear-gradient(0deg, #215e00 0%, #43c000 100%);
+			border: solid 1px #43c000;
+			border-radius: 50px;
+			display: block;
+			font-family: "Days", sans-serif;
+			color: #ffffff;
+			font-size: 45px;
+			font-weight: 400;
+			line-height: 100%;
+			text-align: center;
+			text-decoration: none;
+			padding: 27px 0;
+			margin: 100px auto;
+			p.opensans{
+				font-family: "Open Sans", sans-serif;
+				font-size: 20px;
+				color: #ffffff;				
+			}
+			&:hover{
+				background: -webkit-linear-gradient(90deg, #215e00-#111 0%, #43c000-#111 100%);
+				background: -moz-linear-gradient(90deg, #215e00-#111 0%, #43c000-#111 100%);
+				background: -o-linear-gradient(90deg, #215e00-#111 0%, #43c000-#111 100%);
+				background: -ms-linear-gradient(90deg, #215e00-#111 0%, #43c000-#111 100%);
+				background: linear-gradient(0deg, #215e00-#111 0%, #43c000-#111 100%);
+			}
+		}
+	}
+}
+
+div.PS{
+	.wrapper{
+		padding: 30px 0;
+		p.opensans{
+			text-align: center;
+			margin: 20px 0;
+		}
+		h1{
+			text-align: center;
+			text-transform: uppercase;
+			margin: 40px 0;
+		}
+	}
+}
+
+div.footer{
+	.wrapper{
+		padding-bottom: 30px;
+		hr{
+			height: 1px;
+			color: #c2c2c2;
+			background-color: #c2c2c2;
+			margin-top: 30px;
+			border: none;
+		}
+		p{
+			font-family: 'Open Sans', sans-serif;
+			color: #939393;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 135%;
+			text-align: center;
+			margin: 10px 0;
+		}
+	}
+}
