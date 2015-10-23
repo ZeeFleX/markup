@@ -9,7 +9,6 @@
 	background: url('../images/wrapper-bg.png');
 	padding: 0 20px;
 	min-height:100%;
-	padding-bottom: 80px;
 	& > .y-container{
 		width: 100%;
 		min-height:100%;
@@ -207,12 +206,12 @@
 			-moz-box-sizing:border-box;
 			border-left:solid 1px #cdcdcd;
 			background: #f4f4f4;
-			//height: 2000px;	
+			height: 2000px;	
 			float: right;	
 		}
 		.y-content-container{
 			overflow: hidden;	
-			//height: 2000px;
+			height: 2000px;
 			background: @white;
 			h1{
 				padding: 1% 5%;
@@ -234,8 +233,10 @@
 					margin: 5% auto;
 				}
 				p{
+					font-family: "Open Sans", sans-serif;
 					color: #687c8a;
 					font-size: 1.4rem;
+					font-weight: 400;
 					line-height: 155%;
 					text-align: left;
 					margin: 2% 0;	
@@ -254,8 +255,10 @@
 					margin: 5% auto;
 				}
 				p{
+					font-family: "Open Sans", sans-serif;
 					color: #687c8a;
 					font-size: 1.4rem;
+					font-weight: 400;
 					line-height: 155%;
 					text-align: left;	
 				}
@@ -271,6 +274,7 @@
 					border: solid 2px #efc45e;
 					border-radius: 10px;
 					padding: 3%;
+					font-family: "Open Sans", sans-serif;
 					color: #404c53;
 					font-size: 1.5rem;
 					font-style: italic;
@@ -291,15 +295,19 @@
 					width: 25%;
 					text-align: center;
 					p.y-number{
+						font-family: "Open Sans", sans-serif;
 						color: #131329;
 						font-size: 3.6rem;
+						font-weight: 400;
 						line-height: 120%;
 						text-align: center;
 						margin: 5% auto;
 					}
 					p.y-name{
+						font-family: "Open Sans", sans-serif;
 						color: #131329;
 						font-size: 1.6rem;
+						font-weight: 400;
 						line-height: 120%;
 						text-align: center;
 						margin: 1% auto;
@@ -310,15 +318,19 @@
 					width: 25%;
 					text-align: center;
 					p.y-number{
+						font-family: "Open Sans", sans-serif;
 						color: #131329;
 						font-size: 3.6rem;
+						font-weight: 400;
 						line-height: 120%;
 						text-align: center;
 						margin: 5% auto;
 					}
 					p.y-name{
+						font-family: "Open Sans", sans-serif;
 						color: #131329;
 						font-size: 1.6rem;
+						font-weight: 400;
 						line-height: 120%;
 						text-align: center;
 						margin: 1% auto;
@@ -329,15 +341,19 @@
 					width: 25%;
 					text-align: center;
 					p.y-number{
+						font-family: "Open Sans", sans-serif;
 						color: #131329;
 						font-size: 3.6rem;
+						font-weight: 400;
 						line-height: 120%;
 						text-align: center;
 						margin: 5% auto;
 					}
 					p.y-name{
+						font-family: "Open Sans", sans-serif;
 						color: #131329;
 						font-size: 1.6rem;
+						font-weight: 400;
 						line-height: 120%;
 						text-align: center;
 						margin: 1% auto;
@@ -348,15 +364,19 @@
 					width: 25%;
 					text-align: center;
 					p.y-number{
+						font-family: "Open Sans", sans-serif;
 						color: #131329;
 						font-size: 3.6rem;
+						font-weight: 400;
 						line-height: 120%;
 						text-align: center;
 						margin: 5% auto;
 					}
 					p.y-name{
+						font-family: "Open Sans", sans-serif;
 						color: #131329;
 						font-size: 1.6rem;
+						font-weight: 400;
 						line-height: 120%;
 						text-align: center;
 						margin: 1% auto;
@@ -376,6 +396,7 @@
 					padding: 3% 6%;
 				}
 				p{
+					font-family: "Open Sans", sans-serif;
 					color: #ffffff;
 					font-size: 1.8rem;
 					font-weight: 700;
@@ -389,8 +410,10 @@
 					background: #ffffff;
 					border-radius: 4px;
 					box-shadow: 0px 1px 0px 0px #4c760c;
+					font-family: "Open Sans", sans-serif;
 					color: #333333;
 					font-size: 1.8rem;
+					font-weight: 400;
 					text-align: left;
 					text-decoration: none;
 					padding: 1% 2%;
@@ -401,153 +424,83 @@
 			}
 		}
 	}
-	& > .y-subscribe{
-		background: #bed6e3;
-		display: block;
-		text-align: center;
-		margin: auto;
+}
+
+.y-intro-slider{
+	width: 100%;
+	height: 300px;
+	.y-controls{
 		width: 100%;
-		padding: 3% 0;
-		border-top: solid 1px #cdcdcd;
-		border-bottom: solid 1px #cdcdcd;
-		.y-subscribe-form{
-			background: #ffffff;
-			width: 75%;
-			margin: auto;
-			border: solid 1px #cdcdcd;
-			border-radius: 10px;
-			padding-bottom: 3%;
-			img{
+		position: absolute;
+		z-index: 1;
+		top:50%;
+		height: 27px;
+		margin-top: -13px;
+		.y-arrow{
+			width: 15px;
+			height: 27px;
+			background: url('../images/arrows-sprite.png') no-repeat;
+			&.left{
+				float: left;
+				margin-left: 20px;
+				cursor: pointer;
+				background-position:0 -27px;
+				&:hover{
+					background-position:0 0;
+				}
+			}
+			&.right{
 				float: right;
-				position: absolute;
-				top: -1px;
-				right: -2px;
-			}
-			p.y-form-header{
-				color: #323232;
-				font-size: 1.9rem;
-				font-weight: 600;
-				line-height: 150%;
-				text-align: center;
-				margin: 0;
-				padding-top: 3%;
-				padding-bottom: 1%;
-			}
-			p{				
-				color: #323232;
-				font-size: 1.4rem;
-				line-height: 150%;
-				text-align: center;
-				margin: 0;
-				padding-bottom: 3%;
-			}
-			input[type="text"]{
-				font-family: Arial;
-				color:  #323232;
-				font-size: 1.2rem;
-				letter-spacing: 0.6px;
-				text-align: left;
-				padding: 1%;
-				width: 27%;
-				border-radius: 2px;
-				border: solid 1px #cdcdcd;
-				margin-right: 2%;
-			}
-			input[type="submit"]{
-				background: #7eb12f;
-				border-radius: 4px;
-				border: solid 1px #b5de76;
-				box-shadow: 0px 1px 0px 0px #567a1f;
-				color: #ffffff;
-				font-size: 1.7rem;
-				line-height: 0%;
-				text-align: center;
-				padding: 2%;
-				width: 20%;
-				cursor: pointer;				
-			}
-			input[type="submit"]:hover{
-				background: #7eb12f+#111;
-			}
-		}
-	}	
-	.footer{
-		background: #ffffff;
-		border: solid 1px #cdcdcd;
-		padding: 4%;
-		text-align: center;
-		p{
-			color: #323232;
-			font-size: 1.8rem;
-			line-height: 140%;
-			text-align: center;
-			margin: 0;
-		}
-		.y-email{
-			float: left;
-			width: 34%;
-			text-align: center;
-			margin: 3% 0;
-			p{				
-				color: #ff9100;
-				font-size: 1.5rem;
-				font-weight: 700;
-				line-height: 200%;
-				text-align: center;
-				span{
-					color: #323232;
-					font-weight: 600;
+				margin-right: 20px;
+				cursor: pointer;
+				background-position:-15px -27px;
+				&:hover{
+					background-position:-15px 0;
 				}
 			}
 		}
-		.y-phone{
+	}
+	.y-nav{
+		position: absolute;
+		bottom:20px;
+		width: 100%;
+		height: 12px;
+		z-index: 1;
+		.y-wrapper{
 			float: left;
-			width: 33%;
-			text-align: center;
-			margin: 3% 0;
-			p{
-				color: #ff9100;
-				font-size: 1.5rem;
-				font-weight: 700;
-				line-height: 200%;
-				text-align: center;
-				span{
-					color: #323232;
-					font-weight: 600;
+			left: 50%;
+			.y-circles{
+				float: right;
+				right: 50%;
+				.y-circle{
+					.border_radius(12px);
+					float: left;
+					width: 12px;
+					height: 12px;
+					margin:0 5px;
+					cursor: pointer;
+					border:solid 1px @yellow;
+					&.active{
+						background: @yellow;
+					}
 				}
 			}
 		}
-		.y-site{
-			float: left;
-			width: 33%;
-			text-align: center;
-			margin: 3% 0;
-			p{				
-				color: #ff9100;
-				font-size: 1.5rem;
-				font-weight: 700;
-				line-height: 200%;
-				text-align: center;
-				span{
-					color: #323232;
-					font-weight: 600;
-				}
+	}
+	.y-container{
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		.y-wrapper{
+			height: 100%;
+			left:0;
+			.y-slide{
+				width: 760px;
+				height: 100%;
+				float: left;
+				background-size:cover;
+				background-position:center center;
 			}
-		}
-		a.y-link{
-			color: #009bcd;
-			font-size: 1.5rem;
-			line-height: 170%;
-			text-decoration: underline;
-			padding-left: 2%;
-		}
-		img{
-			padding: 5%;
-		}
-		p.y-fuuter{
-			font-family: Arial;
-			color: #323232;
-			font-size: 1.2rem;
 		}
 	}
 }
