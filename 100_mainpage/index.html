@@ -8,18 +8,27 @@
 		<link href="css/mixins.css" rel="stylesheet">
 		<link href="css/variables.css" rel="stylesheet">
 		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-		<script src="js/main.js"></script>
+		<script src="js/y-main.js"></script>
 		<script src="js/y-slider.js"></script>
 	</head>
 	<body>
 		<div class="y-main-wrapper">
 			<div class="y-container">
+				<!-- HEADER -->
 				<div class="y-header">
 					<div class="y-logo">
 						<a href="">
 							<img src="images/logo.png" alt="100 дней трансформации с Константином Довлатовым">
 						</a>
 					</div>
+					<!-- <div class="y-welcome">
+						<div class="sign-in-arrow"></div>
+						<div class="y-icon"></div>
+						<div class="y-welcome-text">
+							<p><span class="bold">Уважаемый гость,</span><br />авторизуйтесь, чтобы увидеть все материалы сайта</p>
+						</div>
+						<a href="/" class="y-btn yellow">Войти на сайт</a>
+					</div> -->
 					<div class="y-rates">
 						<div class="y-rate">
 							<div class="y-container">
@@ -36,7 +45,7 @@
 							</div>
 						</div>
 						<div class="y-rate">
-							<div class="y-container active">
+							<div class="y-container">
 								<p class="y-name">Марафоны <i class="fa fa-check"></i></p>
 								<p class="y-status">Осталось 12 дней</p>
 								<a href="#" class="y-btn green">Продлить</a>
@@ -52,15 +61,28 @@
 						</div>
 						<div class="y-text">
 							<p class="y-greeting">
-								Добро пожаловать,<br />
-								<span class="y-name">
-									Ирина Сержина
-								</span>
+								Добро пожаловать,
 							</p>
+							<div class="y-name">
+								<div class="y-profile-menu-container">
+									<div class="y-caret-up"></div>
+									<ul class="profile-menu">
+										<li><a href="">Профиль</a></li>
+										<li><a href="">Мой план подписки</a></li>
+										<li><a href="">Дневник марафона</a></li>
+										<li><a href="">Тест</a></li>
+										<li><a href="">Платежи</a></li>
+										<li><a href="">Выход</a></li>
+									</ul>
+								</div>
+								<span>Ирина Сержина</span> <i class="fa fa-caret-down"></i>
+							</div>
+							
 						</div>
 					</div>
 					<div class="clr"></div>
 				</div>
+				<!-- ГЛАВНОЕ МЕНЮ -->
 				<ul class="y-mainmenu">
 					<li class="active"><a href="#">Главная</a></li>
 					<li><a href="#">100 дней трансформации</a></li>
@@ -70,6 +92,7 @@
 					<li class="y-plans flr"><a href="#" class="plan">Планы подписок</a></li>
 				</ul>
 				<div class="clr"></div>
+				<!-- ДОПОЛНИТЕЛЬНОЕ МЕНЮ -->
 				<ul class="y-submenu">
 					<li><a href="#">Библиотека</a></li>
 					<li><a href="#">О реинтеграциях</a></li>
@@ -79,11 +102,12 @@
 					<li><a href="#">Полезные статьи</a></li>
 				</ul>
 				<div class="clr"></div>
+				<!-- САЙДБАР -->
 				<div class="y-sidebar">
-					123123
+					Место под сайдбар
 				</div>
 				<div class="y-content-container">
-				<!-- СЛАЙДЕР -->
+				<!-- СЛАЙДЕР (СТРОИТСЯ САМ - y-slider.js) -->
 					<div class="y-intro-slider">
 						<img src="images/slider/01.jpg" alt="">
 						<img src="images/slider/02.jpg" alt="">
@@ -104,10 +128,63 @@
 					<div class="clr"></div>
 					<div class="y-reviews">
 						<h1>Отзывы участников о клубе</h1>
-						<div class="y-review">Поддерживаю Татьяну. Слишком много всего и сразу в том числе и для меня , работающей мамы. НО! Не смотря на это, и на то что началось тотальное недосыпание, так как стараюсь не отставать от программы и что-то делаю ночами, меня удивили по настоящему 2 вещи. Первая - мое тело благодаря упражнениям и диете, подаренным Константином, стало просто класс. Спасибо Вам, результаты видны быстро-быстро!!! Второе: не смотря на многочисленные "откаты" после того как взбаламутишь ту или иную проблему  читать далее
+						<!-- СЛАЙДЕР -->
+						<div class="y-review-slider">
+							<div class="y-contents">
+								<div class="y-quote"></div>
+								<div class="y-reviews-text">
+									<!-- БЛОКИ С ОТЗЫВАМИ ПО ПОРЯДКУ -->
+									<div class="y-review">
+										Поддерживаю Татьяну. Слишком много всего и сразу в том числе и для меня , работающей мамы. НО! Не смотря на это, и на то что началось тотальное недосыпание, так как стараюсь не отставать от программы и что-то делаю ночами, меня удивили по настоящему 2 вещи. Первая - мое тело благодаря упражнениям и диете, подаренным Константином, стало просто класс. Спасибо Вам, результаты видны быстро-быстро!!! Второе: не смотря на многочисленные "откаты" после того как взбаламутишь ту или иную проблему  читать далее
+									</div>
+									<div class="y-review">
+										Для ячеек таблицы. Для inline-элементов. Как выровнять текст, блок, картинку по вертикали (обобщающий). Вертикальный текст HTML. Горизонтальное выравнивание HTML-элементов. Выравнивание по ширине на CSS. Зафиксировать панель.
+									</div>
+									<div class="y-review">
+										Работает во всех броузерах.
+										Не обрезает текст, если он не влез.
+										Минусы
+										Работает только с текстом (не работает с блочными элементами).
+										Если текста больше чем одна строка, то выглядит очень плохо.
+									</div>
+									<div class="y-review">
+										Обычному человеку не везет в кризис больше всех. Раньше зарабатывал 25 000 рублей – и это было «нормально». А сейчас, чтобы просто остаться на прежнем уровне, нужно получать в 2 раза больше.
+									</div>
+									<div class="y-review">
+										Посмотрите варианты работы в соц.сетях. Администратор группы Вконтакте не думает о том, как заработать – потому что с одного проекта он получает ежемесячно от 10 000 рублей. Можно взять несколько проектов. Если вы не знаете, что это такое – быть администратором группы, то пройдите соответствующий тренинг. Это модная нынче специальность, и ей учат.
+									</div>
+								</div>
+							</div>
+							<div class="y-photos">
+								<div class="y-controls">
+									<div class="y-arrow left"></div>
+									<div class="y-arrow right"></div>
+								</div>
+								<div class="y-photos-container">
+									<div class="y-photos-wrapper">
+										<!-- БЛОКИ С ФОТКАМИ ПО ПОРЯДКУ -->
+										<div class="y-photo-radius">
+											<img src="images/photos/reviews/01.jpg" alt="">
+										</div>
+										<div class="y-photo-radius">
+											<img src="images/photos/reviews/01.jpg" alt="">
+										</div>
+										<div class="y-photo-radius">
+											<img src="images/photos/reviews/01.jpg" alt="">
+										</div>
+										<div class="y-photo-radius">
+											<img src="images/photos/reviews/01.jpg" alt="">
+										</div>
+										<div class="y-photo-radius">
+											<img src="images/photos/reviews/01.jpg" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
-						<div class="y-photo-slider"></div>
+						<!-- // -->
 					</div>
+					<!-- БЛОК СТАТИСТИКИ -->
 					<div class="y-statistics">
 						<h1>Статистика обучения</h1>
 						<div class="y-students">
@@ -132,13 +209,65 @@
 						</div>
 						<div class="clr"></div>
 					</div>
-					<div class="y-button">
-						<img src="images/icons/test.png" alt="">
-						<p>Пройдите тест <br>и определите свою сферу обучения.</p>
-						<a href="" class="y-buttonn">Пройти тест</a>
-						<div class="clr"></div>
+					<!-- БЛОК ТЕСТ + ВЫБОР ПУТИ -->
+					<div class="y-test">
+						<div class="y-start">
+							<img src="images/icons/test.png" alt="">
+							<p>Пройдите тест <br>и определите свою сферу обучения.</p>
+							<a href="" class="y-button">Пройти тест</a>
+							<div class="clr"></div>
+						</div>
+						<div class="y-lifewheel">
+							<h3>Выберите цель вашего обучения</h3>
+							<div class="y-lifewheel-container">
+								<div class="target-text">
+									<span>
+									
+									</span>
+								</div>
+								<a href="#" class="y-health y-item active" data-description="Приобретение новых навыков, постановка новых целей и их достижение."></a>
+								<a href="#" class="y-relationship y-item" data-description="Улучшение взаимоотношений с родными и коллегами."></a>
+								<a href="#" class="y-progress y-item" data-description="Заметный эффект личностного роста."></a>
+								<a href="#" class="y-finance y-item" data-description="Направление финансовых потоков в нужное русло."></a>
+								<a href="#" class="y-environment y-item" data-description="Работа с окружением."></a>
+								<a href="#" class="y-spirity y-item" data-description="Духовное просветление."></a>
+							</div>
+						</div>
 					</div>
 				</div>
+			</div>
+			<!-- ПОДПИСКА -->
+			<div class="y-subscribe">
+				<form class="y-subscribe-form">
+					<img src="images/fillet.png" alt="">
+					<p class="y-form-header">Подпишитесь на самое главное!</p>
+					<p>Письма о духовном развитии, финансовом успехе и отношениях с людьми</p>
+					<input type="text" name="email" placeholder="Введите ваш e-mail">
+					<input type="text" name="name" placeholder="Имя">
+					<input type="submit" name="submit" value="Подписаться">
+				</form>
+			</div>
+			<!-- FOOTER -->
+			<div class="y-footer">
+				<p>Служба поддержки работает с 10:00 - 24:00 мск</p>
+				<div class="y-email">
+					<p>e-mail: <br><span>support@dowlataw.ru</span></p>
+				</div>
+				<div class="y-phone">
+					<p>телефон: <br><span>8-800-301-00-77 / +7 (499) 301-00-77</span></p>
+				</div>
+				<div class="y-site">
+					<p>служба поддержки: <br><span>kdowlatow.support-desk.ru</span></p>
+				</div>
+				<div class="clr"></div>
+				<a href="" class="y-link">Договор оферты</a>
+				<a href="" class="y-link">Уведомление о безопасности платежа</a>
+				<a href="" class="y-link">Помощь</a>
+				<div class="clr"></div>
+				<img src="images/partners/visa.png" alt="">
+				<img src="images/partners/uniteller.png" alt="">
+				<img src="images/partners/mastercard.png" alt="">
+				<p class="y-copyright">© 2015 100 дней. Плавная трансформация себя - Авторский проект К.Довлатова</p>
 			</div>
 		</div>
 	</body>

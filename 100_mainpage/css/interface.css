@@ -88,13 +88,26 @@ body {
   background-color: #6da01e;
   text-decoration: none;
 }
-/* line 88, interface.less */
+/* line 85, interface.less */
+.y-btn.yellow {
+  background-color: #ffaf00;
+  border-color: #ffcf66;
+  box-shadow: 0px 1px 0px 0px #ad7700;
+  color: #4e320d;
+  font-weight: 600;
+}
+/* line 91, interface.less */
+.y-btn.yellow:hover {
+  background-color: #ee9e00;
+  text-decoration: none;
+}
+/* line 98, interface.less */
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-/* line 93, interface.less */
+/* line 103, interface.less */
 .flr {
   float: right !important;
 }
