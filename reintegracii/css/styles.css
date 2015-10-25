@@ -1,0 +1,533 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,300,700,600&subset=latin,cyrillic);
+/* line 1, styles.less */
+* {
+  position: relative;
+}
+@font-face {
+  font-family: 'Days';
+  src: url('../fonts/7fonts.ru_days-webfont.eot');
+  src: url('../fonts/7fonts.ru_days-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/7fonts.ru_days-webfont.woff2') format('woff2'), url('../fonts/7fonts.ru_days-webfont.woff') format('woff'), url('../fonts/7fonts.ru_days-webfont.ttf') format('truetype'), url('../fonts/7fonts.ru_days-webfont.svg#daysregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 19, styles.less */
+.clr {
+  clear: both;
+}
+/* line 23, styles.less */
+h1 {
+  font-family: "Days", sans-serif;
+  font-size: 59px;
+  font-weight: 400;
+  line-height: 150%;
+  text-align: center;
+}
+/* line 31, styles.less */
+h2 {
+  font-family: "Days", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 150%;
+  text-align: center;
+}
+/* line 39, styles.less */
+h3 {
+  font-family: "Days", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 150%;
+  text-align: center;
+}
+/* line 47, styles.less */
+p.opensans {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 120%;
+  text-align: left;
+}
+/* line 55, styles.less */
+a.button {
+  border-radius: 25px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ff0035;
+  background: -webkit-linear-gradient(90deg, #86001c 0%, #ff0035 100%);
+  background: -moz-linear-gradient(90deg, #86001c 0%, #ff0035 100%);
+  background: -o-linear-gradient(90deg, #86001c 0%, #ff0035 100%);
+  background: -ms-linear-gradient(90deg, #86001c 0%, #ff0035 100%);
+  background: linear-gradient(0deg, #86001c 0%, #ff0035 100%);
+  box-shadow: 0px 5px 0px 0px #ff0035;
+  font-family: "Days", sans-serif;
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 165%;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  padding: 30px;
+}
+/* line 75, styles.less */
+a.button:hover {
+  background: -webkit-linear-gradient(90deg, #75000b 0%, #ee0024 100%);
+  background: -moz-linear-gradient(90deg, #75000b 0%, #ee0024 100%);
+  background: -o-linear-gradient(90deg, #75000b 0%, #ee0024 100%);
+  background: -ms-linear-gradient(90deg, #75000b 0%, #ee0024 100%);
+  background: linear-gradient(0deg, #75000b 0%, #ee0024 100%);
+}
+/* line 84, styles.less */
+body {
+  padding: 0;
+  margin: 0;
+}
+/* line 89, styles.less */
+.wrapper {
+  width: 95%;
+  max-width: 1020px;
+  height: 100%;
+}
+/* line 95, styles.less */
+div.header {
+  width: 100%;
+}
+/* line 98, styles.less */
+div.header .section1 p {
+  color: #162f4c;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 120%;
+  text-align: center;
+  margin: 1%;
+}
+/* line 107, styles.less */
+div.header .section2 {
+  background: url('../images/bg-header.jpg') center center no-repeat;
+  background-size: cover;
+  margin: 0;
+}
+/* line 111, styles.less */
+div.header .section2 .wrapper {
+  margin: 0 auto;
+  padding: 2% 0 3% 0;
+}
+/* line 114, styles.less */
+div.header .section2 .wrapper .content {
+  border: dashed 1px rgba(255, 255, 255, 0.4);
+  display: block;
+}
+/* line 117, styles.less */
+div.header .section2 .wrapper .content h1 {
+  color: #ffffff;
+  line-height: 160%;
+}
+/* line 121, styles.less */
+div.header .section2 .wrapper .content h3 {
+  color: #ffffff;
+}
+/* line 126, styles.less */
+div.header .section2 .wrapper .content ul li {
+  list-style: none;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 150%;
+  text-align: center;
+  padding-top: 1%;
+}
+/* line 127, styles.less */
+div.header .section2 .wrapper .content ul li img {
+  padding-right: 15px;
+}
+/* line 140, styles.less */
+div.header .section2 .wrapper .content a.button {
+  width: 80%;
+  margin: 5% auto 10% auto;
+}
+/* line 144, styles.less */
+div.header .section2 .wrapper .content a.scroll-to {
+  position: absolute;
+  bottom: -18px;
+  left: 50%;
+  margin-left: -18px;
+}
+/* line 159, styles.less */
+div.block1 .wrapper {
+  margin: auto;
+  padding-top: 5%;
+  height: 100%;
+  background: url('../images/foto-block1.jpg') no-repeat center bottom;
+}
+/* line 164, styles.less */
+div.block1 .wrapper .left {
+  float: left;
+  width: 33%;
+}
+/* line 167, styles.less */
+div.block1 .wrapper .left p.opensans {
+  color: #162f4c;
+  line-height: 180%;
+  margin: 0;
+}
+/* line 171, styles.less */
+div.block1 .wrapper .left p.opensans span {
+  font-family: "Days", sans-serif;
+  color: #d2002c;
+  font-size: 19px;
+  text-align: left;
+}
+/* line 177, styles.less */
+div.block1 .wrapper .left p.opensans.one {
+  margin-bottom: 35%;
+}
+/* line 180, styles.less */
+div.block1 .wrapper .left p.opensans.two {
+  margin-bottom: 35%;
+}
+/* line 185, styles.less */
+div.block1 .wrapper .right {
+  float: right;
+  width: 33%;
+}
+/* line 188, styles.less */
+div.block1 .wrapper .right p.opensans {
+  color: #162f4c;
+  line-height: 180%;
+  text-align: right;
+  margin: 0;
+}
+/* line 193, styles.less */
+div.block1 .wrapper .right p.opensans span {
+  font-family: "Days", sans-serif;
+  color: #d2002c;
+  font-size: 19px;
+  text-align: right;
+}
+/* line 199, styles.less */
+div.block1 .wrapper .right p.opensans.one {
+  margin-bottom: 23%;
+}
+/* line 202, styles.less */
+div.block1 .wrapper .right p.opensans.two {
+  margin-bottom: 23%;
+}
+/* line 210, styles.less */
+div.block2 {
+  background: url('../images/bg-block2.jpg') center center no-repeat;
+  background-size: cover;
+}
+/* line 213, styles.less */
+div.block2 .wrapper {
+  margin: 0 auto;
+  padding: 2% 0 2% 0;
+}
+/* line 216, styles.less */
+div.block2 .wrapper .content {
+  border: dashed 1px rgba(255, 255, 255, 0.4);
+  display: block;
+  padding: 2%;
+}
+/* line 220, styles.less */
+div.block2 .wrapper .content .left {
+  float: left;
+  width: 57%;
+}
+/* line 223, styles.less */
+div.block2 .wrapper .content .left h2 {
+  color: #ffffff;
+  text-align: left;
+  margin: 0;
+}
+/* line 228, styles.less */
+div.block2 .wrapper .content .left p.opensans {
+  color: #ffffff;
+  text-align: left;
+  margin: 20px 0;
+  line-height: 170%;
+}
+/* line 234, styles.less */
+div.block2 .wrapper .content .left h3 {
+  color: #ffffff;
+  text-align: left;
+  margin: 0;
+  font-size: 21px;
+  line-height: 115%;
+}
+/* line 241, styles.less */
+div.block2 .wrapper .content .left ul {
+  padding: 20px 0 0 0;
+  margin: 0;
+}
+/* line 244, styles.less */
+div.block2 .wrapper .content .left ul li {
+  color: #ffffff;
+  text-align: left;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 130%;
+  list-style: none;
+  background: url('../images/marker-mini.png') left center no-repeat;
+  padding: 5px 0 5px 20px;
+}
+/* line 258, styles.less */
+div.block2 .wrapper .content .right {
+  float: right;
+  width: 40%;
+  text-align: center;
+  margin-top: 35px;
+}
+/* line 263, styles.less */
+div.block2 .wrapper .content .right img {
+  border-radius: 181px;
+}
+/* line 272, styles.less */
+div.block3 .wrapper {
+  margin: 0 auto;
+  padding: 2% 0 2% 0;
+}
+/* line 275, styles.less */
+div.block3 .wrapper .content {
+  border: dashed 1px rgba(21, 46, 74, 0.4);
+  display: block;
+  padding: 2%;
+}
+/* line 279, styles.less */
+div.block3 .wrapper .content .left {
+  float: left;
+  width: 61%;
+}
+/* line 282, styles.less */
+div.block3 .wrapper .content .left h2 {
+  text-align: left;
+  color: #162f4c;
+  margin: 0;
+  line-height: 100%;
+}
+/* line 288, styles.less */
+div.block3 .wrapper .content .left p.opensans {
+  text-align: left;
+  color: #162f4c;
+  line-height: 170%;
+  margin: 20px 0;
+}
+/* line 294, styles.less */
+div.block3 .wrapper .content .left h3 {
+  text-align: left;
+  color: #d3002d;
+  margin: 0;
+}
+/* line 299, styles.less */
+div.block3 .wrapper .content .left ul {
+  padding: 20px 0 0 0;
+  margin: 0;
+}
+/* line 302, styles.less */
+div.block3 .wrapper .content .left ul li {
+  text-align: left;
+  color: #d3002d;
+  list-style: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 130%;
+  background: url('../images/marker-red.png') left center no-repeat;
+  padding: 10px 0 10px 40px;
+}
+/* line 315, styles.less */
+div.block3 .wrapper .content .right {
+  float: right;
+  width: 39%;
+  text-align: center;
+  margin-top: 30px;
+}
+/* line 320, styles.less */
+div.block3 .wrapper .content .right img {
+  border-radius: 181px;
+}
+/* line 328, styles.less */
+div.block4 {
+  background: url('../images/bg-block4.jpg') center center no-repeat;
+  background-size: cover;
+}
+/* line 331, styles.less */
+div.block4 .wrapper {
+  margin: 0 auto;
+  padding: 2% 0 2% 0;
+}
+/* line 334, styles.less */
+div.block4 .wrapper .content {
+  border: dashed 1px rgba(255, 255, 255, 0.4);
+  display: block;
+  padding: 2%;
+}
+/* line 338, styles.less */
+div.block4 .wrapper .content .left {
+  float: left;
+  width: 61%;
+}
+/* line 341, styles.less */
+div.block4 .wrapper .content .left h2 {
+  text-align: left;
+  color: #ffffff;
+  margin: 0;
+  line-height: 100%;
+}
+/* line 347, styles.less */
+div.block4 .wrapper .content .left p.opensans {
+  text-align: left;
+  color: #ffffff;
+  line-height: 170%;
+  margin: 25px 0;
+}
+/* line 352, styles.less */
+div.block4 .wrapper .content .left p.opensans span {
+  font-family: "Days", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 100%;
+  text-align: center;
+}
+/* line 361, styles.less */
+div.block4 .wrapper .content .right {
+  float: right;
+  width: 39%;
+  text-align: center;
+  margin-top: 30px;
+}
+/* line 366, styles.less */
+div.block4 .wrapper .content .right img {
+  border-radius: 181px;
+}
+/* line 375, styles.less */
+div.block5 .wrapper {
+  margin: auto;
+  padding: 20px 0 60px 0;
+}
+/* line 378, styles.less */
+div.block5 .wrapper h2 {
+  color: #162f4c;
+  margin: 0;
+  padding: 30px 45px;
+}
+/* line 382, styles.less */
+div.block5 .wrapper h2 span {
+  color: #d3002d;
+}
+/* line 386, styles.less */
+div.block5 .wrapper a.button {
+  width: 55%;
+  margin: auto;
+}
+/* line 393, styles.less */
+div.block6 {
+  background: url('../images/bg-header.jpg') center center no-repeat;
+  background-size: cover;
+  margin: 0;
+}
+/* line 397, styles.less */
+div.block6 .wrapper {
+  margin: 0 auto;
+  padding: 2% 0 2% 0;
+}
+/* line 400, styles.less */
+div.block6 .wrapper .container {
+  border: dashed 1px rgba(255, 255, 255, 0.4);
+  display: block;
+}
+/* line 403, styles.less */
+div.block6 .wrapper .container h1 {
+  color: #ffffff;
+  line-height: 160%;
+}
+/* line 407, styles.less */
+div.block6 .wrapper .container .reviews {
+  margin: 50px;
+}
+/* line 409, styles.less */
+div.block6 .wrapper .container .reviews .review {
+  text-align: center;
+}
+/* line 411, styles.less */
+div.block6 .wrapper .container .reviews .review h3 {
+  color: #ffffff;
+  margin: 20px 80px;
+  line-height: 120%;
+}
+/* line 416, styles.less */
+div.block6 .wrapper .container .reviews .review p.opensans {
+  color: #ffffff;
+  font-size: 19px;
+  margin: 20px 40px;
+  text-align: center;
+  font-weight: 300;
+  line-height: 130%;
+}
+/* line 424, styles.less */
+div.block6 .wrapper .container .reviews .review p.italic {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 300;
+}
+/* line 433, styles.less */
+div.block6 .wrapper .container .controls {
+  position: relative;
+  margin-top: 20px;
+  overflow: hidden;
+}
+/* line 437, styles.less */
+div.block6 .wrapper .container .controls .circles-container {
+  float: left;
+  left: 50%;
+}
+/* line 440, styles.less */
+div.block6 .wrapper .container .controls .circles-container .circles {
+  float: right;
+  right: 50%;
+}
+/* line 443, styles.less */
+div.block6 .wrapper .container .controls .circles-container .circles .circle {
+  background: #ffffff;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  -o-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  float: left;
+  margin: 0 3px;
+  cursor: pointer;
+}
+/* line 454, styles.less */
+div.block6 .wrapper .container .controls .circles-container .circles .circle.active {
+  background: #162f4c;
+}
+/* line 457, styles.less */
+div.block6 .wrapper .container .controls .circles-container .circles .circle:hover {
+  background: #dddddd;
+}
+/* line 464, styles.less */
+div.block6 .wrapper .container a.button {
+  width: 55%;
+  margin: auto;
+  bottom: -50px;
+}
+/* line 474, styles.less */
+div.footer .wrapper {
+  margin: 40px auto;
+}
+/* line 476, styles.less */
+div.footer .wrapper p {
+  font-family: 'Open Sans', sans-serif;
+  color: #162f4c;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 135%;
+  text-align: center;
+  margin: 10px 0;
+}
+/*# sourceMappingURL=styles.css.map */

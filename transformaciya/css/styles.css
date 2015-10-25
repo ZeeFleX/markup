@@ -1,0 +1,423 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,300,700,600&subset=latin,cyrillic);
+/* line 1, styles.less */
+* {
+  position: relative;
+}
+@font-face {
+  font-family: 'Days';
+  src: url('../fonts/7fonts.ru_days-webfont.eot');
+  src: url('../fonts/7fonts.ru_days-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/7fonts.ru_days-webfont.woff2') format('woff2'), url('../fonts/7fonts.ru_days-webfont.woff') format('woff'), url('../fonts/7fonts.ru_days-webfont.ttf') format('truetype'), url('../fonts/7fonts.ru_days-webfont.svg#daysregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 19, styles.less */
+.clr {
+  clear: both;
+}
+/* line 23, styles.less */
+h1 {
+  font-family: "Days", sans-serif;
+  color: #ffa800;
+  font-size: 55px;
+  font-weight: 400;
+  line-height: 75%;
+  text-align: center;
+}
+/* line 32, styles.less */
+h2 {
+  font-family: "Days", sans-serif;
+  font-size: 51px;
+  font-weight: 400;
+  line-height: 130%;
+  text-align: left;
+  text-shadow: 0px 2px 0px #291407;
+}
+/* line 41, styles.less */
+h3 {
+  font-family: "Days", sans-serif;
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 150%;
+  text-align: center;
+}
+/* line 49, styles.less */
+h4 {
+  font-family: "Days", sans-serif;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 120%;
+  text-align: center;
+}
+/* line 57, styles.less */
+h5 {
+  font-family: "Days", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 120%;
+  text-align: left;
+}
+/* line 65, styles.less */
+p.opensans {
+  font-family: "Open Sans", sans-serif;
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 130%;
+  text-align: left;
+}
+/* line 73, styles.less */
+p.days {
+  font-family: "Days", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 110%;
+  text-align: left;
+}
+/* line 81, styles.less */
+body {
+  padding: 0;
+  margin: 0;
+}
+/* line 86, styles.less */
+.wrapper {
+  max-width: 1100px;
+  height: 100%;
+  margin: auto;
+}
+/* line 93, styles.less */
+div.header {
+  background: url('../images/bg-header.jpg') center center no-repeat;
+}
+/* line 95, styles.less */
+div.header .wrapper {
+  padding-bottom: 40px;
+}
+/* line 97, styles.less */
+div.header .wrapper h2 {
+  color: #ffffff;
+  margin: 0;
+  padding: 30px 20px;
+}
+/* line 102, styles.less */
+div.header .wrapper .left {
+  float: left;
+  width: 55%;
+}
+/* line 105, styles.less */
+div.header .wrapper .left h5 {
+  color: #ffffff;
+  text-shadow: 0px 1px 0px #0c3145;
+  text-transform: uppercase;
+  margin: 30px 20px;
+}
+/* line 111, styles.less */
+div.header .wrapper .left p.opensans {
+  color: #ffffff;
+  text-shadow: 0px 1px 0px #0c3145;
+  margin: 30px 20px;
+}
+/* line 116, styles.less */
+div.header .wrapper .left p.days {
+  color: #ffffff;
+  text-shadow: 0px 1px 0px #0c3145;
+  margin: 30px 20px;
+  text-align: center;
+}
+/* line 123, styles.less */
+div.header .wrapper .right {
+  float: right;
+  width: 45%;
+  margin-top: 240px;
+}
+/* line 127, styles.less */
+div.header .wrapper .right a.button {
+  background: -webkit-linear-gradient(90deg, #ff7e00 0%, #ffd200 100%);
+  background: -moz-linear-gradient(90deg, #ff7e00 0%, #ffd200 100%);
+  background: -o-linear-gradient(90deg, #ff7e00 0%, #ffd200 100%);
+  background: -ms-linear-gradient(90deg, #ff7e00 0%, #ffd200 100%);
+  background: linear-gradient(0deg, #ff7e00 0%, #ffd200 100%);
+  border-radius: 50px;
+  border: solid 1px #ffd200;
+  font-family: "Days", sans-serif;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 110%;
+  text-align: center;
+  text-decoration: none;
+  margin: 0;
+  width: 315px;
+  display: block;
+  padding: 20px 0;
+}
+/* line 146, styles.less */
+div.header .wrapper .right a.button:hover {
+  background: -webkit-linear-gradient(90deg, #ee6d00 0%, #eec100 100%);
+  background: -moz-linear-gradient(90deg, #ee6d00 0%, #eec100 100%);
+  background: -o-linear-gradient(90deg, #ee6d00 0%, #eec100 100%);
+  background: -ms-linear-gradient(90deg, #ee6d00 0%, #eec100 100%);
+  background: linear-gradient(0deg, #ee6d00 0%, #eec100 100%);
+}
+/* line 158, styles.less */
+div.angle {
+  background: #efefef;
+}
+/* line 160, styles.less */
+div.angle .container {
+  background: url('../images/angle.png') center center no-repeat;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+/* line 165, styles.less */
+div.angle .container .wrapper p.days {
+  color: #ffd200;
+  margin: 20px 0;
+  font-size: 25px;
+  text-align: center;
+  line-height: 150%;
+}
+/* line 171, styles.less */
+div.angle .container .wrapper p.days span {
+  text-transform: uppercase;
+}
+/* line 175, styles.less */
+div.angle .container .wrapper p.opensans {
+  color: #ffffff;
+  margin: 20px 0;
+  font-size: 16px;
+  text-align: center;
+}
+/* line 181, styles.less */
+div.angle .container .wrapper p.days-white {
+  font-family: "Days", sans-serif;
+  color: #ffffff;
+  margin: 20px 0;
+  font-size: 25px;
+  text-align: center;
+}
+/* line 192, styles.less */
+div.video {
+  background: #efefef;
+}
+/* line 194, styles.less */
+div.video .container {
+  background: url('../images/angle-2.png') center bottom no-repeat;
+}
+/* line 196, styles.less */
+div.video .container .wrapper {
+  padding-top: 60px;
+  padding-bottom: 70px;
+}
+/* line 199, styles.less */
+div.video .container .wrapper h4 {
+  color: #ffa800;
+  margin: 0;
+}
+/* line 203, styles.less */
+div.video .container .wrapper p.opensans-center {
+  font-family: "Open Sans", sans-serif;
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 130%;
+  margin: 20px 0;
+  text-align: center;
+}
+/* line 211, styles.less */
+div.video .container .wrapper p.days {
+  color: #3d2f6b;
+  font-size: 20px;
+  text-align: center;
+}
+/* line 215, styles.less */
+div.video .container .wrapper p.days span {
+  font-size: 25px;
+}
+/* line 219, styles.less */
+div.video .container .wrapper .video-container {
+  text-align: center;
+}
+/* line 230, styles.less */
+div.content .wrapper {
+  padding-bottom: 30px;
+}
+/* line 232, styles.less */
+div.content .wrapper h4 {
+  color: #ffa800;
+}
+/* line 235, styles.less */
+div.content .wrapper p.opensans {
+  margin: 20px 0;
+}
+/* line 238, styles.less */
+div.content .wrapper a {
+  background: -webkit-linear-gradient(90deg, #a90000 0%, #ff0000 100%);
+  background: -moz-linear-gradient(90deg, #a90000 0%, #ff0000 100%);
+  background: -o-linear-gradient(90deg, #a90000 0%, #ff0000 100%);
+  background: -ms-linear-gradient(90deg, #a90000 0%, #ff0000 100%);
+  background: linear-gradient(0deg, #a90000 0%, #ff0000 100%);
+  border: solid 1px #ff0000;
+  border-radius: 50px;
+  display: block;
+  font-family: "Days", sans-serif;
+  color: #ffffff;
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 130%;
+  text-align: center;
+  text-decoration: none;
+  width: 60%;
+  padding: 20px 0;
+  margin: 50px auto;
+}
+/* line 257, styles.less */
+div.content .wrapper a:hover {
+  background: -webkit-linear-gradient(90deg, #980000 0%, #ee0000 100%);
+  background: -moz-linear-gradient(90deg, #980000 0%, #ee0000 100%);
+  background: -o-linear-gradient(90deg, #980000 0%, #ee0000 100%);
+  background: -ms-linear-gradient(90deg, #980000 0%, #ee0000 100%);
+  background: linear-gradient(0deg, #980000 0%, #ee0000 100%);
+}
+/* line 265, styles.less */
+div.content .wrapper p.days {
+  color: #3d2f6b;
+  font-size: 25px;
+}
+/* line 272, styles.less */
+div.payment {
+  background: url('../images/bg-payment.jpg') center center no-repeat;
+}
+/* line 274, styles.less */
+div.payment .wrapper {
+  padding-top: 100px;
+}
+/* line 276, styles.less */
+div.payment .wrapper h3 {
+  color: #ffd200;
+  margin: 0;
+  line-height: 110%;
+}
+/* line 281, styles.less */
+div.payment .wrapper h4 {
+  color: #ffffff;
+  margin: 20px 0;
+}
+/* line 285, styles.less */
+div.payment .wrapper p.opensans {
+  color: #ffffff;
+  text-align: center;
+  margin: 30px 0;
+}
+/* line 289, styles.less */
+div.payment .wrapper p.opensans span {
+  font-family: "Days", sans-serif;
+  text-transform: uppercase;
+}
+/* line 294, styles.less */
+div.payment .wrapper a.red {
+  float: left;
+  width: 45%;
+  background: -webkit-linear-gradient(90deg, #810000 0%, #ff0000 100%);
+  background: -moz-linear-gradient(90deg, #810000 0%, #ff0000 100%);
+  background: -o-linear-gradient(90deg, #810000 0%, #ff0000 100%);
+  background: -ms-linear-gradient(90deg, #810000 0%, #ff0000 100%);
+  background: linear-gradient(0deg, #810000 0%, #ff0000 100%);
+  border: solid 1px #ff0000;
+  border-radius: 50px;
+  display: block;
+  font-family: "Days", sans-serif;
+  color: #ffffff;
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 100%;
+  text-align: center;
+  text-decoration: none;
+  padding: 40px 0;
+  margin: 100px auto;
+}
+/* line 314, styles.less */
+div.payment .wrapper a.red p.opensans {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+}
+/* line 319, styles.less */
+div.payment .wrapper a.red:hover {
+  background: -webkit-linear-gradient(90deg, #700000 0%, #ee0000 100%);
+  background: -moz-linear-gradient(90deg, #700000 0%, #ee0000 100%);
+  background: -o-linear-gradient(90deg, #700000 0%, #ee0000 100%);
+  background: -ms-linear-gradient(90deg, #700000 0%, #ee0000 100%);
+  background: linear-gradient(0deg, #700000 0%, #ee0000 100%);
+}
+/* line 327, styles.less */
+div.payment .wrapper a.green {
+  float: right;
+  width: 45%;
+  background: -webkit-linear-gradient(90deg, #215e00 0%, #43c000 100%);
+  background: -moz-linear-gradient(90deg, #215e00 0%, #43c000 100%);
+  background: -o-linear-gradient(90deg, #215e00 0%, #43c000 100%);
+  background: -ms-linear-gradient(90deg, #215e00 0%, #43c000 100%);
+  background: linear-gradient(0deg, #215e00 0%, #43c000 100%);
+  border: solid 1px #43c000;
+  border-radius: 50px;
+  display: block;
+  font-family: "Days", sans-serif;
+  color: #ffffff;
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 100%;
+  text-align: center;
+  text-decoration: none;
+  padding: 27px 0;
+  margin: 100px auto;
+}
+/* line 347, styles.less */
+div.payment .wrapper a.green p.opensans {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+}
+/* line 352, styles.less */
+div.payment .wrapper a.green:hover {
+  background: -webkit-linear-gradient(90deg, #104d00 0%, #32af00 100%);
+  background: -moz-linear-gradient(90deg, #104d00 0%, #32af00 100%);
+  background: -o-linear-gradient(90deg, #104d00 0%, #32af00 100%);
+  background: -ms-linear-gradient(90deg, #104d00 0%, #32af00 100%);
+  background: linear-gradient(0deg, #104d00 0%, #32af00 100%);
+}
+/* line 364, styles.less */
+div.PS .wrapper {
+  padding: 30px 0;
+}
+/* line 366, styles.less */
+div.PS .wrapper p.opensans {
+  text-align: center;
+  margin: 20px 0;
+}
+/* line 370, styles.less */
+div.PS .wrapper h1 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 40px 0;
+}
+/* line 379, styles.less */
+div.footer .wrapper {
+  padding-bottom: 30px;
+}
+/* line 381, styles.less */
+div.footer .wrapper hr {
+  height: 1px;
+  color: #c2c2c2;
+  background-color: #c2c2c2;
+  margin-top: 30px;
+  border: none;
+}
+/* line 388, styles.less */
+div.footer .wrapper p {
+  font-family: 'Open Sans', sans-serif;
+  color: #939393;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 135%;
+  text-align: center;
+  margin: 10px 0;
+}
+/*# sourceMappingURL=styles.css.map */
