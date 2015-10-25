@@ -196,8 +196,8 @@
 										<td class="b"><img src="images/coordinate.png"> Москва</td>
 										<td class="c">21-22 ноября</td>
 										<td class="d">
-											<a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2152" class="fee">Внести первый взнос</a>
-											<a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2153" class="payment">Оплатить 100% участие</a>
+											<a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2152" class="fee" target="_blank">Внести первый взнос</a>
+											<a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2153" class="payment" target="_blank">Оплатить 100% участие</a>
 										</td>
 									</tr>
 									<tr>
