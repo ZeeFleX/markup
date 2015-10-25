@@ -7,6 +7,7 @@
 		<link href="css/media.css" rel="stylesheet">
 		<script src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
 		<script src="js/jquery.scroll-to.js"></script>
+		<script src="js/url.min.js"></script>
 		<script src="js/main.js"></script>
 	</head>
 	<body>
@@ -14,18 +15,18 @@
 			<div class="fixed-menu">
 				<ul class="menu">
 					<li data-target=".header"><a href="#"><img src="images/logo-color.png"></a></li>
-					<li data-target=".accordion_1" data-open=".accordion_1"><a href="#">1.1</a></li>
-					<li data-target=".accordion_2" data-open=".accordion_2"><a href="#">1.2</a></li>
-					<li data-target=".accordion_3" data-open=".accordion_3"><a href="#">1.3</a></li>
-					<li data-target=".accordion_4" data-open=".accordion_4"><a href="#">1.4</a></li>
-					<li data-target=".accordion_5" data-open=".accordion_5"><a href="#">1.5</a></li>
-					<li data-target=".accordion_6" data-open=".accordion_6"><a href="#">1.6</a></li>
-					<li data-target=".accordion_7"><a href="#">1.7</a></li>
-					<li data-target=".accordion_8"><a href="#">1.8</a></li>
-					<li data-target=".accordion_9"><a href="#">1.9</a></li>
-					<li data-target=".accordion_10"><a href="#">1.10</a></li>
-					<li data-target=".accordion_11"><a href="#">1.11</a></li>
-					<li data-target=".accordion_12"><a href="#">1.12</a></li>			
+					<li data-target=".accordion_1" data-open=".accordion_1" class="<?php if($_GET['di'] == 1){echo 'active';}?>"><a href="#">1.1</a></li>
+					<li data-target=".accordion_2" data-open=".accordion_2" class="<?php if($_GET['di'] == 2){echo 'active';}?>"><a href="#">1.2</a></li>
+					<li data-target=".accordion_3" data-open=".accordion_3" class="<?php if($_GET['di'] == 3){echo 'active';}?>"><a href="#">1.3</a></li>
+					<li data-target=".accordion_4" data-open=".accordion_4" class="<?php if($_GET['di'] == 4){echo 'active';}?>"><a href="#">1.4</a></li>
+					<li data-target=".accordion_5" data-open=".accordion_5" class="<?php if($_GET['di'] == 5){echo 'active';}?>"><a href="#">1.5</a></li>
+					<li data-target=".accordion_6" data-open=".accordion_6" class="<?php if($_GET['di'] == 6){echo 'active';}?>"><a href="#">1.6</a></li>
+					<li data-target=".accordion_7" data-open=".accordion_7" class="<?php if($_GET['di'] == 7){echo 'active';}?>"><a href="#">1.7</a></li>
+					<li data-target=".accordion_8" data-open=".accordion_8" class="<?php if($_GET['di'] == 8){echo 'active';}?>"><a href="#">1.8</a></li>
+					<li data-target=".accordion_9" data-open=".accordion_9" class="<?php if($_GET['di'] == 9){echo 'active';}?>"><a href="#">1.9</a></li>
+					<li data-target=".accordion_10" data-open=".accordion_10" class="<?php if($_GET['di'] == 10){echo 'active';}?>"><a href="#">1.10</a></li>
+					<li data-target=".accordion_11" data-open=".accordion_11" class="<?php if($_GET['di'] == 11){echo 'active';}?>"><a href="#">1.11</a></li>
+					<li data-target=".accordion_12" data-open=".accordion_12" class="<?php if($_GET['di'] == 12){echo 'active';}?>"><a href="#">1.12</a></li>			
 				</ul>
 			</div>
 		</div>
@@ -93,7 +94,7 @@
 			</div>
 		</div>
 		<div class="block3">
-			<div class="accordion_1 accordeon_tab">
+			<div class="accordion_1 accordeon_tab <?php if($_GET['di'] == 1){echo 'active';}?>">
 				<div class="frame">
 					<div class="head-accord">
 						<h3>ДИ-1.1</h3>
@@ -217,7 +218,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="accordion_2 accordeon_tab">
+			<div class="accordion_2 accordeon_tab <?php if($_GET['di'] == 2){echo 'active';}?>">
 				<div class="frame">
 					<div class="head-accord">
 						<h3>ДИ-1.2</h3>
@@ -278,7 +279,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="accordion_3 accordeon_tab">
+			<div class="accordion_3 accordeon_tab <?php if($_GET['di'] == 3){echo 'active';}?>">
 				<div class="frame">
 					<div class="head-accord">
 						<h3>ДИ-1.3</h3>
@@ -336,7 +337,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="accordion_4 accordeon_tab">
+			<div class="accordion_4 accordeon_tab <?php if($_GET['di'] == 4){echo 'active';}?>">
 				<div class="frame">
 					<div class="head-accord">
 						<h3>ДИ-1.4</h3>
@@ -395,7 +396,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="accordion_5 accordeon_tab">
+			<div class="accordion_5 accordeon_tab <?php if($_GET['di'] == 5){echo 'active';}?>">
 				<div class="frame">
 					<div class="head-accord">
 						<h3>ДИ-1.5</h3>
@@ -454,7 +455,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="accordion_6 accordeon_tab">
+			<div class="accordion_6 accordeon_tab <?php if($_GET['di'] == 6){echo 'active';}?>">
 				<div class="frame">
 					<div class="head-accord">
 						<h3>ДИ-1.6</h3>
@@ -512,7 +513,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="accordion_7 accordeon_tab">
+			<div class="accordion_7 accordeon_tab <?php if($_GET['di'] == 7){echo 'active';}?>">
 				<div class="frame">
 					<div class="head-accord">
 						<h3>ДИ-1.7</h3>
@@ -523,7 +524,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="accordion_8 accordeon_tab">
+			<div class="accordion_8 accordeon_tab <?php if($_GET['di'] == 8){echo 'active';}?>">
 				<div class="frame">
 					<div class="head-accord">
 						<h3>ДИ-1.8</h3>
@@ -534,7 +535,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="accordion_9 accordeon_tab">
+			<div class="accordion_9 accordeon_tab <?php if($_GET['di'] == 9){echo 'active';}?>">
 				<div class="frame">
 					<div class="head-accord">
 						<h3>ДИ-1.9</h3>
@@ -545,7 +546,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="accordion_10 accordeon_tab">
+			<div class="accordion_10 accordeon_tab <?php if($_GET['di'] == 10){echo 'active';}?>">
 				<div class="frame">
 					<div class="head-accord">
 						<h3>ДИ-1.10</h3>
@@ -556,7 +557,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="accordion_11 accordeon_tab">
+			<div class="accordion_11 accordeon_tab <?php if($_GET['di'] == 11){echo 'active';}?>">
 				<div class="frame">
 					<div class="head-accord">
 						<h3>ДИ-1.11</h3>
@@ -567,7 +568,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="accordion_12 accordeon_tab">
+			<div class="accordion_12 accordeon_tab <?php if($_GET['di'] == 12){echo 'active';}?>">
 				<div class="frame">
 					<div class="head-accord">
 						<h3>ДИ-1.12</h3>

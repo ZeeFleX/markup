@@ -2,6 +2,12 @@ $(document).ready(function(){
 	//Аккордеон
 	var $tabs = $('.accordeon_tab');
 	var $menu = $('.fixed-menu-container');
+	var url  = new Url;
+
+	if($('.accordeon_tab.active').length > 0){
+		$.scrollTo('.accordeon_tab.active', 1000);
+	}
+
 	$.each($tabs, function(key, tab){
 		var $tab = $(tab);
 		var $handler = $tab.find('.head-accord');
@@ -14,6 +20,8 @@ $(document).ready(function(){
 			$menuItems.eq($tab.index('.accordeon_tab') + 1)
 				.addClass('active')
 				.siblings('li').removeClass('active');
+			url.query.di = $tab.index('.accordeon_tab') + 1;
+			history.pushState(null, null, url);
 		});
 	});
 	//Меню
@@ -27,6 +35,13 @@ $(document).ready(function(){
 			.addClass('active')
 			.siblings('.accordeon_tab').removeClass('active');
 		$.scrollTo(scrollTarget, 0);
+		if($(this).index('li') > 0){
+			url.query.di = $(this).index('li');
+		}else{
+			delete url.query.di;
+		}
+		
+		history.pushState(null, null, url);
 	});
 	//Стрелки
 	$('a.scroll-to.head').on('click', function(e){
@@ -37,6 +52,7 @@ $(document).ready(function(){
 		e.preventDefault();
 		$.scrollTo('.block3', 1000);
 	});
+
 });
 
 			
