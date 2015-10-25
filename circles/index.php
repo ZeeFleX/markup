@@ -205,14 +205,14 @@
 										<td class="b"><img src="images/coordinate.png"> Москва</td>
 										<td class="c">7-8 января</td>
 										<td class="d">
-											<a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2158" class="fee">Внести первый взнос</a>
-											<a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2159" class="payment">Оплатить 100% участие</a>
+											<a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2158" class="fee" target="_blank">Внести первый взнос</a>
+											<a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2159" class="payment" target="_blank">Оплатить 100% участие</a>
 										</td>
 									</tr>
 								</tbody>
 							</table>
 							<div class="payment">
-								<p>Внесение первого взноса <a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2158" class="link">закрепляет за Вами место на тренинге и стоимость участия в нем.</a></p>
+								<p>Внесение первого взноса <a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2158" class="link" target="_blank">закрепляет за Вами место на тренинге и стоимость участия в нем.</a></p>
 							</div>
 						</div>
 					</div>
@@ -266,14 +266,14 @@
 										<td class="b"><img src="images/coordinate.png"> Москва</td>
 										<td class="c">12-13 декабря</td>
 										<td class="d">
-											<a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2160" class="fee">Внести первый взнос</a>
-											<a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2161" class="payment">Оплатить 100% участие</a>
+											<a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2160" class="fee" target="_blank">Внести первый взнос</a>
+											<a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2161" class="payment" target="_blank">Оплатить 100% участие</a>
 										</td>
 									</tr>									
 								</tbody>
 							</table>
 							<div class="payment">
-								<p>Внесение первого взноса <a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2160" class="link">закрепляет за Вами место на тренинге и стоимость участия в нем.</a></p>
+								<p>Внесение первого взноса <a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2160" class="link" target="_blank">закрепляет за Вами место на тренинге и стоимость участия в нем.</a></p>
 							</div>
 						</div>
 					</div>
@@ -324,14 +324,14 @@
 										<td class="b"><img src="images/coordinate.png"> Москва</td>
 										<td class="c">9-10 января</td>
 										<td class="d">
-											<a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2175" class="fee">Внести первый взнос</a>
-											<a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2176" class="payment">Оплатить 100% участие</a>
+											<a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2175" class="fee" target="_blank">Внести первый взнос</a>
+											<a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2176" class="payment" target="_blank">Оплатить 100% участие</a>
 										</td>
 									</tr>									
 								</tbody>
 							</table>
 							<div class="payment">
-								<p>Внесение первого взноса <a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2175" class="link">закрепляет за Вами место на тренинге и стоимость участия в нем.</a></p>
+								<p>Внесение первого взноса <a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2175" class="link" target="_blank">закрепляет за Вами место на тренинге и стоимость участия в нем.</a></p>
 							</div>
 						</div>
 					</div>
@@ -383,14 +383,14 @@
 										<td class="b"><img src="images/coordinate.png"> Москва</td>
 										<td class="c">13-14 февраля</td>
 										<td class="d">
-											<a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2177" class="fee">Внести первый взнос</a>
-											<a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2178" class="payment">Оплатить 100% участие</a>
+											<a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2177" class="fee" target="_blank">Внести первый взнос</a>
+											<a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2178" class="payment" target="_blank">Оплатить 100% участие</a>
 										</td>
 									</tr>									
 								</tbody>
 							</table>
 							<div class="payment">
-								<p>Внесение первого взноса <a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2177" class="link">закрепляет за Вами место на тренинге и стоимость участия в нем.</a></p>
+								<p>Внесение первого взноса <a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2177" class="link" target="_blank">закрепляет за Вами место на тренинге и стоимость участия в нем.</a></p>
 							</div>
 						</div>
 					</div>
@@ -442,14 +442,14 @@
 										<td class="b"><img src="images/coordinate.png"> Москва</td>
 										<td class="c">2-3 апреля</td>
 										<td class="d">
-											<a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2179" class="fee">Внести первый взнос</a>
-											<a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2180" class="payment">Оплатить 100% участие</a>
+											<a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2179" class="fee" target="_blank">Внести первый взнос</a>
+											<a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2180" class="payment" target="_blank">Оплатить 100% участие</a>
 										</td>
 									</tr>									
 								</tbody>
 							</table>
 							<div class="payment">
-								<p>Внесение первого взноса <a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2179" class="link">закрепляет за Вами место на тренинге и стоимость участия в нем.</a></p>
+								<p>Внесение первого взноса <a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2179" class="link" target="_blank">закрепляет за Вами место на тренинге и стоимость участия в нем.</a></p>
 							</div>
 						</div>
 					</div>
@@ -500,14 +500,14 @@
 										<td class="b"><img src="images/coordinate.png"> Москва</td>
 										<td class="c">21-22 мая</td>
 										<td class="d">
-											<a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2181" class="fee">Внести первый взнос</a>
-											<a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2182" class="payment">Оплатить 100% участие</a>
+											<a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2181" class="fee" target="_blank">Внести первый взнос</a>
+											<a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2182" class="payment" target="_blank">Оплатить 100% участие</a>
 										</td>
 									</tr>									
 								</tbody>
 							</table>
 							<div class="payment">
-								<p>Внесение первого взноса <a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2181" class="link">закрепляет за Вами место на тренинге и стоимость участия в нем.</a></p>
+								<p>Внесение первого взноса <a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2181" class="link" target="_blank">закрепляет за Вами место на тренинге и стоимость участия в нем.</a></p>
 							</div>
 						</div>
 					</div>
@@ -517,7 +517,7 @@
 				<div class="frame">
 					<div class="head-accord">
 						<h3>ДИ-1.7</h3>
-						<p></p>
+						<p>Подробнее позже</p>
 					</div>
 					<div class="content">
 						<p></p>
@@ -528,7 +528,7 @@
 				<div class="frame">
 					<div class="head-accord">
 						<h3>ДИ-1.8</h3>
-						<p></p>
+						<p>Подробнее позже</p>
 					</div>
 					<div class="content">
 						<p></p>
@@ -539,7 +539,7 @@
 				<div class="frame">
 					<div class="head-accord">
 						<h3>ДИ-1.9</h3>
-						<p></p>
+						<p>Подробнее позже</p>
 					</div>
 					<div class="content">
 						<p></p>
@@ -550,7 +550,7 @@
 				<div class="frame">
 					<div class="head-accord">
 						<h3>ДИ-1.10</h3>
-						<p></p>
+						<p>Подробнее позже</p>
 					</div>
 					<div class="content">
 						<p></p>
@@ -561,7 +561,7 @@
 				<div class="frame">
 					<div class="head-accord">
 						<h3>ДИ-1.11</h3>
-						<p></p>
+						<p>Подробнее позже</p>
 					</div>
 					<div class="content">
 						<p></p>
@@ -572,7 +572,7 @@
 				<div class="frame">
 					<div class="head-accord">
 						<h3>ДИ-1.12</h3>
-						<p></p>
+						<p>Подробнее позже</p>
 					</div>
 					<div class="content">
 						<p></p>

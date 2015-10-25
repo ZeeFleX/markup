@@ -43,6 +43,7 @@ $(document).ready(function(){
 		
 		history.pushState(null, null, url);
 	});
+
 	//Стрелки
 	$('a.scroll-to.head').on('click', function(e){
 		e.preventDefault();
