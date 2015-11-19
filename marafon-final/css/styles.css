@@ -1,0 +1,399 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,300,700,600&subset=latin,cyrillic);
+/* line 3, styles.less */
+* {
+  position: relative;
+}
+/* line 7, styles.less */
+html {
+  font-size: 62.5%;
+}
+/* line 11, styles.less */
+body {
+  margin: 0;
+  padding: 0;
+}
+/* line 16, styles.less */
+.clr {
+  clear: both;
+}
+/* line 20, styles.less */
+div.mf-header {
+  background: url('../images/bg.jpg') top center no-repeat;
+}
+/* line 22, styles.less */
+div.mf-header .mf-wrapper {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  margin: auto;
+  width: 800px;
+}
+/* line 27, styles.less */
+div.mf-header .mf-wrapper h1 {
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  font-size: 4.4rem;
+  font-weight: 700;
+  line-height: 150%;
+  text-align: center;
+  margin: 0;
+}
+/* line 36, styles.less */
+div.mf-header .mf-wrapper h4 {
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 120%;
+  text-align: center;
+  margin: 15px 0;
+}
+/* line 45, styles.less */
+div.mf-header .mf-wrapper .mf-left {
+  float: left;
+  width: 50%;
+}
+/* line 48, styles.less */
+div.mf-header .mf-wrapper .mf-left img {
+  float: left;
+  margin-left: 100px;
+}
+/* line 52, styles.less */
+div.mf-header .mf-wrapper .mf-left p {
+  font-family: "Open Sans", sans-serif;
+  color: #000000;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 100%;
+  text-align: left;
+  float: left;
+  margin: 33px 0 0 5px;
+}
+/* line 63, styles.less */
+div.mf-header .mf-wrapper .mf-right {
+  float: right;
+  width: 50%;
+}
+/* line 66, styles.less */
+div.mf-header .mf-wrapper .mf-right img {
+  float: left;
+  margin-left: 60px;
+}
+/* line 70, styles.less */
+div.mf-header .mf-wrapper .mf-right p {
+  font-family: "Open Sans", sans-serif;
+  color: #000000;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 100%;
+  text-align: left;
+  float: left;
+  margin: 33px 0 0 5px;
+}
+/* line 81, styles.less */
+div.mf-header .mf-wrapper .mf-video {
+  margin-top: 30px;
+  width: 800px;
+  height: 512px;
+}
+/* line 85, styles.less */
+div.mf-header .mf-wrapper .mf-video img {
+  float: right;
+  position: absolute;
+  top: -28px;
+  right: -10px;
+}
+/* line 92, styles.less */
+div.mf-header .mf-wrapper p {
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 140%;
+  text-align: left;
+  font-style: italic;
+  margin: 20px 0 0 0;
+}
+/* line 109, styles.less */
+div.mf-price-form .mf-wrapper {
+  margin-top: 55px;
+  padding-bottom: 50px;
+  width: 800px;
+  margin: auto;
+}
+/* line 114, styles.less */
+div.mf-price-form .mf-wrapper h2 {
+  font-family: "Open Sans", sans-serif;
+  color: #f57c00;
+  font-size: 3.0rem;
+  font-weight: 600;
+  line-height: 150%;
+  text-align: center;
+}
+/* line 122, styles.less */
+div.mf-price-form .mf-wrapper p {
+  font-family: "Open Sans", sans-serif;
+  color: #212121;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 130%;
+  text-align: center;
+}
+/* line 130, styles.less */
+div.mf-price-form .mf-wrapper .mf-left {
+  float: left;
+  width: 48%;
+}
+/* line 133, styles.less */
+div.mf-price-form .mf-wrapper .mf-left .mf-container {
+  float: right;
+  border-radius: 4px;
+  border: solid 8px #4caf50;
+  width: 260px;
+  padding: 20px;
+}
+/* line 139, styles.less */
+div.mf-price-form .mf-wrapper .mf-left .mf-container p {
+  font-family: "Open Sans", sans-serif;
+  color: #2e2e2e;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 160%;
+  text-align: center;
+  margin: 0;
+}
+/* line 148, styles.less */
+div.mf-price-form .mf-wrapper .mf-left .mf-container h3 {
+  font-family: "Open Sans", sans-serif;
+  color: #4caf50;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 135%;
+  text-align: center;
+  margin: 20px 0;
+}
+/* line 157, styles.less */
+div.mf-price-form .mf-wrapper .mf-left .mf-container .mf-price {
+  background: #e5f4e5;
+  border-radius: 4px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+/* line 162, styles.less */
+div.mf-price-form .mf-wrapper .mf-left .mf-container .mf-price p {
+  font-family: "Open Sans", sans-serif;
+  color: #212121;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 130%;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 171, styles.less */
+div.mf-price-form .mf-wrapper .mf-left .mf-container .mf-price a {
+  display: block;
+  background: #4caf50;
+  border-radius: 4px;
+  box-shadow: 1px 2px 1px 0px rgba(0, 0, 0, 0.29);
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 160%;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 5px;
+  margin-top: 15px;
+}
+/* line 186, styles.less */
+div.mf-price-form .mf-wrapper .mf-left .mf-container .mf-price a:hover {
+  background: #5dc061;
+}
+/* line 192, styles.less */
+div.mf-price-form .mf-wrapper .mf-left .mf-container p span {
+  color: #000000;
+  font-weight: 600;
+}
+/* line 198, styles.less */
+div.mf-price-form .mf-wrapper .mf-left .mf-container ul.mf-marker {
+  margin: 20px 0;
+  padding: 0;
+}
+/* line 201, styles.less */
+div.mf-price-form .mf-wrapper .mf-left .mf-container ul.mf-marker li {
+  font-family: "Open Sans", sans-serif;
+  color: #000000;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 150%;
+  text-align: left;
+  list-style: none;
+  background: url('../images/marker.png') left 5px no-repeat;
+  padding-left: 20px;
+  margin: 10px 0;
+}
+/* line 214, styles.less */
+div.mf-price-form .mf-wrapper .mf-left .mf-container ul.mf-marker-v {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+/* line 217, styles.less */
+div.mf-price-form .mf-wrapper .mf-left .mf-container ul.mf-marker-v li {
+  font-family: "Open Sans", sans-serif;
+  color: #2e2e2e;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 150%;
+  text-align: left;
+  list-style: none;
+  background: url('../images/marker-v.png') left 5px no-repeat;
+  padding-left: 20px;
+  margin: 10px 0;
+}
+/* line 232, styles.less */
+div.mf-price-form .mf-wrapper .mf-right {
+  float: right;
+  width: 48%;
+}
+/* line 235, styles.less */
+div.mf-price-form .mf-wrapper .mf-right .mf-container {
+  float: left;
+  border-radius: 4px;
+  border: solid 8px #ff9800;
+  width: 260px;
+  padding: 20px;
+}
+/* line 241, styles.less */
+div.mf-price-form .mf-wrapper .mf-right .mf-container p {
+  font-family: "Open Sans", sans-serif;
+  color: #2e2e2e;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 160%;
+  text-align: center;
+  margin: 0;
+}
+/* line 250, styles.less */
+div.mf-price-form .mf-wrapper .mf-right .mf-container h3 {
+  font-family: "Open Sans", sans-serif;
+  color: #f57c00;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 135%;
+  text-align: center;
+  margin: 20px 0;
+}
+/* line 259, styles.less */
+div.mf-price-form .mf-wrapper .mf-right .mf-container .mf-price {
+  background: #fff3d9;
+  border-radius: 4px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+/* line 264, styles.less */
+div.mf-price-form .mf-wrapper .mf-right .mf-container .mf-price p {
+  font-family: "Open Sans", sans-serif;
+  color: #212121;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 130%;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 273, styles.less */
+div.mf-price-form .mf-wrapper .mf-right .mf-container .mf-price a {
+  display: block;
+  background: #ff9800;
+  border-radius: 4px;
+  box-shadow: 1px 2px 1px 0px rgba(0, 0, 0, 0.29);
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 160%;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 5px;
+  margin-top: 15px;
+}
+/* line 288, styles.less */
+div.mf-price-form .mf-wrapper .mf-right .mf-container .mf-price a:hover {
+  background: #ffa911;
+}
+/* line 294, styles.less */
+div.mf-price-form .mf-wrapper .mf-right .mf-container p span {
+  color: #000000;
+  font-weight: 600;
+}
+/* line 300, styles.less */
+div.mf-price-form .mf-wrapper .mf-right .mf-container ul.mf-marker {
+  margin: 20px 0;
+  padding: 0;
+}
+/* line 303, styles.less */
+div.mf-price-form .mf-wrapper .mf-right .mf-container ul.mf-marker li {
+  font-family: "Open Sans", sans-serif;
+  color: #000000;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 150%;
+  text-align: left;
+  list-style: none;
+  background: url('../images/marker.png') left 5px no-repeat;
+  padding-left: 20px;
+  margin: 10px 0;
+}
+/* line 314, styles.less */
+div.mf-price-form .mf-wrapper .mf-right .mf-container ul.mf-marker li span.italic {
+  font-style: italic;
+  font-weight: 400;
+}
+/* line 320, styles.less */
+div.mf-price-form .mf-wrapper .mf-right .mf-container ul.mf-marker-v {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+/* line 323, styles.less */
+div.mf-price-form .mf-wrapper .mf-right .mf-container ul.mf-marker-v li {
+  font-family: "Open Sans", sans-serif;
+  color: #2e2e2e;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 150%;
+  text-align: left;
+  list-style: none;
+  background: url('../images/marker-v.png') left 5px no-repeat;
+  padding-left: 20px;
+  margin: 10px 0;
+}
+/* line 334, styles.less */
+div.mf-price-form .mf-wrapper .mf-right .mf-container ul.mf-marker-v li span.italic {
+  font-style: italic;
+  font-weight: 400;
+}
+/* line 338, styles.less */
+div.mf-price-form .mf-wrapper .mf-right .mf-container ul.mf-marker-v li span.bold {
+  font-weight: 600;
+}
+/* line 348, styles.less */
+div.mf-footer {
+  background: #f5f5f5;
+}
+/* line 350, styles.less */
+div.mf-footer p {
+  font-family: "Open Sans", sans-serif;
+  color: #212121;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 140%;
+  text-align: center;
+  text-shadow: 0px 1px 0px #ffffff;
+  margin: 0;
+  padding: 20px 0;
+}
+/* line 360, styles.less */
+div.mf-footer p img {
+  padding-right: 5px;
+}
+/*# sourceMappingURL=styles.css.map */

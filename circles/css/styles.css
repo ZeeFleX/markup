@@ -441,7 +441,7 @@ div.block3 .accordion_1 .frame .content ul.v li {
   padding-left: 25px;
   line-height: 150%;
   list-style: none;
-  background: url('../images/marker-v.png') top left no-repeat;
+  background: url('../images/marker-v.png') left 8px no-repeat;
 }
 /* line 412, styles.less */
 div.block3 .accordion_1 .frame .content .question1 {
@@ -687,26 +687,67 @@ div.block3 .accordion_2 .frame .content p {
 div.block3 .accordion_2 .frame .content p span {
   font-weight: 600;
 }
-/* line 651, styles.less */
+/* line 647, styles.less */
+div.block3 .accordion_2 .frame .content ul.x {
+  margin: 20px 0;
+  padding-left: 180px;
+}
+/* line 650, styles.less */
+div.block3 .accordion_2 .frame .content ul.x li {
+  font-family: "Open Sans", sans-serif;
+  color: #212121;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: left;
+  margin: 0;
+  padding: 10px 20px;
+  line-height: 170%;
+  list-style: none;
+  background: url('../images/marker-x.png') center left no-repeat;
+}
+/* line 663, styles.less */
+div.block3 .accordion_2 .frame .content h5 {
+  margin: 20px 140px;
+}
+/* line 666, styles.less */
+div.block3 .accordion_2 .frame .content ul.v {
+  margin: 0;
+  padding: 20px 140px 0px 180px;
+}
+/* line 669, styles.less */
+div.block3 .accordion_2 .frame .content ul.v li {
+  font-family: "Open Sans", sans-serif;
+  color: #212121;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: left;
+  margin: 0;
+  padding-bottom: 20px;
+  padding-left: 25px;
+  line-height: 150%;
+  list-style: none;
+  background: url('../images/marker-v.png') left 8px no-repeat;
+}
+/* line 687, styles.less */
 div.block3 .accordion_2 .frame .content .value .left {
   float: left;
   width: 30%;
 }
-/* line 654, styles.less */
+/* line 690, styles.less */
 div.block3 .accordion_2 .frame .content .value .left img {
   float: right;
 }
-/* line 658, styles.less */
+/* line 694, styles.less */
 div.block3 .accordion_2 .frame .content .value .right {
   float: right;
   width: 70%;
 }
-/* line 661, styles.less */
+/* line 697, styles.less */
 div.block3 .accordion_2 .frame .content .value .right ul.s {
   margin: auto;
   padding-left: 40px;
 }
-/* line 664, styles.less */
+/* line 700, styles.less */
 div.block3 .accordion_2 .frame .content .value .right ul.s li {
   font-family: "Open Sans", sans-serif;
   color: #212121;
@@ -719,21 +760,21 @@ div.block3 .accordion_2 .frame .content .value .right ul.s li {
   list-style: none;
   background: url('../images/marker.png') top left no-repeat;
 }
-/* line 683, styles.less */
+/* line 719, styles.less */
 div.block3 .accordion_2 .frame .content .format p {
   padding: 10px 0 10px 355px;
 }
-/* line 688, styles.less */
+/* line 724, styles.less */
 div.block3 .accordion_2 .frame .content .timetable h2 {
   color: #582257;
 }
-/* line 691, styles.less */
+/* line 727, styles.less */
 div.block3 .accordion_2 .frame .content .timetable table {
   width: 85%;
   margin: auto;
   border-collapse: collapse;
 }
-/* line 697, styles.less */
+/* line 733, styles.less */
 div.block3 .accordion_2 .frame .content .timetable table thead tr th {
   font-family: "Open Sans", sans-serif;
   color: #8b7f8d;
@@ -742,12 +783,12 @@ div.block3 .accordion_2 .frame .content .timetable table thead tr th {
   text-align: left;
   text-transform: uppercase;
 }
-/* line 711, styles.less */
+/* line 747, styles.less */
 div.block3 .accordion_2 .frame .content .timetable table tbody tr td {
   padding: 20px 0;
   border-top: dashed 1px #b6b6b6;
 }
-/* line 715, styles.less */
+/* line 751, styles.less */
 div.block3 .accordion_2 .frame .content .timetable table tbody tr td.a {
   font-family: "Open Sans", sans-serif;
   color: #212121;
@@ -755,7 +796,7 @@ div.block3 .accordion_2 .frame .content .timetable table tbody tr td.a {
   font-weight: 600;
   text-align: left;
 }
-/* line 722, styles.less */
+/* line 758, styles.less */
 div.block3 .accordion_2 .frame .content .timetable table tbody tr td.b {
   font-family: "Open Sans", sans-serif;
   color: #212121;
@@ -763,7 +804,7 @@ div.block3 .accordion_2 .frame .content .timetable table tbody tr td.b {
   font-weight: 400;
   text-align: left;
 }
-/* line 729, styles.less */
+/* line 765, styles.less */
 div.block3 .accordion_2 .frame .content .timetable table tbody tr td.c {
   font-family: "Open Sans", sans-serif;
   color: #212121;
@@ -771,7 +812,7 @@ div.block3 .accordion_2 .frame .content .timetable table tbody tr td.c {
   font-weight: 400;
   text-align: left;
 }
-/* line 737, styles.less */
+/* line 773, styles.less */
 div.block3 .accordion_2 .frame .content .timetable table tbody tr td.d a.fee {
   font-family: "Open Sans", sans-serif;
   color: #a550a2;
@@ -785,7 +826,7 @@ div.block3 .accordion_2 .frame .content .timetable table tbody tr td.d a.fee {
   text-decoration: none;
   margin: 10px 0;
 }
-/* line 750, styles.less */
+/* line 786, styles.less */
 div.block3 .accordion_2 .frame .content .timetable table tbody tr td.d a.payment {
   font-family: "Open Sans", sans-serif;
   color: #ffffff;
@@ -800,18 +841,18 @@ div.block3 .accordion_2 .frame .content .timetable table tbody tr td.d a.payment
   border: solid 2px #a550a2;
   margin: 10px 0;
 }
-/* line 766, styles.less */
+/* line 802, styles.less */
 div.block3 .accordion_2 .frame .content .timetable table tbody tr:first-child td {
   border: none;
 }
-/* line 774, styles.less */
+/* line 810, styles.less */
 div.block3 .accordion_2 .frame .content .payment {
   display: block;
   border-radius: 4px;
   background: #582257;
   margin: 10px;
 }
-/* line 779, styles.less */
+/* line 815, styles.less */
 div.block3 .accordion_2 .frame .content .payment p {
   font-family: "Open Sans", sans-serif;
   color: #ebe9eb;
@@ -820,7 +861,7 @@ div.block3 .accordion_2 .frame .content .payment p {
   text-align: center;
   padding: 20px 110px;
 }
-/* line 786, styles.less */
+/* line 822, styles.less */
 div.block3 .accordion_2 .frame .content .payment p a.link {
   font-family: "Open Sans", sans-serif;
   color: #ebe9eb;
@@ -828,12 +869,12 @@ div.block3 .accordion_2 .frame .content .payment p a.link {
   font-weight: 400;
   text-align: center;
 }
-/* line 798, styles.less */
+/* line 834, styles.less */
 div.block3 .accordion_3 {
   margin: auto;
   margin-top: 40px;
 }
-/* line 801, styles.less */
+/* line 837, styles.less */
 div.block3 .accordion_3 .frame {
   background: -webkit-linear-gradient(90deg, #3f9fbb 0%, #3f6bbb 100%);
   background: -moz-linear-gradient(90deg, #3f9fbb 0%, #3f6bbb 100%);
@@ -846,7 +887,7 @@ div.block3 .accordion_3 .frame {
   padding: 20px 0;
   border-radius: 5px;
 }
-/* line 812, styles.less */
+/* line 848, styles.less */
 div.block3 .accordion_3 .frame .head-accord {
   background: url('../images/bg-accord-noactiv.png') left center no-repeat;
   position: absolute;
@@ -856,20 +897,20 @@ div.block3 .accordion_3 .frame .head-accord {
   height: 120px;
   z-index: 1;
 }
-/* line 820, styles.less */
+/* line 856, styles.less */
 div.block3 .accordion_3 .frame .head-accord h3 {
   text-align: left;
   color: #ffffff;
   margin: 15px 0 0 35px;
 }
-/* line 825, styles.less */
+/* line 861, styles.less */
 div.block3 .accordion_3 .frame .head-accord p {
   text-align: left;
   color: #f9e0f8;
   margin: 5px 0 0 35px;
   padding: 0;
 }
-/* line 832, styles.less */
+/* line 868, styles.less */
 div.block3 .accordion_3 .frame .content {
   background: #ffffff;
   width: 900px;
@@ -879,7 +920,7 @@ div.block3 .accordion_3 .frame .content {
   padding-bottom: 5px;
   padding-top: 140px;
 }
-/* line 840, styles.less */
+/* line 876, styles.less */
 div.block3 .accordion_3 .frame .content p {
   color: #212121;
   margin: 0;
@@ -887,30 +928,53 @@ div.block3 .accordion_3 .frame .content p {
   text-align: left;
   line-height: 170%;
 }
-/* line 846, styles.less */
+/* line 882, styles.less */
 div.block3 .accordion_3 .frame .content p span {
   font-weight: 600;
 }
-/* line 854, styles.less */
+/* line 886, styles.less */
+div.block3 .accordion_3 .frame .content h5 {
+  margin: 20px 140px;
+}
+/* line 889, styles.less */
+div.block3 .accordion_3 .frame .content ul.v {
+  margin: 0;
+  padding: 20px 140px 0px 180px;
+}
+/* line 892, styles.less */
+div.block3 .accordion_3 .frame .content ul.v li {
+  font-family: "Open Sans", sans-serif;
+  color: #212121;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: left;
+  margin: 0;
+  padding-bottom: 20px;
+  padding-left: 25px;
+  line-height: 150%;
+  list-style: none;
+  background: url('../images/marker-v.png') left 8px no-repeat;
+}
+/* line 910, styles.less */
 div.block3 .accordion_3 .frame .content .value .left {
   float: left;
   width: 30%;
 }
-/* line 857, styles.less */
+/* line 913, styles.less */
 div.block3 .accordion_3 .frame .content .value .left img {
   float: right;
 }
-/* line 861, styles.less */
+/* line 917, styles.less */
 div.block3 .accordion_3 .frame .content .value .right {
   float: right;
   width: 70%;
 }
-/* line 864, styles.less */
+/* line 920, styles.less */
 div.block3 .accordion_3 .frame .content .value .right ul.s {
   margin: auto;
   padding-left: 40px;
 }
-/* line 867, styles.less */
+/* line 923, styles.less */
 div.block3 .accordion_3 .frame .content .value .right ul.s li {
   font-family: "Open Sans", sans-serif;
   color: #212121;
@@ -923,21 +987,21 @@ div.block3 .accordion_3 .frame .content .value .right ul.s li {
   list-style: none;
   background: url('../images/marker.png') top left no-repeat;
 }
-/* line 886, styles.less */
+/* line 942, styles.less */
 div.block3 .accordion_3 .frame .content .format p {
   padding: 10px 0 10px 355px;
 }
-/* line 891, styles.less */
+/* line 947, styles.less */
 div.block3 .accordion_3 .frame .content .timetable h2 {
   color: #582257;
 }
-/* line 894, styles.less */
+/* line 950, styles.less */
 div.block3 .accordion_3 .frame .content .timetable table {
   width: 85%;
   margin: auto;
   border-collapse: collapse;
 }
-/* line 900, styles.less */
+/* line 956, styles.less */
 div.block3 .accordion_3 .frame .content .timetable table thead tr th {
   font-family: "Open Sans", sans-serif;
   color: #8b7f8d;
@@ -946,12 +1010,12 @@ div.block3 .accordion_3 .frame .content .timetable table thead tr th {
   text-align: left;
   text-transform: uppercase;
 }
-/* line 914, styles.less */
+/* line 970, styles.less */
 div.block3 .accordion_3 .frame .content .timetable table tbody tr td {
   padding: 20px 0;
   border-top: dashed 1px #b6b6b6;
 }
-/* line 918, styles.less */
+/* line 974, styles.less */
 div.block3 .accordion_3 .frame .content .timetable table tbody tr td.a {
   font-family: "Open Sans", sans-serif;
   color: #212121;
@@ -959,7 +1023,7 @@ div.block3 .accordion_3 .frame .content .timetable table tbody tr td.a {
   font-weight: 600;
   text-align: left;
 }
-/* line 925, styles.less */
+/* line 981, styles.less */
 div.block3 .accordion_3 .frame .content .timetable table tbody tr td.b {
   font-family: "Open Sans", sans-serif;
   color: #212121;
@@ -967,7 +1031,7 @@ div.block3 .accordion_3 .frame .content .timetable table tbody tr td.b {
   font-weight: 400;
   text-align: left;
 }
-/* line 932, styles.less */
+/* line 988, styles.less */
 div.block3 .accordion_3 .frame .content .timetable table tbody tr td.c {
   font-family: "Open Sans", sans-serif;
   color: #212121;
@@ -975,7 +1039,7 @@ div.block3 .accordion_3 .frame .content .timetable table tbody tr td.c {
   font-weight: 400;
   text-align: left;
 }
-/* line 940, styles.less */
+/* line 996, styles.less */
 div.block3 .accordion_3 .frame .content .timetable table tbody tr td.d a.fee {
   font-family: "Open Sans", sans-serif;
   color: #a550a2;
@@ -989,7 +1053,7 @@ div.block3 .accordion_3 .frame .content .timetable table tbody tr td.d a.fee {
   text-decoration: none;
   margin: 10px 0;
 }
-/* line 953, styles.less */
+/* line 1009, styles.less */
 div.block3 .accordion_3 .frame .content .timetable table tbody tr td.d a.payment {
   font-family: "Open Sans", sans-serif;
   color: #ffffff;
@@ -1004,18 +1068,18 @@ div.block3 .accordion_3 .frame .content .timetable table tbody tr td.d a.payment
   border: solid 2px #a550a2;
   margin: 10px 0;
 }
-/* line 969, styles.less */
+/* line 1025, styles.less */
 div.block3 .accordion_3 .frame .content .timetable table tbody tr:first-child td {
   border: none;
 }
-/* line 977, styles.less */
+/* line 1033, styles.less */
 div.block3 .accordion_3 .frame .content .payment {
   display: block;
   border-radius: 4px;
   background: #582257;
   margin: 10px;
 }
-/* line 982, styles.less */
+/* line 1038, styles.less */
 div.block3 .accordion_3 .frame .content .payment p {
   font-family: "Open Sans", sans-serif;
   color: #ebe9eb;
@@ -1024,7 +1088,7 @@ div.block3 .accordion_3 .frame .content .payment p {
   text-align: center;
   padding: 20px 110px;
 }
-/* line 989, styles.less */
+/* line 1045, styles.less */
 div.block3 .accordion_3 .frame .content .payment p a.link {
   font-family: "Open Sans", sans-serif;
   color: #ebe9eb;
@@ -1032,12 +1096,12 @@ div.block3 .accordion_3 .frame .content .payment p a.link {
   font-weight: 400;
   text-align: center;
 }
-/* line 1001, styles.less */
+/* line 1057, styles.less */
 div.block3 .accordion_4 {
   margin: auto;
   margin-top: 40px;
 }
-/* line 1004, styles.less */
+/* line 1060, styles.less */
 div.block3 .accordion_4 .frame {
   background: -webkit-linear-gradient(90deg, #3fbba3 0%, #3f9fbb 100%);
   background: -moz-linear-gradient(90deg, #3fbba3 0%, #3f9fbb 100%);
@@ -1050,7 +1114,7 @@ div.block3 .accordion_4 .frame {
   padding: 20px 0;
   border-radius: 5px;
 }
-/* line 1015, styles.less */
+/* line 1071, styles.less */
 div.block3 .accordion_4 .frame .head-accord {
   background: url('../images/bg-accord-noactiv.png') left center no-repeat;
   position: absolute;
@@ -1060,20 +1124,20 @@ div.block3 .accordion_4 .frame .head-accord {
   height: 120px;
   z-index: 1;
 }
-/* line 1023, styles.less */
+/* line 1079, styles.less */
 div.block3 .accordion_4 .frame .head-accord h3 {
   text-align: left;
   color: #ffffff;
   margin: 15px 0 0 35px;
 }
-/* line 1028, styles.less */
+/* line 1084, styles.less */
 div.block3 .accordion_4 .frame .head-accord p {
   text-align: left;
   color: #f9e0f8;
   margin: 5px 0 0 35px;
   padding: 0;
 }
-/* line 1035, styles.less */
+/* line 1091, styles.less */
 div.block3 .accordion_4 .frame .content {
   background: #ffffff;
   width: 900px;
@@ -1083,7 +1147,7 @@ div.block3 .accordion_4 .frame .content {
   padding-bottom: 5px;
   padding-top: 140px;
 }
-/* line 1043, styles.less */
+/* line 1099, styles.less */
 div.block3 .accordion_4 .frame .content p {
   color: #212121;
   margin: 0;
@@ -1091,30 +1155,30 @@ div.block3 .accordion_4 .frame .content p {
   text-align: left;
   line-height: 170%;
 }
-/* line 1049, styles.less */
+/* line 1105, styles.less */
 div.block3 .accordion_4 .frame .content p span {
   font-weight: 600;
 }
-/* line 1057, styles.less */
+/* line 1113, styles.less */
 div.block3 .accordion_4 .frame .content .value .left {
   float: left;
   width: 30%;
 }
-/* line 1060, styles.less */
+/* line 1116, styles.less */
 div.block3 .accordion_4 .frame .content .value .left img {
   float: right;
 }
-/* line 1064, styles.less */
+/* line 1120, styles.less */
 div.block3 .accordion_4 .frame .content .value .right {
   float: right;
   width: 70%;
 }
-/* line 1067, styles.less */
+/* line 1123, styles.less */
 div.block3 .accordion_4 .frame .content .value .right ul.s {
   margin: auto;
   padding-left: 40px;
 }
-/* line 1070, styles.less */
+/* line 1126, styles.less */
 div.block3 .accordion_4 .frame .content .value .right ul.s li {
   font-family: "Open Sans", sans-serif;
   color: #212121;
@@ -1127,21 +1191,21 @@ div.block3 .accordion_4 .frame .content .value .right ul.s li {
   list-style: none;
   background: url('../images/marker.png') top left no-repeat;
 }
-/* line 1089, styles.less */
+/* line 1145, styles.less */
 div.block3 .accordion_4 .frame .content .format p {
   padding: 10px 0 10px 355px;
 }
-/* line 1094, styles.less */
+/* line 1150, styles.less */
 div.block3 .accordion_4 .frame .content .timetable h2 {
   color: #582257;
 }
-/* line 1097, styles.less */
+/* line 1153, styles.less */
 div.block3 .accordion_4 .frame .content .timetable table {
   width: 85%;
   margin: auto;
   border-collapse: collapse;
 }
-/* line 1103, styles.less */
+/* line 1159, styles.less */
 div.block3 .accordion_4 .frame .content .timetable table thead tr th {
   font-family: "Open Sans", sans-serif;
   color: #8b7f8d;
@@ -1150,12 +1214,12 @@ div.block3 .accordion_4 .frame .content .timetable table thead tr th {
   text-align: left;
   text-transform: uppercase;
 }
-/* line 1117, styles.less */
+/* line 1173, styles.less */
 div.block3 .accordion_4 .frame .content .timetable table tbody tr td {
   padding: 20px 0;
   border-top: dashed 1px #b6b6b6;
 }
-/* line 1121, styles.less */
+/* line 1177, styles.less */
 div.block3 .accordion_4 .frame .content .timetable table tbody tr td.a {
   font-family: "Open Sans", sans-serif;
   color: #212121;
@@ -1163,7 +1227,7 @@ div.block3 .accordion_4 .frame .content .timetable table tbody tr td.a {
   font-weight: 600;
   text-align: left;
 }
-/* line 1128, styles.less */
+/* line 1184, styles.less */
 div.block3 .accordion_4 .frame .content .timetable table tbody tr td.b {
   font-family: "Open Sans", sans-serif;
   color: #212121;
@@ -1171,7 +1235,7 @@ div.block3 .accordion_4 .frame .content .timetable table tbody tr td.b {
   font-weight: 400;
   text-align: left;
 }
-/* line 1135, styles.less */
+/* line 1191, styles.less */
 div.block3 .accordion_4 .frame .content .timetable table tbody tr td.c {
   font-family: "Open Sans", sans-serif;
   color: #212121;
@@ -1179,7 +1243,7 @@ div.block3 .accordion_4 .frame .content .timetable table tbody tr td.c {
   font-weight: 400;
   text-align: left;
 }
-/* line 1143, styles.less */
+/* line 1199, styles.less */
 div.block3 .accordion_4 .frame .content .timetable table tbody tr td.d a.fee {
   font-family: "Open Sans", sans-serif;
   color: #a550a2;
@@ -1193,7 +1257,7 @@ div.block3 .accordion_4 .frame .content .timetable table tbody tr td.d a.fee {
   text-decoration: none;
   margin: 10px 0;
 }
-/* line 1156, styles.less */
+/* line 1212, styles.less */
 div.block3 .accordion_4 .frame .content .timetable table tbody tr td.d a.payment {
   font-family: "Open Sans", sans-serif;
   color: #ffffff;
@@ -1208,18 +1272,18 @@ div.block3 .accordion_4 .frame .content .timetable table tbody tr td.d a.payment
   border: solid 2px #a550a2;
   margin: 10px 0;
 }
-/* line 1172, styles.less */
+/* line 1228, styles.less */
 div.block3 .accordion_4 .frame .content .timetable table tbody tr:first-child td {
   border: none;
 }
-/* line 1180, styles.less */
+/* line 1236, styles.less */
 div.block3 .accordion_4 .frame .content .payment {
   display: block;
   border-radius: 4px;
   background: #582257;
   margin: 10px;
 }
-/* line 1185, styles.less */
+/* line 1241, styles.less */
 div.block3 .accordion_4 .frame .content .payment p {
   font-family: "Open Sans", sans-serif;
   color: #ebe9eb;
@@ -1228,7 +1292,7 @@ div.block3 .accordion_4 .frame .content .payment p {
   text-align: center;
   padding: 20px 110px;
 }
-/* line 1192, styles.less */
+/* line 1248, styles.less */
 div.block3 .accordion_4 .frame .content .payment p a.link {
   font-family: "Open Sans", sans-serif;
   color: #ebe9eb;
@@ -1236,12 +1300,12 @@ div.block3 .accordion_4 .frame .content .payment p a.link {
   font-weight: 400;
   text-align: center;
 }
-/* line 1204, styles.less */
+/* line 1260, styles.less */
 div.block3 .accordion_5 {
   margin: auto;
   margin-top: 40px;
 }
-/* line 1207, styles.less */
+/* line 1263, styles.less */
 div.block3 .accordion_5 .frame {
   background: -webkit-linear-gradient(90deg, #57bd76 0%, #3fbba2 100%);
   background: -moz-linear-gradient(90deg, #57bd76 0%, #3fbba2 100%);
@@ -1254,7 +1318,7 @@ div.block3 .accordion_5 .frame {
   padding: 20px 0;
   border-radius: 5px;
 }
-/* line 1218, styles.less */
+/* line 1274, styles.less */
 div.block3 .accordion_5 .frame .head-accord {
   background: url('../images/bg-accord-noactiv.png') left center no-repeat;
   position: absolute;
@@ -1264,20 +1328,20 @@ div.block3 .accordion_5 .frame .head-accord {
   height: 120px;
   z-index: 1;
 }
-/* line 1226, styles.less */
+/* line 1282, styles.less */
 div.block3 .accordion_5 .frame .head-accord h3 {
   text-align: left;
   color: #ffffff;
   margin: 15px 0 0 35px;
 }
-/* line 1231, styles.less */
+/* line 1287, styles.less */
 div.block3 .accordion_5 .frame .head-accord p {
   text-align: left;
   color: #f9e0f8;
   margin: 5px 0 0 35px;
   padding: 0;
 }
-/* line 1238, styles.less */
+/* line 1294, styles.less */
 div.block3 .accordion_5 .frame .content {
   background: #ffffff;
   width: 900px;
@@ -1287,7 +1351,7 @@ div.block3 .accordion_5 .frame .content {
   padding-bottom: 5px;
   padding-top: 140px;
 }
-/* line 1246, styles.less */
+/* line 1302, styles.less */
 div.block3 .accordion_5 .frame .content p {
   color: #212121;
   margin: 0;
@@ -1295,30 +1359,30 @@ div.block3 .accordion_5 .frame .content p {
   text-align: left;
   line-height: 170%;
 }
-/* line 1252, styles.less */
+/* line 1308, styles.less */
 div.block3 .accordion_5 .frame .content p span {
   font-weight: 600;
 }
-/* line 1260, styles.less */
+/* line 1316, styles.less */
 div.block3 .accordion_5 .frame .content .value .left {
   float: left;
   width: 30%;
 }
-/* line 1263, styles.less */
+/* line 1319, styles.less */
 div.block3 .accordion_5 .frame .content .value .left img {
   float: right;
 }
-/* line 1267, styles.less */
+/* line 1323, styles.less */
 div.block3 .accordion_5 .frame .content .value .right {
   float: right;
   width: 70%;
 }
-/* line 1270, styles.less */
+/* line 1326, styles.less */
 div.block3 .accordion_5 .frame .content .value .right ul.s {
   margin: auto;
   padding-left: 40px;
 }
-/* line 1273, styles.less */
+/* line 1329, styles.less */
 div.block3 .accordion_5 .frame .content .value .right ul.s li {
   font-family: "Open Sans", sans-serif;
   color: #212121;
@@ -1331,21 +1395,21 @@ div.block3 .accordion_5 .frame .content .value .right ul.s li {
   list-style: none;
   background: url('../images/marker.png') top left no-repeat;
 }
-/* line 1292, styles.less */
+/* line 1348, styles.less */
 div.block3 .accordion_5 .frame .content .format p {
   padding: 10px 0 10px 355px;
 }
-/* line 1297, styles.less */
+/* line 1353, styles.less */
 div.block3 .accordion_5 .frame .content .timetable h2 {
   color: #582257;
 }
-/* line 1300, styles.less */
+/* line 1356, styles.less */
 div.block3 .accordion_5 .frame .content .timetable table {
   width: 85%;
   margin: auto;
   border-collapse: collapse;
 }
-/* line 1306, styles.less */
+/* line 1362, styles.less */
 div.block3 .accordion_5 .frame .content .timetable table thead tr th {
   font-family: "Open Sans", sans-serif;
   color: #8b7f8d;
@@ -1354,12 +1418,12 @@ div.block3 .accordion_5 .frame .content .timetable table thead tr th {
   text-align: left;
   text-transform: uppercase;
 }
-/* line 1320, styles.less */
+/* line 1376, styles.less */
 div.block3 .accordion_5 .frame .content .timetable table tbody tr td {
   padding: 20px 0;
   border-top: dashed 1px #b6b6b6;
 }
-/* line 1324, styles.less */
+/* line 1380, styles.less */
 div.block3 .accordion_5 .frame .content .timetable table tbody tr td.a {
   font-family: "Open Sans", sans-serif;
   color: #212121;
@@ -1367,7 +1431,7 @@ div.block3 .accordion_5 .frame .content .timetable table tbody tr td.a {
   font-weight: 600;
   text-align: left;
 }
-/* line 1331, styles.less */
+/* line 1387, styles.less */
 div.block3 .accordion_5 .frame .content .timetable table tbody tr td.b {
   font-family: "Open Sans", sans-serif;
   color: #212121;
@@ -1375,7 +1439,7 @@ div.block3 .accordion_5 .frame .content .timetable table tbody tr td.b {
   font-weight: 400;
   text-align: left;
 }
-/* line 1338, styles.less */
+/* line 1394, styles.less */
 div.block3 .accordion_5 .frame .content .timetable table tbody tr td.c {
   font-family: "Open Sans", sans-serif;
   color: #212121;
@@ -1383,7 +1447,7 @@ div.block3 .accordion_5 .frame .content .timetable table tbody tr td.c {
   font-weight: 400;
   text-align: left;
 }
-/* line 1346, styles.less */
+/* line 1402, styles.less */
 div.block3 .accordion_5 .frame .content .timetable table tbody tr td.d a.fee {
   font-family: "Open Sans", sans-serif;
   color: #a550a2;
@@ -1397,7 +1461,7 @@ div.block3 .accordion_5 .frame .content .timetable table tbody tr td.d a.fee {
   text-decoration: none;
   margin: 10px 0;
 }
-/* line 1359, styles.less */
+/* line 1415, styles.less */
 div.block3 .accordion_5 .frame .content .timetable table tbody tr td.d a.payment {
   font-family: "Open Sans", sans-serif;
   color: #ffffff;
@@ -1412,18 +1476,18 @@ div.block3 .accordion_5 .frame .content .timetable table tbody tr td.d a.payment
   border: solid 2px #a550a2;
   margin: 10px 0;
 }
-/* line 1375, styles.less */
+/* line 1431, styles.less */
 div.block3 .accordion_5 .frame .content .timetable table tbody tr:first-child td {
   border: none;
 }
-/* line 1383, styles.less */
+/* line 1439, styles.less */
 div.block3 .accordion_5 .frame .content .payment {
   display: block;
   border-radius: 4px;
   background: #582257;
   margin: 10px;
 }
-/* line 1388, styles.less */
+/* line 1444, styles.less */
 div.block3 .accordion_5 .frame .content .payment p {
   font-family: "Open Sans", sans-serif;
   color: #ebe9eb;
@@ -1432,7 +1496,7 @@ div.block3 .accordion_5 .frame .content .payment p {
   text-align: center;
   padding: 20px 110px;
 }
-/* line 1395, styles.less */
+/* line 1451, styles.less */
 div.block3 .accordion_5 .frame .content .payment p a.link {
   font-family: "Open Sans", sans-serif;
   color: #ebe9eb;
@@ -1440,12 +1504,12 @@ div.block3 .accordion_5 .frame .content .payment p a.link {
   font-weight: 400;
   text-align: center;
 }
-/* line 1407, styles.less */
+/* line 1463, styles.less */
 div.block3 .accordion_6 {
   margin: auto;
   margin-top: 40px;
 }
-/* line 1410, styles.less */
+/* line 1466, styles.less */
 div.block3 .accordion_6 .frame {
   background: -webkit-linear-gradient(90deg, #77d64f 0%, #57bd76 100%);
   background: -moz-linear-gradient(90deg, #77d64f 0%, #57bd76 100%);
@@ -1458,7 +1522,7 @@ div.block3 .accordion_6 .frame {
   padding: 20px 0;
   border-radius: 5px;
 }
-/* line 1421, styles.less */
+/* line 1477, styles.less */
 div.block3 .accordion_6 .frame .head-accord {
   background: url('../images/bg-accord-noactiv.png') left center no-repeat;
   position: absolute;
@@ -1468,20 +1532,20 @@ div.block3 .accordion_6 .frame .head-accord {
   height: 120px;
   z-index: 1;
 }
-/* line 1429, styles.less */
+/* line 1485, styles.less */
 div.block3 .accordion_6 .frame .head-accord h3 {
   text-align: left;
   color: #ffffff;
   margin: 15px 0 0 35px;
 }
-/* line 1434, styles.less */
+/* line 1490, styles.less */
 div.block3 .accordion_6 .frame .head-accord p {
   text-align: left;
   color: #f9e0f8;
   margin: 5px 0 0 35px;
   padding: 0;
 }
-/* line 1441, styles.less */
+/* line 1497, styles.less */
 div.block3 .accordion_6 .frame .content {
   background: #ffffff;
   width: 900px;
@@ -1491,7 +1555,7 @@ div.block3 .accordion_6 .frame .content {
   padding-bottom: 5px;
   padding-top: 140px;
 }
-/* line 1449, styles.less */
+/* line 1505, styles.less */
 div.block3 .accordion_6 .frame .content p {
   color: #212121;
   margin: 0;
@@ -1499,30 +1563,30 @@ div.block3 .accordion_6 .frame .content p {
   text-align: left;
   line-height: 170%;
 }
-/* line 1455, styles.less */
+/* line 1511, styles.less */
 div.block3 .accordion_6 .frame .content p span {
   font-weight: 600;
 }
-/* line 1463, styles.less */
+/* line 1519, styles.less */
 div.block3 .accordion_6 .frame .content .value .left {
   float: left;
   width: 30%;
 }
-/* line 1466, styles.less */
+/* line 1522, styles.less */
 div.block3 .accordion_6 .frame .content .value .left img {
   float: right;
 }
-/* line 1470, styles.less */
+/* line 1526, styles.less */
 div.block3 .accordion_6 .frame .content .value .right {
   float: right;
   width: 70%;
 }
-/* line 1473, styles.less */
+/* line 1529, styles.less */
 div.block3 .accordion_6 .frame .content .value .right ul.s {
   margin: auto;
   padding-left: 40px;
 }
-/* line 1476, styles.less */
+/* line 1532, styles.less */
 div.block3 .accordion_6 .frame .content .value .right ul.s li {
   font-family: "Open Sans", sans-serif;
   color: #212121;
@@ -1535,21 +1599,21 @@ div.block3 .accordion_6 .frame .content .value .right ul.s li {
   list-style: none;
   background: url('../images/marker.png') top left no-repeat;
 }
-/* line 1495, styles.less */
+/* line 1551, styles.less */
 div.block3 .accordion_6 .frame .content .format p {
   padding: 10px 0 10px 355px;
 }
-/* line 1500, styles.less */
+/* line 1556, styles.less */
 div.block3 .accordion_6 .frame .content .timetable h2 {
   color: #582257;
 }
-/* line 1503, styles.less */
+/* line 1559, styles.less */
 div.block3 .accordion_6 .frame .content .timetable table {
   width: 85%;
   margin: auto;
   border-collapse: collapse;
 }
-/* line 1509, styles.less */
+/* line 1565, styles.less */
 div.block3 .accordion_6 .frame .content .timetable table thead tr th {
   font-family: "Open Sans", sans-serif;
   color: #8b7f8d;
@@ -1558,12 +1622,12 @@ div.block3 .accordion_6 .frame .content .timetable table thead tr th {
   text-align: left;
   text-transform: uppercase;
 }
-/* line 1523, styles.less */
+/* line 1579, styles.less */
 div.block3 .accordion_6 .frame .content .timetable table tbody tr td {
   padding: 20px 0;
   border-top: dashed 1px #b6b6b6;
 }
-/* line 1527, styles.less */
+/* line 1583, styles.less */
 div.block3 .accordion_6 .frame .content .timetable table tbody tr td.a {
   font-family: "Open Sans", sans-serif;
   color: #212121;
@@ -1571,7 +1635,7 @@ div.block3 .accordion_6 .frame .content .timetable table tbody tr td.a {
   font-weight: 600;
   text-align: left;
 }
-/* line 1534, styles.less */
+/* line 1590, styles.less */
 div.block3 .accordion_6 .frame .content .timetable table tbody tr td.b {
   font-family: "Open Sans", sans-serif;
   color: #212121;
@@ -1579,7 +1643,7 @@ div.block3 .accordion_6 .frame .content .timetable table tbody tr td.b {
   font-weight: 400;
   text-align: left;
 }
-/* line 1541, styles.less */
+/* line 1597, styles.less */
 div.block3 .accordion_6 .frame .content .timetable table tbody tr td.c {
   font-family: "Open Sans", sans-serif;
   color: #212121;
@@ -1587,7 +1651,7 @@ div.block3 .accordion_6 .frame .content .timetable table tbody tr td.c {
   font-weight: 400;
   text-align: left;
 }
-/* line 1549, styles.less */
+/* line 1605, styles.less */
 div.block3 .accordion_6 .frame .content .timetable table tbody tr td.d a.fee {
   font-family: "Open Sans", sans-serif;
   color: #a550a2;
@@ -1601,7 +1665,7 @@ div.block3 .accordion_6 .frame .content .timetable table tbody tr td.d a.fee {
   text-decoration: none;
   margin: 10px 0;
 }
-/* line 1562, styles.less */
+/* line 1618, styles.less */
 div.block3 .accordion_6 .frame .content .timetable table tbody tr td.d a.payment {
   font-family: "Open Sans", sans-serif;
   color: #ffffff;
@@ -1616,18 +1680,18 @@ div.block3 .accordion_6 .frame .content .timetable table tbody tr td.d a.payment
   border: solid 2px #a550a2;
   margin: 10px 0;
 }
-/* line 1578, styles.less */
+/* line 1634, styles.less */
 div.block3 .accordion_6 .frame .content .timetable table tbody tr:first-child td {
   border: none;
 }
-/* line 1586, styles.less */
+/* line 1642, styles.less */
 div.block3 .accordion_6 .frame .content .payment {
   display: block;
   border-radius: 4px;
   background: #582257;
   margin: 10px;
 }
-/* line 1591, styles.less */
+/* line 1647, styles.less */
 div.block3 .accordion_6 .frame .content .payment p {
   font-family: "Open Sans", sans-serif;
   color: #ebe9eb;
@@ -1636,7 +1700,7 @@ div.block3 .accordion_6 .frame .content .payment p {
   text-align: center;
   padding: 20px 110px;
 }
-/* line 1598, styles.less */
+/* line 1654, styles.less */
 div.block3 .accordion_6 .frame .content .payment p a.link {
   font-family: "Open Sans", sans-serif;
   color: #ebe9eb;
@@ -1644,12 +1708,12 @@ div.block3 .accordion_6 .frame .content .payment p a.link {
   font-weight: 400;
   text-align: center;
 }
-/* line 1610, styles.less */
+/* line 1666, styles.less */
 div.block3 .accordion_7 {
   margin: auto;
   margin-top: 40px;
 }
-/* line 1613, styles.less */
+/* line 1669, styles.less */
 div.block3 .accordion_7 .frame {
   background: -webkit-linear-gradient(90deg, #eec51e 0%, #77d64f 100%);
   background: -moz-linear-gradient(90deg, #eec51e 0%, #77d64f 100%);
@@ -1662,7 +1726,7 @@ div.block3 .accordion_7 .frame {
   padding: 20px 0;
   border-radius: 5px;
 }
-/* line 1624, styles.less */
+/* line 1680, styles.less */
 div.block3 .accordion_7 .frame .head-accord {
   background: url('../images/bg-accord-noactiv.png') left center no-repeat;
   position: absolute;
@@ -1672,20 +1736,20 @@ div.block3 .accordion_7 .frame .head-accord {
   height: 120px;
   z-index: 1;
 }
-/* line 1632, styles.less */
+/* line 1688, styles.less */
 div.block3 .accordion_7 .frame .head-accord h3 {
   text-align: left;
   color: #ffffff;
   margin: 15px 0 0 35px;
 }
-/* line 1637, styles.less */
+/* line 1693, styles.less */
 div.block3 .accordion_7 .frame .head-accord p {
   text-align: left;
   color: #f9e0f8;
   margin: 5px 0 0 35px;
   padding: 0;
 }
-/* line 1644, styles.less */
+/* line 1700, styles.less */
 div.block3 .accordion_7 .frame .content {
   background: #ffffff;
   width: 900px;
@@ -1695,7 +1759,7 @@ div.block3 .accordion_7 .frame .content {
   padding-bottom: 5px;
   padding-top: 140px;
 }
-/* line 1652, styles.less */
+/* line 1708, styles.less */
 div.block3 .accordion_7 .frame .content p {
   color: #212121;
   margin: 0;
@@ -1703,30 +1767,30 @@ div.block3 .accordion_7 .frame .content p {
   text-align: left;
   line-height: 170%;
 }
-/* line 1658, styles.less */
+/* line 1714, styles.less */
 div.block3 .accordion_7 .frame .content p span {
   font-weight: 600;
 }
-/* line 1666, styles.less */
+/* line 1722, styles.less */
 div.block3 .accordion_7 .frame .content .value .left {
   float: left;
   width: 30%;
 }
-/* line 1669, styles.less */
+/* line 1725, styles.less */
 div.block3 .accordion_7 .frame .content .value .left img {
   float: right;
 }
-/* line 1673, styles.less */
+/* line 1729, styles.less */
 div.block3 .accordion_7 .frame .content .value .right {
   float: right;
   width: 70%;
 }
-/* line 1676, styles.less */
+/* line 1732, styles.less */
 div.block3 .accordion_7 .frame .content .value .right ul.s {
   margin: auto;
   padding-left: 40px;
 }
-/* line 1679, styles.less */
+/* line 1735, styles.less */
 div.block3 .accordion_7 .frame .content .value .right ul.s li {
   font-family: "Open Sans", sans-serif;
   color: #212121;
@@ -1739,21 +1803,21 @@ div.block3 .accordion_7 .frame .content .value .right ul.s li {
   list-style: none;
   background: url('../images/marker.png') top left no-repeat;
 }
-/* line 1698, styles.less */
+/* line 1754, styles.less */
 div.block3 .accordion_7 .frame .content .format p {
   padding: 10px 0 10px 355px;
 }
-/* line 1703, styles.less */
+/* line 1759, styles.less */
 div.block3 .accordion_7 .frame .content .timetable h2 {
   color: #582257;
 }
-/* line 1706, styles.less */
+/* line 1762, styles.less */
 div.block3 .accordion_7 .frame .content .timetable table {
   width: 85%;
   margin: auto;
   border-collapse: collapse;
 }
-/* line 1712, styles.less */
+/* line 1768, styles.less */
 div.block3 .accordion_7 .frame .content .timetable table thead tr th {
   font-family: "Open Sans", sans-serif;
   color: #8b7f8d;
@@ -1762,12 +1826,12 @@ div.block3 .accordion_7 .frame .content .timetable table thead tr th {
   text-align: left;
   text-transform: uppercase;
 }
-/* line 1726, styles.less */
+/* line 1782, styles.less */
 div.block3 .accordion_7 .frame .content .timetable table tbody tr td {
   padding: 20px 0;
   border-top: dashed 1px #b6b6b6;
 }
-/* line 1730, styles.less */
+/* line 1786, styles.less */
 div.block3 .accordion_7 .frame .content .timetable table tbody tr td.a {
   font-family: "Open Sans", sans-serif;
   color: #212121;
@@ -1775,7 +1839,7 @@ div.block3 .accordion_7 .frame .content .timetable table tbody tr td.a {
   font-weight: 600;
   text-align: left;
 }
-/* line 1737, styles.less */
+/* line 1793, styles.less */
 div.block3 .accordion_7 .frame .content .timetable table tbody tr td.b {
   font-family: "Open Sans", sans-serif;
   color: #212121;
@@ -1783,7 +1847,7 @@ div.block3 .accordion_7 .frame .content .timetable table tbody tr td.b {
   font-weight: 400;
   text-align: left;
 }
-/* line 1744, styles.less */
+/* line 1800, styles.less */
 div.block3 .accordion_7 .frame .content .timetable table tbody tr td.c {
   font-family: "Open Sans", sans-serif;
   color: #212121;
@@ -1791,7 +1855,7 @@ div.block3 .accordion_7 .frame .content .timetable table tbody tr td.c {
   font-weight: 400;
   text-align: left;
 }
-/* line 1752, styles.less */
+/* line 1808, styles.less */
 div.block3 .accordion_7 .frame .content .timetable table tbody tr td.d a.fee {
   font-family: "Open Sans", sans-serif;
   color: #a550a2;
@@ -1805,7 +1869,7 @@ div.block3 .accordion_7 .frame .content .timetable table tbody tr td.d a.fee {
   text-decoration: none;
   margin: 10px 0;
 }
-/* line 1765, styles.less */
+/* line 1821, styles.less */
 div.block3 .accordion_7 .frame .content .timetable table tbody tr td.d a.payment {
   font-family: "Open Sans", sans-serif;
   color: #ffffff;
@@ -1820,18 +1884,18 @@ div.block3 .accordion_7 .frame .content .timetable table tbody tr td.d a.payment
   border: solid 2px #a550a2;
   margin: 10px 0;
 }
-/* line 1781, styles.less */
+/* line 1837, styles.less */
 div.block3 .accordion_7 .frame .content .timetable table tbody tr:first-child td {
   border: none;
 }
-/* line 1789, styles.less */
+/* line 1845, styles.less */
 div.block3 .accordion_7 .frame .content .payment {
   display: block;
   border-radius: 4px;
   background: #582257;
   margin: 10px;
 }
-/* line 1794, styles.less */
+/* line 1850, styles.less */
 div.block3 .accordion_7 .frame .content .payment p {
   font-family: "Open Sans", sans-serif;
   color: #ebe9eb;
@@ -1840,7 +1904,7 @@ div.block3 .accordion_7 .frame .content .payment p {
   text-align: center;
   padding: 20px 110px;
 }
-/* line 1801, styles.less */
+/* line 1857, styles.less */
 div.block3 .accordion_7 .frame .content .payment p a.link {
   font-family: "Open Sans", sans-serif;
   color: #ebe9eb;
@@ -1848,12 +1912,12 @@ div.block3 .accordion_7 .frame .content .payment p a.link {
   font-weight: 400;
   text-align: center;
 }
-/* line 1813, styles.less */
+/* line 1869, styles.less */
 div.block3 .accordion_8 {
   margin: auto;
   margin-top: 40px;
 }
-/* line 1816, styles.less */
+/* line 1872, styles.less */
 div.block3 .accordion_8 .frame {
   background: -webkit-linear-gradient(90deg, #ea411a 0%, #eec51e 100%);
   background: -moz-linear-gradient(90deg, #ea411a 0%, #eec51e 100%);
@@ -1866,7 +1930,7 @@ div.block3 .accordion_8 .frame {
   padding: 20px 0;
   border-radius: 5px;
 }
-/* line 1827, styles.less */
+/* line 1883, styles.less */
 div.block3 .accordion_8 .frame .head-accord {
   background: url('../images/bg-accord-noactiv.png') left center no-repeat;
   position: absolute;
@@ -1876,20 +1940,20 @@ div.block3 .accordion_8 .frame .head-accord {
   height: 120px;
   z-index: 1;
 }
-/* line 1835, styles.less */
+/* line 1891, styles.less */
 div.block3 .accordion_8 .frame .head-accord h3 {
   text-align: left;
   color: #ffffff;
   margin: 15px 0 0 35px;
 }
-/* line 1840, styles.less */
+/* line 1896, styles.less */
 div.block3 .accordion_8 .frame .head-accord p {
   text-align: left;
   color: #f9e0f8;
   margin: 5px 0 0 35px;
   padding: 0;
 }
-/* line 1847, styles.less */
+/* line 1903, styles.less */
 div.block3 .accordion_8 .frame .content {
   background: #ffffff;
   width: 900px;
@@ -1899,7 +1963,7 @@ div.block3 .accordion_8 .frame .content {
   padding-bottom: 5px;
   padding-top: 140px;
 }
-/* line 1855, styles.less */
+/* line 1911, styles.less */
 div.block3 .accordion_8 .frame .content p {
   color: #212121;
   margin: 0;
@@ -1907,30 +1971,30 @@ div.block3 .accordion_8 .frame .content p {
   text-align: left;
   line-height: 170%;
 }
-/* line 1861, styles.less */
+/* line 1917, styles.less */
 div.block3 .accordion_8 .frame .content p span {
   font-weight: 600;
 }
-/* line 1869, styles.less */
+/* line 1925, styles.less */
 div.block3 .accordion_8 .frame .content .value .left {
   float: left;
   width: 30%;
 }
-/* line 1872, styles.less */
+/* line 1928, styles.less */
 div.block3 .accordion_8 .frame .content .value .left img {
   float: right;
 }
-/* line 1876, styles.less */
+/* line 1932, styles.less */
 div.block3 .accordion_8 .frame .content .value .right {
   float: right;
   width: 70%;
 }
-/* line 1879, styles.less */
+/* line 1935, styles.less */
 div.block3 .accordion_8 .frame .content .value .right ul.s {
   margin: auto;
   padding-left: 40px;
 }
-/* line 1882, styles.less */
+/* line 1938, styles.less */
 div.block3 .accordion_8 .frame .content .value .right ul.s li {
   font-family: "Open Sans", sans-serif;
   color: #212121;
@@ -1943,21 +2007,21 @@ div.block3 .accordion_8 .frame .content .value .right ul.s li {
   list-style: none;
   background: url('../images/marker.png') top left no-repeat;
 }
-/* line 1901, styles.less */
+/* line 1957, styles.less */
 div.block3 .accordion_8 .frame .content .format p {
   padding: 10px 0 10px 355px;
 }
-/* line 1906, styles.less */
+/* line 1962, styles.less */
 div.block3 .accordion_8 .frame .content .timetable h2 {
   color: #582257;
 }
-/* line 1909, styles.less */
+/* line 1965, styles.less */
 div.block3 .accordion_8 .frame .content .timetable table {
   width: 85%;
   margin: auto;
   border-collapse: collapse;
 }
-/* line 1915, styles.less */
+/* line 1971, styles.less */
 div.block3 .accordion_8 .frame .content .timetable table thead tr th {
   font-family: "Open Sans", sans-serif;
   color: #8b7f8d;
@@ -1966,12 +2030,12 @@ div.block3 .accordion_8 .frame .content .timetable table thead tr th {
   text-align: left;
   text-transform: uppercase;
 }
-/* line 1929, styles.less */
+/* line 1985, styles.less */
 div.block3 .accordion_8 .frame .content .timetable table tbody tr td {
   padding: 20px 0;
   border-top: dashed 1px #b6b6b6;
 }
-/* line 1933, styles.less */
+/* line 1989, styles.less */
 div.block3 .accordion_8 .frame .content .timetable table tbody tr td.a {
   font-family: "Open Sans", sans-serif;
   color: #212121;
@@ -1979,7 +2043,7 @@ div.block3 .accordion_8 .frame .content .timetable table tbody tr td.a {
   font-weight: 600;
   text-align: left;
 }
-/* line 1940, styles.less */
+/* line 1996, styles.less */
 div.block3 .accordion_8 .frame .content .timetable table tbody tr td.b {
   font-family: "Open Sans", sans-serif;
   color: #212121;
@@ -1987,7 +2051,7 @@ div.block3 .accordion_8 .frame .content .timetable table tbody tr td.b {
   font-weight: 400;
   text-align: left;
 }
-/* line 1947, styles.less */
+/* line 2003, styles.less */
 div.block3 .accordion_8 .frame .content .timetable table tbody tr td.c {
   font-family: "Open Sans", sans-serif;
   color: #212121;
@@ -1995,7 +2059,7 @@ div.block3 .accordion_8 .frame .content .timetable table tbody tr td.c {
   font-weight: 400;
   text-align: left;
 }
-/* line 1955, styles.less */
+/* line 2011, styles.less */
 div.block3 .accordion_8 .frame .content .timetable table tbody tr td.d a.fee {
   font-family: "Open Sans", sans-serif;
   color: #a550a2;
@@ -2009,7 +2073,7 @@ div.block3 .accordion_8 .frame .content .timetable table tbody tr td.d a.fee {
   text-decoration: none;
   margin: 10px 0;
 }
-/* line 1968, styles.less */
+/* line 2024, styles.less */
 div.block3 .accordion_8 .frame .content .timetable table tbody tr td.d a.payment {
   font-family: "Open Sans", sans-serif;
   color: #ffffff;
@@ -2024,18 +2088,18 @@ div.block3 .accordion_8 .frame .content .timetable table tbody tr td.d a.payment
   border: solid 2px #a550a2;
   margin: 10px 0;
 }
-/* line 1984, styles.less */
+/* line 2040, styles.less */
 div.block3 .accordion_8 .frame .content .timetable table tbody tr:first-child td {
   border: none;
 }
-/* line 1992, styles.less */
+/* line 2048, styles.less */
 div.block3 .accordion_8 .frame .content .payment {
   display: block;
   border-radius: 4px;
   background: #582257;
   margin: 10px;
 }
-/* line 1997, styles.less */
+/* line 2053, styles.less */
 div.block3 .accordion_8 .frame .content .payment p {
   font-family: "Open Sans", sans-serif;
   color: #ebe9eb;
@@ -2044,7 +2108,7 @@ div.block3 .accordion_8 .frame .content .payment p {
   text-align: center;
   padding: 20px 110px;
 }
-/* line 2004, styles.less */
+/* line 2060, styles.less */
 div.block3 .accordion_8 .frame .content .payment p a.link {
   font-family: "Open Sans", sans-serif;
   color: #ebe9eb;
@@ -2052,12 +2116,12 @@ div.block3 .accordion_8 .frame .content .payment p a.link {
   font-weight: 400;
   text-align: center;
 }
-/* line 2016, styles.less */
+/* line 2072, styles.less */
 div.block3 .accordion_9 {
   margin: auto;
   margin-top: 40px;
 }
-/* line 2019, styles.less */
+/* line 2075, styles.less */
 div.block3 .accordion_9 .frame {
   background: -webkit-linear-gradient(90deg, #ea1a5e 0%, #ea411a 100%);
   background: -moz-linear-gradient(90deg, #ea1a5e 0%, #ea411a 100%);
@@ -2070,7 +2134,7 @@ div.block3 .accordion_9 .frame {
   padding: 20px 0;
   border-radius: 5px;
 }
-/* line 2030, styles.less */
+/* line 2086, styles.less */
 div.block3 .accordion_9 .frame .head-accord {
   background: url('../images/bg-accord-noactiv.png') left center no-repeat;
   position: absolute;
@@ -2080,20 +2144,20 @@ div.block3 .accordion_9 .frame .head-accord {
   height: 120px;
   z-index: 1;
 }
-/* line 2038, styles.less */
+/* line 2094, styles.less */
 div.block3 .accordion_9 .frame .head-accord h3 {
   text-align: left;
   color: #ffffff;
   margin: 15px 0 0 35px;
 }
-/* line 2043, styles.less */
+/* line 2099, styles.less */
 div.block3 .accordion_9 .frame .head-accord p {
   text-align: left;
   color: #f9e0f8;
   margin: 5px 0 0 35px;
   padding: 0;
 }
-/* line 2050, styles.less */
+/* line 2106, styles.less */
 div.block3 .accordion_9 .frame .content {
   background: #ffffff;
   width: 900px;
@@ -2103,7 +2167,7 @@ div.block3 .accordion_9 .frame .content {
   padding-bottom: 5px;
   padding-top: 140px;
 }
-/* line 2058, styles.less */
+/* line 2114, styles.less */
 div.block3 .accordion_9 .frame .content p {
   color: #212121;
   margin: 0;
@@ -2111,30 +2175,30 @@ div.block3 .accordion_9 .frame .content p {
   text-align: left;
   line-height: 170%;
 }
-/* line 2064, styles.less */
+/* line 2120, styles.less */
 div.block3 .accordion_9 .frame .content p span {
   font-weight: 600;
 }
-/* line 2072, styles.less */
+/* line 2128, styles.less */
 div.block3 .accordion_9 .frame .content .value .left {
   float: left;
   width: 30%;
 }
-/* line 2075, styles.less */
+/* line 2131, styles.less */
 div.block3 .accordion_9 .frame .content .value .left img {
   float: right;
 }
-/* line 2079, styles.less */
+/* line 2135, styles.less */
 div.block3 .accordion_9 .frame .content .value .right {
   float: right;
   width: 70%;
 }
-/* line 2082, styles.less */
+/* line 2138, styles.less */
 div.block3 .accordion_9 .frame .content .value .right ul.s {
   margin: auto;
   padding-left: 40px;
 }
-/* line 2085, styles.less */
+/* line 2141, styles.less */
 div.block3 .accordion_9 .frame .content .value .right ul.s li {
   font-family: "Open Sans", sans-serif;
   color: #212121;
@@ -2147,21 +2211,21 @@ div.block3 .accordion_9 .frame .content .value .right ul.s li {
   list-style: none;
   background: url('../images/marker.png') top left no-repeat;
 }
-/* line 2104, styles.less */
+/* line 2160, styles.less */
 div.block3 .accordion_9 .frame .content .format p {
   padding: 10px 0 10px 355px;
 }
-/* line 2109, styles.less */
+/* line 2165, styles.less */
 div.block3 .accordion_9 .frame .content .timetable h2 {
   color: #582257;
 }
-/* line 2112, styles.less */
+/* line 2168, styles.less */
 div.block3 .accordion_9 .frame .content .timetable table {
   width: 85%;
   margin: auto;
   border-collapse: collapse;
 }
-/* line 2118, styles.less */
+/* line 2174, styles.less */
 div.block3 .accordion_9 .frame .content .timetable table thead tr th {
   font-family: "Open Sans", sans-serif;
   color: #8b7f8d;
@@ -2170,12 +2234,12 @@ div.block3 .accordion_9 .frame .content .timetable table thead tr th {
   text-align: left;
   text-transform: uppercase;
 }
-/* line 2132, styles.less */
+/* line 2188, styles.less */
 div.block3 .accordion_9 .frame .content .timetable table tbody tr td {
   padding: 20px 0;
   border-top: dashed 1px #b6b6b6;
 }
-/* line 2136, styles.less */
+/* line 2192, styles.less */
 div.block3 .accordion_9 .frame .content .timetable table tbody tr td.a {
   font-family: "Open Sans", sans-serif;
   color: #212121;
@@ -2183,7 +2247,7 @@ div.block3 .accordion_9 .frame .content .timetable table tbody tr td.a {
   font-weight: 600;
   text-align: left;
 }
-/* line 2143, styles.less */
+/* line 2199, styles.less */
 div.block3 .accordion_9 .frame .content .timetable table tbody tr td.b {
   font-family: "Open Sans", sans-serif;
   color: #212121;
@@ -2191,7 +2255,7 @@ div.block3 .accordion_9 .frame .content .timetable table tbody tr td.b {
   font-weight: 400;
   text-align: left;
 }
-/* line 2150, styles.less */
+/* line 2206, styles.less */
 div.block3 .accordion_9 .frame .content .timetable table tbody tr td.c {
   font-family: "Open Sans", sans-serif;
   color: #212121;
@@ -2199,7 +2263,7 @@ div.block3 .accordion_9 .frame .content .timetable table tbody tr td.c {
   font-weight: 400;
   text-align: left;
 }
-/* line 2158, styles.less */
+/* line 2214, styles.less */
 div.block3 .accordion_9 .frame .content .timetable table tbody tr td.d a.fee {
   font-family: "Open Sans", sans-serif;
   color: #a550a2;
@@ -2213,7 +2277,7 @@ div.block3 .accordion_9 .frame .content .timetable table tbody tr td.d a.fee {
   text-decoration: none;
   margin: 10px 0;
 }
-/* line 2171, styles.less */
+/* line 2227, styles.less */
 div.block3 .accordion_9 .frame .content .timetable table tbody tr td.d a.payment {
   font-family: "Open Sans", sans-serif;
   color: #ffffff;
@@ -2228,18 +2292,18 @@ div.block3 .accordion_9 .frame .content .timetable table tbody tr td.d a.payment
   border: solid 2px #a550a2;
   margin: 10px 0;
 }
-/* line 2187, styles.less */
+/* line 2243, styles.less */
 div.block3 .accordion_9 .frame .content .timetable table tbody tr:first-child td {
   border: none;
 }
-/* line 2195, styles.less */
+/* line 2251, styles.less */
 div.block3 .accordion_9 .frame .content .payment {
   display: block;
   border-radius: 4px;
   background: #582257;
   margin: 10px;
 }
-/* line 2200, styles.less */
+/* line 2256, styles.less */
 div.block3 .accordion_9 .frame .content .payment p {
   font-family: "Open Sans", sans-serif;
   color: #ebe9eb;
@@ -2248,7 +2312,7 @@ div.block3 .accordion_9 .frame .content .payment p {
   text-align: center;
   padding: 20px 110px;
 }
-/* line 2207, styles.less */
+/* line 2263, styles.less */
 div.block3 .accordion_9 .frame .content .payment p a.link {
   font-family: "Open Sans", sans-serif;
   color: #ebe9eb;
@@ -2256,12 +2320,12 @@ div.block3 .accordion_9 .frame .content .payment p a.link {
   font-weight: 400;
   text-align: center;
 }
-/* line 2219, styles.less */
+/* line 2275, styles.less */
 div.block3 .accordion_10 {
   margin: auto;
   margin-top: 40px;
 }
-/* line 2222, styles.less */
+/* line 2278, styles.less */
 div.block3 .accordion_10 .frame {
   background: -webkit-linear-gradient(90deg, #ea1ab6 0%, #ea1a5e 100%);
   background: -moz-linear-gradient(90deg, #ea1ab6 0%, #ea1a5e 100%);
@@ -2274,7 +2338,7 @@ div.block3 .accordion_10 .frame {
   padding: 20px 0;
   border-radius: 5px;
 }
-/* line 2233, styles.less */
+/* line 2289, styles.less */
 div.block3 .accordion_10 .frame .head-accord {
   background: url('../images/bg-accord-noactiv.png') left center no-repeat;
   position: absolute;
@@ -2284,20 +2348,20 @@ div.block3 .accordion_10 .frame .head-accord {
   height: 120px;
   z-index: 1;
 }
-/* line 2241, styles.less */
+/* line 2297, styles.less */
 div.block3 .accordion_10 .frame .head-accord h3 {
   text-align: left;
   color: #ffffff;
   margin: 15px 0 0 35px;
 }
-/* line 2246, styles.less */
+/* line 2302, styles.less */
 div.block3 .accordion_10 .frame .head-accord p {
   text-align: left;
   color: #f9e0f8;
   margin: 5px 0 0 35px;
   padding: 0;
 }
-/* line 2253, styles.less */
+/* line 2309, styles.less */
 div.block3 .accordion_10 .frame .content {
   background: #ffffff;
   width: 900px;
@@ -2307,7 +2371,7 @@ div.block3 .accordion_10 .frame .content {
   padding-bottom: 5px;
   padding-top: 140px;
 }
-/* line 2261, styles.less */
+/* line 2317, styles.less */
 div.block3 .accordion_10 .frame .content p {
   color: #212121;
   margin: 0;
@@ -2315,30 +2379,30 @@ div.block3 .accordion_10 .frame .content p {
   text-align: left;
   line-height: 170%;
 }
-/* line 2267, styles.less */
+/* line 2323, styles.less */
 div.block3 .accordion_10 .frame .content p span {
   font-weight: 600;
 }
-/* line 2275, styles.less */
+/* line 2331, styles.less */
 div.block3 .accordion_10 .frame .content .value .left {
   float: left;
   width: 30%;
 }
-/* line 2278, styles.less */
+/* line 2334, styles.less */
 div.block3 .accordion_10 .frame .content .value .left img {
   float: right;
 }
-/* line 2282, styles.less */
+/* line 2338, styles.less */
 div.block3 .accordion_10 .frame .content .value .right {
   float: right;
   width: 70%;
 }
-/* line 2285, styles.less */
+/* line 2341, styles.less */
 div.block3 .accordion_10 .frame .content .value .right ul.s {
   margin: auto;
   padding-left: 40px;
 }
-/* line 2288, styles.less */
+/* line 2344, styles.less */
 div.block3 .accordion_10 .frame .content .value .right ul.s li {
   font-family: "Open Sans", sans-serif;
   color: #212121;
@@ -2351,21 +2415,21 @@ div.block3 .accordion_10 .frame .content .value .right ul.s li {
   list-style: none;
   background: url('../images/marker.png') top left no-repeat;
 }
-/* line 2307, styles.less */
+/* line 2363, styles.less */
 div.block3 .accordion_10 .frame .content .format p {
   padding: 10px 0 10px 355px;
 }
-/* line 2312, styles.less */
+/* line 2368, styles.less */
 div.block3 .accordion_10 .frame .content .timetable h2 {
   color: #582257;
 }
-/* line 2315, styles.less */
+/* line 2371, styles.less */
 div.block3 .accordion_10 .frame .content .timetable table {
   width: 85%;
   margin: auto;
   border-collapse: collapse;
 }
-/* line 2321, styles.less */
+/* line 2377, styles.less */
 div.block3 .accordion_10 .frame .content .timetable table thead tr th {
   font-family: "Open Sans", sans-serif;
   color: #8b7f8d;
@@ -2374,12 +2438,12 @@ div.block3 .accordion_10 .frame .content .timetable table thead tr th {
   text-align: left;
   text-transform: uppercase;
 }
-/* line 2335, styles.less */
+/* line 2391, styles.less */
 div.block3 .accordion_10 .frame .content .timetable table tbody tr td {
   padding: 20px 0;
   border-top: dashed 1px #b6b6b6;
 }
-/* line 2339, styles.less */
+/* line 2395, styles.less */
 div.block3 .accordion_10 .frame .content .timetable table tbody tr td.a {
   font-family: "Open Sans", sans-serif;
   color: #212121;
@@ -2387,7 +2451,7 @@ div.block3 .accordion_10 .frame .content .timetable table tbody tr td.a {
   font-weight: 600;
   text-align: left;
 }
-/* line 2346, styles.less */
+/* line 2402, styles.less */
 div.block3 .accordion_10 .frame .content .timetable table tbody tr td.b {
   font-family: "Open Sans", sans-serif;
   color: #212121;
@@ -2395,7 +2459,7 @@ div.block3 .accordion_10 .frame .content .timetable table tbody tr td.b {
   font-weight: 400;
   text-align: left;
 }
-/* line 2353, styles.less */
+/* line 2409, styles.less */
 div.block3 .accordion_10 .frame .content .timetable table tbody tr td.c {
   font-family: "Open Sans", sans-serif;
   color: #212121;
@@ -2403,7 +2467,7 @@ div.block3 .accordion_10 .frame .content .timetable table tbody tr td.c {
   font-weight: 400;
   text-align: left;
 }
-/* line 2361, styles.less */
+/* line 2417, styles.less */
 div.block3 .accordion_10 .frame .content .timetable table tbody tr td.d a.fee {
   font-family: "Open Sans", sans-serif;
   color: #a550a2;
@@ -2417,7 +2481,7 @@ div.block3 .accordion_10 .frame .content .timetable table tbody tr td.d a.fee {
   text-decoration: none;
   margin: 10px 0;
 }
-/* line 2374, styles.less */
+/* line 2430, styles.less */
 div.block3 .accordion_10 .frame .content .timetable table tbody tr td.d a.payment {
   font-family: "Open Sans", sans-serif;
   color: #ffffff;
@@ -2432,18 +2496,18 @@ div.block3 .accordion_10 .frame .content .timetable table tbody tr td.d a.paymen
   border: solid 2px #a550a2;
   margin: 10px 0;
 }
-/* line 2390, styles.less */
+/* line 2446, styles.less */
 div.block3 .accordion_10 .frame .content .timetable table tbody tr:first-child td {
   border: none;
 }
-/* line 2398, styles.less */
+/* line 2454, styles.less */
 div.block3 .accordion_10 .frame .content .payment {
   display: block;
   border-radius: 4px;
   background: #582257;
   margin: 10px;
 }
-/* line 2403, styles.less */
+/* line 2459, styles.less */
 div.block3 .accordion_10 .frame .content .payment p {
   font-family: "Open Sans", sans-serif;
   color: #ebe9eb;
@@ -2452,7 +2516,7 @@ div.block3 .accordion_10 .frame .content .payment p {
   text-align: center;
   padding: 20px 110px;
 }
-/* line 2410, styles.less */
+/* line 2466, styles.less */
 div.block3 .accordion_10 .frame .content .payment p a.link {
   font-family: "Open Sans", sans-serif;
   color: #ebe9eb;
@@ -2460,12 +2524,12 @@ div.block3 .accordion_10 .frame .content .payment p a.link {
   font-weight: 400;
   text-align: center;
 }
-/* line 2422, styles.less */
+/* line 2478, styles.less */
 div.block3 .accordion_11 {
   margin: auto;
   margin-top: 40px;
 }
-/* line 2425, styles.less */
+/* line 2481, styles.less */
 div.block3 .accordion_11 .frame {
   background: -webkit-linear-gradient(90deg, #de1aea 0%, #ea1ab6 100%);
   background: -moz-linear-gradient(90deg, #de1aea 0%, #ea1ab6 100%);
@@ -2478,7 +2542,7 @@ div.block3 .accordion_11 .frame {
   padding: 20px 0;
   border-radius: 5px;
 }
-/* line 2436, styles.less */
+/* line 2492, styles.less */
 div.block3 .accordion_11 .frame .head-accord {
   background: url('../images/bg-accord-noactiv.png') left center no-repeat;
   position: absolute;
@@ -2488,20 +2552,20 @@ div.block3 .accordion_11 .frame .head-accord {
   height: 120px;
   z-index: 1;
 }
-/* line 2444, styles.less */
+/* line 2500, styles.less */
 div.block3 .accordion_11 .frame .head-accord h3 {
   text-align: left;
   color: #ffffff;
   margin: 15px 0 0 35px;
 }
-/* line 2449, styles.less */
+/* line 2505, styles.less */
 div.block3 .accordion_11 .frame .head-accord p {
   text-align: left;
   color: #f9e0f8;
   margin: 5px 0 0 35px;
   padding: 0;
 }
-/* line 2456, styles.less */
+/* line 2512, styles.less */
 div.block3 .accordion_11 .frame .content {
   background: #ffffff;
   width: 900px;
@@ -2511,7 +2575,7 @@ div.block3 .accordion_11 .frame .content {
   padding-bottom: 5px;
   padding-top: 140px;
 }
-/* line 2464, styles.less */
+/* line 2520, styles.less */
 div.block3 .accordion_11 .frame .content p {
   color: #212121;
   margin: 0;
@@ -2519,30 +2583,30 @@ div.block3 .accordion_11 .frame .content p {
   text-align: left;
   line-height: 170%;
 }
-/* line 2470, styles.less */
+/* line 2526, styles.less */
 div.block3 .accordion_11 .frame .content p span {
   font-weight: 600;
 }
-/* line 2478, styles.less */
+/* line 2534, styles.less */
 div.block3 .accordion_11 .frame .content .value .left {
   float: left;
   width: 30%;
 }
-/* line 2481, styles.less */
+/* line 2537, styles.less */
 div.block3 .accordion_11 .frame .content .value .left img {
   float: right;
 }
-/* line 2485, styles.less */
+/* line 2541, styles.less */
 div.block3 .accordion_11 .frame .content .value .right {
   float: right;
   width: 70%;
 }
-/* line 2488, styles.less */
+/* line 2544, styles.less */
 div.block3 .accordion_11 .frame .content .value .right ul.s {
   margin: auto;
   padding-left: 40px;
 }
-/* line 2491, styles.less */
+/* line 2547, styles.less */
 div.block3 .accordion_11 .frame .content .value .right ul.s li {
   font-family: "Open Sans", sans-serif;
   color: #212121;
@@ -2555,21 +2619,21 @@ div.block3 .accordion_11 .frame .content .value .right ul.s li {
   list-style: none;
   background: url('../images/marker.png') top left no-repeat;
 }
-/* line 2510, styles.less */
+/* line 2566, styles.less */
 div.block3 .accordion_11 .frame .content .format p {
   padding: 10px 0 10px 355px;
 }
-/* line 2515, styles.less */
+/* line 2571, styles.less */
 div.block3 .accordion_11 .frame .content .timetable h2 {
   color: #582257;
 }
-/* line 2518, styles.less */
+/* line 2574, styles.less */
 div.block3 .accordion_11 .frame .content .timetable table {
   width: 85%;
   margin: auto;
   border-collapse: collapse;
 }
-/* line 2524, styles.less */
+/* line 2580, styles.less */
 div.block3 .accordion_11 .frame .content .timetable table thead tr th {
   font-family: "Open Sans", sans-serif;
   color: #8b7f8d;
@@ -2578,12 +2642,12 @@ div.block3 .accordion_11 .frame .content .timetable table thead tr th {
   text-align: left;
   text-transform: uppercase;
 }
-/* line 2538, styles.less */
+/* line 2594, styles.less */
 div.block3 .accordion_11 .frame .content .timetable table tbody tr td {
   padding: 20px 0;
   border-top: dashed 1px #b6b6b6;
 }
-/* line 2542, styles.less */
+/* line 2598, styles.less */
 div.block3 .accordion_11 .frame .content .timetable table tbody tr td.a {
   font-family: "Open Sans", sans-serif;
   color: #212121;
@@ -2591,7 +2655,7 @@ div.block3 .accordion_11 .frame .content .timetable table tbody tr td.a {
   font-weight: 600;
   text-align: left;
 }
-/* line 2549, styles.less */
+/* line 2605, styles.less */
 div.block3 .accordion_11 .frame .content .timetable table tbody tr td.b {
   font-family: "Open Sans", sans-serif;
   color: #212121;
@@ -2599,7 +2663,7 @@ div.block3 .accordion_11 .frame .content .timetable table tbody tr td.b {
   font-weight: 400;
   text-align: left;
 }
-/* line 2556, styles.less */
+/* line 2612, styles.less */
 div.block3 .accordion_11 .frame .content .timetable table tbody tr td.c {
   font-family: "Open Sans", sans-serif;
   color: #212121;
@@ -2607,7 +2671,7 @@ div.block3 .accordion_11 .frame .content .timetable table tbody tr td.c {
   font-weight: 400;
   text-align: left;
 }
-/* line 2564, styles.less */
+/* line 2620, styles.less */
 div.block3 .accordion_11 .frame .content .timetable table tbody tr td.d a.fee {
   font-family: "Open Sans", sans-serif;
   color: #a550a2;
@@ -2621,7 +2685,7 @@ div.block3 .accordion_11 .frame .content .timetable table tbody tr td.d a.fee {
   text-decoration: none;
   margin: 10px 0;
 }
-/* line 2577, styles.less */
+/* line 2633, styles.less */
 div.block3 .accordion_11 .frame .content .timetable table tbody tr td.d a.payment {
   font-family: "Open Sans", sans-serif;
   color: #ffffff;
@@ -2636,18 +2700,18 @@ div.block3 .accordion_11 .frame .content .timetable table tbody tr td.d a.paymen
   border: solid 2px #a550a2;
   margin: 10px 0;
 }
-/* line 2593, styles.less */
+/* line 2649, styles.less */
 div.block3 .accordion_11 .frame .content .timetable table tbody tr:first-child td {
   border: none;
 }
-/* line 2601, styles.less */
+/* line 2657, styles.less */
 div.block3 .accordion_11 .frame .content .payment {
   display: block;
   border-radius: 4px;
   background: #582257;
   margin: 10px;
 }
-/* line 2606, styles.less */
+/* line 2662, styles.less */
 div.block3 .accordion_11 .frame .content .payment p {
   font-family: "Open Sans", sans-serif;
   color: #ebe9eb;
@@ -2656,7 +2720,7 @@ div.block3 .accordion_11 .frame .content .payment p {
   text-align: center;
   padding: 20px 110px;
 }
-/* line 2613, styles.less */
+/* line 2669, styles.less */
 div.block3 .accordion_11 .frame .content .payment p a.link {
   font-family: "Open Sans", sans-serif;
   color: #ebe9eb;
@@ -2664,12 +2728,12 @@ div.block3 .accordion_11 .frame .content .payment p a.link {
   font-weight: 400;
   text-align: center;
 }
-/* line 2625, styles.less */
+/* line 2681, styles.less */
 div.block3 .accordion_12 {
   margin: auto;
   margin-top: 40px;
 }
-/* line 2628, styles.less */
+/* line 2684, styles.less */
 div.block3 .accordion_12 .frame {
   background: -webkit-linear-gradient(90deg, #a31aea 0%, #de1aea 100%);
   background: -moz-linear-gradient(90deg, #a31aea 0%, #de1aea 100%);
@@ -2682,7 +2746,7 @@ div.block3 .accordion_12 .frame {
   padding: 20px 0;
   border-radius: 5px;
 }
-/* line 2639, styles.less */
+/* line 2695, styles.less */
 div.block3 .accordion_12 .frame .head-accord {
   background: url('../images/bg-accord-noactiv.png') left center no-repeat;
   position: absolute;
@@ -2692,20 +2756,20 @@ div.block3 .accordion_12 .frame .head-accord {
   height: 120px;
   z-index: 1;
 }
-/* line 2647, styles.less */
+/* line 2703, styles.less */
 div.block3 .accordion_12 .frame .head-accord h3 {
   text-align: left;
   color: #ffffff;
   margin: 15px 0 0 35px;
 }
-/* line 2652, styles.less */
+/* line 2708, styles.less */
 div.block3 .accordion_12 .frame .head-accord p {
   text-align: left;
   color: #f9e0f8;
   margin: 5px 0 0 35px;
   padding: 0;
 }
-/* line 2659, styles.less */
+/* line 2715, styles.less */
 div.block3 .accordion_12 .frame .content {
   background: #ffffff;
   width: 900px;
@@ -2715,7 +2779,7 @@ div.block3 .accordion_12 .frame .content {
   padding-bottom: 5px;
   padding-top: 140px;
 }
-/* line 2667, styles.less */
+/* line 2723, styles.less */
 div.block3 .accordion_12 .frame .content p {
   color: #212121;
   margin: 0;
@@ -2723,30 +2787,30 @@ div.block3 .accordion_12 .frame .content p {
   text-align: left;
   line-height: 170%;
 }
-/* line 2673, styles.less */
+/* line 2729, styles.less */
 div.block3 .accordion_12 .frame .content p span {
   font-weight: 600;
 }
-/* line 2681, styles.less */
+/* line 2737, styles.less */
 div.block3 .accordion_12 .frame .content .value .left {
   float: left;
   width: 30%;
 }
-/* line 2684, styles.less */
+/* line 2740, styles.less */
 div.block3 .accordion_12 .frame .content .value .left img {
   float: right;
 }
-/* line 2688, styles.less */
+/* line 2744, styles.less */
 div.block3 .accordion_12 .frame .content .value .right {
   float: right;
   width: 70%;
 }
-/* line 2691, styles.less */
+/* line 2747, styles.less */
 div.block3 .accordion_12 .frame .content .value .right ul.s {
   margin: auto;
   padding-left: 40px;
 }
-/* line 2694, styles.less */
+/* line 2750, styles.less */
 div.block3 .accordion_12 .frame .content .value .right ul.s li {
   font-family: "Open Sans", sans-serif;
   color: #212121;
@@ -2759,21 +2823,21 @@ div.block3 .accordion_12 .frame .content .value .right ul.s li {
   list-style: none;
   background: url('../images/marker.png') top left no-repeat;
 }
-/* line 2713, styles.less */
+/* line 2769, styles.less */
 div.block3 .accordion_12 .frame .content .format p {
   padding: 10px 0 10px 355px;
 }
-/* line 2718, styles.less */
+/* line 2774, styles.less */
 div.block3 .accordion_12 .frame .content .timetable h2 {
   color: #582257;
 }
-/* line 2721, styles.less */
+/* line 2777, styles.less */
 div.block3 .accordion_12 .frame .content .timetable table {
   width: 85%;
   margin: auto;
   border-collapse: collapse;
 }
-/* line 2727, styles.less */
+/* line 2783, styles.less */
 div.block3 .accordion_12 .frame .content .timetable table thead tr th {
   font-family: "Open Sans", sans-serif;
   color: #8b7f8d;
@@ -2782,12 +2846,12 @@ div.block3 .accordion_12 .frame .content .timetable table thead tr th {
   text-align: left;
   text-transform: uppercase;
 }
-/* line 2741, styles.less */
+/* line 2797, styles.less */
 div.block3 .accordion_12 .frame .content .timetable table tbody tr td {
   padding: 20px 0;
   border-top: dashed 1px #b6b6b6;
 }
-/* line 2745, styles.less */
+/* line 2801, styles.less */
 div.block3 .accordion_12 .frame .content .timetable table tbody tr td.a {
   font-family: "Open Sans", sans-serif;
   color: #212121;
@@ -2795,7 +2859,7 @@ div.block3 .accordion_12 .frame .content .timetable table tbody tr td.a {
   font-weight: 600;
   text-align: left;
 }
-/* line 2752, styles.less */
+/* line 2808, styles.less */
 div.block3 .accordion_12 .frame .content .timetable table tbody tr td.b {
   font-family: "Open Sans", sans-serif;
   color: #212121;
@@ -2803,7 +2867,7 @@ div.block3 .accordion_12 .frame .content .timetable table tbody tr td.b {
   font-weight: 400;
   text-align: left;
 }
-/* line 2759, styles.less */
+/* line 2815, styles.less */
 div.block3 .accordion_12 .frame .content .timetable table tbody tr td.c {
   font-family: "Open Sans", sans-serif;
   color: #212121;
@@ -2811,7 +2875,7 @@ div.block3 .accordion_12 .frame .content .timetable table tbody tr td.c {
   font-weight: 400;
   text-align: left;
 }
-/* line 2767, styles.less */
+/* line 2823, styles.less */
 div.block3 .accordion_12 .frame .content .timetable table tbody tr td.d a.fee {
   font-family: "Open Sans", sans-serif;
   color: #a550a2;
@@ -2825,7 +2889,7 @@ div.block3 .accordion_12 .frame .content .timetable table tbody tr td.d a.fee {
   text-decoration: none;
   margin: 10px 0;
 }
-/* line 2780, styles.less */
+/* line 2836, styles.less */
 div.block3 .accordion_12 .frame .content .timetable table tbody tr td.d a.payment {
   font-family: "Open Sans", sans-serif;
   color: #ffffff;
@@ -2840,18 +2904,18 @@ div.block3 .accordion_12 .frame .content .timetable table tbody tr td.d a.paymen
   border: solid 2px #a550a2;
   margin: 10px 0;
 }
-/* line 2796, styles.less */
+/* line 2852, styles.less */
 div.block3 .accordion_12 .frame .content .timetable table tbody tr:first-child td {
   border: none;
 }
-/* line 2804, styles.less */
+/* line 2860, styles.less */
 div.block3 .accordion_12 .frame .content .payment {
   display: block;
   border-radius: 4px;
   background: #582257;
   margin: 10px;
 }
-/* line 2809, styles.less */
+/* line 2865, styles.less */
 div.block3 .accordion_12 .frame .content .payment p {
   font-family: "Open Sans", sans-serif;
   color: #ebe9eb;
@@ -2860,7 +2924,7 @@ div.block3 .accordion_12 .frame .content .payment p {
   text-align: center;
   padding: 20px 110px;
 }
-/* line 2816, styles.less */
+/* line 2872, styles.less */
 div.block3 .accordion_12 .frame .content .payment p a.link {
   font-family: "Open Sans", sans-serif;
   color: #ebe9eb;
@@ -2868,30 +2932,30 @@ div.block3 .accordion_12 .frame .content .payment p a.link {
   font-weight: 400;
   text-align: center;
 }
-/* line 2830, styles.less */
+/* line 2886, styles.less */
 div.block4 {
   background: #f7f5f6;
 }
-/* line 2832, styles.less */
+/* line 2888, styles.less */
 div.block4 .wrapper {
   padding: 40px 0;
 }
-/* line 2834, styles.less */
+/* line 2890, styles.less */
 div.block4 .wrapper .left {
   float: left;
   width: 40%;
 }
-/* line 2841, styles.less */
+/* line 2897, styles.less */
 div.block4 .wrapper .right {
   float: right;
   width: 60%;
 }
-/* line 2844, styles.less */
+/* line 2900, styles.less */
 div.block4 .wrapper .right h2 {
   color: #582257;
   text-align: left;
 }
-/* line 2848, styles.less */
+/* line 2904, styles.less */
 div.block4 .wrapper .right p {
   font-family: "Open Sans", sans-serif;
   color: #212121;
@@ -2902,12 +2966,12 @@ div.block4 .wrapper .right p {
   padding: 20px 75px 20px 0;
   line-height: 170%;
 }
-/* line 2858, styles.less */
+/* line 2914, styles.less */
 div.block4 .wrapper .right ul {
   margin: 0;
   padding: 0;
 }
-/* line 2861, styles.less */
+/* line 2917, styles.less */
 div.block4 .wrapper .right ul li {
   font-family: "Open Sans", sans-serif;
   color: #212121;
@@ -2918,11 +2982,100 @@ div.block4 .wrapper .right ul li {
   background: url('../images/marker-v.png') left top no-repeat;
   padding: 0 120px 15px 30px;
 }
-/* line 2873, styles.less */
+/* line 2930, styles.less */
+div.block4 .wrapper .timetable h2 {
+  color: #582257;
+}
+/* line 2933, styles.less */
+div.block4 .wrapper .timetable table {
+  width: 85%;
+  margin: auto;
+  border-collapse: collapse;
+}
+/* line 2939, styles.less */
+div.block4 .wrapper .timetable table thead tr th {
+  font-family: "Open Sans", sans-serif;
+  color: #8b7f8d;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: left;
+  text-transform: uppercase;
+}
+/* line 2953, styles.less */
+div.block4 .wrapper .timetable table tbody tr td {
+  padding: 20px 0;
+  border-top: dashed 1px #b6b6b6;
+}
+/* line 2957, styles.less */
+div.block4 .wrapper .timetable table tbody tr td.x {
+  font-family: "Open Sans", sans-serif;
+  color: #a550a2;
+  font-size: 2.8rem;
+  font-weight: 400;
+  text-align: left;
+}
+/* line 2964, styles.less */
+div.block4 .wrapper .timetable table tbody tr td.a {
+  font-family: "Open Sans", sans-serif;
+  color: #212121;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: left;
+}
+/* line 2971, styles.less */
+div.block4 .wrapper .timetable table tbody tr td.b {
+  font-family: "Open Sans", sans-serif;
+  color: #212121;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: left;
+}
+/* line 2978, styles.less */
+div.block4 .wrapper .timetable table tbody tr td.c {
+  font-family: "Open Sans", sans-serif;
+  color: #212121;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: left;
+}
+/* line 2986, styles.less */
+div.block4 .wrapper .timetable table tbody tr td.d a.fee {
+  font-family: "Open Sans", sans-serif;
+  color: #a550a2;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  display: block;
+  border-radius: 8px;
+  border: solid 2px #a550a2;
+  padding: 5px 10px;
+  text-decoration: none;
+  margin: 10px 0;
+}
+/* line 2999, styles.less */
+div.block4 .wrapper .timetable table tbody tr td.d a.payment {
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  display: block;
+  border-radius: 8px;
+  background: #a550a2;
+  padding: 5px 10px;
+  text-decoration: none;
+  border: solid 2px #a550a2;
+  margin: 10px 0;
+}
+/* line 3015, styles.less */
+div.block4 .wrapper .timetable table tbody tr:first-child td {
+  border: none;
+}
+/* line 3023, styles.less */
 div.block4 .wrapper h2 {
   color: #582257;
 }
-/* line 2876, styles.less */
+/* line 3026, styles.less */
 div.block4 .wrapper p {
   font-family: "Open Sans", sans-serif;
   color: #212121;
@@ -2931,16 +3084,16 @@ div.block4 .wrapper p {
   text-align: left;
   padding: 10px 165px;
 }
-/* line 2883, styles.less */
+/* line 3033, styles.less */
 div.block4 .wrapper p span {
   font-weight: 600;
 }
-/* line 2887, styles.less */
+/* line 3037, styles.less */
 div.block4 .wrapper ul {
   margin: 0;
   padding: 0 165px;
 }
-/* line 2890, styles.less */
+/* line 3040, styles.less */
 div.block4 .wrapper ul li {
   font-family: "Open Sans", sans-serif;
   color: #212121;
@@ -2951,15 +3104,15 @@ div.block4 .wrapper ul li {
   background: url('../images/marker-v.png') left top no-repeat;
   padding: 0 120px 15px 30px;
 }
-/* line 2904, styles.less */
+/* line 3054, styles.less */
 div.footer {
   background: #f9f9f9;
 }
-/* line 2907, styles.less */
+/* line 3057, styles.less */
 div.footer .left img {
   float: left;
 }
-/* line 2912, styles.less */
+/* line 3062, styles.less */
 div.footer .right p {
   font-family: "Roboto", sans-serif;
   color: #8b7f8d;
@@ -2968,17 +3121,17 @@ div.footer .right p {
   text-align: left;
   float: right;
 }
-/* line 2919, styles.less */
+/* line 3069, styles.less */
 div.footer .right p span {
   font-weight: 700;
 }
-/* line 2924, styles.less */
+/* line 3074, styles.less */
 div.footer .line {
   background: #e7e1e8;
   height: 1px;
   width: 100%;
 }
-/* line 2929, styles.less */
+/* line 3079, styles.less */
 div.footer p.f {
   font-family: "Roboto", sans-serif;
   color: #8b7f8d;
