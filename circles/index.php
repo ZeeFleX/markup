@@ -690,16 +690,6 @@
 								</td>
 							</tr>
 							<tr>
-								<td class="x">ДИ-1.1</td>
-								<td class="a">Эльмира Сафиуллина</td>
-								<td class="b"><img src="images/coordinate.png"> Москва</td>
-								<td class="c">7-8 января</td>
-								<td class="d">
-									<a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2158" class="fee" target="_blank">Внести первый взнос</a>
-									<a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2159" class="payment" target="_blank">Оплатить 100% участие</a>
-								</td>
-							</tr>
-							<tr>
 								<td class="x">ДИ-1.2</td>
 								<td class="a">Константин Довлатов</td>
 								<td class="b"><img src="images/coordinate.png"> Москва</td>
@@ -707,6 +697,16 @@
 								<td class="d">
 									<a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2160" class="fee" target="_blank">Внести первый взнос</a>
 									<a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2161" class="payment" target="_blank">Оплатить 100% участие</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="x">ДИ-1.1</td>
+								<td class="a">Эльмира Сафиуллина</td>
+								<td class="b"><img src="images/coordinate.png"> Москва</td>
+								<td class="c">7-8 января</td>
+								<td class="d">
+									<a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2158" class="fee" target="_blank">Внести первый взнос</a>
+									<a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2159" class="payment" target="_blank">Оплатить 100% участие</a>
 								</td>
 							</tr>
 							<tr>
