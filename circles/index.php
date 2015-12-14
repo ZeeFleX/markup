@@ -409,7 +409,7 @@
 									<tr>
 										<td class="a">Константин Довлатов</td>
 										<td class="b"><img src="images/coordinate.png"> Москва</td>
-										<td class="c" style="text-align: center">Дата будет определена <br>и объявлена после <br>набора группы</td>
+										<td class="c" style="text-align: center; font-weight: 700;">Дата будет определена <br>и объявлена после <br>набора группы</td>
 										<td class="d">
 											<a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2221" class="fee" target="_blank">Внести первый взнос</a>
 											<!--<a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2176" class="payment" target="_blank">Оплатить 100% участие</a>-->
@@ -738,7 +738,7 @@
 								<td class="x">ДИ-1.3</td>
 								<td class="a">Константин Довлатов</td>
 								<td class="b"><img src="images/coordinate.png"> Москва</td>
-								<td class="c" style="text-align: center">Дата будет определена <br>и объявлена после <br>набора группы</td>
+								<td class="c" style="text-align: center; font-weight: 700;">Дата будет определена <br>и объявлена после <br>набора группы</td>
 								<td class="d">
 									<a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2221" class="fee" target="_blank">Внести первый взнос</a>
 									<!--<a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2176" class="payment" target="_blank">Оплатить 100% участие</a>-->
