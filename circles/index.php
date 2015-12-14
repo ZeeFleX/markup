@@ -11,22 +11,47 @@
 		<script src="js/main.js"></script>
 	</head>
 	<body>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter33301203 = new Ya.Metrika({id:33301203,
+                    webvisor:true,
+                    clickmap:true});
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/33301203" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
 		<div class="fixed-menu-container">
 			<div class="fixed-menu">
 				<ul class="menu">
-					<li data-target=".header"><a href="#"><img src="images/logo-color.png"></a></li>
-					<li data-target=".accordion_1" data-open=".accordion_1" class="<?php if($_GET['di'] == 1){echo 'active';}?>"><a href="#">1.1</a></li>
-					<li data-target=".accordion_2" data-open=".accordion_2" class="<?php if($_GET['di'] == 2){echo 'active';}?>"><a href="#">1.2</a></li>
-					<li data-target=".accordion_3" data-open=".accordion_3" class="<?php if($_GET['di'] == 3){echo 'active';}?>"><a href="#">1.3</a></li>
-					<li data-target=".accordion_4" data-open=".accordion_4" class="<?php if($_GET['di'] == 4){echo 'active';}?>"><a href="#">1.4</a></li>
-					<li data-target=".accordion_5" data-open=".accordion_5" class="<?php if($_GET['di'] == 5){echo 'active';}?>"><a href="#">1.5</a></li>
-					<li data-target=".accordion_6" data-open=".accordion_6" class="<?php if($_GET['di'] == 6){echo 'active';}?>"><a href="#">1.6</a></li>
-					<li data-target=".accordion_7" data-open=".accordion_7" class="<?php if($_GET['di'] == 7){echo 'active';}?>"><a href="#">1.7</a></li>
-					<li data-target=".accordion_8" data-open=".accordion_8" class="<?php if($_GET['di'] == 8){echo 'active';}?>"><a href="#">1.8</a></li>
-					<li data-target=".accordion_9" data-open=".accordion_9" class="<?php if($_GET['di'] == 9){echo 'active';}?>"><a href="#">1.9</a></li>
-					<li data-target=".accordion_10" data-open=".accordion_10" class="<?php if($_GET['di'] == 10){echo 'active';}?>"><a href="#">1.10</a></li>
-					<li data-target=".accordion_11" data-open=".accordion_11" class="<?php if($_GET['di'] == 11){echo 'active';}?>"><a href="#">1.11</a></li>
-					<li data-target=".accordion_12" data-open=".accordion_12" class="<?php if($_GET['di'] == 12){echo 'active';}?>"><a href="#">1.12</a></li>			
+					<li data-target=".header"><a href="#" onclick="yaCounter33301203.reachGoal('MENU_LEFT'); return true;"><img src="images/logo-color.png"></a></li>
+					<li data-target=".accordion_1" data-open=".accordion_1" class="<?php if($_GET['di'] == 1){echo 'active';}?>"><a href="#" onclick="yaCounter33301203.reachGoal('MENU_LEFT'); return true;">1.1</a></li>
+					<li data-target=".accordion_2" data-open=".accordion_2" class="<?php if($_GET['di'] == 2){echo 'active';}?>"><a href="#" onclick="yaCounter33301203.reachGoal('MENU_LEFT'); return true;">1.2</a></li>
+					<li data-target=".accordion_3" data-open=".accordion_3" class="<?php if($_GET['di'] == 3){echo 'active';}?>"><a href="#" onclick="yaCounter33301203.reachGoal('MENU_LEFT'); return true;" >1.3</a></li>
+					<li data-target=".accordion_4" data-open=".accordion_4" class="<?php if($_GET['di'] == 4){echo 'active';}?>"><a href="#" onclick="yaCounter33301203.reachGoal('MENU_LEFT'); return true;">1.4</a></li>
+					<li data-target=".accordion_5" data-open=".accordion_5" class="<?php if($_GET['di'] == 5){echo 'active';}?>"><a href="#" onclick="yaCounter33301203.reachGoal('MENU_LEFT'); return true;">1.5</a></li>
+					<li data-target=".accordion_6" data-open=".accordion_6" class="<?php if($_GET['di'] == 6){echo 'active';}?>"><a href="#" onclick="yaCounter33301203.reachGoal('MENU_LEFT'); return true;">1.6</a></li>
+					<li data-target=".accordion_7" data-open=".accordion_7" class="<?php if($_GET['di'] == 7){echo 'active';}?>"><a href="#" onclick="yaCounter33301203.reachGoal('MENU_LEFT'); return true;">1.7</a></li>
+					<li data-target=".accordion_8" data-open=".accordion_8" class="<?php if($_GET['di'] == 8){echo 'active';}?>"><a href="#" onclick="yaCounter33301203.reachGoal('MENU_LEFT'); return true;">1.8</a></li>
+					<li data-target=".accordion_9" data-open=".accordion_9" class="<?php if($_GET['di'] == 9){echo 'active';}?>"><a href="#" onclick="yaCounter33301203.reachGoal('MENU_LEFT'); return true;">1.9</a></li>
+					<li data-target=".accordion_10" data-open=".accordion_10" class="<?php if($_GET['di'] == 10){echo 'active';}?>"><a href="#" onclick="yaCounter33301203.reachGoal('MENU_LEFT'); return true;">1.10</a></li>
+					<li data-target=".accordion_11" data-open=".accordion_11" class="<?php if($_GET['di'] == 11){echo 'active';}?>"><a href="#" onclick="yaCounter33301203.reachGoal('MENU_LEFT'); return true;">1.11</a></li>
+					<li data-target=".accordion_12" data-open=".accordion_12" class="<?php if($_GET['di'] == 12){echo 'active';}?>"><a href="#" onclick="yaCounter33301203.reachGoal('MENU_LEFT'); return true;">1.12</a></li>
 				</ul>
 			</div>
 		</div>
@@ -102,7 +127,7 @@
 						<p>Проработка ключевых моментов формирования и развития 12 умов</p>
 					</div>
 					<div class="content">
-						<div class="date">21-22 ноября <br>10:00-18:00</div>
+						<div class="date">7-8 января <br>10:00-18:00</div>
 						<p>Вы уже знаете, что есть 16 психических блоков (зарядов), которые тормозят наше развитие. Например:</p>
 						<ul class="x">
 							<li>травмы</li>
@@ -192,7 +217,7 @@
 									
 								</thead>
 								<tbody>
-									<tr>
+									<!--<tr>
 										<td class="a">Константин Довлатов</td>
 										<td class="b"><img src="images/coordinate.png"> Москва</td>
 										<td class="c">21-22 ноября</td>
@@ -200,7 +225,7 @@
 											<a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2152" class="fee" target="_blank">Внести первый взнос</a>
 											<a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2153" class="payment" target="_blank">Оплатить 100% участие</a>
 										</td>
-									</tr>
+									</tr>-->
 									<tr>
 										<td class="a">Эльмира Сафиуллина</td>
 										<td class="b"><img src="images/coordinate.png"> Москва</td>
@@ -257,7 +282,7 @@
 						<h5>Как восстановить работу системных законов и вернуть силу своего рода?</h5>
 						<p>Каждый из этих законов влияет на вашу жизнь: неудачи в любви, в отношениях, в общении с людьми, в бизнесе, в любой сфере, в которой сейчас вы терпите поражение.</p>
 						<p>Когда на человека накатывает родовая динамика, он ничего не может сделать, потому что не понимает, что происходит. Он искренне верит, что поступает осознанно, осмысленно и это действительно его мысли и желания.</p>
-						<p>Поэтому крайне важно проработать проблемы, связанные с родом, если вы хотите жить в любви и счастье с родными и окружающими. Это вы сделаете на встрече ДИ 1.2: научитесь применять техники Духовной интеграционики и метафорические карты для восстановления родовой структуры.</p>
+						<p>Поэтому крайне важно проработать проблемы, связанные с родом, если вы хотите жить в любви и счастье с родными и окружающими. Это вы сделаете на встрече ДИ 1.2: научитесь применять технику Духовной интеграционики для восстановления родовой структуры.</p>
 						<h5>Что будет на ДИ 1.2:</h5>
 						<ul class="v">
 							<li>работа с родовой лояльностью</li>
@@ -291,7 +316,7 @@
 							<p><img src="images/time.png"> 10:00-18:00</p>
 						</div>
 						<div class="timetable">
-							<h2>Расписание тренингов ДИ 1.2</h2>
+							<!--<h2>Расписание тренингов ДИ 1.2</h2>
 							<table>
 								<thead>
 									<tr>
@@ -313,7 +338,7 @@
 										</td>
 									</tr>									
 								</tbody>
-							</table>
+							</table>-->
 							<div class="payment">
 								<p>Внесение первого взноса <a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2160" class="link" target="_blank">закрепляет за Вами место на тренинге и стоимость участия в нем.</a></p>
 							</div>
@@ -329,7 +354,7 @@
 						<p>Сепарация с родителями</p>
 					</div>
 					<div class="content">
-						<div class="date">9-10 января <br>10:00-18:00</div>
+						<!--<div class="date">9-10 января <br>10:00-18:00</div>-->
 						<p>Сепарация - это процесс отделения ребенка от родителей. Но 90% взрослых до сих пор ходят с “неотрезанной пуповиной”. Мнение, желания и планы родителей держат на коротком поводке. Выполняя их мечты, вы забываете строить собственную жизнь.</p>
 						<p>Считается, что это забота, но на самом деле родные медленно нас убивают. Из-за внутреннего конфликта “родители сказали” и “а я хочу этого” приходится постоянно расходовать гораздо больше ресурсов и энергии.</p>
 						<p>Что в результате? Опустошенность. Постоянная усталость. Трудности в создании собственной семьи. Провалы в работе и самореализации. Постоянно недовольство собой. Вы будто не принадлежите сами себе - а так и есть, потому что не прошел процесс сепарации от родителей.</p>
@@ -384,10 +409,10 @@
 									<tr>
 										<td class="a">Константин Довлатов</td>
 										<td class="b"><img src="images/coordinate.png"> Москва</td>
-										<td class="c">9-10 января</td>
+										<td class="c" style="text-align: center">Дата будет определена <br>и объявлена после <br>набора группы</td>
 										<td class="d">
-											<a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2175" class="fee" target="_blank">Внести первый взнос</a>
-											<a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2176" class="payment" target="_blank">Оплатить 100% участие</a>
+											<a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2221" class="fee" target="_blank">Внести первый взнос</a>
+											<!--<a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2176" class="payment" target="_blank">Оплатить 100% участие</a>-->
 										</td>
 									</tr>									
 								</tbody>
@@ -407,7 +432,7 @@
 						<p>Мужское и Женское</p>
 					</div>
 					<div class="content">
-						<div class="date">13-14 февраля <br>10:00-18:00</div>
+						<!--<div class="date">13-14 февраля <br>10:00-18:00</div>-->
 						<p>Отдельная встреча, посвященная внутреннему мужчине и женщине.</p>
 						<p>Разбираются моменты взаимоотношений, сценарии взаимодействия и все то, что мешает вам найти свое счастье и любовь.</p>
 						<div class="value">
@@ -429,7 +454,7 @@
 							<p><img src="images/time.png"> 10:00-18:00</p>
 						</div>
 						<div class="timetable">
-							<h2>Расписание тренингов ДИ 1.4</h2>
+							<!--<h2>Расписание тренингов ДИ 1.4</h2>
 							<table>
 								<thead>
 									<tr>
@@ -451,7 +476,7 @@
 										</td>
 									</tr>									
 								</tbody>
-							</table>
+							</table>-->
 							<div class="payment">
 								<p>Внесение первого взноса <a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2177" class="link" target="_blank">закрепляет за Вами место на тренинге и стоимость участия в нем.</a></p>
 							</div>
@@ -467,7 +492,7 @@
 						<p>Работа с тенью</p>
 					</div>
 					<div class="content">
-						<div class="date">2-3 апреля <br>10:00-18:00</div>
+						<!--<div class="date">2-3 апреля <br>10:00-18:00</div>-->
 						<p>Пора прекратить бояться собственной тени. На этой встречи вы составляете список своих теневых качеств жизни.</p>
 						<p>А затем выбираете, прорабатываете, интегрируете и освобождаетесь от того, что мешало вам жить полной, успешной, счастливой жизнью.</p>
 						<div class="value">
@@ -489,7 +514,7 @@
 							<p><img src="images/time.png"> 10:00-18:00</p>
 						</div>
 						<div class="timetable">
-							<h2>Расписание тренингов ДИ 1.5</h2>
+							<!--<h2>Расписание тренингов ДИ 1.5</h2>
 							<table>
 								<thead>
 									<tr>
@@ -511,7 +536,7 @@
 										</td>
 									</tr>									
 								</tbody>
-							</table>
+							</table>-->
 							<div class="payment">
 								<p>Внесение первого взноса <a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2179" class="link" target="_blank">закрепляет за Вами место на тренинге и стоимость участия в нем.</a></p>
 							</div>
@@ -527,7 +552,7 @@
 						<p>Впусти изобилие в свою жизнь</p>
 					</div>
 					<div class="content">
-						<div class="date">21-22 мая <br>10:00-18:00</div>
+						<!--<div class="date">21-22 мая <br>10:00-18:00</div>-->
 						<p>На занятии рассмотрим длинный список аспектов, которые блокируют поток денег в вашу жизнь. Прорабатываем – и вы начинаете зарабатывать на порядок больше, чем до ДИ 1.6.</p>
 						<div class="value">
 							<h3>Стоимость участия:</h3>
@@ -548,7 +573,7 @@
 							<p><img src="images/time.png"> 10:00-18:00</p>
 						</div>
 						<div class="timetable">
-							<h2>Расписание тренингов ДИ 1.6</h2>
+							<!--<h2>Расписание тренингов ДИ 1.6</h2>
 							<table>
 								<thead>
 									<tr>
@@ -570,7 +595,7 @@
 										</td>
 									</tr>									
 								</tbody>
-							</table>
+							</table>-->
 							<div class="payment">
 								<p>Внесение первого взноса <a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2181" class="link" target="_blank">закрепляет за Вами место на тренинге и стоимость участия в нем.</a></p>
 							</div>
@@ -679,7 +704,7 @@
 							
 						</thead>
 						<tbody>
-							<tr>
+							<!--<tr>
 								<td class="x">ДИ-1.1</td>
 								<td class="a">Константин Довлатов</td>
 								<td class="b"><img src="images/coordinate.png"> Москва</td>
@@ -688,8 +713,8 @@
 									<a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2152" class="fee" target="_blank">Внести первый взнос</a>
 									<a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2153" class="payment" target="_blank">Оплатить 100% участие</a>
 								</td>
-							</tr>
-							<tr>
+							</tr>-->
+							<!--<tr>
 								<td class="x">ДИ-1.2</td>
 								<td class="a">Константин Довлатов</td>
 								<td class="b"><img src="images/coordinate.png"> Москва</td>
@@ -698,7 +723,7 @@
 									<a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2160" class="fee" target="_blank">Внести первый взнос</a>
 									<a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2161" class="payment" target="_blank">Оплатить 100% участие</a>
 								</td>
-							</tr>
+							</tr>-->
 							<tr>
 								<td class="x">ДИ-1.1</td>
 								<td class="a">Эльмира Сафиуллина</td>
@@ -713,13 +738,13 @@
 								<td class="x">ДИ-1.3</td>
 								<td class="a">Константин Довлатов</td>
 								<td class="b"><img src="images/coordinate.png"> Москва</td>
-								<td class="c">9-10 января</td>
+								<td class="c" style="text-align: center">Дата будет определена <br>и объявлена после <br>набора группы</td>
 								<td class="d">
-									<a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2175" class="fee" target="_blank">Внести первый взнос</a>
-									<a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2176" class="payment" target="_blank">Оплатить 100% участие</a>
+									<a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2221" class="fee" target="_blank">Внести первый взнос</a>
+									<!--<a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2176" class="payment" target="_blank">Оплатить 100% участие</a>-->
 								</td>
 							</tr>
-							<tr>
+							<!--<tr>
 								<td class="x">ДИ-1.4</td>
 								<td class="a">Константин Довлатов</td>
 								<td class="b"><img src="images/coordinate.png"> Москва</td>
@@ -748,7 +773,7 @@
 									<a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2181" class="fee" target="_blank">Внести первый взнос</a>
 									<a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2182" class="payment" target="_blank">Оплатить 100% участие</a>
 								</td>
-							</tr>								
+							</tr>-->								
 						</tbody>
 					</table>					
 				</div>
