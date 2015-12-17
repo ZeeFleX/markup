@@ -1,0 +1,437 @@
+*{
+	position: relative;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,300,700,600&subset=latin,cyrillic);
+
+html{
+	font-size: 62.5%;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.clr{
+	clear:both;
+}
+
+//.bold{
+//	font-weight: 700;
+//}
+//br.only-screen{
+
+//}
+
+h1{
+	font-family: "Open Sans", sans-serif;
+	color: #212121;
+	font-size: 3.0rem;
+	font-weight: 400;
+	line-height: 40px;
+	text-align: center;
+}
+
+h2{
+	font-family: "Open Sans", sans-serif;
+	color: #212121;
+	font-size: 2.4rem;
+	font-weight: 400;
+	line-height: 36px;
+	text-align: left;
+}
+
+h3{
+	font-family: "Open Sans", sans-serif;
+	color: #ffffff;
+	font-size: 2.0rem;
+	font-weight: 600;
+	line-height: 30px;
+	text-align: center;
+}
+
+h4{
+	font-family: "Open Sans", sans-serif;
+	color: #ffffff;
+	font-size: 1.8rem;
+	font-weight: 600;
+	line-height: 30px;
+	text-align: center;
+}
+
+p{
+	font-family: "Open Sans", sans-serif;
+	color: #212121;
+	font-size: 1.6rem;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: left;
+}
+
+a.ny-button{
+	background: #4caf50;
+	font-family: "Open Sans", sans-serif;
+	color: #ffffff;
+	font-size: 1.6rem;
+	font-weight: 700;
+	text-align: center;
+	text-decoration: none;
+	padding: 15px 45px;
+	border-radius: 8px;
+	box-shadow: 0px 3px 0px 0px #388e3c;
+	&:hover{
+		background: #388e3c;
+	}
+}
+//==============================================================================
+//ГЛАВНАЯ
+div.ny-header{
+	background: url('../images/bg-header.jpg') center center no-repeat;
+	background-size: cover;
+	z-index: 1;
+	.ny-wrapper{
+		max-width: 620px;
+		width: 95%;
+		margin: auto;
+		padding: 55px 0 75px 0;
+		text-align: center;
+		h1{
+			color: #ffffff;
+			font-weight: 700;
+			line-height: 48px;
+			margin: 0;
+			padding: 0;
+		}
+		h3{
+			margin: 25px 0 40px 0;
+			padding: 0;
+		}
+		.ny-date{
+			float: left;
+			width: 45%;
+			text-align: right;
+			img{
+				margin-right: 5px;
+			}
+		}
+		.ny-time{
+			float: right;
+			width: 55%;
+			text-align: left;
+			img{
+				margin-left: 5px;
+			}
+		}
+		h4{
+			margin: 20px 0 0 0;
+			padding: 0;
+		}
+		a.ny-button{
+			position: absolute;
+			bottom: -22px;
+			display: block;
+			width: 230px;
+			left: 50%;
+			margin-left: -165px;
+			background: #4caf50;
+			font-family: "Open Sans", sans-serif;
+			color: #ffffff;
+			font-size: 1.6rem;
+			font-weight: 700;
+			text-align: center;
+			text-decoration: none;
+			padding: 15px 45px;
+			border-radius: 8px;
+			box-shadow: 0px 3px 0px 0px #388e3c;
+			&:hover{
+				background: #388e3c;
+			}
+		}
+	}
+}
+//==============================================================================
+//БЛОК-1
+div.ny-block1{
+	.ny-wrapper{
+		max-width: 782px;
+		width: 95%;
+		margin: auto;
+		padding: 55px 0;
+		.ny-textur{
+			background: url('../images/bg-book.png') top center repeat;
+			border-radius: 10px;
+			.ny-left{
+				float: left;
+				width: 38%;
+   				padding: 5% 3% 7% 5%;
+			}
+			.ny-right{
+				float: right;
+				width: 38%;
+				padding: 5% 5% 7% 3%;;
+			}
+			.ny-book{
+				h2{
+					margin: 0;
+					padding: 0 0 40px 0;
+				}
+				p{
+					margin: 0;
+					padding: 0 0 30px 0;
+				}
+			}
+		}
+		.ny-textur:before, .ny-textur:after{
+			z-index: -1;
+			position: absolute;
+			content: "";
+			bottom: 10px;
+			left: 30px;
+			width: 50%;
+			top: 80%;
+			max-width:300px;
+			background: #c3c3c3;
+			-webkit-box-shadow: 0 15px 35px #c3c3c3;
+			-moz-box-shadow: 0 15px 35px #c3c3c3;
+			box-shadow: 0 15px 35px #c3c3c3;
+			-webkit-transform: rotate(-3deg);
+			-moz-transform: rotate(-3deg);
+			-o-transform: rotate(-3deg);
+			-ms-transform: rotate(-3deg);
+			transform: rotate(-3deg);
+		}
+		.ny-textur:after{
+			-webkit-transform: rotate(3deg);
+			-moz-transform: rotate(3deg);
+			-o-transform: rotate(3deg);
+			-ms-transform: rotate(3deg);
+			transform: rotate(3deg);
+			right: 30px;
+			left: auto;
+		}
+	}
+}
+//==============================================================================
+//БЛОК-2
+div.ny-block2{
+	.ny-wrapper{
+		max-width: 630px;
+		width: 95%;
+		margin: auto;
+		h1{
+			margin: 0;
+			padding: 0;
+			margin-bottom: 40px;
+		}
+		ul{
+			margin: 0;
+			padding: 0;
+			li{
+				background: url('../images/marker-red.png') left 5px no-repeat;
+				font-family: "Open Sans", sans-serif;
+				color: #212121;
+				font-size: 1.6rem;
+				font-weight: 400;
+				line-height: 24px;
+				text-align: left;
+				list-style: none;
+				padding: 0px 0px 30px 40px;
+			}
+		}
+		p{
+			text-align: center;
+			font-weight: 600;
+			margin: 0;
+			padding: 0;
+			margin-bottom: 50px;
+		}
+	}
+}
+//==============================================================================
+//БЛОК-3
+div.ny-block3{
+	background: #f5f5f5;
+	.ny-wrapper{
+		max-width: 1230px;
+		width: 95%;
+		margin: auto;
+		.ny-left{
+			float: left;
+			width: 44%;
+			padding: 3% 10%;
+			h1{
+				margin: 0;
+				padding: 0;
+			}
+			p{
+				margin: 0;
+				padding: 0;
+				margin-top: 30px;
+			}
+		}
+		.ny-right{
+			float: right;
+			width: 30%;	
+			img{
+				//position: absolute;
+				bottom: -25px;
+				width: 100%;
+			}
+		}
+	}
+}
+//==============================================================================
+//БЛОК-4
+div.ny-block4{
+	.ny-wrapper{
+		max-width: 770px;
+		width: 95%;
+		margin: auto;
+		h1{
+			margin: 40px 0;
+			padding: 0;
+		}
+		.ny-left{
+			float: left;
+			width: 35%;
+			ext-align: center;	
+			img{
+				width: 100%;
+				display: inline-block;
+				vertical-align: middle;				
+			}
+		}
+		.ny-right{
+			float: right;
+			width: 60%;
+			ul{
+				margin: 0;
+				padding: 0;
+				li{
+					background: url('../images/marker-green.png') left 5px no-repeat;
+					font-family: "Open Sans", sans-serif;
+					color: #212121;
+					font-size: 1.6rem;
+					font-weight: 400;
+					line-height: 24px;
+					text-align: left;
+					list-style: none;
+					padding: 0px 0px 20px 40px;
+				}
+			}
+		}
+	}
+}
+//==============================================================================
+//ФУТЕР
+div.ny-footer{
+	.ny-background{
+		background: url('../images/bg-footer.jpg') top center no-repeat;
+		background-size: cover;
+		.ny-wrapper{
+			max-width: 630px;
+			width: 95%;
+			margin: auto;
+			padding: 70px 0;
+			h1{
+				margin: 0;
+				padding: 0;
+			}
+			p{
+				margin: 40px 0;
+				padding: 0;
+				text-align: center;
+			}
+			.ny-form{
+				border-radius: 4px;
+				background: -webkit-linear-gradient(90deg, #ffaf00 0%, #ffee21 100%);
+				background: -moz-linear-gradient(90deg, #ffaf00 0%, #ffee21 100%);
+				background: -o-linear-gradient(90deg, #ffaf00 0%, #ffee21 100%);
+				background: -ms-linear-gradient(90deg, #ffaf00 0%, #ffee21 100%);
+				background: linear-gradient(0deg, #ffaf00 0%, #ffee21 100%);
+				.ny-container{
+					border-radius: 4px;
+					background: #ffffff;
+					box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.2);
+					margin: 10px;
+					text-align: center;
+					h2{
+						font-weight: 600;
+						text-align: center;
+						margin: 0;
+						padding: 30px 0 0 0;
+					}
+					.ny-price{
+						border-radius: 4px;
+						background: #fff3d9;
+						margin: 20px;
+						padding-bottom: 20px;
+						h4{
+							color: #212121;
+							font-weight: 700;
+							line-height: 36px;
+							text-transform: uppercase;
+							margin: 0;
+							padding: 10px 0;
+						}
+						a.ny-button-mini{
+							background: #4caf50;
+							font-family: "Open Sans", sans-serif;
+							color: #ffffff;
+							font-size: 1.6rem;
+							font-weight: 600;
+							text-align: center;
+							left: 50%;
+							margin-left: -100px;
+							display: block;
+							text-transform: uppercase;
+							text-decoration: none;
+							padding: 10px 0;
+							width: 200px;
+							border-radius: 4px;
+							box-shadow: 1px 2px 1px 0px rgba(0, 0, 0, 0.29);
+							&:hover{
+								background: #388e3c;
+							}
+						}
+					}
+					p{
+						padding-bottom: 30px;
+						margin: 0 30px;
+						font-size: 1.4rem;
+						span{
+							color: #727272;
+							font-style: italic;
+							text-align: center;
+						}
+					}
+					img{margin-bottom: 30px;
+
+					}
+				}
+			}
+			.ny-webinar{
+				float: left;
+				width: 48%;
+			}
+			.ny-clab{
+				float: right;
+				width: 48%;
+			}
+		}
+	}
+	.ny-foot{
+		background: #f5f5f5;
+		p{
+			margin: 0;
+			padding: 10px 0;
+			font-size: 1.4rem;
+			font-weight: 600;
+			line-height: 40px;
+			text-align: center;
+			text-shadow: 0px 1px 0px #ffffff;
+		}
+	}
+}
+//==============================================================================

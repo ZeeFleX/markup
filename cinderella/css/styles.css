@@ -1,0 +1,465 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,300,700,600&subset=latin,cyrillic);
+/* line 1, styles.less */
+* {
+  position: relative;
+}
+/* line 7, styles.less */
+html {
+  font-size: 62.5%;
+}
+/* line 11, styles.less */
+body {
+  margin: 0;
+  padding: 0;
+}
+/* line 16, styles.less */
+.clr {
+  clear: both;
+}
+/* line 27, styles.less */
+h1 {
+  font-family: "Open Sans", sans-serif;
+  color: #212121;
+  font-size: 3.0rem;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: center;
+}
+/* line 36, styles.less */
+h2 {
+  font-family: "Open Sans", sans-serif;
+  color: #212121;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: left;
+}
+/* line 45, styles.less */
+h3 {
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  font-size: 2.0rem;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+}
+/* line 54, styles.less */
+h4 {
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+}
+/* line 63, styles.less */
+p {
+  font-family: "Open Sans", sans-serif;
+  color: #212121;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+/* line 72, styles.less */
+a.ny-button {
+  background: #4caf50;
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  padding: 15px 45px;
+  border-radius: 8px;
+  box-shadow: 0px 3px 0px 0px #388e3c;
+}
+/* line 83, styles.less */
+a.ny-button:hover {
+  background: #388e3c;
+}
+/* line 89, styles.less */
+div.ny-header {
+  background: url('../images/bg-header.jpg') center center no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+/* line 93, styles.less */
+div.ny-header .ny-wrapper {
+  max-width: 620px;
+  width: 95%;
+  margin: auto;
+  padding: 55px 0 75px 0;
+  text-align: center;
+}
+/* line 99, styles.less */
+div.ny-header .ny-wrapper h1 {
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 48px;
+  margin: 0;
+  padding: 0;
+}
+/* line 106, styles.less */
+div.ny-header .ny-wrapper h3 {
+  margin: 25px 0 40px 0;
+  padding: 0;
+}
+/* line 110, styles.less */
+div.ny-header .ny-wrapper .ny-date {
+  float: left;
+  width: 45%;
+  text-align: right;
+}
+/* line 114, styles.less */
+div.ny-header .ny-wrapper .ny-date img {
+  margin-right: 5px;
+}
+/* line 118, styles.less */
+div.ny-header .ny-wrapper .ny-time {
+  float: right;
+  width: 55%;
+  text-align: left;
+}
+/* line 122, styles.less */
+div.ny-header .ny-wrapper .ny-time img {
+  margin-left: 5px;
+}
+/* line 126, styles.less */
+div.ny-header .ny-wrapper h4 {
+  margin: 20px 0 0 0;
+  padding: 0;
+}
+/* line 130, styles.less */
+div.ny-header .ny-wrapper a.ny-button {
+  position: absolute;
+  bottom: -22px;
+  display: block;
+  width: 230px;
+  left: 50%;
+  margin-left: -165px;
+  background: #4caf50;
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  padding: 15px 45px;
+  border-radius: 8px;
+  box-shadow: 0px 3px 0px 0px #388e3c;
+}
+/* line 147, styles.less */
+div.ny-header .ny-wrapper a.ny-button:hover {
+  background: #388e3c;
+}
+/* line 156, styles.less */
+div.ny-block1 .ny-wrapper {
+  max-width: 782px;
+  width: 95%;
+  margin: auto;
+  padding: 55px 0;
+}
+/* line 161, styles.less */
+div.ny-block1 .ny-wrapper .ny-textur {
+  background: url('../images/bg-book.png') top center repeat;
+  border-radius: 10px;
+}
+/* line 164, styles.less */
+div.ny-block1 .ny-wrapper .ny-textur .ny-left {
+  float: left;
+  width: 38%;
+  padding: 5% 3% 7% 5%;
+}
+/* line 169, styles.less */
+div.ny-block1 .ny-wrapper .ny-textur .ny-right {
+  float: right;
+  width: 38%;
+  padding: 5% 5% 7% 3%;
+}
+/* line 175, styles.less */
+div.ny-block1 .ny-wrapper .ny-textur .ny-book h2 {
+  margin: 0;
+  padding: 0 0 40px 0;
+}
+/* line 179, styles.less */
+div.ny-block1 .ny-wrapper .ny-textur .ny-book p {
+  margin: 0;
+  padding: 0 0 30px 0;
+}
+/* line 185, styles.less */
+div.ny-block1 .ny-wrapper .ny-textur:before,
+div.ny-block1 .ny-wrapper .ny-textur:after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 10px;
+  left: 30px;
+  width: 50%;
+  top: 80%;
+  max-width: 300px;
+  background: #c3c3c3;
+  -webkit-box-shadow: 0 15px 35px #c3c3c3;
+  -moz-box-shadow: 0 15px 35px #c3c3c3;
+  box-shadow: 0 15px 35px #c3c3c3;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+/* line 204, styles.less */
+div.ny-block1 .ny-wrapper .ny-textur:after {
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  right: 30px;
+  left: auto;
+}
+/* line 218, styles.less */
+div.ny-block2 .ny-wrapper {
+  max-width: 630px;
+  width: 95%;
+  margin: auto;
+}
+/* line 222, styles.less */
+div.ny-block2 .ny-wrapper h1 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+}
+/* line 227, styles.less */
+div.ny-block2 .ny-wrapper ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 230, styles.less */
+div.ny-block2 .ny-wrapper ul li {
+  background: url('../images/marker-red.png') left 5px no-repeat;
+  font-family: "Open Sans", sans-serif;
+  color: #212121;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  list-style: none;
+  padding: 0px 0px 30px 40px;
+}
+/* line 242, styles.less */
+div.ny-block2 .ny-wrapper p {
+  text-align: center;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 50px;
+}
+/* line 253, styles.less */
+div.ny-block3 {
+  background: #f5f5f5;
+}
+/* line 255, styles.less */
+div.ny-block3 .ny-wrapper {
+  max-width: 1230px;
+  width: 95%;
+  margin: auto;
+}
+/* line 259, styles.less */
+div.ny-block3 .ny-wrapper .ny-left {
+  float: left;
+  width: 44%;
+  padding: 3% 10%;
+}
+/* line 263, styles.less */
+div.ny-block3 .ny-wrapper .ny-left h1 {
+  margin: 0;
+  padding: 0;
+}
+/* line 267, styles.less */
+div.ny-block3 .ny-wrapper .ny-left p {
+  margin: 0;
+  padding: 0;
+  margin-top: 30px;
+}
+/* line 273, styles.less */
+div.ny-block3 .ny-wrapper .ny-right {
+  float: right;
+  width: 30%;
+}
+/* line 276, styles.less */
+div.ny-block3 .ny-wrapper .ny-right img {
+  bottom: -25px;
+  width: 100%;
+}
+/* line 287, styles.less */
+div.ny-block4 .ny-wrapper {
+  max-width: 770px;
+  width: 95%;
+  margin: auto;
+}
+/* line 291, styles.less */
+div.ny-block4 .ny-wrapper h1 {
+  margin: 40px 0;
+  padding: 0;
+}
+/* line 295, styles.less */
+div.ny-block4 .ny-wrapper .ny-left {
+  float: left;
+  width: 35%;
+  ext-align: center;
+}
+/* line 299, styles.less */
+div.ny-block4 .ny-wrapper .ny-left img {
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 305, styles.less */
+div.ny-block4 .ny-wrapper .ny-right {
+  float: right;
+  width: 60%;
+}
+/* line 308, styles.less */
+div.ny-block4 .ny-wrapper .ny-right ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 311, styles.less */
+div.ny-block4 .ny-wrapper .ny-right ul li {
+  background: url('../images/marker-green.png') left 5px no-repeat;
+  font-family: "Open Sans", sans-serif;
+  color: #212121;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  list-style: none;
+  padding: 0px 0px 20px 40px;
+}
+/* line 329, styles.less */
+div.ny-footer .ny-background {
+  background: url('../images/bg-footer.jpg') top center no-repeat;
+  background-size: cover;
+}
+/* line 332, styles.less */
+div.ny-footer .ny-background .ny-wrapper {
+  max-width: 630px;
+  width: 95%;
+  margin: auto;
+  padding: 70px 0;
+}
+/* line 337, styles.less */
+div.ny-footer .ny-background .ny-wrapper h1 {
+  margin: 0;
+  padding: 0;
+}
+/* line 341, styles.less */
+div.ny-footer .ny-background .ny-wrapper p {
+  margin: 40px 0;
+  padding: 0;
+  text-align: center;
+}
+/* line 346, styles.less */
+div.ny-footer .ny-background .ny-wrapper .ny-form {
+  border-radius: 4px;
+  background: -webkit-linear-gradient(90deg, #ffaf00 0%, #ffee21 100%);
+  background: -moz-linear-gradient(90deg, #ffaf00 0%, #ffee21 100%);
+  background: -o-linear-gradient(90deg, #ffaf00 0%, #ffee21 100%);
+  background: -ms-linear-gradient(90deg, #ffaf00 0%, #ffee21 100%);
+  background: linear-gradient(0deg, #ffaf00 0%, #ffee21 100%);
+}
+/* line 353, styles.less */
+div.ny-footer .ny-background .ny-wrapper .ny-form .ny-container {
+  border-radius: 4px;
+  background: #ffffff;
+  box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  text-align: center;
+}
+/* line 359, styles.less */
+div.ny-footer .ny-background .ny-wrapper .ny-form .ny-container h2 {
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+  padding: 30px 0 0 0;
+}
+/* line 365, styles.less */
+div.ny-footer .ny-background .ny-wrapper .ny-form .ny-container .ny-price {
+  border-radius: 4px;
+  background: #fff3d9;
+  margin: 20px;
+  padding-bottom: 20px;
+}
+/* line 370, styles.less */
+div.ny-footer .ny-background .ny-wrapper .ny-form .ny-container .ny-price h4 {
+  color: #212121;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 10px 0;
+}
+/* line 378, styles.less */
+div.ny-footer .ny-background .ny-wrapper .ny-form .ny-container .ny-price a.ny-button-mini {
+  background: #4caf50;
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+  left: 50%;
+  margin-left: -100px;
+  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 0;
+  width: 200px;
+  border-radius: 4px;
+  box-shadow: 1px 2px 1px 0px rgba(0, 0, 0, 0.29);
+}
+/* line 394, styles.less */
+div.ny-footer .ny-background .ny-wrapper .ny-form .ny-container .ny-price a.ny-button-mini:hover {
+  background: #388e3c;
+}
+/* line 399, styles.less */
+div.ny-footer .ny-background .ny-wrapper .ny-form .ny-container p {
+  padding-bottom: 30px;
+  margin: 0 30px;
+  font-size: 1.4rem;
+}
+/* line 403, styles.less */
+div.ny-footer .ny-background .ny-wrapper .ny-form .ny-container p span {
+  color: #727272;
+  font-style: italic;
+  text-align: center;
+}
+/* line 409, styles.less */
+div.ny-footer .ny-background .ny-wrapper .ny-form .ny-container img {
+  margin-bottom: 30px;
+}
+/* line 414, styles.less */
+div.ny-footer .ny-background .ny-wrapper .ny-webinar {
+  float: left;
+  width: 48%;
+}
+/* line 418, styles.less */
+div.ny-footer .ny-background .ny-wrapper .ny-clab {
+  float: right;
+  width: 48%;
+}
+/* line 424, styles.less */
+div.ny-footer .ny-foot {
+  background: #f5f5f5;
+}
+/* line 426, styles.less */
+div.ny-footer .ny-foot p {
+  margin: 0;
+  padding: 10px 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 40px;
+  text-align: center;
+  text-shadow: 0px 1px 0px #ffffff;
+}
+/*# sourceMappingURL=styles.css.map */
