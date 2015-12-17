@@ -299,23 +299,23 @@ div.ny-block4 {
 }
 /* line 289, styles.less */
 div.ny-block4 .ny-wrapper {
-  max-width: 730px;
+  max-width: 770px;
   width: 95%;
   margin: auto;
-  padding: 75px 0;
+  padding-top: 75px;
+  padding-bottom: 250px;
 }
-/* line 294, styles.less */
+/* line 295, styles.less */
 div.ny-block4 .ny-wrapper h1 {
   margin: 0;
   padding: 0;
   margin-bottom: 40px;
 }
-/* line 299, styles.less */
+/* line 300, styles.less */
 div.ny-block4 .ny-wrapper .ny-left {
   float: left;
   width: 35%;
-  text-align: center;
-  margin-bottom: 50px;
+  ext-align: center;
 }
 /* line 304, styles.less */
 div.ny-block4 .ny-wrapper .ny-left img {
@@ -326,14 +326,13 @@ div.ny-block4 .ny-wrapper .ny-left img {
 div.ny-block4 .ny-wrapper .ny-right {
   float: right;
   width: 60%;
-  margin-bottom: 50px;
 }
-/* line 313, styles.less */
+/* line 312, styles.less */
 div.ny-block4 .ny-wrapper .ny-right ul {
   margin: 0;
   padding: 0;
 }
-/* line 316, styles.less */
+/* line 315, styles.less */
 div.ny-block4 .ny-wrapper .ny-right ul li {
   background: url('../images/marker-green.png') left 5px no-repeat;
   font-family: "Open Sans", sans-serif;
@@ -345,105 +344,47 @@ div.ny-block4 .ny-wrapper .ny-right ul li {
   list-style: none;
   padding: 0px 0px 20px 40px;
 }
-/* line 329, styles.less */
-div.ny-block4 .ny-wrapper p {
-  margin: 40px 0;
-  padding: 0;
-  text-align: center;
-}
-/* line 334, styles.less */
-div.ny-block4 .ny-wrapper .ny-form {
+/* line 328, styles.less */
+div.ny-block4 .ny-wrapper .ny-important {
   border-radius: 4px;
   background: -webkit-linear-gradient(90deg, #ffaf00 0%, #ffee21 100%);
   background: -moz-linear-gradient(90deg, #ffaf00 0%, #ffee21 100%);
   background: -o-linear-gradient(90deg, #ffaf00 0%, #ffee21 100%);
   background: -ms-linear-gradient(90deg, #ffaf00 0%, #ffee21 100%);
   background: linear-gradient(0deg, #ffaf00 0%, #ffee21 100%);
+  padding: 10px;
+  margin-top: 50px;
 }
-/* line 341, styles.less */
-div.ny-block4 .ny-wrapper .ny-form .ny-container {
+/* line 337, styles.less */
+div.ny-block4 .ny-wrapper .ny-important .ny-container {
   border-radius: 4px;
   background: #ffffff;
   box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.2);
-  margin: 10px;
   text-align: center;
 }
-/* line 347, styles.less */
-div.ny-block4 .ny-wrapper .ny-form .ny-container h2 {
-  font-weight: 600;
-  text-align: center;
+/* line 342, styles.less */
+div.ny-block4 .ny-wrapper .ny-important .ny-container .ny-text {
+  width: 80%;
+  margin: auto;
+}
+/* line 345, styles.less */
+div.ny-block4 .ny-wrapper .ny-important .ny-container .ny-text h1 {
   margin: 0;
-  padding: 30px 0 0 0;
-}
-/* line 353, styles.less */
-div.ny-block4 .ny-wrapper .ny-form .ny-container .ny-price {
-  border-radius: 4px;
-  background: #fff3d9;
-  margin: 20px;
-  padding-bottom: 20px;
-}
-/* line 358, styles.less */
-div.ny-block4 .ny-wrapper .ny-form .ny-container .ny-price h4 {
-  color: #212121;
-  font-weight: 700;
-  line-height: 36px;
-  text-transform: uppercase;
-  margin: 0;
-  padding: 10px 0;
-}
-/* line 366, styles.less */
-div.ny-block4 .ny-wrapper .ny-form .ny-container .ny-price a.ny-button-mini {
-  background: #4caf50;
-  font-family: "Open Sans", sans-serif;
-  color: #ffffff;
-  font-size: 1.6rem;
-  font-weight: 600;
+  padding: 30px 0;
   text-align: center;
-  left: 50%;
-  margin-left: -100px;
-  display: block;
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 10px 0;
-  width: 200px;
-  border-radius: 4px;
-  box-shadow: 1px 2px 1px 0px rgba(0, 0, 0, 0.29);
 }
-/* line 382, styles.less */
-div.ny-block4 .ny-wrapper .ny-form .ny-container .ny-price a.ny-button-mini:hover {
-  background: #388e3c;
-}
-/* line 387, styles.less */
-div.ny-block4 .ny-wrapper .ny-form .ny-container p {
+/* line 350, styles.less */
+div.ny-block4 .ny-wrapper .ny-important .ny-container .ny-text p {
+  margin: 0;
+  padding: 0;
   padding-bottom: 30px;
-  margin: 0 30px;
-  font-size: 1.4rem;
-}
-/* line 391, styles.less */
-div.ny-block4 .ny-wrapper .ny-form .ny-container p span {
-  color: #727272;
-  font-style: italic;
   text-align: center;
 }
-/* line 397, styles.less */
-div.ny-block4 .ny-wrapper .ny-form .ny-container img {
-  margin-bottom: 30px;
-}
-/* line 402, styles.less */
-div.ny-block4 .ny-wrapper .ny-webinar {
-  float: left;
-  width: 48%;
-}
-/* line 406, styles.less */
-div.ny-block4 .ny-wrapper .ny-clab {
-  float: right;
-  width: 48%;
-}
-/* line 414, styles.less */
+/* line 363, styles.less */
 div.ny-footer {
   background: #f5f5f5;
 }
-/* line 416, styles.less */
+/* line 365, styles.less */
 div.ny-footer p {
   margin: 0;
   padding: 10px 0;
